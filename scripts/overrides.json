@@ -1,0 +1,381 @@
+{
+ "$comment": "数据修正层：build.py 会把 fix 覆盖到原始记录，verify 显示为核实状态。按 record_id 维护。",
+ "updated": "2026-09-29",
+ "records": {
+  "recvs8rH4WHCdI": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvs8rH4Wv3HE": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvs8rH4W5HMd": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvs8rH4W5y8x": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvs8rH4WzdJb": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvs8rH4WGwJt": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsoUlbAsYvb": {
+   "verify": {
+    "level": "ok",
+    "note": "官网：9/30 截止；Grand Prix €5,000 / 最佳剧本 €3,000 / 伦理奖 €2,000；免费"
+   }
+  },
+  "recvsoUlbAe39Z": {
+   "verify": {
+    "level": "ok",
+    "note": "官网：Extended 截止 10/6；DIG 单元 $90"
+   }
+  },
+  "recvsoUlbAAymC": {
+   "verify": {
+    "level": "fixed",
+    "note": "原表写 $15–25，官网提交页为 €30，已更正"
+   },
+   "fix": {
+    "报名费": "€20–30（官网提交页：多数类别 €30，Art Image €20 / Art Motion €25）"
+   }
+  },
+  "recvsoUlbAgiAy": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsoUlbA5dMy": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsoUlbA2pih": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsoUlbAKSmG": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsttZ6S4HVM": {
+   "verify": {
+    "level": "ok",
+    "note": "官网：9/30 23:59 截止；特等奖 1 万；仅限全国高校学生"
+   }
+  },
+  "recvstzYwt5n69": {
+   "verify": {
+    "level": "ok",
+    "note": "官网：征稿 8/7–10/8；须配中英文字幕"
+   }
+  },
+  "recvstzYwt6Cq7": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtfEhTa9DSo": {
+   "verify": {
+    "level": "warn",
+    "note": "官网为公众号文章，非独立官网"
+   }
+  },
+  "recvtfF8uWWHom": {
+   "verify": {
+    "level": "warn",
+    "note": "官网为公众号文章，非独立官网"
+   }
+  },
+  "recvtfF8uXyEg6": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtfH7oajt4R": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtfH7oaEavi": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtfIGJMj3yu": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtDiykKO885": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtI1g1akRv7": {
+   "verify": {
+    "level": "ok",
+    "note": "官网：Late 9/30；短片 Late $80；约 $40,000 现金+实物"
+   }
+  },
+  "recvtIdz2uOMw3": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   },
+   "fix": {
+    "报名费": "免费"
+   }
+  },
+  "recvtIdz2ub9FF": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUwx9ep": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxEEFV": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxNrgd": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxzGFs": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxeJyf": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxWnsd": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxT7ot": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUx1uBc": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxetUP": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxbnBx": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxDfLQ": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtIfhUxOeoL": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvwdOf2TZcQy": {
+   "verify": {
+    "level": "ok",
+    "note": "官网：9/30 23:59 BST；BFI IMAX 首映 10/22"
+   }
+  },
+  "recvwdOgLtBo6Z": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvwdOgLt4pwH": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvwdOiiAc7yS": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvwdOiiA14HU": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvwdOiiAUf1e": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvwdOjSliprn": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsoUlbAGggQ": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtfIGJMaAE5": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvsoUlbAwipc": {
+   "verify": {
+    "level": "ok",
+    "note": "官网原文与截止日一致（2026-09-29 核对）"
+   }
+  },
+  "recvtDiykKNkWh": {
+   "verify": {
+    "level": "warn",
+    "note": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实"
+   }
+  },
+  "recvtDiykKKUZ1": {
+   "verify": {
+    "level": "warn",
+    "note": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
+   }
+  },
+  "recvtDiykK3uZg": {
+   "verify": {
+    "level": "warn",
+    "note": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
+   }
+  },
+  "recvsoUlbAPORa": {
+   "verify": {
+    "level": "warn",
+    "note": "基金页已跳转到 Runway Studios 首页，请确认是否仍在接收申请"
+   }
+  },
+  "recvsttZ6Scqgu": {
+   "verify": {
+    "level": "warn",
+    "note": "活动页跳转到 PixVerse 首页，活动页可能已下线，请在 App 内确认"
+   }
+  },
+  "recvs8rH4W0X0x": {
+   "fix": {
+    "投递链接": "https://hokkaido-movie.com/"
+   },
+   "verify": {
+    "level": "fixed",
+    "note": "官网写明报名平台为 Festhome（英文表单）/ 日文表单；投递链接已改为官网入口"
+   }
+  },
+  "recvs8rH4WkbdM": {
+   "verify": {
+    "level": "warn",
+    "note": "官网仍是第二届内容；10/20 以抖音专区「瓦卡奖VACAT第三届」公告为准"
+   }
+  },
+  "recvwdOf2TMJyj": {
+   "verify": {
+    "level": "warn",
+    "note": "官网查不到 9/30；页面出现 10/31 与 11/3（活动日），截止日待核实"
+   }
+  },
+  "recvtfIGJM4hhb": {
+   "verify": {
+    "level": "warn",
+    "note": "官网仍是上一季内容，查不到本季截止日"
+   }
+  },
+  "recvwdOgLtHBmR": {
+   "fix": {
+    "投递链接": "mailto:aixaq2026@163.com"
+   },
+   "verify": {
+    "level": "fixed",
+    "note": "邮箱投稿：aixaq2026@163.com"
+   }
+  },
+  "recvwdOiiA2jTV": {
+   "fix": {
+    "投递链接": "mailto:3113907798@qq.com"
+   },
+   "verify": {
+    "level": "fixed",
+    "note": "邮箱投稿：3113907798@qq.com"
+   }
+  },
+  "recvstzYwty6nP": {
+   "verify": {
+    "level": "warn",
+    "note": "长期活动，未公布截止日"
+   }
+  }
+ }
+}
