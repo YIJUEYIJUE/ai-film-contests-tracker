@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>影赛雷达 CineCall · AI 影像赛事截止追踪</title>
+<meta name="description" content="AI 视频 / AI 影像赛事一站追踪：截止雷达、分级精选、截止日历、投递看板与每日简报。">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1013" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234338ca'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='2.4'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='white'/%3E%3Cpath d='M16 16 L23 9' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('cinecall.v1')||'{}').prefs;t=t&&t.theme;if(!t||t==='auto')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="side" id="side">
+    <a class="brand" href="#/home" aria-label="影赛雷达 首页">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="16" r="2.8" fill="currentColor"/><path d="M16 16 L23.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      <span class="brand-t"><b>影赛雷达</b><small>CineCall</small></span>
+    </a>
+    <button class="search-trigger" data-act="palette"><svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg><span>搜索赛事…</span><kbd id="kbd">⌘K</kbd></button>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      <div class="theme-seg" role="group" aria-label="主题">
+        <button data-theme-set="light" title="浅色">☀</button><button data-theme-set="auto" title="跟随系统">◐</button><button data-theme-set="dark" title="深色">☾</button>
+      </div>
+      <p class="snap" id="snap"></p>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim" data-act="closeSide"></div>
+  <div class="main-wrap">
+    <header class="topbar">
+      <button class="icon-btn only-m" data-act="openSide" aria-label="菜单"><svg viewBox="0 0 20 20"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+      <div class="crumb" id="crumb"></div>
+      <div class="top-r">
+        <span class="today" id="today"></span>
+        <button class="icon-btn" data-act="palette" aria-label="搜索"><svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg></button>
+      </div>
+    </header>
+    <div id="banner"></div>
+    <main id="view" tabindex="-1"></main>
+    <footer class="foot" id="foot"></footer>
+  </div>
+</div>
+<nav class="tabbar" id="tabbar"></nav>
+<div class="drawer-mask" id="mask" data-act="closeDrawer"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="赛事详情"></aside>
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="搜索">
+  <div class="pal-box">
+    <div class="pal-in"><svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg><input id="palQ" placeholder="搜索赛事、主办方、电影节，或输入页面名…" autocomplete="off"><kbd>Esc</kbd></div>
+    <div class="pal-list" id="palList"></div>
+    <div class="pal-hint"><span><kbd>↑</kbd><kbd>↓</kbd> 选择</span><span><kbd>Enter</kbd> 打开</span><span><kbd>/</kbd> 随时唤起</span></div>
+  </div>
+</div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="data/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
