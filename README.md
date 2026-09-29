@@ -1,3 +1,10 @@
+# AI 影像赛事追踪库 + 影赛雷达站点
+
+> **⚠️ 权威源：飞书多维表格「AI赛事」表是唯一权威底表。**
+> 本仓的 `data/`、`festivals/`、`sources/` 是底表快照，`public/` 网页由快照自动生成。
+> **流程：改底表 → 同步快照 → 重建网页（不要直接改网页数据）。**
+> 变更记录见 [CHANGELOG.md](CHANGELOG.md)。
+
 # AI赛事助手
 
 AI 视频 / AI 影像赛事的截止追踪站。数据来自 [ai-film-contests-tracker](https://github.com/YIJUEYIJUE/ai-film-contests-tracker)，每天自动更新。纯静态、零依赖，可以免费部署到 GitHub Pages。
