@@ -3,38 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>影赛雷达 CineCall · AI 影像赛事截止追踪</title>
+<title>AI赛事助手 · AI 视频赛事截止追踪</title>
 <meta name="description" content="AI 视频 / AI 影像赛事一站追踪：截止雷达、分级精选、截止日历、投递看板与每日简报。">
-<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0f1013" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234338ca'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='2.4'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='white'/%3E%3Cpath d='M16 16 L23 9' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
-<script>(function(){try{var t=JSON.parse(localStorage.getItem('cinecall.v1')||'{}').prefs;t=t&&t.theme;if(!t||t==='auto')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<meta name="theme-color" content="#f5f6fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#08090f" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236d5efc'/%3E%3Cstop offset='1' stop-color='%2322c3e6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M22 20l24 12-24 12z' fill='white'/%3E%3C/svg%3E">
+<script>(function(){try{var t=(JSON.parse(localStorage.getItem('aicontest.v1')||'{}').prefs||{}).theme;if(!t||t==='auto')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta property="og:title" content="AI赛事助手 · AI 视频赛事截止追踪">
+<meta property="og:description" content="截止雷达、分级精选、影片资料、资格匹配与投递计划。">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<div class="app" id="app">
+<div class="prog" id="prog"></div>
+<a class="skip" href="#view">跳到正文</a>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="app">
   <aside class="side" id="side">
-    <a class="brand" href="#/home" aria-label="影赛雷达 首页">
-      <span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="16" r="2.8" fill="currentColor"/><path d="M16 16 L23.5 8.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
-      <span class="brand-t"><b>影赛雷达</b><small>CineCall</small></span>
+    <a class="brand" href="#/home" aria-label="AI赛事助手 首页">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 6.5v11l9-5.5z" fill="currentColor" stroke="none"/></svg></span>
+      <span class="brand-t"><b>AI赛事助手</b><small>AI Film Contest Assistant</small></span>
     </a>
-    <button class="search-trigger" data-act="palette"><svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg><span>搜索赛事…</span><kbd id="kbd">⌘K</kbd></button>
     <nav class="nav" id="nav"></nav>
+    <div class="side-card" id="sideCard"></div>
     <div class="side-foot">
-      <div class="theme-seg" role="group" aria-label="主题">
-        <button data-theme-set="light" title="浅色">☀</button><button data-theme-set="auto" title="跟随系统">◐</button><button data-theme-set="dark" title="深色">☾</button>
-      </div>
-      <p class="snap" id="snap"></p>
+      <div class="side-tools"><button class="icon-btn" data-notify title="开启截止通知"><svg viewBox="0 0 20 20"><path d="M5 8a5 5 0 0 1 10 0c0 5 2 6 2 6H3s2-1 2-6M8.5 17a1.8 1.8 0 0 0 3 0"/></svg></button><button class="icon-btn" data-help title="快捷键（?）"><svg viewBox="0 0 20 20"><rect x="2.5" y="5" width="15" height="10" rx="2"/><path d="M5.5 8h.01M8.5 8h.01M11.5 8h.01M14.5 8h.01M6 12h8"/></svg></button></div>
+      <div class="theme-seg" role="group" aria-label="主题"><button data-theme-set="light" title="浅色">☀︎</button><button data-theme-set="auto" title="跟随系统">◐</button><button data-theme-set="dark" title="深色">☾</button></div>
+      <span class="snap" id="snap"></span>
     </div>
   </aside>
   <div class="scrim" id="scrim" data-act="closeSide"></div>
   <div class="main-wrap">
-    <header class="topbar">
-      <button class="icon-btn only-m" data-act="openSide" aria-label="菜单"><svg viewBox="0 0 20 20"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+    <header class="topbar" id="topbar">
+      <button class="icon-btn only-m" data-act="openSide" aria-label="菜单"><svg viewBox="0 0 20 20"><path d="M3 6h14M3 10h14M3 14h9"/></svg></button>
       <div class="crumb" id="crumb"></div>
+      <div class="film-bar" id="filmBar"></div>
+      <button class="search-pill" data-act="palette"><svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg><span>搜索赛事、主办方、电影节…</span><kbd id="kbd">⌘K</kbd></button>
       <div class="top-r">
         <span class="today" id="today"></span>
-        <button class="icon-btn" data-act="palette" aria-label="搜索"><svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg></button>
+        <a class="btn-grad" href="#/brief"><svg viewBox="0 0 20 20"><path d="M5 2.5h7l3.5 3.5v11.5h-10.5z"/><path d="M12 2.5V6h3.5M7.5 10h5M7.5 13h5"/></svg><span>今日简报</span></a>
       </div>
     </header>
     <div id="banner"></div>
@@ -52,7 +61,9 @@
     <div class="pal-hint"><span><kbd>↑</kbd><kbd>↓</kbd> 选择</span><span><kbd>Enter</kbd> 打开</span><span><kbd>/</kbd> 随时唤起</span></div>
   </div>
 </div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"></div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
+<button class="totop" id="totop" data-top aria-label="回到顶部"><svg viewBox="0 0 20 20"><path d="m5 12 5-5 5 5"/></svg></button>
 <script src="data/data.js"></script>
 <script src="assets/app.js"></script>
 </body>
