@@ -33,6 +33,16 @@ FIAPF 权威电影节体系：电影节名称、国家/城市、类别（A类/B�
 
 **飞书信源表**（`feishu_sources_*.json/md`）：飞书 Base 内「AI赛事信源」表的同步快照（65 条，字段：名称/平台/简介/小红书号/主页链接/IP属地/发布时间/代表内容/备注），与本地采集底表（sources_raw）同源，结构更规整。
 
+
+## 站点（CineCall 影赛雷达）
+
+本仓同时承载赛事展示站：`site` 相关文件（`public/ scripts/ tests/ package.json`）由 GitHub Actions 每天 08:05 用本仓最新快照构建并发布到 Pages：
+**https://yijueyijue.github.io/ai-film-contests-tracker/**
+
+- `public/` 站点目录（构建产物已随仓附带）
+- `scripts/build.py --local .` 构建命令（读本仓 data/ festivals/ sources/）
+- `.github/workflows/deploy.yml` 定时构建 + 冒烟测试 + 发布
+
 ## 更新方式
 
 以日期为文件名追加快照（如 `contests_2026-09-29.json`），历史快照保留可追溯。
