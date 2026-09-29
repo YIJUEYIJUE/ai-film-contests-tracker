@@ -1,0 +1,1581 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "platform": "小红书",
+      "input_type": "note",
+      "input_url": "https://www.xiaohongshu.com/discovery/item/6a78a8d9000000002403fc4e?app_platform=android&ignoreEngage=true&app_version=9.41.2&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBRRtfCLwwE3DM6ZSMdIk5daTZt5IO9onSKk-dfiUfC-s%3D&author_share=1&xhsshare=WeixinSession&shareRedId=N0w7QUc9Nj02NzUyOTgwNjY0OTdFPD47&apptime=1786355843&share_id=00a0a54658d74ec4af1f05d71692d3e0&share_channel=wechat&code=7nhaa3cziWN",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T15:45:58+08:00",
+      "fetched_at": "2026-08-14T15:48:00+08:00",
+      "source": {
+        "name": "凹凸镜DOC",
+        "platform": "小红书",
+        "userid": "6242d9170000000010009546",
+        "red_id": "5251197454",
+        "homepage": "https://www.xiaohongshu.com/user/profile/6242d9170000000010009546",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30qeosdep069g5oi2r4bk15a6ild0ik8",
+        "bio": "aotujingdoc",
+        "ip_location": "北京"
+      },
+      "representative_note": {
+        "title": "2026【西影•春光】青年电影展 | 征片进行",
+        "note_id": "6a78a8d9000000002403fc4e",
+        "url": "https://www.xiaohongshu.com/discovery/item/6a78a8d9000000002403fc4e",
+        "published_at": "2026-08-10",
+        "interactions": {
+          "like": 17,
+          "collect": 20,
+          "share": 14
+        },
+        "topics": [
+          "纪录片",
+          "电影节投递",
+          "凹凸镜DOC"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/Q2WECz-p8FVS_3NxqP3L6Q?from=singlemessage&scene=1&subscene=10000&sessionid=1786689975&clicktime=1786693847&enterid=1786693847&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=8388418-zh_CN-zip&fasttmpl_flag=0&realreporttime=1786693847324",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T15:53:55+08:00",
+      "fetched_at": "2026-08-14T15:55:00+08:00",
+      "source": {
+        "name": "全球征集网",
+        "platform": "微信公众号",
+        "gh_id": "gh_15fdc1376da6",
+        "biz": "MzI3OTUzNzU4MA==",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3OTUzNzU4MA==",
+        "avatar": "http://mmbiz.qpic.cn/mmbiz_png/gkvWrcRpibAwGpvkFSEFmB5HvYO961IWPDSYQOSlI2nwWercnZTcYReebe1tic9A3BF5VUPlBzylImG4urNNEKyQ/300?wx_fmt=png&wxfrom=10019",
+        "bio": "全球征集网(www.1zj.com)、标识logo征集、广告语宣传语征集、歌曲歌词征集。揭晓全球征集信息。官方网址:www.1zj.com qq:303932",
+        "ip_location": null
+      },
+      "representative_article": {
+        "title": "首届“未来之光”——2026粤港澳AI影视创意大赛",
+        "url": "https://mp.weixin.qq.com/s/Q2WECz-p8FVS_3NxqP3L6Q",
+        "published_at": "2026-08-11",
+        "summary": "当AI遇上影像，未来正在被重新定义。"
+      }
+    },
+    {
+      "id": 3,
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/gH1DMI0wi0akttsQqNMa4A",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T16:14:00+08:00",
+      "fetched_at": "2026-08-14T16:17:00+08:00",
+      "source": {
+        "name": "AI悦活",
+        "platform": "微信公众号",
+        "gh_id": "gh_37e6684db16c",
+        "biz": "MzY5MzMwODY3MA==",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzY5MzMwODY3MA==",
+        "avatar": "http://mmbiz.qpic.cn/mmbiz_png/uwJswfkmfEIcK2icAPBCFqLjibaVbcGZQibicUPvl3AvNFfwaz7Qz8YickLJKk8micPw7o5CDHyicsvKpI84PuoUUS5m7FVMMRibSpJad69nwnRXQKY/0?wx_fmt=png",
+        "bio": "向大家分享AI在生活、工作中的实际应用",
+        "ip_location": null
+      },
+      "representative_article": {
+        "title": "AI 光影・乐享生活 | AI视频创作赛",
+        "url": "https://mp.weixin.qq.com/s/gH1DMI0wi0akttsQqNMa4A",
+        "published_at": "2026-08-11",
+        "summary": ""
+      }
+    },
+    {
+      "id": 4,
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/dM__MkhjbCeBtFI1j-PiTw",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T16:14:00+08:00",
+      "fetched_at": "2026-08-14T16:17:00+08:00",
+      "source": {
+        "name": "临平华数",
+        "platform": "微信公众号",
+        "gh_id": "gh_eac055f9099d",
+        "biz": "MzA5MDIyNDIxNA==",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MDIyNDIxNA==",
+        "avatar": "http://mmbiz.qpic.cn/sz_mmbiz_png/Ak1oAF8LAxiamUic2iaRKI5nWWj4J3I3DfMyDbIYAWJ43gGC6MCl3jh4ic9p565dxhRM238wzMKRibSqebopm1V8VQUGbm8JOhEAtOuoJZspuzKM/0?wx_fmt=png",
+        "bio": "华数互动电视新片速递、优惠信息早知道、vip俱乐部活动报名",
+        "ip_location": null
+      },
+      "representative_article": {
+        "title": "广电总局第五届广电视听人工智能应用创新大赛9大赛道全面开放申报（附赛道及申报路径）",
+        "url": "https://mp.weixin.qq.com/s/dM__MkhjbCeBtFI1j-PiTw",
+        "published_at": "2026-08-11",
+        "summary": ""
+      }
+    },
+    {
+      "id": 5,
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/lowZNA8ZM8wghEJl-Nvwzg",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T16:14:00+08:00",
+      "fetched_at": "2026-08-14T16:17:00+08:00",
+      "source": {
+        "name": "上海希望之星暨希语盛典",
+        "platform": "微信公众号",
+        "gh_id": "gh_efe3a9eb245d",
+        "biz": "MzU3Njg4MjE2MA==",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU3Njg4MjE2MA==",
+        "avatar": "http://mmbiz.qpic.cn/mmbiz_png/EziaVfgNKpTaSayrZ4tU4Gcq9qVyZbbvVvavDr9GWib2TLXu5zCoRhHOw48W8f45ibzDp4ep0vyZMoTmhgbFnQUPA/0?wx_fmt=png",
+        "bio": "英语学习交流平台，艺术风采展示舞台，“希望之星暨希语盛典”文化艺术节上海会区",
+        "ip_location": null
+      },
+      "representative_article": {
+        "title": "【第二届香港国际AIGC文化数字内容创作大赛】希望之星暨希语盛典选手必看——你的命题演讲AI图，别浪费！",
+        "url": "https://mp.weixin.qq.com/s/lowZNA8ZM8wghEJl-Nvwzg",
+        "published_at": "2026-08-11",
+        "summary": ""
+      }
+    },
+    {
+      "id": 6,
+      "platform": "小红书",
+      "input_type": "note",
+      "input_url": "https://www.xiaohongshu.com/discovery/item/6a68bfff000000000f01deda",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T16:14:00+08:00",
+      "fetched_at": "2026-08-14T16:17:00+08:00",
+      "source": {
+        "name": "黎编剧老师（可约稿）",
+        "platform": "小红书",
+        "userid": "5b63c4d4417c2a00013bb692",
+        "red_id": "AK1148797",
+        "homepage": "https://www.xiaohongshu.com/user/profile/5b63c4d4417c2a00013bb692",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ub4vtg9hu004a8l0d2d9dkifb2a42g",
+        "bio": "👩🏻‍🎓资深且真诚的影视编剧从业者\\n🈴有作品 有水平 有经验 可约稿👆🍠🆔\\n🙅🏻拒绝白票党 剧本都需要付🌾🤝的",
+        "ip_location": "福建"
+      },
+      "representative_note": {
+        "title": "2026西影·春光青年电影展（短片&长片）征片中",
+        "note_id": "6a68bfff000000000f01deda",
+        "url": "https://www.xiaohongshu.com/discovery/item/6a68bfff000000000f01deda",
+        "published_at": "2026-07-29",
+        "interactions": {
+          "likedCount": "28",
+          "collectedCount": "41",
+          "shareCount": "39",
+          "commentCount": "1"
+        },
+        "topics": []
+      }
+    },
+    {
+      "id": 7,
+      "platform": "小红书",
+      "input_type": "note",
+      "input_url": "https://www.xiaohongshu.com/discovery/item/6a7ab4e90000000027023b3f",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T16:14:00+08:00",
+      "fetched_at": "2026-08-14T16:17:00+08:00",
+      "source": {
+        "name": "场刊之外",
+        "platform": "小红书",
+        "userid": "6a583e7d000000000c001004",
+        "red_id": "49805360578",
+        "homepage": "https://www.xiaohongshu.com/user/profile/6a583e7d000000000c001004",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo323mq31pd7a005qio7puj0404u2sbqb0",
+        "bio": "🎬征片日历｜节展情报｜节展攻略\\n🎞️关注作品如何被选择、流通与看见",
+        "ip_location": "山东"
+      },
+      "representative_note": {
+        "title": "第二十五届国际学生影视作品展ISFVF征集中",
+        "note_id": "6a7ab4e90000000027023b3f",
+        "url": "https://www.xiaohongshu.com/discovery/item/6a7ab4e90000000027023b3f",
+        "published_at": "2026-08-11",
+        "interactions": {
+          "likedCount": "33",
+          "collectedCount": "14",
+          "shareCount": "18",
+          "commentCount": "1"
+        },
+        "topics": [
+          "ISFVF影展",
+          "ISFVF",
+          "短片",
+          "青年导演",
+          "电影节",
+          "北京电影学院",
+          "征片"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/foJzkOhoOOEsVfMmUmXIfw",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T16:22:00+08:00",
+      "fetched_at": "2026-08-14T16:25:00+08:00",
+      "source": {
+        "name": "杭州全球青年人才中心",
+        "platform": "微信公众号",
+        "gh_id": "gh_1ed60d56873a",
+        "biz": "MzkwODIzNTczNQ==",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkwODIzNTczNQ==",
+        "avatar": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5Wrtgts0piaInnqyVE1h8RTfl3OEDBvbHmdbNhZUKIDaw/132",
+        "bio": "Hangzhou Global Youth Talent Community 打造全球人才蓄水池、创人才生态最优城市",
+        "ip_location": null
+      },
+      "representative_article": {
+        "title": "GOAI世界人工智能开源大赛报名开启",
+        "url": "https://mp.weixin.qq.com/s/foJzkOhoOOEsVfMmUmXIfw",
+        "published_at": "2026-08-11",
+        "summary": "Global Open-source AI Challenge"
+      }
+    },
+    {
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/YvTjv5l6raoQ_Pv4qVw0uw",
+      "fetch_status": "done",
+      "source": {
+        "gh_id": "gh_03ec3a663646",
+        "biz": "MzUxODM1MTUxNg==",
+        "name": "最影全球电影节服务平台",
+        "avatar": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM6RBibvIvaktmTIrZKwKmIf8XRuGW2Dsk1yiazEtJ1MDO1Q/0",
+        "bio": "全球电影节在线申报，及时传递最新节日信息。 不定期活动及优惠发布。",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUxODM1MTUxNg=="
+      },
+      "representative_article": {
+        "title": "【征片】第22届 早鸟国际学生电影节 Early Bird ISFF",
+        "url": "https://mp.weixin.qq.com/s/YvTjv5l6raoQ_Pv4qVw0uw",
+        "published_at": "2026-08-12",
+        "summary": "1. 电影节简介早鸟国际学生电影节（Early Bird International Student Film"
+      },
+      "id": 9,
+      "received_at": "2026-08-14T18:00:10+08:00",
+      "fetched_at": "2026-08-14T18:00:10+08:00"
+    },
+    {
+      "platform": "小红书",
+      "input_type": "note",
+      "input_url": "https://www.xiaohongshu.com/discovery/item/6a754e48000000003400ea18?source=webshare&xhsshare=pc_web&xsec_token=ABcMRjX0hemOKfoxJS3EqJfpahtiimNjEEDLHNC3MgS2g=&xsec_source=pc_share",
+      "fetch_status": "partial",
+      "source": {
+        "name": "Ai大赛活动",
+        "platform": "小红书",
+        "userid": "5dddc644000000000100612e",
+        "red_id": "449861219",
+        "homepage": "https://www.xiaohongshu.com/user/profile/5dddc644000000000100612e",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31qtnlukf72405netop208o9e8u951m8",
+        "bio": "1.专注国内外各项AI大赛活动\n2.宣传推广和举办AI绘画、AI视频等各类型大赛活动\n3.承办各类型AI大赛线上线下活动！\n商务合作：直接留言",
+        "ip_location": "广东"
+      },
+      "representative_note": {
+        "title": "2026年8月初更新的7场AI大赛活动🔥",
+        "note_id": "6a754e48000000003400ea18",
+        "url": "https://www.xiaohongshu.com/discovery/item/6a754e48000000003400ea18?source=webshare&xhsshare=pc_web&xsec_token=ABcMRjX0hemOKfoxJS3EqJfpahtiimNjEEDLHNC3MgS2g=&xsec_source=pc_share",
+        "published_at": "2026-08-07"
+      },
+      "id": 10,
+      "received_at": "2026-08-14T18:06:59+08:00",
+      "fetched_at": "2026-08-14T18:17:35+08:00"
+    },
+    {
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/p5mcUJ6mfU5XboGkkNms6w",
+      "fetch_status": "done",
+      "source": {
+        "gh_id": "gh_2932a3456a24",
+        "biz": "MzkxMTc1NTMyNg==",
+        "name": "全球AI视觉创意大赛",
+        "avatar": "https://wx.qlogo.cn/mmhead/VNDQtnw16icIJzaVUkokDSX5HFXpemhqY089XARZz73479QqrFqxG4DVZYeZj9Fpib7Sx7fXwJKOE/0",
+        "bio": "全球AI视觉创意大赛（瓦卡奖VACAT- Vision Arts Created by AI Technology），旨在发掘卓越AI视觉创意作品，激发AI创作者无限潜力；探索该领域的最新趋势、产业应用及生态融合，推动其创新化与产业化进程。",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkxMTc1NTMyNg=="
+      },
+      "representative_article": {
+        "title": "以AI拓展影像边界，2026第三届全球AI视觉创意大赛正式启动",
+        "url": "https://mp.weixin.qq.com/s/p5mcUJ6mfU5XboGkkNms6w",
+        "published_at": "2026-07-11",
+        "summary": ""
+      },
+      "id": 11,
+      "received_at": "2026-08-14T19:40:47+08:00",
+      "fetched_at": "2026-08-14T19:40:47+08:00"
+    },
+    {
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/WdvGfWhzwHlnP72JCKmSSg",
+      "fetch_status": "done",
+      "source": {
+        "gh_id": "gh_66e655a7ab36",
+        "biz": "MzU3NTQxMzIzNw==",
+        "name": "久荐",
+        "avatar": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM4E9VfMn5eG1Hic4HZLicdnH3LKYyIuLZHKPXHZIm7wJMsQ/0",
+        "bio": "原「国际电影节」公众号。全球电影节申报服务；字幕、剧本翻译；电影海外发行、宣传推广；电影海报设计；实时发布全球各电影节资讯。",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU3NTQxMzIzNw=="
+      },
+      "representative_article": {
+        "title": "【征片- A标】第30届爱沙尼亚塔林黑夜电影节最迟8月24日截止",
+        "url": "https://mp.weixin.qq.com/s/WdvGfWhzwHlnP72JCKmSSg",
+        "published_at": "2026-07-08",
+        "summary": "塔林黑夜电影节延迟8月17日截止"
+      },
+      "id": 12,
+      "received_at": "2026-08-14T20:26:45+08:00",
+      "fetched_at": "2026-08-14T20:26:45+08:00"
+    },
+    {
+      "platform": "FilmFreeway官网",
+      "input_type": "site",
+      "input_url": "https://filmfreeway.com/festivals?config%5B%5D=submit&has_query=&ga_search_category=Festival&q=&call_for_entries=0&ft_gold=0&ft_ff=1&ft_sc=0&ft_audio=0&ft_photo=0&ft_oe=0&fees=0%3B100&years=1%3B20&runtime=Any&inside_or_outside_country=0&countries=&completion_date=&entry_deadline_when=0&entry_deadline=&event_date_when=0&event_date=&sort=all_deadlines",
+      "fetch_status": "manual",
+      "source": {
+        "name": "FilmFreeway",
+        "domain": "filmfreeway.com",
+        "homepage": "https://filmfreeway.com",
+        "bio": "全球最大的电影节投稿/征片平台，海量电影节通过其接收作品报名与提交，可按征片截止日期检索正在招募的影展。"
+      },
+      "representative_note": {
+        "title": "FilmFreeway · 正在征片检索（按截止日期排序）",
+        "url": "https://filmfreeway.com/festivals?config%5B%5D=submit&has_query=&ga_search_category=Festival&q=&call_for_entries=0&ft_gold=0&ft_ff=1&ft_sc=0&ft_audio=0&ft_photo=0&ft_oe=0&fees=0%3B100&years=1%3B20&runtime=Any&inside_or_outside_country=0&countries=&completion_date=&entry_deadline_when=0&entry_deadline=&event_date_when=0&event_date=&sort=all_deadlines",
+        "published_at": "未获取"
+      },
+      "id": 13,
+      "received_at": "2026-08-14T20:38:23+08:00",
+      "fetched_at": "2026-08-14T20:38:23+08:00"
+    },
+    {
+      "platform": "小红书",
+      "input_type": "profile",
+      "input_url": "https://www.xiaohongshu.com/user/profile/613758cd000000000201946c?xsec_token=YB9IkblA2OZBShe1ghllIl4ou4QfbxMX7Z74lV8UFsLj4=&xsec_source=app_share&xhsshare=&shareRedId=ODhIMEc2Ok82NzUyOTgwNjdJOTc5SDlB&apptime=1786706639&share_id=429e7151ea4b44b48b3c1de6cdf53360&share_channel=wechat&wechatWid=8360232988ad3845e9badcaeb46433da&wechatOrigin=menu",
+      "fetch_status": "done",
+      "source": {
+        "userid": "613758cd000000000201946c",
+        "name": "全球艺术竞赛网",
+        "red_id": "4993937553",
+        "bio": "一站式汇聚国内外权威艺术设计赛事，赛事信息、获奖资讯、行业动态、学术赋能，助力您的竞赛之路！",
+        "ip_location": "河南",
+        "homepage": "https://www.xiaohongshu.com/user/profile/613758cd000000000201946c",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31phogo8a2g4g5o9nb36gj53cmeok6g0?imageView2/2/w/80/format/jpg"
+      },
+      "representative_note": {
+        "title": "未获取",
+        "note_id": "未获取",
+        "url": "https://www.xiaohongshu.com/user/profile/613758cd000000000201946c",
+        "published_at": "未获取"
+      },
+      "id": 14,
+      "received_at": "2026-08-14T20:46:09+08:00",
+      "fetched_at": "2026-08-14T20:46:09+08:00"
+    },
+    {
+      "id": 15,
+      "platform": "小红书",
+      "input_type": "profile",
+      "input_url": "https://www.xiaohongshu.com/user/profile/5d2d38b90000000016022ef3?xsec_token=YB4R4V7sWQC2isczr0DxFUYZdliJD03c8pp9oyBQLdGQ8=&xsec_source=app_share",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T22:10:18+08:00",
+      "fetched_at": "2026-08-14T22:10:18+08:00",
+      "source": {
+        "name": "设计竞赛网",
+        "platform": "小红书",
+        "userid": "5d2d38b90000000016022ef3",
+        "red_id": "594472985",
+        "homepage": "https://www.xiaohongshu.com/user/profile/5d2d38b90000000016022ef3",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo317h99tcjjq5g5n9d72slkbnj03agmi8?imageView2/2/w/80/format/jpg",
+        "bio": "搜索我们名字，上面查看相应征集公告，每个比赛都会有详细介绍！",
+        "ip_location": "广西"
+      },
+      "representative_note": {
+        "title": "未获取",
+        "note_id": "未获取",
+        "url": "https://www.xiaohongshu.com/user/profile/5d2d38b90000000016022ef3",
+        "published_at": "未获取"
+      }
+    },
+    {
+      "id": 16,
+      "platform": "小红书",
+      "input_type": "profile",
+      "input_url": "https://www.xiaohongshu.com/user/profile/62b52c9b000000001b025709?xsec_token=YBXVuLMe1WKUSNhtDk9L4Tj4S69vVZ5Ve3p--tReKwJ4w=&xsec_source=app_share",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T22:10:18+08:00",
+      "fetched_at": "2026-08-14T22:10:18+08:00",
+      "source": {
+        "name": "投奖狮",
+        "platform": "小红书",
+        "userid": "62b52c9b000000001b025709",
+        "red_id": "5386280303",
+        "homepage": "https://www.xiaohongshu.com/user/profile/62b52c9b000000001b025709",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31jo7sojkj0005oll5idmslo93sjhe3g?imageView2/2/w/360/format/webp",
+        "bio": "·投奖狮已合作1000+部作品，助力多部作品在国内外AB类及奥斯卡资格认证电影节入围及获奖。\n· 超过30%的客户选择将第二部、第三部作品继续交由投奖狮征战电影节",
+        "ip_location": "北京"
+      },
+      "representative_note": {
+        "title": "未获取",
+        "note_id": "未获取",
+        "url": "https://www.xiaohongshu.com/user/profile/62b52c9b000000001b025709",
+        "published_at": "未获取"
+      }
+    },
+    {
+      "id": 17,
+      "platform": "小红书",
+      "input_type": "profile",
+      "input_url": "https://www.xiaohongshu.com/user/profile/63b3f8ad000000002702a712?xsec_token=YB_qMHZ1U60sag3TvNRZd45NAwcx7sfRsDZuchKvThaJo=&xsec_source=app_share",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T22:10:18+08:00",
+      "fetched_at": "2026-08-14T22:10:18+08:00",
+      "source": {
+        "name": "微艺赛",
+        "platform": "小红书",
+        "userid": "63b3f8ad000000002702a712",
+        "red_id": "49321532900",
+        "homepage": "https://www.xiaohongshu.com/user/profile/63b3f8ad000000002702a712",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31dhbgm050s005otjv2mpt9oivo2mst8?imageView2/2/w/80/format/jpg",
+        "bio": "🟧  About us皆为在校设计师 不做流水线\n🟧  全系竞赛全流程｜竞赛陪跑\n🟧  累计帮助126名同学成攻保研 倍感荣幸\n🟧  @保研竞赛-微艺赛",
+        "ip_location": "山东"
+      },
+      "representative_note": {
+        "title": "未获取",
+        "note_id": "未获取",
+        "url": "https://www.xiaohongshu.com/user/profile/63b3f8ad000000002702a712",
+        "published_at": "未获取"
+      }
+    },
+    {
+      "id": 18,
+      "platform": "小红书",
+      "input_type": "profile",
+      "input_url": "https://www.xiaohongshu.com/user/profile/551a27b6d39ea22a4b899176?xsec_token=YBH5ZxtCWbMLJecFHECi_Pi0LcPDOB9FowgSD2bOkaXls=&xsec_source=app_share",
+      "fetch_status": "done",
+      "received_at": "2026-08-14T22:10:18+08:00",
+      "fetched_at": "2026-08-14T22:10:18+08:00",
+      "source": {
+        "name": "投奖",
+        "platform": "小红书",
+        "userid": "551a27b6d39ea22a4b899176",
+        "red_id": "49314502938",
+        "homepage": "https://www.xiaohongshu.com/user/profile/551a27b6d39ea22a4b899176",
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/d4f36c6f-4efb-361a-8f11-b1b43ade8a15?imageView2/2/w/80/format/jpg",
+        "bio": "全球530+电影节官方征片合作\n访问toujiang.today一键投片\nIM青年影展、北影节、HiShorts、重庆青年影展、金鸡奖等知名影展官方合作征片平台。\n上海电影学院战略合作伙伴",
+        "ip_location": "四川"
+      },
+      "representative_note": {
+        "title": "未获取",
+        "note_id": "未获取",
+        "url": "https://www.xiaohongshu.com/user/profile/551a27b6d39ea22a4b899176",
+        "published_at": "未获取"
+      }
+    },
+    {
+      "platform": "即梦官网",
+      "input_type": "site",
+      "input_url": "https://jimeng.jianying.com/ai-tool/home",
+      "fetch_status": "done",
+      "source": {
+        "name": "即梦AI",
+        "platform": "即梦官网",
+        "domain": "jimeng.jianying.com",
+        "homepage": "https://jimeng.jianying.com/ai-tool/home",
+        "bio": "即梦AI是一个AI创作平台，可激发艺术创意、提升绘画和视频创作体验。您可以利用AI智能，将想象变为现实。即梦AI支持文字绘图、文字生成视频和图片生成视频，并提供创作灵感。让即梦AI开启您的AI生成艺术之旅，探索创造的无限可能！"
+      },
+      "representative_note": {
+        "title": "即梦 Dreamina 每周挑战",
+        "url": "https://jimeng.jianying.com/ai-tool/activity-detail/2026-806-dreamina-weekly-challenge",
+        "published_at": "未获取",
+        "note": "即梦平台内的周期性创作赛事（代表内容样例，非独立信源）"
+      },
+      "备注": "即梦官网是纯前端 SPA：直接打开主页/活动页只返回应用空壳，看不到任何比赛列表（无服务端预渲染数据）。要看即梦在办的比赛，须走：①内部接口 https://jimeng.jianying.com/jsonp/mweb/v1/get_weekly_challenge_list （返回 var __get_weekly_challenge_list_result={...}，取 data.act_info_list，约165条，含名称/起止/奖励/链接）；②WebSearch 搜「即梦 每周挑战 / 联名赛」查外部公告。仅逛主页=白跑，必须用上面两条路之一。",
+      "id": 19,
+      "received_at": "2026-08-14T22:27:41+08:00",
+      "fetched_at": "2026-08-14T22:27:41+08:00"
+    },
+    {
+      "platform": "可灵官网",
+      "input_type": "site",
+      "input_url": "https://klingai.com/app",
+      "fetch_status": "done",
+      "source": {
+        "name": "可灵AI",
+        "platform": "可灵官网",
+        "domain": "klingai.com",
+        "homepage": "https://klingai.com/app",
+        "bio": "可灵AI（Kling AI）是新一代 AI 创作平台：在一个工作区内用提示词与参考图生成 AI 视频、图像、音频、数字人与特效。"
+      },
+      "representative_note": {
+        "title": "可灵AI 创作活动（活动专区）",
+        "url": "https://klingai.com/app/activity-zone?id=916431453230469138&from=home",
+        "published_at": "未获取",
+        "note": "可灵平台内的创作赛事/活动（代表内容样例，非独立信源）"
+      },
+      "备注": "【已验证：可灵官网确实在办、且能找到比赛（来源有效）】\n经 WebSearch 核实，可灵官网「创意圈·活动专区」(https://klingai.com/app/activity-zone) 持续主办/承办 AI 创作赛事，均为官网投稿入口，真实可找到，例如：\n- 人民日报新媒体·「未来已来 AI 创意大比拼 2026」(可灵专区)\n- 可灵AI × 候鸟300 · AIGC 影像大赛（10万现金+200万灵感值）\n- 可灵AI NextGen 2026 高校原力计划 / 高校 AIGC 创作大赛\n- effie × 可灵AI 2026 AIGC 广告创作大赛\n→ 结论：作为「信源」有效，官网确实发布且能找到 AI 赛事/活动。\n- 且**具体比赛细则也能找到**：官网对外发布的完整细则（投稿流程/作品格式/评审标准权重/奖项设置/参赛资格）被 AI 赛事聚合站全文转载，WebSearch 可搜到。例：候鸟300×可灵 AIGC影像大赛细则 = 作品 MOV/MP4、30秒–10分钟、评审权重 创意40%/内容30%/技术30%、资格≥50%由可灵生成、奖池 10万现金+200万灵感值。\n\n【官网静态抓不到列表（纯前端 SPA）】\n直接打开主页/活动页只返回应用空壳，无服务端预渲染，裸抓看不到比赛列表。\n\n【内部活动列表 API（已探明，但匿名不可用）】\n- 端点：GET https://klingai.com/api/reward/activity/list\n- 返回结构：{ data: { activityList: [ ... ] } }（含活动名/时间/奖励等）\n- ⚠️ 该接口走 axios「sig4 客户端签名(appKey=8M3oUipD76, radarId=91e99da176) + withCredentials/web_session 登录态」；匿名请求返回 500（MID.S4B），无法匿名批量抓取（签名模块可能含 WASM，复刻成本高且仍需登录态）。\n\n【与即梦的本质区别】\n- 即梦：公开 JSONP 接口，匿名可抓，已存 165 条 → 能自动枚举。\n- 可灵：活动接口需登录态+客户端签名，沙箱/匿名无法自动枚举；但活动本身在官网「活动专区」真实存在、可通过下方方式找到。\n\n【要看可灵在办比赛/创作活动，正确方式（已验证可行）】\n① WebSearch 搜「可灵AI 比赛 / 创作大赛 / 活动」→ 能搜到官网活动专区对外公告（本次即搜到 4+ 个真实赛事）。\n② 登录可灵后，在「活动专区」(https://klingai.com/app/activity-zone) 直接看全部在办活动；或登录态下调上面的接口。\n③ 仅逛主页/活动页空壳 = 白跑，须用上面方式之一。",
+      "id": 20,
+      "received_at": "2026-08-14T22:47:50+08:00",
+      "fetched_at": "2026-08-14T22:47:50+08:00"
+    },
+    {
+      "platform": "站酷官网",
+      "input_type": "site",
+      "input_url": "https://www.zcool.com.cn/events/home",
+      "fetch_status": "done",
+      "source": {
+        "name": "站酷",
+        "platform": "站酷官网",
+        "domain": "zcool.com.cn",
+        "homepage": "https://www.zcool.com.cn/events/home",
+        "bio": "站酷（ZCOOL）是国内领先的设计师社区与创意平台；其「赛事」频道（events）持续发布设计大赛、作品征集、AIGC / 提示词 / 科技艺术等创作活动，是 AI/设计类赛事的重要信源。"
+      },
+      "representative_note": {
+        "title": "2026 站酷设计周 - 薪火相传共创计划",
+        "url": "https://www.zcool.com.cn/events/co-create/zcooldesignweek2026",
+        "published_at": "2026-08-13",
+        "note": "站酷在办赛事样例（代表内容，非独立信源）"
+      },
+      "备注": "【已验证：站酷官网确实在办、且能找到比赛（来源有效）】\n站酷「赛事」频道（https://www.zcool.com.cn/events/home）为**服务端渲染（SSR）**，直接列出在办赛事（标题/截稿日/状态），**无需登录即可查看**——与可灵/即梦的 SPA+登录墙不同，findability 最好。\n实测抓到的真实赛事（2026-08）：千问「实」力图鉴 作品&提示词征集、数字人民币吉祥物与文创设计大赛、鸟巢科技艺术中心·可能世界档案 青年科技艺术创作大赛、把爱写成 Prompt 浪漫七夕提示词征集、绿联百校行 AIGC 大赛、2026 站酷设计周 等，含大量 AIGC/提示词/Prompt 类 AI 赛事。\n【分类频道】/events/eventlist 设计大赛、/events/speciallist 专题策划、/events/activities 线上活动、/events/fairlist 线下活动、/events/interaction 互动投票、/events/radiolist 学习音频。\n【与即梦/可灵对比】即梦=公开 JSONP 可枚举；可灵=登录/sig4 墙；站酷=SSR 直接可读、最易找到。\n【要看站酷在办比赛/活动】直接打开 events/home（或对应子频道），或 WebSearch「站酷 大赛 / 征集 / AIGC」。\n【已验证：具体比赛细则也能找到（满足红线）】\n取真实在办赛事详情页「数字人民币吉祥物与文创设计大赛」(https://www.zcool.com.cn/events/ecnyip，HTTP 200、SSR、页面带「倒计时 33 天」显示在办) 实测，详情页**直接渲染并可读到完整参赛细则**：参赛资格（须完全原创/知识产权条款）、参赛要求（「本赛区为唯一官方报名及作品投递渠道」）、奖项设置、评选标准、奖金、评委、报名渠道等。证明站酷赛事的「比赛规则/投稿要求/评审标准」均公开可读，无需登录。与可灵验证路径一致。",
+      "id": 21,
+      "received_at": "2026-08-14T23:15:15+08:00",
+      "fetched_at": "2026-08-14T23:15:15+08:00"
+    },
+    {
+      "platform": "TapNow官网",
+      "input_type": "site",
+      "input_url": "https://app.tapnow.ai/home/challenge",
+      "fetch_status": "done",
+      "source": {
+        "name": "TapNow",
+        "platform": "TapNow官网",
+        "domain": "tapnow.ai",
+        "homepage": "https://app.tapnow.ai/home/challenge",
+        "bio": "TapNow（app.tapnow.ai）是 AI 创意画布 / Agentic Creative Canvas 平台，其 Arena（竞技场）频道持续主办 AI 影像与动画创作挑战赛，如 TapTV Arena 36 小时 AI 动画黑客松、一万个平行宇宙 全球 AI 短片赛等，是 AI 创作类赛事的重要信源。"
+      },
+      "representative_note": {
+        "title": "TapTV Arena · 36小时AI动画创作黑客松",
+        "url": "https://app.tapnow.ai/event/21",
+        "published_at": "2026-06-14",
+        "note": "TapNow 在办赛事样例（代表内容，非独立信源）"
+      },
+      "备注": "【已验证：TapNow 官网确实在办、且能找到比赛（来源有效）】\nTapNow 赛事频道（app.tapnow.ai/home/challenge，路由 key=arena/竞技场）为**纯前端 SPA**（React 空壳，无 SSR，裸抓仅 loading-screen+root），赛事列表靠 JS 拉取、登录态可见——与可灵同类（findability 靠登录后活动页 / WebSearch），不如站酷 SSR 直出。\n实测 WebSearch 确认官网在办且公开可找到的 AI 赛事：① TapTV Arena 全球 36 小时 AI 动画黑客松（北京站 2026-03、杭州站 2026-06，100+ 队、总奖金池 60 万、算力支持 140 万+）；②「一万个平行宇宙」全球线上 AI 短片赛（与 B站联名，总奖池 360 万）。赛事详情页 app.tapnow.ai/event/<id> 含完整赛制/评审维度/奖金/报名。\n【已验证：具体比赛细则也能找到（满足红线）】\n取公开报道与赛事页：TapTV Arena 赛制为「海选初筛—36 小时线下极限创作—颁奖暨作品分享」三阶段；评审围绕创意叙事/视觉呈现/技术应用/传播潜力等维度；含报名、奖金、作品要求等细则，公开可读。证明 TapNow 赛事的「比赛规则/投稿要求/评审标准」均可在公开渠道找到，无需匿名爬取。\n【查看路径】登录 app.tapnow.ai 后打开 /home/challenge（竞技场），或 WebSearch「TapNow Arena / 一万个平行宇宙 / TapTV Arena 黑客松」。\n【与即梦/可灵/站酷对比】即梦=公开 JSONP 可枚举；可灵=登录/sig4 墙；站酷=SSR 直出；TapNow=登录态 SPA（同可灵类），靠登录后活动页/WebSearch 验证。",
+      "id": 22,
+      "received_at": "2026-08-14T23:29:30+08:00",
+      "fetched_at": "2026-08-14T23:29:30+08:00"
+    },
+    {
+      "platform": "LibLib官网",
+      "input_type": "site",
+      "input_url": "https://www.liblib.tv/activity",
+      "fetch_status": "done",
+      "source": {
+        "name": "LibLib",
+        "platform": "LibLib官网",
+        "domain": "liblib.tv",
+        "homepage": "https://www.liblib.tv/activity",
+        "bio": "LibLib（liblib.tv / LiblibAI，国内头部 AI 创作平台，覆盖文生图、视频与模型分享）其「活动 / 创作者挑战赛」频道持续主办 AI 创作赛事，如 LiblibAI 奇趣宇宙创意视频赛、潮计划原创模型征稿、双旦挑战大赛，以及与华硕 ProArt / NVIDIA 联名的 AIGC 创意大赛等，是 AI 创作类赛事的重要信源。"
+      },
+      "representative_note": {
+        "title": "华硕ProArt × NVIDIA × LiblibAI AIGC创意大赛",
+        "url": "https://www.liblib.art/activities/00676b81377446fa9cc839b376c359b5/NVIDIA_ASUS_ProArt_creative_activity",
+        "published_at": "2025-08-04",
+        "note": "LibLib 在办赛事样例（代表内容，非独立信源）"
+      },
+      "备注": "【已验证：LibLib 官网确实在办、且能找到比赛（来源有效）】\nLibLib 活动频道（liblib.tv/activity，含「创作者挑战赛」Creator Challenge 板块；另 liblib.art/activities/<id> 为各赛事详情页）为**前端 SPA**（Next.js，裸抓仅框架，挑战列表靠 JS/API 加载），与可灵/TapNow 同类——findability 靠登录后活动页 / WebSearch，不如站酷 SSR 直出。\n实测 WebSearch 确认官网在办且公开可找到的 AI 赛事：① LiblibAI「奇趣宇宙」创意视频赛（0820-0828，60+ 奖项，作品要求/赛程/评审/奖金齐全）；②【潮计划·商业插画设计】原创模型征稿（国潮/扁平主题、应用性/稀缺性/创意性加权评选）；③ 双旦挑战大赛（一等奖 2000 元等）；④ 华硕 ProArt × NVIDIA × LiblibAI AIGC 创意大赛（图片/视频双赛道，活动主页 liblib.art/activities/<id>）。\n【已验证：具体比赛细则也能找到（满足红线）】\n取公开赛事公告：奇趣宇宙赛含作品要求（5-10s 视频、1080p、MP4、横版 16:9 / 竖版 3:4）、赛事时间、直播讲解赛制与评审标准、投稿方式、奖项设置（超棒奖 3000 元 / 优秀奖 500 元 / 还不错奖 100 元）；潮计划含征稿主题与综合维度权重；双旦赛含奖项与评审标准。证明 LibLib 赛事的「比赛规则/投稿要求/评审标准/奖金」均公开可读。\n【查看路径】登录 liblib.tv 后打开 /activity（创作者挑战赛），或 WebSearch「LibLib 挑战赛 / LiblibAI 活动 / liblib.art activities」。\n【与即梦/可灵/站酷/TapNow 对比】即梦=公开 JSONP 可枚举；可灵=登录/sig4 墙；站酷=SSR 直出；可灵/TapNow/LibLib=登录态 SPA（同可灵类），靠登录后活动页/WebSearch 验证。注意 LibLib 主站域名 liblib.art 与视频工具域名 liblib.tv 并存，本源锚定用户给定链接域名 liblib.tv。",
+      "id": 23,
+      "received_at": "2026-08-14T23:37:32+08:00",
+      "fetched_at": "2026-08-14T23:37:32+08:00"
+    },
+    {
+      "platform": "投奖官网",
+      "input_type": "site",
+      "input_url": "https://www.toujiang.today/information",
+      "fetch_status": "done",
+      "source": {
+        "name": "投奖官网",
+        "platform": "投奖官网",
+        "domain": "toujiang.today",
+        "homepage": "https://www.toujiang.today/information",
+        "bio": "投奖（toujiang.today）是电影节「征片 / 投奖」资讯精选平台，聚合全球影展的 call for entries（征片）信息与截止日期，覆盖剧情 / 纪录 / 短片 / 动画等，并含 AI 电影 赛道（如罗马独立电影节 AI 电影 单元），是 AI 影像 / 电影类赛事征片信息的重要信源。"
+      },
+      "representative_note": {
+        "title": "2026罗马独立电影节（关注 AI电影）",
+        "url": "https://mp.weixin.qq.com/s/uKfTZxz6yFQnZMmWiO1mIA",
+        "published_at": "2026-05-29",
+        "note": "投奖在办征片样例（代表内容，非独立信源）；含 AI 电影 赛道"
+      },
+      "备注": "【已验证：投奖官网确实在办、且能找到比赛（来源有效）】\n投奖（toujiang.today）是**电影节「征片 / 投奖」资讯精选平台**（title「投奖资讯 - 投奖」），并非自己主办比赛，而是聚合全球影展的 call for entries：/information 页面 SSR 直出大量具体征片（孔迪镇 / 奥伯豪森 / FBS新青年影展 / 鹿特丹等国际短片 / 纪录片电影节），每条带截止日期。全站 AI 出现 19 次，明确含 **AI 电影** 赛道（「2026罗马独立电影节 关注首作、次作、AI电影」），是 AI 影像 / 电影类赛事征片信息的重要信源。\n【已验证：具体比赛细则也能找到（满足红线）】\n投奖本身是「精选 / 转发」层：每条征片列出标题 + 截止 + 描述，并链到详情页（微信文章 mp.weixin.qq.com/s/... 或 zaijiezhan.com/film/<id>）。实测链出去的详情页可访问（zaijiezhan.com/film/... HTTP 200），含征片要求 / 作品时长等。即「比赛列表在投奖可找到、细则在链出详情页可找到」，符合红线。\n【与既有来源区别（重要）】即梦 / 可灵 / 站酷 / TapNow / LibLib = 赛事主办方自办平台；投奖 = **第三方征片资讯聚合（curator）**，价值在于持续精选 AI 影像 / 电影类征片。归类建议：官网类（domain 锚点 toujiang.today）。若你认为它偏「电影征片」而非严格 AI 赛事，可只作 AI 电影类补充信源。\n【查看路径】打开 toujiang.today/information 看最新征片；关注含 AI电影 / 人工智能 的条目。",
+      "id": 24,
+      "received_at": "2026-08-14T23:52:22+08:00",
+      "fetched_at": "2026-08-14T23:52:22+08:00"
+    },
+    {
+      "id": 25,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://aifilmcontests.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "AI Film Contests",
+        "platform": "官网",
+        "domain": "aifilmcontests.com",
+        "homepage": "https://aifilmcontests.com/",
+        "bio": "专门追踪全球AI影像赛事的聚合站，号称收录每一个AI电影比赛，每日核实截止日期，按AI短片/动画/纪录片/MV/广告分类，提供免费截止提醒",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "Future Vision XPRIZE（350万美元奖池）等57个进行中赛事",
+        "url": "https://aifilmcontests.com/",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★★｜独立网站"
+      },
+      "备注": "✅ 已验证：聚合全球 AI 影像赛事（号称收录每一个 AI 电影比赛），按 AI 短片/动画/纪录片/MV/广告分类，提供免费截止提醒；当前进行中赛事含 Future Vision XPRIZE（350 万美元奖池）等 57 个，细则可读。"
+    },
+    {
+      "id": 26,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.aibetas.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "AIBetas",
+        "platform": "官网",
+        "domain": "aibetas.com",
+        "homepage": "https://www.aibetas.com/",
+        "bio": "全球AIGC竞赛资讯平台+AI工具导航，设竞赛日历，覆盖AI视频/绘画/应用类赛事并附报名直达，有同名微信公众号",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "即梦Seedance 2.5创作大赛（冠军5万美元）、懂车帝车影像AI创作大赛（一等奖20万）",
+        "url": "https://www.aibetas.com/",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★★｜网站+公众号"
+      },
+      "备注": "✅ 已验证：全球 AIGC 竞赛资讯平台 + AI 工具导航，设竞赛日历，覆盖 AI 视频/绘画/应用类赛事并附报名直达；含即梦 Seedance 2.5 创作大赛（冠军 5 万美元）、懂车帝车影像 AI 创作大赛（一等奖 20 万）等细则。"
+    },
+    {
+      "id": 27,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://curiousrefuge.com/ai-contests",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Curious Refuge · AI Contests",
+        "platform": "官网",
+        "domain": "curiousrefuge.com",
+        "homepage": "https://curiousrefuge.com/ai-contests",
+        "bio": "海外头部AI电影教育社区，维护全球AI电影/广告比赛清单并自办赛事，可订阅Newsletter",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "AKOOL Creator Clash、澳大利亚AI电影奖、Neu Wave AI电影节",
+        "url": "https://curiousrefuge.com/ai-contests",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★★｜网站+Newsletter"
+      },
+      "备注": "✅ 已验证：海外头部 AI 电影教育社区，维护全球 AI 电影/广告比赛清单并自办赛事；含 AKOOL Creator Clash、澳大利亚 AI 电影奖、Neu Wave AI 电影节等，规则/奖项可读。"
+    },
+    {
+      "id": 28,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.aitop100.cn/infomation/label/616.html?name=AI%E5%A4%A7%E8%B5%9B%E6%B4%BB%E5%8A%A8",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "AITOP100 · AI大赛活动专栏",
+        "platform": "官网",
+        "domain": "aitop100.cn",
+        "homepage": "https://www.aitop100.cn/infomation/label/616.html?name=AI%E5%A4%A7%E8%B5%9B%E6%B4%BB%E5%8A%A8",
+        "bio": "国内AI资讯站，设AI大赛活动标签专栏，持续发布国内外AI大赛",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "2026亚洲AI视频大赛",
+        "url": "https://www.aitop100.cn/infomation/label/616.html?name=AI%E5%A4%A7%E8%B5%9B%E6%B4%BB%E5%8A%A8",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：国内 AI 资讯站，设 AI 大赛活动标签专栏，持续发布国内外 AI 大赛；含 2026 亚洲 AI 视频大赛等，细则可读。"
+    },
+    {
+      "id": 29,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://theaisanctuary.org/ai-events",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "The AI Sanctuary · AI Events",
+        "platform": "官网",
+        "domain": "theaisanctuary.org",
+        "homepage": "https://theaisanctuary.org/ai-events",
+        "bio": "全球AI奖项、电影节与峰会日历",
+        "ip_location": "国际"
+      },
+      "representative_note": {
+        "title": "Runway AIFF、AI for Good电影节档期",
+        "url": "https://theaisanctuary.org/ai-events",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：全球 AI 奖项/电影节/峰会日历；含 Runway AIFF、AI for Good 电影节档期等，活动信息可读。"
+    },
+    {
+      "id": 30,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.deepseek.club/events",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "深求社区",
+        "platform": "官网",
+        "domain": "deepseek.club",
+        "homepage": "https://www.deepseek.club/events",
+        "bio": "国内AI社区，赛事活动版块收录平台型AI创作大赛",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "芒果TV浪漫疯长AI影像创作大赛",
+        "url": "https://www.deepseek.club/events",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：国内 AI 社区，赛事活动版块收录平台型 AI 创作大赛；含芒果 TV 浪漫疯长 AI 影像创作大赛等，细则可读。"
+    },
+    {
+      "id": 31,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.aigc.cn/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "AIGC导航（aigc.cn）",
+        "platform": "官网",
+        "domain": "aigc.cn",
+        "homepage": "https://www.aigc.cn/",
+        "bio": "AIGC工具导航/公共服务平台，首页设AI赛事报名专区",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "戛纳·世界人工智能电影节、济南AIGC主题赛事",
+        "url": "https://www.aigc.cn/",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：AIGC 工具导航/公共服务平台，首页设 AI 赛事报名专区；含戛纳·世界人工智能电影节、济南 AIGC 主题赛事等，报名入口可读。"
+    },
+    {
+      "id": 32,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.faxai.cn/archives/category/zx/%e6%b4%bb%e5%8a%a8",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "发现AI · 活动栏目",
+        "platform": "官网",
+        "domain": "faxai.cn",
+        "homepage": "https://www.faxai.cn/archives/category/zx/%e6%b4%bb%e5%8a%a8",
+        "bio": "AI资讯站活动栏目，跟进国内AI大赛与平台活动",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "build in bilibili·AI创造公开赛",
+        "url": "https://www.faxai.cn/archives/category/zx/%e6%b4%bb%e5%8a%a8",
+        "published_at": "未获取",
+        "note": "A-赛事追踪聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：AI 资讯站活动栏目，跟进国内 AI 大赛与平台活动；含 build in bilibili·AI 创造公开赛等，细则可读。"
+    },
+    {
+      "id": 33,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.shejijingsai.com/tag/aigc",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "设计竞赛网（网站+公众号）",
+        "platform": "官网",
+        "domain": "shejijingsai.com",
+        "homepage": "https://www.shejijingsai.com/tag/aigc",
+        "bio": "设计赛事资讯平台，设AIGC标签页；已有其小红书号，建议补网站与公众号端",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "首届未来之光——2026粤港澳AI影视创意大赛",
+        "url": "https://www.shejijingsai.com/tag/aigc",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★★★｜网站+公众号"
+      },
+      "备注": "✅ 已验证：设计赛事资讯平台，设 AIGC 标签页；含未来之光粤港澳 AI 影视创意大赛、ICIAD Award（AIGC 与计算设计单元）、NCDA AIGC 未来创意设计大赛等，投稿要求/评审标准可读。"
+    },
+    {
+      "id": 34,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://bisai.nuanque.com/sjss/aigc",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "设计比赛网（暖雀网）",
+        "platform": "官网",
+        "domain": "bisai.nuanque.com",
+        "homepage": "https://bisai.nuanque.com/sjss/aigc",
+        "bio": "设计比赛信息聚合平台，设AIGC设计大赛专栏（47篇+）",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "HKAIDA香港AI艺术创作大赛",
+        "url": "https://bisai.nuanque.com/sjss/aigc",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：设计比赛信息聚合平台，设 AIGC 设计大赛专栏；含 2025 中国鞋服箱包 AI 设计创新大赛、2024 AIGC 创意设计大赛（AI 视频赛道）、华夏奖（G.AI 作品类）等，细则可读。"
+    },
+    {
+      "id": 35,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.52shejisai.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "我爱设计赛网",
+        "platform": "官网",
+        "domain": "52shejisai.com",
+        "homepage": "https://www.52shejisai.com/",
+        "bio": "设计大赛/竞赛资讯发布与参赛系统平台",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "首届王十朋主题AI视频大赛（总奖金10万）",
+        "url": "https://www.52shejisai.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：设计大赛/竞赛资讯发布与参赛系统平台；含 AIGC 专项设计赛、天猫小黑盒 x AMD AIGC 全民视觉创作大赛、数智伊利 AIGC 视频生态创新大赛等，奖项/投稿要求可读。"
+    },
+    {
+      "id": 36,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.cnyisai.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "艺赛中国",
+        "platform": "官网",
+        "domain": "cnyisai.com",
+        "homepage": "https://www.cnyisai.com/",
+        "bio": "设计大赛/艺术赛事征集与获奖查询平台",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "全国青年数字美学艺术科普知识竞赛",
+        "url": "https://www.cnyisai.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★｜网站"
+      },
+      "备注": "✅ 已验证：设计大赛/艺术赛事征集与获奖查询平台；含万象东方全国青年数字美学艺术创意大赛（AIGC 类）、第 20 届中国好创意（人工智能+）等，细则可读。"
+    },
+    {
+      "id": 37,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "http://www.yishujs.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "艺术竞赛网",
+        "platform": "官网",
+        "domain": "yishujs.com",
+        "homepage": "http://www.yishujs.com/",
+        "bio": "国内外艺术设计大赛资讯与获奖公布",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "HKDADC香港数字艺术设计大赛",
+        "url": "http://www.yishujs.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★｜网站"
+      },
+      "备注": "✅ 已验证：国内外艺术设计大赛资讯与获奖公布；含 2026 AG 设计奖（E.AIGC 人工智能类）、HKDADC（K.AIGC 类）、FA 国际前沿创新艺术设计大赛等，奖项/要求可读。"
+    },
+    {
+      "id": 38,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://shidaishijue.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "时代视觉艺术",
+        "platform": "官网",
+        "domain": "shidaishijue.com",
+        "homepage": "https://shidaishijue.com/",
+        "bio": "视觉艺术设计竞赛平台，获奖作品设AIGC艺术类",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "东方美学艺术设计作品征集",
+        "url": "https://shidaishijue.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★｜网站"
+      },
+      "备注": "✅ 已验证：视觉艺术设计竞赛平台，获奖作品设 AIGC 艺术类；含东方美学艺术设计作品征集（AIGC 艺术类）、UVADC 大学生视觉艺术设计竞赛（AIGC 设计）等，细则可读。"
+    },
+    {
+      "id": 39,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "http://www.zjmtcn.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "征集码头",
+        "platform": "官网",
+        "domain": "zjmtcn.com",
+        "homepage": "http://www.zjmtcn.com/",
+        "bio": "老牌征集信息门户（logo/文创/大赛全球征集），与已有全球征集网同类",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "（未获取）",
+        "url": "http://www.zjmtcn.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：老牌征集信息门户（logo/文创/大赛全球征集）；含「AI 镇江 好运报」2026 新春创意 AI 海报征集、「敦煌飞书·莫高诗画」AI 作品征集等，要求可读。"
+    },
+    {
+      "id": 40,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "http://www.weikemt.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "威客码头",
+        "platform": "官网",
+        "domain": "weikemt.com",
+        "homepage": "http://www.weikemt.com/",
+        "bio": "设计类+文案类征集门户",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "大邱共生国际艺术设计大赛",
+        "url": "http://www.weikemt.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★｜网站"
+      },
+      "备注": "✅ 已验证：设计类+文案类征集门户；含山东省大学生人工智能大赛-AIGC 数字内容与 IP 孵化赛道及各类设计大赛，细则可读。"
+    },
+    {
+      "id": 41,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "http://www.1zhengji.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "第一征集网",
+        "platform": "官网",
+        "domain": "1zhengji.com",
+        "homepage": "http://www.1zhengji.com/",
+        "bio": "征集信息平台，也转发AI影像征片资讯",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "灵芽社区北影节AIGC单元征片报道",
+        "url": "http://www.1zhengji.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★｜网站"
+      },
+      "备注": "✅ 已验证：征集信息平台，也转发 AI 影像征片资讯；含灵芽社区北影节 AIGC 单元征片报道、京彩台湾两岸青年短片征集 AI 特别单元等，信息可读。"
+    },
+    {
+      "id": 42,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.52jingsai.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "我爱竞赛网",
+        "platform": "官网",
+        "domain": "52jingsai.com",
+        "homepage": "https://www.52jingsai.com/",
+        "bio": "全国大学生竞赛信息平台，含AIGC专项赛",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "米兰设计周·全民运动AIGC创作大赛",
+        "url": "https://www.52jingsai.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★★｜网站+公众号"
+      },
+      "备注": "✅ 已验证：全国大学生竞赛信息平台，含 AIGC 专项赛；含米兰设计周·全民运动 AIGC 创作大赛、第 20 届中国好创意、NCDA 等，细则可读。"
+    },
+    {
+      "id": 43,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.saikr.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "赛氪",
+        "platform": "官网",
+        "domain": "saikr.com",
+        "homepage": "https://www.saikr.com/",
+        "bio": "全国大学生竞赛活动平台（赛事中心+报名系统）",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "CCF中国计算机应用技术大赛",
+        "url": "https://www.saikr.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★｜网站+公众号"
+      },
+      "备注": "✅ 已验证：全国大学生竞赛活动平台（赛事中心+报名系统）；含全国大学生 AIGC·新媒体创作大赛、AIGC 广告素材制作大赛（万元奖池）、AI 生成世界算法编程赛道等，奖项/要求可读。"
+    },
+    {
+      "id": 44,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://bhuntr.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "奖金猎人 Bhuntr",
+        "platform": "官网",
+        "domain": "bhuntr.com",
+        "homepage": "https://bhuntr.com/",
+        "bio": "华语区（台湾）赛事聚合平台，收录各类比赛含AI影片组",
+        "ip_location": "中国台湾"
+      },
+      "representative_note": {
+        "title": "青春有影大学盃AI生成影片组、北京国际影展AIGC短片征集",
+        "url": "https://bhuntr.com/",
+        "published_at": "未获取",
+        "note": "B-征集聚合｜★★｜网站"
+      },
+      "备注": "✅ 已验证：华语区（台湾）赛事聚合平台，收录各类比赛含 AI 影片组；含美琪创意短影音（可 AI 辅助创作）、海洋保育创意短影音（AI 组）、AI 比赛统整十大推荐等，细则可读。"
+    },
+    {
+      "id": 45,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://lingya.qq.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "灵芽社区（腾讯）",
+        "platform": "官网",
+        "domain": "lingya.qq.com",
+        "homepage": "https://lingya.qq.com/",
+        "bio": "腾讯视频旗下AIGC创作者一站式平台，聚合可灵/Seedance/混元等模型，承接重磅赛事征片",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "北影节AIGC电影单元官方征片、腾讯客服一老一小AI公益视频大赛",
+        "url": "https://lingya.qq.com/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★★｜平台官网"
+      },
+      "备注": "✅ 已验证：腾讯视频旗下 AIGC 创作者一站式平台，承接重磅赛事征片；为北影节 AIGC 电影单元独家征集平台，含万相妙思+主题赛，征片规则/奖项可读。"
+    },
+    {
+      "id": 46,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://modelscope.cn/competition",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "魔搭社区 ModelScope",
+        "platform": "官网",
+        "domain": "modelscope.cn",
+        "homepage": "https://modelscope.cn/competition",
+        "bio": "阿里系AI模型社区，设竞赛/活动专区",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "亲橙光合AIGC视频创作大赛、万相妙思+创意视频大赛（10万奖金池）",
+        "url": "https://modelscope.cn/competition",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜平台官网"
+      },
+      "备注": "✅ 已验证：阿里系 AI 模型社区，设竞赛/活动专区；含亲橙光合 AIGC 视频创作大赛（双赛道/5 万奖池）、魔搭 AI 视频宣传片挑战赛等，赛制/奖项可读。"
+    },
+    {
+      "id": 47,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://tongyi.aliyun.com/wan/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "通义万相 Wan",
+        "platform": "官网",
+        "domain": "tongyi.aliyun.com",
+        "homepage": "https://tongyi.aliyun.com/wan/",
+        "bio": "阿里通义AI创意平台，发起全球创作者征集；另有万相妙思官方微博",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "Wan Muse+/万相妙思全球创作者征集（WAIC赛题·生动）",
+        "url": "https://tongyi.aliyun.com/wan/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜平台官网+微博"
+      },
+      "备注": "✅ 已验证：阿里通义 AI 创意平台，发起全球创作者征集；含 Wan Muse+/万相妙思+（生·动/心跳/入戏 In Character 三季，10 万奖池）、北影节万相妙思+主题赛等，投稿规则/奖项可读。"
+    },
+    {
+      "id": 48,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://hailuoai.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "海螺AI（MiniMax）",
+        "platform": "官网",
+        "domain": "hailuoai.com",
+        "homepage": "https://hailuoai.com/",
+        "bio": "MiniMax旗下AI视频平台，上海国际电影节独家AI影像战略伙伴，常办全球创作活动",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "上影节AI Backlot共创、全球创作者活动",
+        "url": "https://hailuoai.com/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜平台官网"
+      },
+      "备注": "✅ 已验证：MiniMax 旗下 AI 视频平台，上海国际电影节「AI 片场」独家 AI 影像战略合作伙伴，全球征选；含海螺送你去戛纳 WAIFF 等，活动/奖项可读。"
+    },
+    {
+      "id": 49,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.vidu.cn/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Vidu（生数科技）",
+        "platform": "官网",
+        "domain": "vidu.cn",
+        "homepage": "https://www.vidu.cn/",
+        "bio": "清华系AI视频生成平台，常与国内AI影像赛事合作",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "（未获取）",
+        "url": "https://www.vidu.cn/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★｜平台官网"
+      },
+      "备注": "✅ 已验证：清华系 AI 视频生成平台，常与国内 AI 影像赛事合作；含 2026 大学生 AI 艺术季 x 生数 Vidu AI 影像黑客松（2 万现金+10 万 Vidu 积分）、崇礼 AI 短片节（指定合作平台）、微博 AI 创造营（最高 3 万）等，细则可读。"
+    },
+    {
+      "id": 50,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://pixverse.ai/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "PixVerse（爱诗科技）",
+        "platform": "官网",
+        "domain": "pixverse.ai",
+        "homepage": "https://pixverse.ai/",
+        "bio": "AI视频生成平台，自办全球大赛并与联合国AI for Good合作设创作者奖项",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "PixLight全球AI类型片影像大赛（总奖池30万美元）",
+        "url": "https://pixverse.ai/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★★｜平台官网"
+      },
+      "备注": "✅ 已验证：AI 视频生成平台，自办全球大赛并与联合国 AI for Good 合作设创作者奖项；含 PixLight 全球 AI 电影创作大赛（30 万美元奖池/33 奖项，2026.8.7–10.9），赛制/奖项可读。"
+    },
+    {
+      "id": 51,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://civitai.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Civitai",
+        "platform": "官网",
+        "domain": "civitai.com",
+        "homepage": "https://civitai.com/",
+        "bio": "全球最大开源AI模型社区，站内设challenges周赛，孵化全球最大AI电影赛事",
+        "ip_location": "美国"
+      },
+      "representative_note": {
+        "title": "Project Odyssey（两季6000+部/87国）、站内每周挑战",
+        "url": "https://civitai.com/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★★｜平台官网+Discord"
+      },
+      "备注": "✅ 已验证：全球最大开源 AI 模型社区，站内设 challenges 周赛，孵化全球最大 AI 电影赛事；含 Project Odyssey（S3 达 6000+ 影片/87 国，$28K+）、站内周赛，规则/奖项可读。"
+    },
+    {
+      "id": 52,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://higgsfield.ai/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Higgsfield",
+        "platform": "官网",
+        "domain": "higgsfield.ai",
+        "homepage": "https://higgsfield.ai/",
+        "bio": "AI生成平台，自办大额奖金AI电影赛",
+        "ip_location": "美国"
+      },
+      "representative_note": {
+        "title": "2026年50万美元奖池AI电影大赛（8800部投稿/139国）",
+        "url": "https://higgsfield.ai/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜平台官网"
+      },
+      "备注": "✅ 已验证：AI 生成平台，自办大额奖金 AI 电影赛；含 Higgsfield Global Film Festival（$1M 奖池/14 奖项，2026.8.7–8.31），赛制/奖项可读。"
+    },
+    {
+      "id": 53,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.bilibili.com/blackboard/era/35Rul43gRSGlriox.html",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "bilibili 活动中心",
+        "platform": "官网",
+        "domain": "bilibili.com",
+        "homepage": "https://www.bilibili.com/blackboard/era/35Rul43gRSGlriox.html",
+        "bio": "B站不定期联合官方机构办AI赛事，建议纳入巡检",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "build in bilibili·AI创造公开赛（冠军100万）、电影频道×B站AI影像征集大赛",
+        "url": "https://www.bilibili.com/blackboard/era/35Rul43gRSGlriox.html",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜平台活动页"
+      },
+      "备注": "✅ 已验证：B 站不定期联合官方机构办 AI 赛事；含 build in bilibili·AI 创造公开赛（百万奖金）、电影频道×B 站 AI 影像征集大赛（第二届，20W 奖池，中国故事/科幻/非遗三赛道），细则可读。"
+    },
+    {
+      "id": 54,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://aic.oceanengine.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "即创（巨量引擎）",
+        "platform": "官网",
+        "domain": "aic.oceanengine.com",
+        "homepage": "https://aic.oceanengine.com/",
+        "bio": "抖音系智能创意生产平台，剪映/即梦系赛事入口之一",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "剪映AI模板创作大赛（月度）",
+        "url": "https://aic.oceanengine.com/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜平台官网"
+      },
+      "备注": "✅ 已验证：抖音系智能创意生产平台，剪映/即梦系赛事入口之一；含剪映 AI 模板创作大赛（月度）、剪映 AI 多样性模板创意大赛、20 万奖金剪映 AI 模板创想季（WaytoAGI×剪映）等，规则/奖项可读。"
+    },
+    {
+      "id": 55,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://lingjing.jdcloud.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "京东云灵境AI",
+        "platform": "官网",
+        "domain": "lingjing.jdcloud.com",
+        "homepage": "https://lingjing.jdcloud.com/",
+        "bio": "京东云一站式AI创作平台",
+        "ip_location": null
+      },
+      "representative_note": {
+        "title": "北影节·京东AI影视创作大赛",
+        "url": "https://lingjing.jdcloud.com/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★｜平台官网"
+      },
+      "备注": "✅ 已验证：京东云一站式 AI 创作平台；含北影节京东 AI 影视创作大赛·十二姬的次元宇宙 AI 漫剧赛道（单人最高 10 万）、灵境为 AIGC 创作推荐工具，赛制/奖项可读。"
+    },
+    {
+      "id": 56,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://www.xinpianchang.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "新片场",
+        "platform": "官网",
+        "domain": "xinpianchang.com",
+        "homepage": "https://www.xinpianchang.com/",
+        "bio": "头部影视创作社区，联合品牌办短片/AI视频大赛",
+        "ip_location": "北京"
+      },
+      "representative_note": {
+        "title": "新片场联合AI视频创作大赛（2026.4官宣）、手记创作季",
+        "url": "https://www.xinpianchang.com/",
+        "published_at": "未获取",
+        "note": "C-平台活动页｜★★｜网站+微博"
+      },
+      "备注": "✅ 已验证：头部影视创作社区，联合品牌办短片/AI 视频大赛；含雷克沙×新片场 AIGC 视频创作大赛（金奖 1 万+3 年 SVIP+10 万算力积分）、Shotlab 无限世界赛（36 小时极限）、自由画布锦标赛（金画布大奖 5000 元+500 万积分），细则可读。"
+    },
+    {
+      "id": 57,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://festhome.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Festhome",
+        "platform": "官网",
+        "domain": "festhome.com",
+        "homepage": "https://festhome.com/",
+        "bio": "欧洲向电影节投递平台，多个AI电影节在此收片，补FilmFreeway盲区",
+        "ip_location": "欧洲"
+      },
+      "representative_note": {
+        "title": "AI International Film Festival等收片页",
+        "url": "https://festhome.com/",
+        "published_at": "未获取",
+        "note": "F-投递平台｜★★★｜投递平台"
+      },
+      "备注": "✅ 已验证：欧洲向电影节投递平台，多个 AI 电影节在此收片；含 International AI Short Film Festival（IASFF，须提交「AI 劳动声明」、设最佳影片/最佳提示词/观众选择奖）、Valencia International AI Film Festival（详细报名材料/评选委员会/评审标准）、CENERE FilmFest（AI FIRST 单元-最佳 AI 影片）等，规则/奖项可读。"
+    },
+    {
+      "id": 58,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://devpost.com/hackathons",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Devpost",
+        "platform": "官网",
+        "domain": "devpost.com",
+        "homepage": "https://devpost.com/hackathons",
+        "bio": "全球黑客松/AI创作赛平台，Chroma Awards提交入口",
+        "ip_location": "美国"
+      },
+      "representative_note": {
+        "title": "Chroma Awards（19万美元奖池）",
+        "url": "https://devpost.com/hackathons",
+        "published_at": "未获取",
+        "note": "F-投递平台｜★★｜投递平台"
+      },
+      "备注": "✅ 已验证：全球黑客松/AI 创作赛平台；含 World's Largest Hackathon（Devpost，$100k+，提交要求/评审标准明确）、AI for Humanity Hackathon、Build with Gemini XPRIZE（$2M）、Devfest Ilorin Build with AI 等，提交规则/奖项可读。"
+    },
+    {
+      "id": 59,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://lablab.ai/ai-hackathons",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "lablab.ai",
+        "platform": "官网",
+        "domain": "lablab.ai",
+        "homepage": "https://lablab.ai/ai-hackathons",
+        "bio": "AI黑客松平台（30万+用户），滚动办赛",
+        "ip_location": "美国"
+      },
+      "representative_note": {
+        "title": "各类AI创作/应用黑客松",
+        "url": "https://lablab.ai/ai-hackathons",
+        "published_at": "未获取",
+        "note": "F-投递平台｜★｜平台"
+      },
+      "备注": "✅ 已验证：AI 黑客松平台（30 万+用户），滚动办赛；含 AMD Developer Hackathon（$5k+，三赛道）、Deriv AI Talent Sprint（$10k+）、IBM Bob Hackathon（$10k）、RAISE YOUR HACK（最高 $150k）等，赛制/奖项可读。"
+    },
+    {
+      "id": 60,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://festagent.com/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "FestAgent",
+        "platform": "官网",
+        "domain": "festagent.com",
+        "homepage": "https://festagent.com/",
+        "bio": "电影节数据库与投递服务，收录AI电影节规则/截止",
+        "ip_location": "国际"
+      },
+      "representative_note": {
+        "title": "Runway AIFF资料页",
+        "url": "https://festagent.com/",
+        "published_at": "未获取",
+        "note": "F-投递平台｜★｜网站"
+      },
+      "备注": "✅ 已验证（投递/代理平台）：电影节数据库与投递服务机构，收录 1,500+ 影展并维护其章程/资格/投稿规则（透明公开）；本身非赛事主办方，而是发现与投递 AI 电影节（含 AI 单元）的平台，规则/截止可读。作为「投递平台」类来源有效。"
+    },
+    {
+      "id": 61,
+      "platform": "官网",
+      "input_type": "site",
+      "input_url": "https://popcorn.movie/",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "popcorn.movie",
+        "platform": "官网",
+        "domain": "popcorn.movie",
+        "homepage": "https://popcorn.movie/",
+        "bio": "AI电影/影展与作品追踪站",
+        "ip_location": "国际"
+      },
+      "representative_note": {
+        "title": "Project Odyssey专页",
+        "url": "https://popcorn.movie/",
+        "published_at": "未获取",
+        "note": "F-投递平台｜★｜网站"
+      },
+      "备注": "✅ 已验证（AI 影展/作品追踪站）：AI 生成影片的评分与发现站（已排行 1,014 部），聚合 AI 电影节专页——WAIFF、Reply AI Film Festival、Project Odyssey、The Chroma Awards、Bali International AI Film Festival 等，并链接各影展。本身非投稿门户，而是 AI 影展与作品追踪/发现源，作为「来源」有效（细则在各影展官网可读）。"
+    },
+    {
+      "id": 62,
+      "platform": "社区",
+      "input_type": "site",
+      "input_url": "https://discord.com/invite/projectodyssey-ai",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "Project Odyssey / Chroma Discord",
+        "platform": "社区",
+        "domain": "discord.com",
+        "homepage": "https://discord.com/invite/projectodyssey-ai",
+        "bio": "全球AI电影创作者社区，新赛事与规则第一时间发布",
+        "ip_location": "国际"
+      },
+      "representative_note": {
+        "title": "Chroma Awards S2动态",
+        "url": "https://discord.com/invite/projectodyssey-ai",
+        "published_at": "未获取",
+        "note": "G-社区监控｜★★｜Discord"
+      },
+      "备注": "✅ 已验证：全球 AI 电影创作者社区（Project Odyssey / Chroma Discord，discord.com/invite/projectodyssey-ai）；Project Odyssey 为头部生成式 AI 视频大赛（projectodyssey.ai 含完整 Rules & Judging：叙事/MV/广告/预告/VFX/社媒/开放/幕后 8 类，单类最高 $3k、S2 共 40+ 现金奖 $70k+，经 Civitai 投稿；Chroma Awards 亦在此发布）。新赛事与规则第一时间发布，作为社区监控源有效。"
+    },
+    {
+      "id": 63,
+      "platform": "微博",
+      "input_type": "site",
+      "input_url": "https://www.sina.cn/media/7984990230",
+      "fetch_status": "manual",
+      "received_at": "2026-08-16T01:45:14+08:00",
+      "fetched_at": "2026-08-16T01:45:14+08:00",
+      "source": {
+        "name": "万相妙思官方微博",
+        "platform": "微博",
+        "domain": "sina.cn",
+        "homepage": "https://www.sina.cn/media/7984990230",
+        "bio": "阿里通义万相全球创作者大赛官方微博",
+        "ip_location": "浙江"
+      },
+      "representative_note": {
+        "title": "万相妙思+大赛动态",
+        "url": "https://www.sina.cn/media/7984990230",
+        "published_at": "未获取",
+        "note": "G-社区监控｜★｜微博"
+      },
+      "备注": "✅ 已验证：阿里通义万相全球创作者大赛官方微博（微博认证）；持续发布 AI 创作大赛——北影节 AIGC 电影单元「万相妙思+」主题赛、AI 创造营 AI 视频创作大赛（30 万奖池，美学/故事/历史演绎三赛道+特别赛道）、Wan Muse 第一/二/三季（生·动、入戏 In Character），规则/奖项可读。"
+    },
+    {
+      "platform": "微信公众号",
+      "input_type": "article",
+      "input_url": "https://mp.weixin.qq.com/s/ZeD1kHEs-qVvJNe_RvXBuw",
+      "fetch_status": "done",
+      "source": {
+        "gh_id": "gh_9fe27a15068c",
+        "biz": "MzYzMTE5NjgzMQ==",
+        "name": "投奖每日资讯",
+        "avatar": "https://wx.qlogo.cn/mmhead/FiaIW3HsXzg4ibYDOGj9vkLIicaBljeYt0qv59gM5AFTTkZL2IRRZPS5evJCZbic1BHBa4rd1FPECzk/0",
+        "bio": "为订阅用户提供专业、准确的电影节投递资讯",
+        "homepage": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzYzMTE5NjgzMQ=="
+      },
+      "representative_article": {
+        "title": "征片｜5th 瓦加国际短片电影节",
+        "url": "https://mp.weixin.qq.com/s/ZeD1kHEs-qVvJNe_RvXBuw",
+        "published_at": "2026-08-18",
+        "summary": "最终截止：2026.09.01"
+      },
+      "id": 64,
+      "received_at": "2026-08-18T23:45:02+08:00",
+      "fetched_at": "2026-08-18T23:45:02+08:00"
+    }
+  ],
+  "meta": {
+    "version": 1,
+    "updated_at": "2026-08-18T23:45:02+08:00",
+    "total": 64,
+    "dedup_key": [
+      "platform",
+      "gh_id|userid"
+    ],
+    "note": "seed from 来源追踪_打包.zip (2026-08-14)"
+  }
+}
