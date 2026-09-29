@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""影赛雷达 CineCall 数据构建。
+"""AI赛事助手 数据构建。
 
 从 ai-film-contests-tracker 取最新快照，生成：
   public/data/data.js      网页读取的数据
@@ -24,7 +24,7 @@ PUB = ROOT / "public"
 
 
 def fetch(url):
-    headers = {"User-Agent": "CineCallBot/1.0"}
+    headers = {"User-Agent": "AIContestBot/1.0"}
     if os.environ.get("GITHUB_TOKEN") and "api.github.com" in url:
         headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
     with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=40) as r:
@@ -57,6 +57,24 @@ def load():
     return out
 
 
+def apply_overrides(data):
+    f = ROOT / "scripts" / "overrides.json"
+    if not f.exists():
+        return
+    ov = json.loads(f.read_text("utf-8")).get("records", {})
+    n = 0
+    for r in data["contests"]["records"]:
+        o = ov.get(r.get("record_id"))
+        if not o:
+            continue
+        for k, v in (o.get("fix") or {}).items():
+            r[k] = v
+        if o.get("verify"):
+            r["_verify"] = o["verify"]
+        n += 1
+    print(f"  · 应用数据修正 {n} 条（scripts/overrides.json）")
+
+
 def validate(data):
     recs = data["contests"].get("records")
     if not isinstance(recs, list) or not recs:
@@ -77,8 +95,8 @@ def ics(recs, today):
     def e(s):
         return re.sub(r"([\\;,])", r"\\\1", str(s or "")).replace("\n", "\\n")
     stamp = dt.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//CineCall//AI Contest Radar//ZH", "CALSCALE:GREGORIAN",
-             "METHOD:PUBLISH", "X-WR-CALNAME:AI 影像赛事截止 · 影赛雷达", "X-WR-TIMEZONE:Asia/Shanghai", "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//AIContest//Assistant//ZH", "CALSCALE:GREGORIAN",
+             "METHOD:PUBLISH", "X-WR-CALNAME:AI 赛事截止 · AI赛事助手", "X-WR-TIMEZONE:Asia/Shanghai", "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
     for r in recs:
         d = r.get("截止日期")
         if not d or r.get("征集状态") == "已截止":
@@ -87,7 +105,7 @@ def ics(recs, today):
         if day < today:
             continue
         url = r.get("投递链接") or r.get("官网") or ""
-        lines += ["BEGIN:VEVENT", f"UID:{r['record_id']}@cinecall", f"DTSTAMP:{stamp}",
+        lines += ["BEGIN:VEVENT", f"UID:{r['record_id']}@aicontest", f"DTSTAMP:{stamp}",
                   f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
                   f"SUMMARY:{e('【' + (r.get('分级') or '-') + '】截止 · ' + r['名称'])}",
                   f"DESCRIPTION:{e('最高奖励：' + str(r.get('最高奖金') or '—') + chr(10) + '报名费：' + str(r.get('报名费') or '—') + chr(10) + '投递：' + (url or '—'))}"]
@@ -114,7 +132,7 @@ def rss(recs, snap, today):
     items.sort(key=lambda r: r.get("截止日期") or "9999")
     pub = format_datetime(dt.datetime.combine(dt.date.fromisoformat(snap), dt.time(8), dt.timezone(dt.timedelta(hours=8))))
     x = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>',
-         "<title>影赛雷达 · 在征 AI 影像赛事</title>", f"<link>{escape(base)}/</link>",
+         "<title>AI赛事助手 · 在征 AI 影像赛事</title>", f"<link>{escape(base)}/</link>",
          "<description>AI 视频 / 影像赛事，按截止日排序</description>", "<language>zh-cn</language>", f"<lastBuildDate>{pub}</lastBuildDate>"]
     for r in items:
         t = f"【{r.get('分级') or '-'}】{r['名称']} · {r.get('截止日期') or '截止待公布'}"
@@ -128,12 +146,13 @@ def rss(recs, snap, today):
 
 def main():
     data = load()
+    apply_overrides(data)
     recs = validate(data)
     snap = data["contests"].get("snapshot_date") or dt.date.today().isoformat()
     today = dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date()
     (PUB / "data").mkdir(parents=True, exist_ok=True)
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    (PUB / "data" / "data.js").write_text(f"/* 自动生成：scripts/build.py · 快照 {snap} */\nwindow.CINECALL={blob};\n", "utf-8")
+    (PUB / "data" / "data.js").write_text(f"/* 自动生成：scripts/build.py · 快照 {snap} */\nwindow.AICONTEST={blob};\n", "utf-8")
     (PUB / "data" / "contests.json").write_text(json.dumps(data["contests"], ensure_ascii=False, indent=1), "utf-8")
     (PUB / "deadlines.ics").write_text(ics(recs, today), "utf-8", newline="")
     (PUB / "feed.xml").write_text(rss(recs, snap, today), "utf-8")
