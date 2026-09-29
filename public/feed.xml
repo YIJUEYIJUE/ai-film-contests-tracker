@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
-<title>影赛雷达 · 在征 AI 影像赛事</title>
+<title>AI赛事助手 · 在征 AI 影像赛事</title>
 <link>./</link>
 <description>AI 视频 / 影像赛事，按截止日排序</description>
 <language>zh-cn</language>
@@ -76,7 +76,7 @@
 <description>最高奖励：约 $40,000（现金+实物）&lt;br&gt;报名费：$80（短片 Late；Early $45 / Regular $60 已过）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;北美历史最久的实验电影节（60余年），奥斯卡认证（短片类别）。规则开放实验片「no matter the genre」，不设 AI 禁令；2026 赛季已有 AI 生成影片入选（如 John Weise 的《42.》）。年收约 2800 份投稿、接受率约 4%。设 Ken Burns 最佳影片、Chris Frayne 最佳动画、Lawrence Kasdan 最佳叙事、最佳实验片等奖项，获奖可获奥斯卡提名资格。第65届 Late 截止 2026-09-30。</description>
 </item>
 <item>
-<title>【B】WAIMF世界AI电影节·马贝拉站 · 2026-09-30</title>
+<title>【C】WAIMF世界AI电影节·马贝拉站 · 2026-09-30</title>
 <link>./#/c/recvwdOf2THeno</link>
 <guid isPermaLink="false">recvwdOf2THeno</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
@@ -132,6 +132,13 @@
 <description>最高奖励：官方未公布&lt;br&gt;报名费：￥476.76–681.09&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;Epic ACG fest 是一个展示动画、漫画和游戏的独特活动。通过放映、展览和比赛，将来自世界各地的创意元素、艺术家和公众聚集在一起。EACG 举办现场演示、社交招待会、大师研讨会、小组讨论、商业研讨会、招聘和整个活动期间提供的专业展览，以及与来自国内外顶级工作室和教育机构的创意专业人士进行一对一的个人咨询。颁奖典礼是一场红毯活动，提供认可和美好回忆，好</description>
 </item>
 <item>
+<title>【C】FESTIAV瓦伦西亚AI电影节 · 2026-10-04</title>
+<link>./#/c/reczz28HJWV1Exrq</link>
+<guid isPermaLink="false">reczz28HJWV1Exrq</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：官方竞赛最高€1,000（最佳虚构AI短片），共€2,250（€3,000属FESTIAV LAB活动非投稿赛）&lt;br&gt;报名费：€5–20 随时间递增（章程7.5条；Festhome €10/类落在区间内）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;西班牙瓦伦西亚AI电影节；全球成年创作者；2025年后完成；15分钟以内、横版1080P；须披露AI工具；非西英语言需西/英语字幕。</description>
+</item>
+<item>
 <title>【C】米尔顿凯恩斯国际电影节 (MKIFF) · 2026-10-05</title>
 <link>./#/c/recvtIfhUxetUP</link>
 <guid isPermaLink="false">recvtIfhUxetUP</guid>
@@ -158,6 +165,13 @@
 <guid isPermaLink="false">recvwdOgLt4pwH</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
 <description>最高奖励：无现金：展映+品牌AIGC商业订单机会+MANA扶持&lt;br&gt;报名费：免费&lt;br&gt;命题：命题&lt;br&gt;&lt;br&gt;“越AI越爱”创作季非遗专项赛道，含AI非遗短剧方向，全部以视频提交（1-5分钟），全龄可参与。</description>
+</item>
+<item>
+<title>【B】复新·大学生智能影像大赛（Fusion） · 2026-10-07</title>
+<link>./#/c/reczz28HJWV1HaQz</link>
+<guid isPermaLink="false">reczz28HJWV1HaQz</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：5项大奖各2万元+提名/入围&lt;br&gt;报名费：免费&lt;br&gt;命题：命题&lt;br&gt;&lt;br&gt;全球大学生智能影像创作竞赛；生成式视频≥1分钟、中英文字幕；须先在B站发布并填校方腾讯问卷；作品完成日期限9-20后。</description>
 </item>
 <item>
 <title>【A】首届「未来之光」2026粤港澳AI影视创意大赛 · 2026-10-08</title>
@@ -206,7 +220,7 @@
 <link>./#/c/recvsoUlbAAymC</link>
 <guid isPermaLink="false">recvsoUlbAAymC</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
-<description>最高奖励：Close-Up Cinema London 放映 + 类别桂冠（无现金）&lt;br&gt;报名费：$15-$25&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;在伦敦运营多年的 AI 影展（Erich Schultz 主办），于 Close-Up Cinema 季度放映，设最佳 AI 电影/导演/剧情/喜剧/惊悚等 8+ 类别桂冠。</description>
+<description>最高奖励：Close-Up Cinema London 放映 + 类别桂冠（无现金）&lt;br&gt;报名费：€20–30（官网提交页：多数类别 €30，Art Image €20 / Art Motion €25）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;在伦敦运营多年的 AI 影展（Erich Schultz 主办），于 Close-Up Cinema 季度放映，设最佳 AI 电影/导演/剧情/喜剧/惊悚等 8+ 类别桂冠。</description>
 </item>
 <item>
 <title>【B】第二届中国（澳门）国际动画电影节 AIGC单元作品征集 · 2026-10-10</title>
@@ -216,11 +230,32 @@
 <description>最高奖励：无现金奖（8项荣誉：奖杯证书+展映+产业对接）&lt;br&gt;报名费：官方未公布&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;第二届中国（澳门）国际动画电影节AIGC单元作品征集，面向所有创作者开放，要求参赛作品AI使用率≥70%、主题适配少儿正向价值观，设多类专业奖项，由行业及AIGC领域专家评审。</description>
 </item>
 <item>
+<title>【B】爆款开场计划·AI短片大赛 · 2026-10-10</title>
+<link>./#/c/reczz28HJWV1Hte3</link>
+<guid isPermaLink="false">reczz28HJWV1Hte3</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：总池20万元：最佳系列剧3万/最佳短片2万等30席&lt;br&gt;报名费：免费&lt;br&gt;命题：命题&lt;br&gt;&lt;br&gt;面向AI短片和系列剧的品牌创作竞赛，五个主题赛道；报名入口在赛事官网，成片规则以站内完整章程为准。</description>
+</item>
+<item>
 <title>【A】首届（2026）AIGC与可视化创作大赛 · 2026-10-11</title>
 <link>./#/c/recvsttZ6Sd6vF</link>
 <guid isPermaLink="false">recvsttZ6Sd6vF</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
 <description>最高奖励：无现金奖（仅证书+纪念品）&lt;br&gt;报名费：免费&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;六大赛道，面向全国相关机构和成年创作者；报名、作品提交、初赛和复赛均通过官方网站线上完成。</description>
+</item>
+<item>
+<title>【B】中韩青年AI短视频大赛 · 2026-10-12</title>
+<link>./#/c/reczz28HJWV1GfA2</link>
+<guid isPermaLink="false">reczz28HJWV1GfA2</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：大奖2名各1.5万元；二等6名各5千元；三等20名各1500元&lt;br&gt;报名费：免费&lt;br&gt;命题：命题&lt;br&gt;&lt;br&gt;面向中韩两国40岁以下青年；AI辅助生成；≤10分钟（推荐3-5分钟）；中文视频配韩文字幕、韩文视频配中文字幕；作品与报名表经指定邮箱提交。</description>
+</item>
+<item>
+<title>【B】Neuland Cinema柏林AI短片赛 · 2026-10-14</title>
+<link>./#/c/reczz28HJWV1H71h</link>
+<guid isPermaLink="false">reczz28HJWV1H71h</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：无现金奖（柏林 NeulandPro Connect 2026 主舞台放映+荣誉）&lt;br&gt;报名费：€15/€20/€25（早鸟/常规/晚期）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;柏林首届主题短片赛（Neuland Cinema by AI Filmmakers Berlin）；为本届主题新作；1-5分钟；生成式AI实质参与；MP4/MOV、≥1080P；持有全部素材权利。</description>
 </item>
 <item>
 <title>【B】2026“智绘声影”AIGC视听创作系列活动 · 2026-10-15</title>
@@ -255,7 +290,7 @@
 <link>./#/c/recvtIdz2uOMw3</link>
 <guid isPermaLink="false">recvtIdz2uOMw3</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
-<description>最高奖励：创作扶持金3万元（10000+4×5000）&lt;br&gt;报名费：￥0（免费）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;极视听AI短片超创季为 AIGC 短片征集活动（第1届，线上举办）。主题立意：当 AI 让「生成画面」变得轻而易举，更应追问画面背后是否有导演的思考、镜头之间是否有叙事的逻辑、光影之下是否有情感的流动。征片 2026-08-13 至 2026-09-20。</description>
+<description>最高奖励：创作扶持金3万元（10000+4×5000）&lt;br&gt;报名费：免费&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;极视听AI短片超创季为 AIGC 短片征集活动（第1届，线上举办）。主题立意：当 AI 让「生成画面」变得轻而易举，更应追问画面背后是否有导演的思考、镜头之间是否有叙事的逻辑、光影之下是否有情感的流动。征片 2026-08-13 至 2026-09-20。</description>
 </item>
 <item>
 <title>【A】第三届AI视觉创意大赛·瓦卡奖 · 2026-10-20</title>
@@ -291,6 +326,13 @@
 <guid isPermaLink="false">recvtDiykKO885</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
 <description>最高奖励：官方未公布现金奖（24K金场记板奖杯）&lt;br&gt;报名费：终轮$50标准/$35学生（早鸟$45/$30）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;迪拜 Golden Dunes 国际电影节设三个 AI 类别：最佳 AI 短片（30分钟内）、最佳 AI 广告（5分钟内）、最佳 AI 音乐视频。获奖作品在迪拜 Paramount Hotel Theatre 放映。红毯开幕 2026-11-29，颁奖夜 11-30。</description>
+</item>
+<item>
+<title>【A】2026金鸡电影AI单元征片（金鸡百花电影节） · 2026-10-20</title>
+<link>./#/c/reczz28HOxbiM8Th</link>
+<guid isPermaLink="false">reczz28HOxbiM8Th</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：无现金名次：推选年度AI作品/导演推荐各1部、叙事/创新推荐各3部；抖音专项流量扶持+5000元dou+券×2、小云雀算力积分5万–15万&lt;br&gt;报名费：免费（全过程不收取任何费用）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;2026年中国金鸡百花电影节AI单元（11月厦门）。公开征集AI深度参与的影像作品，时长5分钟以上，含AI原生叙事、AI与实拍融合、AI驱动动画三类描述性方向，不设赛道不预设分组。资格：18岁以上主体，作品2026-01-01后完成，≥1920×1080、≥24fps，每主体≤3部，非中文需中文字幕。报名须在抖音、小云雀AI双端发布作品带指定话题并经官方报名系统提交；入围10月公布，电影节期间公开展映并举办金鸡电影AI之夜、72小时极客松。著作权归创作者，提交不构成权利转让。</description>
 </item>
 <item>
 <title>【A】Graphis × 即梦AI AI创意设计竞赛 · 2026-10-27</title>
@@ -389,6 +431,13 @@
 <guid isPermaLink="false">recvtfF8uXyEg6</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
 <description>最高奖励：奖金池超10万元，一等奖¥10000&lt;br&gt;报名费：免费（邮箱+表单投稿）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;2026 GIS全球创新展AIGC创作大赛（灵光AIGC），由GIS全球创新展组委会（香港）主办，设数字人/IP形象/机器人三赛道，面向全球，征集截止2026-11-15；总奖金池超10万，一等奖1万/赛道。</description>
+</item>
+<item>
+<title>【B】AKOOL AI电影挑战赛 · 2026-11-20</title>
+<link>./#/c/reczz28HJWV1H4Au</link>
+<guid isPermaLink="false">reczz28HJWV1H4Au</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：总池至高$500,000：大奖$50,000、最佳故事$25,000、最具原创$15,000等&lt;br&gt;报名费：免费&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;30-90秒原创虚构电影预告片赛道；实质使用AKOOL工具；须在YouTube/TikTok/Instagram公开发布并加官方标签、话题和AKOOL标志；18岁以上。</description>
 </item>
 <item>
 <title>【A】鲸锐AI创作大赛（虎鲸AI人才计划） · 2026-11-22</title>
@@ -496,13 +545,6 @@
 <description>最高奖励：无现金奖（奖杯+周边+报道）&lt;br&gt;报名费：未公布具体金额（FF收费提交）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;AI类型清楚、费用不高，但首届和主办履约仍需观察。&lt;br&gt;&lt;br&gt;【认证】首届 · 乌克兰NGO MSIFF Creative HUB实体场地&lt;br&gt;&lt;br&gt;【命题要求】自由投稿·AI相关作品即可</description>
 </item>
 <item>
-<title>【S】Runway百部电影基金 · 2026-12-31</title>
-<link>./#/c/recvsoUlbAPORa</link>
-<guid isPermaLink="false">recvsoUlbAPORa</guid>
-<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
-<description>最高奖励：资助金 $5,000–$1M+/项目，另赠 $2M Runway 积分&lt;br&gt;报名费：免费&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;Runway / Runway Studios 的「Hundred Film Fund」开放式制作资助计划，资助约 100 部 AI 辅助电影（长片/短片/纪录片/实验/音乐视频等），基金 $5M 可增至 $10M，由 Runway 团队及行业顾问团（Tribeca 联合创始人 Jane Rosenthal 等）评审。实为制作资助基金而非竞赛电影节。</description>
-</item>
-<item>
 <title>【C】粤港澳大湾区 AIGC短剧制作征集大赛 · 2026-12-31</title>
 <link>./#/c/recvtfF8uWWHom</link>
 <guid isPermaLink="false">recvtfF8uWWHom</guid>
@@ -580,6 +622,13 @@
 <description>最高奖励：未公布现金奖（Awards栏为空）&lt;br&gt;报名费：$10-25（按deadline递增）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;AI CINEMA（Independent AI Film Festival Montréal 2027），2027/3/5 于蒙特利尔 Funamis 线下举办，自称「来自近未来的信号」，庆祝 AI 创作短片/实验/动画；设六大组别 30+ 奖项。</description>
 </item>
 <item>
+<title>【A】世界人工智能电影节·戛纳站（WAIFF Cannes） · 2027-02-15</title>
+<link>./#/c/reczz28HJWV1EYL7</link>
+<guid isPermaLink="false">reczz28HJWV1EYL7</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：无现金奖：获奖于戛纳棕榈节宫殿展映+差旅食宿&lt;br&gt;报名费：€15（据三方，或分€15/30/60档）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;WAIFF 戛纳站，面向国际创作者，AI须实质参与。注意：中国等已有地方站的国家不能直投戛纳站，需先经对应分站入口。</description>
+</item>
+<item>
 <title>【B】戛纳世界电影节·铭记未来(最佳AI电影)2027 · 2027-03-30</title>
 <link>./#/c/recvsoUlbAefct</link>
 <guid isPermaLink="false">recvsoUlbAefct</guid>
@@ -615,6 +664,13 @@
 <description>最高奖励：无现金奖（发行对接与放映）&lt;br&gt;报名费：￥49–330&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;距离巴塞罗那仅30分钟车程的迷人小镇——La Garriga，将作为今年备受期待的电影节举办地。这里以丰富的建筑遗产、精美的现代主义别墅，以及轻松惬意的地中海氛围而闻名，为影迷与电影创作者提供了一个独特而充满灵感的环境。</description>
 </item>
 <item>
+<title>【B】首尔国际AI电影节（SIAFF·2027届） · 2027-04-30</title>
+<link>./#/c/reczz28HJWV1GssG</link>
+<guid isPermaLink="false">reczz28HJWV1GssG</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：无现金奖（证书/奖杯；奖杯邮寄自付$200）&lt;br&gt;报名费：$20（各档同价）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;首尔国际AI电影节新一届；历届大量中国创作者获奖/入围（Gold Prize、银奖、最佳学生短片、最佳导演）；首尔线下举办。</description>
+</item>
+<item>
 <title>【B】戛纳电影奖·新AI单元2027 · 2027-05-01</title>
 <link>./#/c/recvsoUlbAAR23</link>
 <guid isPermaLink="false">recvsoUlbAAR23</guid>
@@ -641,6 +697,13 @@
 <guid isPermaLink="false">recvtIfhUxptdr</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
 <description>最高奖励：官方未公布奖金（线上颁奖+Instagram推广）&lt;br&gt;报名费：￥40–280&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;时代在变化，电影节仅仅在影院放映你的电影已经不够了。电影制作人在电影节巡回中花费了大量资金，但你能得到什么回报呢？Instagram 上的荣誉奖章？还是在不到100人的影院里放映你的电影？这些都不足以推动你职业生涯的下一步。</description>
+</item>
+<item>
+<title>【B】Meta Morph AI电影奖 · 2027-05-15</title>
+<link>./#/c/reczz28HJWV1GBpz</link>
+<guid isPermaLink="false">reczz28HJWV1GBpz</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：主赛无现金（另 TapNow 季节赛£500 为独立免费赛道）&lt;br&gt;报名费：€11–47 按类别与档期递增（如长片€35/41/47）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;2027届伦敦AI电影奖；接受AI动画、全AI影片、剧情、纪录、预告片等类别；多档期：早鸟09-30、常规04-30、最终延长05-15。</description>
 </item>
 <item>
 <title>【C】拉加里加电影节 · 2027-05-27</title>
@@ -720,6 +783,13 @@
 <description>最高奖励：现金 $250,000+（$1M+ 工具赠礼、头奖飞好莱坞）&lt;br&gt;报名费：免费&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;大规模AI影像与多媒体竞赛，新一季已预告9月启动，适合现在准备。&lt;br&gt;&lt;br&gt;【认证】ElevenLabs/fal/Freepik/字节Dreamina/Runway/LTX Studio赞助 · 奖金 $250,000+ 现金奖 + $1M+ 免费试用/推广&lt;br&gt;&lt;br&gt;【命题要求】自由投稿·AI相关作品即可</description>
 </item>
 <item>
+<title>【S】Runway百部电影基金 · 截止待公布</title>
+<link>./#/c/recvsoUlbAPORa</link>
+<guid isPermaLink="false">recvsoUlbAPORa</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：资助金 $5,000–$1M+/项目，另赠 $2M Runway 积分&lt;br&gt;报名费：免费&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;Runway / Runway Studios 的「Hundred Film Fund」开放式制作资助计划，资助约 100 部 AI 辅助电影（长片/短片/纪录片/实验/音乐视频等），基金 $5M 可增至 $10M，由 Runway 团队及行业顾问团（Tribeca 联合创始人 Jane Rosenthal 等）评审。实为制作资助基金而非竞赛电影节。</description>
+</item>
+<item>
 <title>【C】AI内容共创计划——400字起步，投稿即赢 · 截止待公布</title>
 <link>./#/c/recvstzYwty6nP</link>
 <guid isPermaLink="false">recvstzYwty6nP</guid>
@@ -732,5 +802,12 @@
 <guid isPermaLink="false">recvtfIGJMn0MQ</guid>
 <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
 <description>最高奖励：₹3,00,000（2025届The Craft Master最佳AI短片；总池₹6,00,000）&lt;br&gt;报名费：无&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;IFFI Goa AI Film Festival，由NFDC与LTIMindtree在印度国际电影节（IFFI）果阿创办的AI电影单元，2025首届展映AI生成短片并颁The Craft Honors（最佳AI短片₹3,00,000等）；2026届是否举办/截止日未核实。</description>
+</item>
+<item>
+<title>【B】Indywood国际AI电影节（IIAC） · 截止待公布</title>
+<link>./#/c/reczz28HJWV1Ephi</link>
+<guid isPermaLink="false">reczz28HJWV1Ephi</guid>
+<pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
+<description>最高奖励：前两名有现金奖（金额未公布），另设25项荣誉&lt;br&gt;报名费：低费用（具体未核实）&lt;br&gt;命题：自由投稿&lt;br&gt;&lt;br&gt;Indywood International AI Cinefest，印度喀拉拉；全球开放；非英语影片需英文字幕；每位创作者最多两部；首届已完成履约。</description>
 </item>
 </channel></rss>
