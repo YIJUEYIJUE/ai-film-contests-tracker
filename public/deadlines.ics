@@ -1,0 +1,1622 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CineCall//AI Contest Radar//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI 影像赛事截止 · 影赛雷达
+X-WR-TIMEZONE:Asia/Shanghai
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:recvs8rH4W0X0x@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【A】截止 · 北海道国际电影节·AI竞赛
+DESCRIPTION:最高奖励：无现金奖（金猫头鹰奖杯；设「最佳
+ 国际AI电影」类别）\n报名费：收费（按片长/投稿时段阶
+ 梯计费，约 US$12.9–32.3；学生可优惠）\n投递：https://film
+ freeway.com/hokkaido-international
+URL:https://filmfreeway.com/hokkaido-international
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：北海道国际电影节·AI竞赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WHCdI@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · “AI绘梦·京彩视听”重点项目征集
+DESCRIPTION:最高奖励：创作扶持金（金额未公布；含纪念品
+ 与官方证书）\n报名费：免费\n投递：https://zhengce.beijing.g
+ ov.cn
+URL:https://zhengce.beijing.gov.cn
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“AI绘梦·京彩视听”重点项目征集
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WMT5o@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【C】截止 · 常宝AI短剧季
+DESCRIPTION:最高奖励：¥10万(全场大奖)\n报名费：免费\n投
+ 递：https://aidrama.xiao5.cn/
+URL:https://aidrama.xiao5.cn/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：常宝AI短剧季
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4Wv3HE@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:【A】截止 · 世界AI电影节·洛杉矶美国站
+DESCRIPTION:最高奖励：无现金奖（水晶脑 Crystal Brain 奖杯；
+ 5部晋级 WAIFF Cannes 2027 总决赛）\n报名费：早鸟$30/$15·常
+ 规$45/$25·晚鸟$60/$35\n投递：https://filmfreeway.com/WorldAIFilmFes
+ tival-USA
+URL:https://filmfreeway.com/WorldAIFilmFestival-USA
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：世界AI电影节·洛杉矶美国站
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4W5HMd@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:【B】截止 · 2026“智绘声影”AIGC视听创作系列活动
+DESCRIPTION:最高奖励：单项最高 ¥50\,000 创作扶持金 + 价值
+ 百万元国礼瓷《喜上眉梢》樽（另官方荣誉证书）\n报名
+ 费：免费\n投递：https://gdj.fujian.gov.cn/xw/sjgz/202605/t20260522_
+ 7151106.htm
+URL:https://gdj.fujian.gov.cn/xw/sjgz/202605/t20260522_7151106.htm
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：2026“智绘声影”AIGC视听创作系列
+ 活动
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WQphJ@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · On Art电影节·AI单元
+DESCRIPTION:最高奖励：无现金奖/无实物奖（仅证书）\n报名
+ 费：$12(短片)/$14(中长)/$16(长片)\n投递：https://filmfreeway.co
+ m/OnAI
+URL:https://filmfreeway.com/OnAI
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：On Art电影节·AI单元
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WkbdM@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:【A】截止 · 第三届AI视觉创意大赛·瓦卡奖
+DESCRIPTION:最高奖励：穹顶巨幕赛道单项最高8万元现金（
+ 主赛道已收官）\n报名费：官方未公布（穹顶赛道未提及
+ 收费）\n投递：https://www.vacavaca.cn/vacat.html
+URL:https://www.vacavaca.cn/vacat.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：第三届AI视觉创意大赛·瓦卡奖
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4W2DEQ@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:【B】截止 · GenTO多伦多AI电影节
+DESCRIPTION:最高奖励：无现金奖（laurels+合作方奖品）\n报
+ 名费：官方FF页未展示（第三方称$20-40档，未验证）\n投
+ 递：https://filmfreeway.com/GenTOAIFilmFestival
+URL:https://filmfreeway.com/GenTOAIFilmFestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：GenTO多伦多AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4W5y8x@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:【B】截止 · DISRUPT AI电影节
+DESCRIPTION:最高奖励：1万澳元(总奖池)\n报名费：免费\n投
+ 递：https://filmfreeway.com/DAIFF
+URL:https://filmfreeway.com/DAIFF
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：DISRUPT AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WVNPT@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:【B】截止 · 韩国AI电影节
+DESCRIPTION:最高奖励：未公布现金奖（金/银/铜+评审团奖）
+ \n报名费：$20\n投递：https://filmfreeway.com/kacf
+URL:https://filmfreeway.com/kacf
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：韩国AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WzdJb@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:【A】截止 · 第十六届北京国际网络电影展·AIGC短
+ 片单元
+DESCRIPTION:最高奖励：官方未公布（仅设奖项）\n报名费：
+ 官方未公布\n投递：https://www.bjimff.com/zxbm
+URL:https://www.bjimff.com/zxbm
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：第十六届北京国际网络电影展·AIGC
+ 短片单元
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WeUhz@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【B】截止 · 柏林AI电影节
+DESCRIPTION:最高奖励：无现金奖（奖品为等值服务：策略咨
+ 询 $1\,500 + iPitch.tv 订阅 $189）\n报名费：$10/$20/$30\n投递：
+ https://filmfreeway.com/AIBerlin
+URL:https://filmfreeway.com/AIBerlin
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：柏林AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WLBKp@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【C】截止 · NeoCinema AI电影节
+DESCRIPTION:最高奖励：无现金奖（奖杯+周边+报道）\n报名
+ 费：未公布具体金额（FF收费提交）\n投递：https://filmfree
+ way.com/NeoCinemaAIFilmFestival
+URL:https://filmfreeway.com/NeoCinemaAIFilmFestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：NeoCinema AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WUeSB@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:【C】截止 · The Prompt国际AI短片电影节
+DESCRIPTION:最高奖励：无现金奖（仅电子证书）\n报名费：
+ €10–15（待 FilmFreeway 复核）\n投递：https://filmfreeway.com/T
+ hePromptFilmFestival
+URL:https://filmfreeway.com/ThePromptFilmFestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：The Prompt国际AI短片电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WLLmd@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【C】截止 · CSFCCA国际AI电影节
+DESCRIPTION:最高奖励：无现金奖（年度大奖外，奖杯需自购
+  $299）\n报名费：官方未公布（FF费用未渲染）\n投递：htt
+ ps://filmfreeway.com/CSFCCAAIFilmFestival
+URL:https://filmfreeway.com/CSFCCAAIFilmFestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：CSFCCA国际AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4Ws20j@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:【C】截止 · AI Filmfest Athens雅典AI电影节
+DESCRIPTION:最高奖励：€1\,000（4 个竞赛类别各 €1\,000）\n
+ 报名费：€20/€30/€45\n投递：https://filmfreeway.com/AIFilmfest
+ Athens
+URL:https://filmfreeway.com/AIFilmfestAthens
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI Filmfest Athens雅典AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WGwJt@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:【C】截止 · I’Mpossible AI电影节
+DESCRIPTION:最高奖励：无现金奖（laurels+证书+部分奖杯）\n
+ 报名费：官方未公布具体金额（仅称有减免）\n投递：htt
+ ps://filmfreeway.com/impossiblefilmfestival
+URL:https://filmfreeway.com/impossiblefilmfestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：I’Mpossible AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WXSxg@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:【C】截止 · AI电影奖·巴厘岛站
+DESCRIPTION:最高奖励：无现金奖（Crystal Brain奖杯+放映）\n
+ 报名费：官方未公布（FF分档收费未展示）\n投递：https:/
+ /filmfreeway.com/AIFILMAWARDS-BALI
+URL:https://filmfreeway.com/AIFILMAWARDS-BALI
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI电影奖·巴厘岛站
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvs8rH4WX7ur@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:【C】截止 · AI ZONE国际AI电影节
+DESCRIPTION:最高奖励：大奖$500现金（需同意AI Zone平台发布
+ ）\n报名费：官网未载明（经FilmFreeway提交）\n投递：https
+ ://filmfreeway.com/AIZONEInternationalAIFilmFestival2026
+URL:https://filmfreeway.com/AIZONEInternationalAIFilmFestival2026
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI ZONE国际AI电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAsYvb@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【A】截止 · We Are Human电影节·征片(巴黎)
+DESCRIPTION:最高奖励：总 €10\,000：Grand Prix €5\,000 + 最佳
+ 剧本 €3\,000 + 伦理奖 €2\,000\n报名费：免费\n投递：https
+ ://wearehuman.foundation/en/Call-for-Films/
+URL:https://wearehuman.foundation/en/Call-for-Films/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：We Are Human电影节·征片(巴黎)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAe39Z@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:【S】截止 · Slamdance电影节·DIG(AI单元)2027
+DESCRIPTION:最高奖励：$25\,000 AGBO Fellowship + Utopia 发行协议\n
+ 报名费：$50/$60/$70/$90\n投递：https://slamdance.com/festival-submi
+ t/
+URL:https://slamdance.com/festival-submit/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Slamdance电影节·DIG(AI单元)2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAAymC@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:【B】截止 · AI伦敦电影节
+DESCRIPTION:最高奖励：Close-Up Cinema London 放映 + 类别桂冠（
+ 无现金）\n报名费：$15-$25\n投递：https://filmfreeway.com/AIMovi
+ eAwards
+URL:https://filmfreeway.com/AIMovieAwards
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI伦敦电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAgiAy@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:【B】截止 · AI创意奖
+DESCRIPTION:最高奖励：荣誉奖项（获奖/入围称号、数字桂
+ 冠、公开结果展示、证书），无现金\n报名费：£25早鸟/
+ £35标准/£15学生\n投递：https://aicreativityawards.com/
+URL:https://aicreativityawards.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI创意奖
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAwipc@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:【B】截止 · LAAIMPA洛杉矶AI电影奖
+DESCRIPTION:最高奖励：数字桂冠 + 证书 + 可选奖杯 + 精选者
+  NFT（无现金）\n报名费：免费\n投递：https://laaimpa.com/
+URL:https://laaimpa.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：LAAIMPA洛杉矶AI电影奖
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbA5dMy@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:【B】截止 · JIFF世界AI电影竞赛(斋浦尔)2027
+DESCRIPTION:最高奖励：AI竞赛奖池₹10万（全节最高500万卢
+ 比，视政府支持）\n报名费：AI短片₹10\,000/$110；AI长片
+ ₹25\,000/$300\n投递：https://jiffindia.org/
+URL:https://jiffindia.org/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：JIFF世界AI电影竞赛(斋浦尔)2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAPORa@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【S】截止 · Runway百部电影基金
+DESCRIPTION:最高奖励：资助金 $5\,000–$1M+/项目，另赠 $2M Run
+ way 积分\n报名费：免费\n投递：https://runwayml.com/hundred-film
+ -fund
+URL:https://runwayml.com/hundred-film-fund
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Runway百部电影基金
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAGggQ@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:【B】截止 · 全球AI音乐视频奖(GAIMVA)2027
+DESCRIPTION:最高奖励：现金奖 $1\,000\n报名费：$20/$30/$40\n投
+ 递：https://filmmakers.festhome.com/en/festival/global-ai-music-video-aw
+ ards
+URL:https://filmmakers.festhome.com/en/festival/global-ai-music-video-award
+ s
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：全球AI音乐视频奖(GAIMVA)2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbA2pih@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:【B】截止 · LundinStudio AI电影节2027(悉尼)
+DESCRIPTION:最高奖励：Laurel+$300+返还报名费+订阅权益\n报名
+ 费：FF收费但金额未显示\n投递：https://aifilmfestival.com.au
+URL:https://aifilmfestival.com.au
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：LundinStudio AI电影节2027(悉尼)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbA6QlX@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:【A】截止 · 迪拜世博AI电影节2027
+DESCRIPTION:最高奖励：官方未公布（FF称 prizes announced soon）
+ \n报名费：短片$15/长片$25（第三方数据）\n投递：https://w
+ ww.aifilmfest.ae/
+URL:https://www.aifilmfest.ae/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：迪拜世博AI电影节2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAWwLK@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:【B】截止 · 魁北克城AI电影节2027
+DESCRIPTION:最高奖励：Grand Prix Québec等荣誉，无现金奖说明
+ \n报名费：官方未公布\n投递：https://quebec.aicinemafestival.co
+ m/
+URL:https://quebec.aicinemafestival.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：魁北克城AI电影节2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAKSmG@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:【B】截止 · 蒙特利尔AI电影制作节2027
+DESCRIPTION:最高奖励：未公布现金奖（Awards栏为空）\n报名
+ 费：$10-25（按deadline递增）\n投递：https://filmfreeway.com/IAMC
+ INEMA
+URL:https://filmfreeway.com/IAMCINEMA
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：蒙特利尔AI电影制作节2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAefct@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:【B】截止 · 戛纳世界电影节·铭记未来(最佳AI电影
+ )2027
+DESCRIPTION:最高奖励：无现金奖（laurels+证书+Luciole d'Or奖杯
+ +戛纳放映）\n报名费：FF收费（金额未显示）\n投递：http
+ s://filmfreeway.com/CannesWorldFilmFestival
+URL:https://filmfreeway.com/CannesWorldFilmFestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：戛纳世界电影节·铭记未来(最佳AI
+ 电影)2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbAAR23@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:【B】截止 · 戛纳电影奖·新AI单元2027
+DESCRIPTION:最高奖励：全节展现金奖总计 $1\,000（Best Feature 
+ 250 / Doc 200 / Short 250 / Music Video 100 / Director 100 / Screenplay 10
+ 0）；AI 为新增类别，专属奖金未单列\n报名费：免费–$3
+ 30（部分类别免费，最高 $330；Gold 会员最低 $30）\n投递
+ ：https://filmfreeway.com/CannesFilmAwards
+URL:https://filmfreeway.com/CannesFilmAwards
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：戛纳电影奖·新AI单元2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsoUlbArRso@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:【B】截止 · 纽约AI电影节2027
+DESCRIPTION:最高奖励：Grand Prix NYC 等命名奖（无现金）\n报
+ 名费：未公布（官网投稿页未列费用，可能免费）\n投递
+ ：https://nyc.aicinemafestival.com/
+URL:https://nyc.aicinemafestival.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：纽约AI电影节2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsttZ6Sd6vF@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:【A】截止 · 首届（2026）AIGC与可视化创作大赛
+DESCRIPTION:最高奖励：无现金奖（仅证书+纪念品）\n报名费
+ ：免费\n投递：https://aigc.capt.cn/
+URL:https://aigc.capt.cn/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：首届（2026）AIGC与可视化创作大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsttZ6S4HVM@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【A】截止 · 腾讯客服“一老一小”AI公益视频大赛
+DESCRIPTION:最高奖励：特等奖1万元；现金奖金合计11.1万元\
+ n报名费：免费\n投递：https://lingya.qq.com/en/activity/act_h5nOen
+ 12KJ
+URL:https://lingya.qq.com/en/activity/act_h5nOen12KJ
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：腾讯客服“一老一小”AI公益视频
+ 大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvsttZ6Scqgu@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:【S】截止 · PixLight 2026全球AI类型片影像大赛
+DESCRIPTION:最高奖励：最高奖10万美元；总奖金30万美元（33
+ 个获奖名额，税前）\n报名费：免费\n投递：https://app.pixv
+ erse.ai/challenge/pixlight/submit
+URL:https://app.pixverse.ai/challenge/pixlight/submit
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：PixLight 2026全球AI类型片影像大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvstzYwtjtIr@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · 好客山东·艺智齐鲁｜2026山东省青少
+ 年非遗AI创新设计大赛
+DESCRIPTION:最高奖励：无现金奖（奖项称号+巡展+孵化对接
+ ）\n报名费：免费（公益活动）\n投递：https://hksd.haxiql.co
+ m/
+URL:https://hksd.haxiql.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：好客山东·艺智齐鲁｜2026山东省青
+ 少年非遗AI创新设计大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvstzYwt5n69@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:【A】截止 · 首届「未来之光」2026粤港澳AI影视创
+ 意大赛
+DESCRIPTION:最高奖励：官方未公布现金奖（荣誉奖项+≥1000
+ 万投资对接）\n报名费：免费（面向全球创作者免费开放
+ ）\n投递：https://dreamkey.cn/nexora_ai_contest.html
+URL:https://dreamkey.cn/nexora_ai_contest.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：首届「未来之光」2026粤港澳AI影视
+ 创意大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvstzYwt1fUM@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:【B】截止 · 第二届中国（澳门）国际动画电影节 A
+ IGC单元作品征集
+DESCRIPTION:最高奖励：无现金奖（8项荣誉：奖杯证书+展映+
+ 产业对接）\n报名费：官方未公布\n投递：https://www.aitop10
+ 0.cn/aicreation/index.html?id=45&type=video
+URL:https://www.aitop100.cn/aicreation/index.html?id=45&type=video
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：第二届中国（澳门）国际动画电影
+ 节 AIGC单元作品征集
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvstzYwt6Cq7@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:【A】截止 · Graphis × 即梦AI AI创意设计竞赛
+DESCRIPTION:最高奖励：非现金（Platinum/Gold/Silver荣誉+年鉴收
+ 录）\n报名费：美元计价（即梦用户享五折）\n投递：http
+ s://www.graphis.com/
+URL:https://www.graphis.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Graphis × 即梦AI AI创意设计竞赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfEhTa9DSo@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【C】截止 · 首届AI赋能国际传播大赛暨第二届中华
+ 文化多语种创意短视频大赛
+DESCRIPTION:最高奖励：奖金未公布（奖项名额+展播入库）\n
+ 报名费：免费（官方原文“不收取任何报名费用”）\n投
+ 递：https://mp.weixin.qq.com/s/kqW6x7BdSVtYTcwJXQeQDg
+URL:https://mp.weixin.qq.com/s/kqW6x7BdSVtYTcwJXQeQDg
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：首届AI赋能国际传播大赛暨第二届
+ 中华文化多语种创意短视频大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfF8uWWHom@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【C】截止 · 粤港澳大湾区 AIGC短剧制作征集大赛
+DESCRIPTION:最高奖励：官方未公布\n报名费：未提及（表单
+ 投稿，未见收费条款）\n投递：https://mp.weixin.qq.com/s/UshdP5
+ -5R7ooZxE20Ye3iw
+URL:https://mp.weixin.qq.com/s/UshdP5-5R7ooZxE20Ye3iw
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：粤港澳大湾区 AIGC短剧制作征集大
+ 赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfF8uXyEg6@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:【B】截止 · 2026 GIS全球创新展AIGC创作大赛
+DESCRIPTION:最高奖励：奖金池超10万元，一等奖¥10000\n报名
+ 费：免费（邮箱+表单投稿）\n投递：https://www.gis1000.com/gi
+ s_cn_aigc.html
+URL:https://www.gis1000.com/gis_cn_aigc.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：2026 GIS全球创新展AIGC创作大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfH7oajt4R@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:【B】截止 · DreamSeed种梦计划AI创造者大赛
+DESCRIPTION:最高奖励：25万元（总奖金池50万元）\n报名费：
+ 无\n投递：http://www.dreamfield.top
+URL:http://www.dreamfield.top
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：DreamSeed种梦计划AI创造者大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfH7oaEavi@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:【B】截止 · 创所未见·2026年度AI短片计划
+DESCRIPTION:最高奖励：组委会奖金（金额官方未公布）\n报
+ 名费：无\n投递：https://sensetime.com/hk/news/51170595/
+URL:https://sensetime.com/hk/news/51170595/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：创所未见·2026年度AI短片计划
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfIGJMkaQz@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:【C】截止 · Dasein AI Film Festival
+DESCRIPTION:最高奖励：无现金奖（奖杯/laurels/署名/credits）\
+ n报名费：有（FilmFreeway投稿费 $10–40，学生优惠）\n投递
+ ：https://filmfreeway.com/DaseinFilmFestival
+URL:https://filmfreeway.com/DaseinFilmFestival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Dasein AI Film Festival
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfIGJMj3yu@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:【B】截止 · AI for Good Film Festival
+DESCRIPTION:最高奖励：无现金奖（奖杯+日内瓦放映+Summit Spe
+ aker Pass）\n报名费：无\n投递：https://aiforgood.itu.int/ai-for-g
+ ood-film-festival/
+URL:https://aiforgood.itu.int/ai-for-good-film-festival/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI for Good Film Festival
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfIGJMaAE5@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:【C】截止 · AI SLOP
+DESCRIPTION:最高奖励：官方未公布\n报名费：官方未公布\n
+ 投递：https://filmfreeway.com/aislopfest
+URL:https://filmfreeway.com/aislopfest
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI SLOP
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfIGJMtjDD@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270902
+DTEND;VALUE=DATE:20270903
+SUMMARY:【C】截止 · A.I. | New Media | Experimental | Digital Arts Fil
+ m Festival
+DESCRIPTION:最高奖励：官方未公布\n报名费：有（FilmFreeway
+ 分层投稿费）\n投递：https://filmfreeway.com/01NFTNewMediaExpDigit
+ alArtsFest
+URL:https://filmfreeway.com/01NFTNewMediaExpDigitalArtsFest
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：A.I. | New Media | Experimental | Digital Arts
+  Film Festival
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtfIGJM4hhb@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:【C】截止 · AI TALENTS NEW YORK
+DESCRIPTION:最高奖励：无现金奖（13类荣誉，获奖放映+reel
+ ）\n报名费：官方未公布\n投递：https://filmfreeway.com/aitalen
+ tsny
+URL:https://filmfreeway.com/aitalentsny
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI TALENTS NEW YORK
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykKO885@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:【C】截止 · Golden Dunes Dubai 国际电影节2026（AI单元
+ ）
+DESCRIPTION:最高奖励：官方未公布现金奖（24K金场记板奖杯
+ ）\n报名费：终轮$50标准/$35学生（早鸟$45/$30）\n投递：ht
+ tps://goldendunesfilmfestival.com/
+URL:https://goldendunesfilmfestival.com/
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Golden Dunes Dubai 国际电影节2026（AI单
+ 元）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykKKUZ1@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:【B】截止 · 2026 AI恐怖片大赛（Curious Refuge）
+DESCRIPTION:最高奖励：$12\,000（$7k/$3k/$2k）\n报名费：免费\n
+ 投递：https://curiousrefuge.com/ai-filmmaking-competitions
+URL:https://curiousrefuge.com/ai-filmmaking-competitions
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：2026 AI恐怖片大赛（Curious Refuge）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykKNkWh@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:【B】截止 · TAIFF 土耳其国际AI电影节（第3届）
+DESCRIPTION:最高奖励：无固定现金奖（奖杯；国际组报名费
+ 收入作奖金再分配）\n报名费：免费\n投递：https://filmmake
+ rs.festhome.com/en/festival/turkiye-international-ai-film-festival
+URL:https://filmmakers.festhome.com/en/festival/turkiye-international-ai-fi
+ lm-festival
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：TAIFF 土耳其国际AI电影节（第3届）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykK3uZg@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:【B】截止 · 2026 AI假日影片大赛（Curious Refuge × Epid
+ emic Sound）
+DESCRIPTION:最高奖励：$7\,500+\n报名费：免费\n投递：https://c
+ uriousrefuge.com/ai-filmmaking-competitions
+URL:https://curiousrefuge.com/ai-filmmaking-competitions
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：2026 AI假日影片大赛（Curious Refuge × 
+ Epidemic Sound）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykKANpj@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【C】截止 · AI Film & Ads Awards India
+DESCRIPTION:最高奖励：Crystal Brain Award（无现金奖说明）\n报
+ 名费：收费但金额未公布（FF页404）\n投递：https://filmfree
+ way.com/aifilmawardsIndia
+URL:https://filmfreeway.com/aifilmawardsIndia
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI Film & Ads Awards India
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykKK8hH@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【C】截止 · AI Film Awards Las Vegas
+DESCRIPTION:最高奖励：无现金奖（奖杯/laurels）\n报名费：
+ 收费（金额未公布）\n投递：https://filmfreeway.com/AI_Film_Awar
+ ds_LasVegas
+URL:https://filmfreeway.com/AI_Film_Awards_LasVegas
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI Film Awards Las Vegas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtDiykKWbDG@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20271017
+DTEND;VALUE=DATE:20271018
+SUMMARY:【C】截止 · AI Cinema Festival Cannes 2027
+DESCRIPTION:最高奖励：Grand Prix等荣誉，无现金奖说明\n报名
+ 费：官方未公布\n投递：https://cannes.aicinemafestival.com
+URL:https://cannes.aicinemafestival.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI Cinema Festival Cannes 2027
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtI1g1akRv7@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【A】截止 · 安娜堡电影节65th（Ann Arbor Film Festival
+ ）
+DESCRIPTION:最高奖励：约 $40\,000（现金+实物）\n报名费：$80
+ （短片 Late；Early $45 / Regular $60 已过）\n投递：https://filmf
+ reeway.com/AAFilmFest
+URL:https://filmfreeway.com/AAFilmFest
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：安娜堡电影节65th（Ann Arbor Film Festiv
+ al）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIdz2uOMw3@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:【C】截止 · 极视听AI短片超创季
+DESCRIPTION:最高奖励：创作扶持金3万元（10000+4×5000）\n报
+ 名费：￥0（免费）\n投递：https://www.toujiang.today/filmfest/10
+ 60
+URL:https://www.toujiang.today/filmfest/1060
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：极视听AI短片超创季
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIdz2ub9FF@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:【C】截止 · 晒威（Sharvie）影展
+DESCRIPTION:最高奖励：官方未公布现金奖金\n报名费：AI电
+ 影单元报名¥20\n投递：https://www.toujiang.today/filmfest/340
+URL:https://www.toujiang.today/filmfest/340
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：晒威（Sharvie）影展
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUwx9ep@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:【C】截止 · 安布罗西亚国际电影节
+DESCRIPTION:最高奖励：官方未公布奖金\n报名费：￥220–280\
+ n投递：https://www.toujiang.today/filmfest/282
+URL:https://www.toujiang.today/filmfest/282
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：安布罗西亚国际电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxEEFV@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:【C】截止 · 阿文图拉斯港国际电影节
+DESCRIPTION:最高奖励：官方未公布奖金\n报名费：￥100–250\
+ n投递：https://www.toujiang.today/filmfest/743
+URL:https://www.toujiang.today/filmfest/743
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：阿文图拉斯港国际电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxNrgd@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:【C】截止 · “走向荒野”电影节
+DESCRIPTION:最高奖励：无现金奖（发行对接与放映）\n报名
+ 费：￥49–330\n投递：https://www.toujiang.today/filmfest/492
+URL:https://www.toujiang.today/filmfest/492
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“走向荒野”电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxwJGQ@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:【C】截止 · 拉加里加电影节
+DESCRIPTION:最高奖励：官方未公布奖金\n报名费：￥49–330\n
+ 投递：https://www.toujiang.today/filmfest/619
+URL:https://www.toujiang.today/filmfest/619
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：拉加里加电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxi8GR@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:【C】截止 · 卡莱利亚短片电影节
+DESCRIPTION:最高奖励：官方未公布奖金（评审团荣誉）\n报
+ 名费：￥40–247\n投递：https://www.toujiang.today/filmfest/1029
+URL:https://www.toujiang.today/filmfest/1029
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：卡莱利亚短片电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxzGFs@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:【C】截止 · 环球动漫游戏节 2026
+DESCRIPTION:最高奖励：官方未公布\n报名费：￥476.76–681.09\
+ n投递：https://www.toujiang.today/filmfest/1027
+URL:https://www.toujiang.today/filmfest/1027
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：环球动漫游戏节 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxeJyf@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:【C】截止 · Enjoy独立电影节
+DESCRIPTION:最高奖励：无现金奖（荣誉标识+曝光+发行对接
+ ）\n报名费：￥42–178\n投递：https://www.toujiang.today/filmfest
+ /458
+URL:https://www.toujiang.today/filmfest/458
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Enjoy独立电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxWnsd@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:【C】截止 · 影卷之主电影节
+DESCRIPTION:最高奖励：无现金奖（专属laurels/宣传/行业对接
+ ）\n报名费：报名费¥44-250（投奖价）\n投递：https://www.to
+ ujiang.today/filmfest/409
+URL:https://www.toujiang.today/filmfest/409
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：影卷之主电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxY6cl@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:【C】截止 · The Ring Of Fire国际电影节
+DESCRIPTION:最高奖励：官方未公布现金奖\n报名费：报名费
+ ¥40-87\n投递：https://www.toujiang.today/filmfest/351
+URL:https://www.toujiang.today/filmfest/351
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：The Ring Of Fire国际电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxT7ot@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:【C】截止 · 巴达洛纳电影节
+DESCRIPTION:最高奖励：无现金奖（Instagram推介/放映）\n报名
+ 费：报名费¥32-120（投奖价）\n投递：https://www.toujiang.toda
+ y/filmfest/711
+URL:https://www.toujiang.today/filmfest/711
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：巴达洛纳电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxptdr@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:【C】截止 · 新世界电影节
+DESCRIPTION:最高奖励：官方未公布奖金（线上颁奖+Instagram
+ 推广）\n报名费：￥40–280\n投递：https://www.toujiang.today/fi
+ lmfest/1034
+URL:https://www.toujiang.today/filmfest/1034
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：新世界电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxTdGk@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270610
+DTEND;VALUE=DATE:20270611
+SUMMARY:【C】截止 · 奥洛特电影节
+DESCRIPTION:最高奖励：官方未公布奖金\n报名费：￥41–280\n
+ 投递：https://www.toujiang.today/filmfest/1035
+URL:https://www.toujiang.today/filmfest/1035
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：奥洛特电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUx1uBc@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:【C】截止 · IFM国际电影市场
+DESCRIPTION:最高奖励：无现金奖（发行合同对接）\n报名费
+ ：￥44–250\n投递：https://www.toujiang.today/filmfest/1048
+URL:https://www.toujiang.today/filmfest/1048
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：IFM国际电影市场
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxetUP@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:【C】截止 · 米尔顿凯恩斯国际电影节 (MKIFF)
+DESCRIPTION:最高奖励：官方未公布\n报名费：￥187.96–328.93\
+ n投递：https://www.toujiang.today/filmfest/688
+URL:https://www.toujiang.today/filmfest/688
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：米尔顿凯恩斯国际电影节 (MKIFF)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxbnBx@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:【C】截止 · 西班牙穆查梅尔“南方”汽车影院电
+ 影节
+DESCRIPTION:最高奖励：无现金奖（仅观众选择奖）\n报名费
+ ：￥50–330\n投递：https://www.toujiang.today/filmfest/554
+URL:https://www.toujiang.today/filmfest/554
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：西班牙穆查梅尔“南方”汽车影院
+ 电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxDfLQ@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:【C】截止 · 独立电影之家节展
+DESCRIPTION:最高奖励：无现金奖（高提名率+社媒推广）\n报
+ 名费：￥40–250\n投递：https://www.toujiang.today/filmfest/1045
+URL:https://www.toujiang.today/filmfest/1045
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：独立电影之家节展
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvtIfhUxOeoL@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20270821
+DTEND;VALUE=DATE:20270822
+SUMMARY:【C】截止 · 莫斯科亚洲电影节
+DESCRIPTION:最高奖励：官方未公布\n报名费：￥180–300\n投
+ 递：https://www.toujiang.today/filmfest/294
+URL:https://www.toujiang.today/filmfest/294
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：莫斯科亚洲电影节
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOf2THeno@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · WAIMF世界AI电影节·马贝拉站
+DESCRIPTION:最高奖励：Grand Prix $500现金+水晶杯+礼品\n报名
+ 费：官方未公布\n投递：https://filmfreeway.com/WAIMF
+URL:https://filmfreeway.com/WAIMF
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：WAIMF世界AI电影节·马贝拉站
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOf2TkaAf@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · AI Film Fest Italy（第2届）
+DESCRIPTION:最高奖励：无现金（Best AI Short等奖项）\n报名费
+ ：€5-10\n投递：https://aifilmfest.it
+URL:https://aifilmfest.it
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI Film Fest Italy（第2届）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOf2TMJyj@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · AI Film Festival Japan 东京
+DESCRIPTION:最高奖励：无现金（赞助奖：CapCut Pro一年+5万cre
+ dits）\n报名费：官网未列金额（第三方目录标免费）\n投
+ 递：https://filmfreeway.com/AIFilmFestivalJapan2026
+URL:https://filmfreeway.com/AIFilmFestivalJapan2026
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI Film Festival Japan 东京
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOf2TZcQy@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · Formula E Creators Challenge 2026
+DESCRIPTION:最高奖励：无现金：入围BFI IMAX伦敦首映（10/22
+ ）+冠军获Formula E比赛VIP之旅（含$4\,000差旅）\n报名费：
+ 免费\n投递：https://gen4challenge.com
+URL:https://gen4challenge.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Formula E Creators Challenge 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOf2TR2tU@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:【B】截止 · AI for the Future Festival·COP31版
+DESCRIPTION:最高奖励：无现金：UN场合展映与认证\n报名费
+ ：官方未公布\n投递：https://filmfreeway.com/AIfortheFutureFest
+URL:https://filmfreeway.com/AIfortheFutureFest
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI for the Future Festival·COP31版
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOgLt56uz@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:【A】截止 · 金鸡AI影展作品征集（AIGC未来影像）
+DESCRIPTION:最高奖励：无现金：七项年度荣誉+官方证书+展
+ 映\n报名费：免费\n投递：https://qr61.cn/oU0qhd/qqebyZg
+URL:https://qr61.cn/oU0qhd/qqebyZg
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：金鸡AI影展作品征集（AIGC未来影像
+ ）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOgLtBo6Z@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【B】截止 · 腾讯视频海外AI精品影视项目征集·第5
+ 期
+DESCRIPTION:最高奖励：非奖金制：签约后获投资/算力/发行
+ 全链路支持\n报名费：免费\n投递：https://lingya.qq.com/activi
+ ty/act_dN8mnoETOF
+URL:https://lingya.qq.com/activity/act_dN8mnoETOF
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：腾讯视频海外AI精品影视项目征集·
+ 第5期
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOgLtGwTU@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【C】截止 · 芒果灵创·西游奇谭AIGC创作赛
+DESCRIPTION:最高奖励：无现金：生产栗积分（创作赛最高400
+ 0）+官方流量扶持\n报名费：免费\n投递：https://aigc.mgtv.co
+ m/challenges/detail?id=18
+URL:https://aigc.mgtv.com/challenges/detail?id=18
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：芒果灵创·西游奇谭AIGC创作赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOgLtHBmR@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:【C】截止 · “AI+AQ”国家安全主题AI创意视频征集
+DESCRIPTION:最高奖励：无现金：国安主题文创纪念品+官方
+ 展播\n报名费：免费\n投递：http://邮箱投稿 aixaq2026@163.com
+URL:http://邮箱投稿 aixaq2026@163.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“AI+AQ”国家安全主题AI创意视频征
+ 集
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOgLt4pwH@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:【C】截止 · 同济大学“非遗·越千年”AIGC创作大
+ 赛
+DESCRIPTION:最高奖励：无现金：展映+品牌AIGC商业订单机会+
+ MANA扶持\n报名费：免费\n投递：https://www.shejijingsai.com/2026
+ /09/1645748.html
+URL:https://www.shejijingsai.com/2026/09/1645748.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：同济大学“非遗·越千年”AIGC创作
+ 大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOiiAqUr0@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:【C】截止 · Vidu S2互动挑战“Make It Weird”
+DESCRIPTION:最高奖励：一等奖2000元+1000积分（二等1500/三等1
+ 000/精选500）\n报名费：免费\n投递：https://vidu.cn/activity/34
+ 67425799379243
+URL:https://vidu.cn/activity/3467425799379243
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：Vidu S2互动挑战“Make It Weird”
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOiiAc7yS@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:【C】截止 · “月圆国盛AI绘徽州”AIGC短视频/短剧
+ 征集
+DESCRIPTION:最高奖励：一等奖1万×1、二等奖2000×2；入驻基
+ 地创业补贴至高1.5万\n报名费：免费\n投递：https://www.aito
+ p100.cn/infomation/details/34745.html
+URL:https://www.aitop100.cn/infomation/details/34745.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“月圆国盛AI绘徽州”AIGC短视频/短
+ 剧征集
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOiiA14HU@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:【C】截止 · NOVA AI赛博创想季视频创作大赛
+DESCRIPTION:最高奖励：一等奖5000元（代扣20%个税）+积分\n
+ 报名费：免费\n投递：https://www.aitop100.cn/infomation/details/34
+ 697.html
+URL:https://www.aitop100.cn/infomation/details/34697.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：NOVA AI赛博创想季视频创作大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOiiAUf1e@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:【B】截止 · “剧说岳麓”万兴剧厂AI影视创作大赛
+DESCRIPTION:最高奖励：现金奖池10万（单项最高5万）+50个优
+ 秀作品奖共10万积分+67万AI积分\n报名费：免费\n投递：htt
+ ps://wondershare.cn/new/details/id/1208.html
+URL:https://wondershare.cn/new/details/id/1208.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“剧说岳麓”万兴剧厂AI影视创作
+ 大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOiiA2jTV@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:【B】截止 · 原野春天AI食育短片大赛
+DESCRIPTION:最高奖励：现金10万（特等1.6万/一等8000×3/二等5
+ 000×6/三等2500×12）+1000万SeeBay积分+50强免费确权\n报名费
+ ：免费\n投递：http://邮箱投稿 3113907798@qq.com
+URL:http://邮箱投稿 3113907798@qq.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：原野春天AI食育短片大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOjSliprn@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:【B】截止 · AI广西·一起拍网络文化短视频征集
+DESCRIPTION:最高奖励：扶持金合计18万：一类8000×10/二类4000
+ ×15/三类2000×20（鼓励奖仅证书）\n报名费：免费\n投递：
+ https://www.aitop100.cn/infomation/details/34758.html
+URL:https://www.aitop100.cn/infomation/details/34758.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：AI广西·一起拍网络文化短视频征集
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOjSl4mP7@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:【A】截止 · “看见微光”可灵AI公益影像大赛
+DESCRIPTION:最高奖励：现金合计32万：金奖10万/银奖5万/铜
+ 奖3万/公益新声奖2万×7+灵感值\n报名费：免费\n投递：htt
+ ps://klingai.com
+URL:https://klingai.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“看见微光”可灵AI公益影像大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOjSlNIb3@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:【A】截止 · 鲸锐AI创作大赛（虎鲸AI人才计划）
+DESCRIPTION:最高奖励：总奖金池1000万：人才奖200万/最佳原
+ 创IP 50万×4/单项10万×20/新锐5万×40/潜力1万×200，共265名
+ 额\n报名费：免费\n投递：https://jingrui-ai-competition.youku.com
+URL:https://jingrui-ai-competition.youku.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：鲸锐AI创作大赛（虎鲸AI人才计划）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOjSlmQn2@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:【B】截止 · “这就是深圳”第3季短视频征集·AI生
+ 成式赛道
+DESCRIPTION:最高奖励：两赛道合计7.4万（含税）：每赛道一
+ 等1万/二等6000×2/三等3000×3/优秀1000×6\n报名费：免费\n投
+ 递：https://aki.com.cn/szstory2026
+URL:https://aki.com.cn/szstory2026
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：“这就是深圳”第3季短视频征集·A
+ I生成式赛道
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdOjSlhvYz@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:【B】截止 · NEXTGEN新影像创投计划（可灵）
+DESCRIPTION:最高奖励：非奖金制：单项目最高600万现金投资
+ \n报名费：免费\n投递：https://klingai.com
+URL:https://klingai.com
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：NEXTGEN新影像创投计划（可灵）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdXwguDMFO@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:【A】截止 · 华语科幻星云奖·全球AIGC长片创作大
+ 赛
+DESCRIPTION:最高奖励：总池550万（350万现金+200万算力）：
+ 全场大奖100万现金+30万算力\n报名费：免费\n投递：https:/
+ /www.runninghub.cn/inspire
+URL:https://www.runninghub.cn/inspire
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：华语科幻星云奖·全球AIGC长片创作
+ 大赛
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:recvwdXwguXCmM@cinecall
+DTSTAMP:20260929T082749Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:【C】截止 · HKAIDA·香港AI艺术创作大赛（第二季）
+DESCRIPTION:最高奖励：院校组至尊大奖2万港元；专业组1万
+ 港元+AI会员礼包\n报名费：55元/件（提交后不退）\n投递
+ ：https://www.hkaida.hk
+URL:https://www.hkaida.hk
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3 天后截止：HKAIDA·香港AI艺术创作大赛（第二季
+ ）
+END:VALARM
+END:VEVENT
+END:VCALENDAR
