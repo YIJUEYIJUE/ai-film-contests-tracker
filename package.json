@@ -1,8 +1,8 @@
 {
-  "name": "cinecall",
+  "name": "ai-contest-assistant",
   "version": "1.0.0",
   "private": true,
-  "description": "影赛雷达 CineCall：AI 影像赛事截止追踪",
+  "description": "AI赛事助手：AI 视频赛事截止追踪",
   "scripts": {
     "build": "python3 scripts/build.py",
     "dev": "python3 -m http.server -d public 8080",
