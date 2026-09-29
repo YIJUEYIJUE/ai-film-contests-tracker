@@ -1,0 +1,12 @@
+{
+  "name": "cinecall",
+  "version": "1.0.0",
+  "private": true,
+  "description": "影赛雷达 CineCall：AI 影像赛事截止追踪",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "dev": "python3 -m http.server -d public 8080",
+    "test": "node tests/smoke.cjs"
+  },
+  "devDependencies": { "jsdom": "^24.1.0" }
+}
