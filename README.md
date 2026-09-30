@@ -3,7 +3,7 @@
 > **⚠️ 权威源：飞书多维表格「AI赛事」表是唯一权威底表。**
 > 本仓的 `data/`、`festivals/`、`sources/` 是底表快照，`public/` 网页由快照自动生成。
 > **流程：改底表 → 同步快照 → 重建网页（不要直接改网页数据）。**
-> 变更记录见 [CHANGELOG.md](CHANGELOG.md)。
+> 变更记录见 [CHANGELOG.md](CHANGELOG.md)；收录与核实标准见 [STANDARDS.md](STANDARDS.md)。
 
 # AI赛事助手
 
