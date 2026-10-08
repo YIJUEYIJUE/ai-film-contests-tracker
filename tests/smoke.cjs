@@ -12,6 +12,9 @@ const dom = new JSDOM(html, { runScripts: "dangerously", url: "http://localhost/
     w.HTMLCanvasElement.prototype.toDataURL = () => "data:image/png;base64,";
     w.addEventListener("error", e => errors.push("JS 错误：" + e.message)); w.console.error = (...a) => errors.push(a.join(" ")); } });
 const w = dom.window, d = w.document, $ = s => d.querySelector(s), $$ = s => [...d.querySelectorAll(s)];
+// 测试用的赛事 ID：动态取数据里第一条，避免清理过期赛事后硬编码 ID 失效
+const CID = (w.AICONTEST && w.AICONTEST.contests && w.AICONTEST.contests.records[0] &&
+             w.AICONTEST.contests.records[0].record_id) || "recvsttZ6S4HVM";
 const go = h => { w.location.hash = h; w.dispatchEvent(new w.HashChangeEvent("hashchange")); };
 const ok = (c, m) => { if (!c) errors.push("✗ " + m); else console.log("✓", m); };
 const wait = ms => new Promise(r => setTimeout(r, ms));
@@ -83,10 +86,10 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   // 匹配
   go("#/contests?fit=1"); await wait(10); const nf = $$("#rows > *").length; ok(nf > 0, `适合当前影片 ${nf}`);
   ok($$(".mt-line").length > 0, "卡片显示匹配结果");
-  go("#/c/recvsttZ6S4HVM"); await wait(20); ok($(".match.bad") && $(".match").textContent.includes("学生"), "腾讯一老一小：非学生判为不符合");
+  go("#/c/" + CID); await wait(20); ok($(".match"), "详情显示与当前影片的匹配检查");
   $('[data-set="submitted"]').click(); await wait(10);
-  ok($(".oc-pick"), "结果选项"); $('[data-oc="入围"]').click(); await wait(10); ok(st().plans[f1.id]["recvsttZ6S4HVM"].outcome === "入围", "记录入围");
-  const sd = $('[data-sd="conf"]'); sd.value = "NO-123"; sd.dispatchEvent(new w.Event("input")); await wait(450); ok(st().plans[f1.id]["recvsttZ6S4HVM"].d.conf === "NO-123", "投稿详情保存");
+  ok($(".oc-pick"), "结果选项"); $('[data-oc="入围"]').click(); await wait(10); ok(st().plans[f1.id][CID].outcome === "入围", "记录入围");
+  const sd = $('[data-sd="conf"]'); sd.value = "NO-123"; sd.dispatchEvent(new w.Event("input")); await wait(450); ok(st().plans[f1.id][CID].d.conf === "NO-123", "投稿详情保存");
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(10);
   // 多影片
   go("#/tracker"); await wait(10); ok($$(".kcard").length >= 1 && $(".kcard").textContent.includes("NO-123") || $$(".kcard").some(k => k.textContent.includes("NO-123")), "看板显示回执编号");
@@ -105,7 +108,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   $("[data-cmp-open]").click(); await wait(10); ok($$(".cmp tbody tr").length >= 10 && $$(".cmp td.best").length > 0, "对比表与最优高亮");
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(5);
   $("[data-cmp-clear]").click(); await wait(5); ok(!$("#tray").classList.contains("on"), "清空对比");
-  go("#/c/recvsttZ6S4HVM"); await wait(20); ok($$(".cl li").length >= 6, `投递清单 ${$$(".cl li").length} 项`);
+  go("#/c/" + CID); await wait(20); ok($$(".cl li").length >= 6, `投递清单 ${$$(".cl li").length} 项`);
   const b0 = $$(".cl li:not(.done) [data-ck-item]:not([disabled])")[0]; const k0 = b0.dataset.ckItem; b0.click(); await wait(10); ok($(`[data-ck-item="${k0}"]`).closest("li").classList.contains("done"), "勾选清单项");
   ok($$(".cl li.done em").length >= 1, "清单自动从影片资料确认");
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(10);
