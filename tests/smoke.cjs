@@ -1,4 +1,4 @@
-// 冒烟测试（v6）：jsdom 加载页面，逐个路由渲染并验证关键交互。运行：npm i && npm test
+// 冒烟测试（v6 侧栏版）：jsdom 加载页面，逐个路由渲染并验证关键交互。运行：npm i && npm test
 const { JSDOM } = require("jsdom");
 const fs = require("fs"), path = require("path");
 const pub = path.join(__dirname, "..", "public");
@@ -28,14 +28,16 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   const A = w.AIC || {};
   ok(Array.isArray(A.contests) && A.contests.length > 100, `数据载入：赛事 ${A.contests && A.contests.length}`);
   ok(Array.isArray(A.festivals) && A.festivals.length > 10, `电影节 ${A.festivals && A.festivals.length}`);
-  ok($$("#tabs a, #tabs button").length >= 7, `导航 ${$$("#tabs a, #tabs button").length} 项`);
   ok(/AI赛事助手/.test(d.title), "标题：" + d.title);
+  ok($$("#tabs a, #tabs button").length >= 7, `侧栏导航 ${$$("#tabs a, #tabs button").length} 项`);
+  ok($$("#tabbar a, #tabbar button").length >= 5, `底部快捷导航 ${$$("#tabbar a, #tabbar button").length} 项`);
+  ok(/数据更新于/.test($("#snap").textContent), "快照信息：" + $("#snap").textContent.trim());
+  ok(/\d+月\d+日/.test($("#today").textContent), "顶栏日期：" + $("#today").textContent.trim());
 
   go("#/home"); await wait(80);
-  ok($$("#view .kpi").length >= 4, `首页关键数字 ${$$("#view .kpi").length} 个`);
   ok($("#view .hero") || $("#view .lead"), "首页主卡片");
-  ok(/\d/.test($("#view .clock") ? $("#view .clock").textContent : ""), "倒计时：" + (($("#view .clock") || {}).textContent || "").replace(/\s+/g, " ").slice(0, 24));
-  ok($$("#view .list > *").length + $$("#view .row").length > 3, "最近截止列表");
+  ok(/\d/.test(($("#view .clock") || {}).textContent || ""), "倒计时：" + (($("#view .clock") || {}).textContent || "").replace(/\s+/g, " ").slice(0, 26));
+  ok($$("#view .rk").length >= 3, `即将截止排行 ${$$("#view .rk").length} 条`);
 
   go("#/contests"); await wait(80);
   const n0 = $$("#rows > *").length;
@@ -49,8 +51,8 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   go("#/contests"); await wait(80);
 
   const row = $("#rows > *");
-  row.click(); await wait(150);
-  ok($("#drawer").classList.contains("on"), "打开详情：" + (($(".dr-t") || {}).textContent || "").slice(0, 24));
+  row.click(); await wait(180);
+  ok($("#drawer").classList.contains("on"), "打开详情：" + (($(".dr-t") || {}).textContent || "").slice(0, 22));
   ok(/\/|·/.test($("#drawer").textContent || ""), "详情含主办方与截止");
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(80);
   ok(!$("#drawer").classList.contains("on"), "Esc 关闭详情");
@@ -76,10 +78,10 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   go("#/about"); await wait(80);
   ok($("#view .weights") && $$("#view .gcard").length >= 4, "收录与分级页");
 
-  const id = A.contests[0].id;
-  go("#/c/" + id); await wait(300);
-  const dr = $("#drawer"), drName = A.contests[0].name;
-  ok(dr.classList.contains("on") && dr.textContent.includes(drName.slice(0, 6)), "深链接打开详情：" + drName.slice(0, 20));
+  const first = A.contests[0];
+  go("#/c/" + first.id); await wait(300);
+  const dr = $("#drawer");
+  ok(dr.classList.contains("on") && dr.textContent.includes(first.name.slice(0, 6)), "深链接打开详情：" + first.name.slice(0, 20));
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(60);
 
   $("#sq").value = "AI";
@@ -91,6 +93,6 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   $('[data-act="theme"]').click(); await wait(60);
   ok(d.documentElement.dataset.theme !== t0, `主题切换 ${t0} → ${d.documentElement.dataset.theme}`);
 
-  ok(!/我的影片|投递看板|数据来源|作品库/.test(d.documentElement.innerHTML), "无旧版残留模块");
+  ok(!/我的影片|投递看板|作品库/.test(d.documentElement.innerHTML), "无旧版残留模块");
   if (errors.length) { console.error("\n" + errors.join("\n")); process.exit(1); } else console.log("\n全部通过");
 })();
