@@ -17,7 +17,7 @@ public/              网站本体（直接部署这个文件夹）
 scripts/
   build.py           读取赛事快照 → 清洗校验 → 生成 public/ 里的数据
   overrides.json     官网核对后的修正与核实状态
-tests/e2e.py         真实浏览器交互测试（49 项）
+tests/e2e.py         真实浏览器交互测试（52 项）
 .github/workflows/deploy.yml  每天自动更新并发布
 ```
 
