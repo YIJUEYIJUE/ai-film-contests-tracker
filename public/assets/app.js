@@ -51,7 +51,7 @@ const I = {
 };
 
 /* ═════════ 日期 ═════════ */
-const T0 = (() => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; })();
+const T0 = (() => { const p = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date()).split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); })();
 const WD = "日一二三四五六";
 const parseD = s => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || ""); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; };
 const ymd = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -67,7 +67,7 @@ const GCOL = () => { const cs = getComputedStyle(document.documentElement); retu
 const isOpen = c => c.status !== "closed" && (daysLeft(c) == null || daysLeft(c) >= 0);
 const isFree = c => /^(免费|0元|￥0|¥0)/.test(c.fee);
 const NOCASH = /^(无现金|非现金|无固定现金|非奖金制|官方未公布|未公布|待核实|积分非现金|荣誉|数字桂冠|无（|无$)/;
-const hasCash = c => !NOCASH.test(c.prize) && /[¥￥$€£₹]|\d\s*万|\d\s*元|美元|澳元|港元|现金/.test(c.prize);
+const hasCash = c => !NOCASH.test(c.prize) && !/无现金|非现金|不设现金/.test(c.prize) && /[¥￥$€£₹]|\d\s*万|\d\s*元|美元|澳元|港元|现金/.test(c.prize);
 const FX = { usd: 7.1, eur: 7.8, gbp: 9.2, aud: 4.7, hkd: 0.91, inr: 0.085 };
 const cashCNY = c => {
   if (!hasCash(c)) return 0; const p = c.prize; let m;
@@ -84,6 +84,8 @@ const cashCNY = c => {
   if ((m = p.match(/(\d[\d,]*)\s*元/))) return +m[1].replace(/,/g, "");
   return 1;
 };
+const isPool = c => /总奖金|奖金池|总池|合计|总额/.test(c.prize.split(/[：:（(]/)[0] + c.prize.slice(0, 12));
+const cnyLabel = c => (isPool(c) ? "总池 " : "") + fmtCNY(cashCNY(c));
 const fmtCNY = v => v >= 1e4 ? `≈ ¥${(v / 1e4).toFixed(v >= 1e5 ? 0 : 1)} 万` : v > 1 ? `≈ ¥${Math.round(v)}` : "";
 const CN = /中国|北京|上海|深圳|广州|广东|山东|香港|澳门|徽州|安徽|湖南|长沙|杭州|浙江|江苏|四川|成都|重庆|大湾区|内地|广西|天津|武汉|福建|厦门|西安|青岛|南京|苏州|海南|眉山|海门|黄山/;
 const isCN = c => CN.test(`${c.region} ${c.name} ${c.organizer}`) && !/海外/.test(c.name);
@@ -146,7 +148,7 @@ function row(c, q = "") {
     ${daysBox(c)}
     <div class="row-main"><div class="row-t">${gB(c)}<h3>${hl(c.name, q)}</h3>${tags(c)}</div>
       <div class="row-m"><span>${I.pin}${esc(c.region || "地区未注明")}</span><span>${I.ticket}${esc(c.fee)}</span></div>${c.organizer ? `<div class="row-org" title="${esc(c.organizer)}">${esc(c.organizer)}</div>` : ""}</div>
-    <div class="row-prize" title="${esc(c.prize)}"><em>${cashCNY(c) > 1 ? fmtCNY(cashCNY(c)) : "最高奖励"}</em>${esc(c.prize)}</div>
+    <div class="row-prize" title="${esc(c.prize)}"><em>${cashCNY(c) > 1 ? cnyLabel(c) : "最高奖励"}</em>${esc(c.prize)}</div>
     ${favBtn(c)}</div>`;
 }
 function card(c) {
@@ -160,7 +162,7 @@ function card(c) {
       <div class="card-f"><span class="fee">${esc(cut(c.fee, 18))}</span>${tags(c, 3)}</div></div></article>`;
 }
 const empty = (t, s = "", ic = "inbox") => `<div class="empty"><div class="ill">${I[ic]}</div><b>${t}</b>${s ? `<span>${s}</span>` : ""}</div>`;
-const secH = (title, sub, right = "") => `<div class="sec-h"><div><h2><span class="bar"></span>${title}</h2>${sub ? `<p>${sub}</p>` : ""}</div>${right ? `<div class="right">${right}</div>` : ""}</div>`;
+const secH = (title, sub, right = "") => `<div class="sec-h"><div><h2>${title}</h2>${sub ? `<p>${sub}</p>` : ""}</div>${right ? `<div class="right">${right}</div>` : ""}</div>`;
 const more = (href, t = "查看全部") => `<a class="more" href="${href}">${t}${I.r}</a>`;
 
 /* ═════════ 路由 ═════════ */
@@ -193,61 +195,71 @@ V.home = () => {
   const L = live();
   const dated = L.filter(c => daysLeft(c) != null).sort(byDl);
   const w7 = dated.filter(c => daysLeft(c) <= 7), w3 = w7.filter(c => daysLeft(c) <= 3);
-  const sa = L.filter(c => G[c.grade] <= 1);
-  const free = L.filter(isFree);
-  const lead = dated.find(c => G[c.grade] <= 1) || dated.find(c => G[c.grade] <= 2) || dated[0];
-  const gc = ["S", "A", "B", "C"].map(g => [g, L.filter(c => c.grade === g).length]);
+  const sa = L.filter(c => G[c.grade] <= 1), free = L.filter(isFree);
+  const fc = L.filter(c => isFree(c) && hasCash(c));
   const sel = R.params.day || "";
+  const hot = dated.slice(0, 5);
+  const RK = ["rk1", "rk2", "rk3"];
+  const left = c => { const l = daysLeft(c); return l === 0 ? "今天" : l + " 天"; };
   let tl = "";
   for (let i = 0; i < 14; i++) {
     const d = new Date(T0); d.setDate(d.getDate() + i); const k = ymd(d);
-    const ev = L.filter(c => c.deadline === k).sort((a, b) => G[b.grade] - G[a.grade]);
-    tl += `<button class="dcol ${i === 0 ? "t" : ""} ${d.getDay() === 6 ? "sat" : ""} ${d.getDay() === 0 ? "sun" : ""} ${sel === k ? "sel" : ""}" data-day="${k}" aria-label="${md(k)} ${ev.length} 个截止">
+    const ev = L.filter(c => c.deadline === k).sort((a, b) => G[a.grade] - G[b.grade]);
+    tl += `<button class="dcol ${i === 0 ? "t" : ""} ${sel === k ? "sel" : ""} ${ev.length ? "has" : ""}" data-day="${k}" aria-label="${md(k)} ${ev.length} 个截止">
       <span class="tip">${md(k)} · ${ev.length ? ev.length + " 个截止" : "无截止"}</span>
-      <div class="bars" style="height:${ev.length ? Math.min(8, ev.length) * 10 - 2 : 2}px">${ev.length ? ev.slice(0, 8).map(c => `<i style="background:var(--g${c.grade})"></i>`).join("") : '<i class="nil"></i>'}</div>${ev.length ? `<em class="cnt">${ev.length}</em>` : ""}
-      <b>${d.getDate()}</b><span>${i === 0 ? "今天" : "周" + WD[d.getDay()]}</span></button>`;
+      <div class="bars">${ev.length ? ev.slice(0, 6).map(c => `<i class="b-${c.grade}"></i>`).join("") : '<i class="nil"></i>'}</div>
+      <b>${d.getDate()}</b><span>${i === 0 ? "今天" : WD[d.getDay()]}</span></button>`;
   }
   const selList = sel ? L.filter(c => c.deadline === sel).sort((a, b) => G[a.grade] - G[b.grade]) : [];
-  const fc = L.filter(c => isFree(c) && hasCash(c)).sort((a, b) => cashCNY(b) - cashCNY(a) || byDl(a, b));
-  const fresh = L.filter(isNew).sort(byDl);
+  const feed = dated.filter(c => daysLeft(c) <= 75).slice(0, 30);
+  const days = []; feed.forEach(c => { const g = days[days.length - 1]; if (g && g.k === c.deadline) g.list.push(c); else days.push({ k: c.deadline, list: [c] }); });
+  const first = s => String(s || "").split(/\n+/)[0].replace(/^【[^】]*】/, "");
+  const item = c => `<li class="slot"><span class="slot-t tier-${c.grade}">${c.grade} 级</span><span class="rail" aria-hidden="true"><i></i></span>
+    <article class="fi" data-open="${c.id}" tabindex="0" role="button" aria-label="${esc(c.name)}">
+      <header class="fi-src"><span class="fi-org">${esc(c.organizer || c.region || "主办方未注明")}</span>${c.region && c.organizer ? `<span class="fi-reg">· ${esc(c.region)}</span>` : ""}<span class="fi-r">${favBtn(c)}</span></header>
+      <h3>${esc(c.name)}</h3>
+      ${c.desc ? `<p class="fi-sum">${esc(first(c.desc))}</p>` : ""}
+      <div class="fi-tags">${isFree(c) ? "" : `<span>报名 ${esc(cut(c.fee, 22))}</span>`}${tags(c, 4)}</div>
+      <div class="fi-why"><span>最高奖励：</span>${esc(c.prize)}${cashCNY(c) > 1 ? `<em>${cnyLabel(c)}</em>` : ""}</div>
+    </article></li>`;
   return `
-  <div class="page-h"><div class="kicker">${T0.getMonth() + 1}月${T0.getDate()}日 · 周${WD[T0.getDay()]}</div>
+  <div class="page-h"><div class="kicker"><i></i>截止雷达</div>
     <h1>${w3.length ? `${w3.length} 个赛事将在 3 天内截止` : w7.length ? `本周有 ${w7.length} 个赛事截止` : "近期没有赛事截止"}</h1>
-    <p class="lede">目前在征 ${L.length} 个 AI 影像赛事，其中 S / A 级 ${sa.length} 个、免费报名 ${free.length} 个。截止日以主办方官网为准。</p></div>
+    <p class="lede">${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]} · 在征 ${L.length} 个 AI 影像赛事，截止日以主办方官网为准。</p></div>
   <section class="hero">
-    ${lead ? `<div class="lead" data-open="${lead.id}" tabindex="0" role="button" aria-label="${esc(lead.name)}">
-      <div class="lead-top">${gB(lead)}<span>${GN[lead.grade]} · 最近截止的高分级赛事</span>${tags(lead, 3)}</div>
-      <h3>${esc(lead.name)}</h3>
-      <div class="lead-sub">${esc(lead.organizer)}${lead.region ? " · " + esc(lead.region) : ""}</div>
-      <div class="lead-facts"><div title="${esc(lead.prize)}"><span>最高奖励</span><b>${esc(lead.prize)}</b></div><div><span>报名费</span><b>${esc(lead.fee)}</b></div><div><span>截止</span><b>${full(lead.deadline)}</b></div></div>
-      <div class="lead-cd"><div class="clock" id="clock" data-to="${lead.deadline}"></div>
-        <div class="lead-acts">${lead.submit ? `<a class="btn pri" href="${esc(lead.submit)}" target="_blank" rel="noopener" data-stop>${/^mailto:/.test(lead.submit) ? "发邮件投稿" : "去投递"}${I.ext}</a>` : ""}<button class="btn" data-open="${lead.id}">查看详情</button></div></div>
-    </div>` : `<div class="lead">${empty("暂时没有已公布截止日的赛事")}</div>`}
-    <div class="kpis">
-      <a class="kpi" href="#/contests"><span class="k-top">在征赛事</span><b class="num">${L.length}</b><i>含截止待公布 ${L.filter(c => c.status === "pending").length} 个</i><div class="bar2"><i style="width:100%;background:var(--ink-3)"></i></div></a>
-      <a class="kpi hot" href="#/contests?when=7"><span class="k-top">7 天内截止</span><b class="num">${w7.length}</b><i>其中 3 天内 ${w3.length} 个</i><div class="bar2"><i style="width:${Math.round(w7.length / Math.max(1, L.length) * 100)}%;background:var(--red)"></i></div></a>
-      <a class="kpi acc" href="#/contests?grade=SA"><span class="k-top">S / A 级</span><b class="num">${sa.length}<small>/ ${L.length}</small></b><div class="meter">${gc.map(([g, n]) => `<i style="flex:${n};background:var(--g${g})" title="${g} 级 ${n} 个"></i>`).join("")}</div></a>
-      <a class="kpi" href="#/contests?fee=free"><span class="k-top">免费报名</span><b class="num">${free.length}</b><i>其中有现金奖 ${fc.length} 个</i><div class="bar2"><i style="width:${Math.round(free.length / Math.max(1, L.length) * 100)}%;background:var(--green)"></i></div></a>
+    <div class="lead">
+      <div class="lead-h"><h2><span class="ping" aria-hidden="true"><i></i><i></i></span>即将截止</h2>
+        ${hot[0] ? `<span class="lead-cd">距第 1 个截止 <span class="clock" id="clock" data-to="${hot[0].deadline}"></span></span>` : ""}</div>
+      ${hot.length ? `<ol class="hot">${hot.map((c, i) => `<li><a data-open="${c.id}" tabindex="0" role="button">
+        <span class="rk ${RK[i] || ""}">${i + 1}</span>
+        <span class="hot-t">${esc(c.name)}</span>
+        <span class="hot-g">${gB(c)}</span>
+        <span class="hot-d ${daysLeft(c) <= 3 ? "u-red" : ""}"><b class="num">${left(c)}</b><small>${md(c.deadline)}</small></span></a></li>`).join("")}</ol>` : empty("暂时没有已公布截止日的赛事")}
+      <a class="lead-more" href="#/contests">全部 ${L.length} 个赛事${I.r}</a>
+    </div>
+    <div class="pulse">
+      <div class="kpis">
+        <a class="kpi" href="#/contests?when=7"><span>7 天内截止</span><b class="num ${w7.length ? "hot" : ""}">${w7.length}</b><i>3 天内 ${w3.length} 个</i></a>
+        <a class="kpi" href="#/contests?grade=SA"><span>S / A 级</span><b class="num">${sa.length}</b><i>占在征 ${Math.round(sa.length / Math.max(1, L.length) * 100)}%</i></a>
+        <a class="kpi" href="#/contests?fee=free"><span>免费报名</span><b class="num">${free.length}</b><i>含现金奖 ${fc.length} 个</i></a>
+        <a class="kpi" href="#/contests?when=tba"><span>截止待公布</span><b class="num">${L.length - dated.length}</b><i>长期征集</i></a>
+      </div>
+      <div class="tl-box"><div class="tl-head"><b>未来 14 天</b><span class="legend"><span><i class="b-S"></i>S</span><span><i class="b-A"></i>A</span><span><i class="b-B"></i>B</span><span><i class="b-C"></i>C</span></span></div>
+        <div class="tl">${tl}</div></div>
     </div>
   </section>
-
-  <section class="sec panel pad">
-    <div class="tl-head"><div><h2 style="margin:0;font-size:15px;font-weight:650">未来 14 天截止分布</h2><p style="margin:4px 0 0;font-size:12.5px;color:var(--ink-4)">每个色块代表一个赛事，点某一天查看当天截止的赛事</p></div>
-      <div class="legend">${["S", "A", "B", "C"].map(g => `<span><i style="background:var(--g${g})"></i>${g} 级</span>`).join("")}</div></div>
-    <div class="tl">${tl}</div>
-    ${sel ? `<div class="list" style="margin-top:14px">${selList.length ? selList.map(c => row(c)).join("") : empty(`${md(sel)} 没有截止的赛事`, "", "cal")}</div>` : ""}
-  </section>
-
-  <section class="sec">${secH("最近截止", "按截止时间排序，红色为 3 天内、黄色为 7 天内", more("#/contests"))}<div class="list">${dated.slice(0, 8).map(c => row(c)).join("")}</div></section>
-  ${fresh.length ? `<section class="sec">${secH(`新收录 <span class="tag new">${fresh.length}</span>`, "上次打开之后新增的赛事")}<div class="cards">${fresh.slice(0, 8).map(card).join("")}</div></section>` : ""}
-  <section class="sec">${secH("值得投 · S / A 级", "按认可度、可信度、资源回报、成本加权后分级最高的赛事", more("#/contests?grade=SA"))}<div class="cards">${sa.sort(byDl).slice(0, 8).map(card).join("")}</div></section>
-  <section class="sec">${secH("零门槛 · 免费且有现金奖", "不收报名费、并写明现金奖金的赛事，按奖金从高到低", more("#/contests?fee=free&cash=1&sort=prize"))}<div class="list">${fc.slice(0, 6).map(c => row(c)).join("") || empty("暂无")}</div></section>`;
+  ${sel ? `<section class="sec"><div class="dayh"><b>${md(sel)}</b><span>周${WD[parseD(sel).getDay()]} · ${selList.length} 个截止</span><a class="more" href="#/home">收起${I.x}</a></div><div class="list">${selList.length ? selList.map(c => row(c)).join("") : empty(`${md(sel)} 没有截止的赛事`, "", "cal")}</div></section>` : ""}
+  <section class="feed" aria-label="截止时间线">
+    ${days.map(g => { const l = daysLeft(g.list[0]); return `<div class="dayh"><b>${l === 0 ? "今天" : l === 1 ? "明天" : md(g.k)}</b><span>${l > 1 ? "" : md(g.k) + " · "}周${WD[parseD(g.k).getDay()]} · <span class="num">${g.list.length}</span> 个截止</span><em class="${l <= 3 ? "u-red" : ""}">${l === 0 ? "今天截止" : `还有 ${l} 天`}</em></div><ol class="slots">${g.list.map(item).join("")}</ol>`; }).join("")}
+    <div class="feed-end"><a class="pill-btn" href="#/contests">查看全部赛事${I.r}</a></div>
+  </section>`;
 };
 V.home.after = () => {
   const el = $("#clock"); if (!el) return;
   const to = parseD(el.dataset.to); if (!to) return; to.setHours(23, 59, 59, 0);
+  const p = n => String(n).padStart(2, "0");
   const up = () => { let ms = Math.max(0, to - new Date()); const d = Math.floor(ms / 864e5); ms -= d * 864e5; const h = Math.floor(ms / 36e5); ms -= h * 36e5; const m = Math.floor(ms / 6e4); const s = Math.floor((ms - m * 6e4) / 1e3);
-    el.innerHTML = [[d, "天"], [h, "时"], [m, "分"], [s, "秒"]].map(([v, u], i) => `${i ? "<em>:</em>" : ""}<div><b>${String(v).padStart(2, "0")}</b><span>${u}</span></div>`).join(""); };
+    el.textContent = `${d ? d + " 天 " : ""}${p(h)}:${p(m)}:${p(s)}`; };
   up(); tick = setInterval(up, 1000);
 };
 
@@ -384,10 +396,10 @@ V.insights = () => {
   <div class="ins-grid">
     <div class="ins w2"><h3>未来 8 个月截止分布 <div class="legend">${["S", "A", "B", "C"].map(g => `<span><i style="background:var(--g${g})"></i>${g}</span>`).join("")}</div></h3><div class="vbars">${bars}</div></div>
     <div class="ins"><h3>分级构成</h3><div class="donut-w">${donut}<ul class="dl-leg">${gc.map(([g, n]) => `<li><i style="background:var(--g${g})"></i>${g} 级 · ${GN[g]}<b class="num">${n}</b></li>`).join("")}</ul></div></div>
-    <div class="ins"><h3>门槛结构</h3>${split(free, L.length - free, "免费", "收费 / 未核实", "var(--green)", "var(--line-2)")}${split(cash, L.length - cash, "有现金奖", "荣誉 / 资源", "var(--gA)", "var(--line-2)")}${split(L.length - topic, topic, "自由投稿", "命题", "var(--gB)", "var(--amber)")}${split(cn, L.length - cn, "国内", "海外 / 线上", "var(--accent)", "var(--gC)")}</div>
+    <div class="ins"><h3>门槛结构</h3>${split(free, L.length - free, "免费", "收费 / 未核实", "var(--accent)", "var(--bg-muted)")}${split(cash, L.length - cash, "有现金奖", "荣誉 / 资源", "var(--gA)", "var(--bg-muted)")}${split(L.length - topic, topic, "自由投稿", "命题", "var(--gB)", "var(--amber)")}${split(cn, L.length - cn, "国内", "海外 / 线上", "var(--accent)", "var(--gC)")}</div>
     <div class="ins"><h3>作品形态 <span>点击查看对应赛事</span></h3><div class="hbars">${forms.map(([nm, v]) => `<a href="#/contests?form=${encodeURIComponent(nm)}"><span>${nm}</span><span class="bwrap"><i style="width:${v / fmx * 100}%"></i></span><b>${v}</b></a>`).join("")}</div></div>
-    <div class="ins"><h3>报名成本</h3><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">${[["免费", free, "var(--green)"], ["收费", fees, "var(--amber)"], ["未核实 / 未公布", L.length - free - fees, "var(--ink-4)"], ["写明现金奖", cash, "var(--gA)"]].map(([nm, v, c]) => `<div style="border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--surface-2)"><b class="num" style="font-size:24px;letter-spacing:-.03em;color:${c}">${v}</b><div style="font-size:12px;color:var(--ink-3)">${nm}</div></div>`).join("")}</div></div>
-    <div class="ins w2"><h3>现金奖金排行 <span>按大致汇率折合人民币，仅供比较</span></h3><div class="hbars prize">${top.map(c => `<a data-open="${c.id}">${gB(c)}<span>${esc(c.name)}</span><span class="bwrap"><i style="width:${cashCNY(c) / tmx * 100}%"></i></span><b>${fmtCNY(cashCNY(c)).replace("≈ ", "")}</b></a>`).join("")}</div></div>
+    <div class="ins"><h3>报名成本</h3><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">${[["免费", free, "var(--accent)"], ["收费", fees, "var(--ink-3)"], ["未核实 / 未公布", L.length - free - fees, "var(--ink-3)"], ["写明现金奖", cash, "var(--hot)"]].map(([nm, v, c]) => `<div style="border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--surface-2)"><b class="num" style="font-size:24px;letter-spacing:-.03em;color:${c}">${v}</b><div style="font-size:12px;color:var(--ink-3)">${nm}</div></div>`).join("")}</div></div>
+    <div class="ins w2"><h3>奖金规模排行 <span>按原文折合人民币（含总奖池口径），仅供比较</span></h3><div class="hbars prize">${top.map(c => `<a data-open="${c.id}">${gB(c)}<span>${esc(c.name)}</span><span class="bwrap"><i style="width:${cashCNY(c) / tmx * 100}%"></i></span><b>${cnyLabel(c).replace("≈ ", "")}</b></a>`).join("")}</div></div>
   </div>`;
 };
 
@@ -431,7 +443,7 @@ const MONTHS = t => { const s = new Set(); String(t || "").replace(/(\d{1,2})\s*
 V.festivals = () => {
   const cat = R.params.cat || ""; const cats = [...new Set(FEST.map(f => f.type).filter(Boolean))];
   const list = FEST.filter(f => !cat || f.type === cat);
-  const pal = ["var(--gS)", "var(--gB)", "var(--accent)", "var(--gC)", "var(--green)"];
+  const pal = ["var(--gS)", "var(--gB)", "var(--accent)", "var(--gC)", "var(--ok)"];
   return `
   <div class="page-h"><div class="kicker">知名电影节</div><h1>${FEST.length} 个国际电影节档期参考</h1><p class="lede">FIAPF 认证等传统电影节。想让 AI 作品走长片或短片节路线时，可以用来规划全年档期；色条表示每年举办的月份。</p></div>
   <div class="chips" style="margin-bottom:18px"><button class="chip ${!cat ? "on" : ""}" data-fcat="">全部<span class="n">${FEST.length}</span></button>${cats.map(c => `<button class="chip ${cat === c ? "on" : ""}" data-fcat="${esc(c)}">${esc(c)}<span class="n">${FEST.filter(f => f.type === c).length}</span></button>`).join("")}</div>
@@ -452,7 +464,7 @@ V.about = () => {
   <div class="weights"><div style="flex:35;background:var(--ink)">认可度<br>35%</div><div style="flex:30;background:var(--ink-2)">可信度<br>30%</div><div style="flex:20;background:var(--accent)">资源回报<br>20%</div><div style="flex:15;background:var(--gB)">成本<br>15%</div></div>
   <div class="grade-list">${["S", "A", "B", "C"].map(g => `<div class="gcard"><div class="gh"><span class="g g-${g}">${g}</span><b>${GN[g]}</b><span class="cnt num">${gc[g]}</span></div><p>${GD[g]}</p></div>`).join("")}</div>
   <h2>核实状态</h2>
-  <div class="steps">${[["ok", "check", "官网已核实", "官网原文里找到了与本站一致的截止日。"], ["fixed", "edit", "已按官网更正", "与官网不一致的字段已按官网改正。"], ["warn", "alert", "需要你再确认", "官网页面过期、跳转或查不到本届截止日，投递前请自行核对。"], ["none", "info", "未自动核实", "页面需要登录或无法自动读取，以官网为准。"]].map(([k, ic, t, d]) => `<div class="vcard"><span class="cnt num" style="color:${k === "ok" ? "var(--green)" : k === "fixed" ? "var(--accent)" : k === "warn" ? "var(--amber)" : "var(--ink-4)"}">${vc[k]}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}</div>
+  <div class="steps">${[["ok", "check", "官网已核实", "官网原文里找到了与本站一致的截止日。"], ["fixed", "edit", "已按官网更正", "与官网不一致的字段已按官网改正。"], ["warn", "alert", "需要你再确认", "官网页面过期、跳转或查不到本届截止日，投递前请自行核对。"], ["none", "info", "未自动核实", "页面需要登录或无法自动读取，以官网为准。"]].map(([k, ic, t, d]) => `<div class="vcard"><span class="cnt num" style="color:${k === "ok" ? "var(--ok)" : k === "fixed" ? "var(--accent-ink)" : k === "warn" ? "var(--amber)" : "var(--ink-4)"}">${vc[k]}</span><div><b>${t}</b><p>${d}</p></div></div>`).join("")}</div>
   <h2>收录红线</h2>
   <ul><li>只收 AI 视频 / 影像类，不收纯 AI 音乐类竞赛。</li><li>官网只认主办方官方站；投递链接优先官方入口。</li><li>只收有明确征集窗口的赛事；长期活动标为「截止待公布」。</li><li>报名费没核实就写「未核实」，官方没公布就写「官方未公布」，不臆测。</li></ul>
   <h2>快捷键</h2>
@@ -465,7 +477,10 @@ let listCtx = [];
 function chrome() {
   const L = live(); const w3 = L.filter(c => { const l = daysLeft(c); return l != null && l <= 3; }).length;
   const cnt = { home: w3 ? `<em>${w3}</em>` : "", contests: `<em>${L.length}</em>` };
-  $("#tabs").innerHTML = ROUTES.map(r => `<a href="#/${r.k}" class="${R.page === r.k ? "on" : ""} ${r.k === "home" && w3 ? "hot" : ""}" ${R.page === r.k ? 'aria-current="page"' : ""}>${r.n}${cnt[r.k] || ""}</a>`).join("");
+  const grp = { home: "赛事", calendar: "", insights: "", brief: "", festivals: "资料", about: "" };
+  $("#tabs").innerHTML = ROUTES.map(r => `${grp[r.k] && r.k !== "home" ? `<div class="nav-g">${grp[r.k]}</div>` : ""}<a href="#/${r.k}" class="${R.page === r.k ? "on" : ""} ${r.k === "home" && w3 ? "hot" : ""}" ${R.page === r.k ? 'aria-current="page"' : ""}>${I[r.i]}<span>${r.n}</span>${cnt[r.k] || ""}</a>`).join("");
+  $("#snap").textContent = `数据更新于 ${RAW.snapshot} · 共 ${C.length} 个赛事`;
+  $("#today").textContent = `${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]}`;
   $("#tabbar").innerHTML = ["home", "contests", "calendar", "insights", "brief"].map(k => { const r = ROUTES.find(x => x.k === k); return `<a href="#/${k}" class="${R.page === k ? "on" : ""}">${I[r.i]}<span>${r.n.replace("全部", "").replace("今日", "").replace("截止", "").replace("数据", "")}</span></a>`; }).join("");
   const cur = ROUTES.find(r => r.k === R.page);
   document.title = `${cur && cur.k !== "home" ? cur.n + " · " : ""}AI赛事助手`;
@@ -489,14 +504,14 @@ function openDrawer(id, fromRoute = false) {
   if (!listCtx.includes(id)) listCtx = [...new Set($$("#view [data-open]").map(e => e.dataset.open))];
   curId = id; fillDrawer(id);
   $("#drawer").classList.add("on"); $("#mask").classList.add("on"); document.body.style.overflow = "hidden";
-  $("#view").inert = true; $(".masthead").inert = true;
+  $("#view").inert = true; $(".side").inert = true; $(".topbar").inert = true;
   if (!fromRoute) history.pushState({ d: 1 }, "", `#/c/${encodeURIComponent(id)}`);
   setTimeout(() => $("#drawer [data-act=closeDrawer]")?.focus({ preventScroll: true }), 60);
 }
 function closeDrawer(fromRoute = false) {
   if (!$("#drawer").classList.contains("on")) return;
   $("#drawer").classList.remove("on"); $("#mask").classList.remove("on"); document.body.style.overflow = "";
-  $("#view").inert = false; $(".masthead").inert = false; const curIdBeforeClose = curId; curId = null; pendingFocus = curIdBeforeClose;
+  $("#view").inert = false; $(".side").inert = false; $(".topbar").inert = false; const curIdBeforeClose = curId; curId = null; pendingFocus = curIdBeforeClose;
   if (!fromRoute && location.hash.startsWith("#/c/")) { if (history.state?.d) history.back(); else history.replaceState(null, "", `#/${curPage || "home"}`); }
   try { const id = curIdBeforeClose || lastFocus?.dataset?.open; const el = lastFocus && document.contains(lastFocus) ? lastFocus : id ? $(`#view [data-open="${CSS.escape(id)}"]`) : null; el?.focus?.({ preventScroll: true }); } catch {}
 }
@@ -510,7 +525,7 @@ function milestones(c) {
 function linkChip(name, u, ic) {
   if (!u) return "";
   const mail = /^mailto:/.test(u); const host0 = mail ? u.slice(7) : u.replace(/^https?:\/\/(www\.)?/, "").split(/[/?#]/)[0];
-  const host = /feishu|larksuite/.test(host0) ? "官方报名文档（飞书）" : /filmfreeway/.test(host0) ? "FilmFreeway 官方投递页" : /festhome/.test(host0) ? "Festhome 官方投递页" : /mp\.weixin/.test(host0) ? "官方公众号公告" : host0;
+  const host = /feishu|larksuite/.test(host0) ? "官方报名文档（飞书）" : /filmfreeway/.test(host0) ? "FilmFreeway 官方投递页" : /festhome/.test(host0) ? "Festhome 官方投递页" : /mp\.weixin/.test(host0) ? "官方公众号公告" : /toujiang|aitop100/.test(host0) ? "指定代投平台" : host0;
   return `<a class="lchip" href="${esc(u)}" ${mail ? "" : 'target="_blank" rel="noopener"'}><span class="lic">${mail ? I.mail : I[ic]}</span><span class="lt"><small>${name}</small><b>${esc(host)}</b></span>${I.ext}</a>`;
 }
 const VMAP = { ok: ["check", "官网已核实"], fixed: ["edit", "已按官网更正"], warn: ["alert", "需要你再确认"], none: ["info", "未自动核实"] };
@@ -531,7 +546,7 @@ function fillDrawer(id) {
   <div class="dr-body">
     <div class="vbox ${c.verified}"><span class="vi">${I[vic]}</span><div><b>${vt}</b><span>${esc(c.verifyNote || "需要登录或无法自动读取的页面，请以主办方官网为准。")}</span></div></div>
     <dl class="facts">
-      <div class="fact wide prize"><dt>${I.trophy}最高奖励${cny > 1 ? `<span class="cny">${fmtCNY(cny)}</span>` : ""}</dt><dd>${esc(c.prize)}</dd></div>
+      <div class="fact wide prize"><dt>${I.trophy}最高奖励${cny > 1 ? `<span class="cny">${cnyLabel(c)}</span>` : ""}</dt><dd>${esc(c.prize)}</dd></div>
       <div class="fact"><dt>${I.ticket}报名费</dt><dd>${esc(c.fee)}</dd></div>
       <div class="fact"><dt>${I.target}命题</dt><dd>${esc(c.topic || "未注明")}</dd></div>
       <div class="fact"><dt>${I.film}类别</dt><dd>${esc(c.category || "未注明")}</dd></div>
@@ -640,7 +655,7 @@ document.addEventListener("keydown", e => {
   if (e.key === "j" || e.key === "k") { e.preventDefault(); kIdx = Math.max(0, Math.min(items.length - 1, kIdx + (e.key === "j" ? 1 : -1))); items.forEach((r, i) => r.classList.toggle("kfocus", i === kIdx)); items[kIdx].focus({ preventScroll: true }); items[kIdx].scrollIntoView?.({ block: "center", behavior: "smooth" }); }
   if (e.key.toLowerCase() === "s" && items[kIdx]) toggleFav(items[kIdx].dataset.open);
 });
-addEventListener("scroll", () => { const h = document.documentElement.scrollHeight - innerHeight; $("#prog").style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`; $("#totop").classList.toggle("on", scrollY > 900); }, { passive: true });
+addEventListener("scroll", () => { $(".topbar").classList.toggle("scrolled", scrollY > 4); const h = document.documentElement.scrollHeight - innerHeight; $("#prog").style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`; $("#totop").classList.toggle("on", scrollY > 900); }, { passive: true });
 addEventListener("popstate", () => { if (!location.hash.startsWith("#/c/")) closeDrawer(true); });
 addEventListener("storage", e => { if (e.key === KEY) { try { Object.assign(P, JSON.parse(e.newValue)); refresh(); } catch {} } });
 
