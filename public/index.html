@@ -4,52 +4,58 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>AI赛事助手 · AI 影像赛事截止追踪</title>
-<meta name="description" content="AI 视频与影像赛事一览：截止雷达、分级精选、截止日历、投稿简报。数据以主办方官网为准。">
-<meta name="theme-color" content="#FAF8F4" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C0D10" media="(prefers-color-scheme: dark)">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2410C'/%3E%3Cpath d='M11 8.5v15l12-7.5z' fill='%23fff'/%3E%3C/svg%3E">
+<meta name="description" content="AI 视频与影像赛事一览：截止雷达、分级精选、截止日历、投稿简报。截止日以主办方官网为准。">
+<meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#13191c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23176b75'/%3E%3Cpath d='M12 9v14l11-7z' fill='%23fff'/%3E%3C/svg%3E">
 <script>(function(){try{var t=localStorage.getItem('aicontest.v6.theme');if(!t||t==='auto')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <a class="skip" href="#view">跳到主要内容</a>
-<header class="masthead">
-  <div class="mh-in">
+<div class="shell">
+  <aside class="side" aria-label="主导航">
     <a class="brand" href="#/home">
-      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 6v12l10-6z" fill="currentColor"/></svg></span>
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5z" fill="currentColor" stroke="none"/></svg></span>
       <span class="brand-t"><b>AI赛事助手</b><i>AI 影像赛事截止追踪</i></span>
     </a>
-    <button class="search-btn" data-act="search" aria-label="搜索赛事">
-      <svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg>
-      <span>搜索赛事、主办方、地区…</span><kbd id="kbd">⌘K</kbd>
-    </button>
-    <div class="mh-r">
-      <button class="ghost-btn" data-act="theme" title="切换深浅色" aria-label="切换深浅色">
+    <nav class="nav" id="tabs"></nav>
+    <div class="side-foot">
+      <button class="side-theme" data-act="theme" aria-label="切换深浅色">
         <svg class="i-sun" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.4 4.4l1.5 1.5M14.1 14.1l1.5 1.5M15.6 4.4l-1.5 1.5M5.9 14.1l-1.5 1.5"/></svg>
         <svg class="i-moon" viewBox="0 0 20 20"><path d="M16 12.5A7 7 0 0 1 7.5 4a7 7 0 1 0 8.5 8.5z"/></svg>
+        <span class="t-light">浅色</span><span class="t-dark">深色</span>
       </button>
-      <a class="ghost-btn txt" href="#/brief">今日简报</a>
+      <p class="snap" id="snap"></p>
     </div>
+  </aside>
+  <div class="main-col">
+    <header class="topbar">
+      <a class="m-brand" href="#/home" aria-label="AI赛事助手"><span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5z" fill="currentColor" stroke="none"/></svg></span></a>
+      <button class="search-btn" data-act="search" aria-label="搜索赛事">
+        <svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg>
+        <span>搜索赛事、主办方、地区</span><kbd id="kbd">⌘K</kbd>
+      </button>
+      <div class="top-r">
+        <span class="today" id="today"></span>
+        <button class="icon-btn m-only" data-act="theme" aria-label="切换深浅色"><svg viewBox="0 0 20 20"><path d="M16 12.5A7 7 0 0 1 7.5 4a7 7 0 1 0 8.5 8.5z"/></svg></button>
+      </div>
+      <div class="prog" id="prog"></div>
+    </header>
+    <div id="notice"></div>
+    <main id="view" tabindex="-1"></main>
+    <footer class="foot">
+      <span>截止日期、报名费与规则以主办方官网为准；标注「待确认」的赛事，投递前请先自行核对。</span>
+    </footer>
   </div>
-  <nav class="tabs" id="tabs" aria-label="主导航"></nav>
-  <div class="prog" id="prog"></div>
-</header>
-<div id="notice"></div>
-<main id="view" tabindex="-1"></main>
-<footer class="foot">
-  <div class="foot-in">
-    <span><b>AI赛事助手</b> · 收录 AI 视频与影像赛事，每日更新</span>
-    <span>截止日期、报名费与规则以主办方官网为准；标注「待确认」的条目投递前请先自行核对。</span>
-  </div>
-</footer>
+</div>
 <nav class="tabbar" id="tabbar" aria-label="快捷导航"></nav>
-<div class="scrim" id="scrim" data-act="closeSearch"></div>
 <div class="search" id="search" role="dialog" aria-modal="true" aria-label="搜索">
   <div class="search-box">
     <div class="search-in">
       <svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="m14 14 4 4"/></svg>
-      <input id="sq" placeholder="搜索赛事名称、主办方、地区，或输入页面名 / 快捷操作" autocomplete="off">
+      <input id="sq" placeholder="搜索赛事名称、主办方、地区，或输入页面名" autocomplete="off">
       <kbd>Esc</kbd>
     </div>
     <div class="search-list" id="sres"></div>
@@ -58,7 +64,6 @@
 </div>
 <div class="sheet-mask" id="mask" data-act="closeDrawer"></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="赛事详情"></aside>
-<div class="modal" id="modal" role="dialog" aria-modal="true"></div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
 <button class="totop" id="totop" data-act="top" aria-label="回到顶部"><svg viewBox="0 0 20 20"><path d="m5 12 5-5 5 5"/></svg></button>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})</script>
