@@ -16,8 +16,11 @@ with sync_playwright() as p:
     pg.goto(U,wait_until='networkidle'); pg.wait_for_timeout(700)
     html=pg.content()
     ok(not re.search(r'我的影片|投递看板|作品库|信源|来源[:：]|数据来源|toujiang|aitop100|飞书多维', pg.inner_text('body')),'全站无作品库/信源/数据来源字样（首页）')
-    ok(pg.locator('.lead').count()==1 and pg.locator('.kpi').count()==4,'首页：主卡片 + 4 个数字')
+    ok(pg.locator('.lead').count()==1 and pg.locator('.kpi').count()==4 and pg.locator('.fi').count()>3,'首页：热榜 + 4 个数字 + 时间线卡片')
     ok(pg.locator('.tl .dcol').count()==14,'首页：14 天时间轴')
+    pg.goto(U+'#/contests?q=魁北克&when=all',wait_until='networkidle'); pg.wait_for_timeout(400); ok(pg.evaluate("[...document.querySelectorAll('#rows > *')].filter(r=>/魁北克城/.test(r.innerText)).every(r=>!r.querySelector('.tag.cash'))"),'「无现金奖」不会被标成现金奖')
+    pg.goto(U+'#/contests?q=鲸锐&when=all',wait_until='networkidle'); pg.wait_for_timeout(400); ok('总池' in pg.inner_text('#rows'),'总奖池标注口径')
+    pg.goto(U,wait_until='networkidle'); pg.wait_for_timeout(300)
     ok(re.search(r'\d',pg.inner_text('#clock') or '') is not None,'倒计时在走')
     pg.locator('.dcol').nth(3).click(); pg.wait_for_timeout(300); ok('day=' in pg.url,'点时间轴某天展开')
     # 全部赛事
@@ -44,8 +47,12 @@ with sync_playwright() as p:
     ok(pg.evaluate("document.activeElement && document.activeElement.matches('[data-open]')"),'关闭后焦点回到原赛事')
     # 遍历所有赛事详情无报错
     ids=pg.evaluate("window.AIC.contests.map(c=>c.id)")
-    for i in ids: pg.evaluate(f"location.hash='#/c/{i}'"); pg.wait_for_timeout(15)
+    BAN=r'来源|第三方|聚合站|aifilmcontests|aigcsubmission|toujiang|投奖|飞书多维|红线|入库'; leak=[]
+    for i in ids:
+        pg.evaluate(f"location.hash='#/c/{i}'"); pg.wait_for_timeout(25)
+        if re.search(BAN, pg.inner_text('#drawer')+' '.join(pg.eval_on_selector_all('#drawer a','e=>e.filter(a=>!/投递|投稿/.test(a.innerText)).map(a=>a.href)'))): leak.append(i)
     pg.wait_for_timeout(300); ok(not errs,f'逐个打开 {len(ids)} 个详情无报错')
+    ok(not leak,f'详情页无采集来源/内部流程字样 {leak[:3]}')
     pg.keyboard.press('Escape'); pg.wait_for_timeout(300)
     pg.goto(U+'#/c/notexist',wait_until='networkidle'); pg.wait_for_timeout(400); ok(not pg.is_visible('#drawer.on'),'错误链接不会卡住')
     # 搜索面板
@@ -80,4 +87,4 @@ with sync_playwright() as p:
         pg.goto(U+'#/'+h,wait_until='networkidle'); pg.wait_for_timeout(250)
         ok(pg.evaluate("document.documentElement.scrollWidth<=innerWidth+1"),f'手机 {h} 无横向溢出')
     ctx.close(); b.close()
-print('\n'.join(res)); print('JS 错误:', errs[:5] or '无')
+print('\n'.join(res)); print(f"通过 {sum(r[0]=='✓' for r in res)}/{len(res)}"); print('JS 错误:', errs[:5] or '无')
