@@ -27,12 +27,18 @@ def warn(msg):
     warns.append(msg)
 
 
-def fetch(url):
+def fetch(url, tries=3):
     h = {"User-Agent": "AIContestAssistant-build/6"}
     if os.environ.get("GITHUB_TOKEN") and "api.github.com" in url:
         h["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
-    with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
-        return r.read().decode("utf-8")
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
+                return r.read().decode("utf-8")
+        except Exception as e:  # 网络抖动重试，最终失败则中止且不覆盖产物
+            if i == tries - 1:
+                sys.exit(f"✗ 读取失败（{e}）：{url}，已中止构建，网站保持上一版")
+            __import__("time").sleep(3 * (i + 1))
 
 
 def latest(paths, folder, prefix):
@@ -80,6 +86,31 @@ def clean_url(u, name, field):
     return u
 
 
+# 备注里的内部工作记录（采集来源、核对流程、录入规则）不给用户看，见 docs/03 §5
+INTERNAL = re.compile(
+    r"来源|源[:：]|入库|收录|聚合|第三方|aifilmcontests|aigcsubmission|toujiang|aitop100\.cn/infomation|"
+    r"红线|用户澄清|按模型定|表内|底表|补录|重收|清理|官网填|填入|改为官方|置空|清空|维持|详情页\s*ID|"
+    r"非第三方|不违规|投奖", re.I)
+TAG = re.compile(r"【[^】]{0,40}】")
+
+
+def public_notes(t):
+    t = TAG.sub("", s(t))
+    keep = []
+    for seg in re.split(r"[；;｜|\n。]+", t):
+        seg = seg.strip(" ，,。——-")
+        if seg and not INTERNAL.search(seg) and not re.fullmatch(r"https?://\S+", seg):
+            keep.append(seg)
+    return "；".join(dict.fromkeys(keep))
+
+
+def iso_date(v):
+    try:
+        return dt.date.fromisoformat(v)
+    except ValueError:
+        return None
+
+
 def normalize(raw, overrides, today):
     out = []
     for r in raw:
@@ -90,7 +121,7 @@ def normalize(raw, overrides, today):
         for k, v in (o.get("fix") or {}).items():
             r[k] = v
         dl = s(r.get("截止日期"))
-        if dl and not re.match(r"^\d{4}-\d{2}-\d{2}$", dl):
+        if dl and not (re.match(r"^\d{4}-\d{2}-\d{2}$", dl) and iso_date(dl)):
             warn(f"截止日期格式异常，按待公布处理：{name} → {dl}")
             dl = ""
         grade = s(r.get("分级")).upper()
@@ -109,6 +140,10 @@ def normalize(raw, overrides, today):
         fee = "免费" if fee in ("无", "0", "免费报名") else fee
         if not fee:
             fee = "未核实"; warn(f"报名费为空：{name}")
+        fee = re.sub(r"第三方(数据|称)[：:]?", "未经官方确认：", fee).replace("：）", "）").replace("投奖价", "代投平台价")
+        fee = re.sub(r"（[^）]*(?:聚合站|投奖)[^）]*）", "（投递前请到官网确认）", fee)
+        prize_raw = s(r.get("最高奖金"))
+        r["最高奖金"] = re.sub(r"[，,；;]?\s*各源口径不一", "，各渠道口径不一", prize_raw)
         prize = s(r.get("最高奖金")) or "官方未公布"
         site = clean_url(r.get("官网"), name, "官网")
         submit = clean_url(r.get("投递链接"), name, "投递链接") or site
@@ -116,12 +151,14 @@ def normalize(raw, overrides, today):
             warn(f"官网与投递链接都为空：{name}")
         desc = re.sub(r"(^|\n)\s*来源[:：][^\n]*", "", s(r.get("赛事说明")))
         v = o.get("verify") or {}
-        notes = s(r.get("计划备注"))
-        mark = "star" if "⭐" in notes else "caution" if "⚠" in notes else "note" if "🔍" in notes else ""
+        raw_notes = s(r.get("计划备注"))
+        mark = "star" if "⭐" in raw_notes else "caution" if "⚠" in raw_notes else "note" if "🔍" in raw_notes else ""
+        notes = public_notes(raw_notes)
+        desc = public_notes(desc).replace("；", "\n") if INTERNAL.search(desc) else desc
         out.append({"id": rid, "name": name, "grade": grade, "deadline": dl or None, "status": st,
                     "organizer": s(r.get("主办方")), "region": s(r.get("地区")), "category": s(r.get("类别")), "topic": topic,
                     "fee": fee, "prize": prize, "site": site, "submit": submit, "desc": desc, "notes": notes, "mark": mark,
-                    "verified": v.get("level") or "none", "verifyNote": v.get("note") or ""})
+                    "verified": v.get("level") or "none", "verifyNote": public_notes(v.get("note"))})
     return out
 
 
