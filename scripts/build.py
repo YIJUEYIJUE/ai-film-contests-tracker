@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-"""AI赛事助手 数据构建。
+"""AI赛事助手 v6 · 数据构建
 
-从 ai-film-contests-tracker 取最新快照，生成：
-  public/data/data.js      网页读取的数据
-  public/data/contests.json
-  public/deadlines.ics     可订阅的截止日历（所有在征赛事，提前 3 天提醒）
-  public/feed.xml          RSS：在征赛事，按截止日排序
+读取赛事 / 电影节快照 → 清洗校验 → 生成 public/data/data.js、contests.json、deadlines.ics、feed.xml。
+规则见 docs/03-数据规范.md。校验不过会中止，不覆盖已有产物。
 
-用法：
-  python3 scripts/build.py                     # 在线拉 GitHub 最新快照
-  python3 scripts/build.py --local path/to/dir # 用本地 data/ festivals/ sources/
-只用 Python 标准库。
+  python3 scripts/build.py                 在线读取最新快照
+  python3 scripts/build.py --local DIR     读取本地 DIR/data、DIR/festivals
+只依赖 Python 标准库。
 """
 import datetime as dt, json, os, pathlib, re, sys, urllib.request
 from email.utils import format_datetime
@@ -21,24 +17,28 @@ BRANCH = os.environ.get("DATA_BRANCH", "main")
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUB = ROOT / "public"
+TZ = dt.timezone(dt.timedelta(hours=8))
+AGGREGATORS = ("toujiang.today", "aitop100", "aigcsubmission")
+STATUS = {"开放征集中": "open", "待公布": "pending", "即将开放": "soon", "已截止": "closed"}
+warns = []
+
+
+def warn(msg):
+    warns.append(msg)
 
 
 def fetch(url):
-    headers = {"User-Agent": "AIContestBot/1.0"}
+    h = {"User-Agent": "AIContestAssistant-build/6"}
     if os.environ.get("GITHUB_TOKEN") and "api.github.com" in url:
-        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
-    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=40) as r:
+        h["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+    with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
         return r.read().decode("utf-8")
 
 
-def latest(paths, folder, prefix, required=True):
+def latest(paths, folder, prefix):
     pat = re.compile(rf"^{folder}/{prefix}_(\d{{4}}-\d{{2}}-\d{{2}})\.json$")
-    hits = sorted((m.group(1), p) for p in paths if (m := pat.match(p)))
-    if not hits:
-        if required:
-            sys.exit(f"找不到 {folder}/{prefix}_YYYY-MM-DD.json")
-        return None
-    return hits[-1][1]
+    hits = sorted(p for p in paths if pat.match(p))
+    return hits[-1] if hits else None
 
 
 def load():
@@ -50,72 +50,122 @@ def load():
         tree = json.loads(fetch(f"https://api.github.com/repos/{REPO}/git/trees/{BRANCH}?recursive=1"))
         paths = [t["path"] for t in tree["tree"]]
         read = lambda p: fetch(f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{p}")
-    out = {"contests": json.loads(read(latest(paths, "data", "contests")))}
-    for key, folder, prefix in (("festivals", "festivals", "festivals"), ("sources", "sources", "feishu_sources")):
-        p = latest(paths, folder, prefix, required=False)
-        out[key] = json.loads(read(p)) if p else {"records": []}
+    c = latest(paths, "data", "contests")
+    if not c:
+        sys.exit("✗ 找不到赛事快照 data/contests_YYYY-MM-DD.json")
+    f = latest(paths, "festivals", "festivals")
+    return json.loads(read(c)), (json.loads(read(f)) if f else {"records": []})
+
+
+def s(v):
+    return re.sub(r"[ \t]+\n", "\n", str(v or "").replace("\r", "")).strip()
+
+
+def clean_url(u, name, field):
+    u = s(u)
+    if not u:
+        return ""
+    if re.match(r"^[\w.+-]+@[\w-]+\.[\w.]+$", u):
+        return "mailto:" + u
+    m = re.search(r"[\w.+-]+@[\w-]+\.[\w.]+", u)
+    if not re.match(r"^(https?://|mailto:)", u):
+        if m:
+            return "mailto:" + m.group(0)
+        if re.match(r"^[\w-]+(\.[\w-]+)+(/|$)", u):
+            return "https://" + u
+        warn(f"{field}不是链接，已置空：{name} → {u[:40]}")
+        return ""
+    if any(a in u for a in AGGREGATORS):
+        warn(f"{field}指向聚合站：{name}")
+    return u
+
+
+def normalize(raw, overrides, today):
+    out = []
+    for r in raw:
+        name, rid = s(r.get("名称")), s(r.get("record_id"))
+        if not name or not rid:
+            continue
+        o = overrides.get(rid, {})
+        for k, v in (o.get("fix") or {}).items():
+            r[k] = v
+        dl = s(r.get("截止日期"))
+        if dl and not re.match(r"^\d{4}-\d{2}-\d{2}$", dl):
+            warn(f"截止日期格式异常，按待公布处理：{name} → {dl}")
+            dl = ""
+        grade = s(r.get("分级")).upper()
+        if grade not in ("S", "A", "B", "C"):
+            warn(f"分级异常，降为 C：{name} → {grade or '空'}")
+            grade = "C"
+        st = STATUS.get(s(r.get("征集状态")), "open")
+        if dl and dt.date.fromisoformat(dl) < today and st in ("open", "soon"):
+            st = "closed"
+        if st == "open" and not dl:
+            st = "pending"
+        topic = s(r.get("命题"))
+        if topic not in ("命题", "自由投稿"):
+            topic = ""
+        fee = re.sub(r"^[￥¥]0（免费）$", "免费", s(r.get("报名费")))
+        fee = "免费" if fee in ("无", "0", "免费报名") else fee
+        if not fee:
+            fee = "未核实"; warn(f"报名费为空：{name}")
+        prize = s(r.get("最高奖金")) or "官方未公布"
+        site = clean_url(r.get("官网"), name, "官网")
+        submit = clean_url(r.get("投递链接"), name, "投递链接") or site
+        if not site and not submit:
+            warn(f"官网与投递链接都为空：{name}")
+        desc = re.sub(r"(^|\n)\s*来源[:：][^\n]*", "", s(r.get("赛事说明")))
+        v = o.get("verify") or {}
+        notes = s(r.get("计划备注"))
+        mark = "star" if "⭐" in notes else "caution" if "⚠" in notes else "note" if "🔍" in notes else ""
+        out.append({"id": rid, "name": name, "grade": grade, "deadline": dl or None, "status": st,
+                    "organizer": s(r.get("主办方")), "region": s(r.get("地区")), "category": s(r.get("类别")), "topic": topic,
+                    "fee": fee, "prize": prize, "site": site, "submit": submit, "desc": desc, "notes": notes, "mark": mark,
+                    "verified": v.get("level") or "none", "verifyNote": v.get("note") or ""})
     return out
 
 
-def apply_overrides(data):
-    f = ROOT / "scripts" / "overrides.json"
-    if not f.exists():
-        return
-    ov = json.loads(f.read_text("utf-8")).get("records", {})
-    n = 0
-    for r in data["contests"]["records"]:
-        o = ov.get(r.get("record_id"))
-        if not o:
-            continue
-        for k, v in (o.get("fix") or {}).items():
-            r[k] = v
-        if o.get("verify"):
-            r["_verify"] = o["verify"]
-        n += 1
-    print(f"  · 应用数据修正 {n} 条（scripts/overrides.json）")
+def validate(recs, raw_n):
+    if not recs:
+        sys.exit("✗ 赛事数据为空，已中止构建")
+    if raw_n and (raw_n - len(recs)) / raw_n > 0.05:
+        sys.exit(f"✗ {raw_n - len(recs)} 条记录缺少名称或标识（超过 5%），已中止构建")
+    prev = PUB / "data" / "contests.json"
+    if prev.exists() and "--force" not in sys.argv:
+        try:
+            pn = len(json.loads(prev.read_text("utf-8"))["contests"])
+            if pn and len(recs) < pn * 0.7:
+                sys.exit(f"✗ 赛事数从 {pn} 降到 {len(recs)}（减少超过 30%），已中止构建。确认无误可加 --force")
+        except (KeyError, ValueError):
+            pass
 
 
-def validate(data):
-    recs = data["contests"].get("records")
-    if not isinstance(recs, list) or not recs:
-        sys.exit("赛事数据为空，停止构建（避免把线上站点清空）")
-    need = {"record_id", "名称"}
-    bad = [i for i, r in enumerate(recs) if not need <= r.keys()]
-    if bad:
-        sys.exit(f"有 {len(bad)} 条赛事缺少 record_id 或 名称，例如第 {bad[0]} 条")
-    for r in recs:
-        d = r.get("截止日期")
-        if d and not re.match(r"^\d{4}-\d{2}-\d{2}$", str(d)):
-            print(f"  ! 截止日期格式异常，按待公布处理：{r['名称']} → {d}")
-            r["截止日期"] = None
-    return recs
+def festivals(raw):
+    return [{"name": s(f.get("电影节")), "place": s(f.get("国家/城市")), "type": s(f.get("类别")), "when": s(f.get("每年举办时间")),
+             "award": s(f.get("最高奖")), "latest": s(f.get("最新档期")), "note": s(f.get("备注"))} for f in raw if s(f.get("电影节"))]
 
 
 def ics(recs, today):
-    def e(s):
-        return re.sub(r"([\\;,])", r"\\\1", str(s or "")).replace("\n", "\\n")
-    stamp = dt.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//AIContest//Assistant//ZH", "CALSCALE:GREGORIAN",
-             "METHOD:PUBLISH", "X-WR-CALNAME:AI 赛事截止 · AI赛事助手", "X-WR-TIMEZONE:Asia/Shanghai", "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
+    e = lambda t: re.sub(r"([\\;,])", r"\\\1", str(t or "")).replace("\n", "\\n")
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//AIContestAssistant//v6//ZH", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+         "X-WR-CALNAME:AI 赛事截止", "X-WR-TIMEZONE:Asia/Shanghai", "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
     for r in recs:
-        d = r.get("截止日期")
-        if not d or r.get("征集状态") == "已截止":
+        if not r["deadline"] or r["status"] == "closed":
             continue
-        day = dt.date.fromisoformat(d)
-        if day < today:
+        d = dt.date.fromisoformat(r["deadline"])
+        if d < today:
             continue
-        url = r.get("投递链接") or r.get("官网") or ""
-        lines += ["BEGIN:VEVENT", f"UID:{r['record_id']}@aicontest", f"DTSTAMP:{stamp}",
-                  f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
-                  f"SUMMARY:{e('【' + (r.get('分级') or '-') + '】截止 · ' + r['名称'])}",
-                  f"DESCRIPTION:{e('最高奖励：' + str(r.get('最高奖金') or '—') + chr(10) + '报名费：' + str(r.get('报名费') or '—') + chr(10) + '投递：' + (url or '—'))}"]
-        if url:
-            lines.append(f"URL:{url}")
-        lines += ["BEGIN:VALARM", "TRIGGER:-P3D", "ACTION:DISPLAY", f"DESCRIPTION:{e('3 天后截止：' + r['名称'])}", "END:VALARM", "END:VEVENT"]
-    lines.append("END:VCALENDAR")
-    # 按 RFC 5545 折行（75 字节）
+        u = r["submit"] or r["site"]
+        L += ["BEGIN:VEVENT", f"UID:{r['id']}@aicontest", f"DTSTAMP:{stamp}", f"DTSTART;VALUE=DATE:{d:%Y%m%d}",
+              f"DTEND;VALUE=DATE:{d + dt.timedelta(days=1):%Y%m%d}", f"SUMMARY:{e('【' + r['grade'] + '】截止 · ' + r['name'])}",
+              f"DESCRIPTION:{e('最高奖励：' + r['prize'] + chr(10) + '报名费：' + r['fee'] + chr(10) + '投递：' + (u or '—'))}"]
+        if u.startswith("http"):
+            L.append("URL:" + u)
+        L += ["BEGIN:VALARM", "TRIGGER:-P3D", "ACTION:DISPLAY", f"DESCRIPTION:{e('3 天后截止：' + r['name'])}", "END:VALARM", "END:VEVENT"]
+    L.append("END:VCALENDAR")
     out = []
-    for ln in lines:
+    for ln in L:
         b = ln.encode("utf-8")
         while len(b) > 75:
             cut = 75
@@ -126,38 +176,43 @@ def ics(recs, today):
     return "\r\n".join(out) + "\r\n"
 
 
-def rss(recs, snap, today):
+def rss(recs, snap):
     base = SITE_URL or "."
-    items = [r for r in recs if r.get("征集状态") != "已截止" and (not r.get("截止日期") or dt.date.fromisoformat(r["截止日期"]) >= today)]
-    items.sort(key=lambda r: r.get("截止日期") or "9999")
-    pub = format_datetime(dt.datetime.combine(dt.date.fromisoformat(snap), dt.time(8), dt.timezone(dt.timedelta(hours=8))))
-    x = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>',
-         "<title>AI赛事助手 · 在征 AI 影像赛事</title>", f"<link>{escape(base)}/</link>",
-         "<description>AI 视频 / 影像赛事，按截止日排序</description>", "<language>zh-cn</language>", f"<lastBuildDate>{pub}</lastBuildDate>"]
-    for r in items:
-        t = f"【{r.get('分级') or '-'}】{r['名称']} · {r.get('截止日期') or '截止待公布'}"
-        desc = f"最高奖励：{r.get('最高奖金') or '—'}<br>报名费：{r.get('报名费') or '—'}<br>命题：{r.get('命题') or '—'}<br><br>{(r.get('赛事说明') or '').replace(chr(10), '<br>')}"
-        x += ["<item>", f"<title>{escape(t)}</title>", f"<link>{escape(base)}/#/c/{escape(r['record_id'])}</link>",
-              f'<guid isPermaLink="false">{escape(r["record_id"])}</guid>', f"<pubDate>{pub}</pubDate>",
-              f"<description>{escape(desc)}</description>", "</item>"]
-    x.append("</channel></rss>")
-    return "\n".join(x)
+    pub = format_datetime(dt.datetime.combine(dt.date.fromisoformat(snap), dt.time(8), TZ))
+    x = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>', "<title>AI赛事助手 · 在征赛事</title>",
+         f"<link>{escape(base)}/</link>", "<description>AI 视频与影像赛事，按截止日排序</description>", "<language>zh-cn</language>", f"<lastBuildDate>{pub}</lastBuildDate>"]
+    for r in sorted((r for r in recs if r["status"] != "closed"), key=lambda r: r["deadline"] or "9999"):
+        d = f"最高奖励：{r['prize']}<br>报名费：{r['fee']}<br>主办方：{r['organizer'] or '—'}<br><br>{r['desc'].replace(chr(10), '<br>')}"
+        x += ["<item>", f"<title>{escape('【' + r['grade'] + '】' + r['name'] + ' · ' + (r['deadline'] or '截止待公布'))}</title>",
+              f"<link>{escape(base)}/#/c/{escape(r['id'])}</link>", f'<guid isPermaLink="false">{escape(r["id"])}</guid>',
+              f"<pubDate>{pub}</pubDate>", f"<description>{escape(d)}</description>", "</item>"]
+    return "\n".join(x + ["</channel></rss>"])
 
 
 def main():
-    data = load()
-    apply_overrides(data)
-    recs = validate(data)
-    snap = data["contests"].get("snapshot_date") or dt.date.today().isoformat()
-    today = dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date()
+    craw, fraw = load()
+    ovf = ROOT / "scripts" / "overrides.json"
+    overrides = json.loads(ovf.read_text("utf-8")).get("records", {}) if ovf.exists() else {}
+    today = dt.datetime.now(TZ).date()
+    snap = s(craw.get("snapshot_date")) or today.isoformat()
+    raw = craw.get("records") or []
+    recs = normalize(raw, overrides, today)
+    validate(recs, len(raw))
+    data = {"snapshot": snap, "built": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "contests": recs, "festivals": festivals(fraw.get("records") or [])}
     (PUB / "data").mkdir(parents=True, exist_ok=True)
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    (PUB / "data" / "data.js").write_text(f"/* 自动生成：scripts/build.py · 快照 {snap} */\nwindow.AICONTEST={blob};\n", "utf-8")
-    (PUB / "data" / "contests.json").write_text(json.dumps(data["contests"], ensure_ascii=False, indent=1), "utf-8")
+    (PUB / "data" / "data.js").write_text(f"/* 自动生成，请勿手改 · {snap} */\nwindow.AIC={blob};\n", "utf-8")
+    (PUB / "data" / "contests.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), "utf-8")
     (PUB / "deadlines.ics").write_text(ics(recs, today), "utf-8", newline="")
-    (PUB / "feed.xml").write_text(rss(recs, snap, today), "utf-8")
-    print(f"✓ 快照 {snap} · 赛事 {len(recs)} · 电影节 {len(data['festivals'].get('records', []))} · 信源 {len(data['sources'].get('records', []))}")
-    print(f"  → {PUB.relative_to(ROOT)}/  （本地预览：python3 -m http.server -d public 8080）")
+    (PUB / "feed.xml").write_text(rss(recs, snap), "utf-8")
+    from collections import Counter
+    st = Counter(r["status"] for r in recs); g = Counter(r["grade"] for r in recs)
+    print(f"✓ 快照 {snap} · 赛事 {len(recs)}（在征 {st['open']} / 待公布 {st['pending']} / 即将开放 {st['soon']} / 已截止 {st['closed']}）· 分级 S{g['S']} A{g['A']} B{g['B']} C{g['C']} · 电影节 {len(data['festivals'])}")
+    if warns:
+        print(f"  告警 {len(warns)} 条：")
+        for w in warns[:40]:
+            print("   -", w)
+        (ROOT / "build-warnings.txt").write_text("\n".join(warns), "utf-8")
 
 
 if __name__ == "__main__":
