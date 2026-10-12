@@ -1,4 +1,4 @@
-// 冒烟测试：jsdom 加载页面，逐个路由渲染并做关键交互。运行：npm i && npm test
+// 冒烟测试（v6）：jsdom 加载页面，逐个路由渲染并验证关键交互。运行：npm i && npm test
 const { JSDOM } = require("jsdom");
 const fs = require("fs"), path = require("path");
 const pub = path.join(__dirname, "..", "public");
@@ -7,113 +7,90 @@ const html = fs.readFileSync(path.join(pub, "index.html"), "utf8")
   .replace('<script src="assets/app.js"></script>', () => `<script>${fs.readFileSync(path.join(pub, "assets/app.js"), "utf8")}</script>`);
 const errors = [];
 const dom = new JSDOM(html, { runScripts: "dangerously", url: "http://localhost/#/home", pretendToBeVisual: true,
-  beforeParse(w) { w.matchMedia = () => ({ matches: false, addEventListener() {} }); w.scrollTo = () => {}; w.Element.prototype.scrollIntoView = () => {}; w.CSS = { escape: s => s };
-    w.HTMLCanvasElement.prototype.getContext = () => new Proxy({}, { get: (t, k) => k === "measureText" ? () => ({ width: 10 }) : k.startsWith("create") ? () => ({ addColorStop() {} }) : () => {} , set: () => true });
+  beforeParse(w) {
+    w.matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListener() {} });
+    w.scrollTo = () => {}; w.Element.prototype.scrollIntoView = () => {};
+    w.CSS = { escape: s => s };
+    w.HTMLCanvasElement.prototype.getContext = () => new Proxy({}, { get: (t, k) => k === "measureText" ? () => ({ width: 10 }) : k.startsWith("create") ? () => ({ addColorStop() {} }) : () => {}, set: () => true });
     w.HTMLCanvasElement.prototype.toDataURL = () => "data:image/png;base64,";
-    w.addEventListener("error", e => errors.push("JS 错误：" + e.message)); w.console.error = (...a) => errors.push(a.join(" ")); } });
+    w.IntersectionObserver = class { observe() {} unobserve() {} disconnect() {} };
+    w.ResizeObserver = class { observe() {} unobserve() {} disconnect() {} };
+    w.addEventListener("error", e => errors.push("JS 错误：" + e.message));
+    w.console.error = (...a) => errors.push("console.error: " + a.join(" "));
+  } });
 const w = dom.window, d = w.document, $ = s => d.querySelector(s), $$ = s => [...d.querySelectorAll(s)];
-// 测试用的赛事 ID：动态取数据里第一条，避免清理过期赛事后硬编码 ID 失效
-const CID = (w.AICONTEST && w.AICONTEST.contests && w.AICONTEST.contests.records[0] &&
-             w.AICONTEST.contests.records[0].record_id) || "recvsttZ6S4HVM";
 const go = h => { w.location.hash = h; w.dispatchEvent(new w.HashChangeEvent("hashchange")); };
 const ok = (c, m) => { if (!c) errors.push("✗ " + m); else console.log("✓", m); };
 const wait = ms => new Promise(r => setTimeout(r, ms));
+const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
 (async () => {
-  await wait(60);
-  await wait(420); ok($("#modal").classList.contains("on") && $(".onb"), "首次打开显示新手引导");
-  $('[data-onb="next"]').click(); await wait(5); ok($(".onb-b").textContent.includes("第 2"), "引导下一步");
-  $('[data-onb="skip"]').click(); await wait(5); ok(!$("#modal").classList.contains("on"), "跳过引导");
-  ok($("#view .display"), "首页问候标题：" + $("#view .display")?.textContent);
-  ok($(".hero"), "首页主卡片");
-  ok(/\d/.test($("#cd")?.textContent || ""), "倒计时");
-  ok($$(".strip .bar-d").length === 21, "21 天截止分布");
-  ok($$("#view .card").length >= 4, `推荐 / 精选卡片 ${$$("#view .card").length}`);
-  $$(".strip .bar-d")[1].click(); await wait(10); ok(w.location.hash.includes("day="), "点击日期");
-  go("#/contests"); await wait(10); const n0 = $$("#rows .card").length; ok(n0 > 50, `全部赛事卡片视图 ${n0}`);
-  $('[data-f="fee"][data-v="free"]').click(); await wait(10); const n1 = $$("#rows .card").length; ok(n1 > 0 && n1 < n0, `免费筛选 ${n1}`);
-  ok($$(".af").length === 1, "已选筛选标签");
-  $(".af button").click(); await wait(10); ok($$("#rows .card").length === n0, "移除筛选");
-  go("#/contests?q=可灵&view=list"); await wait(10); ok($$("#rows > *").length >= 1, `搜索可灵 ${$$("#rows > *").length}`);
-  $("[data-view=list]").click(); await wait(10); ok($$("#rows .row").length >= 1, "列表视图");
-  go("#/contests?sort=prize&cash=1"); await wait(10); ok($$("#rows .row").length > 5, "奖金排序");
-  go("#/contests?grade=S&region=cn&form=MV&fee=free"); await wait(10); ok($(".empty"), "无结果空状态");
-  go("#/contests"); await wait(10);
-  $("#rows .row").click(); await wait(20);
-  ok($("#drawer").classList.contains("on"), "打开详情：" + $(".dr-t").textContent);
-  ok($(".verify"), "核实状态：" + $(".verify").textContent.slice(0, 30));
-  $('[data-set="making"]').click(); await wait(10); ok($('[data-set="making"]').classList.contains("on"), "设置状态：制作中");
-  const t1 = $(".dr-t").textContent; $("[data-dr-nav='1']").click(); await wait(10); ok($(".dr-t").textContent !== t1, "详情切到下一个");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(10); ok(!$("#drawer").classList.contains("on"), "Esc 关闭");
-  $$("#rows .row [data-star]:not(.on)")[0].click(); await wait(10);
-  go("#/tracker"); await wait(10); ok($$(".kcard").length >= 2, `看板卡片 ${$$(".kcard").length}`); ok($$(".fn").length === 4, "进度漏斗");
-  ok($$(".sg").length > 0, "看板推荐"); $(".sg [data-quick]").click(); await wait(10); ok($$(".kcard").length >= 3, "一键加入想投");
-  go("#/calendar"); await wait(10); ok($$(".cal-grid .cell").length >= 28, `日历 ${$$(".cal-grid .cell").length} 格 · 事件 ${$$(".ev").length}`);
-  ok($$(".agenda .row").length > 0, "本月截止清单");
-  $("[data-cal='1']").click(); await wait(10); ok(/月/.test($(".cal-head .h1").textContent), "翻页：" + $(".cal-head .h1").textContent);
-  go("#/brief"); await wait(10); ok($(".masthead"), "简报报头"); ok($(".lead-story"), "今日头条"); ok($$(".bi").length > 5, `简报条目 ${$$(".bi").length}`);
-  $("[data-poster]").click(); await wait(10); ok($("#modal").classList.contains("on"), "分享海报弹窗");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(10);
-  go("#/festivals"); await wait(10); ok($$(".fest").length > 10, `电影节卡片 ${$$(".fest").length}`);
-  go("#/sources"); await wait(10); ok($$("tbody tr").length > 30, "信源表");
-  go("#/about"); await wait(10); ok($(".weights") && $$(".gcard").length === 7, "关于页");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "k", metaKey: true })); await wait(10);
-  const q = $("#palQ"); q.value = "金鸡"; q.dispatchEvent(new w.Event("input")); await wait(10);
-  ok($$(".pal-i").length >= 1, "命令面板搜索");
-  q.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Enter" })); await wait(20); ok($("#drawer").classList.contains("on"), "面板回车打开赛事");
-  go("#/c/recvs8rH4W0X0x"); await wait(20); ok($(".dr-t")?.textContent.includes("北海道"), "深链接打开详情");
-  ok($(".verify.fixed"), "北海道显示已更正");
-  ok(d.title.includes("AI赛事助手"), "标题：" + d.title);
-  ok(!/影赛雷达|CineCall/.test(d.documentElement.innerHTML), "没有旧名字残留");
-  // ── 我的影片
-  w.confirm = () => true;
-  go("#/films"); await wait(10); ok($$(".sec-tabs a").length === 5, "影片资料 5 个分区"); ok($(".ready .ring"), "准备度环");
-  $("[data-paste]").click(); await wait(10);
-  $("#pasteIn").value = "片名：一粒种子\n英文片名：A Seed\n时长：00:03:30\n简介：一粒种子在废墟里发芽的故事。\n导演：张三 / Zhang San\n联系邮箱：test@example.com\n使用工具：即梦、可灵、Suno\n中英字幕，1080p，24fps，立体声";
-  $("[data-parse]").click(); await wait(10); ok($$(".pr").length >= 8, `粘贴识别 ${$$(".pr").length} 项`);
-  $("[data-apply]").click(); await wait(20);
-  const st = () => JSON.parse(w.localStorage.getItem("aicontest.v1"));
-  const f1 = Object.values(st().films).find(x => x.fields.nameZh === "一粒种子");
-  ok(f1 && f1.fields.duration === "00:03:30" && f1.fields.email === "test@example.com" && /即梦/.test(f1.fields.aiTools), "识别结果写入影片");
-  ok(f1.crew.length === 1 && f1.crew[0].en === "Zang San".replace("Zang", "Zhang"), "自动添加导演");
-  ok($("#filmBar").textContent.includes("一粒种子"), "顶部当前影片");
-  $('[data-fv="student"][data-o="否"]').click(); await wait(10); ok(st().films[f1.id].fields.student === "否", "选项字段保存");
-  go("#/films?sec=intro"); await wait(10); const ta = $('[data-fk="synEn"]'); ta.value = "A seed grows in ruins."; ta.dispatchEvent(new w.Event("input")); await wait(500); ok(st().films[f1.id].fields.synEn, "文本字段自动保存");
-  go("#/films?sec=crew"); await wait(10); $("[data-add-crew]").click(); await wait(10); ok($$("[data-crew]").length === 2, "添加主创");
-  go("#/films?sec=files"); await wait(10); $("[data-add-award]").click(); await wait(10); ok($$("[data-award]").length === 1, "添加获奖经历");
-  ok($$(".fit").length > 0, `为影片找赛事 ${$$(".fit").length}`);
-  $("[data-card]").click(); await wait(10); ok($("#cardMd").value.includes("# 《一粒种子》") && $("#cardMd").value.includes("A seed grows"), "资料卡生成");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" }));
-  // 匹配
-  go("#/contests?fit=1"); await wait(10); const nf = $$("#rows > *").length; ok(nf > 0, `适合当前影片 ${nf}`);
-  ok($$(".mt-line").length > 0, "卡片显示匹配结果");
-  go("#/c/" + CID); await wait(20); ok($(".match"), "详情显示与当前影片的匹配检查");
-  $('[data-set="submitted"]').click(); await wait(10);
-  ok($(".oc-pick"), "结果选项"); $('[data-oc="入围"]').click(); await wait(10); ok(st().plans[f1.id][CID].outcome === "入围", "记录入围");
-  const sd = $('[data-sd="conf"]'); sd.value = "NO-123"; sd.dispatchEvent(new w.Event("input")); await wait(450); ok(st().plans[f1.id][CID].d.conf === "NO-123", "投稿详情保存");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(10);
-  // 多影片
-  go("#/tracker"); await wait(10); ok($$(".kcard").length >= 1 && $(".kcard").textContent.includes("NO-123") || $$(".kcard").some(k => k.textContent.includes("NO-123")), "看板显示回执编号");
-  $("[data-add-custom]").click(); await wait(10); $('[data-cu="name"]').value = "测试自定义赛事"; $('[data-cu="deadline"]').value = "2026-12-01"; $("[data-save-custom]").click(); await wait(20);
-  ok($$(".kcard").some(k => k.textContent.includes("测试自定义赛事")), "自定义赛事加入计划");
-  const before = $$(".kcard").length;
-  $("[data-new-film]").click(); await wait(20); go("#/tracker"); await wait(10); ok($$(".kcard").length === 0, "新影片的投递计划是空的");
-  $('[data-act="filmMenu"]').click(); $$("#filmMenu [data-film]").find(b => b.textContent.includes("一粒种子")).click(); await wait(10); go("#/tracker"); await wait(10);
-  ok($$(".kcard").length === before, "切回原影片，计划还在");
-  ok(Object.keys(st().films).length === 2, "两部影片");
-  // ── v4 增强
-  go("#/home"); await wait(10); ok($$(".todo").length >= 1, `今日待办 ${$$(".todo").length} 条`);
-  go("#/contests"); await wait(10); const cbs = $$("#rows [data-cmp]"); cbs[0].click(); await wait(5); $$("#rows [data-cmp]")[1].click(); await wait(5); $$("#rows [data-cmp]")[2].click(); await wait(5);
-  ok($("#tray").classList.contains("on") && $$(".tr-c").length === 3, "对比托盘 3 个");
-  $$("#rows [data-cmp]")[3].click(); await wait(5); ok($$(".tr-c").length === 3, "最多 3 个");
-  $("[data-cmp-open]").click(); await wait(10); ok($$(".cmp tbody tr").length >= 10 && $$(".cmp td.best").length > 0, "对比表与最优高亮");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(5);
-  $("[data-cmp-clear]").click(); await wait(5); ok(!$("#tray").classList.contains("on"), "清空对比");
-  go("#/c/" + CID); await wait(20); ok($$(".cl li").length >= 6, `投递清单 ${$$(".cl li").length} 项`);
-  const b0 = $$(".cl li:not(.done) [data-ck-item]:not([disabled])")[0]; const k0 = b0.dataset.ckItem; b0.click(); await wait(10); ok($(`[data-ck-item="${k0}"]`).closest("li").classList.contains("done"), "勾选清单项");
-  ok($$(".cl li.done em").length >= 1, "清单自动从影片资料确认");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(10);
-  go("#/insights"); await wait(10); ok($$(".vb").length === 8 && $(".donut") && $$(".hbars.prize a").length > 3, "数据洞察页");
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "?" })); await wait(5); ok($(".kbd-list"), "快捷键帮助"); d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" }));
-  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "g" })); d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "f" })); await wait(20); ok(w.location.hash.includes("films"), "G F 跳到影片");
+  await wait(350);
+  const A = w.AIC || {};
+  ok(Array.isArray(A.contests) && A.contests.length > 100, `数据载入：赛事 ${A.contests && A.contests.length}`);
+  ok(Array.isArray(A.festivals) && A.festivals.length > 10, `电影节 ${A.festivals && A.festivals.length}`);
+  ok($$("#tabs a, #tabs button").length >= 7, `导航 ${$$("#tabs a, #tabs button").length} 项`);
+  ok(/AI赛事助手/.test(d.title), "标题：" + d.title);
+
+  go("#/home"); await wait(80);
+  ok($$("#view .kpi").length >= 4, `首页关键数字 ${$$("#view .kpi").length} 个`);
+  ok($("#view .hero") || $("#view .lead"), "首页主卡片");
+  ok(/\d/.test($("#view .clock") ? $("#view .clock").textContent : ""), "倒计时：" + (($("#view .clock") || {}).textContent || "").replace(/\s+/g, " ").slice(0, 24));
+  ok($$("#view .list > *").length + $$("#view .row").length > 3, "最近截止列表");
+
+  go("#/contests"); await wait(80);
+  const n0 = $$("#rows > *").length;
+  ok(n0 > 50, `全部赛事 ${n0} 条`);
+  const chip = byText(".chip", "免费报名");
+  ok(!!chip, "筛选：免费报名");
+  if (chip) { chip.click(); await wait(80); const n1 = $$("#rows > *").length; ok(n1 > 0 && n1 < n0, `免费筛选 ${n0} → ${n1}`); }
+  const clr = $(".clr") || byText("button", "清除");
+  if (clr) { clr.click(); await wait(80); }
+  go("#/contests?q=AI"); await wait(300); ok($$("#rows > *").length > 0, `搜索 AI → ${$$("#rows > *").length} 条`);
+  go("#/contests"); await wait(80);
+
+  const row = $("#rows > *");
+  row.click(); await wait(150);
+  ok($("#drawer").classList.contains("on"), "打开详情：" + (($(".dr-t") || {}).textContent || "").slice(0, 24));
+  ok(/\/|·/.test($("#drawer").textContent || ""), "详情含主办方与截止");
+  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(80);
+  ok(!$("#drawer").classList.contains("on"), "Esc 关闭详情");
+
+  go("#/calendar"); await wait(80);
+  ok($$("#view .cell").length >= 28, `日历 ${$$("#view .cell").length} 格 · 事件 ${$$("#view .ev").length}`);
+  ok($$("#view .agenda > *").length > 0, "本月截止清单");
+  const nx = $$("#view [data-cal]").find(b => b.dataset.cal !== "0");
+  if (nx) { nx.click(); await wait(80); ok(/月/.test($("#view .cal-head").textContent), "日历翻页"); }
+
+  go("#/insights"); await wait(80);
+  ok($$("#view .vb").length > 3 && $("#view .donut"), "数据洞察图表");
+  ok($$("#view .gcard, #view .hbars a").length > 0, "洞察分项");
+
+  go("#/brief"); await wait(80);
+  ok($("#view .paper"), "简报正文");
+  ok($$("#view .pi").length > 3, `简报条目 ${$$("#view .pi").length}`);
+  ok($$("#view [data-copy], #view .btn").length > 0, "简报复制/打印入口");
+
+  go("#/festivals"); await wait(80);
+  ok($$("#view .fest").length > 10, `电影节卡片 ${$$("#view .fest").length}`);
+
+  go("#/about"); await wait(80);
+  ok($("#view .weights") && $$("#view .gcard").length >= 4, "收录与分级页");
+
+  const id = A.contests[0].id;
+  go("#/c/" + id); await wait(300);
+  const dr = $("#drawer"), drName = A.contests[0].name;
+  ok(dr.classList.contains("on") && dr.textContent.includes(drName.slice(0, 6)), "深链接打开详情：" + drName.slice(0, 20));
+  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(60);
+
+  $("#sq").value = "AI";
+  $("#sq").dispatchEvent(new w.Event("input")); await wait(320);
+  ok($$("#sres > *").length > 0, `命令面板搜索 ${$$("#sres > *").length} 条`);
+  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(60);
+
+  const t0 = d.documentElement.dataset.theme;
+  $('[data-act="theme"]').click(); await wait(60);
+  ok(d.documentElement.dataset.theme !== t0, `主题切换 ${t0} → ${d.documentElement.dataset.theme}`);
+
+  ok(!/我的影片|投递看板|数据来源|作品库/.test(d.documentElement.innerHTML), "无旧版残留模块");
   if (errors.length) { console.error("\n" + errors.join("\n")); process.exit(1); } else console.log("\n全部通过");
 })();
