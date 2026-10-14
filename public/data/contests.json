@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-15 06:25",
+ "built": "2026-10-15 06:33",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -2435,7 +2435,7 @@
    "fee": "未核实",
    "prize": "10万元现金+50万Tapies（金奖3万×1、银奖1.5万×2、铜奖5000×3）",
    "site": "https://app.tapnow.ai/event/67",
-   "submit": "http://TapNow上传 + 飞书表单",
+   "submit": "https://app.tapnow.ai/event/67",
    "desc": "PlusX Global联合上海科技馆、中科院古脊椎所发起的「未来生命」全球科学×AI×艺术共创计划，AI视频/3D动画/实验影像，MP4 1080p、1–5分钟，须用AI并注明工具模型，设10–15岁单项。",
    "notes": "官方页实际截止11-14 23:00（外部表写11-15有误，2026-10-14官方页复核）；官方通稿投稿截止 2026-11-15（原 11-14 早一天，已修正）",
    "mark": "",
@@ -2495,7 +2495,7 @@
    "fee": "$50",
    "prize": "$1,000 Grand Prix",
    "site": "https://cineprague.com/",
-   "submit": "http://FilmFreeway",
+   "submit": "https://filmfreeway.com/festivals/98463",
    "desc": "布拉格AI电影节（首届），官方规则同时接受传统无AI作品并设Best NO-AI类别。\n\n【单元与截止】Extended Deadline 2026-11-18 为最终档（$50）；非纯AI专项节，官方同时设 Best NO-AI 类别。",
    "notes": "首届封顶B；非纯AI专项节，投递时按规则标注（Extended档，2026-10-14官网实测200）",
    "mark": "",
@@ -2515,7 +2515,7 @@
    "fee": "免费",
    "prize": "€1,000",
    "site": "https://festhome.com/festival/10633",
-   "submit": "http://Festhome（同官网）",
+   "submit": "https://festhome.com/festival/10633",
    "desc": "柏林之门国际电影节（BGIFF，首届），规则明确欢迎AI-assisted影片并设Best AI Film类别，同时收剧本与摄影。",
    "notes": "首届封顶B；无独立官网——官网与投递同填Festhome报名页（无官网例外，2026-10-14实测200）；Final档",
    "mark": "",
