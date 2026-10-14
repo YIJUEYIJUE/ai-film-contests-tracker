@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-15 00:13",
+ "built": "2026-10-15 00:21",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -186,8 +186,8 @@
    "id": "recvs8rH4WlDov",
    "name": "亚洲艺术电影节·亚洲AIGC国际电影单元",
    "grade": "B",
-   "deadline": "2026-02-28",
-   "status": "closed",
+   "deadline": null,
+   "status": "pending",
    "organizer": "亚洲艺术电影协会、澳门国际艺术电影协会",
    "region": "中国·澳门",
    "category": "AI影展/艺术电影节(AAFF)",
@@ -197,7 +197,7 @@
    "site": "https://aaff.org.mo/",
    "submit": "https://filmfreeway.com/aaf",
    "desc": "综合艺术电影节中的明确AIGC单元，实体活动和往届履约可核验，适合作为低成本长线目标。\n\n【认证】第3届 · 澳门实体活动 · 2026届已有AI短片提名及AI单元入围记录\n\n【命题要求】自由投稿·AI相关作品即可",
-   "notes": "官网/FF确认2027设AIGC单元但截止日未公布，原2027-01-20无出处；⚠️10-14全量核对：2026届AI影像奖已于2026-02-28截止并于5月颁奖；2027届仅发布主视觉未开征，下届公布后更新",
+   "notes": "官网/FF确认2027设AIGC单元但截止日未公布，原2027-01-20无出处；⚠️10-14全量核对：2026届AI影像奖已于2026-02-28截止并于5月颁奖；2027届仅发布主视觉未开征，下届公布后更新；2026届已于2026-05-21澳门颁奖收官（人民网河北频道报道）",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -886,8 +886,8 @@
    "id": "recvtfIGJM4hhb",
    "name": "AI TALENTS NEW YORK",
    "grade": "C",
-   "deadline": "2026-09-29",
-   "status": "closed",
+   "deadline": "2027-04-04",
+   "status": "open",
    "organizer": "Midtowner Productions（Piotr Kondela）",
    "region": "美国纽约/全球",
    "category": "AI电影/剧本/音乐",
@@ -896,8 +896,8 @@
    "prize": "无现金奖（13类荣誉，获奖放映+reel）",
    "site": "https://www.aitalentsfest.com/",
    "submit": "https://filmfreeway.com/aitalentsny",
-   "desc": "AI TALENTS NEW YORK，由Midtowner Productions在纽约东哈莱姆创办的AI电影/剧本/音乐竞赛（首届），2026届活动7月16–17日举行，设最佳AI电影/导演/剧本等十余项奖；官网aitalentsfest.com，投稿走FilmFreeway。",
-   "notes": "截止日已过（2026-09-29），标为已截止",
+   "desc": "AI TALENTS NEW YORK，由Midtowner Productions在纽约东哈莱姆创办的AI电影/剧本/音乐竞赛（首届），2026届活动7月16–17日举行，设最佳AI电影/导演/剧本等十余项奖\n官网aitalentsfest.com，投稿走FilmFreeway",
+   "notes": "截止日已过（2026-09-29），标为已截止；FilmFreeway 已开新周期（最终档2027-04-04，活动2027-04-20），截止日已更新、状态回开放征集中；预算友好可走11-08早鸟档($7)",
    "mark": "",
    "verified": "warn",
    "verifyNote": "官网仍是上一季内容，查不到本季截止日"
