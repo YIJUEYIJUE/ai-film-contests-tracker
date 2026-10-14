@@ -1,6 +1,6 @@
 # 飞书信源表 · 快照 2026-10-14
 
-> 共 **64** 条
+> 共 **66** 条
 
 | 平台 | 名称 | 身份ID | 主页 |
 |---|---|---|---|
@@ -68,3 +68,5 @@
 | 公众号 | 投奖每日资讯 | gh_9fe27a15068c | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzYzMTE5NjgzMQ==) |
 | 公众号 | 中国金鸡百花电影节 | gh_12602c07128b | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkyMTU5MTkxNg==) |
 | 公众号 | HIIFF海南岛国际电影节 | HIIFF__ | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkxNjUzNDcwNg==) |
+| 公众号 | HiShorts!青年短片周 | gh_2319d3bd4be9 | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5OTk0NjEzOQ==) |
+| 公众号 | wuhu动画人空间 | gh_37b76d43efc2 | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwNjAyMzczNQ==) |
