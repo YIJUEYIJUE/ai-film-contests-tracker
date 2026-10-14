@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-14 20:57",
+ "built": "2026-10-14 21:11",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -2759,6 +2759,26 @@
    "desc": "第20届巴厘岛国际电影节（BaliNale），老牌电影节（第20届）；官方条例明确AI制作影片按动画类别提交、评审流程相同，≤40分钟。",
    "notes": "⚠️非AI专项节+官方条例明确接受AI（FilmFreeway规则原文：AI-produced films按animation提交）；仅收FilmFreeway（2026-10-14档位经FF规则页修正）",
    "mark": "caution",
+   "verified": "none",
+   "verifyNote": ""
+  },
+  {
+   "id": "reczz28NInS8xWYP",
+   "name": "SEKO「地球Online试玩中」创作活动",
+   "grade": "B",
+   "deadline": "2026-11-01",
+   "status": "open",
+   "organizer": "商汤科技（SEKO创作平台）",
+   "region": "全国（线上）",
+   "category": "AI视频",
+   "topic": "命题",
+   "fee": "免费",
+   "prize": "最高10,000元现金（多档：2000元社媒激励可多平台叠加／5000元／6000元／10,000元）",
+   "site": "https://seko.sensetime.com/activity/2101501518397612034",
+   "submit": "https://seko.sensetime.com/activity/2101501518397612034",
+   "desc": "商汤科技SEKO创作平台官方活动：在SEKO平台选择游戏世界，上传生活素材或输入创意，生成一支「游戏化短片」。征集期2026-09-20至11-01 23:59，评审11-02~11-06，11-09公布结果。参与即获平台积分激励；现金奖评选须将作品同步发布至小红书/抖音/B站/快手/微博/视频号任一平台并回填作品链接。",
+   "notes": "①官网页即活动与创作入口，官网=投递链接同值（平台内活动无独立报名页）；②现金奖评选前置条件：社媒发布+回填链接，单条作品多平台达标激励可叠加；③获奖依赖社媒流量表现，创作上限受平台工具约束——评级B的主因；来自外部合集表全量比对（2026-10-14），官网实测200",
+   "mark": "",
    "verified": "none",
    "verifyNote": ""
   }
