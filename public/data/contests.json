@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-14 21:59",
+ "built": "2026-10-14 22:54",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -57,7 +57,7 @@
    "site": "https://gdj.fujian.gov.cn/xw/sjgz/202605/t20260522_7151106.htm",
    "submit": "https://gdj.fujian.gov.cn/xw/sjgz/202605/t20260522_7151106.htm",
    "desc": "官方材料要求完整、提交成本低，适合30秒至5分钟的AIGC短片，是本轮国内优先级较高的公开征集。\n\n【认证】福建省广播电视局等多机构联合发起 · 人民视频、腾讯新闻、海博TV和福建电视台展播 · 创作扶持金\n\n【命题要求】围绕三大主题板块创作：赓续红色血脉 / 奋进的画卷 / 一城一景·福见家乡\n\n【参赛资格】全国高校师生、海内外青年创作者、影视机构及爱好者；每人或机构不超过5部",
-   "notes": "官网为牵头主办单位福建省广播电视局官方征集公告页（gdj.fujian.gov.cn，已核验可打开）；投稿邮箱 AIGC2026FJ@163.com，无网页报名表单入口（作品征集截止2026-10-15）；2026-08-29补全：该官网通知页内含《参赛报名表》《版权承诺书》附件下载，为实际投稿的必经入口，故补入「投递链接」（与官网同值）；奖金：单项最高5万元创作扶持金（另设国礼瓷奖品）；官网原链接404",
+   "notes": "官网为牵头主办单位福建省广播电视局官方征集公告页（gdj.fujian.gov.cn，已核验可打开）；投稿邮箱 AIGC2026FJ@163.com，无网页报名表单入口（作品征集截止2026-10-15）；2026-08-29补全：该官网通知页内含《参赛报名表》《版权承诺书》附件下载，为实际投稿的必经入口，故补入「投递链接」（与官网同值）；奖金：单项最高5万元创作扶持金（另设国礼瓷奖品）；官网原链接404；本条为该系列活动的AIGC视听创作作品征集单元，统一截止10-15；系列活动其他子活动（如有）不适用本条日期",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -546,7 +546,7 @@
    "id": "recvsoUlbAefct",
    "name": "戛纳世界电影节·铭记未来(最佳AI电影)2027",
    "grade": "B",
-   "deadline": "2027-03-30",
+   "deadline": "2027-07-30",
    "status": "open",
    "organizer": "World Film Festival in Cannes — Remember the Future",
    "region": "法国 Cannes",
@@ -557,7 +557,7 @@
    "site": "https://www.world-film-festival.com/",
    "submit": "https://filmfreeway.com/CannesWorldFilmFestival",
    "desc": "World Film Festival in Cannes – Remember The Future，戛纳线上线下混合的月度/年度国际竞赛（含 AI 等类别），下届年度活动 2027/6/26（Pullman Cannes Mandelieu），月度展映在戛纳，经 FilmFreeway 提交。",
-   "notes": "官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯",
+   "notes": "官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -566,7 +566,7 @@
    "id": "recvsoUlbAAR23",
    "name": "戛纳电影奖·新AI单元2027",
    "grade": "B",
-   "deadline": "2027-05-01",
+   "deadline": "2027-01-21",
    "status": "open",
    "organizer": "Cannes Film Awards",
    "region": "法国 Cannes",
@@ -577,7 +577,7 @@
    "site": "https://cannesfilmawards.com/",
    "submit": "https://filmfreeway.com/CannesFilmAwards",
    "desc": "Cannes Film Awards，于戛纳 Cinéma Olympia 举办的电影节/编剧/音乐/摄影竞赛（FilmFreeway 显示 ~2000 投稿、300 入选、100 奖项），2027 新增 AI 影片/VR/游戏/360° 类别。",
-   "notes": "官网/投递链接为各赛事官方站点",
+   "notes": "官网/投递链接为各赛事官方站点；滚动多档制，FilmFreeway 已证实的当前档截止 2027-01-21（原 05-01 无法证实）；后续可能开新档，投前以 FF 实时档期为准",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -717,7 +717,7 @@
    "site": "https://www.graphis.com/",
    "submit": "https://www.graphis.com/",
    "desc": "末班车报名至2026-10-27（常规已截止2026-07-28）",
-   "notes": "官网 graphis.com 为投稿入口（Cloudflare防护，正常浏览器可打开）；即梦用户享报名费五折；咨询邮箱 help@graphis.com",
+   "notes": "官网 graphis.com 为投稿入口（Cloudflare防护，正常浏览器可打开）；即梦用户享报名费五折；咨询邮箱 help@graphis.com；AI Creative 类别截止10-27 23:59（官网当前唯一显示档）",
    "mark": "star",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1226,7 +1226,7 @@
    "id": "recvtIfhUxWnsd",
    "name": "影卷之主电影节",
    "grade": "C",
-   "deadline": "2026-11-06",
+   "deadline": "2026-11-13",
    "status": "open",
    "organizer": "TLOTR Team",
    "region": "Los Angeles. California. USA and Paris France.",
@@ -1237,7 +1237,7 @@
    "site": "https://thelordofthereels.es/",
    "submit": "https://festhome.com/festival/10121",
    "desc": "独立电影人的道路，就像佛罗多前往魔多的旅程——充满挑战与未知。",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://thelordofthereels.es/，「官网」字段已改为该地址；⚠️水分警示：收费¥44-250，回报仅专属laurels/宣传，无实体行业价值",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://thelordofthereels.es/，「官网」字段已改为该地址；⚠️水分警示：收费¥44-250，回报仅专属laurels/宣传，无实体行业价值；11-06 前投递同样有效",
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1246,7 +1246,7 @@
    "id": "recvtIfhUxY6cl",
    "name": "The Ring Of Fire国际电影节",
    "grade": "C",
-   "deadline": "2026-11-13",
+   "deadline": "2026-11-20",
    "status": "open",
    "organizer": "Laura H.",
    "region": "32 Carrer de Verdi Barcelona, Catalunya 08012",
@@ -1257,7 +1257,7 @@
    "site": "https://theringoffirefilmf.wixsite.com/home",
    "submit": "https://filmfreeway.com/The_Ring_of_Fire",
    "desc": "The Ring Of Fire电影节创立于2013年，旨在推广本地和全国艺术家。创立初期，每届电影节展映31到41部作品。2022年，电影节以全新的国际化理念回归，吸引了国际制片人、导演和发行商的加入，从而迈向了更广阔的舞台。",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://theringoffirefilmf.wixsite.com/home，「官网」字段已改为该地址；⚠️水分警示：收费¥40-87，回报仅laurels，小型线上影展",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://theringoffirefilmf.wixsite.com/home，「官网」字段已改为该地址；⚠️水分警示：收费¥40-87，回报仅laurels，小型线上影展；FilmFreeway 征片日历最终档 2026-11-20（11-13 为 FestHome 渠道 Extended 档），按多档取 max 改 11-20",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -1266,7 +1266,7 @@
    "id": "recvtIfhUxT7ot",
    "name": "巴达洛纳电影节",
    "grade": "C",
-   "deadline": "2026-12-10",
+   "deadline": "2026-12-11",
    "status": "open",
    "organizer": "Bdn Team",
    "region": "Ocine Magic Badalona. Carrer de la Concòrdia, 1, 08917 Badalona, Barcelona",
@@ -1277,7 +1277,7 @@
    "site": "https://badalonaindiefest.es/",
    "submit": "https://filmfreeway.com/BadalonaIndieFest",
    "desc": "巴达洛纳电影节不仅是一场电影节，更像是一个围绕影像与创作构建的交流生态。它的诞生，旨在连接新锐电影创作者与独立写作者，打造一个让剧本与影像并行呈现、彼此对话的空间。",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://badalonaindiefest.es/，「官网」字段已改为该地址；⚠️水分警示：收费¥32-120，回报为Instagram推介/放映，行业价值有限",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://badalonaindiefest.es/，「官网」字段已改为该地址；⚠️水分警示：收费¥32-120，回报为Instagram推介/放映，行业价值有限；Festhome 官方列表最终档 2026-12-11（FilmFreeway 显示 12-10），取 max 改 12-11",
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1366,7 +1366,7 @@
    "id": "recvtIfhUxbnBx",
    "name": "西班牙穆查梅尔“南方”汽车影院电影节",
    "grade": "C",
-   "deadline": "2027-05-05",
+   "deadline": "2027-05-07",
    "status": "open",
    "organizer": "German Martinez",
    "region": "C/ Cerezo s/n, 03110, Mutxamel (Alicante)",
@@ -1377,7 +1377,7 @@
    "site": "https://festivalautocineelsur.es/en",
    "submit": "https://filmfreeway.com/festivals/90047",
    "desc": "Auto Cine el Sur Film Fest Mutxamiel",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址；Festhome Extended deadline 2027-05-07（原 05-05 早两天，已修正）",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1577,8 +1577,8 @@
    "site": "https://www.zhejiangyuanye.com",
    "submit": "mailto:3113907798@qq.com",
    "desc": "AI微电影/短剧/动画征集，须含“原野春天”品牌元素，团队≤5人、人均1部。",
-   "notes": "报名10-15截止、投稿10-31；官方公众号“永嘉发布”发布",
-   "mark": "",
+   "notes": "报名10-15截止、投稿10-31；官方公众号“永嘉发布”发布；⚠️两段截止：①进群报名10-15截止（先入官方群，未入群无投稿资格——报名最后一天）②成片投稿10-31截止",
+   "mark": "caution",
    "verified": "fixed",
    "verifyNote": "邮箱投稿：3113907798@qq.com"
   },
@@ -1637,7 +1637,7 @@
    "site": "https://jingrui-ai-competition.youku.com",
    "submit": "https://jingrui-ai-competition.youku.com",
    "desc": "虎鲸文娱集团发起的AI创作人才计划，AI影像作品征集，入围即有奖励，优酷独家展映。",
-   "notes": "首届无交叉验证按硬门槛封顶A；作品≥10分钟1080P、赛事首发、需1000字故事阐述；虎鲸文娱无独立官网，赛事页为优酷子域（官方自有）；⭐含金量高：优酷/虎鲸文娱背书，总池1000万（首届按规则封顶A）",
+   "notes": "首届无交叉验证按硬门槛封顶A；作品≥10分钟1080P、赛事首发、需1000字故事阐述；虎鲸文娱无独立官网，赛事页为优酷子域（官方自有）；⭐含金量高：优酷/虎鲸文娱背书，总池1000万（首届按规则封顶A）；全部赛道统一征稿期9-17~11-22（官网赛程原文），无分赛道不同截止",
    "mark": "star",
    "verified": "none",
    "verifyNote": ""
@@ -1857,7 +1857,7 @@
    "site": "https://info.akool.com/film-challenge-application",
    "submit": "https://info.akool.com/film-challenge-application",
    "desc": "30-90秒原创虚构电影预告片赛道；实质使用AKOOL工具；须在YouTube/TikTok/Instagram公开发布并加官方标签、话题和AKOOL标志；18岁以上。",
-   "notes": "仅预告片赛道已核实；其余赛道细则未完整；公开发布+授权要求多；奖金经官方规则页核实（总额至高$50万）——升 B；费用确认免费（No purchase necessary）；其余赛道未开放",
+   "notes": "仅预告片赛道已核实；其余赛道细则未完整；公开发布+授权要求多；奖金经官方规则页核实（总额至高$50万）——升 B；费用确认免费（No purchase necessary）；其余赛道未开放；预告片赛道已核实适用，其余赛道细则以官网规则页为准",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -1957,7 +1957,7 @@
    "site": "https://jk28w51siy.feishu.cn/share/base/form/shrcnzFdk1wriTP2ACyfOG2alkb",
    "submit": "https://jk28w51siy.feishu.cn/share/base/form/shrcnzFdk1wriTP2ACyfOG2alkb",
    "desc": "金海豚奖（厦门国际动漫节奖项体系）AI影像大赛，全球征集。AI参与核心创作，重视创意说明与IP潜力；已发布作品可投。报名两步缺一不可：①填写飞书问卷 ②邮件投递 cybersousaai@vip.163.com（以邮件时间为准）。",
-   "notes": "⭐含金量高：厦门市政府主办、金海豚奖老牌奖项体系、总池40-50万、火山引擎支持；报名两步缺一不可（飞书问卷+邮件）；各源奖金口径不一，投前以官方问卷内说明为准",
+   "notes": "⭐含金量高：厦门市政府主办、金海豚奖老牌奖项体系、总池40-50万、火山引擎支持；报名两步缺一不可（飞书问卷+邮件）；各源奖金口径不一，投前以官方问卷内说明为准；两大赛道统一征集至10-15（以邮件发送时间为准）：①AI动画短片（3-10分钟）②AI漫剧（每集≥1分钟且≥3集）；AI动画黑客松主题/时间待定未开放；「青少年AI黑客松」为另一独立活动（青少年专属不排名）勿混淆；报名两步缺一不可：飞书问卷+邮件cybersousaai@vip.163.com（标题+作品名+姓名+电话）",
    "mark": "star",
    "verified": "none",
    "verifyNote": ""
@@ -1977,7 +1977,7 @@
    "site": "https://new.qq.com/rain/a/20260928A07L8L00",
    "submit": "http://微信小程序「星韶文化活动赛事」（官方报名/上传入口，无网页URL）",
    "desc": "中新天津生态城\"AI上生态城\"活动配套赛事，主题\"当AI遇见生态城，每一帧都是新故事\"。三大赛道：走心筑梦篇/漫游见城篇/城市告白篇；征集AI短剧、短片、短视频。获奖作品将在生态城公共文化空间及官方新媒体矩阵展播。",
-   "notes": "🔍注意：截止10-20 24:00来自媒体报道，待小程序内最终确认；报名仅微信小程序「星韶文化活动赛事」，无网页入口；官网字段暂填官方报道页；2026-10-14全量核对：确认仍在征稿；10-20截止来自官方小程序口径，公开网页无直接证据",
+   "notes": "🔍注意：截止10-20 24:00来自媒体报道，待小程序内最终确认；报名仅微信小程序「星韶文化活动赛事」，无网页入口；官网字段暂填官方报道页；2026-10-14全量核对：确认仍在征稿；10-20截止来自官方小程序口径，公开网页无直接证据；具体日期仅见「星韶文化活动赛事」小程序——投前务必进小程序核对规则原文，按更早日期准备为宜",
    "mark": "note",
    "verified": "none",
    "verifyNote": ""
@@ -2017,7 +2017,7 @@
    "site": "https://www.photo233.com/",
    "submit": "https://www.photo233.com/",
    "desc": "上海国际光影节系列活动，夜景摄影与AI创意微视频并列赛道（AI微视频为其一，非独立AI赛事）。展示上海景观照明建设成果，通过摄影创作与AI创意分享光影故事。",
-   "notes": "报名与规则细节以上海摄协官方征稿启事为准",
+   "notes": "报名与规则细节以上海摄协官方征稿启事为准；AI创意微视频赛道与夜景影像主征集统一截稿10-31（官方列表口径）",
    "mark": "note",
    "verified": "none",
    "verifyNote": ""
@@ -2237,8 +2237,8 @@
    "site": "https://iaencorto.com",
    "submit": "https://festhome.com/f/10100",
    "desc": "智利/线上 AI 短片节第二届，全球开放，片长≤30 分钟，非西班牙语作品须配西语字幕；无现金奖，入围获 FilmSpark 1 万积分与培训机会。",
-   "notes": "截止取最晚档 Extended 2026-10-19（Late 10-18）；投递走 Festhome（festhome.com/f/10100）；官网 iaencorto.com 有 Cloudflare 保护，浏览器可正常打开；⚠️10-14全量核对：10-19为通知日，实际最终截止10-18，已修正（Festhome）",
-   "mark": "caution",
+   "notes": "档期更正：Extended deadline 2026-10-18 为最终投稿档（Late 10-04 已过），10-19 为通知日非截止日；投递走 Festhome（festhome.com/f/10100）；官网 iaencorto.com 有 Cloudflare 保护，浏览器可正常打开",
+   "mark": "",
    "verified": "none",
    "verifyNote": ""
   },
@@ -2286,8 +2286,8 @@
    "id": "reczz28MYyZBM7s4",
    "name": "新野青年AI影展 NYAIFF",
    "grade": "C",
-   "deadline": "2027-04-01",
-   "status": "open",
+   "deadline": null,
+   "status": "pending",
    "organizer": "新野青年AI影展组委会",
    "region": "中国·线上",
    "category": "AI影像",
@@ -2317,7 +2317,7 @@
    "site": "https://www.fulingwx.cn/web/aritcle/1555970823680770048/web/content_1555970823680770048.html",
    "submit": "http://通境创新创业创意服务平台（实名注册上传作品）+官方赛事群（扫码入群，用于通知与咨询）",
    "desc": "重庆涪陵主办的全国性AIGC创新创业创意大赛，设文旅短片、故事短片、AI动画等赛道，作品要求AI生成占比≥70%，围绕白鹤梁题刻文化与地方文旅主题创作。",
-   "notes": "⚠️10-15截止（核查日为最后一天）；正式投稿走「通境创新创业创意服务平台」注册上传，官方群仅用于通知咨询（2026-10-14官方页复核确认未延期）",
+   "notes": "⚠️10-15截止（核查日为最后一天）；正式投稿走「通境创新创业创意服务平台」注册上传，官方群仅用于通知咨询（2026-10-14官方页复核确认未延期）；各赛道/方向统一征集9-25~10-15（官网赛程「作品征集创作阶段」），无分赛道不同截止",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -2397,7 +2397,7 @@
    "site": "https://www.cdec.org.cn/articleDetail/2357",
    "submit": "http://contest.cdec.org.cn",
    "desc": "第20届好创意全国数字艺术设计大赛蒙牛美加墨世界杯专项赛，微视频赛道已于9-30截止，仅动画赛道（10–60秒）仍在征集，「足球+AI」双核驱动但未强制AI生成。",
-   "notes": "限高校在校生及教师；仅动画赛道在征（2026-10-14链接实测200）",
+   "notes": "限高校在校生及教师；仅动画赛道在征（2026-10-14链接实测200）；本条为第20届好创意节专项赛（仅动画赛道）；主节其他赛道截止另见各赛道页",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2437,7 +2437,7 @@
    "site": "https://www.cdec.org.cn/articleDetail/2364",
    "submit": "http://河马剧场APP内报名投稿",
    "desc": "第21届好创意「河马杯」大学生AI创意微短剧专项赛，限高校在校生，AI微短剧3分钟以上、竖屏1080×1920为佳，视频制作须AI原创生成并保留过程备查。",
-   "notes": "限高校在校生；优秀作品最高可获改编短剧利润50%分成（2026-10-14链接实测200）",
+   "notes": "限高校在校生；优秀作品最高可获改编短剧利润50%分成（2026-10-14链接实测200）；本条为第21届好创意节「河马杯」专项单元（仅此赛道）；好创意主节其他赛道截止各不相同，投前以各赛道页为准",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2457,7 +2457,7 @@
    "site": "https://www.cdec.org.cn/articleDetail/2299",
    "submit": "http://高校组 contest.cdec.org.cn（社会组投递入口页面暂空，投前确认）",
    "desc": "第20届好创意·重生纪元恐龙AI创作专项赛，不限身份（在校生/教师/社会选手均可），短视频赛道MP4 1–3分钟1080P，强制AIGC解构恐龙世界并标注AI应用点。",
-   "notes": "不限身份；社会组投递入口页面暂空需留意（2026-10-14链接实测200）",
+   "notes": "不限身份；社会组投递入口页面暂空需留意（2026-10-14链接实测200）；本条为第20届好创意节恐龙AI专项单元，分高校组与社会组（社会组投递入口页面暂空需留意）；主节其他赛道截止另见各赛道页",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2517,7 +2517,7 @@
    "site": "https://ai-nanjing.cn/",
    "submit": "http://ai-nanjing.cn「智汇无限」平台登录/注册后投稿",
    "desc": "南京市委人才办、市委网信办、南京文旅集团联合主办的「来斯南京·青AI的宁」人才AIGC短视频大赛，面向全社会，AI短片60–180秒、≤500MB，围绕南京城市人才主题创作。",
-   "notes": "官网为平台外壳属正常（大赛海报已挂首页，游客模式不可投稿）；央广网江苏、新华网江苏双权威媒体报道佐证（2026-10-14）",
+   "notes": "官网为平台外壳属正常（大赛海报已挂首页，游客模式不可投稿）；央广网江苏、新华网江苏双权威媒体报道佐证（2026-10-14）；各赛道统一集中投稿9-28~10-20 24:00（南京市政府官网原文），无分赛道不同截止",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2546,7 +2546,7 @@
    "id": "reczz28NIV3TEijI",
    "name": "PlusX「未来生命」全球科学×AI×艺术共创计划",
    "grade": "B",
-   "deadline": "2026-11-14",
+   "deadline": "2026-11-15",
    "status": "open",
    "organizer": "PlusX Global × 上海科技馆、中科院古脊椎所",
    "region": "全球",
@@ -2557,7 +2557,7 @@
    "site": "https://app.tapnow.ai/event/67",
    "submit": "http://TapNow上传 + 飞书表单",
    "desc": "PlusX Global联合上海科技馆、中科院古脊椎所发起的「未来生命」全球科学×AI×艺术共创计划，AI视频/3D动画/实验影像，MP4 1080p、1–5分钟，须用AI并注明工具模型，设10–15岁单项。",
-   "notes": "官方页实际截止11-14 23:00（外部表写11-15有误，2026-10-14官方页复核）",
+   "notes": "官方页实际截止11-14 23:00（外部表写11-15有误，2026-10-14官方页复核）；官方通稿投稿截止 2026-11-15（原 11-14 早一天，已修正）",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2597,7 +2597,7 @@
    "site": "https://1billionsummit.com/ai-film-award",
    "submit": "http://官网",
    "desc": "迪拜1 Billion Followers Summit旗下AI Film Award（第2届），征集5–7分钟、16:9、1080p AI影片，要求≥70%由Seedance生成，须加官方片头。",
-   "notes": "工具绑定（≥70% Seedance生成）；上届奖金已实际颁出（履约证据）（2026-10-14官网实测200/60KB）",
+   "notes": "工具绑定（≥70% Seedance生成）；上届奖金已实际颁出（履约证据）（2026-10-14官网实测200/60KB）；Summit旗下其他奖项（如AI Music等非影像类）不适用本条日期",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2697,7 +2697,7 @@
    "site": "https://www.cdec.org.cn/articleDetail/2523",
    "submit": "http://contest.cdec.org.cn",
    "desc": "第21届好创意「筑梦丝路·数启华章」AIGC专项大赛，限高校在校师生，赛道一数智影像类：动画短片/短视频/文化推广片，MP4横屏1–5分钟≤1GB，工具不限、鼓励AIGC、须说明所用模型。",
-   "notes": "限高校在校师生（2026-10-14链接实测200）",
+   "notes": "限高校在校师生（2026-10-14链接实测200）；本条为第21届好创意节AIGC专项大赛（独立赛道，限高校在校师生）；主节其他赛道截止另见各赛道页",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
