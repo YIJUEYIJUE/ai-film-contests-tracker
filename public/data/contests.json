@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-15 00:21",
+ "built": "2026-10-15 00:40",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -1294,10 +1294,10 @@
    "topic": "自由投稿",
    "fee": "￥40–280",
    "prize": "官方未公布奖金（线上颁奖+Instagram推广）",
-   "site": "https://newworldfilmfestiv.wixsite.com/home",
-   "submit": "https://filmfreeway.com/NewWorldFilmFest",
+   "site": "https://filmmakers.festhome.com/f/10007",
+   "submit": "https://filmmakers.festhome.com/f/10007",
    "desc": "时代在变化，电影节仅仅在影院放映你的电影已经不够了。电影制作人在电影节巡回中花费了大量资金，但你能得到什么回报呢？Instagram 上的荣誉奖章？还是在不到100人的影院里放映你的电影？这些都不足以推动你职业生涯的下一步。",
-   "notes": "Festhome Extended 2027-05-12；wixsite 官网当前 404，官网链接待补；日期 2027-05-12 经 Festhome 确认；🔍注意：官网 wixsite 已 404，归属待确认",
+   "notes": "Festhome Extended 2027-05-12；wixsite 官网当前 404，官网链接待补；日期 2027-05-12 经 Festhome 确认；🔍注意：官网 wixsite 已 404，归属待确认；原 wix 官网已 404 死链，官网与投递均改为 Festhome 官方页 f/10007（Extended deadline 2027-05-12、通知 05-19/20、举办地 Olot Spain）",
    "mark": "note",
    "verified": "none",
    "verifyNote": ""
@@ -1594,10 +1594,10 @@
    "topic": "命题",
    "fee": "免费",
    "prize": "扶持金合计18万：一类8000×10/二类4000×15/三类2000×20（鼓励奖仅证书）",
-   "site": "http://www.guiwang.org/",
+   "site": "http://未核实",
    "submit": "https://www.aitop100.cn/infomation/details/34758.html",
    "desc": "广西网络文化短视频征集评比，须带指定话题在抖音/微博/小红书发布，人均≤2件。\n\n【单元与截止】两段：作品须带指定话题公开发布，10-31 截止；申报材料 11-03 前报送 wlwhsp@sina.com。",
-   "notes": "作品发布10-31截止；申报材料11-03前发邮箱wlwhsp@sina.com；无独立官网，AITOP100为发布源；自治区党委网信办主办无独立官网，AITOP100 为发布源；作品发布 10-31 截止、申报材料 11-03 前报送；官网改为承办方广西网络文化协会官网（桂网）；作品发布 10-31、材料申报 11-03；投稿邮箱 wlwhsp@sina.com；🔍注意：未找到政府网原文，仅媒体转载",
+   "notes": "作品发布10-31截止；申报材料11-03前发邮箱wlwhsp@sina.com；无独立官网，AITOP100为发布源；自治区党委网信办主办无独立官网，AITOP100 为发布源；作品发布 10-31 截止、申报材料 11-03 前报送；官网改为承办方广西网络文化协会官网（桂网）；作品发布 10-31、材料申报 11-03；投稿邮箱 wlwhsp@sina.com；🔍注意：未找到政府网原文，仅媒体转载；原官网 guiwang.org（广西网络文化协会）源站已 502 宕机→官网改「未核实」；①主办=自治区党委网信办、承办=广西网络文化协会，无独立官网；②官方发布渠道为微信公众号「桂网」「网信广西」；③作品须带话题公开发布（10-31截止），申报材料 11-03 前发 wlwhsp@sina.com",
    "mark": "note",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1817,7 +1817,7 @@
    "site": "https://filmfreeway.com/neulandcinema",
    "submit": "https://filmfreeway.com/neulandcinema",
    "desc": "柏林首届主题短片赛（Neuland Cinema by AI Filmmakers Berlin）；为本届主题新作；1-5分钟；生成式AI实质参与；MP4/MOV、≥1080P；持有全部素材权利。",
-   "notes": "首届；截止修正：FilmFreeway 为唯一投稿渠道，晚期档 10-14（原 10-06 为官网保守值）；未发现独立官网",
+   "notes": "首届；截止修正：FilmFreeway 为唯一投稿渠道，晚期档 10-14（原 10-06 为官网保守值）；未发现独立官网；Late Deadline 10-14 已过（10-15为通知日），状态标已截止",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2715,9 +2715,9 @@
    "fee": "免费",
    "prize": "£500现金+20000创作积分（亚军10000积分）",
    "site": "https://app.tapnow.ai/",
-   "submit": "http://app.tapnow.ai（10-16开启征集）",
+   "submit": "https://filmfreeway.com/MetaMorphxTapNow",
    "desc": "MetaMorph×TapNow秋季赛之后的冬季赛，30秒–10分钟AI短片，≥50%须用TapNow生成且画布公开，全球免费；四季优胜者进入MetaMorph AI Award 2027总评。",
-   "notes": "2026-10-16开启征集；event页上线后补精确链接（2026-10-14巡检核实）",
+   "notes": "2026-10-16开启征集；event页上线后补精确链接（2026-10-14巡检核实）；TapNow 站内冬季赛 event 页 ID 在 10-16 开启前未公布（首页 /event/50 为秋季赛），投递暂挂 FilmFreeway 官方页（Winter: 10-16 开启、12-30 截止）；10-16 后从 TapNow 首页取冬季赛活动页回填",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
