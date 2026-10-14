@@ -1,7 +1,7 @@
 {
  "snapshot_date": "2026-10-14",
  "source": "飞书多维表格 J0KPbWdLVaim7csALvjccfP7nwZ/tblSBncl1nJt3IE1",
- "total": 64,
+ "total": 66,
  "records": [
   {
    "名称": "凹凸镜DOC",
@@ -577,7 +577,7 @@
    "IP属地": "",
    "发布时间": "",
    "主页链接": "https://pixverse.ai/",
-   "备注": "✅ 已验证：AI 视频生成平台，自办全球大赛并与联合国 AI for Good 合作设创作者奖项；含 PixLight 全球 AI 电影创作大赛（30 万美元奖池/33 奖项，2026.8.7–10.9），赛制/奖项可读。"
+   "备注": "✅ 已验证：AI 视频生成平台，自办全球大赛并与联合国 AI for Good 合作设创作者奖项；含 PixLight 全球 AI 电影创作大赛（30 万美元奖池/33 奖项）。｜【2026-10-15 更新】PixLight 2026 已延期：官方页横幅「Deadline Extended · October 31, 2026」（原 8-7~10-9），Timeline「OCT 31 2026 · 23:59 UTC Submission Deadline」；总奖池30万美元/33个获奖名额，最高奖10万美元；挑战赛直达页 https://app.pixverse.ai/challenge/pixlight（实测200/108KB）。已在赛事表（S级，10-31截止）。"
   },
   {
    "名称": "Civitai",
@@ -770,6 +770,30 @@
    "发布时间": "",
    "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkxNjUzNDcwNg==",
    "备注": "认证主体：三亚金椰海影有限责任公司（企业认证）；gh_id锚点已录，biz待补（补后更新主页链接）；gh_id留档：gh_aed5b442e185（文章页nick）【09-29文章提取biz】"
+  },
+  {
+   "名称": "HiShorts!青年短片周",
+   "平台": "公众号",
+   "简介": "HiShorts!青年短片周 官方公众号（主体：俺朋堂(北京)网络科技有限公司，IP属地日本）",
+   "小红书号": "",
+   "代表内容": "在AI时代坚持做细糠！HiShorts! × updream联合发起2026 AiShorts! AI短片大赛",
+   "身份ID": "gh_2319d3bd4be9",
+   "IP属地": "日本",
+   "发布时间": "2026-09-17",
+   "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5OTk0NjEzOQ==",
+   "备注": "https://mp.weixin.qq.com/s/m0hGYA-GicvizbwNosDuzw；公众号ID（微信UI）：HiShorts；gh_id：gh_2319d3bd4be9；biz：MzU5OTk0NjEzOQ==；认证主体：俺朋堂(北京)网络科技有限公司；IP属地：日本。文章页实测200/3.5MB（手机微信UA可抓）。AiShorts! AI短片大赛已在赛事表（B级，11-18截止，与官方征集期9-17~11-18一致）。每年固定办AiShorts!，重点跟踪AI短片赛道。"
+  },
+  {
+   "名称": "wuhu动画人空间",
+   "平台": "公众号",
+   "简介": "为全球动画人发声的动画媒体！（主体：杭州悟乎文化创意有限公司，IP属地浙江杭州）",
+   "小红书号": "",
+   "代表内容": "超50万奖金池，等你来战！金海豚奖AI影像大赛全球征集中！",
+   "身份ID": "gh_37b76d43efc2",
+   "IP属地": "浙江",
+   "发布时间": "2026-09",
+   "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwNjAyMzczNQ==",
+   "备注": "https://mp.weixin.qq.com/s/bv4Bw2EjkDGye7a_EcCJHg；公众号ID（微信UI）：wuhu1768；gh_id：gh_37b76d43efc2；biz：MzAwNjAyMzczNQ==；认证主体：杭州悟乎文化创意有限公司；IP属地：浙江杭州。文章页实测200/3.7MB（手机微信UA可抓）。wuhu为金海豚奖协办方、动画圈头部媒体，赛事资讯密度高，重点跟踪AIGC/动画赛道征集。"
   }
  ]
 }
