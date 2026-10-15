@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-15 23:34",
+ "built": "2026-10-16 00:45",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -557,7 +557,7 @@
    "site": "https://cannesfilmawards.com/",
    "submit": "https://filmfreeway.com/CannesFilmAwards",
    "desc": "Cannes Film Awards，于戛纳 Cinéma Olympia 举办的电影节/编剧/音乐/摄影竞赛（FilmFreeway 显示 ~2000 投稿、300 入选、100 奖项），2027 新增 AI 影片/VR/游戏/360° 类别。\n\n【单元与截止】后续可能开新档，投前以 FF 实时档期为准。",
-   "notes": "官网/投递链接为各赛事官方站点；滚动多档制，FilmFreeway 已证实的当前档截止 2027-01-21（原 05-01 无法证实）；后续可能开新档，投前以 FF 实时档期为准",
+   "notes": "官网/投递链接为各赛事官方站点；滚动多档制，FilmFreeway 已证实的当前档截止 2027-01-21（原 05-01 无法证实）；后续可能开新档，投前以 FF 实时档期为准；按「宁可早投」原则保留更早的 2027-01-21，投前请上 FilmFreeway 页再确认当期档期",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -1186,8 +1186,8 @@
    "id": "recvtIfhUxeJyf",
    "name": "Enjoy独立电影节",
    "grade": "C",
-   "deadline": "2027-04-01",
-   "status": "open",
+   "deadline": null,
+   "status": "pending",
    "organizer": "Enjoy Team",
    "region": "Perpiñan. France",
    "category": "短片",
@@ -1197,7 +1197,7 @@
    "site": "https://enjoyfilmfestival.wixsite.com/home",
    "submit": "https://www.toujiang.today/filmfest/458",
    "desc": "欢迎参加我们的独立电影节！这是一个致力于表彰新锐电影人与编剧创意激情的盛会\n截止日取详情页最晚档期（Final/Extended）",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://enjoyfilmfestival.wixsite.com/home，「官网」字段已改为该地址",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://enjoyfilmfestival.wixsite.com/home，「官网」字段已改为该地址；官网 Submit/Rules 页仅写「须经 FilmFreeway 投稿」，未公布任何截止日，亦检索不到其官方 FilmFreeway 页面",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1326,7 +1326,7 @@
    "id": "recvtIfhUxbnBx",
    "name": "西班牙穆查梅尔“南方”汽车影院电影节",
    "grade": "C",
-   "deadline": "2027-05-07",
+   "deadline": "2027-04-14",
    "status": "open",
    "organizer": "German Martinez",
    "region": "西班牙·阿利坎特·穆查梅尔",
@@ -1337,7 +1337,7 @@
    "site": "https://festivalautocineelsur.es/en",
    "submit": "https://filmfreeway.com/festivals/90047",
    "desc": "Auto Cine el Sur Film Fest Mutxamiel\n截止日取详情页最晚档期（Final/Extended）",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址；Festhome Extended deadline 2027-05-07（原 05-05 早两天，已修正）",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址；Festhome Extended deadline 2027-05-07（原 05-05 早两天，已修正）；两平台口径冲突：主办方 FilmFreeway 页末档 2027-04-14、Festhome 页 2027-05-07（活动 2027-05-14~15）；按「宁可早投」原则取更早的 2027-04-14，投前可再向主办方确认",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1386,8 +1386,8 @@
    "id": "recvwdOf2TR2tU",
    "name": "AI for the Future Festival·COP31版",
    "grade": "B",
-   "deadline": "2026-11-30",
-   "status": "open",
+   "deadline": null,
+   "status": "pending",
    "organizer": "AI for the Future（策展人Lisa Russell）",
    "region": "国际（UN场合）",
    "category": "电影节AIGC单元",
@@ -1397,7 +1397,7 @@
    "site": "https://filmfreeway.com/AIfortheFutureFest",
    "submit": "https://filmfreeway.com/AIfortheFutureFest",
    "desc": "气候主题AI影像征集，入选于UN COP31相关场合展映\n策展人为艾美奖得主、UN背景创作者",
-   "notes": "旧FF链接已404，更正为AIfortheFutureFest",
+   "notes": "旧FF链接已404，更正为AIfortheFutureFest；官方 FilmFreeway 页仅标注「COP31 – November/December 2026」，未公布具体截止日",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -1586,8 +1586,8 @@
    "id": "recvwdOjSlhvYz",
    "name": "NEXTGEN新影像创投计划（可灵）",
    "grade": "B",
-   "deadline": "2026-12-31",
-   "status": "open",
+   "deadline": null,
+   "status": "pending",
    "organizer": "可灵AI",
    "region": "线上",
    "category": "AI视频大赛",
@@ -1597,7 +1597,7 @@
    "site": "https://klingai.com",
    "submit": "https://klingai.com",
    "desc": "可灵AI面向全球创作者的新影像创投计划，入选项目获现金投资与平台支持。",
-   "notes": "创投类常年招募（对标Runway百部电影基金）；截止日为年度窗口示意，官方未设固定截点",
+   "notes": "创投类常年招募（对标Runway百部电影基金）；截止日为年度窗口示意，官方未设固定截点；官方 klingai.com/nextgen 页面全文无报名/截止日期，属常年滚动招募（提交资料后 21 个工作日内回复）",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -2557,7 +2557,7 @@
    "site": "",
    "submit": "mailto:282477468@qq.com",
    "desc": "「AI视界·海丝新程」——「中国人寿杯」2026年泉州市短视频比赛暨AIGC创作活动，四大主题（家国新程/海丝文脉/泉城新韵/国寿守护），每集≤5分钟，16:9≥1080P或9:16≥1080×1920，MP4/MOV码率≥20Mbps\n「国寿守护」主题禁商业广告",
-   "notes": "无独立官网（官网字段未核实）——官方发布见微信公众号「泉州文艺」2026-10-01文章；⚠️与泉州另两场活动区分：「世遗之城·智绘泉州」（12-10截止）、「AI碰撞海丝文脉」（已截止），均非本场（2026-10-14官方公众号一手核实）",
+   "notes": "无独立官网（官网字段未核实）——官方发布见微信公众号「泉州文艺」2026-10-01文章；⚠️与泉州另两场活动区分：「世遗之城·智绘泉州」（12-10截止）、「AI碰撞海丝文脉」（已截止），均非本场（2026-10-14官方公众号一手核实）；同期泉州另有「世遗之城·智绘泉州」12-10 截止、「AI碰撞海丝文脉」已截止，注意勿混淆，投前以公众号原文为准",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
