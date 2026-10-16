@@ -1,7 +1,7 @@
 {
  "snapshot_date": "2026-10-14",
  "source": "飞书多维表格 J0KPbWdLVaim7csALvjccfP7nwZ/tblCWZjMO07OvOnN",
- "total": 140,
+ "total": 141,
  "records": [
   {
    "record_id": "recvs8rH4W0X0x",
@@ -2802,6 +2802,26 @@
    "计划备注": "【2026-10-16 信源巡检入库·来源：AITOP100 id34801 官方详情页】⚠️主办方未检索到独立官网，官网字段留空，投递暂挂 AITOP100 收录页，投前请从主办方官方渠道确认报名入口。⚠️限全国高校在校生（资格受限）。\n【2026-10-16 复核修正】经官方详情页复核四点：①各赛道一等奖实为 1名×3000元（二等1500、三等500），原「一等奖10万」系第三方汇总口径错误，已更正；②主办实为暨南大学新闻与传播学院（联合11所高校），南方财经全媒体集团、每日经济新闻等为支持媒体/命题企业，已更正；③赛道2为AIGC视频创作（科普视频/AI漫剧/AI微视频），符合影像类收录标准，保留；④奖金规模远低于初报+资格受限+学术性赛事，分级由 B 降为 C。",
    "是否需要投递": "待定",
    "是否已投": "否"
+  },
+  {
+   "record_id": "reczz28NswVh3THB",
+   "名称": "AI Cinema Festival Ottawa 2026（加拿大站·首届）",
+   "截止日期": "2026-10-18",
+   "剩余天数": 4,
+   "征集状态": "开放征集中",
+   "分级": "C",
+   "命题": "自由投稿",
+   "主办方": "AI Cinema Festival 组委会（aicinemafestival.com 城市站网络；Ottawa 站联系 canadian@aicinemafestival.com）",
+   "地区": "加拿大渥太华",
+   "类别": "AI短片/实验影像",
+   "官网": "https://canadian.aicinemafestival.com/",
+   "投递链接": "https://canadian.aicinemafestival.com/submissions.html",
+   "报名费": "未核实（官网未公布，须邮件确认）",
+   "最高奖金": "未核实（Grand Prix Canada 等五大奖，金额未公布）",
+   "赛事说明": "AI Cinema Festival Canada — Ottawa 2026 为 AI Cinema Festival 城市站网络的加拿大渥太华站（双语，法语优先），面向全球征集 hybrid human+AI 与全 AI 生成影像（含 MV、预告片与实验形式），2026-11-13~15 在 DoubleTree by Hilton Ottawa Downtown（33 Nicholas St）举办。设五大奖项：Grand Prix Canada、Best Human + AI Direction、Best AI Cinematography、Responsible AI Cinema Award、Audience Signal Award。评审五维度：叙事视角与故事／画面与光／声音与节奏／同意与责任／情感冲击。须披露主要 AI 工具与工作流；非英语/法语作品配字幕；无需首映。\n【单元与截止】统一投稿截止 2026-10-18（官网未标注具体时刻与时区，官方指南建议 10-17 前提交）；10 月下旬官方入选与评审；2026-11-13~15 影展与颁奖。",
+   "计划备注": "【2026-10-16 信源巡检入库·来源：aifilmcontests.com（每日核对官方页，Verified 2026-09-10）+ screenweaver.ai 独立指南（10-01 读官方规则）+ 官方站 canadian.aicinemafestival.com 三方交叉，官网两页实测 200】⚠️10-18 截止仅剩 2 天，官网未标注截止时刻与时区，要投就 10-17 前交；⚠️报名费与奖金金额官网均未公布，投递前须邮件 canadian@aicinemafestival.com 确认；Ottawa 站为首届（同网络已有 Cannes/Quebec/Montreal/NY 各独立城市站，独立截止独立评审）；分级 C、投递待定。同系列后续站已在库：魁北克 2027-01-24 截、纽约 2027-06-20 截，错过 Ottawa 可投后续站。",
+   "是否需要投递": "待定",
+   "是否已投": ""
   }
  ]
 }
