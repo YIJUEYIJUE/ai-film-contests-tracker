@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-17 01:38",
+ "built": "2026-10-17 01:45",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -2818,6 +2818,26 @@
    "submit": "https://canadian.aicinemafestival.com/submissions.html",
    "desc": "AI Cinema Festival Canada — Ottawa 2026 为 AI Cinema Festival 城市站网络的加拿大渥太华站（双语，法语优先），面向全球征集 hybrid human+AI 与全 AI 生成影像（含 MV、预告片与实验形式），2026-11-13~15 在 DoubleTree by Hilton Ottawa Downtown（33 Nicholas St）举办。设五大奖项：Grand Prix Canada、Best Human + AI Direction、Best AI Cinematography、Responsible AI Cinema Award、Audience Signal Award。评审五维度：叙事视角与故事／画面与光／声音与节奏／同意与责任／情感冲击。须披露主要 AI 工具与工作流；非英语/法语作品配字幕；无需首映。\n【单元与截止】统一投稿截止 2026-10-18（官网未标注具体时刻与时区，官方指南建议 10-17 前提交）；10 月下旬官方入选与评审；2026-11-13~15 影展与颁奖。",
    "notes": "⚠️报名费与奖金金额官网均未公布，投递前须邮件 canadian@aicinemafestival.com 确认；Ottawa 站为首届（同网络已有 Cannes/Quebec/Montreal/NY 各独立城市站，独立截止独立评审）；分级 C、投递待定；同系列后续站已在库：魁北克 2027-01-24 截、纽约 2027-06-20 截，错过 Ottawa 可投后续站",
+   "mark": "caution",
+   "verified": "none",
+   "verifyNote": ""
+  },
+  {
+   "id": "reczz28OAXZEXCIb",
+   "name": "觉醒漫剧计划2.0（B站×可灵AI×updream AI漫剧征集）",
+   "grade": "A",
+   "deadline": "2026-10-31",
+   "status": "open",
+   "organizer": "哔哩哔哩（B站）、可灵AI（快手）、updream 联合发起",
+   "region": "中国·线上（B站+可灵双端）",
+   "category": "AI漫剧/AI短剧",
+   "topic": "自由投稿",
+   "fee": "免费",
+   "prize": "签约项目单项目最高 100 万灵感值（算力）+ B站创作基金（金额未公布）",
+   "site": "https://klingai.com/app/activity-zone/brand-activity?id=929516552436068398",
+   "submit": "https://klingai.com/app/activity-zone/brand-activity?id=929516552436068398",
+   "desc": "「觉醒漫剧计划 2.0」由哔哩哔哩（B站）、updream 与可灵AI 联合发起，面向有故事创意的创作者征集 AI 漫剧，鼓励使用 AI 大模型完成画面主体、特效、背景等生成，以 PV 或正片形式参与首轮征稿\n入选项目可进入签约孵化，获得创作基金（覆盖制作成本）、算力、流量、发行与商业合作支持\n首轮征稿作品形式二选一：①完整 PV（≥3 分钟，须含完整世界观设定与主角阵容）②正片（1—3 集，单集 3—10 分钟）\n横竖版不限，MOV/MP4\n评审在征稿结束后约两周进行，官方联系商议合作",
+   "notes": "⚠️①B站：投稿至分区 + 关联话题 #觉醒漫剧计划2.0 + 标签含 #可灵AI #可灵AI创作计划 #updream + 勾选「内容由AI生成」；②可灵AI创意圈：官网/APP 活动专区提交作品并填报名表；扶持：完成首轮投稿并通过审核最高 6 万 updream 积分（可灵超级/优质创作者另享每分钟 5000 灵感值、单项目最高 10 万）；签约项目单项目灵感值扶持上限 100 万，另有 B站创作基金、千万流量、联合出品分成与收益分成；奖励不与可灵其它活动叠加，同一作品仅计一次；首期征稿已进入尾声（10-31 截止），建议优先完成 PV 或正片 1—3 集；建议投递：平台与工具方联合主办、扶持力度大，评 A",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
