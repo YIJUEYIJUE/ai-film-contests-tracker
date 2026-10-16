@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-17 01:28",
+ "built": "2026-10-17 01:38",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -537,7 +537,7 @@
    "site": "https://www.world-film-festival.com/",
    "submit": "https://filmfreeway.com/CannesWorldFilmFestival",
    "desc": "World Film Festival in Cannes – Remember The Future，戛纳线上线下混合的月度/年度国际竞赛（含 AI 等类别），下届年度活动 2027/6/26（Pullman Cannes Mandelieu），月度展映在戛纳，经 FilmFreeway 提交。",
-   "notes": "官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）",
+   "notes": "官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）；官网 world-film-festival.com 首页与规则页原文：「Les soumissions pour 2027 sont ouvertes ! Vous avez jusqu'au 30 mars」（主节 2027-03-30 截止）、「Notre prochain événement annuel aura lieu le 26 Juin 2027」（年度典礼 2027-06-26，历届为 2026-06-27、2025-06-28）；投前须向主办方确认 AI 分支的真实截止与展映安排",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -1057,7 +1057,7 @@
    "site": "http://jishitingbj.com/",
    "submit": "https://www.toujiang.today/filmfest/1060",
    "desc": "极视听AI短片超创季为 AIGC 短片征集活动（第1届，线上举办）。主题立意：当 AI 让「生成画面」变得轻而易举，更应追问画面背后是否有导演的思考、镜头之间是否有叙事的逻辑、光影之下是否有情感的流动。征片 2026-08-13 至 2026-09-20。\n\n【单元与截止】唯一征片单元=AI短片创作单元（横屏短片，片长≥1分钟，须有镜头语言/导演思维/艺术表达/叙事完整性，不限题材风格）；征片 2026-08-13—10-17 截止，通知与审核期至 10-25，线上举办（第1届）。",
-   "notes": "该站为作品展映平台（含登录/作品/排行/展映页），无独立投稿入口；主办方总监：孙子轩；线上举办；第1届；扶持金：评委会推介1万+最佳导演/叙事/艺术/影像各5000，合计3万元",
+   "notes": "该站为作品展映平台（含登录/作品/排行/展映页），无独立投稿入口；主办方总监：孙子轩；线上举办；第1届；扶持金：评委会推介1万+最佳导演/叙事/艺术/影像各5000，合计3万元；今日 10-17 为投稿最后一天",
    "mark": "caution",
    "verified": "warn",
    "verifyNote": "原官网已无法访问，暂未找到官方发布渠道；截止日未经官方确认，投递前请先联系主办方核实"
@@ -1877,7 +1877,7 @@
    "site": "https://impossiblefilmfest.com",
    "submit": "https://impossiblefilmfest.com",
    "desc": "伦敦线上国际电影节，主题\"把拍不出来的故事搬上银幕\"（记忆、历史、流亡、审查等题材）。六个类别：AI短片/AI微电影/纪录片重构/实验与概念/音乐录影带/流散故事。AI须承担重要创作角色且透明披露，人类创意主导。获奖2026-12-12线上公布。档期：早鸟7-31/常规9-30/延长期10-20。\n\n【单元与截止】官网原文 Final Extended Deadline on 5 November 2026（由10-20再延）——更新截止。",
-   "notes": "FilmFreeway 投递（官网内入口）；官网原文 Final Extended Deadline on 5 November 2026（由10-20再延）——更新截止",
+   "notes": "FilmFreeway 投递（官网内入口）；官网原文 Final Extended Deadline on 5 November 2026（由10-20再延）——更新截止；官网 impossiblefilmfest.com 原文「The 2026 edition runs from 1 July to 12 December 2026」「Submissions are open until the Final Extended Deadline on 5 November 2026. Official Selections will be announced on 24 November 2026」——活动周期 07-01~12-12、截止 11-05、入选公布 11-24，举办时间已改为完整周期",
    "mark": "note",
    "verified": "none",
    "verifyNote": ""
@@ -2457,7 +2457,7 @@
    "site": "https://www.liblib.tv/activity/62",
    "submit": "https://www.liblib.tv/activity/62",
    "desc": "LibTV与腾讯王者荣耀联合发起「王者无界剧场计划」，基于王者荣耀IP创作视频≥2分钟、16:9、≥720p，图文无效，AI工具不限（全AI或辅助均可）。",
-   "notes": "⚠️获奖须将作品著作权转让予腾讯（奖金前置条件）——权利条款风险，按硬门槛降级+警示；2026-10-14活动页实测200/613KB",
+   "notes": "⚠️获奖须将作品著作权转让予腾讯（奖金前置条件）——权利条款风险，按硬门槛降级+警示；2026-10-14活动页实测200/613KB；官网活动页 liblib.tv/activity/62 原文「活动时间：2026.09.21 - 2026.11.22」，即活动自 09-21 开启、11-22 结束（投稿截止同日），举办时间已由单日 09-21 改为完整区间",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
