@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-16 08:45",
+ "built": "2026-10-16 23:24",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -107,7 +107,7 @@
    "name": "DISRUPT AI电影节",
    "grade": "B",
    "deadline": "2026-10-16",
-   "status": "open",
+   "status": "closed",
    "organizer": "TBWA\\Australia",
    "region": "澳大利亚",
    "category": "AI影展/电影节",
@@ -117,7 +117,7 @@
    "site": "https://www.daiff.com.au/",
    "submit": "https://filmfreeway.com/DAIFF",
    "desc": "免费且有实体活动，但仅限居住在澳大利亚的申请人。\n\n【认证】澳大利亚生成式AI电影节 · 第2届 · 墨尔本与悉尼实体活动 · 总奖金1万澳元\n\n【命题要求】自由投稿·AI相关作品即可\n\n【参赛资格】仅限澳大利亚境内申请人，不限国籍",
-   "notes": "仅限澳大利亚境内常驻居民参赛（任何国籍但须常驻澳洲，须年满16岁），团队不符合参赛资格→决策不投；（硬门槛：资格不符）",
+   "notes": "仅限澳大利亚境内常驻居民参赛（任何国籍但须常驻澳洲，须年满16岁），团队不符合参赛资格→决策不投；（硬门槛：资格不符）；官网 daiff.com.au 首页原文「Submissions open on 15 June 2026, with entries closing on 16 October 2026」，FAQ 页「submissions open 15th June, 2026 / deadline 16th October, 2026」——无 late/extension 档期、无延期公告、无下一届征稿信息；11-06 通知、11-18 墨尔本 Gala 颁奖（悉尼展映随后）；经官方站双页亲自核实，确认已截止",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
