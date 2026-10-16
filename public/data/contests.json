@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-14",
- "built": "2026-10-16 08:25",
+ "built": "2026-10-16 08:32",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -2798,6 +2798,26 @@
    "submit": "https://www.aitop100.cn/infomation/details/34801.html",
    "desc": "第三届「金木棉杯」AIGC与计算传播创新大赛以“智创未来·效启新篇”为主题，面向全国高校在校生设三大赛道（含新增消费文本智能传播赛道），联合 11 所高校、多家媒体与企业支持，搭建产教融合的数智传播实战平台，设奖金、实习绿色通道、学术成果转化等奖励。\n\n【单元与截止】三大赛道：2026-11-15 截稿，赛程至 2026 年 12 月下旬公布结果。",
    "notes": "⚠️限全国高校在校生（资格受限）；②主办实为暨南大学新闻与传播学院（联合11所高校），南方财经全媒体集团、每日经济新闻等为支持媒体/命题企业，已更正；④奖金规模远低于初报+资格受限+学术性赛事，分级由 B 降为 C",
+   "mark": "caution",
+   "verified": "none",
+   "verifyNote": ""
+  },
+  {
+   "id": "reczz28NswVh3THB",
+   "name": "AI Cinema Festival Ottawa 2026（加拿大站·首届）",
+   "grade": "C",
+   "deadline": "2026-10-18",
+   "status": "open",
+   "organizer": "AI Cinema Festival 组委会（aicinemafestival.com 城市站网络；Ottawa 站联系 canadian@aicinemafestival.com）",
+   "region": "加拿大渥太华",
+   "category": "AI短片/实验影像",
+   "topic": "自由投稿",
+   "fee": "未核实（官网未公布，须邮件确认）",
+   "prize": "未核实（Grand Prix Canada 等五大奖，金额未公布）",
+   "site": "https://canadian.aicinemafestival.com/",
+   "submit": "https://canadian.aicinemafestival.com/submissions.html",
+   "desc": "AI Cinema Festival Canada — Ottawa 2026 为 AI Cinema Festival 城市站网络的加拿大渥太华站（双语，法语优先），面向全球征集 hybrid human+AI 与全 AI 生成影像（含 MV、预告片与实验形式），2026-11-13~15 在 DoubleTree by Hilton Ottawa Downtown（33 Nicholas St）举办。设五大奖项：Grand Prix Canada、Best Human + AI Direction、Best AI Cinematography、Responsible AI Cinema Award、Audience Signal Award。评审五维度：叙事视角与故事／画面与光／声音与节奏／同意与责任／情感冲击。须披露主要 AI 工具与工作流；非英语/法语作品配字幕；无需首映。\n【单元与截止】统一投稿截止 2026-10-18（官网未标注具体时刻与时区，官方指南建议 10-17 前提交）；10 月下旬官方入选与评审；2026-11-13~15 影展与颁奖。",
+   "notes": "⚠️报名费与奖金金额官网均未公布，投递前须邮件 canadian@aicinemafestival.com 确认；Ottawa 站为首届（同网络已有 Cannes/Quebec/Montreal/NY 各独立城市站，独立截止独立评审）；分级 C、投递待定；同系列后续站已在库：魁北克 2027-01-24 截、纽约 2027-06-20 截，错过 Ottawa 可投后续站",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
