@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-18",
- "built": "2026-10-18 01:10",
+ "built": "2026-10-18 02:03",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -177,7 +177,7 @@
    "site": "https://filmfreeway.com/AIBerlin",
    "submit": "https://filmfreeway.com/AIBerlin",
    "desc": "实体履约和AI类别清晰，但当前费用较高，适合预算充足的长线投递\n第2届 · 柏林Z-Cinema等3个实体场地 · 首届评论与放映记录可查\n自由投稿·AI相关作品即可\n全球开放\n非英语影片需英文字幕\n接受全AI、混合AI及以AI为主题作品",
-   "notes": "FilmFreeway报名且费用不退，2024年后完成作品、非英语需英文字幕",
+   "notes": "FilmFreeway报名且费用不退，2024年后完成作品、非英语需英文字幕；FilmFreeway 页反爬 403 无法直读；主办方无独立官网，FilmFreeway 页为唯一入口，官网与投递同填 filmfreeway.com/AIBerlin，实际投稿即在该页完成",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -317,7 +317,7 @@
    "site": "https://ai-zone.net/festival/",
    "submit": "https://filmfreeway.com/AIZONEInternationalAIFilmFestival2026",
    "desc": "纯线上但规则、往届结果和投稿入口完整，适合作为低成本补充目标。\n\n【认证】第2届 · AI影像平台主办 · 500美元大奖 · 往届结果可查\n\n【命题要求】自由投稿·AI相关作品即可",
-   "notes": "纯线上电影节，两条参与路径，授权平台发布方可竞争500美元大奖",
+   "notes": "纯线上电影节，两条参与路径，授权平台发布方可竞争500美元大奖；官网 ai-zone.net 403 反爬",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -757,7 +757,7 @@
    "site": "https://www.aitop100.cn/infomation/details/33896.html",
    "submit": "https://www.aitop100.cn/infomation/details/33896.html",
    "desc": "DreamSeed种梦计划AI创造者大赛，由DreamField平台主办，面向全球AI创作者的大型竞赛，赛程2026.05.26—11.26；设造梦者（提交AI相关GitHub仓库冲榜）与助梦者（投放算力支持）两种角色，总奖金池50万元（第1名25万元），榜单每日更新、作品可持续优化。",
-   "notes": "日期正确（赛程至11-26）但官网dreamfield.top内容异常；AITOP100详情33896为发布源；原官网 dreamfield.top 现为无关页面（死链），官网改填 AITOP100 发布源页；日期 11-26 经赛程确认无误；官网/投递改为主办方 DreamField 官网（dreamfield.top）；赛程 2026-05-26~11-26（榜单制：提交 AI 项目仓库获 Star），总奖金池 50 万元（第1名25万）；⚠️10-14全量核对：官网域名已变成无关网站（疑似易主/失效），原11-26截止无法核实，需人工溯源；官网 dreamfield.top 已易主为「Dawnload」AI 模型 API 网关站，种梦计划活动页不存在，赛事疑似已终止/迁移——保持不投，若后续官方重新发布再评估；原判「疑似终止」修正：赛程 2026.05.26—11.26（竞赛至10-25、冲刺10-26~11-20、颁奖11-21~11-26），当前仍在进行中，恢复在征；⚠️官网 dreamfield.top 已易主为无关站点、活动页不存在，报名须经 DreamField 平台，投前务必确认入口可用；实际报名需登录 DreamField 平台，投前务必确认入口是否恢复",
+   "notes": "日期正确（赛程至11-26）但官网dreamfield.top内容异常；AITOP100详情33896为发布源；原官网 dreamfield.top 现为无关页面（死链），官网改填 AITOP100 发布源页；日期 11-26 经赛程确认无误；官网/投递改为主办方 DreamField 官网（dreamfield.top）；赛程 2026-05-26~11-26（榜单制：提交 AI 项目仓库获 Star），总奖金池 50 万元（第1名25万）；⚠️10-14全量核对：官网域名已变成无关网站（疑似易主/失效），原11-26截止无法核实，需人工溯源；官网 dreamfield.top 已易主为「Dawnload」AI 模型 API 网关站，种梦计划活动页不存在，赛事疑似已终止/迁移——保持不投，若后续官方重新发布再评估；原判「疑似终止」修正：赛程 2026.05.26—11.26（竞赛至10-25、冲刺10-26~11-20、颁奖11-21~11-26），当前仍在进行中，恢复在征；⚠️官网 dreamfield.top 已易主为无关站点、活动页不存在，报名须经 DreamField 平台，投前务必确认入口可用；实际报名需登录 DreamField 平台，投前务必确认入口是否恢复；实际报名走 DreamField 平台，投前务必确认入口",
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -877,7 +877,7 @@
    "site": "https://www.aitalentsfest.com/",
    "submit": "https://filmfreeway.com/aitalentsny",
    "desc": "AI TALENTS NEW YORK，由Midtowner Productions在纽约东哈莱姆创办的AI电影/剧本/音乐竞赛（首届），2026届活动7月16–17日举行，设最佳AI电影/导演/剧本等十余项奖\n官网aitalentsfest.com，投稿走FilmFreeway",
-   "notes": "截止日已过（2026-09-29），标为已截止；FilmFreeway 已开新周期（最终档2027-04-04，活动2027-04-20），截止日已更新、状态回开放征集中；预算友好可走11-08早鸟档($7)",
+   "notes": "截止日已过（2026-09-29），标为已截止；FilmFreeway 已开新周期（最终档2027-04-04，活动2027-04-20），截止日已更新、状态回开放征集中；预算友好可走11-08早鸟档($7)；官网首页与 FilmFreeway 页当前仍以 2026-10-18 场次为主，页面未标 2027-04-04",
    "mark": "",
    "verified": "warn",
    "verifyNote": "官网仍是上一季内容，查不到本季截止日"
@@ -1117,7 +1117,7 @@
    "site": "https://pafilmfestival.com",
    "submit": "https://www.filmfreeway.com/pafilmfestival",
    "desc": "Puerto Aventuras International Film Festival\n截止日取详情页最晚档期（Final/Extended）",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址；官网 pafilmfestival.com 标题仍写 PAIFF 2026（页面未更新届次）",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1277,7 +1277,7 @@
    "site": "https://filmmakers.festhome.com/f/10007",
    "submit": "https://filmmakers.festhome.com/f/10007",
    "desc": "时代在变化，电影节仅仅在影院放映你的电影已经不够了。电影制作人在电影节巡回中花费了大量资金，但你能得到什么回报呢？Instagram 上的荣誉奖章？还是在不到100人的影院里放映你的电影？这些都不足以推动你职业生涯的下一步。\n\n【单元与截止】Festhome Extended 2027-05-12；原 wix 官网已 404 死链，官网与投递均改为 Festhome 官方页 f/10007（Extended deadline 2027-05-12、通知 05-19/20、举办地 Olot Spain）。",
-   "notes": "Festhome Extended 2027-05-12；wixsite 官网当前 404，官网链接待补；日期 2027-05-12 经 Festhome 确认；🔍注意：官网 wixsite 已 404，归属待确认；原 wix 官网已 404 死链，官网与投递均改为 Festhome 官方页 f/10007（Extended deadline 2027-05-12、通知 05-19/20、举办地 Olot Spain）",
+   "notes": "Festhome Extended 2027-05-12；wixsite 官网当前 404，官网链接待补；日期 2027-05-12 经 Festhome 确认；🔍注意：官网 wixsite 已 404，归属待确认；原 wix 官网已 404 死链，官网与投递均改为 Festhome 官方页 f/10007（Extended deadline 2027-05-12、通知 05-19/20、举办地 Olot Spain）；主办方原 wix 官网已 404 且无替代独立站，官网与投递同填 Festhome 官方页 f/10007（平台直达、Extended 2027-05-12）；平台为投稿唯一入口",
    "mark": "note",
    "verified": "none",
    "verifyNote": ""
@@ -1337,7 +1337,7 @@
    "site": "https://festivalautocineelsur.es/en",
    "submit": "https://filmfreeway.com/festivals/90047",
    "desc": "Auto Cine el Sur Film Fest Mutxamiel\n截止日取详情页最晚档期（Final/Extended）",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址；Festhome Extended deadline 2027-05-07（原 05-05 早两天，已修正）；两平台口径冲突：主办方 FilmFreeway 页末档 2027-04-14、Festhome 页 2027-05-07（活动 2027-05-14~15）；按「宁可早投」原则取更早的 2027-04-14，投前可再向主办方确认",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址；Festhome Extended deadline 2027-05-07（原 05-05 早两天，已修正）；两平台口径冲突：主办方 FilmFreeway 页末档 2027-04-14、Festhome 页 2027-05-07（活动 2027-05-14~15）；按「宁可早投」原则取更早的 2027-04-14，投前可再向主办方确认；官网 festivalautocineelsur.es/en/submit 是 FilmFreeway 嵌入页、官网本身不列日期；按「取更早档防错过」原则不改为 05-05/05-07，但 04-14 后官方平台可能仍开放，想投可再查 FF 页",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
@@ -1797,7 +1797,7 @@
    "site": "https://seoulaiff.com",
    "submit": "https://filmfreeway.com/SEOULINTERNATIONALAIFILMFESTIVAL",
    "desc": "首尔国际AI电影节新一届；历届大量中国创作者获奖/入围（Gold Prize、银奖、最佳学生短片、最佳导演）；首尔线下举办。\n\n【单元与截止】第6届档期确认：final 2027-04-30、通知05-05、颁奖05-30。",
-   "notes": "历届对中国创作者友好；第6届档期确认：final 2027-04-30、通知05-05、颁奖05-30；官网补独立域名 seoulaiff.com",
+   "notes": "历届对中国创作者友好；第6届档期确认：final 2027-04-30、通知05-05、颁奖05-30；官网补独立域名 seoulaiff.com；新影圈记 2027-04-28，差 2 天——要投建议按 04-28 提交留缓冲",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
