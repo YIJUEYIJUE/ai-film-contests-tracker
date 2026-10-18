@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-19",
- "built": "2026-10-19 03:37",
+ "built": "2026-10-19 03:43",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -3286,8 +3286,8 @@
    "id": "reczz28Ow4R5gMvv",
    "name": "Artiver AI Art Awards 2026（纽约）",
    "grade": "C",
-   "deadline": "2026-12-31",
-   "status": "open",
+   "deadline": "2026-08-31",
+   "status": "closed",
    "organizer": "Artiver",
    "region": "美国纽约",
    "category": "AI艺术奖·短片/实验",
@@ -3297,8 +3297,8 @@
    "site": "https://filmfreeway.com/ArtiverAIArtAwards",
    "submit": "https://filmfreeway.com/ArtiverAIArtAwards",
    "desc": "面向全球数字艺术家与 AI 创作者的评选，类别含短片与实验影像。\n\n【单元与截止】多类别评选；2026-12-31 截止。\n\n【投稿方式】FilmFreeway 提交。",
-   "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；现金金额与平台变现条款未公开，按 C 级观察",
-   "mark": "",
+   "notes": "⚠️截止日 2026-12-31 → **2026-08-31**，状态改「已截止」；依据：FilmFreeway 官方页 Dates & Deadlines 实为「Opening June 2, 2026 / Earlybird June 16 / **Regular Deadline August 31, 2026** / Notification September 15, 2026 / Event October 15–16, 2026」，活动已于 2026-10-15~16 举办完毕；主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；现金金额与平台变现条款未公开，按 C 级观察",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
@@ -3337,7 +3337,7 @@
    "site": "https://filmfreeway.com/LondonAIIndependent",
    "submit": "https://filmfreeway.com/LondonAIIndependent",
    "desc": "伦敦新办独立 AI 影像节，主活动 2027-06-19，滚动月度截止（2026-10-02 至 2027-06-02）。仅接受独立制作（无大厂融资），短片与中长片上限 60 分钟；AI 须在生成、动画、剪辑、声音或概念环节有实质贡献；英语或配英文字幕。\n\n【单元与截止】七项评审奖，含 Best Use of AI；滚动月度档期，最晚 2027-06-02。\n\n【投稿方式】FilmFreeway 提交。",
-   "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；首届性质，无现金奖",
+   "notes": "Official FF 页 10 档：Opening 2026-09-27 … **Final Prism 2027-06-02** / **Notification 2027-06-11** / Event 2027-06-19（Sirlute Studios）→ 截止与举办一致，已补通知日；主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；首届性质，无现金奖",
    "mark": "",
    "verified": "none",
    "verifyNote": ""
@@ -3386,7 +3386,7 @@
    "id": "reczz28OwJEkdubp",
    "name": "Melbourne AI Film Festival 2026（墨尔本·首届 MAIFF）",
    "grade": "C",
-   "deadline": "2026-10-20",
+   "deadline": "2026-12-03",
    "status": "open",
    "organizer": "Melbourne AI Film Festival（MAIFF）",
    "region": "澳大利亚墨尔本",
@@ -3397,7 +3397,7 @@
    "site": "https://filmfreeway.com/MelbourneAIFilmFestival",
    "submit": "https://filmfreeway.com/MelbourneAIFilmFestival",
    "desc": "墨尔本首届 AI 电影节，2026-12-12 在当地场地举办（具体场馆待公布）。面向全球 18 岁以上创作者，影片须含 AI 生成元素（允许实拍、动画、档案素材混合，不要求 100% AI 生成），片长 1~12 分钟，2024-05 之后完成，已参加过其他节展的作品可投、不要求首映。\n\n【单元与截止】两个类别：Best Australian AI Film（限提交时居住于澳大利亚者）、Best International AI Film（全球）；每类别预选最多选 5 部。2026-10-20 截止。\n\n【投稿方式】仅接受 FilmFreeway 提交（邮件投稿不受理），需含成片、完整演职员表与宣传海报。",
-   "notes": "若要投，务必先在 FF 页确认截止时间；主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；另：本条与本库「DISRUPT AI电影节（DAIFF，daiff.com.au）」是两个不同赛事，此前曾误判为同一场，已纠正",
+   "notes": "⚠️截止日 2026-10-20 → **2026-12-03**；依据：FilmFreeway 官方页 Dates & Deadlines 实为「Opening October 23, 2025 / **Late Deadline December 3, 2026** / Notification December 4, 2026 / Event December 12, 2026」；原 10-20 仅来自 aifilmsociety 单源转述，属错误信息（另一赛事 DAIFF 的 10-20 被误套）；场地：Cinema Nova, 380 Lygon St, Carlton；主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；另：本条与本库「DISRUPT AI电影节（DAIFF，daiff.com.au）」是两个不同赛事，此前曾误判为同一场，已纠正",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
