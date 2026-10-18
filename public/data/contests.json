@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-19",
- "built": "2026-10-19 03:43",
+ "built": "2026-10-19 03:50",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -1077,8 +1077,8 @@
    "site": "http://sharvie.cn",
    "submit": "mailto:lscm@vip.163.com",
    "desc": "第1届征片 2025-11-05 至 2026-10-31，影展举办 2026-11-20（北京大兴）",
-   "notes": "时间线核验为在征）；奖金未列明，标未核实；2026-08-30补官网：已核到官方站 http://sharvie.cn，「官网」字段已改为该地址；预计通知 2026-11-01；电影节 2026-11-20（北京市大兴区）",
-   "mark": "",
+   "notes": "⚠️官网 http://sharvie.cn 实测返回 **404 Not Found（nginx）**，站点已失效或改版；时间线核验为在征）；奖金未列明，标未核实；2026-08-30补官网：已核到官方站 http://sharvie.cn，「官网」字段已改为该地址；预计通知 2026-11-01；电影节 2026-11-20（北京市大兴区）",
+   "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
   },
@@ -2957,8 +2957,8 @@
    "site": "https://unrealfilmfestival.com",
    "submit": "https://unrealfilmfestival.com",
    "desc": "意大利都灵的 AI 电影节，2026 年首届（hybrid），在 Feat. House 举办，2026-11-27~28 放映。面向全球征集剧情短片、动画、纪录、广告与实验影像，接受 hybrid（AI+实拍），AI 必须在创作中占重要地位；短片上限 20 分钟，非英语需英文字幕。\n\n【单元与截止】Best Picture / Best of Category（六类）/ Best Original Screenplay / Best Technical Achievement / Best Acting / Audience Award，另设特别提及与赞助商奖；统一 2026-10-31 截止，入围公布 2026-11-14。\n\n【投稿方式】官网直接投递（非平台），€50/部。",
-   "notes": "官网 200 可达（2026-10-18 实测）；仅剩 13 天，若要投需立即决定",
-   "mark": "",
+   "notes": "⚠️ 该日期此前被自动匹配器漏判（页面采用「日 / 月」分行排版、不带年份），说明「官网未检出」不等于「官网没写」；官网 200 可达（2026-10-18 实测）；仅剩 13 天，若要投需立即决定",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
