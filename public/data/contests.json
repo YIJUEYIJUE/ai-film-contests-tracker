@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-19",
- "built": "2026-10-19 03:28",
+ "built": "2026-10-19 03:37",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -297,7 +297,7 @@
    "site": "https://www.filmawards.ai/",
    "submit": "https://filmfreeway.com/AIFILMAWARDS-BALI",
    "desc": "活动入口和场地存在，但多城市品牌、奖项密集，列C级观察。\n\n【认证】巴厘岛Morabito Art Villa Beach实体活动 · 多国巡回品牌\n\n【命题要求】自由投稿·AI相关作品即可",
-   "notes": "商业化系列巡展（2024年起自戛纳），FF收费提交，主推付费会员制；⚠️水分警示：商业巡展+付费会员制，Crystal Brain奖杯体系（filmawards.ai多城收费影展），回报为laurels+放映",
+   "notes": "官方 FilmFreeway 页未列截止日，只写活动 2026-11-07（另有 11-06~08 说法）；商业化系列巡展（2024年起自戛纳），FF收费提交，主推付费会员制；⚠️水分警示：商业巡展+付费会员制，Crystal Brain奖杯体系（filmawards.ai多城收费影展），回报为laurels+放映",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -2937,7 +2937,7 @@
    "site": "https://filmfreeway.com/vicaiawards",
    "submit": "https://filmfreeway.com/vicaiawards",
    "desc": "墨尔本 VIC AI Boom 2026 期间的 AI 创作评选，面向全球征集。设 8 个类别：AI 动画、AI 艺术、AI 广告/品牌、AI 网红、AI 音乐与 MV、AI 社媒内容、AI 游戏应用、AI 短片；另设 Best in Australia、Best in the World、Rising Star 三个特别奖。\n【单元与截止】单一轮次，Late deadline 2026-10-20；通知 2026-10-23。\n【作品要求】内容时长＜3 小时（游戏不限），须为 2020 年 1 月之后未放映过的作品；不限语言，任何 AI 工具可用。\n【投稿方式】FilmFreeway 提交；如含实体元素需邮件 hello@vicaiboom.com 沟通。",
-   "notes": "⚠️无现金奖，仅水晶奖杯与特别奖 → C 级；⚠️举办日两处不一致：FilmFreeway 写 2026-10-30（Quarterhouse, Docklands），同页又称获奖者 2026-11-13 公布（VIC AI Boom 展期）→ 投前确认；⚠️vicaiboom.com 与 FilmFreeway 均 403 反爬（浏览器可开），官网字段按「无独立活动页可直读」填 FF 页",
+   "notes": "官方 FilmFreeway 页只写活动 2026-10-30 与颁奖 11-13，**未列截止日**，故本条属「双源一致但无官方原文」级别，投前在 FF 页确认；⚠️无现金奖，仅水晶奖杯与特别奖 → C 级；⚠️举办日两处不一致：FilmFreeway 写 2026-10-30（Quarterhouse, Docklands），同页又称获奖者 2026-11-13 公布（VIC AI Boom 展期）→ 投前确认；⚠️vicaiboom.com 与 FilmFreeway 均 403 反爬（浏览器可开），官网字段按「无独立活动页可直读」填 FF 页",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -3397,7 +3397,7 @@
    "site": "https://filmfreeway.com/MelbourneAIFilmFestival",
    "submit": "https://filmfreeway.com/MelbourneAIFilmFestival",
    "desc": "墨尔本首届 AI 电影节，2026-12-12 在当地场地举办（具体场馆待公布）。面向全球 18 岁以上创作者，影片须含 AI 生成元素（允许实拍、动画、档案素材混合，不要求 100% AI 生成），片长 1~12 分钟，2024-05 之后完成，已参加过其他节展的作品可投、不要求首映。\n\n【单元与截止】两个类别：Best Australian AI Film（限提交时居住于澳大利亚者）、Best International AI Film（全球）；每类别预选最多选 5 部。2026-10-20 截止。\n\n【投稿方式】仅接受 FilmFreeway 提交（邮件投稿不受理），需含成片、完整演职员表与宣传海报。",
-   "notes": "主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；另：本条与本库「DISRUPT AI电影节（DAIFF，daiff.com.au）」是两个不同赛事，此前曾误判为同一场，已纠正",
+   "notes": "若要投，务必先在 FF 页确认截止时间；主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；另：本条与本库「DISRUPT AI电影节（DAIFF，daiff.com.au）」是两个不同赛事，此前曾误判为同一场，已纠正",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
