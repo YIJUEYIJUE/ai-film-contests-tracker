@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-19",
- "built": "2026-10-19 00:30",
+ "built": "2026-10-19 02:04",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -1985,7 +1985,7 @@
   {
    "id": "reczz28MYyLkDrAH",
    "name": "Atlanta AI Ad Fest 2026",
-   "grade": "B",
+   "grade": "C",
    "deadline": "2026-10-25",
    "status": "open",
    "organizer": "SouArt Alliance",
@@ -1997,8 +1997,8 @@
    "site": "https://www.atlantaaiadfest.com",
    "submit": "https://www.atlantaaiadfest.com/en/enter",
    "desc": "亚特兰大 AI 广告专题赛事（首届），30–60 秒作品，须从四个官方品牌赛道中择一命题创作；2026 首届保底现金奖 $2,500，含青年组/大学组/公开组 Grand Prix 各 $500 与 Best of Festival $1,000。",
-   "notes": "首届；面向全球，团队≤5 人；Youth 组自 6 年级起，18 岁以下需监护人同意；AI 工具不限；注册费 $10 不再另收投递费",
-   "mark": "",
+   "notes": "首届；面向全球，团队≤5 人；Youth 组自 6 年级起，18 岁以下需监护人同意；AI 工具不限；注册费 $10 不再另收投递费；⚠️ 重大权利条款：官方 FAQ 明示成片版权归 AIAF 与作品中所涉品牌方所有（创作者仅保留署名/credit 权），投稿即等于让出著作权，与常规节展「创作者保留版权」不同 → 分级由 B 降为 C，投前必须评估",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
