@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-20",
- "built": "2026-10-20 23:41",
+ "built": "2026-10-20 23:48",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -207,7 +207,7 @@
    "name": "Chroma Awards",
    "grade": "B",
    "deadline": "2027-01-07",
-   "status": "soon",
+   "status": "open",
    "organizer": "ElevenLabs（孵化方）+ Google/CapCut/Dreamina/Freepik/fal/Kling/a16z/Luma/Adobe/Hailuo 等（支持方）",
    "region": "国际",
    "category": "创作大赛",
@@ -217,7 +217,7 @@
    "site": "https://chromaawards.com",
    "submit": "https://chromaawards.com",
    "desc": "大规模AI影像与多媒体竞赛，新一季已预告9月启动，适合现在准备。\n\n【认证】ElevenLabs/fal/Freepik/字节Dreamina/Runway/LTX Studio赞助 · 奖金 $250,000+ 现金奖 + $1M+ 免费试用/推广\n\n【命题要求】自由投稿·AI相关作品即可",
-   "notes": "S2：确认 2026年9月启动征集（提交期约9–11月，12月评审，2027年1月直播公布）；奖金升级为现金 $250,000+；「12-31」为旧信息但本届页面仍显示该日期，以官方9月公布为准；当前状态即将开放不变；官网 chromaawards.com 首页 Timeline 现显示「2026 SEP 提交期 / OCT–NOV–DEC / 2027 JAN 评审期 / 1 月获奖直播」，与 10-14 记录的「01-07 截止」冲突；两种读法下安全做法一致：**12 月中旬前完成投递**，别等 1 月",
+   "notes": "close Jan 7, 2027；winners Feb 11, 2027；gala April 2027」；ElevenLabs 官方博客《Announcing the Chroma Awards Season 2》确认投稿通道已开；⚠️同一篇 ElevenLabs 官方博客前段写「until **January 1, 2027**」，结尾却写「submissions close on **January 7, 2027 at 11:45 PM PT**」；Chroma 自己的 Game Jam 活动页也写「between October 19, 2026 and **January 1, 2027**」；六个 division（Film / Advertising / Music Video / Song / Game / Behind-the-Scenes）共 51 个类别；**免费参赛，任何 AI 工具**；奖金超 $450,000 现金 + $1M 免费试用额度；获奖直播 2027-02-11，Gala 2027-04（第一届头奖得主被送到好莱坞）；作品须 2026-02-01 之后创作；同一项目只能进一个类别，但可无限量投项目；Kling、Luma、LTX、PixVerse、TapNow、CapCut、ElevenLabs、MiniMax、Adobe；ElevenLabs 另设 $22,000 专属奖（22 名，头奖 $6,000 + VIP 行程 + CPP 名额），用 ElevenLabs 即自动参评，无需单独报名；免费 + 现金池最大 + 无工具绑定 → 这是当前日历上性价比最高的免费赛事之一",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -676,9 +676,9 @@
    "prize": "无现金奖（8项荣誉：奖杯证书+展映+产业对接）",
    "site": "https://www.modaily.cn/app/szb/pc/content/202607/02/content_489652.html",
    "submit": "https://www.aitop100.cn/aicreation/index.html?id=45&type=video",
-   "desc": "第二届中国（澳门）国际动画电影节AIGC单元作品征集，面向所有创作者开放，要求参赛作品AI使用率≥70%、主题适配少儿正向价值观，设多类专业奖项，由行业及AIGC领域专家评审。\n\n【单元与截止】AIGC 单元 8/12 征片、10-10 截止；AIGC单元截止10-10已过，标为已截止。",
-   "notes": "无主办方独立官网；投稿入口由方特动漫×AITOP100 联合呈现；截止2026-10-10；主办方无独立官网，官网改填官方媒体（澳门日报）报道页；AIGC 单元 8/12 征片、10-10 截止；AITOP100 为承办方；AIGC单元截止10-10已过，标为已截止",
-   "mark": "",
+   "desc": "第二届中国（澳门）国际动画电影节（金童奖）首次把 AIGC 作品纳入正式评审序列，设「琴澳筑光·AI 绘梦动画」AIGC 动画影像创作单元，由电影节组委会主办、AITOP100 承办，定位为全球首个专注动画题材的 AIGC 专业赛事。\n【档期·AITOP100 官方详情页（2026-10-20 实测）】全球征集启动 2026-08-12 → **征集截止 2026-10-10** → 评审 2026-10-10~10-31 → 名单公示 2026-11 初（澳门儿童电影颁奖盛典期间）→ 入围作品在金童奖展映（2026-11）→ **AIGC 单元专属颁奖盛典（澳门主会场）2026-12**。\n【作品要求】时长 ≥3 分钟；全片 AI 制作流程使用率 ≥70%；题材限少儿动画短片 / 儿童纪实 / 亲子剧情 / 科普教育 / 非遗国风少儿影像；MP4 或 MOV、16:9、1080P，建议中英双语字幕；作品须 2025-06-01 至 2026-10-10 期间完成；须提交完整 AI 创作说明（工具名称与版本、生成流程、核心提示词与关键参数、工作流截图）。\n【8 项荣誉】最佳 AIGC 动画影片 / 妙思创意 / 美术设计 / 光影视效 / 稚趣音乐 / 湾区 IP 力 / 情感表达 + 优秀作品 10 部；无现金奖，获奖获中英双语奖杯证书、澳门主会场专题展映、AIGC 动画影视产业论坛一对一洽谈、少儿 IP 孵化与影视投资改编对接。\n【版权】著作权完整归创作者，组委会仅获展映、线上宣传、学术存档、公益校园放映的永久非商业使用权；商业改编发行须另签授权。",
+   "notes": "AITOP100 官方详情页（承办方，赛事实际投稿入口）与金童奖官方公众号、横琴国际影视城公众号三处日程一致：征集 **2026-08-12 起至 10-10**、评审 10-10~10-31、名单公示 2026-11 初、颁奖盛典 2026-12（澳门主会场）；已补全三个字段；本单元为电影节正式评审序列的一部分，评委含北京电影学院中国动画研究院原院长孙立军等；属少儿动画方向的垂直赛事，非通用 AI 影像赛",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
@@ -997,7 +997,7 @@
    "site": "https://www.filmawards.ai",
    "submit": "https://filmfreeway.com/aifilmawardsIndia",
    "desc": "印度 KM Universe 主办的 AI 影片与广告奖项，设最佳混合短片（0–5分钟）、最佳混合长片（6–30分钟）、最佳影响力、最佳概念等 5 个竞赛类别，均可角逐 Crystal Brain 大奖。同时接纳叙事短片与商业广告作品。",
-   "notes": "FF投递页404（多种写法均404）；⚠️水分警示：filmawards.ai体系，FF页曾404，收费+Crystal Brain奖杯；⚠️10-14全量核对：官网Mumbai场显示Soon未开放，原12-31无依据；官网当前开放的是Bali/Brazil场；官网 filmawards.ai 首页仍显示「Soon」，无日期，投前请再确认",
+   "notes": "官网 filmawards.ai 至今把 MUMBAI 站列为「Soon」，未公布具体日期 → 保持原值，投前须在 FilmFreeway 页确认；①**FilmFreeway 页有 5 折优惠码 `AIFILMAWARDSMUMBAI`**；②五个竞赛类别全部可角逐最高奖 Crystal Brain：Best Short Hybrid（0–5′）、Best Feature Hybrid（6–30′）、Best Impact（0–5′）、Best Conceptual（0–5′）；③收片范围 0–30 分钟，任何 AI 工具均可；④全球开放；这是少数**叙事短片与商业广告同场竞技**的印度 AI 奖项，做品牌片/产品片的人在这里的素材能复用；但同属 KM Universe 的 20 国站点体系，收费且无现金奖（Crystal Brain 为玻璃奖杯），C 级定位不变",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -1716,9 +1716,9 @@
    "prize": "总池20万元：最佳系列剧3万/最佳短片2万等30席",
    "site": "https://ai-drama.waytoagi.com/",
    "submit": "https://ai-drama.waytoagi.com/",
-   "desc": "面向AI短片和系列剧的品牌创作竞赛，五个主题赛道；报名入口在赛事官网，成片规则以站内完整章程为准。",
-   "notes": "不等同传统电影节；权利条款须读完整章程；主办方 WaytoAGI（伙伴 AniShort/灵蟹），截止与奖金经官网确认；截止10-10已过，标为已截止",
-   "mark": "",
+   "desc": "【档期·官方规则页 ai-drama.waytoagi.com/contest/rules（2026-10-20 实测）】创作投稿与周评 2026-08-27 ~ 10-10（共 6 轮周评，同作品可更新，终审以 10-10 前最终版为准）→ 集中终审与评奖 10-11~10-19 → **结果公示、异议处理与颁奖 10-20~10-25**\n时长 ≤5 分钟、有完整情节的原创 AI 视频\n年满 18 岁可独立报名，未满 18 须监护人书面同意\n主题与赛道契合度、故事原创性、创作完整度、角色代入感、开场吸引力、视听表现力、AI 工具对作品的实际帮助\n不设固定分值比例\n20 万元税前奖金池（30 个现金奖）+ 价值 100 万元创作积分 + 全链路扶持",
+   "notes": "⚠️官方规则页原文：创作投稿与周评期 **8 月 27 日—10 月 10 日**、集中终审 10-11~10-19、**公示颁奖 10-20~10-25**；已补征程片开始 08-27 与公示/颁奖期；主办 WaytoAGI（伙伴 AniShort、灵蟹、SoloEnt），不是传统电影节；权利条款须读完整章程：作品著作权归创作者，但组委会获非商业使用权，商业改编发行须另签授权；偏「故事本质」而非技术炫技，评审把「开场吸引力」「角色代入感」纳入维度，适合有叙事能力但特效预算有限的创作者",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
