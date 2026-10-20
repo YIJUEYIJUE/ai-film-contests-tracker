@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-21",
- "built": "2026-10-21 04:44",
+ "built": "2026-10-21 04:57",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -657,7 +657,7 @@
    "site": "https://dreamkey.cn/nexora_ai_contest.html",
    "submit": "https://dreamkey.cn/nexora_ai_contest.html",
    "desc": "首届「未来之光」2026粤港澳AI影视创意大赛，以「以投促赛、以投促产」为核心理念，面向全球创作者免费开放，设五大参赛单元，配套不低于1000万元投资预算。",
-   "notes": "⭐含金量高：≥1000万投资对接（非现金，IP孵化路径）；官网载明征稿 2026.8.7-2026.10.8、10.9起评审，无延期——标为已截止（11月公布获奖）",
+   "notes": "⭐含金量高：≥1000万投资对接（非现金，IP孵化路径）；官网载明征稿 2026.8.7-2026.10.8、10.9起评审，无延期——标为已截止（11月公布获奖）；⚠️本赛存在**主赛区与惠州赛区两套独立档期**：① 主赛区（粤港澳总赛区）征稿 2026-08-07~**10-08**，评审 10-09~11 月上旬，入围公示 10 月中旬，获奖公布 11 月 —— 已截止；② **惠州赛区**征集 2026-09-01~**10-21**（今天最后一天）、决赛 11-27，报名链接 dreamkey.cn/nexora_register_huizhou.html，作品发抖音/小红书/视频号带 #未来之光2026粤港澳AI影视创意大赛 与 #惠州OPV 并 @惠州发布 @惠州文旅，要求「用 AI 创作一部不超过 10 分钟的惠州题材短片或短剧」，免费、不限地域与职业；**若你要投惠州赛区，10-21 当天仍可投**",
    "mark": "star",
    "verified": "ok",
    "verifyNote": "官网：征稿 8/7–10/8；须配中英文字幕"
@@ -3283,26 +3283,6 @@
    "verifyNote": ""
   },
   {
-   "id": "reczz28Ow4R5gMvv",
-   "name": "Artiver AI Art Awards 2026（纽约）",
-   "grade": "C",
-   "deadline": "2026-08-31",
-   "status": "closed",
-   "organizer": "Artiver",
-   "region": "美国纽约",
-   "category": "AI艺术奖·短片/实验",
-   "topic": "自由投稿",
-   "fee": "见 FilmFreeway",
-   "prize": "纽约时代广场大屏展示 + 纽约线下展览 + 现金奖 + 平台变现机会",
-   "site": "https://filmfreeway.com/ArtiverAIArtAwards",
-   "submit": "https://filmfreeway.com/ArtiverAIArtAwards",
-   "desc": "面向全球数字艺术家与 AI 创作者的评选，类别含短片与实验影像。\n\n【单元与截止】多类别评选；2026-12-31 截止。\n\n【投稿方式】FilmFreeway 提交。",
-   "notes": "⚠️截止日 2026-12-31 → **2026-08-31**，状态改「已截止」；依据：FilmFreeway 官方页 Dates & Deadlines 实为「Opening June 2, 2026 / Earlybird June 16 / **Regular Deadline August 31, 2026** / Notification September 15, 2026 / Event October 15–16, 2026」，活动已于 2026-10-15~16 举办完毕；主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；现金金额与平台变现条款未公开，按 C 级观察",
-   "mark": "caution",
-   "verified": "none",
-   "verifyNote": ""
-  },
-  {
    "id": "reczz28Ow4R5eZjf",
    "name": "NYC Indie Cinema and AI 2027（布鲁克林·纽约）",
    "grade": "C",
@@ -3978,26 +3958,6 @@
    "submit": "",
    "desc": "【主题】用生成式 AI 创作「历史题材」短片——你如何看待过去、围绕历史或时代剧构建怎样的故事与视觉世界。\n【时长】约 15—180 秒。\n【工具】任何 AI 工具均可，**允许带水印作品参赛**。\n【评审】Sissy（AI 影像作者）、Holly（导演/AI 创作者）、泷川元树（导演/编剧/制片）、山口宪弘（时代剧研究学者、前东映太秦电影村园长）。\n【算力支持】GMI Cloud 为前 30 名合格申请者各提供 30 美元创作额度，须 11-15 前激活、11-30 前用完。\n【投稿方式】在 X（推特）关注太秦上洛祭官方账号，引用其征稿贴并附上作品或观看链接；算力额度申请为独立流程（X 带话题发帖 + Google 表单提交）。",
    "notes": "无现金奖，价值在「东映太秦电影村放映 + 时代剧圈层曝光」，属低门槛练手位（15 秒即可投）；⚠️投稿必须走 X（推特）引用官方征稿贴，没有网页表单——没有活跃 X 账号的投不了",
-   "mark": "caution",
-   "verified": "none",
-   "verifyNote": ""
-  },
-  {
-   "id": "reczz28PlOjQHqT0",
-   "name": "AI Film Fest Monaco 2026（摩纳哥 AI 电影节）",
-   "grade": "C",
-   "deadline": "2026-04-25",
-   "status": "closed",
-   "organizer": "WAIB Summit 主办",
-   "region": "摩纳哥",
-   "category": "AI 短片",
-   "topic": "自由投稿",
-   "fee": "免费",
-   "prize": "总奖池 10,000 美元（现金 + 赞助礼品 + 平台额度），冠军受邀赴摩纳哥",
-   "site": "https://aifilmfest-monaco.com/submission",
-   "submit": "https://aifilmfest-monaco.com/submission",
-   "desc": "【赛制】每个作品须 ≥2 分钟、无上限；必须使用 AI（视频生成、VFX、动画、配音、音乐、剧本等任一主要环节）。\n【七个奖项】最佳 AI 影片、最佳儿童影片、最佳故事、最佳世界构建、最佳 AI 角色表演、最佳实验影片、最佳学生影片、最佳商业/品牌影片。\n【提交材料】投稿表单 + 可观看链接（YouTube/Vimeo）+ 下载链接 + 影片海报。\n【评审五维】创意、叙事、技术与艺术质量、AI 创新使用、整体影响力；无权重说明，按等权处理。\n【权利】授予主办方非独占、全球、免版税、可转授许可，用于放映与宣传；创作者保留所有权。",
-   "notes": "⚠️官网 Submission Rules 原文「The submission deadline is 25th April 2026」，2026 届已于 6-09~10 在摩纳哥 One Monte Carlo 办完；2027 届至今未公布",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
