@@ -1399,7 +1399,7 @@
    "报名费": "官方未公布",
    "最高奖金": "无现金：UN场合展映与认证",
    "赛事说明": "气候主题AI影像征集，入选于UN COP31相关场合展映；策展人为艾美奖得主、UN背景创作者；收影像/摄影/音乐/剧本多类（仅影像类符合本表收录范围）。",
-   "计划备注": "【09-25核实】无主办方独立官网，实际投递走FilmFreeway，该页已同时填入官网与投递；旧FF链接已404，更正为AIfortheFutureFest；表内旧届已于09-20清理，此为新一届 ｜【2026-10-16 日期复核】官方 FilmFreeway 页仅标注「COP31 – November/December 2026」，未公布具体截止日；表内 2026-11-30 无官方依据（第三方 aifilmsociety 记 2026-08-31）。已清空日期并置「待公布」，投稿前须上 FilmFreeway 页确认当期 Deadline。",
+   "计划备注": "【09-25核实】无主办方独立官网，实际投递走 FilmFreeway，该页已同时填入官网与投递；旧 FF 链接已 404，更正为 AIfortheFutureFest；表内旧届已于 09-20 清理，此为新一届。\n【2026-10-16 日期复核】官方 FilmFreeway 页仅标注「COP31 – November/December 2026」，未公布具体截止日；表内 2026-11-30 无官方依据（第三方 aifilmsociety 记 2026-08-31）。已清空日期并置「待公布」。\n【2026-10-20 补充·仍维持待公布】aifilmcontests 11 月专题页（该站逐日核对官方页）称：「November 30 is the last of its monthly deadlines for 2026, and the awards event is December 15」，即 2026 年最后一档为 11-30、颁奖活动 12-15；本期主题为气候故事（韧性 / 生态未来 / 生物多样性 / 公正转型），接受影片、摄影、艺术、音乐与剧本，无现金奖。⚠️ 该 11-30 仍属第三方结论，官方 FF 页未刊出，故日期字段保持空白；若要在 2026 年内投，须在 11 月中旬前上 FilmFreeway 页确认当期 Deadline 后再决定。",
    "是否需要投递": "待定",
    "是否已投": "否"
   },
@@ -1726,8 +1726,8 @@
   {
    "record_id": "reczz28HJWV1H4Au",
    "名称": "AKOOL AI电影挑战赛",
-   "截止日期": "2026-11-20",
-   "剩余天数": 31,
+   "截止日期": "2026-12-20",
+   "剩余天数": 61,
    "征集状态": "开放征集中",
    "分级": "B",
    "命题": "自由投稿",
@@ -1737,9 +1737,9 @@
    "官网": "https://info.akool.com/film-challenge-application",
    "投递链接": "https://info.akool.com/film-challenge-application",
    "报名费": "免费",
-   "最高奖金": "总池至高$500,000：大奖$50,000、最佳故事$25,000、最具原创$15,000等",
-   "赛事说明": "30-90秒原创虚构电影预告片赛道；实质使用AKOOL工具；须在YouTube/TikTok/Instagram公开发布并加官方标签、话题和AKOOL标志；18岁以上。\n\n【单元与截止】官网当前统一投稿截止 11-20（Submissions close November 20）；预告片赛道已核实适用，其余赛道细则以官网规则页为准。",
-   "计划备注": "【2026-10-19 日期交叉核对】官网 akool.com/aifilmchallenge 与官方规则页（info.akool.com）均写 Submissions Close **November 20, 2026**、Winners Dec 5 → 表内 11-20 正确。注：aifilmcontests 12 月专题称「官网写的截止是 12-20」，与当前官网原文不符，存在延期或页面改版可能，投前复核。\n【09-29入库·来源：aigcsubmission 可信影展库】仅预告片赛道已核实；其余赛道细则未完整；公开发布+授权要求多；【09-29核对】奖金经官方规则页核实（总额至高$50万）——升 B；费用确认免费（No purchase necessary）；其余赛道未开放",
+   "最高奖金": "总池至高 $500,000：大奖 $50,000、亚军 $25,000、季军 $15,000、10 位入围各 $2,500；符合条件的投稿每条 $100 Creator Bonus（限 Premium AKOOL 账户，付费创作者不适用）",
+   "赛事说明": "三赛道：① Coming Never（30–90 秒原创虚构电影预告片）② AI Short Film（原创 AI 短片，喜剧/恐怖/科幻/剧情/动画/超现实/实验均可）③ Impossible（拍出 AI 之前不可能存在的作品）。均须实质使用 AKOOL，并在发布时 tag @AKOOL 加指定话题（#AKOOLFilmChallenge 等）；18 岁以上。\n【单元与截止】官网 Timeline（2026-10-20 实测）：Challenge Opens 2026-09-15 → **Submissions Close 2026-12-20** → Winners 2027-01-15。",
+   "计划备注": "⚠️【2026-10-20 截止日修正·重要】截止日由 2026-11-20 改为 **2026-12-20**。官网 akool.com/aifilmchallenge 的 Timeline 段原文（10-20 实测）：「Challenge Opens September 15, 2026 / Submissions Close **December 20th, 2026** / Winners **January 15th, 2027**」。10-19 那次核对读到的「November 20」来自 AKOOL 自身的发布博客（launch blog），该博客至今未更新，仍写 11-20；aifilmcontests 12 月专题页也明确「AKOOL's own launch blog post still says November 20, so we go with the official challenge page」。结论：以挑战页 Timeline 为准 12-20，通知（Winners）同步改为 2027-01-15。⚠️差 30 天，按旧值排期会白白压缩一个月准备时间。\n【2026-10-20 奖金分档修正】官网奖项为「Grand Prize $50,000 / 2nd Place $25,000 / 3rd Place $15,000 / 10 Finalist Awards $2,500 each / Creator Bonus $100 per qualified entry」，原表内把 2nd、3rd 误标为「最佳故事 / 最具原创」两个单独奖项，已按官网更正为亚军、季军。\n【赛道补全】原仅核了预告片赛道，现补全三赛道：Coming Never（30–90″预告片）、AI Short Film、Impossible。三赛道统一评审维度：故事 30% / 原创性 20% / 创意执行 20% / AKOOL 使用 15% /「我会想看」15%。\n【09-29 入库】来源 aigcsubmission 可信影展库；免费（No purchase necessary）；须公开发布并加官方标签与 AKOOL 标志。",
    "是否需要投递": "待定",
    "是否已投": "否"
   },
