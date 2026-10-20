@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-20",
- "built": "2026-10-20 23:48",
+ "built": "2026-10-20 23:53",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -197,8 +197,8 @@
    "site": "https://aaff.org.mo/",
    "submit": "https://filmfreeway.com/aaf",
    "desc": "综合艺术电影节中的明确AIGC单元，实体活动和往届履约可核验，适合作为低成本长线目标。\n\n【认证】第3届 · 澳门实体活动 · 2026届已有AI短片提名及AI单元入围记录\n\n【命题要求】自由投稿·AI相关作品即可\n\n【单元与截止】官网/FF确认2027设AIGC单元但截止日未公布，原2027-01-20无出处。",
-   "notes": "官网/FF确认2027设AIGC单元但截止日未公布，原2027-01-20无出处；⚠️10-14全量核对：2026届AI影像奖已于2026-02-28截止并于5月颁奖；2027届仅发布主视觉未开征，下届公布后更新；2026届已于2026-05-21澳门颁奖收官（人民网河北频道报道）；官网 aaff.org.mo 实测 200/1306B（title「關於AAFF」），页面提示需关闭网站加速功能才能正常显示，建议用浏览器访问；2027 届 AIGC 单元截止日官方仍未公布",
-   "mark": "caution",
+   "notes": "官网/FF 确认 2027 设 AIGC 单元但截止日未公布，原 2027-01-20 无出处；官网 aaff.org.mo 未刊出 2027 届截止日，aaiff.org.cn 域名仍未备案；→ 日期字段保持空白，不臆测；若要在 2027 年投，**在 2026 年 12 月前上 aaff.org.mo 或官方公众号「亚洲艺术电影节AAFF」确认**，同时注意区分 aaiff.org.cn（未备案）与 aaff.org.mo（本届官网）；2026 届（第二届）征片截止 2026-02-28 24:00、影展 2026-05-19~22 于澳门伦敦人，评审团主席为奥斯卡导演柯文思；AIGC 单元要求作品 2024-07-01 后完成、片长 ≥1 分钟、须中文字幕、AI 须为主要创作手段、成片符合 2K 展映标准",
+   "mark": "",
    "verified": "none",
    "verifyNote": ""
   },
@@ -886,8 +886,8 @@
    "id": "recvtfIGJMn0MQ",
    "name": "IFFI Goa AI Film Festival",
    "grade": "B",
-   "deadline": null,
-   "status": "pending",
+   "deadline": "2026-08-31",
+   "status": "closed",
    "organizer": "NFDC（印度国家电影发展公司）× LTIMindtree，隶属IFFI",
    "region": "印度果阿/全球",
    "category": "AI电影节",
@@ -896,8 +896,8 @@
    "prize": "₹3,00,000（2025届The Craft Master最佳AI短片；总池₹6,00,000）",
    "site": "https://iffigoa.org/ai-film-festival",
    "submit": "https://iffigoa.org/ai-film-festival",
-   "desc": "IFFI Goa AI Film Festival，由NFDC与LTIMindtree在印度国际电影节（IFFI）果阿创办的AI电影单元，2025首届展映AI生成短片并颁The Craft Honors（最佳AI短片₹3,00,000等）；2026届是否举办/截止日未核实。",
-   "notes": "2025首届已结束；2026届是否复办/截止日未核实，标待公布；奖金为2025届数据；信源称 8-31 未获官网证实，不予采用",
+   "desc": "印度首个政府背书的 AI 电影节，嵌入第 57 届印度国际电影节（IFFI）之中，由 NFDC（印度国家电影发展公司）、印度新闻广播部、WAVES Film Bazaar 与 LTIMindtree 共同承办，另设 Cinema AI Hackathon 赛道。\n【2026 届档期】投稿 **2026-08-31** 截止（经 FilmFreeway，免费）→ 影展 **2026-11-20 ~ 11-28**（果阿）。\n【规格】首届（2025）收到 18 国 68 件作品，27 件入选竞赛单元、4 件进入非竞赛展映——竞赛池小，是国际作者拿到 IFFI 桂冠的相对清晰路径；入选者同期进入 WAVES Film Bazaar（印度最大电影市场），对映后商业路径有实质影响。",
+   "notes": "影展期 **2026-11-20 ~ 11-28** 与第 57 届 IFFI 官方规则页（FF 页 Article 2「The 57th edition of IFFI will be held from November 20th - 28th, 2026 in Goa」）吻合；已改为截止 2026-08-31、状态「已截止」、举办 2026-11-20~11-28；第 57 届 IFFI 主节本身设有「AI Works」非竞赛策展单元（FF 规则 Article 4.1.2 明列 AI Works），但那是影展选片通道，与本条「AI Film Festival 竞赛单元」不是同一入口，勿混；2027 届档期未公布，明年关注 iffigoa.org",
    "mark": "caution",
    "verified": "none",
    "verifyNote": ""
@@ -2977,8 +2977,8 @@
    "site": "https://filmfreeway.com/Visionaria-festival",
    "submit": "https://filmfreeway.com/Visionaria-festival",
    "desc": "罗马首届 AI 影像节，2026-11-27~29 在 GAMM（游戏博物馆）举办三天，含放映、竞赛、讲座、大师课、工作坊与沉浸式装置。面向全球征集 AI 在创作或制作中占重要（非附带）地位的影像作品，不限工具，不要求首映，已上线/已获奖作品也可投。\n\n【单元与截止】Best AI Film / Best AI Animation / Best AI Documentary / Best AI Music Video / Best AI Experimental Film / Best AI Short Form Content 六类；统一 2026-10-31 截止。\n\n【投稿方式】全部通过 FilmFreeway 提交，需附 AI 使用说明。",
-   "notes": "主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；首届、无现金奖，2026-10-18 巡检时仍开放，仅剩 13 天",
-   "mark": "",
+   "notes": "主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；影展 2026-11-27 ~ 11-29 于罗马 **GAMM – Game Museum**（游戏博物馆）举办，三天含官方放映、国际竞赛、讲座、大师班、工作坊、沉浸式装置与行业交流，闭幕颁奖；六个竞赛类别：Best AI Film / Animation / Documentary / Music Video / Experimental Film / Short Form Content；无首映要求，已在线上公开或获奖的作品亦可投；非英语/意大利语作品须英文字幕；须提交 AI 使用说明；投稿费不退；首届、无现金奖；场地选在游戏博物馆、节目偏「AI 与创意产业对话」而非纯放映，适合需要欧洲展映履历与行业交流机会的作品；但无现金奖、无独立官网，C 级定位不变",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
@@ -3437,8 +3437,8 @@
    "site": "https://filmfreeway.com/BaliAiFilmFestival",
    "submit": "https://filmfreeway.com/BaliAiFilmFestival",
    "desc": "印尼首个 AI 电影节，2025-05-07 在乌布首办，双年/季节滚动征片，入选作品在乌布 Cinema Paradiso 影院以 4K 放映。不限类型与时长，只要作品在制作或叙事层面显著使用 AI；第 5 季设 13 个奖项类别（含 Best AI Feature、Best AI Short、Best AI Human Rights 等）。\n\n【单元与截止】季节滚动征片，第 5 季已于 2026-09-16 截止；下一季档期尚未公布。\n\n【投稿方式】FilmFreeway 提交（该页面为非公开列表页，需登录后直接访问链接提交）。",
-   "notes": "主办方未设独立官网（官方渠道为 BIAIFF.com 与 FilmFreeway 非公开列表页），FilmFreeway 页为实际征片入口，官网字段与投递链接同为该页；一切以该页当日显示为准；无现金奖，主要价值是海外影院放映与 laurels",
-   "mark": "",
+   "notes": "⚠️三个渠道交叉：；① **官网 biaiff.com 已失效**——现在打开跳转/显示的是主办人 Ben Makinen 的个人音乐站（JazzTown 曲目播放页），赛事信息已不在首页；仅页面上保留一个「Click to submit on FilmFreeway」按钮指向 FilmFreeway；② FilmFreeway 页 filmfreeway.com/BaliAiFilmFestival（旧链接 festivals/85904 跳转至此）**只有基本信息、无 Dates & Deadlines 段**：场地 Cinema Paradiso（Jl. Goutama Sel., Ubud, Gianyar, Bali 80571）、First Year、Festival Director Ben Makinen / Advisor Dian Marhaeni / AI Expert Ilgiza Riazanova；melies.co 记「Ongoing May 1 – Dec 31, 2026」（年度窗口，非具体截止）；→ 该赛事为**季节滚动制**，每季单独开档，Season 5 于 2026-09-16 截止，Season 6 档期官方未公布；若想投，直接去 FilmFreeway 页看当前是否有开放档位；该赛为 4K 影院放映（Cinema Paradiso）+ 观众选择奖，创办人 Ben Makinen 是 PBS 发行过的纪录片导演，被 shaike.ai 列为「全球 Top 10 AI 影展」；无现金奖",
+   "mark": "caution",
    "verified": "none",
    "verifyNote": ""
   },
