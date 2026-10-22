@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-23",
- "built": "2026-10-23 01:24",
+ "built": "2026-10-23 01:33",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1687,7 +1687,7 @@
    "site": "https://klingai.com",
    "submit": "https://klingai.com",
    "desc": "可灵AI面向全球创作者的新影像创投计划，入选项目获现金投资与平台支持。",
-   "notes": "可灵官方页 klingai.com/cn?page=nextgen 与英文页 klingai.com/global/nextgen 均**未设投稿截止日期**：申报后「如通过项目评审，将在项目资料提交后 21 个工作日内给予回复」（英文页 20 business days），属常年滚动招募的创投计划，不是有截点的竞赛；ScreenWeaver 10-01 读取官方页亦确认「The standing NEXTGEN Initiative has no deadline」「No submission deadline appears on the page」；**随时可投，不必赶年底；**；① 全资出品：单项目最高投资 600 万现金，覆盖全部制作成本，全球多平台上线（最高 5 亿+曝光），优先选送 A 类电影节；② 投资出品：单部最高投资比例 50%、最高 200 万，支持付费分账；③ 技术支持：最高 100 万灵感值（算力）+ 官方矩阵号宣发 + 培训；题材不限（短剧、短剧集、动画、电影实验片）；语言不限但须含中文配音版本；**AI 生成内容时长占比 ≥50% 且主要内容由可灵 AI 生成**；接受剧本开发阶段与制作中项目，已发行项目不收；签约后 6 个月内完成；同一项目限提交一次；看艺术完成度、技术创新性、行业启发性三项，无权重公布；官方 NEXTGEN 页明确「no deadline / standing initiative」，**随时可投**，不存在「等待公布档期」",
+   "notes": "可灵官方页 klingai.com/cn?page=nextgen 与英文页 klingai.com/global/nextgen 均**未设投稿截止日期**：申报后「如通过项目评审，将在项目资料提交后 21 个工作日内给予回复」（英文页 20 business days），属常年滚动招募的创投计划，不是有截点的竞赛；ScreenWeaver 10-01 读取官方页亦确认「The standing NEXTGEN Initiative has no deadline」「No submission deadline appears on the page」；**随时可投，不必赶年底；**；① 全资出品：单项目最高投资 600 万现金，覆盖全部制作成本，全球多平台上线（最高 5 亿+曝光），优先选送 A 类电影节；② 投资出品：单部最高投资比例 50%、最高 200 万，支持付费分账；③ 技术支持：最高 100 万灵感值（算力）+ 官方矩阵号宣发 + 培训；题材不限（短剧、短剧集、动画、电影实验片）；语言不限但须含中文配音版本；**AI 生成内容时长占比 ≥50% 且主要内容由可灵 AI 生成**；接受剧本开发阶段与制作中项目，已发行项目不收；签约后 6 个月内完成；同一项目限提交一次；看艺术完成度、技术创新性、行业启发性三项，无权重公布；本项为**滚动扶持计划**，官方页明确「no deadline / standing initiative」，**随时可投**，不存在「等档期公布」；→ **字段保持「待公布」是刻意统一，不代表未开放，看到即当「随时可投」处理",
    "mark": "",
    "verified": "none",
    "verifyNote": "",
