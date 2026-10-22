@@ -259,7 +259,7 @@
    "报名费": "€10–15（待 FilmFreeway 复核）",
    "最高奖金": "无现金奖（仅电子证书）",
    "赛事说明": "投稿门槛低且有公共场馆，但首届、只有电子证书，暂列C级观察。\n\n【认证】首届 · CCA Gran Canaria公共文化场馆实体活动\n\n【命题要求】自由投稿·AI相关作品即可\n\n【新增权益】入围影片及影评同步在 Grimoire of Horror 平台展示；有意实体发行可提交合作方 DAGON FILMS 评估；中文渠道可经「投奖」平台投递。\n\n【单元与截止】未能独立核实截止档期（报告称 Regular 9-1、最晚 12-1，费用 €10–15，仅电子证书）。",
-   "计划备注": "未能独立核实截止档期（报告称 Regular 9-1、最晚 12-1，费用 €10–15，仅电子证书）；以 FilmFreeway 实时为准：filmfreeway.com/ThePromptFilmFestival｜2026-08-29复核：信源《50个AIGC影像奖项入口表》(8-23校正版)标注 Late Deadline 2026-12-01；本次 FilmFreeway 页已可读取但未直接显示 deadline，故按信源值补入，仍需以官方页实时为准。｜2026-08-30补充（源：投奖每日资讯 8-29 推文）：另有中文投递渠道「投奖」平台 https://www.toujiang.today/filmfest/1106（已实测可打开）；入围影片及电影节相关评论同步在 Grimoire of Horror 平台展示；有意实体发行可将作品提交电影节合作方 DAGON FILMS 评估。投递链接仍保留官方 FilmFreeway 页。；⚠️水分警示：收费€10-15，回报仅电子证书",
+   "计划备注": "未能独立核实截止档期（报告称 Regular 9-1、最晚 12-1，费用 €10–15，仅电子证书）；以 FilmFreeway 实时为准：filmfreeway.com/ThePromptFilmFestival｜2026-08-29复核：信源《50个AIGC影像奖项入口表》(8-23校正版)标注 Late Deadline 2026-12-01；本次 FilmFreeway 页已可读取但未直接显示 deadline，故按信源值补入，仍需以官方页实时为准。｜2026-08-30补充（源：投奖每日资讯 8-29 推文）：另有中文投递渠道「投奖」平台 https://www.toujiang.today/filmfest/1106（已实测可打开）；入围影片及电影节相关评论同步在 Grimoire of Horror 平台展示；有意实体发行可将作品提交电影节合作方 DAGON FILMS 评估。投递链接仍保留官方 FilmFreeway 页。；⚠️水分警示：收费€10-15，回报仅电子证书\n【2026-10-22 第七轮核对】官网 thepromptfilmfest.base44.app 为 Base44 建站平台 SPA，抓取只得空壳、无静态正文；toujiang 详情页 1106 明确最晚档 2026-12-01，与表内一致，日期维持。费用 €10–15 仍以官方页实时为准。",
    "是否需要投递": "待定",
    "是否已投": "否"
   },
@@ -859,7 +859,7 @@
    "报名费": "有（FilmFreeway分层投稿费）",
    "最高奖金": "官方未公布",
    "赛事说明": "A.I. | New Media | Experimental | Digital Arts Film Festival，伦敦滚动截止AI/新媒体/实验影像节，设最佳AI电影等类别与现场放映（Hen & Chickens Theatre）；2026届窗口7-6/8-6关闭，主活动2027-02-06。",
-   "计划备注": "2026届最后窗口8-6已过期（标已截止不删）；主办方未核实；现金奖未披露标未核实。｜2026-08-29复核：FilmFreeway 页在本环境返回403无法读取，金额维持未核实，建议在平台页面直接查看。；⚠️水分警示：FilmFreeway分层收费，奖金官方未公布，回报存疑",
+   "计划备注": "【2026-10-22 第七轮核对·纠错】原备注「2026 届最后窗口 8-6 已过期」系误读——**8-6 是 Opening Date（开放日），不是截止日**。FilmFreeway 官方 Dates & Deadlines 共 11 档：\nOpening 2026-08-06 → Earlybird 2026-09-21 → Regular 2026-11-02 → Late 2026-12-14 → Extended 2027-01-25 → Extended Late 2027-03-08 → April 2027-04-19 → May 2027-05-31 → July 2027-07-12 → Extended Late 2027-08-09 → **Final Deadline 2027-09-02**；\n通知 2027-11-18，活动 2028-01-21（伦敦）。表内 2027-09-02 正确，无需改动。\n费用：Earlybird $8 起，Final $20，Gold 会员九折；现金奖官方未公布，标未核实。\n⚠️水分警示：FilmFreeway 分层收费、无现金奖披露，回报以 laurels 为主，维持 C。",
    "是否需要投递": "备选",
    "是否已投": "否"
   },
@@ -1019,7 +1019,7 @@
    "报名费": "收费（金额未公布）",
    "最高奖金": "无现金奖（奖杯/laurels）",
    "赛事说明": "AI Film Awards 系列奖项的拉斯维加斯站（该系列同时在巴厘岛、戛纳设站），面向全球 AI 辅助影片，颁发官方 laurel 并在其全球网络中推广。",
-   "计划备注": "2026-08-29 信源巡检新增并核实：FilmFreeway 报名页确认截止 2026-12-31。同系列已有「AI电影奖·巴厘岛站」「AI电影奖·威尼斯站」在表内，此为拉斯维加斯新站。无现金奖，落 C。该赛事无主办方独立官网，FilmFreeway 报名页已同时填入「官网」与「投递链接」（特殊情况处理）。；⚠️水分警示：filmawards.ai体系（与巴厘岛站同源），收费+无现金laurels\n⚠️10-14全量核对：官网VEGAS场显示Soon未开放，原12-31无依据。\n【2026-10-19 完整性体检】截止日期为空，原状态「即将开放」与空档期矛盾（无法判断开放时间）。改为「待公布」，等官网/FilmFreeway 给出确切档期再改回。",
+   "计划备注": "2026-08-29 信源巡检新增并核实：FilmFreeway 报名页确认截止 2026-12-31。同系列已有「AI电影奖·巴厘岛站」「AI电影奖·威尼斯站」在表内，此为拉斯维加斯新站。无现金奖，落 C。该赛事无主办方独立官网，FilmFreeway 报名页已同时填入「官网」与「投递链接」（特殊情况处理）。；⚠️水分警示：filmawards.ai体系（与巴厘岛站同源），收费+无现金laurels\n⚠️10-14全量核对：官网VEGAS场显示Soon未开放，原12-31无依据。\n【2026-10-19 完整性体检】截止日期为空，原状态「即将开放」与空档期矛盾（无法判断开放时间）。改为「待公布」，等官网/FilmFreeway 给出确切档期再改回。\n【2026-10-22 第七轮核对】FilmFreeway 站内 /aifilmawardsvegas 实测 **404**，首段「FilmFreeway 报名页确认截止 2026-12-31」确系无来源，予以作废。LinkedIn 主办方官方帖确认：**AI Film Awards Las Vegas 2026 于 2026-04-29 在 Westgate Big Theater 举办完毕**；官网 filmawards.ai 的 VEGAS 分站至今仍标「Soon」，2027 届未公布 → 维持「待公布」+ 截止置空，不臆测。",
    "是否需要投递": "待定",
    "是否已投": "否"
   },
@@ -3766,9 +3766,9 @@
   {
    "record_id": "reczz28Pl6HrPHkF",
    "名称": "AI Film 3 · AI in Anime 2026（拉斯维加斯）",
-   "截止日期": null,
-   "剩余天数": null,
-   "征集状态": "待公布",
+   "截止日期": "2026-11-10",
+   "剩余天数": 19,
+   "征集状态": "开放征集中",
    "分级": "C",
    "命题": "自由投稿",
    "主办方": "AI Film 3（Prometheus Productions, LLC，亚利桑那州老兵创办）",
@@ -3779,7 +3779,7 @@
    "报名费": "未核实（走 FilmFreeway，页面未列档期）",
    "最高奖金": "无现金奖（荣誉为主）：六个类别 Best Music Video / Best AI Documentary / Best AI Short Form / Best Long Form / Best AI Experimental / Bailey Award",
    "赛事说明": "AI Film 3 是美国的 AI 影像节展品牌（前身为 AI Entertainment Conference），**AI in Anime** 是其单夜专场：2026-11-20 在拉斯维加斯 Third Street Theater、正值 F1 拉斯维加斯大奖赛（Race Week）期间，专门放映 AI 原生动画。\n【六个类别】Best Music Video、Best AI Documentary、Best AI Short Form、Best Long Form、Best AI Experimental、Bailey Award（另设 Judges Award）。\n【投稿】通过 FilmFreeway 提交，官方页显示「Open call now」，但**未公布具体截止日**；投稿时须披露 AI 使用情况。\n【往届规模（交叉参考）】Year III（2026-09-17~19，亚利桑那 Tempe · Pollack Tempe Cinemas）收到 **754 部投稿、来自 117 个国家**，23 位嘉宾/评委、11 场公开活动，颁出七个奖项。\n【后续】Year IV 定于 **2027-09-16~18**，城市与场地待定，**Open call 于 2026 年 12 月开放**。",
-   "计划备注": "【2026-10-21 信源巡检入库·来源：aifilm3.com 官网 + FAQ】①**状态「待公布」**：AI in Anime 页面写「Open call now」并指向 FilmFreeway，但 FilmFreeway 具体页与截止日未列出，按红线不臆测，截止日留空；**入场方式为 FilmFreeway，需自行在站内搜 AI Film 3 / AI in Anime**；②**无现金奖**，是荣誉型节展（七个奖项 + 放映），投递价值在于美国线下曝光与 Year IV 的产业连接；③**真正值得盯的是 Year IV（2027-09-16~18）**：Open call **2026 年 12 月**开放，届时按「六大类别 + 五大学科（电影/音乐/时尚/游戏/艺术）」投，覆盖比单场 Anime 更广；④往届 754 部投稿/117 国，规模中等，AI 纪录片与长片单元竞争相对小；⑤主办为退伍军人创办的小型制作公司（Prometheus Productions），无大厂背书，故给 C。\n【2026-10-21 第三轮核对·投递入口已补全】官网 aifilm3.com 明确给出 **AI in Anime 专属投递页 filmfreeway.com/AnimeAI**（原表内只填了 filmfreeway.com 主页空壳，已修正）。截止日仍未公布：官网倒计时指向活动日 2026-11-20（拉斯维加斯 Third Street Theater 单夜放映），但**没有任何文本写明投稿截止**，故维持「待公布」+ 截止置空，不臆测。另：Year IV 主赛 FilmFreeway 页为 filmfreeway.com/festivals/83574，open call 2026 年 12 月开放。",
+   "计划备注": "【2026-10-21 信源巡检入库·来源：aifilm3.com 官网 + FAQ】①**状态「待公布」**：AI in Anime 页面写「Open call now」并指向 FilmFreeway，但 FilmFreeway 具体页与截止日未列出，按红线不臆测，截止日留空；**入场方式为 FilmFreeway，需自行在站内搜 AI Film 3 / AI in Anime**；②**无现金奖**，是荣誉型节展（七个奖项 + 放映），投递价值在于美国线下曝光与 Year IV 的产业连接；③**真正值得盯的是 Year IV（2027-09-16~18）**：Open call **2026 年 12 月**开放，届时按「六大类别 + 五大学科（电影/音乐/时尚/游戏/艺术）」投，覆盖比单场 Anime 更广；④往届 754 部投稿/117 国，规模中等，AI 纪录片与长片单元竞争相对小；⑤主办为退伍军人创办的小型制作公司（Prometheus Productions），无大厂背书，故给 C。\n【2026-10-21 第三轮核对·投递入口已补全】官网 aifilm3.com 明确给出 **AI in Anime 专属投递页 filmfreeway.com/AnimeAI**（原表内只填了 filmfreeway.com 主页空壳，已修正）。截止日仍未公布：官网倒计时指向活动日 2026-11-20（拉斯维加斯 Third Street Theater 单夜放映），但**没有任何文本写明投稿截止**，故维持「待公布」+ 截止置空，不臆测。另：Year IV 主赛 FilmFreeway 页为 filmfreeway.com/festivals/83574，open call 2026 年 12 月开放。\n【2026-10-22 第七轮核对·截止日已补齐】FilmFreeway 专属页 filmfreeway.com/AnimeAI 的 Dates & Deadlines 明确四档：Opening 2026-10-05、**Deadline 2026-11-10**、Notification 2026-11-14、Event 2026-11-20（拉斯维加斯 Third Street Theater）。此前两轮只读页面正文、未展开 Deadlines 块，误判「未公布」；现按官方投递页补入 11-10 并改回「开放征集中」。费用 Standard $30 / Student $20 / Gold $24。Year IV 主赛（2027-09-16~18）open call 仍为 2026 年 12 月开放。",
    "是否需要投递": "待定",
    "是否已投": "否"
   },
