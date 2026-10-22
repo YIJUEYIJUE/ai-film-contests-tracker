@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-22",
- "built": "2026-10-22 23:48",
+ "built": "2026-10-22 23:50",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -4780,9 +4780,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "opened": "2026-09（官方",
+   "opened": null,
    "tracked": "2026-10-21",
-   "added": "2026-09（官方",
+   "added": null,
    "changes": []
   },
   {
@@ -4828,9 +4828,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "opened": "2026-09（征片",
+   "opened": null,
    "tracked": "2026-10-21",
-   "added": "2026-09（征片",
+   "added": null,
    "changes": []
   },
   {
