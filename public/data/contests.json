@@ -1,6 +1,8 @@
 {
  "snapshot": "2026-10-22",
- "built": "2026-10-22 20:28",
+ "built": "2026-10-22 23:23",
+ "trackedSince": "2026-10-14",
+ "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
   {
    "id": "recvs8rH4W0X0x",
@@ -20,7 +22,9 @@
    "notes": "第3届；征片期 2026-03-20 至 2026-12-31；常规 8-31、超期 10-31、延迟 11-30、最终 12-31；展映 2027年5–6月（北海道 Niseko/Okhotsk/Tokachi）；费用约 $12.9–32.3；官网 hokkaido-movie.com；官网为双平台：Festhome（filmmakers.festhome.com/f/10304）渠道 10-31 截止、FilmFreeway 渠道至 12-31；最终截止 12-31；⭐含金量中上：实体影展金猫头鹰奖；官网 Submission 页原文：Submission Period March 20 – December 31, 2026；Notification Date February 28, 2027；Festival Period May–June 2027（Festhome 精确 2027-05-09~06-27，北海道三地）；注意 Festhome 页面把 28 Feb 2027 排版在 deadline 行，实为通知日，非截止日；已补通知与举办时间",
    "mark": "star",
    "verified": "fixed",
-   "verifyNote": "官网写明报名平台为 Festhome（英文表单）/ 日文表单；投递链接已改为官网入口"
+   "verifyNote": "官网写明报名平台为 Festhome（英文表单）/ 日文表单；投递链接已改为官网入口",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4Wv3HE",
@@ -40,7 +44,9 @@
    "notes": "FF多档期：Regular 2026-11-30、Late 2027-01-20，取final；⭐含金量中上：WAIFF美国站，5部可晋级戛纳主竞赛（当届限美国创作者）；官网 Key Dates 原文：Submissions Open May 20, 2026 / Earlybird Jul 31 / Regular Nov 30 / Late Deadline Jan 20, 2027 / Notification Feb 15, 2027 / Festival Late March 2027；已补通知与举办时间；⚠️资格：仅限 US-based 创作者（13 岁以上）",
    "mark": "star",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4W5HMd",
@@ -60,7 +66,9 @@
    "notes": "官网为牵头主办单位福建省广播电视局官方征集公告页（gdj.fujian.gov.cn，已核验可打开）；投稿邮箱 AIGC2026FJ@163.com，无网页报名表单入口（作品征集截止2026-10-15）；2026-08-29补全：该官网通知页内含《参赛报名表》《版权承诺书》附件下载，为实际投稿的必经入口，故补入「投递链接」（与官网同值）；奖金：单项最高5万元创作扶持金（另设国礼瓷奖品）；官网原链接404；官方无延期/延长公告，截稿后即进入评审，征集已结束",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WkbdM",
@@ -80,7 +88,9 @@
    "notes": "⚠️仅「AI穹顶巨幕特别赛道」延至 2026-10-20 24:00；主赛道（AI叙事短片 / AI视觉艺术 / AI平面视觉）与全部专项赛道（AI叙事长片 / 公益宣传片 / 微短剧 / 音乐视觉）已于 2026-08-31 24:00 截止，不可再投；投稿渠道：实际走抖音专区——抖音搜索「瓦卡奖VACAT第三届」带话题发布作品参赛，另需飞书预报名（瓦卡奖2026参赛信息收集表）；官网 https://www.vacavaca.cn/vacat.html 为唯一稳定权威页面；⭐含金量高：穹顶巨幕赛道单项最高 8 万现金，另有 dou+ 流量与龙岗创业扶持、上影新视野基金对接；龙岗政府在线 / 南方+ / 中国新闻网三源一致：常规主赛道与全部专项赛道 2026-07-10~08-31 征集；特别赛道延长至 10-20 24:00；另据深圳侨报、设计赛网：专家评审 2026-10-08~11-07 多轮分级评审，获奖榜单 2026-11-27 公布，11 月中下旬在深圳龙岗国际艺术中心举办瓦卡之夜颁奖典礼及 AI 视觉创意汇、技术工作坊、AIGC 黑客松",
    "mark": "star",
    "verified": "warn",
-   "verifyNote": "官网仍是第二届内容；10/20 以抖音专区「瓦卡奖VACAT第三届」公告为准"
+   "verifyNote": "官网仍是第二届内容；10/20 以抖音专区「瓦卡奖VACAT第三届」公告为准",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4W2DEQ",
@@ -100,7 +110,9 @@
    "notes": "投前登录FF复核；⚠️水分警示：首届尚未履约（库与官方信息冲突），费用档未验证，观察投递风险；kajimelo 等索引：Late deadline 2026-10-20、Notification 2026-11-15、Festival 2026-12-05（Innis Town Hall, 多伦多大学）；已补通知时间",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4W5y8x",
@@ -120,7 +132,9 @@
    "notes": "仅限澳大利亚境内常驻居民参赛（任何国籍但须常驻澳洲，须年满16岁），团队不符合参赛资格→决策不投；（硬门槛：资格不符）；官网 daiff.com.au 首页原文「Submissions open on 15 June 2026, with entries closing on 16 October 2026」，FAQ 页「submissions open 15th June, 2026 / deadline 16th October, 2026」——无 late/extension 档期、无延期公告、无下一届征稿信息；11-06 通知、11-18 墨尔本 Gala 颁奖（悉尼展映随后）；经官方站双页亲自核实，确认已截止",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WVNPT",
@@ -140,7 +154,9 @@
    "notes": "KACF组委会主办（非政府机构），获奖作品在首尔影院实体放映；官网 kacf.co.kr 实测 200 但仅 781B（title「대한민국 인공지능 영화제」正确，正文为 iframe/JS 渲染），浏览器可见内容，非死链；8 个类别（含 AI 影片/音乐视频/动画/广告/预告/海报/编剧）；报名费 $20（金卡会员 $15）；已补举办时间；以 FF 为准应为 11-30，但两值相差一周、不影响投稿决策，故暂不改字段，投前以 FF 当日为准；据此通知时间由 11-22 改为 2026-11-30；八个类别：AI Film / AI Music Video / AI Movie Director / Best Animation Short / Best AI Commercial Film / Best Trailer / Film Poster / Screenwriter；每类金/银/铜 + 评审团奖，年度最佳影片从金奖中产生；无现金奖；上届（第 2 届）两天放映 110 部；FF 关键数据显示约 450 份投稿、110 部入选、28 个奖项，入选率约 1/4；规则：只交线上 screener，非英语片须英文字幕否则可能被剔除评审；可多投，一片可投多个符合规则的类别；报名费按类别不同且不退（选错类别也不退）；评委主席 Jung-Wook Kim（韩国导演/电影教育者，短片《Waiting》获 1996 韩国创意短片电影节最佳影片），音乐类评委 Jongmin Ahn",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WzdJb",
@@ -160,7 +176,9 @@
    "notes": "2011年创办老牌影展，11-30前传百度网盘报名，需签版权承诺书；①截止 **11-30** 经官网两处原文确认（报名要求第 12 条、报名步骤第 4 条「2026年11月30日前，以在线报名时间为准，逾期不候」）；②⚠️**权利条款较宽**（报名要求第 8、9 条）：投递即授权组委会在「北京国际网络电影展」主题展映环节播放，并可将视频/静帧/字幕/片花用于媒体报道、播出、宣传图册、书籍专刊、电视、网络、移动媒体等宣传展映；组委会有权保存影片并以影展名义用于放映、国际文化交流、海外推广、推荐各电影节——介意海外发行权被代推的需先看清；③⚠️**易混提示**：本赛事是「北京国际网络电影展 BIFF（bjimff.com）」，**不是**「北京国际电影节 BJIFF 的 AIGC 电影单元（中国传媒大学主办，第十六届已于 2026-03-30 截止）」——两者名称近似、主办方不同；④官网未设时长上限与 AI 占比门槛，仅约束分辨率、字幕与物料；⑤每部片须备海报 PSD+JPG 双格式、片花 1 分钟以上，物料成本不低",
    "mark": "star",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WeUhz",
@@ -180,7 +198,9 @@
    "notes": "FilmFreeway报名且费用不退，2024年后完成作品、非英语需英文字幕；FilmFreeway 页反爬 403 无法直读；主办方无独立官网，FilmFreeway 页为唯一入口，官网与投递同填 filmfreeway.com/AIBerlin，实际投稿即在该页完成",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WlDov",
@@ -200,7 +220,9 @@
    "notes": "官网/FF 确认 2027 设 AIGC 单元但截止日未公布，原 2027-01-20 无出处；官网 aaff.org.mo 未刊出 2027 届截止日，aaiff.org.cn 域名仍未备案；→ 日期字段保持空白，不臆测；若要在 2027 年投，**在 2026 年 12 月前上 aaff.org.mo 或官方公众号「亚洲艺术电影节AAFF」确认**，同时注意区分 aaiff.org.cn（未备案）与 aaff.org.mo（本届官网）；2026 届（第二届）征片截止 2026-02-28 24:00、影展 2026-05-19~22 于澳门伦敦人，评审团主席为奥斯卡导演柯文思；AIGC 单元要求作品 2024-07-01 后完成、片长 ≥1 分钟、须中文字幕、AI 须为主要创作手段、成片符合 2K 展映标准",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WdMhk",
@@ -220,7 +242,9 @@
    "notes": "close Jan 7, 2027；winners Feb 11, 2027；gala April 2027」；ElevenLabs 官方博客《Announcing the Chroma Awards Season 2》确认投稿通道已开；⚠️同一篇 ElevenLabs 官方博客前段写「until **January 1, 2027**」，结尾却写「submissions close on **January 7, 2027 at 11:45 PM PT**」；Chroma 自己的 Game Jam 活动页也写「between October 19, 2026 and **January 1, 2027**」；六个 division（Film / Advertising / Music Video / Song / Game / Behind-the-Scenes）共 51 个类别；**免费参赛，任何 AI 工具**；奖金超 $450,000 现金 + $1M 免费试用额度；获奖直播 2027-02-11，Gala 2027-04（第一届头奖得主被送到好莱坞）；作品须 2026-02-01 之后创作；同一项目只能进一个类别，但可无限量投项目；Kling、Luma、LTX、PixVerse、TapNow、CapCut、ElevenLabs、MiniMax、Adobe；ElevenLabs 另设 $22,000 专属奖（22 名，头奖 $6,000 + VIP 行程 + CPP 名额），用 ElevenLabs 即自动参评，无需单独报名；免费 + 现金池最大 + 无工具绑定 → 这是当前日历上性价比最高的免费赛事之一",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WLBKp",
@@ -240,7 +264,15 @@
    "notes": "好莱坞从业者（前索尼发行总裁等）创办，官网未列明确费用与截止；⚠️水分警示：收费金额未公布，回报为奖杯+周边+报道，无现金；FilmFreeway 官方页在架（乌克兰主办，首届），截止 2026-12-31；另有目录记 2026-09-01，按最晚档取 12-31，投前再确认当期档期；①⚠️**官网原填 www.neocinemaai.com 属错配**：该站是美国 LA 的 NeoCinema Studios 公司站（Jeff Synthesized / Trey Callaway / 前索尼发行总裁 John Weiser），页面只有公司业务与 XPRIZE 内容，**无任何电影节征片信息**；本条赛事实体是**乌克兰 Pylypets（Grand Hotel Pylypets）主办的首届 NeoCinema AI Film Festival**，两者**不是同一主体**，官网已改为 FilmFreeway 官方页；③奖项为奖杯+周边+媒体曝光，**无现金**，且主办为首届、无往届交叉验证，按评级规则封顶 B 以下",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-12-31",
+     "to": null
+    }
+   ]
   },
   {
    "id": "recvs8rH4WUeSB",
@@ -260,7 +292,9 @@
    "notes": "未能独立核实截止档期（报告称 Regular 9-1、最晚 12-1，费用 €10–15，仅电子证书）；以 FilmFreeway 实时为准：filmfreeway.com/ThePromptFilmFestival；2026-08-29复核：信源《50个AIGC影像奖项入口表》(8-23校正版)标注 Late Deadline 2026-12-01；本次 FilmFreeway 页已可读取但未直接显示 deadline，故按信源值补入，仍需以官方页实时为准；入围影片及电影节相关评论同步在 Grimoire of Horror 平台展示；有意实体发行可将作品提交电影节合作方 DAGON FILMS 评估；投递链接仍保留官方 FilmFreeway 页；⚠️水分警示：收费€10-15，回报仅电子证书",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4Ws20j",
@@ -280,7 +314,9 @@
    "notes": "报告称 4 个类别各设 €1,000 现金奖，但独立检索未坐实，建议以官网(filmfreeway.com/AIFilmfestAthens)复核；活动 11-6；费用 €20–45；最晚截止 10-15；官方无延期/延长公告，截稿后即进入评审，征集已结束；由 FilmFreeway 页改为赛事自有官网 aifilmfestathens.gr（官方票务页明示为唯一官网）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WXSxg",
@@ -300,7 +336,9 @@
    "notes": "⚠️FF 官方页写「happening on **November 7, 2026** in Bali」（当日 17:00 酒会 → 19:00 放映与颁奖 → 21:00 晚宴 → 22:30 After-Party，场地 Morabito Art Villa Beach）；六个主类别（AI 短片 0–5′ / 长片 5–90′ / 动画 0–90′ / 广告 0–1′ / 视频短片 0–5′ / 纪录片 0–60′）**要求 100% 由 AI 技术生成**，比多数允许 AI 辅助或混合的影展更严；广告类另有 1–3 分钟与 5 分钟以下两档；现场出席者获 Crystal Brain 水晶奖杯；AI Film & Ads Awards 由 KM Universe 运营，在约 20 国设站（威尼斯、巴西、印度、巴厘等），本条为巴厘站",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvs8rH4WX7ur",
@@ -320,7 +358,9 @@
    "notes": "纯线上电影节，两条参与路径，授权平台发布方可竞争500美元大奖；官网 ai-zone.net 403 反爬",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAAymC",
@@ -340,7 +380,9 @@
    "notes": "纠错：filmfreeway.com/ailondon 是另一家「AI London Film Festival」，非本赛事；AIMA 官网提交页确认 extended final 10-10（此前 10-07/10-16 均有误）；链接已改官网+正确FF页；报名费更正为 €20–30（官网提交页核实，此前 $15–25 有误）；截止10-10已过，标为已截止；本条实为 **AIMA London · AI Movie Awards 2026**（AI Movie Awards 伦敦站，James Drake Media 合作）；官方口径：Extended final 10-10、finalists 通知 10-24、活动 **2026-11-07~08 · IET London: Savoy Place**；首届在马略卡 Magaluf 举办（300+ 投稿 / 37 国），伦敦为第二届、首次走出西班牙；⚠️另有一家完全独立的「AI London Film Festival」（FilmFreeway 页，final deadline **10-07**、通知 10-16、活动 **11-14~15** @ Close-Up Cinema、费用 $15–40、季度放映制），与本条**不是同一赛事**，切勿按 10-07 卡本条",
    "mark": "caution",
    "verified": "fixed",
-   "verifyNote": "原表写 $15–25，官网提交页为 €30，已更正"
+   "verifyNote": "原表写 $15–25，官网提交页为 €30，已更正",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAgiAy",
@@ -360,7 +402,9 @@
    "notes": "官网/投递链接为各赛事官方站点；⚠️2026 首届**不设现金奖金**（仅称号/数字证书/作品展示），八个类别含 Motion & Film；已补通知时间",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAwipc",
@@ -380,7 +424,9 @@
    "notes": "⚠️LAAIMPA 是**月度循环**征片，不是单一年度截止：官网 laaimpa.com 与 FilmFreeway 明确每月 20 号为一个批次截止（screenweaver 列出 20 Oct / 20 Nov / 20 Dec 2026 等连续批次）；错过某月批次可投下一月，无需等明年；但每批次独立评审，越早投越早出结果；回 laaimpa.com / FilmFreeway 页确认当前开放的是哪一档、费用与该月主题要求；官网/投递链接为各赛事官方站点",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbA5dMy",
@@ -400,7 +446,9 @@
    "notes": "官网/投递链接为各赛事官方站点",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAPORa",
@@ -420,7 +468,9 @@
    "notes": "官网/投递链接为各赛事官方站点；官方申请入口失效（hundred-film-fund 跳转 Runway Studios 首页、申请表单 404），基金状态存疑、无结束公告——暂缓投递，待官方确认；⭐含金量顶级（S级）；资助额度 **$5,000–$1,000,000+ / 项目**，另配最高 **$2,000,000 Runway 平台积分**，总基金 $5M（官方称可增至 $10M）；免费申请；面向 18+ 专业导演/制片人/编剧，不限国籍；项目须在制作管线中实际使用 Runway，处于前期或后期且确需资金；长片/短片/纪录片/实验/MV 均可；✅ **Runway 不主张作品任何所有权或控制权**，获资后只需双周进度报告并允许适当展示成果；顾问含翠贝卡联合创始人 Jane Rosenthal、will.i.am 等",
    "mark": "star",
    "verified": "warn",
-   "verifyNote": "基金页已跳转到 Runway Studios 首页，请确认是否仍在接收申请"
+   "verifyNote": "基金页已跳转到 Runway Studios 首页，请确认是否仍在接收申请",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAGggQ",
@@ -440,7 +490,9 @@
    "notes": "官网/投递链接为各赛事官方站点",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbA2pih",
@@ -460,7 +512,9 @@
    "notes": "官网/投递链接为各赛事官方站点",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbA6QlX",
@@ -480,7 +534,9 @@
    "notes": "官网/投递链接为各赛事官方站点；投递前请用浏览器打开官网或官方社媒确认当前截止日与章程",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAWwLK",
@@ -500,7 +556,9 @@
    "notes": "官网/投递链接为各赛事官方站点",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAKSmG",
@@ -520,7 +578,9 @@
    "notes": "官方final 2027-02-05；02-15为通知日；⚠️水分警示：AI Cinema Festival家族多城市收费影展（同系魁北克/纽约/戛纳站），Awards栏为空，Grand Prix无现金；⚠️10-14全量核对：原02-05为Extended档/通知日，最终档02-15，已按max修正（FF日期镜像）",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAefct",
@@ -540,7 +600,9 @@
    "notes": "官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）；官网 world-film-festival.com 首页与规则页原文：「Les soumissions pour 2027 sont ouvertes ! Vous avez jusqu'au 30 mars」（主节 2027-03-30 截止）、「Notre prochain événement annuel aura lieu le 26 Juin 2027」（年度典礼 2027-06-26，历届为 2026-06-27、2025-06-28）；投前须向主办方确认 AI 分支的真实截止与展映安排",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbAAR23",
@@ -560,7 +622,9 @@
    "notes": "官网/投递链接为各赛事官方站点；滚动多档制，FilmFreeway 已证实的当前档截止 2027-01-21（原 05-01 无法证实）；后续可能开新档，投前以 FF 实时档期为准；按「宁可早投」原则保留更早的 2027-01-21，投前请上 FilmFreeway 页再确认当期档期",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsoUlbArRso",
@@ -580,7 +644,9 @@
    "notes": "",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsttZ6Sd6vF",
@@ -600,7 +666,9 @@
    "notes": "官方未公布现金奖金，勿误写为现金奖励；⭐含金量中上：权威机构背书但仅证书无现金；组委会9月24日通知：报名及提交截止由原定10月11日延期两周至10月25日24时（官网已挂通知）——保持开放征集中；中国新闻技术工作者联合会延期通知原文确认：报名及提交截止从原定 10-11 延期两周至 10-25 24:00；中国传媒大学通知载「11 月举办决赛及颁证仪式」；已补举办时间；①**奖金字段原写「无现金奖」不完整**——雄安主题赛另设 10 万元专属奖金池，主赛道确为证书+纪念品；②个人组第一作者须先加入中国新闻技术工作者联合会个人会员才能报名，这是硬门槛，投前先办入会；③官方明示「未设时长上限」，仅约束格式与分辨率；④延期后评审节点（原定 10-12~10-31）可能顺延，通知时间暂留空",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvsttZ6Scqgu",
@@ -620,7 +688,9 @@
    "notes": "官方页Deadline Extended 10-31 23:59 UTC；⭐含金量顶级：总池$30万、33个中奖名额，AI大赛中奖面最大；官网原文：Deadline Extended · October 31, 2026（23:59 UTC）；Timeline：AUG 7–OCT 31 Open Call / OCT 31 Submission Deadline / EARLY NOV 2026 Judging / LATE NOV 2026 Winner Announcement；奖池 $300,000（Grand $100,000 / Gold $50,000 / Silver $20,000 / 20×$5,000 / 10×$3,000）；已补通知时间；官方（PixVerse 博客 10-19 更新）确认征稿**延期至 2026-10-31 23:59 UTC**，即北京时间 **2026-11-01 07:59**；跨时区提交务必留缓冲",
    "mark": "star",
    "verified": "warn",
-   "verifyNote": "活动页跳转到 PixVerse 首页，活动页可能已下线，请在 App 内确认"
+   "verifyNote": "活动页跳转到 PixVerse 首页，活动页可能已下线，请在 App 内确认",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvstzYwty6nP",
@@ -640,7 +710,9 @@
    "notes": "官方明示暂无截止时间，长期进行；长期有效无公开截止日；⚠️10-14全量核对：官方页明示长期开放无截止；实为400字以上AI文章投稿积分活动，非视频影像类，已标不投",
    "mark": "caution",
    "verified": "warn",
-   "verifyNote": "长期活动，未公布截止日"
+   "verifyNote": "长期活动，未公布截止日",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvstzYwt5n69",
@@ -660,7 +732,9 @@
    "notes": "⭐含金量高：≥1000万投资对接（非现金，IP孵化路径）；官网载明征稿 2026.8.7-2026.10.8、10.9起评审，无延期——标为已截止（11月公布获奖）；⚠️本赛存在**主赛区与惠州赛区两套独立档期**：① 主赛区（粤港澳总赛区）征稿 2026-08-07~**10-08**，评审 10-09~11 月上旬，入围公示 10 月中旬，获奖公布 11 月 —— 已截止；② **惠州赛区**征集 2026-09-01~**10-21**（今天最后一天）、决赛 11-27，报名链接 dreamkey.cn/nexora_register_huizhou.html，作品发抖音/小红书/视频号带 #未来之光2026粤港澳AI影视创意大赛 与 #惠州OPV 并 @惠州发布 @惠州文旅，要求「用 AI 创作一部不超过 10 分钟的惠州题材短片或短剧」，免费、不限地域与职业；**若你要投惠州赛区，10-21 当天仍可投**",
    "mark": "star",
    "verified": "ok",
-   "verifyNote": "官网：征稿 8/7–10/8；须配中英文字幕"
+   "verifyNote": "官网：征稿 8/7–10/8；须配中英文字幕",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvstzYwt1fUM",
@@ -680,7 +754,9 @@
    "notes": "AITOP100 官方详情页（承办方，赛事实际投稿入口）与金童奖官方公众号、横琴国际影视城公众号三处日程一致：征集 **2026-08-12 起至 10-10**、评审 10-10~10-31、名单公示 2026-11 初、颁奖盛典 2026-12（澳门主会场）；已补全三个字段；本单元为电影节正式评审序列的一部分，评委含北京电影学院中国动画研究院原院长孙立军等；属少儿动画方向的垂直赛事，非通用 AI 影像赛",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvstzYwt6Cq7",
@@ -700,7 +776,9 @@
    "notes": "官网 graphis.com 为投稿入口（Cloudflare防护，正常浏览器可打开）；即梦用户享报名费五折；咨询邮箱 help@graphis.com；⚠️常规档已于 2026-07-28 截止，当前仅剩末班车（late/final）档，报名与作品提交截止同为 2026-10-27，错过无补投机会",
    "mark": "star",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfF8uWWHom",
@@ -720,7 +798,9 @@
    "notes": "无主办方独立官网，投递依公众号征集公告(mp.weixin.qq.com/s/UshdP5-5R7ooZxE20Ye3iw)；主办方/报名费/奖金未公布，标未核实",
    "mark": "",
    "verified": "warn",
-   "verifyNote": "官网为公众号文章，非独立官网"
+   "verifyNote": "官网为公众号文章，非独立官网",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfF8uXyEg6",
@@ -740,7 +820,9 @@
    "notes": "投稿方式：官网下载命题材料+邮箱aura_aigc@163.com打包+填写提交表单+社交媒体发带标签；官网即活动页；报名费未明确标未核实；一等奖1万/赛道，总池超10万；2026-08-29复核：官网大赛奖励页明示「总奖金池超过10万元人民币」，已补入最高奖金",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfH7oajt4R",
@@ -760,7 +842,9 @@
    "notes": "日期正确（赛程至11-26）但官网dreamfield.top内容异常；AITOP100详情33896为发布源；原官网 dreamfield.top 现为无关页面（死链），官网改填 AITOP100 发布源页；日期 11-26 经赛程确认无误；官网/投递改为主办方 DreamField 官网（dreamfield.top）；赛程 2026-05-26~11-26（榜单制：提交 AI 项目仓库获 Star），总奖金池 50 万元（第1名25万）；⚠️10-14全量核对：官网域名已变成无关网站（疑似易主/失效），原11-26截止无法核实，需人工溯源；官网 dreamfield.top 已易主为「Dawnload」AI 模型 API 网关站，种梦计划活动页不存在，赛事疑似已终止/迁移——保持不投，若后续官方重新发布再评估；原判「疑似终止」修正：赛程 2026.05.26—11.26（竞赛至10-25、冲刺10-26~11-20、颁奖11-21~11-26），当前仍在进行中，恢复在征；⚠️官网 dreamfield.top 已易主为无关站点、活动页不存在，报名须经 DreamField 平台，投前务必确认入口可用；实际报名需登录 DreamField 平台，投前务必确认入口是否恢复；实际报名走 DreamField 平台，投前务必确认入口",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfH7oaEavi",
@@ -780,7 +864,9 @@
    "notes": "⚠️；⚠️开放赛道**必须用 Seko**（商汤视频生成平台）作为 AIGC 核心工具；静安赛道要求 AIGC 参与度 ≥70%；不用 Seko 的作者只能考虑技术创新/国际传播赛道（但这两条也以 Seko 为独家平台，需先确认是否强制）；⚠️一人/团队最多 3 件，提交后不可修改——建议提前定稿；片头片尾标注是硬性要求（片头「本作品由 AIGC 技术创作」、片尾注明 Seko 及应用环节），漏标可能被判定不合规；主办层级高（SMG + 静安区政府 + 商汤冠名）、有地标大屏展映与 SMG 合作通道；但奖金金额至今未公布、且绑定 Seko 工具；B 级、备选合理",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfIGJMkaQz",
@@ -800,7 +886,9 @@
    "notes": "FF多档期：Regular 2026-10-01→Extended 2027-04-18取final",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfIGJMj3yu",
@@ -820,7 +908,9 @@
    "notes": "ITU联合国机构背书，认可度高；无现金奖披露（仅奖杯+峰会曝光），标未核实；免费官网投稿",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfIGJMaAE5",
@@ -840,7 +930,9 @@
    "notes": "FilmFreeway页403无法读官方截止日，采用投稿地图(aigc.cn)所列2026-12-16，以官方为准；奖金/报名费未披露标未核实",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfIGJMtjDD",
@@ -860,7 +952,9 @@
    "notes": "2026届最后窗口8-6已过期（标已截止不删）；主办方未核实；现金奖未披露标未核实；⚠️水分警示：FilmFreeway分层收费，奖金官方未公布，回报存疑",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtfIGJM4hhb",
@@ -880,7 +974,15 @@
    "notes": "⚠️官网 aitalentsfest.com（10-20 实测）显示：本影展按「季（Season）」运行，**Season 02 已于 2026-10-18 在 East Harlem（152 E. Harlem, NYC）放映完毕**，页面标题即「AI Film Festival // October 18」「N°01 // 10.18.26」，规则段亦写「We screen your film on October 18」；Season 02 已公布两批获奖：Autumn 2026 共 11 个获奖（含 Best AI Director / Hybrid / Solo Filmmaker / Animation / Editor / Workflow / Short-Short / Sound & Music 等）与 Season 02 Part One 12 个获奖，Part Two 于 10-18 放映后公布；状态由「开放征集中」改为「待公布」，待 Season 03 档期公布后再补；片长 30 秒–25 分钟；须提交 process log（使用的工具、各阶段、自制与生成的比例）；每个创作者/团队每季限投 1 部；禁止未获书面同意的真人 deepfakes；团队片须列全部贡献者与工具；作品进行中（work-in-progress）可投但不能角逐 Best AI Film；13 个奖项（Best AI Film / Director / Screenplay / Cinematography / Editor / Sound & Music / Animation / Hybrid Film / Solo Filmmaker / Workflow / Newcomer / Short-Short / Audience AI Award），无现金奖，获奖作品在放映夜展映并在回顾片中露出，版权归创作者；东哈林区小型放映（loft party 式），偏实验与新锐，非传统红毯节展",
    "mark": "caution",
    "verified": "warn",
-   "verifyNote": "官网仍是上一季内容，查不到本季截止日"
+   "verifyNote": "官网仍是上一季内容，查不到本季截止日",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-20",
+     "from": "2027-04-04",
+     "to": null
+    }
+   ]
   },
   {
    "id": "recvtfIGJMn0MQ",
@@ -900,7 +1002,15 @@
    "notes": "影展期 **2026-11-20 ~ 11-28** 与第 57 届 IFFI 官方规则页（FF 页 Article 2「The 57th edition of IFFI will be held from November 20th - 28th, 2026 in Goa」）吻合；已改为截止 2026-08-31、状态「已截止」、举办 2026-11-20~11-28；第 57 届 IFFI 主节本身设有「AI Works」非竞赛策展单元（FF 规则 Article 4.1.2 明列 AI Works），但那是影展选片通道，与本条「AI Film Festival 竞赛单元」不是同一入口，勿混；2027 届档期未公布，明年关注 iffigoa.org",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-20",
+     "from": null,
+     "to": "2026-08-31"
+    }
+   ]
   },
   {
    "id": "recvtDiykKO885",
@@ -920,7 +1030,9 @@
    "notes": "官网2026日历Final deadline Oct 20；⚠️水分警示：收费至$50，回报为24K金场记板奖杯（物质奖杯非行业认可）；goldendunesfilmfestival.com 官网 2026 日历原文确认：01-13 开放投稿 → 05-01 早鸟止 → **10-20 Final deadline（$50 / 学生 $35）** → 11-12 公布入选 → 11-28~30 电影节；官方明确提交走 FilmFreeway（站内搜 Golden Dunes），AI 单元设 Best AI-Short Film / AI-Commercial / AI-Music Video 三类；评委含 Ron Perlman、Cuba Gooding Jr.、Shohreh Aghdashloo 等，节展本身真实可靠",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtDiykKKUZ1",
@@ -940,7 +1052,9 @@
    "notes": "官方规则页10-09 23:59 PT（第4届AI Horror）；原10-20为旧届日期；投递链接由总列表页改为本届专属页（规则页 2026-ai-horror-film-contest-rules 验证有效，10-09 PST 与 $12,000 均确认）；截止10-09已过，标为已截止",
    "mark": "",
    "verified": "warn",
-   "verifyNote": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
+   "verifyNote": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtDiykKNkWh",
@@ -960,7 +1074,9 @@
    "notes": "2026-08-29 信源巡检新增并核实：Festhome 官方节展页确认截止 2026-11-01、免费投稿；第 3 届、规模大（100+国家/2000+投稿），落 B；具体奖金金额官方未公布，标未核实；旧 Festhome 链接系 2024 届页面已弃用，投递改 FilmFreeway 本届页；多源一致：征集截止 2026-11-01，放映 2026-12-07~09 于伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院；第三届、已收 100+ 国家 2000+ 部；FilmFreeway 免费投递，奖金由报名费转为创作者奖项；已补举办时间",
    "mark": "",
    "verified": "warn",
-   "verifyNote": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实"
+   "verifyNote": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtDiykK3uZg",
@@ -980,7 +1096,15 @@
    "notes": "⚠️直读 Curious Refuge 官方赛事页 curiousrefuge.com/ai-contests：当前只列「第四届 AI 恐怖片大赛」（10-09 已截止，10-29 公布），以及历年已结束赛事（2025 AI 动画赛、2025 AI 小品喜剧赛、2024 AI 广告赛、2024 AI 预告片赛、**2023 AI 假日影片大赛 Contest Complete**）；**没有 2026 假日赛**；截至 10-21（其预告的开放日已过）官方仍未上线；2023 假日赛规则：全片每镜须 AI 生成、配乐须用 Epidemic Sound、≤3 分钟、12-06 11AM PST 截止、12-20 公布；若本季重启，规则大概率沿用，可作为备料参考；关注 curiousrefuge.com/ai-contests 与官方社媒；一旦上线即补档期并改「开放征集中」；在此之前不要按 12-06 排期",
    "mark": "caution",
    "verified": "warn",
-   "verifyNote": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
+   "verifyNote": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-12-06",
+     "to": null
+    }
+   ]
   },
   {
    "id": "recvtDiykKANpj",
@@ -1000,7 +1124,9 @@
    "notes": "官网 filmawards.ai 至今把 MUMBAI 站列为「Soon」，未公布具体日期 → 保持原值，投前须在 FilmFreeway 页确认；①**FilmFreeway 页有 5 折优惠码 `AIFILMAWARDSMUMBAI`**；②五个竞赛类别全部可角逐最高奖 Crystal Brain：Best Short Hybrid（0–5′）、Best Feature Hybrid（6–30′）、Best Impact（0–5′）、Best Conceptual（0–5′）；③收片范围 0–30 分钟，任何 AI 工具均可；④全球开放；这是少数**叙事短片与商业广告同场竞技**的印度 AI 奖项，做品牌片/产品片的人在这里的素材能复用；但同属 KM Universe 的 20 国站点体系，收费且无现金奖（Crystal Brain 为玻璃奖杯），C 级定位不变",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtDiykKK8hH",
@@ -1020,7 +1146,9 @@
    "notes": "2026-08-29 信源巡检新增并核实：FilmFreeway 报名页确认截止 2026-12-31；无现金奖，落 C；⚠️水分警示：filmawards.ai体系（与巴厘岛站同源），收费+无现金laurels；⚠️10-14全量核对：官网VEGAS场显示Soon未开放，原12-31无依据；截止日期为空，原状态「即将开放」与空档期矛盾（无法判断开放时间）；改为「待公布」，等官网/FilmFreeway 给出确切档期再改回",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtDiykKWbDG",
@@ -1040,7 +1168,15 @@
    "notes": "2026-08-29 信源巡检新增并核实：官方站 cannes.aicinemafestival.com 确认截止 2027-10-17；周期很长（至 2027 年底），奖金与报名费官方未公布，标未核实，暂落 C；⚠️10-14全量核对：官网仅剩2026首届档案（已结束），2027届征集未上线，原10-17无依据；⚠️官网 cannes.aicinemafestival.com 首页仍显示 2026 首届旧档期(2026-05-17)，2027 届尚未正式开放，投前须复核；**官网现仅存 **2026 INAUGURAL EDITION ARCHIVE（首届版档案）**：截止 2026-05-17、活动 2026-05-31（全球线上放映 + 颁奖礼），页面明示该届已结束、提交已关闭，并提供档案咨询入口；**全页无任何 2027 版日期、征片状态或投递入口**；（与 2026-10-14 首次核实结论一致，两次独立核实均指向同一结论；）如需 2027 信息，须走官方征片页 aicinemafestival.com/submit/ 或发信 cannes@aicinemafestival.com 询问；同系列 NYC 站（2027-06-20 截止、2027-07-16~18 举办）官网已上线且可核，本条不可类比套用其档期",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2027-10-17",
+     "to": null
+    }
+   ]
   },
   {
    "id": "recvtIdz2uOMw3",
@@ -1060,7 +1196,9 @@
    "notes": "该站为作品展映平台（含登录/作品/排行/展映页），无独立投稿入口；主办方总监：孙子轩；线上举办；第1届；扶持金：评委会推介1万+最佳导演/叙事/艺术/影像各5000，合计3万元；今日 10-17 为投稿最后一天；预计通知 10-25、作品审核期截止 10-25、电影节结束 10-25；当前档期 2026年8月~10月；确认已截止",
    "mark": "caution",
    "verified": "warn",
-   "verifyNote": "原官网已无法访问，暂未找到官方发布渠道；截止日未经官方确认，投递前请先联系主办方核实"
+   "verifyNote": "原官网已无法访问，暂未找到官方发布渠道；截止日未经官方确认，投递前请先联系主办方核实",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIdz2ub9FF",
@@ -1080,7 +1218,9 @@
    "notes": "⚠️官网 http://sharvie.cn 实测返回 **404 Not Found（nginx）**，站点已失效或改版；时间线核验为在征）；奖金未列明，标未核实；2026-08-30补官网：已核到官方站 http://sharvie.cn，「官网」字段已改为该地址；预计通知 2026-11-01；电影节 2026-11-20（北京市大兴区）；http://sharvie.cn 已恢复，实测 200 / 43814 字节，页面标题「首页-晒威影展」，站内栏目含「新闻资讯 / 晒威影展2025 / 关于影展 / 作品展示」，确认为影展官方站 —— 原 10-19 的 404 警告撤销",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUwx9ep",
@@ -1100,7 +1240,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 http://ambrosiafilmfest.com，「官网」字段已改为该地址；截止 **2027-04-14** ✓（Festhome 官方 Extended deadline 14 Apr 2027；通知 24 Apr、节 **23–25 Apr 2027 莫斯科 Nivada Cinema**）；地区「俄罗斯·莫斯科」已正确——该节名称虽带欧洲神话色彩，实际主办在莫斯科，主办人 Irina Spirina，第 9 届；档期链：Call 01 May 2026 / Early 30 Jun / Standard 30 Nov / Late 20 Feb 2027 / **Extended 14 Apr 2027**；费用随档递增（Early $30 → Extended $40）；规则要点：作品须 **2022-01-01 之后完成**；英语或俄语，或配字幕/配音；**无首映要求**、已有发行或已上线播出均可投；⚠️ 评审为不公开私密放映（非公开放映），未入选不接受查询；报名费不退",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxEEFV",
@@ -1120,7 +1262,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址；官网 pafilmfestival.com 标题仍写 PAIFF 2026（页面未更新届次）；本轮核对（2026-10-21）：Festhome 官方征片页给出完整档期——Call for entries 2026-05-01 / Early 2026-11-01 / Standard 2026-12-10 / Late 2027-01-01 / Extended 2027-01-21 / **Notification 2027-02-10** / 影展 2027-03-17~21",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxNrgd",
@@ -1140,7 +1284,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://intothewildfest.es/，「官网」字段已改为该地址；截止 **2027-04-23** ✓（Festhome 官方 Extended deadline 23 Apr 2027，通知 27 Apr、节 28 Apr 2027）；已补举办时间 2027-04-28~29；档期链：Call 11 May 2026 / Early 09 Jul / Standard 15 Oct / Late 15 Jan 2027 / **Extended 23 Apr 2027**",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxwJGQ",
@@ -1160,7 +1306,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://lagarrigafilmfest.es，「官网」字段已改为该地址；截止 **2027-05-27** ✓（Festhome 官方 Extended deadline 27 May 2027；通知 01 Jun、节 **02–03 Jun 2027**，第 2 届，主办总监 Anna；档期链：Call 04 Jun 2026 / Early 05 Aug / Standard 12 Nov / Late 11 Feb 2027 / **Extended 27 May 2027**；✅ **设有独立「Best AI Short and Feature Films」单元**（€5.99 标准 / €4.91 PRO 价），另有全类别打包选项；⚠️ 地址同为 **Carrer Calàbria 13, La Garriga**，与「走向荒野」电影节同址同团队嫌疑，见该条警示",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxi8GR",
@@ -1180,7 +1328,9 @@
    "notes": "Festhome Extended 2027-06-03",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxeJyf",
@@ -1200,7 +1350,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://enjoyfilmfestival.wixsite.com/home，「官网」字段已改为该地址；官网 Submit/Rules 页仅写「须经 FilmFreeway 投稿」，未公布任何截止日，亦检索不到其官方 FilmFreeway 页面；影展 2027-04-07~08 法国佩皮尼昂）；原 2027-04-01 值正确，已回填；官网 wixsite 站未明示日期，若需复核以 FilmFreeway 页为准",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxWnsd",
@@ -1220,7 +1372,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://thelordofthereels.es/，「官网」字段已改为该地址；⚠️水分警示：收费¥44-250，回报仅专属laurels/宣传，无实体行业价值；11-06 前投递同样有效；Festhome 页显示 Extended 截止 2026-11-06（通知 11-12、电影节 11-18~19）",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxY6cl",
@@ -1240,7 +1394,15 @@
    "notes": "⚠️Festhome 官方投递页 Deadlines 原文：Call for entries 17 Mar 2026 / Early 13 May / Standard 16 Jul / Late 16 Sep / **Extended 13 Nov 2026** / Notification 24 Nov 2026 / Festival 27 Nov 2026；非 AI 专项节；官网未单列 AI 赛道，但接受含 AI 的各类影片，AI 使用不构成加分项——投递前请按《标识办法》标注；西班牙巴塞罗那 Carrer de Verdi 32；Barcelona 500+ 座影城放映；无首映要求，接受已在 YouTube 公开的作品；不因制作年份淘汰；Extended 档约 €26（All Categories）/ €8.99（Short Film），按类别与片长分档；按非 AI 专项节处理，不给 A",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-11-20",
+     "to": "2026-11-13"
+    }
+   ]
   },
   {
    "id": "recvtIfhUxT7ot",
@@ -1260,7 +1422,15 @@
    "notes": "⚠️Festhome 官方页（festival/6002）第52届 FILMETS Badalona Film Festival 档期：Call for entries 01 Mar 2026 / Standard 15 May 2026 / **Extended 15 Sep 2026** / Notification 15 Oct 2026 / Festival 15–25 Oct 2026；待官方公布后再补档期与状态；非 AI 专项节，是西班牙加泰罗尼亚老牌短片节（52 年历史、Goya 奖推荐节、巴塞罗那省议会支持）；征片要求中列有 AI Tools 标记但无独立 AI 赛道——按非 AI 专项节处理，不给 A；回 Festhome 官方页确认当届是否已开启征片",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-12-11",
+     "to": null
+    }
+   ]
   },
   {
    "id": "recvtIfhUxptdr",
@@ -1280,7 +1450,9 @@
    "notes": "Festhome Extended 2027-05-12；wixsite 官网当前 404，官网链接待补；日期 2027-05-12 经 Festhome 确认；🔍注意：官网 wixsite 已 404，归属待确认；原 wix 官网已 404 死链，官网与投递均改为 Festhome 官方页 f/10007（Extended deadline 2027-05-12、通知 05-19/20、举办地 Olot Spain）；主办方原 wix 官网已 404 且无替代独立站，官网与投递同填 Festhome 官方页 f/10007（平台直达、Extended 2027-05-12）；平台为投稿唯一入口",
    "mark": "note",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxTdGk",
@@ -1300,7 +1472,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://olotfilmfestival.es，「官网」字段已改为该地址",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUx1uBc",
@@ -1320,7 +1494,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://intfilmmarket.wixsite.com/home，「官网」字段已改为该地址；wixsite 官网当前 404，官网链接待补；日期 2027-06-16 待再核",
    "mark": "caution",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxbnBx",
@@ -1340,7 +1516,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://festivalautocineelsur.es/en，「官网」字段已改为该地址；Festhome Extended deadline 2027-05-07（原 05-05 早两天，已修正）；两平台口径冲突：主办方 FilmFreeway 页末档 2027-04-14、Festhome 页 2027-05-07（活动 2027-05-14~15）；按「宁可早投」原则取更早的 2027-04-14，投前可再向主办方确认；官网 festivalautocineelsur.es/en/submit 是 FilmFreeway 嵌入页、官网本身不列日期；按「取更早档防错过」原则不改为 05-05/05-07，但 04-14 后官方平台可能仍开放，想投可再查 FF 页；通知 05-13、节 **05-14~15 · 阿利坎特（Alicante）**；✅ **设有独立「AI (artificial Intelligence)」类别**，费用 Standard €6.99 / Gold €6.19（Regular2 档 €5.99），共 **44 个类别**；）",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxDfLQ",
@@ -1360,7 +1538,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://indiehouse.es/，「官网」字段已改为该地址",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvtIfhUxOeoL",
@@ -1380,7 +1560,9 @@
    "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 http://asianfilmfest.ru，「官网」字段已改为该地址",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOf2TR2tU",
@@ -1400,7 +1582,9 @@
    "notes": "旧 FF 链接已 404，更正为 AIfortheFutureFest；官方 FilmFreeway 页仅标注「COP31 – November/December 2026」，未公布具体截止日；本期主题为气候故事（韧性 / 生态未来 / 生物多样性 / 公正转型），接受影片、摄影、艺术、音乐与剧本，无现金奖；若要在 2026 年内投，须在 11 月中旬前上 FilmFreeway 页确认当期 Deadline 后再决定",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOiiAqUr0",
@@ -1420,7 +1604,9 @@
    "notes": "须使用Vidu S2互动功能；截止10-08已过，标为已截止",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOiiAc7yS",
@@ -1440,7 +1626,9 @@
    "notes": "无主办方独立官网，AITOP100为发布源并同填两字段；邮箱13965539109@139.com投稿；主办方（黄山万卷星图等）无独立官网，邮箱/微信投稿；截止 10-08 12:00；主办黄山市短视频和微短剧协会等，市委宣传部指导；截止10-08已过，标为已截止",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOiiA14HU",
@@ -1460,7 +1648,9 @@
    "notes": "无主办方独立官网，AITOP100为发布源并同填两字段；Nova AI/山海星辰未查到独立官网域名，AITOP100 为发布源；官网改为主办方 Nova AI（山海星辰）官网；截止 10-08；无独立活动页，结果在公众号公示；截止10-08已过，标为已截止",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOiiAUf1e",
@@ -1480,7 +1670,9 @@
    "notes": "“须用万兴剧厂生成、AI画面≥70%”要求见于详情页图片，文字版未二次确认；官方无延期/延长公告，截稿后即进入评审，征集已结束",
    "mark": "",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOiiA2jTV",
@@ -1500,7 +1692,9 @@
    "notes": "报名10-15截止、投稿10-31；官方公众号“永嘉发布”发布；⚠️10-14：进群报名 10-15 为最后一天，未入群无投稿资格；温州新闻网官方公告原文：报名阶段 2026-09-25~10-15、投稿阶段 2026-09-25~10-31（投至 3113907798@qq.com）、评审 2026-11-01~15、版权复核 11-16~30、展映 12-01~31；奖金 10 万现金（特等 1.6 万/一等 8000×3/二等 5000×6/三等 2500×12）+1000 万 SeeBay 积分；双截止（报名 10-15 / 投稿 10-31）已确认无误；已补通知与举办时间；①补全规格：**≥2 分钟（建议 2–5 分钟）、≥1080P、横屏 16:9、MP4、中文字幕**；②**品牌元素是硬要求**——所有参赛作品必须出现「原野春天」相关元素，纯公益向不带品牌的片子不符合资格；③⚠️**专业内容审核严格**：营养/健康/食品安全表述必须引权威依据，出现「未经证实的健康功效」直接取消评奖资格，涉食育科普的脚本要先核指南原文；④版权条款相对友好：获奖作品仅授权赛事宣传/展映/公益传播，**独立商业用途需另行协商**（与多数买断型赛事不同）；⑤奖金结构已补全，前 50 名另有 20 万 SeeBay 积分（非现金）",
    "mark": "caution",
    "verified": "fixed",
-   "verifyNote": "邮箱投稿：3113907798@qq.com"
+   "verifyNote": "邮箱投稿：3113907798@qq.com",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOjSliprn",
@@ -1520,7 +1714,9 @@
    "notes": "作品发布10-31截止；申报材料11-03前发邮箱wlwhsp@sina.com；无独立官网，AITOP100为发布源；自治区党委网信办主办无独立官网，AITOP100 为发布源；作品发布 10-31 截止、申报材料 11-03 前报送；官网改为承办方广西网络文化协会官网（桂网）；作品发布 10-31、材料申报 11-03；投稿邮箱 wlwhsp@sina.com；🔍注意：未找到政府网原文，仅媒体转载；原官网 guiwang.org（广西网络文化协会）源站已 502 宕机→官网改「未核实」；①主办=自治区党委网信办、承办=广西网络文化协会，无独立官网；②官方发布渠道为微信公众号「桂网」「网信广西」；③作品须带话题公开发布（10-31截止），申报材料 11-03 前发 wlwhsp@sina.com；①补全规格：**30 秒—5 分钟**、横屏 ≥1920×1080 / 竖屏 ≥1080×1920、不得含商业广告；③**金额更正**：原写「扶持金合计 18 万、三类 2000×20」，按 100 个名额自洽口径应为「一类 10 + 二类 15 + 三类 30 + 鼓励 45 = 100」，合计 **20 万元**（8 万+6 万+6 万）；AITOP100 记三类 20 个、设计狮记二类 12/鼓励 48，均与他人不自洽，故取 10/15/30/45 版本，投前以征集表为准；官网字段留空（无独立官网）；⑤获奖作品须保持在线一年、授权主办方非商业公益使用且不再付酬",
    "mark": "note",
    "verified": "ok",
-   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）"
+   "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOjSl4mP7",
@@ -1540,7 +1736,9 @@
    "notes": "须显著使用可灵AI创作，时长≥1分钟；活动专区id 924015525368696877；11-16公布结果；投递链接改为可灵活动专区具体页；钱江晚报·潮新闻、封面新闻、中金在线等多家 2026-09-04 报道一致：9 月 4 日启动、作品征集截止 11-01；11-02~11-15 评审；11-16 公布获奖名单；已补通知时间；①补全作品要求：**时长≥1 分钟、≥1080P、须中文字幕、须显著使用可灵AI且生成内容占主体时长或核心创意**；②⚠️**权利条款**：投稿即授予可灵AI/快手及其关联方「全球范围内、永久、不可撤销、免费」的使用许可，含复制、展示、传播、**改编**、汇编、信息网络传播，用于平台运营/产品展示/宣传推广/线下展映——属较宽授权，介意改编的慎投",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOjSlNIb3",
@@ -1560,7 +1758,9 @@
    "notes": "首届无交叉验证按硬门槛封顶A；作品≥10分钟1080P、赛事首发、需1000字故事阐述；虎鲸文娱无独立官网，赛事页为优酷子域（官方自有）；⭐含金量高：优酷/虎鲸文娱背书，总池1000万（首届按规则封顶A）；官网 jingrui-ai-competition.youku.com 实测 200/1986B（title「鲸锐AI创作大赛」正确），属优酷 SPA 活动页、内容由 JS 加载，浏览器正常打开，非死链；赛程：12-07~10 入围公示、12-16~18 终评、12月底颁奖；①**补全档期**：入围奖揭晓 12-10（原通知时间空）、大奖 12 月底（已填举办时间）；②作品门槛明确：**横版 16:9 / ≥1920×1080 / ≥10 分钟**，另需 1000 字故事阐述 + 200 字简介，10 分钟是国内同类赛里最高的时长门槛，排期时按「一条完整短片」而非「几条短视频」估算；③**原创首发 + 不得改编现有 IP**，与钱塘杯（首发 7 天独家）、AiShorts（B 站首发）存在互斥，同一部片只能选一条；④不限工具，无工具迁移成本",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOjSlmQn2",
@@ -1580,7 +1780,9 @@
    "notes": "深圳新闻网09-16官宣",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdOjSlhvYz",
@@ -1600,7 +1802,15 @@
    "notes": "可灵官方页 klingai.com/cn?page=nextgen 与英文页 klingai.com/global/nextgen 均**未设投稿截止日期**：申报后「如通过项目评审，将在项目资料提交后 21 个工作日内给予回复」（英文页 20 business days），属常年滚动招募的创投计划，不是有截点的竞赛；ScreenWeaver 10-01 读取官方页亦确认「The standing NEXTGEN Initiative has no deadline」「No submission deadline appears on the page」；**随时可投，不必赶年底；**；① 全资出品：单项目最高投资 600 万现金，覆盖全部制作成本，全球多平台上线（最高 5 亿+曝光），优先选送 A 类电影节；② 投资出品：单部最高投资比例 50%、最高 200 万，支持付费分账；③ 技术支持：最高 100 万灵感值（算力）+ 官方矩阵号宣发 + 培训；题材不限（短剧、短剧集、动画、电影实验片）；语言不限但须含中文配音版本；**AI 生成内容时长占比 ≥50% 且主要内容由可灵 AI 生成**；接受剧本开发阶段与制作中项目，已发行项目不收；签约后 6 个月内完成；同一项目限提交一次；看艺术完成度、技术创新性、行业启发性三项，无权重公布",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-20",
+     "from": "2026-12-31",
+     "to": null
+    }
+   ]
   },
   {
    "id": "recvwdXwguDMFO",
@@ -1620,7 +1830,9 @@
    "notes": "官方页确认；部分转载称“90分钟”与官方页“≥60分钟”不一致，以官方页为准；成片截止11-03；⭐含金量高：刘慈欣顾问、550万池（350万现金+200万算力）；官网原文报名&先导片截止 2026.10.09 23:59:59、无延期，10.12起入围通知——标为已截止（11.03成片截止仅限入围者）；官网赛程轴另有入围者正式作品（成片）截止 2026-11-03，已入围者别漏投成片环节",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "recvwdXwguXCmM",
@@ -1640,7 +1852,9 @@
    "notes": "官网hkaida.hk确认，投稿走创赛云chuangsaiyun.com；⚠️水分警示：付费商业赛，主办方为商业教育公司、无政府/权威机构背书，可信度存疑，投递自酌；评审 11-01~12；获奖公布 2026-11-13；主办为创赛云教育科技企业，艺术设计研究中心(香港)、香港艺术发展中心协办；报名费 55 元/件；⚠️官网 www.hkaida.hk 实测不可达（ERR），投稿实际走主办方小程序/创赛网通道，投前先确认入口；⚠️上轮备注写「官网 www.hkaida.hk 实测不可达（ERR）」**结论有误，现更正**：本轮用浏览器通道直接读取该站**可正常打开**，页面完整显示赛制（命题赛道 / 非命题赛道）、五大作品类别（创意绘画、商业设计、动效视觉、**影像动画**、跨学科实验）与新闻资讯，投递入口指向创赛云 chuangsaiyun.com（命题 id=715 / 非命题 id=716）；此前 ERR 系本地网络探测限制（境外域名解析异常），**不代表站点失效**",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1EYL7",
@@ -1660,7 +1874,9 @@
    "notes": "资格注意——有地方站国家需走分站；中国禁直投戛纳站，须走地方站（北京站 09-21 已截止）；费用与奖励经官网 cannes-2027 页核实；WAIFF体系：首届2025-04尼斯（评审团主席Claude Lelouch，80多国1500+部投稿，百代/Banijay支持）；第二届2026-04戛纳（主席巩俐，官网cn为中国区分站，中国区评选获奖入围主竞赛）；本条为第三届(2027)国际报名站（.com，规则PDF标Edition 2027，€15），2027届评审团尚未官宣；🔍注意：注意与WAIMF（World AI Movie Festival，马贝拉，film6.ai）区分——名字相近档次完全不同；⭐含金量高：AI节展第一梯队（巩俐/Lelouch评审团沿革、戛纳电影宫场地）；⚠️10-14全量核对：中国大陆在官方排除名单内，须走WAIFF中国北京站（2026年12月）；官网 Cannes 2027 页原文：投稿 2026-09-15 10:00 开放至 2027-02-15 23:59；Official Competitions 于 2027-04-06~07 在戛纳电影宫放映；再次确认资格：中国等 18 国创作者不得直投戛纳站，须经本国分站（WAIFF 北京站）；短片 5–15 分钟、长片 30 分钟以上、剧集≥2 集每集 5–30 分钟；已补举办时间",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1GfA2",
@@ -1680,7 +1896,9 @@
    "notes": "截止 2026-10-12 已过，官网此前核实无延期（中国驻韩使馆页口径），状态改为已截止",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1H71h",
@@ -1700,7 +1918,9 @@
    "notes": "首届；截止修正：FilmFreeway 为唯一投稿渠道，晚期档 10-14（原 10-06 为官网保守值）；未发现独立官网；Late Deadline 10-14 已过（10-15为通知日），状态标已截止；由 FilmFreeway 页改为母活动自有域名赛事专页 cinema.neulandpro.com",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1Hte3",
@@ -1720,7 +1940,9 @@
    "notes": "⚠️官方规则页原文：创作投稿与周评期 **8 月 27 日—10 月 10 日**、集中终审 10-11~10-19、**公示颁奖 10-20~10-25**；已补征程片开始 08-27 与公示/颁奖期；主办 WaytoAGI（伙伴 AniShort、灵蟹、SoloEnt），不是传统电影节；权利条款须读完整章程：作品著作权归创作者，但组委会获非商业使用权，商业改编发行须另签授权；偏「故事本质」而非技术炫技，评审把「开场吸引力」「角色代入感」纳入维度，适合有叙事能力但特效预算有限的创作者",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1H4Au",
@@ -1740,7 +1962,15 @@
    "notes": "⚠️截止日由 2026-11-20 改为 **2026-12-20**；官网 akool.com/aifilmchallenge 的 Timeline 段原文（10-20 实测）：「Challenge Opens September 15, 2026 / Submissions Close **December 20th, 2026** / Winners **January 15th, 2027**」；10-19 那次核对读到的「November 20」来自 AKOOL 自身的发布博客（launch blog），该博客至今未更新，仍写 11-20；结论：以挑战页 Timeline 为准 12-20，通知（Winners）同步改为 2027-01-15；⚠️差 30 天，按旧值排期会白白压缩一个月准备时间；原仅核了预告片赛道，现补全三赛道：Coming Never（30–90″预告片）、AI Short Film、Impossible；三赛道统一评审维度：故事 30% / 原创性 20% / 创意执行 20% / AKOOL 使用 15% /「我会想看」15%；免费（No purchase necessary）；须公开发布并加官方标签与 AKOOL 标志",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-20",
+     "from": "2026-11-20",
+     "to": "2026-12-20"
+    }
+   ]
   },
   {
    "id": "reczz28HJWV1Ephi",
@@ -1760,7 +1990,9 @@
    "notes": "首届已履约（可信影展库核验），新一届已开放；🔍注意：截止存疑：FF 页面标 First Year，规则页征期 2025-11-01~2026-03-08 已截止，2027-02-01 无官方依据（影展库信息与官方页冲突）——新届未公布，恢复开放即更新；由 FilmFreeway 页改为 Indywood 自有域名赛事页 indywood.co.in/ai-film-festival；硬门槛：**AI 须占 制作前/中/后任一段 ≥70%**；**<30 分钟**走主 AI 类别，**>30 分钟**走 Special AI Feature Film 类别；评审维度为剧本叙事、AI 运用创意、视听觉设计、整体美学完整性；先经预审委员会再进主评审团；设 **25 项专项奖**（最佳 AI 生成短片、导演、原创故事/概念、AI 视效、AI 驱动动画、生成式工具运用、人机协作、实验 AI 片、AI 角色/数字人、混合 AI 片、AI 远见奖等）；**仅最佳两部有现金奖**，其余为奖杯+证书（全员获参赛证书）；首届（2026-03）500+ 投稿 / 50+ 国家 / 25 位获奖者——已履约，可信度有交叉验证",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1GBpz",
@@ -1780,7 +2012,9 @@
    "notes": "多档期取最终 2027-05-15；时间充裕；档期结构确认：早鸟09-30/常规2027-04-30/末档05-08/最终05-15；官网补 metamorph-award.com；官网 metamorph-award.com 首页与 /categories2026 页**均未列出任何截止日期**（首页只展示 2026 获奖名单与 2027 类别入口）；本表保留 2027-05-15 作参考值，但投前必须以官网当届投递页为准；评委含 John Rhys-Davies、David Nutter、Timbaland 的 Stage Zero 团队；类别横跨 AI 电影 / 动画 / 音乐，含 Music Video、Music Creation；收费投稿；关联：MetaMorph × TapNow 四季赛（秋 10-15、冬 12-30）是该奖项的晋级通道，冬季冠军 £500 + 2 万 TapNow 积分、2027-01-15 公布结果",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HJWV1GssG",
@@ -1800,7 +2034,9 @@
    "notes": "历届对中国创作者友好；第6届档期确认：final 2027-04-30、通知05-05、颁奖05-30；官网补独立域名 seoulaiff.com；新影圈记 2027-04-28，差 2 天——要投建议按 04-28 提交留缓冲；FilmFreeway 列五档截止：**2026-11-30 / 2027-01-31 / 2027-02-28 / 2027-03-31 / final 2027-04-30**；通知 2027-05-05；活动 2027-05-30~31（首尔江南 enTravel）；**想省钱应赶 11-30 首档**（FF 每档涨价）；另：官方明示「Official Selection 不在现场放映」，现场只放 10 部获奖片、且须导演到场",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HOxbiM8Th",
@@ -1820,7 +2056,9 @@
    "notes": "⭐含金量高：金鸡百花体系 + 中国电影出版社指导 + 抖音/小云雀主办，国内背书最强一档；首届单元；⚠️官网 cgrhfff.com 原文：「征集自本公告发布之日起启动，**提交截止时间为 2026 年 10 月 20 日 24 时（北京时间），逾期不予受理**；入围名单于 2026 年 10 月公布，于金鸡百花电影节期间的金鸡电影 AI 之夜揭晓；」已按 10-20 转「已截止」；①「小云雀 AI 特别推荐」3 部，每部叠加 5 万积分算力支持；②「抖音 AI 创作浪潮计划特别推荐」2 部，每部作者获 5000 元 dou+ 券；特别推荐与推优委员会的年度推荐影片分别产生；征集、推优、推荐全过程**不收费**；著作权归创作者，提交不构成任何权利转让；入围作品于电影节期间展映交流，年度推荐影片于金鸡电影 AI 之夜揭晓，主创受邀出席；中国电影出版社有限公司指导；厦门电影节有限公司、抖音、小云雀 AI 主办；观语未来科技、厦门深境科技、珀乐互动承办；咨询邮箱 AI-FILM@cgrhfff.com；两轮制：初评由电影界专家全量审看思想内容/价值导向/艺术质量；终评由头部导演、行业专家、AI 技术专家组成，评估艺术质量与技术应用的创新性、规范性与工艺价值；执行记名与回避制度，内容标准与传统电影一致",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HkJ5dRwlE",
@@ -1840,7 +2078,9 @@
    "notes": "⭐含金量高：厦门市政府主办、金海豚奖老牌奖项体系、总池40-50万、火山引擎支持；报名两步缺一不可（飞书问卷+邮件）；各源奖金口径不一，投前以官方问卷内说明为准；官方无延期/延长公告，截稿后即进入评审，征集已结束；原填飞书报名表单（非官网），已改为厦门国际动漫节金海豚奖官方在线系统 cybersousa.com.cn 活动页",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HkJ5dSWZi",
@@ -1860,7 +2100,9 @@
    "notes": "⚠️人民网、北方网、天津总工会报、消费日报四篇官方通稿均只写「赛程近三个月」「获奖结果 11 月底公示」，**无任何官方文本写明 10-20 截止**；实际截止很可能晚于 10-20（启动 9-06 + 近三个月 ≈ 11 月底），**投前务必进小程序确认，勿按 10-20 硬卡**；🔍注意：截止10-20 24:00来自媒体报道，待小程序内最终确认；报名仅微信小程序「星韶文化活动赛事」，无网页入口；官网字段暂填官方报道页；2026-10-14全量核对：确认仍在征稿；10-20截止来自官方小程序口径，公开网页无直接证据；具体日期仅见「星韶文化活动赛事」小程序——投前务必进小程序核对规则原文，按更早日期准备为宜；改为主办方中新天津生态城管委会官网 eco-city.gov.cn；赛事无网页活动页，报名须走微信小程序「星韶文化活动赛事」；再次检索天津日报（今日天津）、消费日报、搜狐/滨海新区融媒等公开报道：均只载「总奖金 5 万元、赛程近三个月、获奖结果 11 月底公示、面向全国征稿」，**无任何具体投稿截止日期**；⚠️投递前必须以小程序内公告为准，公开渠道无法交叉验证；主办方「AI上生态城」官方公众号收官推文原文：「截至 2026 年 10 月 20 日 23:59，2026『AI上生态城』AI影像创作大赛作品征集正式落下帷幕」，并明确「赛事于 9 月 4 日启动，10 月 20 日作品征集截止」，共收到全国作品 358 条；赛后流程：10-20 起入围作品在视频号/抖音/小红书/快手四平台展映，传播热力值（播放+点赞+评论+转发+收藏）占综合得分 50%，与专业评审各半；结果 11 月底公示；主办：中新天津生态城管委会办公室 + 感恩科技（星韶文旅），指导单位含生态城党委办（网信办）、商务和投资促进局、文旅局；总奖金 5 万（一等 3 万）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28HkJ5dS91c",
@@ -1880,7 +2122,20 @@
    "notes": "官网 impossiblefilmfest.com 现行原文（10-20 实测）：「Submissions are open until the Final Extended Deadline on 5 November 2026. Official Selections will be announced on 24 November 2026. Award winners will be announced on 12 December 2026.」Dates & Deadlines 表：Opening 07-01（Passed）/ Earlybird 07-31（Closed）/ Regular 09-30（Closed）/ **Final Extended 11-05（仍开放）** / Official Selection 11-24 / Winners 12-12；已改回：截止 2026-11-05、入选公布 2026-11-24、获奖公布 2026-12-12；首届（founded 2026）无履约记录、无现金奖（仅 laurels/证书/奖杯）→ C 级；投稿走 FilmFreeway",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-19",
+     "from": "2026-11-05",
+     "to": "2026-10-20"
+    },
+    {
+     "date": "2026-10-20",
+     "from": "2026-10-20",
+     "to": "2026-11-05"
+    }
+   ]
   },
   {
    "id": "reczz28HkJ5dS9um",
@@ -1900,7 +2155,9 @@
    "notes": "⚠️；② **奖金原写「上届设金/银/铜质收藏奖」不准确** → 官方明确：AI 创意微视频入展 10 名，**每人创作补贴 800 元** + 证书 + 上海市摄协入会积分 2 分；③ **补上原文未强调的关键限制**（见赛事说明）：核心实景须实拍、禁止完全 AI 虚构、AI 仅用于辅助环节；上海市摄影家协会官方公众号、青年报（why.com.cn）、上海文联三处原文均为「投稿时间：即日起至 2026 年 10 月 31 日」；⚠️这条**不是纯 AIGC 赛事**：它要求以「上海国际光影节现场 / 上海城市夜景」的**实拍素材为核心画面**，AI 只能做特效、转场、配乐、字幕、润色、剪辑等辅助；没有实地素材、想用纯 AI 生成短片的作者**投不了**；若按「AI 创作自由度」衡量，这条的实际门槛比多数 AI 影展更高（受地理与实拍限制）；补贴金额不大（800 元/名，10 名），但有上海市摄协入会积分与官方展播，适合本就在上海、手上有光影节实拍素材的创作者；定位仍是「待定」",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyLkFsi7",
@@ -1920,7 +2177,9 @@
    "notes": "⚠️必须先完成报名，错过报名通道即使未到投稿截止也投不进去；报名通道截止 2026-11-15 24:00（须先完成报名），作品提交截止 2026-12-15 24:00；奖项：卓越 20万×1、精选 5万×4、新秀 2万×10、新锐 1万×7、西宁特别支持 1万–10万×20，入围约 250 个各 1000 积分；无地域限制、无工具绑定；校园组报名免学籍、复核时补交；⚠️10-14全量核对：11-15为报名截止，作品投稿截止12-15（已按作品截止修正）；混合命题——开放命题+正能量方向+西宁城市品牌命题；⚠️报名通道 11-15 就关，要参加请先报名再投稿；官网「项目流程」STEP2 与「常见问题」两处均载明上述双截止（二次抓取确认，原文一致）；主办方无独立报名系统，报名与投稿入口均在官网「立即参与」，故官网与投递链接同值；官方未公布获奖通知日期，通知时间保持为空；成果分享会 2027 年 1 月在西宁举办",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyLkDytN",
@@ -1940,7 +2199,9 @@
    "notes": "2026-09-02 至 12-02 征集；片长≤314 秒（含字幕）；须在前期/拍摄/后期三个阶段各使用至少 1 个生成式 AI 工具并提交制作日志；每人限投 1 部；面向全球、无年龄与经验限制；主办 Artefact × 影院集团 mk2，**巴黎**；第 3 届；**公众投票 2026-12-09 ~ 2027-01-13**，**颁奖 2027-02（mk2 Bibliothèque，巴黎）**；奖项：**€10,000 大奖**（另含获奖片 30 秒版本在 mk2 院线放映一周）＋ 三个 €1,000（评审团选择 / 公众投票 / 最佳 AI 运用）；片长 ≤314 秒（5:14）；生成式 AI 须贯穿前期/拍摄/后期三阶段并附制作日志",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyLkGs8i",
@@ -1960,7 +2221,9 @@
    "notes": "征集截止 2026-11-30 24:00；作品须 2026-01-01 起上线、单集≤10 分钟、总集数≥8 集；AIGC 漫剧\"年度大学生优秀作品\"面向全国在校创作者，不受上线限制；报名走\"星耀影都微短剧创投季\"官方小程序（无网页投递入口）；⚠️10-14全量核对：怀柔区政府公告显示各赛道报名6-30截止、10月荣誉盛典揭晓，本届征片实际已结束，原11-30无官方依据，已标已截止；此前判「已截止」有误；北京怀柔官方发布(2026-09-28)：2026“星耀影都”全国微短剧创投季第二阶段「品质微短剧单元」报名通道全面开启、火热征集中，征集截止 2026年11月30日24时，2026年合规上线的真人微短剧与 AIGC 漫剧均可经官方小程序报名；注意：第一阶段（剧本/项目/摄制单元）6-30 已截止，勿混淆；①补全参评硬门槛：**2026-01-01 起上线、单集 ≤10 分钟、总集数 ≥8 集、须完成备案或平台审核**（大学生 AIGC 漫剧豁免上线要求，但仍须合规）；②补全征片开始 2026-09-01（新华报业网「征集时间为 2026 年 9 月 1 日至 11 月 30 日 24 点」）；③补全奖金结构：真人特别荣誉 10 万×2、AIGC 特别荣誉 5 万×2、优秀作品真人 5 万×6 / AIGC 3 万×6、大学生 AIGC 3 万×2、个人单项 2 万×18，合计 120 万；本赛事只走官方微信小程序，无网页报名地址；⑤与第一阶段（剧本 / 项目 / 摄制单元，6-30 已截止）严格区分，勿混",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyLkG6ho",
@@ -1980,7 +2243,9 @@
    "notes": "⚠️今日头条复盘文引 HiShorts! 官方微博 2026-09-17 18:00 公告原文：；「**硬性要求：作品需使用 updream 作为主要 AI 创作工具**」；海报端亦有强绑定动作（带 tag updream、标题后缀、置顶评论声明、3 秒贴片）；→ **不用 updream 的作者不适合投这条**，这不是\"建议\"而是硬门槛；本次把此前「推文未载」的细节全部落实为官方口径：；① 片长 **2–30 分钟**（含片头片尾）；② 四单元 剧情/动画/实验/MV；③ 创作时间须 **2026-03-20 后**；④ 格式 MOV/MP4、1080p、H.264、横版；⑤ 奖项数额：入围 70 部各 500 元、提名 20 部各加 2000 元、获奖 5 部各加 5000 元（**均为 updream 积分折算价值，不是现金**）；⑥ 评选 11-19~11-27、提名片单 12 月中上旬、线下活动 12 月下旬至 1 月上旬；⚠️官方推文写「2026 年 9 月 17 日—11 月 18 日」，官方海报写「09.16–11.18」；⚠️competehub 英文页把片长写成「不超过 10 分钟」、把截止写成「End Date 2026年10月18日」——与官方 2–30 分钟 / 11-18 均不符，属该站抓取错误；⚠️HiShorts! 2026 全球短片创作者大会主竞赛（剧情/纪录/动画/实验/商业/MV 六单元、时长 ≤40 分钟、主创须有华人背景）**明确不接受 AIGC 作品**（章程第 6 条：仅接受非 AIGC 影像）——也就是说，AI 作品只能投 AiShorts! 这条支线，不能投主竞赛；官网 hishorts.com 是 HiShorts! 官方站但**站内无本赛事投稿入口**；实际投稿只能 B 站搜索「HiShorts AI短片大赛」进活动专属页；hishorts.com；官方邮箱域 hishortsfilmfestival.com；该站在本沙箱 DNS 被劫持至 198.18.x 无法直连（非死链）；免费；HiShorts! 七年办展口碑、三轮评审（初审→复审→终审现场观影）路径清晰；但无现金奖（updream 积分折算 + B 站签约机会），且强制绑定 updream；2025 年 4771 份报名仅 20 部入围，入围率约 0.4%，竞争激烈",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyLkDrAH",
@@ -2000,7 +2265,15 @@
    "notes": "⚠️官方站首页、Official Rules 页与 Launch Timeline 三处一致：**Entries close November 15, 2026**；Finalists 12-01；Awards Night 12-10（亚特兰大）；官方按美东时间计时，本表按保守值 2026-11-15 23:59(+08:00) 录入，实际窗口约多 13 小时；9-15 是**注册开放日**，官网明确「Registration opened worldwide on September 15, 2026 and remains open until November 15, 2026」——不存在「9-15 前必须注册」的独立截止，此前备注该条为误读，已删除；注册费 $10（不再另收投递费），注册后获赠 1,500 Bloomway Sparks（10-18 前早鸟为 5,000）；首届；面向全球，团队≤5 人；Youth 组自 6 年级起，18 岁以下需监护人同意；AI 工具不限；须从 The Home Depot / Chick-fil-A 两条品牌赛道择一；成片末帧须为「仅限于AIAF比赛使用 / For AIAF Competition Use Only」尾板，清晰可读≥2 秒，无尾板不予评审；⚠️当前 Official Rules 页（2026-10-22 核）表述为授予 AIAF **非独占**的展映与推广许可（non-exclusive festival exhibition and promotion license）；但此前版本 FAQ 曾载明成片版权归 AIAF 与品牌方、创作者仅留署名权；两者冲突，投稿前须重读当届 Submission Terms 原文确认，勿以本表为准",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-10-25",
+     "to": "2026-11-15"
+    }
+   ]
   },
   {
    "id": "reczz28MYySouynD",
@@ -2020,7 +2293,9 @@
    "notes": "截止取最晚档 Final 2027-01-11（Regular 10-31 / Late 12-15）；须体现\"有意义的 AI 创作使用\"；投递走 FilmFreeway；作品须持完整权利",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYySou7vr",
@@ -2040,7 +2315,9 @@
    "notes": "征集 2026-09-01 至 12-31；AIGC 微短剧总时长≥20 分钟、单集剧 3–8 分钟；⚠️暂无官方网页入口（官方信息由\"眉山文旅\"公众号发布），投递方式未公布，需关注公众号\"视听东坡 眉媒与共\"，后续须补官方链接；含非视频的剧本赛道；命题创作（须围绕三苏文化核心要义），征集2026-09-01至12-31",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYySotZoZ",
@@ -2060,7 +2337,9 @@
    "notes": "实际投稿走 FilmFreeway（filmfreeway.com/TLVAIFF）；首届、无现金奖；每人最多投 2 部；截止 10-15 临近；官方无延期/延长公告，截稿后即进入评审，征集已结束",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYySovd1f",
@@ -2080,7 +2359,9 @@
    "notes": "一等奖 1 名 1 万、二等 2 名 5000、三等 3 名 2000，另 7 个独立奖项各 8 名各 1000（共 62 名）；落户扶持最高 2 万；初赛走 YOUP 平台（算力全额报销），决赛充 500 元额度；政府官网通知页偶发 503；官方通知页原文「报名截止时间 2026-10-25」；两大赛道（高校学生/社会公众）、62 个奖项、一等奖 1 万（总奖金池按奖项计）；须依托 AI 工具创作并标注 AI 生成内容；初赛 1–5 分钟；入围决赛者初赛算力费用全额报销、决赛现场充值 500 元算力额度；官网已指向该具体通知页（比政府门户首页更精准）；⚠️**两条时间线缺一不可**：①报名 + 作品提交走 YOUP 平台（www.youpyoup.cn），10-25 24:00 止；②**作品还须在 10-15~10-25 之间用本人抖音账号公开发布**（文案由赛事方在 YOUP 提交页提供，含 @账号与话题标签，不要自行改动）；只报名不发抖音、或只发抖音不报名，都不算完成；⚠️**初赛按数据排名**：10-26~11-01 按抖音点赞数 + 后台播放量做线上数据评比，作品质量之外，账号基础流量是硬指标；11-02 公示约 200 名决赛入围，**11-07~08 在謇公湖科创中心线下现场命题创作**（须能到场）；规格：初赛作品 1—5 分钟，决赛现场创作 35 秒—3 分钟，横屏 16:9 / 竖屏 9:16 均可，每人限投 1 件、不可跨赛道",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYySouvXw",
@@ -2100,7 +2381,9 @@
    "notes": "⚠️工具绑定：作品须 ≥50% 由 TapNow 生成且画布须公开；FilmFreeway 仅作登记，实际投递在 app.tapnow.ai/event/50；秋季赛 10-15 已截稿；同 FilmFreeway 页冬季赛 Winter Activation 10-16 开启、2026-12-30 截止，同一赛制可续投（如需续投请新增冬季赛条目）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyZBIgCW",
@@ -2120,7 +2403,9 @@
    "notes": "档期更正：Extended deadline 2026-10-18 为最终投稿档（Late 10-04 已过），10-19 为通知日非截止日；投递走 Festhome（festhome.com/f/10100）；官网 iaencorto.com 有 Cloudflare 保护，浏览器可正常打开",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyZBMa7c",
@@ -2140,7 +2425,9 @@
    "notes": "⚠️资格限制：须满足非洲关联三选一（非洲籍/非洲居住/非洲题材），无非洲关联建议不投；18+；作品须 2024-01-01 后完成；官方新闻稿 + kajimelo 名录一致：免费档 2026-09-30，最终档 2026-10-20（$5–$10，非洲本地与学生全程免费）；入选通知 11 月初；好莱坞首映 2026-11-21、坎帕拉放映 2026-12-12；四类别：AI短片 1–10′、AI动画 1–10′、AI纪录片 5–20′、学生与新锐 1–10′；九个奖项，明确以荣誉与资源为主、不设现金；⚠️勿与马达加斯加 AIFFA（lecinema.xyz，截止 10-31）混淆——两个不同赛事",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyZBLMWu",
@@ -2160,7 +2447,9 @@
    "notes": "实际投稿走 Festhome（festival/10164）；由 Festhome 页改为自有域名 todoesprompt.com；投稿仍走 Festhome；【2026-10-21 第三轮核对·日期经 Festhome 官方 Deadlines 确认】Festhome 官方页（festival/10164）显示的赛事全名为 **All Is Prompt · AI Film Festival 2nd Edition**，Deadlines 五档：call 07-22 → early 08-22 → standard 09-18 → late 10-15 → **extended 10-25**；通知日 10-26，节期 10-29~11-04；⚠️举办地为**墨西哥城（Ciudad de México, Miguel Hidalgo）**，不是西班牙；片长上限 30 分钟；官网 todoesprompt.com 有 Cloudflare 人机校验，脚本抓取会被拦（非死链），人工浏览器可正常访问",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28MYyZBM7s4",
@@ -2180,7 +2469,15 @@
    "notes": "⚠️FilmFreeway 官方页 filmfreeway.com/LYNYAIFF 的 Dates & Deadlines 段（10-20 实测）明确四档：早鸟 2027-01-01、常规 2027-02-01、迟到 2027-03-01、**截止投稿 2027-04-01**；Notification 2027-04-21、Event 2027-05-01；原备注只写到「取最晚档 2027-04-01（第一批 2026-12-31、第二批 2027-02-01）」，但日期字段全程为空、状态挂「待公布」，与官方页不符；现已补全并按最早档起算为开放征集中；2026-10-14 官方启动稿（新京报 / 新浪 / 腾讯新闻同稿）：面向全球征集，十大单元，接受 AI 生成/辅助/实拍结合，要求说明 AI 参与环节与完整创作过程；无现金奖，荣誉为月桂标、证书、奖杯与媒体推荐、国际电影节投稿推荐；组委会地址上海市浦东新区海基六路 99 弄智萃科技中心 3 号楼 7 楼 723 室，场地为零界魔方剧场；⚠️早鸟档最便宜（学生 ¥79），想省钱赶 2027-01-01 前投",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-20",
+     "from": null,
+     "to": "2027-04-01"
+    }
+   ]
   },
   {
    "id": "reczz28NIUoUZDbs",
@@ -2200,7 +2497,15 @@
    "notes": "⚠️截稿由 10-15 **延期至 10-28 23:59**，状态由「已截止」改回「开放征集中」；同期算力补贴 20 万→40 万、支持名额 1000→2000；此前 10-14、10-15 两次「官方无延期公告」的复核结论已作废——**官方是在原截止日之后才宣布延期的**，到期当日的一次性复核不足以钉死；⚠️10-15截止（核查日为最后一天）；正式投稿走「通境创新创业创意服务平台」注册上传，官方群仅用于通知咨询（2026-10-14官方页复核确认未延期）；官方无延期/延长公告，截稿后即进入评审，征集已结束",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-10-15",
+     "to": "2026-10-28"
+    }
+   ]
   },
   {
    "id": "reczz28NIUoUY2H2",
@@ -2220,7 +2525,9 @@
    "notes": "⚠️10-15截止（核查日为最后一天）；18–45周岁限制；官方发布页经http通道实测可达（2026-10-14）；官方无延期/延长公告，截稿后即进入评审，征集已结束",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUoUaIeh",
@@ -2240,7 +2547,9 @@
    "notes": "⚠️10-15截止（核查日为最后一天）；无主办方独立官网——「官网」字段填官方公众号原文链接（无官网例外）；投稿走邮箱（2026-10-14复核截止未变）；官方无延期/延长公告，截稿后即进入评审，征集已结束",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUoUZ7Vv",
@@ -2260,7 +2569,9 @@
    "notes": "征集窗口2026-10-15～10-22；官网与投递同填可灵官方活动页（无独立官网例外）；活动页URL经aitop100「官网入口」超链核实（2026-10-14）；AITOP100 详情页原文：征集投稿 2026-09-29~10-22；作品评审 10-23~27；获奖公示 10-28~11-05；奖励发放 11-06~20；双赛道（汴京店铺主理人 / 赛博联欢会主理人），视频结尾须统一使用活动尾板；优秀作品有机会入选「京东 11.11 赛博联欢会·穿越惊喜夜」晚会；①补全规格：**≥20 秒、≥720p、≥50% 由可灵AI生成**、须活动尾板、四个话题缺一不可；②**两个入口规则不同**：可灵「创意圈」版按创意40/内容30/技术30 评审并列 16 个现金奖；京东灵境版四维含 **社媒影响力 20%** 且收图文，但页面未列现金奖——按可灵版准备、两个入口都投最稳；③权利条款相对友好：规则明示不视为知识产权移转，但未经许可不得用于营利或衍生品开发",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUoUafBC",
@@ -2280,7 +2591,9 @@
    "notes": "限高校在校生及教师；仅动画赛道在征（2026-10-14链接实测200）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUwWBaj3",
@@ -2300,7 +2613,9 @@
    "notes": "无主办方独立官网发布页——官网与投递同填腾讯文档官方报名表单（无官网例外，表单实测开放200）；投稿流程=表单报名+进选手群+作品经百度网盘/邮箱提交；须做「AI实质性参与」三问申报（2026-10-14核实）；AITOP100 汇总与赛事日历一致：征集 2026-10-01~10-31、评审 11-01~15、结果 11 月中下旬、颁奖展映 12 月初；奖金 13 万现金 + 1000 万 SeeBay 积分；作品 2–5 分钟、16:9、≥1080P；团队原则上≤5 人；阜博集团原创审核，版权问题一票否决；已补通知与举办时间；①补全作品规格：**2—5 分钟、横屏 16:9、≥1080P、MP4**，此前说明只写「公益向 AI 视频」；②⚠️**版权一票否决 + 顺位替补**：音乐/字体/肖像/影视素材任一有瑕疵直接出局，第 51 名可能因前面翻车递补——版权干净本身就是竞争力，投前务必自查素材授权；作品实际投递走邮箱 18989722865@163.com（详见赛事说明）；④「AI 参与度」官方口径：不要求 100% AI 生成，混合创作（实拍+AI）被明确欢迎，但须申报 AI 工具与环节；⑤官方优秀奖描述写「综合排名第 25—50 名」，与前面特等到三等奖已占满 1—25 名冲突，实际应为第 26—50 名",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUwWA11r",
@@ -2320,7 +2635,9 @@
    "notes": "限高校在校生；优秀作品最高可获改编短剧利润50%分成（2026-10-14链接实测200）；原投递字段为空，补好创意官方报名平台（实测 200）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUwW9n2D",
@@ -2340,7 +2657,9 @@
    "notes": "不限身份；社会组投递入口页面暂空需留意（2026-10-14链接实测200）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUwWDX8y",
@@ -2360,7 +2679,9 @@
    "notes": "全称为「西乡塘区、高新区第四届创业大赛暨AI短视频应用场景人才竞赛」（2026-10-14官方发布页http通道核实）；本赛事仅扫描推文二维码填报名表，无网页报名地址；②**时长逐轮递增**：初赛 ≥30 秒 → 晋级赛 ≥60 秒 → 总决赛 ≥90 秒，不是一次提交就完，要按「能做出 90 秒完整片」来规划而不是只做 30 秒；③⚠️**权利条款较重**：作品提交后主办方可**无偿**统筹使用全部参赛作品，并享有**永久、全域**的公益展示、宣传推广、展播剪辑、成果公示等使用权（未获奖作品同样适用）；④双组别同一作品只能报一组，高校在校生走高校组奖金略低（一等 8000 vs 1 万），社会身份可走社会组；完整赛程为：报名截止 2026-10-31 → 初赛 11 月上旬 → 晋级赛 11 月中下旬 → 总决赛 12 月上旬 → 颁奖暨成果展映 12 月中下旬；已据此补「举办时间」；高校组一等 8000×1、二等 5000×2、三等 2500×3、优秀 1000×4、参与 500×10；另设专项奖）；⚠️权利条款：主办方可无偿统筹使用全部参赛作品，并享永久、全域的公益展示/宣传/展播剪辑/成果公示使用权；⚠️时长门槛逐轮递增（初赛 ≥30 秒 / 晋级 ≥60 秒 / 总决赛 ≥90 秒），每轮须重新提交更完整版本；截止 10-31 无延期公告",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIUwW9bZv",
@@ -2380,7 +2701,9 @@
    "notes": "投递入口已核实为邮箱投稿（承办方西太湖影视基地官网xthysjd.com公布，wj.gov.cn政务页佐证）；咨询电话0519-83860297（2026-10-14）；西太湖影视基地官方新闻原文：作品征集报名 11 月 1 日截止；作品专业评审 11 月上旬；颁奖典礼 11 月下旬—12 月；作品展播 12 月中下旬；⚠️参赛对象**限长三角在校大学生（本/专/研）及青年创作者**；设 AI 短片创作、AI 剧本创作两个赛道；优秀作品可获影视企业就业直通通道与龙头结对认领",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIV3TE2Pd",
@@ -2400,7 +2723,9 @@
    "notes": "官网为平台外壳属正常（大赛海报已挂首页，游客模式不可投稿）；央广网江苏、新华网江苏双权威媒体报道佐证（2026-10-14）；原官网 ai-nanjing.cn 为 SPA 单页应用（实测返回200但仅1087字节空壳、标题「智汇无限」，内容需JS渲染且游客模式不可投稿），已改填南京市政府官方发布页 shgz.nanjing.gov.cn（内容完整可读）；投稿入口两个：①智汇无限平台 ai-nanjing.cn 首页报名入口 ②Kino视界大赛专属页 vkino.cn/AIGC-VKino/login?bizCode=69WR（投递链接已填后者）；官方赛程：9-28启动，投稿9-28~10-20 24:00，10-21~31终评公示，11月初南京人才周展播；咨询电话 13584002399；智汇无限技术支持 18262606681；Kino视界 400-108-1180；央广网、新华网江苏原文：投稿截止 2026-10-20 24:00；10-21~31 专家终评、结果公示；11 月初南京人才周及全网展播；作品 60–180 秒；奖金池 10 万元（一等 5×6000/二等 10×3000/三等 15×2000/入围 20×500）；已补通知与举办时间",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIV3TEQ3C",
@@ -2420,7 +2745,9 @@
    "notes": "工具绑定：须用Q4 Preview创作（2026-10-14官网实测200）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIV3TEijI",
@@ -2440,7 +2767,9 @@
    "notes": "官方页实际截止11-14 23:00（外部表写11-15有误，2026-10-14官方页复核）；官方通稿投稿截止 2026-11-15（原 11-14 早一天，已修正）；获奖公布 2026-12；论坛颁奖与上海自然博物馆沉浸展 2027 年初；奖金：金奖 1 名 3 万、银奖 2 名各 1.5 万、铜奖 3 名各 5000、特别奖 5 名各 5000；作品 1–5 分钟 MP4、须 AI 参与并说明工具与流程；投稿上传 TapTV；官网字段为 TapNow 活动页（投稿入口），PlusX 无独立赛事官网；截止 **2026-11-15** ✓（征集 2026-09-26 启动、12 月公布名单、2027 年初论坛颁奖与沉浸展映）；投递方式：填官方作品报名表 + **MP4 上传至 TapTV**；参评「小红书公众选择奖」须另发个人小红书账号并带指定话题；作品须用 AI 参与创作，**建议时长 1–5 分钟**、MP4 建议 ≥1920×1080，须说明 AI 工具/模型/数据集与流程；奖项：金奖 1 名 3 万元、银奖 2 名各 1.5 万、铜奖 3 名各 5000、特别奖 5 名各 5000、入围奖 20 名；青少年（10–15 岁）奇境少年创造者奖为硅谷夏校全额奖学金（约 10 万元，国际机票自理）；✅ **知识产权归创作者**，主办方仅展览/展映/研究/非商业宣传无偿使用权并注明作者；获奖作品落地上海自然博物馆「深时·从鱼到人」沉浸式空间",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIV3TCyxU",
@@ -2460,7 +2789,9 @@
    "notes": "⚠️获奖须将作品著作权转让予腾讯（奖金前置条件）——权利条款风险，按硬门槛降级+警示；2026-10-14活动页实测200/613KB；官网活动页 liblib.tv/activity/62 原文「活动时间：2026.09.21 - 2026.11.22」，即活动自 09-21 开启、11-22 结束（投稿截止同日），举办时间已由单日 09-21 改为完整区间",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIV3TDZbM",
@@ -2480,7 +2811,9 @@
    "notes": "工具绑定（≥70% Seedance生成）；上届奖金已实际颁出（履约证据）（2026-10-14官网实测200/60KB）；②**工具绑定极硬**：成片 ≥70% 必须由 Dreamina Seedance 生成，与「汴京主理人」的 ≥50% 可灵互斥，同一部片无法同时投这两场；③须英文字幕（与多数中文赛要求中文字幕相反），且只收官网提交；④单一奖项 100 万美元、仅 1 名获奖者，无其他现金档位；版权归创作者（据 Gulf News）；⑤受全面制裁国家/地区人员不得参赛；7】硬性规格：年满 **18 周岁**；片长 **5–7 分钟**；**16:9 横版**、**1080p**、MOV/MP4；任何语言但**必须配英文字幕**；须围绕五主题之一（社会与人文、真相与虚假信息、人与 AI、气候与自然、人际关系）；**成片 ≥70% 须由 ByteDance Dreamina Seedance 生成**（其余可用别的 AI 工具、常规剪辑与原创实拍作为辅助），须披露 AI 制作方法并可能被要求提供过程证据；官方还要求在片中包含指定的奖项介绍片段；时间线：11-20 截止 → **12-15** 公布前十并开启公众投票 → **12-25** 公布五强 → 2027-01-09 五强首映 → **2027-01-10** 在 1 Billion Followers Summit（迪拜 01-08~10）公布 100 万美元得主；**创作者保留著作权**（受许可与参赛条款约束）；⚠️Seedance ≥70% 与「汴京主理人」≥50% 可灵生成互斥，同一部片二选一",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVALZSiY",
@@ -2500,7 +2833,9 @@
    "notes": "首届封顶B；非纯AI专项节，投递时按规则标注（Extended档，2026-10-14官网实测200）；选片规则：5 分钟以内投 Cine Prague，长片或有长度的投 PAIFF，别投错",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVALZyg1",
@@ -2520,7 +2855,9 @@
    "notes": "首届封顶B；无独立官网——官网与投递同填Festhome报名页（无官网例外，2026-10-14实测200）；Final档；由 Festhome 页改为自有域名 bgiff.com（主办方 Amira Pictures，邮箱域名一致）；⚠️ 官网首页 The First Edition timeline 与 Festhome 投递页口径不一致：官网首页列 Regular 5 OCT 2026 / Late 1 NOV 2026 / **Extended 21 NOV 2026（仅限 Scripts & Photos 剧本与摄影类）**；Festhome 官方投递页列 Call for entries 23 Jul 2026 / **Final deadline 30 Nov 2026** / 通知 21 Dec / 节 24 Jan 2027；本表沿用 Festhome 投递平台口径 11-30；投前须确认影片类（含 AI Film 第 10 类）适用哪一档，若按官网首页则影片最晚为 Late 11-01；免费投稿，无报名费",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVALYWqP",
@@ -2540,7 +2877,9 @@
    "notes": "日期已纠错——网传10-25为网络小说赛道，AI网络音视频赛道为11-15；高校组/社会组/机构组；人民网09-21文章证实征稿进行中（2026-10-14核实）；改为主办单位天津市委网信办官网「AI上天津」专题页 tjcac.gov.cn/ztxc/aistj/；天津市政府官网与天津日报原文：「AI 网络音视频赛道：截至 11 月 15 日」（另一网络小说赛道 10-25 已截止）；由中央网信办网络传播局、天津市委宣传部指导，市委网信办等 7 部门主办；分高校组/社会组/机构组；晋级者获算力、工具、导师支持，优秀作品亮相「津彩之夜」；硬门槛：**AI 生成时长占比 ≥50%**、单集视频 **30 秒–6 分钟**（超 6 分钟须附 5 分钟内精简版）、多集超 5 集须附 5 分钟内混剪；MP4/MOV；须同时提交①创作说明②AI 工作流说明③落地应用构想（选填）；须用已完成国家备案的生成式模型，按《人工智能生成合成内容标识办法》标注 AI，未标注直接取消资格；奖项（高校组/社会组/机构组分评）：一等奖每组 1 名 **10 万元/名（6 万奖金 + 4 万算力配额）**、二等奖每组 2 名 4 万元、三等奖每组 7 名 1 万元、优秀奖 50 名 2000 元、单项奖 20 名 12500 元；✅ **著作权归创作者**，组委会仅非商业性公益展播权并保留署名；可同时参加两个赛道各 1 部，每赛道至多 1 部获奖；官方唯一报名通道为大赛专题端口；咨询 tianjin@people.cn / 022-23250616",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVALZij2",
@@ -2560,7 +2899,9 @@
    "notes": "无独立官网（官网字段未核实）——官方发布见微信公众号「泉州文艺」2026-10-01文章；⚠️与泉州另两场活动区分：「世遗之城·智绘泉州」（12-10截止）、「AI碰撞海丝文脉」（已截止），均非本场（2026-10-14官方公众号一手核实）；同期泉州另有「世遗之城·智绘泉州」12-10 截止、「AI碰撞海丝文脉」已截止，注意勿混淆，投前以公众号原文为准",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVALahqF",
@@ -2580,7 +2921,15 @@
    "notes": "限高校在校师生（2026-10-14链接实测200）；投稿开放 2026-09-22；结果发布 2027-01 初；三赛道：丝路视界·数智影像（横屏 MP4，1–5 分钟，≤1GB，1080P）、丝路图景·数字漫插、丝路生灵·数字IP；均须先免费存证再投稿；作品名限中文≤20 字；⛔ 与好创意其它赛项（常规赛/专项赛/计时赛）一稿多投为一票否决项；每件作品限投 1 个类别；每类别≤10 件；奖项为比例制（一等≈该类投稿量 0.67%），无现金奖；版权归作者，组委会仅非商业使用权",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": [
+    {
+     "date": "2026-10-22",
+     "from": "2026-12-21",
+     "to": "2026-12-20"
+    }
+   ]
   },
   {
    "id": "reczz28NIVH8rJ2E",
@@ -2600,7 +2949,9 @@
    "notes": "2026-10-16开启征集；event页上线后补精确链接（2026-10-14巡检核实）；TapNow 站内冬季赛 event 页 ID 在 10-16 开启前未公布（首页 /event/50 为秋季赛），投递暂挂 FilmFreeway 官方页（Winter: 10-16 开启、12-30 截止）；10-16 后从 TapNow 首页取冬季赛活动页回填",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVH8pQu7",
@@ -2620,7 +2971,9 @@
    "notes": "② 参赛版本须 **2026-08-01 及以后完成**，**不设首映要求**（已公映/已投他赛均可），**不设统一最低片长**；③ **2027 取消固定 AI 占比门槛**（首届为 51%），改为判定 AI 是否在主要视听素材、表演、叙事组织、生成规则或观众体验中起**实质作用**；仅字幕/降噪/升频/行政辅助不构成资格；④ 流程为「文字资料 → 付款 → 上传」三段：**付款确认后才能上传海报+预告片+完整正片**（三者必交）；交互/持续生成作品另需可运行版本与完整体验记录；⑤ 奖项由首届 19 项精简为 **7 项**：1 项金独角兽大奖 + 3 项银独角兽（创作方法 / 数字角色 / 世界构建）+ 3 项表达成就（叙事 / 视听 / 体验创新）；银奖可在未进主竞赛入围的作品上单独获评；⑥ 非英语作品须配英文字幕/文稿；动态作品须说明体验边界与停止条件；报名入口 hkaiiff.io，规则见 hkaiiff.org",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NIVH8ovZu",
@@ -2640,7 +2993,9 @@
    "notes": "⚠️非AI专项节+官方条例明确接受AI（FilmFreeway规则原文：AI-produced films按animation提交）；仅收FilmFreeway（2026-10-14档位经FF规则页修正）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NInS8xWYP",
@@ -2660,7 +3015,9 @@
    "notes": "①官网页即活动与创作入口，官网=投递链接同值（平台内活动无独立报名页）；②现金奖评选前置条件：社媒发布+回填链接，单条作品多平台达标激励可叠加；③获奖依赖社媒流量表现，创作上限受平台工具约束——评级B的主因；来自外部合集表全量比对（2026-10-14），官网实测200；现金奖须社媒发布+回填链接：抖音 ≥3万赞 或 小红书/B站 ≥3千赞 → 2000 元/平台，单条最高 6000 元，单平台 100 万赞 20000 元",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoQbuBake",
@@ -2680,7 +3037,9 @@
    "notes": "④风险提示：有媒体指该体系「协会挂名、商业公司运营」，权威度有限（与 AAFF 条目 C 级一致），投前自行评估",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoQbu8gH6",
@@ -2700,7 +3059,9 @@
    "notes": "③两字段同值，已在此注明；⚠️主办方为品牌管理公司、赛事公信力与奖金均未核实，分级 C、投递待定，投前请向主办方确认规则与奖项；①广州七和品牌管理有限公司真实存在（2023-04 成立、南沙区、经营范围含会展），但该公司与本届影展的关联无任何独立报道印证；以上三项全部待证，投前务必向主办方直接确认；当前档期 2026-09 ~ 2027-09，已办 3 届；补充：主办方总监 NELSON CHEUNG；**举办地广州市**；网易报道口径：奖项 16 项（最佳 AI 电影/导演/首作/学生短片/短剧/编剧/MV/商业短片/超短片/实验短片/动画短片/广告片/音效/视效/海报/美学价值）；片长：超短片 <5 分钟、短片 <30 分钟、长片 ≥30 分钟；**AI 技术含量 ≥60%**；建议保留中国首映；字幕中文或中英；成片时间 2024-01-01 之后",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoQbuBjvJ",
@@ -2720,7 +3081,9 @@
    "notes": "报名免费，官方指定投递通道为 FilmFreeway",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoUPnJ0QX",
@@ -2740,7 +3103,9 @@
    "notes": "虽为首届，但满足「权威机构主办/指导 + 头奖远超 $5k」两条硬指标，故评 A；官方报名页 aigc.wsbqt.com 已实测可达；建议优先评估投递；官网 aigc.wsbqt.com 经复核为大赛官方指定唯一报名入口（运营主体为承办公司「网视版全通文化传媒(杭州)有限公司」，注册地钱塘区、持广电节目制作经营许可；广东省网络视听新媒体协会等多个独立转载源均指向该站）；截止 2026-11-09 23:59、特等奖 20 万元多源确认无误；①**截止时间字段原为 11-09 00:00，实际为 11-09 23:59**，已修正（原值等于少算一天）；②⚠️**初评依赖平台有效播放数据**（截稿后 24h 锁定快照，前 100 名中 1—17 名进复评）——需提前在合作平台上线并运营播放量，纯新作无流量者处于劣势；③**首发 7 天独家**条款：上线起 7 天内只能在该平台发布，与「觉醒漫剧」「AiShorts」等要求首发的赛事不能同投同一部片；④作品时长下限仅 1 分钟、形式限网络剧/微短剧，剧本与策划书不能单独参赛；⑤报名材料需手写签名版权承诺书 + 提示词/工程截图各 5 张，准备成本较高",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoUPnHD6U",
@@ -2760,7 +3125,9 @@
    "notes": "⚠️**报名表**截止 2026-10-30（可延期最晚至 2026-11-10，过后不再接收报名表），**作品提交**截止 2026-11-30；未先交报名表者，即使未到 11-30 也投不进；须体现宜宾元素（长江首城/山水宜宾/人文宜宾/青春宜宾/未来宜宾 五大方向），完全无关宜宾的作品取消资格；①宜宾故事 AIGC 剧本创作（仅专家评审）②AI 在宜宾 仿真人影像（30 秒–5 分钟，纯 AI 或 AI+实拍混合均可，专业 90 分 + 大众 10 分）③万象宜宾 AI 动画（30 秒–8 分钟，2D/3D/混合媒介均可）；现金总奖金 5 万元，8 项现金奖项；每个主体每赛道另得「宜启好剧画布平台」3000 积分；优秀作品可入宜宾 AIGC 数字内容产业园项目库，对接订单、算力、园区导入与 IP 孵化；提交邮箱 13663230929@163.com；须一次性提交全套材料（作品 + 简介 + AI 创作说明 + 授权确认文件），材料不全进入补正窗口，逾期未补正视为放弃；视频统一 MP4、≥1080P；须如实写明全部 AI 参与环节；全部素材须有合法授权；同一作品只能选一个赛道；主办：宜宾市文广旅游局、宜宾市文旅会展集团指导，「宜启好剧·文旅影视共创社区」承办；赛后 12 月办年度作品展、颁奖盛典与影视 IP 路演",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoUPnHSiC",
@@ -2780,7 +3147,9 @@
    "notes": "AI短视频赛道实际走抖音话题闭环参赛，投递链接填的是神话故事赛道邮箱；⚠️评选权重（有效播放量×50%+点赞×30%+收藏转发×20%）仅适用 AI 短视频赛道，神话故事赛道为专家评审团打分，流量权重高、内容质量要求相对低，且获奖短视频景区拥有独家二次改编剪辑权——投递前请确认可接受；①神话故事赛道另有抖音图文投稿渠道（≥3图+全文，话题 #丰都神话故事 并@丰都文旅集团）；②奖金结构多源确认：短视频一等 10000／二等 5000／三等 3000，故事一等 3000／二等 2000／三等 1000，总奖池约 10 万（含金币与文旅权益）；③截止 11-04、主办方丰都文旅集团均与官方发布一致",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NoUPnJxYB",
@@ -2800,7 +3169,9 @@
    "notes": "⚠️限全国高校在校生（资格受限）；②主办实为暨南大学新闻与传播学院（联合11所高校），南方财经全媒体集团、每日经济新闻等为支持媒体/命题企业，已更正；④奖金规模远低于初报+资格受限+学术性赛事，分级由 B 降为 C；已改投递为 mailto；③资格硬门槛：**仅限高校在校生（含港澳台）**，每队 ≤3 人、每人限一赛道、每队 1 件、至多 1 名指导老师——非在校身份无法参赛；④「无需报名、提交即参赛」，但成果包须含 AI 工作流记录与合规说明，纯成品不评分",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28NswVh3THB",
@@ -2820,7 +3191,9 @@
    "notes": "⚠️报名费与奖金金额官网均未公布，投递前须邮件 canadian@aicinemafestival.com 确认；Ottawa 站为首届（同网络已有 Cannes/Quebec/Montreal/NY 各独立城市站，独立截止独立评审）；分级 C、投递待定；同系列后续站已在库：魁北克 2027-01-24 截、纽约 2027-06-20 截，错过 Ottawa 可投后续站",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28OAXZEXCIb",
@@ -2840,7 +3213,9 @@
    "notes": "⚠️①B站：投稿至分区 + 关联话题 #觉醒漫剧计划2.0 + 标签含 #可灵AI #可灵AI创作计划 #updream + 勾选「内容由AI生成」；②可灵AI创意圈：官网/APP 活动专区提交作品并填报名表；扶持：完成首轮投稿并通过审核最高 6 万 updream 积分（可灵超级/优质创作者另享每分钟 5000 灵感值、单项目最高 10 万）；签约项目单项目灵感值扶持上限 100 万，另有 B站创作基金、千万流量、联合出品分成与收益分成；奖励不与可灵其它活动叠加，同一作品仅计一次；首期征稿已进入尾声（10-31 截止），建议优先完成 PV 或正片 1—3 集；建议投递：平台与工具方联合主办、扶持力度大，评 A；本活动唯一官方报名入口为可灵AI活动专区（作品提交与报名表均在此）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28OBDFjq75m",
@@ -2860,7 +3235,9 @@
    "notes": "⚠️作品 AI 创作占比须 ≥70%，纯实拍或非 AI 主导作品不符资格；建议：鼓励将作品同步发布抖音/小红书/B站并带话题 #齐风鲁韵AI焕新 参与全网联动（非强制，但计入传播转化力评分）；奖金：总奖金 5 万元——全场最佳AI视频大奖 1 名 1 万元、最佳创意作品奖 6 名各 4000 元、OPC先锋奖 3 名各 3000 元、青年新锐奖 7 名（30 岁以下）各 1000 元，另设优秀作品奖与优秀指导教师奖若干；OPC先锋奖与青年新锐奖获奖者纳入「好客山东」AI 创作人才库；省级文旅厅等三家单位联合主办，评 A",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": null,
+   "changes": []
   },
   {
    "id": "reczz28OZeQEYtDT",
@@ -2880,7 +3257,9 @@
    "notes": "主办为中共北京市大兴区委宣传部、承办北京时间（BRTV），奖金由北京星光影视园赞助；一等奖3万、二等奖2万×2、三等奖1万×3，均为税前；评审＝专家评审＋网络点赞，结果拟 2027 年上半年公布；★唯一投稿入口为邮箱 nhzaigc@163.com，无网页报名系统；作品须未在任何平台发布过——已在抖音/小红书发过的会被判不合规",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-18",
+   "changes": []
   },
   {
    "id": "reczz28OZeQEcMvv",
@@ -2900,7 +3279,9 @@
    "notes": "⚠️硬门槛：仅限普通高校在读研究生/本科生/专科生，个人或≤5人团队；非在校生不符合资格；⚠️剧本绑定：只能用官方指定剧本库，自创剧本直接不合格，且选定后不得更换；①官网改为未来设计师官方赛题页 ncda.org.cn/dsjs/dsnr/mtsd/9C3/（原填 fd.show 是投稿平台），投递仍走 fd.show；后续节点：11-10 省赛公示 → 11-15~25 国赛预赛（交 3 集正片）→ 12-12 长沙线下总决赛答辩；②⚠️⚠️**重大权利条款（投前必读）**：官方方案原文写明「**获奖作品著作权归命题单位，作者保留署名权、展览展示权**」——这不是普通的使用授权，而是**著作权让渡**：获奖后作品的财产权归湖南九韶算法应用技术产业园发展有限公司（命题方），作者仅剩署名与展出权，后续自行商业接单、衍生开发、自有账号商业变现均受限；若目标是孵化自有独占 IP，本赛与目标直接冲突，建议不投或仅作练手；③补充硬门槛：**仅接受命题方指定剧本库**内的剧本，选定后全程不得更换，国赛须沿用省赛人设与画风；参赛资格限普通高校在读研究生/本科/专科生（社会创作者不符合）；全国总奖金 30 万（一等 10 名×1.5 万 / 二等 20 名×6000 / 三等 30 名×1000）；④省赛片花规格：60—120 秒、MP4/H.264+AAC、≥1080P、24—30fps、≤500M（官网口径，比转载页的 800M 更严，按 500M 准备）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-18",
+   "changes": []
   },
   {
    "id": "reczz28OZeQEbBFb",
@@ -2920,7 +3301,9 @@
    "notes": "⚠️仅限深圳市：面向全市机关事业单位、企业、高校与中小学师生、社会组织、社会创作者，非深圳主体不符合资格 → 标「不投」；视频赛道单条≤60 秒，偏科普短片而非叙事短片；奖金只设奖项未公布金额",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-18",
+   "changes": []
   },
   {
    "id": "reczz28OZeQEbLB4",
@@ -2940,7 +3323,9 @@
    "notes": "官方 FilmFreeway 页只写活动 2026-10-30 与颁奖 11-13，**未列截止日**，故本条属「双源一致但无官方原文」级别，投前在 FF 页确认；开发者会议议程（developers-conferences-agenda）记 VIC AI Boom 会期 2026-11-13、演讲 CFP 截至 2026-10-16——那是会议**演讲征稿**，与影片征稿截止 10-20 属不同通道，勿混；⚠️无现金奖，仅水晶奖杯与特别奖 → C 级；⚠️举办日两处不一致：FilmFreeway 写 2026-10-30（Quarterhouse, Docklands），同页又称获奖者 2026-11-13 公布（VIC AI Boom 展期）→ 投前确认；⚠️vicaiboom.com 与 FilmFreeway 均 403 反爬，官网字段按「无独立活动页可直读」填 FF 页",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-18",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5gQcw",
@@ -2960,7 +3345,9 @@
    "notes": "⚠️ 该日期此前被自动匹配器漏判（页面采用「日 / 月」分行排版、不带年份），说明「官网未检出」不等于「官网没写」；官网 200 可达（2026-10-18 实测）；仅剩 13 天，若要投需立即决定",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5hcjT",
@@ -2980,7 +3367,9 @@
    "notes": "主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；影展 2026-11-27 ~ 11-29 于罗马 **GAMM – Game Museum**（游戏博物馆）举办，三天含官方放映、国际竞赛、讲座、大师班、工作坊、沉浸式装置与行业交流，闭幕颁奖；六个竞赛类别：Best AI Film / Animation / Documentary / Music Video / Experimental Film / Short Form Content；无首映要求，已在线上公开或获奖的作品亦可投；非英语/意大利语作品须英文字幕；须提交 AI 使用说明；投稿费不退；首届、无现金奖；场地选在游戏博物馆、节目偏「AI 与创意产业对话」而非纯放映，适合需要欧洲展映履历与行业交流机会的作品；但无现金奖、无独立官网，C 级定位不变",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5fncC",
@@ -3000,7 +3389,9 @@
    "notes": "免费，可低成本试投；仅剩 13 天；截止时刻官方写 **23:59 UTC**（= 北京时间 11-01 07:59），本表按保守值 10-31 23:59(+08:00) 录入，实际可多投约 8 小时；Winners announced **Nov 4**；硬约束：每帧必须在 Wandura Drama Studio 或 Cinema Studio 内用 AI 生成（工具强绑定）；9:16 竖屏、单集≤90 秒、英文或配英文字幕；不得出现真人形象或受版权保护的角色/故事线；须公开发布并带指定话题标签后提交链接；18+，个人或≤4 人团队，免费参加，注册即得 2,000 credits，提交前 30 秒通过审核再得 4,000 credits",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5hpmu",
@@ -3020,7 +3411,9 @@
    "notes": "免费、可多投，金额未公布；注意与库内「African AI Film Festival 2026（africanaifilmfestival.org，截止 10-20）」是两个不同赛事，勿混淆",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5gnEX",
@@ -3040,7 +3433,9 @@
    "notes": "创办早、盲审机制与奥斯卡认证类别是加分项，但费用偏高且月度举办含金量参差",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5hadY",
@@ -3060,7 +3455,15 @@
    "notes": "FilmFreeway 官方 Dates & Deadlines 明确：Regular 2026-11-01 / Late 2026-11-15 / Notification 12-12；若 FF 当日仍开放 11-15 延期档，可再延后投；宁可早投，别押 11-15",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": [
+    {
+     "date": "2026-10-20",
+     "from": "2026-11-15",
+     "to": "2026-11-01"
+    }
+   ]
   },
   {
    "id": "reczz28Ow4R5iJ5f",
@@ -3080,7 +3483,9 @@
    "notes": "$30 延期档成本可控；强制人机工作量披露，与其他节展的 AI 披露要求可复用同一份材料",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5eP3k",
@@ -3100,7 +3505,9 @@
    "notes": "本表按平台口径录入，投前须发信 hello@ainyawards.com 确认所属周期；无现金奖，费用 $5~$29",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5hYCn",
@@ -3120,7 +3527,9 @@
    "notes": "",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5iDlD",
@@ -3140,7 +3549,9 @@
    "notes": "首届、金额待公布是主要不确定项；硬门槛：必须是多个有意识镜头自行剪辑而成，单条未剪辑 AI 片段不合格；2027 年续办情人节/复活节/母亲节/万圣节场次，可长期跟踪",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5iCGA",
@@ -3160,7 +3571,9 @@
    "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5fy41",
@@ -3180,7 +3593,9 @@
    "notes": "2027 届费用未公布；【2026-10-22 官网复核·sostorytelling.com/?p=54/】官方原文照录：SUBMISSION OPENS 15 Oct 2026、**SUBMISSION DEADLINE 31 Nov 2026**（官方笔误，11 月无 31 日）、JUDGING Dec and Jan、**Festival 2027 年 1 月 22/23/24 日 · 科钦（Kochi）**；资格：视听短片形式、**最短 2 分钟**，六大类（Best AI Film / Best Narration / Best Cinematography / Sound Music and Design / Best Experimental Film / Special Awards）；有疑问发 hello@sostorytelling.com（投前建议直接问清 11-30 还是 12-01）；2027 届费用官方未列",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5eOCA",
@@ -3200,7 +3615,9 @@
    "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；延期档 $55 成本偏高；与库内「JIFF 世界AI电影竞赛（斋浦尔）2027」是同一电影节周内两个不同项目，可各投一次",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5iIKA",
@@ -3220,7 +3637,9 @@
    "notes": "主办方未见独立官网，Festhome 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；报名费为 **$12 / 部（USD，全档统一）**，非 €12，已更正；分档：regular 2026-10-20 / **late 2026-12-05** / 通知 12-10；节期 **2026-12-26~27 · 北京 UCCA 尤伦斯当代艺术中心**；第 6 季、九大单元（含 Fully AI-Generated、Hybrid AI+Live Action、AI Animation、AI Experimental 等），混实拍/动画的作品另有收费类别；奖项为 Best Film / Best Director / Best Screenplay / Best VFX 等，**无公布现金金额**；FilmFreeway 列表为非公开，须用主办方直链",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5gEDN",
@@ -3240,7 +3659,9 @@
    "notes": "⚠️ 但同一官方页的分类奖文字仍写「screening on 22 November 2026」，与 1-15 活动日冲突；投前以此页最新为准并向主办方确认；主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5h0qy",
@@ -3260,7 +3681,9 @@
    "notes": "$15,000 头奖是近期新增赛事中金额最高的；⚠️ 金额口径两说：PMN 列 **$20,000 总奖池**（最佳影片 $15,000 / 观众选择 $2,000 / 最佳剧本 $1,000 / 最佳视觉 $1,000 / 最佳表演 $1,000）；Yahoo Finance 报道 Fable 官方口径为 **fan-film competition $15,000 奖金**，且称该赛在影片院线放映期间持续开放；投前以主办方当届规则页为准；背景：主办方为 Gossip Goblin（Zack London）× Fable Studio（Amazon Alexa Fund 投资，CEO Edward Saatchi）；配套长片《Gods Don't Give Gifts》2026-10-30 起北美限定上映、12-04 正式上映，已宣布冲奥（最佳动画长片）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5fjbj",
@@ -3280,7 +3703,9 @@
    "notes": "",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5eZjf",
@@ -3300,7 +3725,9 @@
    "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；无现金奖",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5huAa",
@@ -3320,7 +3747,9 @@
    "notes": "Official FF 页 10 档：Opening 2026-09-27 … **Final Prism 2027-06-02** / **Notification 2027-06-11** / Event 2027-06-19（Sirlute Studios）→ 截止与举办一致，已补通知日；主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；首届性质，无现金奖",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5fwQ0",
@@ -3340,7 +3769,9 @@
    "notes": "主办方未见独立官网，Festhome 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；但有西语字幕硬要求，需额外制作字幕版",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28Ow4R5eRy5",
@@ -3360,7 +3791,9 @@
    "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；仅剩 11 天",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28OwJEkdubp",
@@ -3380,7 +3813,9 @@
    "notes": "⚠️截止日 2026-10-20 → **2026-12-03**；依据：FilmFreeway 官方页 Dates & Deadlines 实为「Opening October 23, 2025 / **Late Deadline December 3, 2026** / Notification December 4, 2026 / Event December 12, 2026」；原 10-20 仅来自 aifilmsociety 单源转述，属错误信息（另一赛事 DAIFF 的 10-20 被误套）；场地：Cinema Nova, 380 Lygon St, Carlton；主办方未设独立官网，FilmFreeway 页为其唯一官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；另：本条与本库「DISRUPT AI电影节（DAIFF，daiff.com.au）」是两个不同赛事，此前曾误判为同一场，已纠正",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28OwJEkcGEX",
@@ -3400,7 +3835,9 @@
    "notes": "一切以该页当日显示为准；奖金总额仅 €1,200，成本 €6 极低，适合作为练手投递",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28OwJEkdS13",
@@ -3420,7 +3857,9 @@
    "notes": "⚠️三个渠道交叉：；① **官网 biaiff.com 已失效**——现在打开跳转/显示的是主办人 Ben Makinen 的个人音乐站（JazzTown 曲目播放页），赛事信息已不在首页；仅页面上保留一个「Click to submit on FilmFreeway」按钮指向 FilmFreeway；② FilmFreeway 页 filmfreeway.com/BaliAiFilmFestival（旧链接 festivals/85904 跳转至此）**只有基本信息、无 Dates & Deadlines 段**：场地 Cinema Paradiso（Jl. Goutama Sel., Ubud, Gianyar, Bali 80571）、First Year、Festival Director Ben Makinen / Advisor Dian Marhaeni / AI Expert Ilgiza Riazanova；melies.co 记「Ongoing May 1 – Dec 31, 2026」（年度窗口，非具体截止）；→ 该赛事为**季节滚动制**，每季单独开档，Season 5 于 2026-09-16 截止，Season 6 档期官方未公布；若想投，直接去 FilmFreeway 页看当前是否有开放档位；该赛为 4K 影院放映（Cinema Paradiso）+ 观众选择奖，创办人 Ben Makinen 是 PBS 发行过的纪录片导演，被 shaike.ai 列为「全球 Top 10 AI 影展」；无现金奖",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28OzDEcuuV4",
@@ -3440,7 +3879,9 @@
    "notes": "⚠️ 三条硬约束：①导演原则上≤40 岁（青年题材类不限年龄但须中国/东南亚创作者）；②作品须未在中国大陆商业公映、未在网络平台全片发布；③仅邮件报送，无网页报名入口（官网字段留空，报名表见公告附件）；无现金奖，价值在电影节背书与巡展，按 B 级",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28OzMg9LQIU",
@@ -3460,7 +3901,9 @@
    "notes": "主办方在数字影展领域有 17 年 Bitfilm 运营经验，非野鸡赛事；按 C 级观察",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28OzMg9JbNX",
@@ -3480,7 +3923,9 @@
    "notes": "官方站 videohackers.net 标注「online soon」（尚未上线），FilmFreeway 页为其当前唯一有效征片入口，官网字段与投递链接同为该页；一切以该页当日显示为准；但为线上影展、奖金未公布，价值主要在 laurel 与 AI 专项奖，按 C 级",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28P0SKEAl0B",
@@ -3500,7 +3945,9 @@
    "notes": "免费参赛，无报名费；信息来自政府官网原文，日期已核",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28P0SKEC1bh",
@@ -3520,7 +3967,9 @@
    "notes": "若在江门本地、有现成侨乡素材可顺手投",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28P0SKEDJuF",
@@ -3540,7 +3989,9 @@
    "notes": "分配方式、分账与结算条件官方未在公告中展开，须以活动细则与签约合同为准；⚠️ 时长门槛极高：冲奖需 30 分钟以上连续故事，IP 赛道 60 分钟，不是拼几条短片能冲的；创作工具不限",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28P0SKEDAFt",
@@ -3560,7 +4011,9 @@
    "notes": "若走剧本赛道须 11-30 前交；⚠️ 成片门槛为「≥20 集」，属长剧集投入，个人短片改投意义不大——标「备选」；免费参赛；内容须紧扣商都五大元素，通用 AI 短片不适配",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28P1dudU1Mw",
@@ -3580,7 +4033,9 @@
    "notes": "⚠️ 门槛：作品须 2025-01-01 之后完成并发布，且须保留 YouTube/Vimeo 链接至 2027-07；Student 单元需在读证明；Future Format 另有竖屏 9:16 专项命题；分级 B（非 AI 专项、AI 无加分，故不给 A）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28P1dudVLfU",
@@ -3600,7 +4055,9 @@
    "notes": "⚠️ 三条限制：①内容须契合六大命题（偏「讲好中国故事 / 国际传播」），通用 AI 短片不适配；②通知只写「表彰鼓励」，**未公布现金奖金**，不要按有奖赛事排期；分级 B（认可度高，但非 AI 专项、无现金奖、题材受限）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-19",
+   "changes": []
   },
   {
    "id": "reczz28PhdeRbFHl",
@@ -3620,7 +4077,9 @@
    "notes": "⚠️ 活动页**仅支持电脑端**访问，手机打不开；⚠️ 算力包限量 150 份，先报名先得；免费参赛",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-20",
+   "changes": []
   },
   {
    "id": "reczz28PhdeRYSmc",
@@ -3640,7 +4099,9 @@
    "notes": "SIAFF=首尔国际AI电影节）；②时间不同（KCAIF 05-01 颁奖、SIAFF 05-30 颁奖）；③但**同用江南 enTravel 场地**，且组织者名单有交叉（Jaeyong Choi 在两边分别挂创始人/总导演），报名别投错；分级 C（第 2 届、无公开现金奖金额、认可度待观察）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-20",
+   "changes": []
   },
   {
    "id": "reczz28PjGfjnx1a",
@@ -3660,7 +4121,9 @@
    "notes": "⚠️**不是 AI 专项**：AI 短片是与真人短片、动画短片并列的其中一个方向，没有独立 AI 赛道，AI 不作为加分项；两者同属金鸡百花电影节体系但是**完全不同赛事**：AI 单元由厦门电影节公司 + 抖音 + 小云雀 AI 主办、10-20 已截止、专收 AI 作品；本计划由金鸡创投 + 抖音主办、10-22 截止、收真人/动画/AI 三类短片，偏「从短到长」的创作者孵化；投前关注官方公众号获取《2026 抖音「未来导演扶持计划」征集细则》；⚠️**截止极近**：10-22 24 时，且需要已有成片 + 抖音账号运营基础（该计划本身依托抖音内容生态），若手上没有已发布或可发布的短片，时间上不现实；无现金奖，核心价值是「金鸡创投 + 抖音」双背书与长片开发对接机会——适合有长片企图的作者，不适合只为拿奖；①补全规格：**5—30 分钟**、抖音**首发 72 小时**、双话题（#未来导演扶持计划 #百花奖）；②⚠️同名项目有两轮：**7 月那轮是第 38 届百花奖配套（7-03~7-25 已结束）**，**本轮是 2026 金鸡创投版（10-22 截止）**，报名时认准金鸡创投入口，别投到已关闭的百花页面；③「抖音首发 72 小时」是硬约束——先在别的平台发过就不符合；④无现金奖，权益为展映 + 推优 + 产业对接（选 5–6 位对接长片开发）",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PkesxB7D9",
@@ -3680,7 +4143,9 @@
    "notes": "首届，按硬门槛评 B（非国际级、头奖 1 万，不进 A）；⚠️**权利条款较重（务必投前看）**：须单独签署《知识产权授权确认书》，未签视为不同意、作品不予参评；①非商业使用权：获奖作品可用于赛事宣传/公益展示/非营利文化传播，期限自获奖起 **3 年**；②**商业用途授权：须无偿授予主办、承办方 3 年免费的商业使用权**（其他企业另议）；③互动广告获奖作品主办方享**优先商业合作权**；⚠️报名页曾出现「内部使用不对外开放 / 非项目人员请勿注册」提示，若无法注册需邮件 ahgdjcmc@163.com 确认参赛通道；✅赛道里**只有影像类对你是有效赛道**：商业广告（宣传片/微短剧/漫剧/电商视频）与公益广告；互动广告需交付可离线运行的 H5/小游戏，开发量远高于视频，不建议临时投入",
    "mark": "star",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PkyDyeIua",
@@ -3700,7 +4165,9 @@
    "notes": "必须用 Kling 4.0 生成；≥20 秒、≥720p——是所有在表赛事里门槛最低的一档，适合已有素材的快速补投；①**官网投稿是硬前提**，只发社媒不投官网无评选资格；②同一作品仅获一次奖励；③已在其他活动获奖的作品再投不重复获奖；④投稿即授权可灵及合作品牌方用于宣传、展示、推荐；⑤创意奖含「官网点赞数」评分项，等于部分看站内互动",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PkyDydcOC",
@@ -3720,7 +4187,9 @@
    "notes": "联合赛区为**邀请制**（仅合作高校/商学院受邀在校学生），且须使用 IPVISE AI 平台；非受邀院校学生、社会创作者**无报名通道**，故仅作备案，不纳入投递计划；①WAIC 体系背书、评委阵容强（王受之、Martin Percy、Max Dennison 等，含 BAFTA/艾美/VES 背景）；②若后续开放公开赛区，这是高价值赛事，值得盯；③其「2—3 分钟 + 英文片名/英文字幕」的规格可作为同类国际赛的准备基准；IPVISE 派晨智能科技为赛事平台方（上海起家，业务含 AI 视频/漫剧/电影出海），本次以「院校邀请 + 自有平台」方式办赛，属平台拉新与人才储备，非开放竞赛",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28Pl6HrMSFN",
@@ -3740,7 +4209,9 @@
    "notes": "想省钱就赶 **2026-11-30 早鸟 £10**（学生 £8），最终档涨到 £50（5 倍）；②⚠️**无现金奖**：官方原文「No monetary or sponsored prize should be assumed unless formally announced」，奖项是 Top 10 入选 + 桂冠 + 伦敦放映，**不要按有奖金排期**；③权利条款友好：第 13 条明示**创作者保留影片与知识产权**，投稿不转移所有权；Top 10 仅授权 2027 年展映与有限线上展示；④时长 3—10 分钟为短片单元门槛，超 10 分钟仍可投但会被移出标准短片单元；⑤首届，无往届数据可交叉验证，按规则封顶给 C",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28Pl6HrOghh",
@@ -3760,7 +4231,9 @@
    "notes": "①认可度高：Reply（意大利上市 IT 公司）+ Mastercard 背书，三届连续举办，决赛在威尼斯丽都岛、紧邻威尼斯电影节，是 AI 短片进入传统电影工业视野的少数通道之一；②评委层级高（奥斯卡导演 + 《狮子王》导演 + 《奥本海默》VFX）；③免费参赛、入围者差旅住宿由主办承担、现金 €15,000；④往届冠军作品（如《To Dear Me》）已被业内广泛引用；①**片长不设限**是罕见条款，适合有 10 分钟以上成片的创作者；②必须提交 AI 使用说明文档，缺文档可能不予评审；③「Community Award」需公众在 WeShort 投票，与作品传播度相关但不影响主奖；④**建议 12 月起每月回看官方页**，往年在 3—5 月开放、6 月初截止，窗口约 2—3 个月",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28Pl6HrPHkF",
@@ -3780,7 +4253,9 @@
    "notes": "**入场方式为 FilmFreeway，需自行在站内搜 AI Film 3 / AI in Anime**；②**无现金奖**，是荣誉型节展（七个奖项 + 放映），投递价值在于美国线下曝光与 Year IV 的产业连接；③**真正值得盯的是 Year IV（2027-09-16~18）**：Open call **2026 年 12 月**开放，届时按「六大类别 + 五大学科（电影/音乐/时尚/游戏/艺术）」投，覆盖比单场 Anime 更广；④往届 754 部投稿/117 国，规模中等，AI 纪录片与长片单元竞争相对小；⑤主办为退伍军人创办的小型制作公司（Prometheus Productions），无大厂背书，故给 C；另：Year IV 主赛 FilmFreeway 页为 filmfreeway.com/festivals/83574，open call 2026 年 12 月开放",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlEKsbSkB",
@@ -3800,7 +4275,9 @@
    "notes": "③AI 创意组仅 10 个名额，竞争面窄但名额也少；④时间极宽裕（2027-04-20 截止），适合作为「顺手投」的储备项，不适合优先排期；⑤投稿双通道：社媒带话题 或 邮箱直投，邮箱方式更可控（不依赖平台数据）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlEKsabOk",
@@ -3820,7 +4297,9 @@
    "notes": "②**比赛机制是「前 6 秒对决」**——评审只看 6 秒真实播放，与叙事短片创作目标不符，本质是模型能力比拼而非电影比赛；③**死绑 MiniMax H3 模型**，与其他赛事（Seedance ≥70%、可灵 ≥50%）互斥；Civitai 是海外 AI 视频创作者的重要社区，其 Crucibles 机制（两两对决 + 隐藏榜单）是目前较少见的评审设计，值得作为「海外平台生态动向」备案；若后续出现现金奖版本可重新评估；Civitai 站内含成人内容板块，投稿与浏览需注意场合；本赛事的 Memes 擂台亦可能混入不适宜内容；①投递入口补全为 **https://www.civitai.com/crucibles**（Crucible 擂台总入口，原填 civitai.com 主页空壳已修正）；九场擂台分批：10-03~10（恐怖/赛博/迷因）、10-10~17（西部/奇幻/迷因）、10-17~24（黑色/科幻/迷因）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlHQEUPdq",
@@ -3840,7 +4319,9 @@
    "notes": "如果你手上是纯 AI 生成的片子，投这条**不符合要求**；只有实拍素材 + 少量 AI 增强才适用；①在泰安/泰山本地、能到 10-29 机器人登山现场拍摄的；②已有实拍素材、想用 AI 做特效/转场/补镜的；必须先在社媒发布（四平台任一）带双话题，再发登记表到邮箱——两步缺一不可；视频不能带角标/台标/水印，多平台发布时注意去掉平台水印；公告第 7 条：主办方拥有作品使用权并可「对作品进行后期技术处理」，属较宽授权；且禁止恶意剪辑与歪曲赛事内容，剪辑时不要做戏剧化处理",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQDzc1",
@@ -3860,7 +4341,9 @@
    "notes": "官方公告三处交叉一致（江西省人社厅 rst.jiangxi.gov.cn、江西省广电局 gdj.jiangxi.gov.cn、江西广电视听公众号），上一轮仅据设计竞赛网转载，本轮已回官方；⚠️；① 作品必须是「已完成的完整剧集」且系列总时长 20—60 分钟——只有单条短片或未成系列的投不了；② 获奖后须在赛后 2 个月内在江西注册 OPC 一人公司才能领奖金，申报人须任法定代表人及唯一股东，公司主营与获奖项目一致；不打算在江西落地的，等于拿不到钱；另需注意：申报必须附「AI 工具使用清单」（列明调用的 AI 工具及功能模块），这是把创作过程「白盒化」的新要求，纯出片不记过程的临时补不出来",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQHmve",
@@ -3880,7 +4363,9 @@
    "notes": "本轮抓到最高性价比赛事之一：33.6 万赛道奖池 / 16 个获奖名额 / 免费 / 允许自由题材直接投存量作品；关键判断：手上有现成超现实或奇幻题材片子的，走「自由路径」即可直接投（1080p 就行，不用重做）；想冲高奖再按 1920×1440 重制走主题路径；⚠️两处官方口径不一，已在说明中并列：；① 时长——官方三赛道介绍写「3—5 分钟」，另一篇官方解读写「2—5 分钟」；**按 3—5 分钟准备最稳**；② 评审权重——官方三赛道介绍为「技术方案 50% + 内容创意 50%」，另一篇解读为「创意叙事 35% / 视觉 20% / 开源技术 15% / 主题契合 15% / 技术完成度 15% + 加分项」；两版共同点是「开源技术路线必须写清楚」，无论哪版，说明文档里都要列明开源模型与工作流",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQHqV6",
@@ -3900,7 +4385,9 @@
    "notes": "价值不在奖金（首奖仅 6000 元），而在**产业资源**：大科学装置采风、孵化基地入驻、市区影视资金对接；前两届累计 30 多个国家、600 余部作品，属中等竞争强度；⚠️「深圳/光明元素」加分是隐性倾斜——纯科幻不落地深圳的片子在同分时吃亏；官方专题页地址待补",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQEC5d",
@@ -3920,7 +4407,9 @@
    "notes": "官方通知原文（广电总局 nrta.gov.cn 2026-09-30 印发，广东省广电局转发件同步核对）——上一轮仅由电影节日程清单得到「11-30 截止」一条，本轮已补全主办、五单元、材料清单与邮箱；⚠️三点注意：①这是「已创作完成的成片」征集，不是命题创作赛，要先有片才能投；②多集剧必须交首/中/尾三集成片，只交一集不合格；③作品一经申报即视为同意参与后续展播、译制、海外宣传推广，授权范围较宽；价值判断：国家级出海通道，入围可进官方译制与海外分发池，对做微短剧的人是渠道价值大于奖金",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQG0Ab",
@@ -3940,7 +4429,9 @@
    "notes": "非 AI 专项，故给 B 不给 A；⚠️两个隐性门槛：①**必须配中英文双语字幕**，只有中文字幕的片子投不了；②AI 单元必须写《技术白皮书》，没有工作流记录的（纯出片不记过程的）临时补不出来；无独立官网",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQHt8d",
@@ -3960,7 +4451,9 @@
    "notes": "无现金奖，价值在「东映太秦电影村放映 + 时代剧圈层曝光」，属低门槛练手位（15 秒即可投）；⚠️投稿必须走 X（推特）引用官方征稿贴，没有网页表单——没有活跃 X 账号的投不了",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PlOjQHaP3",
@@ -3980,7 +4473,9 @@
    "notes": "⚠️官方口径只到「10—11 月为创作征集期」，未公布具体日期；招商通稿（网易 2026-06-26）与百科均无截稿日；状态保持「待公布」，投前必须确认是否已开放报名与截稿时间；已补：官网为《中国广告》杂志社站 ad-cn.net（无独立赛事页）；主办为杂志社 + 浦东新区广告协会 + 上海九译影视传媒；价值判断：广告行业的 AIGC 短片奖，对做商业向 AI 短片的人是行业背书；但奖励偏「俱乐部 + 曝光」而非现金，团体赛道还要付费报名，且品牌命题制意味着创作自由度受限——个人创作者走免费的个人赛道即可；⚠️⚠️ **重大权利条款：品牌命题赛道下所有获奖作品，除署名权外的完整知识产权归合作方（出题品牌）所有**；合作方可增设专属创意奖项——投品牌命题赛道等于让渡著作权，与「积累自有 IP」目标直接冲突，投前必读当届章程；赛程：**2026-10~11 创作征集期**（全平台征集）、**2026-12 收官交付期**（作品交付 + 颁奖盛典全网曝光）；主办《中国广告》杂志社；获奖者入「中国广告 AIGC 创意作者俱乐部」；战略合作单位 50 万元/家",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28Pm31QEMlv",
@@ -4000,7 +4495,9 @@
    "notes": "⚠️布拉格有两个 AI 电影节，名称相近但完全不同的两个赛事：；· **PAIFF Prague**（本条）：Festhome id 10597，地址 Vodičkova 704/36，档期 09-10 / 09-15 / 10-31 / **11-20**，片长 1—180 分钟，费用 10—20 美元；两者地址不同、片长规则不同（180 分钟 vs 5 分钟）、截止也不同，**报名时按片长选**：5 分钟以内投 Cine Prague，长片或有长度的投 PAIFF",
    "mark": "caution",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28Pm8ZC73TM",
@@ -4020,7 +4517,9 @@
    "notes": "① 参赛前提是开通腾讯视频创作平台「漫剧创作（火龙漫剧）」并实名+签协议，未开通者无法投稿；② 须首发火龙漫剧与腾讯视频，且投稿起 48 小时内不得在其他渠道发布相同或相似内容——与其他要求「B 站首发」「赛事首发」的漫剧赛互斥，同一部片只能押一条；双周榜与赛季榜均按平台复合指标统计，本质是「有没有人看」，不是纯作品质量评审；平台明确「不在乎你怎么做的，只在乎做出来有没有人看」；账号基础流量弱的，前期上榜难度大；不设买断条款，但积分不可提现，现金奖为税前；签约机会需另行签约，未签约不产生后续义务；2026-10-21 官方活动页（腾讯视频创作平台）与 AITOP100 详情页双源核对：时间 9-28 12:00~12-20 24:00、20 万奖金分档、四个创作方向、码率 6Mbps、标注要求均一致；本场截止 12-20 与总挑战赛 12-27 的差异为官方页面自身表述，已按「本场为准」取 12-20（更保守）",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28Pm9KqAKN7",
@@ -4040,7 +4539,9 @@
    "notes": "限**在校学生**（初中/高中/大学三学段），报名表须**加盖学校公章**、附一寸证件照，并由学校/指导教师背书；非在校生、无学校可盖章者**无法报名**——这是标「不投」的唯一原因，不是赛事质量问题；门槛很友好：90 秒起、AIGC ≥60%、无报名费，且 AIGC 是核心手段而非附属；价值不在奖金（无现金奖），而在「北航 + 北电 + 全国影视产教联盟」背书与进入官方科幻 IP 创作团队的机会；报名 11-07 20:00 早于作品 11-15 23:59 整 8 天，且报名要学校盖章走流程，实际准备期比 11-15 看起来短得多；2026-10-21 官方推文（北电智能影像工程学院公众号）与搜狐同稿双源核对：报名 11-07 20:00、作品 11-15 23:59、AIGC ≥60%、三学段分组、脚本 800 字/说明 500 字、1GB/1080P 均一致",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   },
   {
    "id": "reczz28PnjVFlRs9",
@@ -4060,7 +4561,9 @@
    "notes": "省级政府部门（广东省应急管理厅）主办的应急宣传作品征集，**不是 AI 专项**；无现金奖、权利条款是「非商业使用权不另付稿酬」——偏公益属性；真正价值是省级机关背书 + 展播曝光，适合已有应急/安全/防灾题材成片顺手投；专为它新做片不划算；① 须 2025 年以来创作；② **未获过省级及以上应急管理系统同类奖**（拿过同类奖的不能投）；③ 不得有商业植入；④ AI 作品必须标注工具、过程、素材授权与原创承诺；2026-10-21 南方新闻网报送指南原文核对：四类作品、截止 12-31 24:00、评选公布 2027-03-31 前、AI 标注要求、权利条款均一致",
    "mark": "",
    "verified": "none",
-   "verifyNote": ""
+   "verifyNote": "",
+   "added": "2026-10-21",
+   "changes": []
   }
  ],
  "festivals": [
