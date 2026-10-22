@@ -8,7 +8,9 @@
   python3 scripts/build.py --local DIR     读取本地 DIR/data、DIR/festivals
 只依赖 Python 标准库。
 """
-import datetime as dt, json, os, pathlib, re, sys, urllib.request
+import datetime as dt
+import json, os, pathlib, re, sys, urllib.request
+from collections import Counter
 from email.utils import format_datetime
 from xml.sax.saxutils import escape
 
@@ -27,16 +29,22 @@ def warn(msg):
     warns.append(msg)
 
 
-def fetch(url, tries=3):
+class FetchError(Exception):
+    pass
+
+
+def fetch(url, tries=3, timeout=40, fatal=True):
     h = {"User-Agent": "AIContestAssistant-build/6"}
     if os.environ.get("GITHUB_TOKEN") and "api.github.com" in url:
         h["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
     for i in range(tries):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=40) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=timeout) as r:
                 return r.read().decode("utf-8")
         except Exception as e:  # 网络抖动重试，最终失败则中止且不覆盖产物
             if i == tries - 1:
+                if not fatal:
+                    raise FetchError(str(e)) from e
                 sys.exit(f"✗ 读取失败（{e}）：{url}，已中止构建，网站保持上一版")
             __import__("time").sleep(3 * (i + 1))
 
@@ -51,16 +59,51 @@ def load():
     if "--local" in sys.argv:
         base = pathlib.Path(sys.argv[sys.argv.index("--local") + 1]).resolve()
         paths = [p.relative_to(base).as_posix() for p in base.rglob("*.json")]
-        read = lambda p: (base / p).read_text("utf-8")
+        read = lambda p, t=40, fatal=True: (base / p).read_text("utf-8")
     else:
         tree = json.loads(fetch(f"https://api.github.com/repos/{REPO}/git/trees/{BRANCH}?recursive=1"))
         paths = [t["path"] for t in tree["tree"]]
-        read = lambda p: fetch(f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{p}")
+        read = lambda p, t=40, fatal=True: fetch(f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{p}", tries=3 if fatal else 2, timeout=t, fatal=fatal)
     c = latest(paths, "data", "contests")
     if not c:
         sys.exit("✗ 找不到赛事快照 data/contests_YYYY-MM-DD.json")
     f = latest(paths, "festivals", "festivals")
-    return json.loads(read(c)), (json.loads(read(f)) if f else {"records": []})
+    # 历史快照（最多 45 份）：用来算「首次收录日」和「截止日调整」，读不到不影响主流程
+    pat = re.compile(r"^data/contests_(\d{4}-\d{2}-\d{2})\.json$")
+    hist, missing = [], []
+    for p in sorted(p for p in paths if pat.match(p) and p != c)[-45:]:
+        try:
+            d = json.loads(read(p, 20, False))
+            hist.append((d.get("snapshot_date") or pat.match(p).group(1), d.get("records") or []))
+        except Exception as e:  # noqa: BLE001
+            missing.append(pat.match(p).group(1))
+            warn(f"历史快照读取失败，跳过：{p}（{e}）")
+    return json.loads(read(c)), (json.loads(read(f)) if f else {"records": []}), hist, missing
+
+
+def history(hist, cur_snap, cur_raw, missing=()):
+    """按快照先后比对：首次出现的日期 = 上新日；截止日变化 = 调整记录。
+    最早一份快照里已有的赛事视为「基线」，上新日记为空（不知道真实收录时间，不冒充新收录）。"""
+    snaps = sorted(hist, key=lambda x: x[0]) + [(cur_snap, cur_raw)]
+    missing = sorted(missing)
+    first, by_name, last_dl, changes = {}, {}, {}, {}
+    for i, (d, recs) in enumerate(snaps):
+        # 与上一份成功读取的快照之间有读失败的快照：这批「首次出现」的真实日期可能更早，
+        # 记为缺口里最早的那天，宁可显得旧一点，也不把前几天的赛事冒充成今天上新
+        gap = [m for m in missing if (i and snaps[i - 1][0] < m < d) or (not i and m < d)]
+        seen_at = gap[0] if gap else d
+        for r in recs:
+            rid, nm = s(r.get("record_id")), re.sub(r"\s+", "", s(r.get("名称")))
+            if not rid:
+                continue
+            if rid not in first:
+                first[rid] = by_name.get(nm, None if i == 0 else seen_at)  # 换了 ID 但同名，沿用原收录日
+                by_name.setdefault(nm, first[rid])
+            dl = s(r.get("截止日期")) or None
+            if rid in last_dl and last_dl[rid] != dl:
+                changes.setdefault(rid, []).append({"date": seen_at, "from": last_dl[rid], "to": dl})
+            last_dl[rid] = dl
+    return first, changes, (snaps[0][0] if len(snaps) > 1 else None)
 
 
 def s(v):
@@ -218,16 +261,17 @@ def rss(recs, snap):
     pub = format_datetime(dt.datetime.combine(dt.date.fromisoformat(snap), dt.time(8), TZ))
     x = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>', "<title>AI赛事助手 · 在征赛事</title>",
          f"<link>{escape(base)}/</link>", "<description>AI 视频与影像赛事，按截止日排序</description>", "<language>zh-cn</language>", f"<lastBuildDate>{pub}</lastBuildDate>"]
-    for r in sorted((r for r in recs if r["status"] != "closed"), key=lambda r: r["deadline"] or "9999"):
+    for r in sorted((r for r in recs if r["status"] != "closed"), key=lambda r: (r.get("added") or "0000", r["deadline"] or "9999"), reverse=True):
+        rp = format_datetime(dt.datetime.combine(dt.date.fromisoformat(r["added"]), dt.time(8), TZ)) if r.get("added") else pub
         d = f"最高奖励：{r['prize']}<br>报名费：{r['fee']}<br>主办方：{r['organizer'] or '—'}<br><br>{r['desc'].replace(chr(10), '<br>')}"
         x += ["<item>", f"<title>{escape('【' + r['grade'] + '】' + r['name'] + ' · ' + (r['deadline'] or '截止待公布'))}</title>",
               f"<link>{escape(base)}/#/c/{escape(r['id'])}</link>", f'<guid isPermaLink="false">{escape(r["id"])}</guid>',
-              f"<pubDate>{pub}</pubDate>", f"<description>{escape(d)}</description>", "</item>"]
+              f"<pubDate>{rp}</pubDate>", f"<description>{escape(d)}</description>", "</item>"]
     return "\n".join(x + ["</channel></rss>"])
 
 
 def main():
-    craw, fraw = load()
+    craw, fraw, hist, missing = load()
     ovf = ROOT / "scripts" / "overrides.json"
     overrides = json.loads(ovf.read_text("utf-8")).get("records", {}) if ovf.exists() else {}
     today = dt.datetime.now(TZ).date()
@@ -235,15 +279,22 @@ def main():
     raw = craw.get("records") or []
     recs = normalize(raw, overrides, today)
     validate(recs, len(raw))
-    data = {"snapshot": snap, "built": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "contests": recs, "festivals": festivals(fraw.get("records") or [])}
+    first, changes, since = history(hist, snap, raw, missing)
+    for r in recs:
+        r["added"] = first.get(r["id"])
+        r["changes"] = changes.get(r["id"], [])[-3:]
+    data = {"snapshot": snap, "built": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "trackedSince": since,
+            "siteUrl": SITE_URL or "https://yijueyijue.github.io/ai-film-contests-tracker",
+            "contests": recs, "festivals": festivals(fraw.get("records") or [])}
     (PUB / "data").mkdir(parents=True, exist_ok=True)
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     (PUB / "data" / "data.js").write_text(f"/* 自动生成，请勿手改 · {snap} */\nwindow.AIC={blob};\n", "utf-8")
     (PUB / "data" / "contests.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), "utf-8")
     (PUB / "deadlines.ics").write_text(ics(recs, today), "utf-8", newline="")
     (PUB / "feed.xml").write_text(rss(recs, snap), "utf-8")
-    from collections import Counter
     st = Counter(r["status"] for r in recs); g = Counter(r["grade"] for r in recs)
+    nd = Counter(r["added"] for r in recs if r["added"])
+    print(f"  上新（按快照比对，起点 {since}）：" + "、".join(f"{k[5:]} +{v}" for k, v in sorted(nd.items())[-7:]) + f" · 截止日调整 {sum(1 for r in recs if r['changes'])} 条")
     print(f"✓ 快照 {snap} · 赛事 {len(recs)}（在征 {st['open']} / 待公布 {st['pending']} / 即将开放 {st['soon']} / 已截止 {st['closed']}）· 分级 S{g['S']} A{g['A']} B{g['B']} C{g['C']} · 电影节 {len(data['festivals'])}")
     if warns:
         print(f"  告警 {len(warns)} 条：")
