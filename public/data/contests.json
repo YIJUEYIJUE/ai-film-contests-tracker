@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-22",
- "built": "2026-10-22 23:41",
+ "built": "2026-10-22 23:48",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -23,7 +23,9 @@
    "mark": "star",
    "verified": "fixed",
    "verifyNote": "官网写明报名平台为 Festhome（英文表单）/ 日文表单；投递链接已改为官网入口",
-   "added": null,
+   "opened": "2026-03-20",
+   "tracked": null,
+   "added": "2026-03-20",
    "changes": []
   },
   {
@@ -45,7 +47,9 @@
    "mark": "star",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-07-31",
+   "tracked": null,
+   "added": "2026-07-31",
    "changes": []
   },
   {
@@ -67,7 +71,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-05-22",
+   "tracked": null,
+   "added": "2026-05-22",
    "changes": []
   },
   {
@@ -89,7 +95,9 @@
    "mark": "star",
    "verified": "warn",
    "verifyNote": "官网仍是第二届内容；10/20 以抖音专区「瓦卡奖VACAT第三届」公告为准",
-   "added": null,
+   "opened": "2026-07-10",
+   "tracked": null,
+   "added": "2026-07-10",
    "changes": []
   },
   {
@@ -111,7 +119,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-05-01",
+   "tracked": null,
+   "added": "2026-05-01",
    "changes": []
   },
   {
@@ -133,7 +143,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-06-15",
+   "tracked": null,
+   "added": "2026-06-15",
    "changes": []
   },
   {
@@ -155,7 +167,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-16",
+   "tracked": null,
+   "added": "2026-06-16",
    "changes": []
   },
   {
@@ -177,6 +191,8 @@
    "mark": "star",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -199,6 +215,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -221,6 +239,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -243,7 +263,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-19",
+   "tracked": null,
+   "added": "2026-10-19",
    "changes": []
   },
   {
@@ -265,6 +287,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": [
     {
@@ -293,7 +317,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-13",
+   "tracked": null,
+   "added": "2026-07-13",
    "changes": []
   },
   {
@@ -315,7 +341,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-01",
+   "tracked": null,
+   "added": "2026-08-01",
    "changes": []
   },
   {
@@ -337,6 +365,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -359,7 +389,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-19",
+   "tracked": null,
+   "added": "2026-06-19",
    "changes": []
   },
   {
@@ -381,6 +413,8 @@
    "mark": "caution",
    "verified": "fixed",
    "verifyNote": "原表写 $15–25，官网提交页为 €30，已更正",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -403,6 +437,8 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -425,6 +461,8 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -447,7 +485,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-02-15",
+   "tracked": null,
+   "added": "2026-02-15",
    "changes": []
   },
   {
@@ -469,6 +509,8 @@
    "mark": "star",
    "verified": "warn",
    "verifyNote": "基金页已跳转到 Runway Studios 首页，请确认是否仍在接收申请",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -491,7 +533,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-07-07",
+   "tracked": null,
+   "added": "2026-07-07",
    "changes": []
   },
   {
@@ -513,7 +557,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-04-16",
+   "tracked": null,
+   "added": "2026-04-16",
    "changes": []
   },
   {
@@ -535,7 +581,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-05-14",
+   "tracked": null,
+   "added": "2026-05-14",
    "changes": []
   },
   {
@@ -557,6 +605,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -579,7 +629,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-05-23",
+   "tracked": null,
+   "added": "2026-05-23",
    "changes": []
   },
   {
@@ -601,7 +653,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -623,6 +677,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -645,6 +701,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -667,7 +725,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-01",
+   "tracked": null,
+   "added": "2026-08-01",
    "changes": []
   },
   {
@@ -689,7 +749,9 @@
    "mark": "star",
    "verified": "warn",
    "verifyNote": "活动页跳转到 PixVerse 首页，活动页可能已下线，请在 App 内确认",
-   "added": null,
+   "opened": "2026-08-07",
+   "tracked": null,
+   "added": "2026-08-07",
    "changes": []
   },
   {
@@ -711,7 +773,9 @@
    "mark": "caution",
    "verified": "warn",
    "verifyNote": "长期活动，未公布截止日",
-   "added": null,
+   "opened": "2026-01-27",
+   "tracked": null,
+   "added": "2026-01-27",
    "changes": []
   },
   {
@@ -733,6 +797,8 @@
    "mark": "star",
    "verified": "ok",
    "verifyNote": "官网：征稿 8/7–10/8；须配中英文字幕",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -755,7 +821,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-12",
+   "tracked": null,
+   "added": "2026-08-12",
    "changes": []
   },
   {
@@ -777,6 +845,8 @@
    "mark": "star",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -799,7 +869,9 @@
    "mark": "",
    "verified": "warn",
    "verifyNote": "官网为公众号文章，非独立官网",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -821,6 +893,8 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -843,6 +917,8 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -865,7 +941,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-03-15",
+   "tracked": null,
+   "added": "2026-03-15",
    "changes": []
   },
   {
@@ -887,7 +965,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-05-05",
+   "tracked": null,
+   "added": "2026-05-05",
    "changes": []
   },
   {
@@ -909,6 +989,8 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -931,7 +1013,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-05-26",
+   "tracked": null,
+   "added": "2026-05-26",
    "changes": []
   },
   {
@@ -953,7 +1037,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-06",
+   "tracked": null,
+   "added": "2026-08-06",
    "changes": []
   },
   {
@@ -975,6 +1061,8 @@
    "mark": "caution",
    "verified": "warn",
    "verifyNote": "官网仍是上一季内容，查不到本季截止日",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": [
     {
@@ -1003,6 +1091,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": [
     {
@@ -1031,7 +1121,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-01-13",
+   "tracked": null,
+   "added": "2026-01-13",
    "changes": []
   },
   {
@@ -1053,6 +1145,8 @@
    "mark": "",
    "verified": "warn",
    "verifyNote": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1075,7 +1169,9 @@
    "mark": "",
    "verified": "warn",
    "verifyNote": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实",
-   "added": null,
+   "opened": "2026-06-25",
+   "tracked": null,
+   "added": "2026-06-25",
    "changes": []
   },
   {
@@ -1097,7 +1193,9 @@
    "mark": "caution",
    "verified": "warn",
    "verifyNote": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认",
-   "added": null,
+   "opened": "2026-10-15",
+   "tracked": null,
+   "added": "2026-10-15",
    "changes": [
     {
      "date": "2026-10-22",
@@ -1125,6 +1223,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1147,6 +1247,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1169,6 +1271,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": [
     {
@@ -1197,7 +1301,9 @@
    "mark": "caution",
    "verified": "warn",
    "verifyNote": "原官网已无法访问，暂未找到官方发布渠道；截止日未经官方确认，投递前请先联系主办方核实",
-   "added": null,
+   "opened": "2026-08-13",
+   "tracked": null,
+   "added": "2026-08-13",
    "changes": []
   },
   {
@@ -1219,7 +1325,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2025-11-05",
+   "tracked": null,
+   "added": "2025-11-05",
    "changes": []
   },
   {
@@ -1241,7 +1349,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-04-29",
+   "tracked": null,
+   "added": "2026-04-29",
    "changes": []
   },
   {
@@ -1263,7 +1373,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-05-01",
+   "tracked": null,
+   "added": "2026-05-01",
    "changes": []
   },
   {
@@ -1285,7 +1397,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-04-28",
+   "tracked": null,
+   "added": "2026-04-28",
    "changes": []
   },
   {
@@ -1307,7 +1421,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-07",
+   "tracked": null,
+   "added": "2026-06-07",
    "changes": []
   },
   {
@@ -1329,7 +1445,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-18",
+   "tracked": null,
+   "added": "2026-06-18",
    "changes": []
   },
   {
@@ -1351,7 +1469,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-04-16",
+   "tracked": null,
+   "added": "2026-04-16",
    "changes": []
   },
   {
@@ -1373,7 +1493,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-02-13",
+   "tracked": null,
+   "added": "2026-02-13",
    "changes": []
   },
   {
@@ -1395,7 +1517,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2025-11-11",
+   "tracked": null,
+   "added": "2025-11-11",
    "changes": [
     {
      "date": "2026-10-22",
@@ -1423,7 +1547,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-03-20",
+   "tracked": null,
+   "added": "2026-03-20",
    "changes": [
     {
      "date": "2026-10-22",
@@ -1451,7 +1577,9 @@
    "mark": "note",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-23",
+   "tracked": null,
+   "added": "2026-06-23",
    "changes": []
   },
   {
@@ -1473,7 +1601,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-24",
+   "tracked": null,
+   "added": "2026-06-24",
    "changes": []
   },
   {
@@ -1495,7 +1625,9 @@
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-07-01",
+   "tracked": null,
+   "added": "2026-07-01",
    "changes": []
   },
   {
@@ -1517,7 +1649,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-05-27",
+   "tracked": null,
+   "added": "2026-05-27",
    "changes": []
   },
   {
@@ -1539,7 +1673,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-06-30",
+   "tracked": null,
+   "added": "2026-06-30",
    "changes": []
   },
   {
@@ -1561,7 +1697,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-03-01",
+   "tracked": null,
+   "added": "2026-03-01",
    "changes": []
   },
   {
@@ -1583,6 +1721,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1605,6 +1745,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1627,6 +1769,8 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1649,6 +1793,8 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1671,7 +1817,9 @@
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-09-15",
+   "tracked": null,
+   "added": "2026-09-15",
    "changes": []
   },
   {
@@ -1693,7 +1841,9 @@
    "mark": "caution",
    "verified": "fixed",
    "verifyNote": "邮箱投稿：3113907798@qq.com",
-   "added": null,
+   "opened": "2026-09-25",
+   "tracked": null,
+   "added": "2026-09-25",
    "changes": []
   },
   {
@@ -1715,7 +1865,9 @@
    "mark": "note",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
-   "added": null,
+   "opened": "2026-09-01",
+   "tracked": null,
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -1737,7 +1889,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-04",
+   "tracked": null,
+   "added": "2026-09-04",
    "changes": []
   },
   {
@@ -1759,7 +1913,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-17",
+   "tracked": null,
+   "added": "2026-09-17",
    "changes": []
   },
   {
@@ -1781,7 +1937,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-16",
+   "tracked": null,
+   "added": "2026-09-16",
    "changes": []
   },
   {
@@ -1803,7 +1961,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-01-01",
+   "tracked": null,
+   "added": "2026-01-01",
    "changes": [
     {
      "date": "2026-10-20",
@@ -1831,6 +1991,8 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1853,7 +2015,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-01",
+   "tracked": null,
+   "added": "2026-07-01",
    "changes": []
   },
   {
@@ -1875,7 +2039,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-15",
+   "tracked": null,
+   "added": "2026-09-15",
    "changes": []
   },
   {
@@ -1897,6 +2063,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1919,6 +2087,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -1941,7 +2111,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-27",
+   "tracked": null,
+   "added": "2026-08-27",
    "changes": []
   },
   {
@@ -1963,7 +2135,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-15",
+   "tracked": null,
+   "added": "2026-09-15",
    "changes": [
     {
      "date": "2026-10-20",
@@ -1991,7 +2165,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-01",
+   "tracked": null,
+   "added": "2026-07-01",
    "changes": []
   },
   {
@@ -2013,7 +2189,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-12",
+   "tracked": null,
+   "added": "2026-07-12",
    "changes": []
   },
   {
@@ -2035,7 +2213,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-04",
+   "tracked": null,
+   "added": "2026-07-04",
    "changes": []
   },
   {
@@ -2057,7 +2237,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-14",
+   "tracked": null,
+   "added": "2026-09-14",
    "changes": []
   },
   {
@@ -2079,7 +2261,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-28",
+   "tracked": null,
+   "added": "2026-07-28",
    "changes": []
   },
   {
@@ -2101,6 +2285,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -2123,7 +2309,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-01",
+   "tracked": null,
+   "added": "2026-07-01",
    "changes": [
     {
      "date": "2026-10-19",
@@ -2156,6 +2344,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -2178,7 +2368,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-10",
+   "tracked": null,
+   "added": "2026-09-10",
    "changes": []
   },
   {
@@ -2200,7 +2392,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-02",
+   "tracked": null,
+   "added": "2026-09-02",
    "changes": []
   },
   {
@@ -2222,7 +2416,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-01",
+   "tracked": null,
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -2244,7 +2440,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-17",
+   "tracked": null,
+   "added": "2026-09-17",
    "changes": []
   },
   {
@@ -2266,7 +2464,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-15",
+   "tracked": null,
+   "added": "2026-09-15",
    "changes": [
     {
      "date": "2026-10-22",
@@ -2294,6 +2494,8 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -2316,7 +2518,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-01",
+   "tracked": null,
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -2338,7 +2542,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-10",
+   "tracked": null,
+   "added": "2026-09-10",
    "changes": []
   },
   {
@@ -2360,7 +2566,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-11",
+   "tracked": null,
+   "added": "2026-10-11",
    "changes": []
   },
   {
@@ -2382,7 +2590,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-01",
+   "tracked": null,
+   "added": "2026-08-01",
    "changes": []
   },
   {
@@ -2404,7 +2614,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-05",
+   "tracked": null,
+   "added": "2026-08-05",
    "changes": []
   },
   {
@@ -2426,7 +2638,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-16",
+   "tracked": null,
+   "added": "2026-06-16",
    "changes": []
   },
   {
@@ -2448,7 +2662,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-22",
+   "tracked": null,
+   "added": "2026-07-22",
    "changes": []
   },
   {
@@ -2470,7 +2686,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": [
     {
      "date": "2026-10-20",
@@ -2498,7 +2716,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-25",
+   "tracked": null,
+   "added": "2026-09-25",
    "changes": [
     {
      "date": "2026-10-22",
@@ -2526,7 +2746,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-30",
+   "tracked": null,
+   "added": "2026-09-30",
    "changes": []
   },
   {
@@ -2548,7 +2770,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-23",
+   "tracked": null,
+   "added": "2026-06-23",
    "changes": []
   },
   {
@@ -2570,7 +2794,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-29",
+   "tracked": null,
+   "added": "2026-09-29",
    "changes": []
   },
   {
@@ -2592,7 +2818,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-06-26",
+   "tracked": null,
+   "added": "2026-06-26",
    "changes": []
   },
   {
@@ -2614,7 +2842,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -2636,7 +2866,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-01",
+   "tracked": null,
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -2658,7 +2890,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-04-15",
+   "tracked": null,
+   "added": "2026-04-15",
    "changes": []
   },
   {
@@ -2680,6 +2914,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -2702,7 +2938,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-20",
+   "tracked": null,
+   "added": "2026-09-20",
    "changes": []
   },
   {
@@ -2724,7 +2962,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-28",
+   "tracked": null,
+   "added": "2026-09-28",
    "changes": []
   },
   {
@@ -2746,7 +2986,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-08",
+   "tracked": null,
+   "added": "2026-10-08",
    "changes": []
   },
   {
@@ -2768,7 +3010,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-26",
+   "tracked": null,
+   "added": "2026-09-26",
    "changes": []
   },
   {
@@ -2790,7 +3034,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-21",
+   "tracked": null,
+   "added": "2026-09-21",
    "changes": []
   },
   {
@@ -2812,7 +3058,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-30",
+   "tracked": null,
+   "added": "2026-09-30",
    "changes": []
   },
   {
@@ -2834,6 +3082,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -2856,7 +3106,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-07-23",
+   "tracked": null,
+   "added": "2026-07-23",
    "changes": []
   },
   {
@@ -2878,7 +3130,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-27",
+   "tracked": null,
+   "added": "2026-08-27",
    "changes": []
   },
   {
@@ -2900,7 +3154,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -2922,7 +3178,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": [
     {
      "date": "2026-10-22",
@@ -2950,7 +3208,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-16",
+   "tracked": null,
+   "added": "2026-10-16",
    "changes": []
   },
   {
@@ -2972,7 +3232,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -2994,7 +3256,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-01",
+   "tracked": null,
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -3016,7 +3280,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-20",
+   "tracked": null,
+   "added": "2026-09-20",
    "changes": []
   },
   {
@@ -3038,7 +3304,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-11",
+   "tracked": null,
+   "added": "2026-08-11",
    "changes": []
   },
   {
@@ -3060,7 +3328,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-01",
+   "tracked": null,
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -3082,7 +3352,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-08-31",
+   "tracked": null,
+   "added": "2026-08-31",
    "changes": []
   },
   {
@@ -3104,7 +3376,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-14",
+   "tracked": null,
+   "added": "2026-10-14",
    "changes": []
   },
   {
@@ -3126,7 +3400,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-13",
+   "tracked": null,
+   "added": "2026-10-13",
    "changes": []
   },
   {
@@ -3148,7 +3424,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-15",
+   "tracked": null,
+   "added": "2026-10-15",
    "changes": []
   },
   {
@@ -3170,7 +3448,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-10-10",
+   "tracked": null,
+   "added": "2026-10-10",
    "changes": []
   },
   {
@@ -3192,6 +3472,8 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
+   "opened": null,
+   "tracked": null,
    "added": null,
    "changes": []
   },
@@ -3214,7 +3496,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-09-17",
+   "tracked": null,
+   "added": "2026-09-17",
    "changes": []
   },
   {
@@ -3236,7 +3520,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": null,
+   "opened": "2026-11-01",
+   "tracked": null,
+   "added": "2026-11-01",
    "changes": []
   },
   {
@@ -3258,7 +3544,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-18",
+   "opened": "2026-09-27",
+   "tracked": "2026-10-18",
+   "added": "2026-09-27",
    "changes": []
   },
   {
@@ -3280,7 +3568,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-18",
+   "opened": "2026-09-11",
+   "tracked": "2026-10-18",
+   "added": "2026-09-11",
    "changes": []
   },
   {
@@ -3302,7 +3592,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-18",
+   "opened": null,
+   "tracked": "2026-10-18",
+   "added": null,
    "changes": []
   },
   {
@@ -3324,7 +3616,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-18",
+   "opened": "2026-08-20",
+   "tracked": "2026-10-18",
+   "added": "2026-08-20",
    "changes": []
   },
   {
@@ -3346,7 +3640,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-01",
+   "tracked": "2026-10-19",
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -3368,7 +3664,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-21",
+   "tracked": "2026-10-19",
+   "added": "2026-09-21",
    "changes": []
   },
   {
@@ -3390,7 +3688,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-01",
+   "tracked": "2026-10-19",
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -3412,7 +3712,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-14",
+   "tracked": "2026-10-19",
+   "added": "2026-09-14",
    "changes": []
   },
   {
@@ -3434,7 +3736,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3456,7 +3760,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-05-01",
+   "tracked": "2026-10-19",
+   "added": "2026-05-01",
    "changes": [
     {
      "date": "2026-10-20",
@@ -3484,7 +3790,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-07-10",
+   "tracked": "2026-10-19",
+   "added": "2026-07-10",
    "changes": []
   },
   {
@@ -3506,7 +3814,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-08-02",
+   "tracked": "2026-10-19",
+   "added": "2026-08-02",
    "changes": []
   },
   {
@@ -3528,7 +3838,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-07-15",
+   "tracked": "2026-10-19",
+   "added": "2026-07-15",
    "changes": []
   },
   {
@@ -3550,7 +3862,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-05",
+   "tracked": "2026-10-19",
+   "added": "2026-10-05",
    "changes": []
   },
   {
@@ -3572,7 +3886,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-02-20",
+   "tracked": "2026-10-19",
+   "added": "2026-02-20",
    "changes": []
   },
   {
@@ -3594,7 +3910,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-15",
+   "tracked": "2026-10-19",
+   "added": "2026-10-15",
    "changes": []
   },
   {
@@ -3616,7 +3934,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-07-10",
+   "tracked": "2026-10-19",
+   "added": "2026-07-10",
    "changes": []
   },
   {
@@ -3638,7 +3958,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3660,7 +3982,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-08-26",
+   "tracked": "2026-10-19",
+   "added": "2026-08-26",
    "changes": []
   },
   {
@@ -3682,7 +4006,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3704,7 +4030,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-24",
+   "tracked": "2026-10-19",
+   "added": "2026-09-24",
    "changes": []
   },
   {
@@ -3726,7 +4054,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-25",
+   "tracked": "2026-10-19",
+   "added": "2026-09-25",
    "changes": []
   },
   {
@@ -3748,7 +4078,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-27",
+   "tracked": "2026-10-19",
+   "added": "2026-09-27",
    "changes": []
   },
   {
@@ -3770,7 +4102,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-07-27",
+   "tracked": "2026-10-19",
+   "added": "2026-07-27",
    "changes": []
   },
   {
@@ -3792,7 +4126,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-08",
+   "tracked": "2026-10-19",
+   "added": "2026-10-08",
    "changes": []
   },
   {
@@ -3814,7 +4150,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3836,7 +4174,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3858,7 +4198,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3880,7 +4222,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-16",
+   "tracked": "2026-10-19",
+   "added": "2026-10-16",
    "changes": []
   },
   {
@@ -3902,7 +4246,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-01",
+   "tracked": "2026-10-19",
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -3924,7 +4270,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": null,
+   "tracked": "2026-10-19",
+   "added": null,
    "changes": []
   },
   {
@@ -3946,7 +4294,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-10",
+   "tracked": "2026-10-19",
+   "added": "2026-10-10",
    "changes": []
   },
   {
@@ -3968,7 +4318,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-14",
+   "tracked": "2026-10-19",
+   "added": "2026-10-14",
    "changes": []
   },
   {
@@ -3990,7 +4342,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-15",
+   "tracked": "2026-10-19",
+   "added": "2026-10-15",
    "changes": []
   },
   {
@@ -4012,7 +4366,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-10-14",
+   "tracked": "2026-10-19",
+   "added": "2026-10-14",
    "changes": []
   },
   {
@@ -4034,7 +4390,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-07-15",
+   "tracked": "2026-10-19",
+   "added": "2026-07-15",
    "changes": []
   },
   {
@@ -4056,7 +4414,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-19",
+   "opened": "2026-09-29",
+   "tracked": "2026-10-19",
+   "added": "2026-09-29",
    "changes": []
   },
   {
@@ -4078,7 +4438,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-20",
+   "opened": "2026-10-19",
+   "tracked": "2026-10-20",
+   "added": "2026-10-19",
    "changes": []
   },
   {
@@ -4100,7 +4462,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-20",
+   "opened": "2026-10-01",
+   "tracked": "2026-10-20",
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -4122,7 +4486,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": null,
+   "tracked": "2026-10-21",
+   "added": null,
    "changes": []
   },
   {
@@ -4144,7 +4510,9 @@
    "mark": "star",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09-30",
+   "tracked": "2026-10-21",
+   "added": "2026-09-30",
    "changes": []
   },
   {
@@ -4166,7 +4534,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-15",
+   "tracked": "2026-10-21",
+   "added": "2026-10-15",
    "changes": []
   },
   {
@@ -4188,7 +4558,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-20",
+   "tracked": "2026-10-21",
+   "added": "2026-10-20",
    "changes": []
   },
   {
@@ -4210,7 +4582,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09-01",
+   "tracked": "2026-10-21",
+   "added": "2026-09-01",
    "changes": []
   },
   {
@@ -4232,7 +4606,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": null,
+   "tracked": "2026-10-21",
+   "added": null,
    "changes": []
   },
   {
@@ -4254,7 +4630,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": null,
+   "tracked": "2026-10-21",
+   "added": null,
    "changes": [
     {
      "date": "2026-10-22",
@@ -4282,7 +4660,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": null,
+   "tracked": "2026-10-21",
+   "added": null,
    "changes": []
   },
   {
@@ -4304,7 +4684,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-17",
+   "tracked": "2026-10-21",
+   "added": "2026-10-17",
    "changes": []
   },
   {
@@ -4326,7 +4708,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": null,
+   "tracked": "2026-10-21",
+   "added": null,
    "changes": []
   },
   {
@@ -4348,7 +4732,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09-20",
+   "tracked": "2026-10-21",
+   "added": "2026-09-20",
    "changes": []
   },
   {
@@ -4370,7 +4756,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-08-10",
+   "tracked": "2026-10-21",
+   "added": "2026-08-10",
    "changes": []
   },
   {
@@ -4392,7 +4780,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09（官方",
+   "tracked": "2026-10-21",
+   "added": "2026-09（官方",
    "changes": []
   },
   {
@@ -4414,7 +4804,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09-30",
+   "tracked": "2026-10-21",
+   "added": "2026-09-30",
    "changes": []
   },
   {
@@ -4436,7 +4828,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09（征片",
+   "tracked": "2026-10-21",
+   "added": "2026-09（征片",
    "changes": []
   },
   {
@@ -4458,7 +4852,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-07",
+   "tracked": "2026-10-21",
+   "added": "2026-10-07",
    "changes": []
   },
   {
@@ -4480,7 +4876,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-01",
+   "tracked": "2026-10-21",
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -4502,7 +4900,9 @@
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-08-15",
+   "tracked": "2026-10-21",
+   "added": "2026-08-15",
    "changes": []
   },
   {
@@ -4524,7 +4924,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-09-28",
+   "tracked": "2026-10-21",
+   "added": "2026-09-28",
    "changes": []
   },
   {
@@ -4546,7 +4948,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-01",
+   "tracked": "2026-10-21",
+   "added": "2026-10-01",
    "changes": []
   },
   {
@@ -4568,7 +4972,9 @@
    "mark": "",
    "verified": "none",
    "verifyNote": "",
-   "added": "2026-10-21",
+   "opened": "2026-10-01",
+   "tracked": "2026-10-21",
+   "added": "2026-10-01",
    "changes": []
   }
  ],
