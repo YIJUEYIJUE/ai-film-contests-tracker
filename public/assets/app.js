@@ -233,7 +233,7 @@ V.home = () => {
     <p class="lede">${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]} · 在征 ${L.length} 个 AI 影像赛事，截止日以主办方官网为准。</p></div>
   ${(() => { const b = briefData(); const li = (c, mode) => `<li><a data-open="${c.id}" tabindex="0" role="button">${gB(c)}<span class="duo-t">${esc(c.name)}</span><span class="duo-m ${mode === "due" ? urg(daysLeft(c)) : "acc"}">${mode === "due" ? (daysLeft(c) === 0 ? "今天" : daysLeft(c) + " 天") : md(c.added)}</span></a></li>`;
     const box = (cls, t, a, mode, href, e) => `<div class="duo-c ${cls}"><div class="duo-h"><b>${t}</b><em class="num">${a.length}</em><a href="${href}">全部${I.r}</a></div>${a.length ? `<ol>${a.slice(0, 5).map(c => li(c, mode)).join("")}</ol>` : `<p class="duo-e">${e}</p>`}</div>`;
-    return `<section class="duo" aria-label="今日速览">${box("due", b.dueT, b.due, "due", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`, "近 7 天没有截止")}${box("new", b.freshT, b.fresh, "new", `#/contests?new=${b.freshK}&sort=new`, "近 7 天没有新收录")}<a class="duo-share" href="#/brief">${I.doc}<span><b>生成今日分享卡片</b><small>竖版长图 / 3:4 / 横版，一键保存</small></span>${I.r}</a></section>`; })()}
+    return `<section class="duo" aria-label="今日速览">${box("due", b.dueT, b.due, "due", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`, "近 7 天没有截止")}${box("new", b.freshT, b.fresh, "new", `#/contests?new=${b.freshK}&sort=new`, "近 7 天没有新开征")}<a class="duo-share" href="#/brief">${I.doc}<span><b>生成今日分享卡片</b><small>竖版长图 / 3:4 / 横版，一键保存</small></span>${I.r}</a></section>`; })()}
   <section class="hero">
     <div class="lead">
       <div class="lead-h"><h2><span class="ping" aria-hidden="true"><i></i><i></i></span>即将截止</h2>
@@ -295,7 +295,7 @@ function filter(p) {
     return true;
   });
 }
-const SORT = { dl: ["截止最近", byDl], grade: ["分级最高", (a, b) => G[a.grade] - G[b.grade] || byDl(a, b)], prize: ["奖金最高", (a, b) => cashCNY(b) - cashCNY(a) || byDl(a, b)], new: ["最新收录", (a, b) => String(b.added || "").localeCompare(String(a.added || "")) || byDl(a, b)], name: ["按名称", (a, b) => a.name.localeCompare(b.name, "zh")] };
+const SORT = { dl: ["截止最近", byDl], grade: ["分级最高", (a, b) => G[a.grade] - G[b.grade] || byDl(a, b)], prize: ["奖金最高", (a, b) => cashCNY(b) - cashCNY(a) || byDl(a, b)], new: ["最新开征", (a, b) => String(b.added || "").localeCompare(String(a.added || "")) || byDl(a, b)], name: ["按名称", (a, b) => a.name.localeCompare(b.name, "zh")] };
 const LABEL = { when: { "3": "3 天内", "7": "7 天内", "30": "30 天内", tba: "截止待公布", closed: "已截止", all: "全部（含已截止）" }, grade: { SA: "S + A 级", S: "S 级", A: "A 级", B: "B 级", C: "C 级" }, fee: { free: "免费报名" }, cash: { "1": "有现金奖" }, topic: { "命题": "命题", "自由投稿": "自由投稿" }, region: { cn: "国内", intl: "海外 / 线上" }, new: { "1": "今日上新", "3": "近 3 天上新", "7": "近 7 天上新" }, fav: { "1": "已收藏" } };
 const clean = p => Object.fromEntries(Object.entries(p).filter(([k, v]) => v !== "" && v != null && FD[k] !== v && !k.startsWith("_")));
 V.contests = () => {
@@ -338,7 +338,7 @@ V.contests.after = () => {
 let refocus = false, fOpen = false;
 
 /* ═════════ 页面：时间线（全景甘特 + 每日动态） ═════════ */
-// 全景：每个赛事一行，横条从「收录日」画到「截止日」，竖线是今天；按截止月份分组。
+// 全景：每个赛事一行，横条从「开征日」画到「截止日」，竖线是今天；按截止月份分组。
 // 动态：按天排的事件流——哪天上新、哪天截止、哪天改期，一眼看完。
 const TLD = { mode: "gantt", zoom: "60", grade: "", fee: "", new: "", q: "", past: "" };
 const ZOOM = { "30": ["30 天", 5, 30], "60": ["60 天", 7, 60], "180": ["半年", 14, 180], "all": ["全部", 21, 0] };
@@ -361,7 +361,7 @@ V.timeline = () => {
   const ch = (k, v, label, toggle) => { const on = (p[k] || "") === v && !(toggle && !v); return `<button class="chip ${on ? "on" : ""}" data-tl="${k}:${toggle && on ? "" : v}">${label}</button>`; };
   const head = `
   <div class="page-h"><div class="kicker">时间线</div><h1>${mode === "gantt" ? `${pool.length} 个赛事的征集期一览` : "每天发生了什么：上新、截止、改期"}</h1>
-    <p class="lede">${mode === "gantt" ? "每一行是一个赛事：横条从收录那天画到截止那天，红色竖线是今天。越靠左越急，点任意一行看详情。" : "以今天为中心，往前看最近的上新和改期，往后看即将到来的截止。"}</p></div>
+    <p class="lede">${mode === "gantt" ? "每一行是一个赛事：横条从开征那天画到截止那天，红色竖线是今天。越靠左越急，点任意一行看详情。" : "以今天为中心，往前看最近的上新和改期，往后看即将到来的截止。"}</p></div>
   <div class="tl-bar-top">
     <div class="seg" role="group" aria-label="时间线视图">${[["gantt", "全景"], ["feed", "每日动态"]].map(([k, n]) => `<button class="${mode === k ? "on" : ""}" data-tl="mode:${k}">${n}</button>`).join("")}</div>
     ${mode === "gantt" ? `<div class="seg" role="group" aria-label="时间范围">${Object.entries(ZOOM).map(([k, [n]]) => `<button class="${(own(ZOOM, p.zoom) ? p.zoom : "60") === k ? "on" : ""}" data-tl="zoom:${k}">${n}</button>`).join("")}</div>` : ""}
@@ -394,13 +394,13 @@ function tlGantt(p, pool) {
     const chg = (c.changes || []).filter(x => parseD(x.date) >= start).map(x => `<b class="tl-chg" style="left:${pct(parseD(x.date))}%" title="${md(x.date)} 截止日调整：${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}"></b>`).join("");
     return `<div class="tl-r ${l != null && l < 0 ? "past" : ""}" data-open="${c.id}" tabindex="0" role="button" aria-label="${esc(c.name)}，${l == null ? "截止待公布" : l < 0 ? "已截止" : md(c.deadline) + "截止"}">
       <div class="tl-n">${gB(c)}<span class="t">${esc(c.name)}</span>${isNew(c) ? '<span class="tag new">上新</span>' : ""}</div>
-      <div class="tl-tr"><span class="tl-b b-${c.grade} ${pre ? "pre" : ""} ${cut ? "cut" : ""} ${urg(l)}" style="left:${left}%;width:${w}%"></span>${ad && +ad >= +start ? `<b class="tl-add" style="left:${pct(ad)}%" title="${md(c.added)}收录"></b>` : ""}${chg}
+      <div class="tl-tr"><span class="tl-b b-${c.grade} ${pre ? "pre" : ""} ${cut ? "cut" : ""} ${urg(l)}" style="left:${left}%;width:${w}%"></span>${ad && +ad >= +start ? `<b class="tl-add" style="left:${pct(ad)}%" title="${md(c.added)}开征"></b>` : ""}${chg}
         <span class="tl-lab ${pct(to) > 78 ? "in" : ""}" style="${pct(to) > 78 ? `right:${100 - pct(to)}%` : `left:${pct(to)}%`}">${cut ? "→ " : ""}${l == null ? "" : l < 0 ? md(c.deadline) : l === 0 ? "今天截止" : `${md(c.deadline)} · 剩 ${l} 天`}</span></div></div>`;
   };
   const groups = []; dated.forEach(c => { const k = c.deadline.slice(0, 7); const g = groups[groups.length - 1]; if (g && g.k === k) g.list.push(c); else groups.push({ k, list: [c] }); });
   const rows = groups.map(g => { const [y, m] = g.k.split("-"); return `<div class="tl-mh"><b>${+y !== T0.getFullYear() ? y + " 年 " : ""}${+m} 月截止</b><span>${g.list.length} 个</span></div>${g.list.map(row).join("")}`; }).join("");
   return `
-  <div class="tl-legend" aria-label="图例"><span><i class="lg-bar"></i>征集中（收录 → 截止）</span><span><i class="lg-pre"></i>收录前已开始</span><span><i class="lg-add"></i>收录日</span><span><i class="lg-chg"></i>截止日调整</span><span><i class="lg-today"></i>今天</span><span class="lg-g">${["S", "A", "B", "C"].map(g => `<i class="b-${g}"></i>${g}`).join("")}</span></div>
+  <div class="tl-legend" aria-label="图例"><span><i class="lg-bar"></i>征集中（开征 → 截止）</span><span><i class="lg-pre"></i>开征前已开始</span><span><i class="lg-add"></i>开征日</span><span><i class="lg-chg"></i>截止日调整</span><span><i class="lg-today"></i>今天</span><span class="lg-g">${["S", "A", "B", "C"].map(g => `<i class="b-${g}"></i>${g}`).join("")}</span></div>
   <div class="tl-wrap" id="tlwrap"><div class="tl-g" style="--tp:${tp}%">
     <div class="tl-axis"><div class="tl-n">赛事 · 按截止日</div><div class="tl-tr">${tickH}<span class="tk today" style="left:${tp}%">今天</span></div></div>
     <div class="tl-grid" aria-hidden="true">${grid}</div><div class="tl-now" aria-hidden="true"></div>
@@ -565,7 +565,7 @@ V.brief = () => {
         <div class="op-g"><label>配色</label><div class="seg">${seg("theme", "light", theme, "浅色")}${seg("theme", "dark", theme, "深色")}</div></div>
         <div class="op-g"><label>卡片内容</label><ul class="op-sum">
           <li><i class="d-hot"></i>${b.dueT} <b class="num">${b.due.length}</b> 个${b.dueK !== "today" ? "<small>（今天没有截止，自动放宽）</small>" : ""}</li>
-          <li><i class="d-acc"></i>${b.freshT} <b class="num">${b.fresh.length}</b> 个${b.freshK !== "1" ? "<small>（今天没有新收录，自动放宽）</small>" : ""}</li>
+          <li><i class="d-acc"></i>${b.freshT} <b class="num">${b.fresh.length}</b> 个${b.freshK !== "1" ? "<small>（今天没有新开征，自动放宽）</small>" : ""}</li>
           <li><i></i>顶部：在征 ${b.L.length} · 7 天内截止 ${b.w7.length}</li>
           ${size === "long" ? `<li><i></i>底部：本周还要截止 ${b.wk.length} · 截止日调整 ${b.moved.length}</li>` : ""}</ul></div>
         <div class="op-btns"><button class="btn pri" data-act="cardsave">${I.down}保存图片</button><button class="btn" data-act="cardcopy">${I.copy}复制图片</button><button class="btn" data-act="caption">${I.copy}复制配文</button></div>
@@ -578,7 +578,7 @@ V.brief = () => {
         <h1>${b.dueT} ${b.due.length} 个，${b.freshT} ${b.fresh.length} 个</h1>
         <p>一周内共有 ${b.w7.length} 个赛事截止，30 天内还有 ${b.mo.length} 个 S / A 级。${b.moved.length ? `近 3 天有 ${b.moved.length} 个赛事调整了截止日，投递前请再看一眼。` : ""}</p>
         <div class="p-stats"><div><b class="num">${b.L.length}</b><span>在征赛事</span></div><div><b class="num">${b.w7.length}</b><span>7 天内截止</span></div><div><b class="num u-red">${b.due.length}</b><span>${b.dueT}</span></div><div><b class="num acc">${b.fresh.length}</b><span>${b.freshT}</span></div></div></header>
-      <div class="p-duo">${col("due", b.dueT, b.due, "due", "近 7 天没有截止的赛事", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`)}${col("new", b.freshT, b.fresh, "new", "近 7 天没有新收录", `#/contests?new=${b.freshK}&sort=new`)}</div>
+      <div class="p-duo">${col("due", b.dueT, b.due, "due", "近 7 天没有截止的赛事", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`)}${col("new", b.freshT, b.fresh, "new", "近 7 天没有新开征", `#/contests?new=${b.freshK}&sort=new`)}</div>
       <div class="p-body">
         ${sec("本周还要截止", b.wk, "本周没有其他截止的赛事")}${sec("30 天内的 S / A 级", b.mo, "30 天内没有 S / A 级截止")}${sec("免费且有现金奖 · 时间充裕", b.fc, "暂时没有符合条件的赛事")}
         ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<a data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x)}</b></a>`; }).join("")}</div></section>` : ""}
@@ -720,7 +720,7 @@ function drawCard({ size = "long", theme = "light" } = {}) {
     if (P2.more > 0) { ctx.font = f(23, 600); ctx.fillStyle = col; ctx.fillText(`还有 ${P2.more} 个 · 到网站查看全部 →`, x + ipad, y + colH - 26); }
   };
   drawCol(P, b.dueT, `${b.due.length} 个`, T.hot, T.hotSoft, PA, "近 7 天没有截止的赛事", "");
-  drawCol(P + colW + GAP, b.freshT, `${b.fresh.length} 个`, T.acc, T.accSoft, PB, "近 7 天没有新收录", "");
+  drawCol(P + colW + GAP, b.freshT, `${b.fresh.length} 个`, T.acc, T.accSoft, PB, "近 7 天没有新开征", "");
   y += colH + 28;
   // 长图专属：本周还要截止 / 截止日调整
   if (size === "long" && EX.h) {
@@ -873,7 +873,7 @@ function fillDrawer(id) {
       <div class="fact"><dt>${I.pin}地区</dt><dd>${esc(c.region || "未注明")}</dd></div>
     </dl>
     ${safeUrl(c.site) || sub ? `<div class="links">${linkChip("官网", c.site, "globe")}${sub && sub !== safeUrl(c.site) ? linkChip(mail ? "邮箱投稿" : "投递入口", sub, "ext") : ""}</div>` : `<div class="vbox warn"><span class="vi">${I.alert}</span><div><b>暂无官方链接</b><span>主办方暂未公布官网或投递入口，请关注后续公告。</span></div></div>`}
-    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}收录${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}</span>`).join("")}</div>` : ""}
+    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}</span>`).join("")}</div>` : ""}
     ${ms.length > 1 ? `<div class="dr-h">时间节点</div><ul class="tl-list">${(() => { const nx = ms.findIndex(x => x.d >= T0); return ms.map((x, i) => `<li class="${x.d < T0 ? "done" : i === nx ? "next" : ""}"><i></i><b>${ymd(x.d)}</b><span>${esc(x.label)}</span></li>`).join(""); })()}</ul>` : ""}
     ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${esc(c.desc)}</div>` : ""}
     ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${esc(c.notes)}</div>` : ""}
