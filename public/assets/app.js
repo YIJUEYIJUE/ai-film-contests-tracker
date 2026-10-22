@@ -305,7 +305,7 @@ V.contests = () => {
   const act = Object.keys(FD).filter(k => !["q", "sort"].includes(k) && (p[k] || "") !== FD[k]);
   const view = P.view;
   return `
-  <div class="page-h"><div class="kicker">全部赛事</div><h1>${C.length} 个 AI 影像赛事</h1><p class="lede">组合筛选时间、分级、门槛与作品形态。筛选条件会写进网址，复制链接即可分享当前结果。</p></div>
+  <div class="page-h"><div class="kicker">全部赛事</div><h1>${res.length} 个 AI 影像赛事</h1><p class="lede">全表共 ${C.length} 个，其中 ${C.filter(c => !isOpen(c)).length} 个已截止——默认收起，点下方「含已截止」可查看。筛选条件会写进网址，复制链接即可分享当前结果。</p></div>
   <div class="filters ${act.length ? "" : ""}" id="filters">
     <div class="f-top">
       <label class="field ${p.q ? "has" : ""}">${I.search}<input id="fq" value="${esc(p.q)}" placeholder="搜索名称、主办方、地区、题材，多个词用空格分隔" aria-label="搜索赛事"><button class="clr" data-act="clearq" aria-label="清空">${I.x}</button></label>
