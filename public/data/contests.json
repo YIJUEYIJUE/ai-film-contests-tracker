@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-23",
- "built": "2026-10-23 04:10",
+ "built": "2026-10-23 04:17",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1207,7 +1207,7 @@
    "site": "https://pafilmfestival.com",
    "submit": "https://www.filmfreeway.com/pafilmfestival",
    "desc": "Puerto Aventuras International Film Festival（PAIFF）· 墨西哥 Riviera Maya（Puerto Aventuras，坎昆与图卢姆之间）官方分 7 类：长片（≥60 分钟）、短片（<60 分钟）、纪录片（任意长度）、**动画与/或 AI 生成片（含混合形式，在全部适用类别中评审）**、音乐视频、剧本（须英文）、进行中项目（<45 分钟）\n长片 ≥60 分钟 / 短片 <60 分钟 / 进行中项目 <45 分钟\n须附 ≤90 秒可下载预告片（英文字幕）、专业海报、简介、导演简介、演职员表\n非英语片须英文字幕\n剧本须英文\n须拥有全部版权\n第 3 季 2026-03-25~29\nIMDb 资格赛\n设 Early Bird 季选（每年 15 部自动进官方入围）\nFilmFreeway 美元计价（音乐视频低至 $5 起）",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址；官网 pafilmfestival.com 标题仍写 PAIFF 2026（页面未更新届次）；本轮核对（2026-10-21）：Festhome 官方征片页给出完整档期——Call for entries 2026-05-01 / Early 2026-11-01 / Standard 2026-12-10 / Late 2027-01-01 / Extended 2027-01-21 / **Notification 2027-02-10** / 影展 2027-03-17~21；原「类别」填的是国家名「墨西哥」，已改为影片单元「短片/长片/纪录/动画与AI/音乐视频/剧本」；同时确认官网与投递均已正确（pafilmfestival.com / filmfreeway.com/pafilmfestival），此前备注「主办方无独立官网」为旧记录，现已不适用；**AI 生成片按官方规则归入「Animation and/or AI-Generated Films」，可投",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址；官网 pafilmfestival.com 标题仍写 PAIFF 2026（页面未更新届次）；本轮核对（2026-10-21）：Festhome 官方征片页给出完整档期——Call for entries 2026-05-01 / Early 2026-11-01 / Standard 2026-12-10 / Late 2027-01-01 / Extended 2027-01-21 / **Notification 2027-02-10** / 影展 2027-03-17~21；原「类别」填的是国家名「墨西哥」，已改为影片单元「短片/长片/纪录/动画与AI/音乐视频/剧本」；同时确认官网与投递均已正确（pafilmfestival.com / filmfreeway.com/pafilmfestival），此前备注「主办方无独立官网」为旧记录，现已不适用；**AI 生成片按官方规则归入「Animation and/or AI-Generated Films」，可投；官方站 pafilmfestival.com **两个页面自相矛盾**：一处写「Regular 2026-12-10 / Late 2027-01-01 / **Extended 2027-01-21** / Final Selections 01-25」，另一处同段写「Extended **2027-01-31**」；Festhome 官方页则为「Early 2026-12-10 / Standard 2027-01-01 / Late **2027-01-21** / **Extended 2027-02-10** / 通知 2027-03-17 / 活动 03-17~21」；**若走 Festhome 通道，最晚可到 2027-02-10**；投前在报名页确认当前档位，不要按 02-10 卡点",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
