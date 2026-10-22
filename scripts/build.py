@@ -198,10 +198,12 @@ def normalize(raw, overrides, today):
         mark = "star" if "⭐" in raw_notes else "caution" if "⚠" in raw_notes else "note" if "🔍" in raw_notes else ""
         notes = public_notes(raw_notes)
         desc = public_notes(desc).replace("；", "\n") if INTERNAL.search(desc) else desc
+        m_op = re.search(r"\d{4}-\d{2}-\d{2}", s(r.get("征片开始")))
         out.append({"id": rid, "name": name, "grade": grade, "deadline": dl or None, "status": st,
                     "organizer": s(r.get("主办方")), "region": s(r.get("地区")), "category": s(r.get("类别")), "topic": topic,
                     "fee": fee, "prize": prize, "site": site, "submit": submit, "desc": desc, "notes": notes, "mark": mark,
-                    "verified": v.get("level") or "none", "verifyNote": public_notes(v.get("note"))})
+                    "verified": v.get("level") or "none", "verifyNote": public_notes(v.get("note")),
+                    "opened": m_op.group(0) if m_op else None})
     return out
 
 
@@ -281,7 +283,10 @@ def main():
     validate(recs, len(raw))
     first, changes, since = history(hist, snap, raw, missing)
     for r in recs:
-        r["added"] = first.get(r["id"])
+        # 「上新」= 赛事自身开征时间（表内「征片开始」），不是我们首次把它收进表的日期。
+        # 早就在征集、只是录入得晚的赛事，不应该被冒充成今天上新。
+        r["tracked"] = first.get(r["id"])          # 内部保留：入表日期，供审计用，不参与前端展示
+        r["added"] = r.get("opened") or None       # 对外：开征日；没有征片开始的赛事留空，不进上新
         r["changes"] = changes.get(r["id"], [])[-3:]
     data = {"snapshot": snap, "built": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "trackedSince": since,
             "siteUrl": SITE_URL or "https://yijueyijue.github.io/ai-film-contests-tracker",
@@ -294,7 +299,11 @@ def main():
     (PUB / "feed.xml").write_text(rss(recs, snap), "utf-8")
     st = Counter(r["status"] for r in recs); g = Counter(r["grade"] for r in recs)
     nd = Counter(r["added"] for r in recs if r["added"])
-    print(f"  上新（按快照比对，起点 {since}）：" + "、".join(f"{k[5:]} +{v}" for k, v in sorted(nd.items())[-7:]) + f" · 截止日调整 {sum(1 for r in recs if r['changes'])} 条")
+    tk = Counter(r["tracked"] for r in recs if r["tracked"])
+    print(f"  新开征（按征片开始日，进「上新」）：" + "、".join(f"{k[5:]} +{v}" for k, v in sorted(nd.items())[-7:])
+          + f" · 无征片开始 {sum(1 for r in recs if not r['added'])} 条（不参与上新）")
+    print(f"  新入表（按快照比对，仅供审计）：" + "、".join(f"{k[5:]} +{v}" for k, v in sorted(tk.items())[-5:])
+          + f" · 起点 {since} · 截止日调整 {sum(1 for r in recs if r['changes'])} 条")
     print(f"✓ 快照 {snap} · 赛事 {len(recs)}（在征 {st['open']} / 待公布 {st['pending']} / 即将开放 {st['soon']} / 已截止 {st['closed']}）· 分级 S{g['S']} A{g['A']} B{g['B']} C{g['C']} · 电影节 {len(data['festivals'])}")
     if warns:
         print(f"  告警 {len(warns)} 条：")
