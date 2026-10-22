@@ -72,6 +72,25 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   ok($$("#view .pi").length > 3, `简报条目 ${$$("#view .pi").length}`);
   ok($$("#view [data-copy], #view .btn").length > 0, "简报复制/打印入口");
 
+  // v7：今日截止 / 今日上新、分享卡片、时间线
+  ok(A.contests.every(c => "added" in c && Array.isArray(c.changes)), "每条赛事带收录日与改期记录字段");
+  go("#/home"); await wait(80);
+  ok($$("#view .duo-c").length === 2, "首页今日截止 / 上新双栏：" + $$("#view .duo-h b").map(e => e.textContent).join(" / "));
+  go("#/brief"); await wait(120);
+  ok($("#cardImg") && /^data:image\/png/.test($("#cardImg").src || ""), "分享卡片已生成");
+  ok($$("#view .p-col").length === 2, "简报文字版左右两栏");
+  for (const sz of ["tall", "wide"]) { go("#/brief?size=" + sz); await wait(100); ok($(`#view [data-card="size:${sz}"].on`), "卡片尺寸切换 " + sz); }
+  go("#/brief?theme=dark"); await wait(100); ok($('#view [data-card="theme:dark"].on'), "卡片深色");
+  go("#/contests?new=7&sort=new"); await wait(100);
+  { const n = $$("#rows > *").length; ok(n >= 0 && $('#view [data-f="new"].on'), `上新筛选 近 7 天 ${n} 条`); }
+  go("#/timeline"); await wait(120);
+  { const n = $$("#view .tl-r").length; ok(n > 20, `时间线全景 ${n} 行`); ok($("#view .tl-now") && $("#view .tk.today"), "时间线今天标线"); }
+  go("#/timeline?zoom=all&past=1"); await wait(100); ok($$("#view .tl-r.past").length > 0, "时间线含已截止");
+  go("#/timeline?grade=SA"); await wait(100); ok($$("#view .tl-r").length > 0 && $$("#view .tl-r").every(r => /\b[SA]\b/.test(r.querySelector(".g").textContent)), "时间线按分级筛选");
+  go("#/timeline?mode=feed"); await wait(120); ok($$("#view .fd-day").length > 0 && $("#fd-today"), `每日动态 ${$$("#view .fd-day").length} 天`);
+  go("#/timeline"); await wait(80); $("#view .tl-r").click(); await wait(150); ok($("#drawer").classList.contains("on"), "时间线点击打开详情");
+  d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(60);
+
   go("#/festivals"); await wait(80);
   ok($$("#view .fest").length > 10, `电影节卡片 ${$$("#view .fest").length}`);
 
@@ -94,5 +113,12 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   ok(d.documentElement.dataset.theme !== t0, `主题切换 ${t0} → ${d.documentElement.dataset.theme}`);
 
   ok(!/我的影片|投递看板|作品库/.test(d.documentElement.innerHTML), "无旧版残留模块");
+  // v7 回归：原型键、脏参数、坏存储、待公布标题
+  go("#/contests?sort=__proto__&new=-3"); await wait(80); ok(!/undefined/.test($("#view").textContent), "排序参数为 __proto__ 时不显示 undefined");
+  go("#/brief?size=__proto__&theme=constructor"); await wait(120); ok($("#cardImg") && /^data:image/.test($("#cardImg").src || ""), "卡片参数为原型键时仍能生成");
+  go("#/brief"); await wait(60);
+  ok(!/还剩 null 天|NaN/.test($("#view").textContent), "简报无「还剩 null 天」");
+  const allPend = A.contests.filter(c => !c.deadline).length; ok(allPend > 0 && !/剩余天数 0 天/.test($("#view").textContent), `待公布 ${allPend} 个不显示剩余天数`);
+  go("#/timeline?mode=feed"); await wait(80); ok(!/NaN|undefined/.test($("#view").textContent), "每日动态无 NaN / undefined");
   if (errors.length) { console.error("\n" + errors.join("\n")); process.exit(1); } else console.log("\n全部通过");
 })();
