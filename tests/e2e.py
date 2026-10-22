@@ -11,12 +11,12 @@ res=[];errs=[]
 def ok(c,m): res.append(('✓' if c else '✗')+' '+m)
 with sync_playwright() as p:
     b=p.chromium.launch(args=['--no-sandbox'])
-    ctx=b.new_context(viewport={'width':1440,'height':900}); pg=ctx.new_page()
+    ctx=b.new_context(viewport={'width':1440,'height':900},accept_downloads=True); ctx.grant_permissions(['clipboard-read','clipboard-write']); pg=ctx.new_page()
     pg.on('pageerror',lambda e:errs.append(str(e))); pg.on('console',lambda m:m.type=='error' and errs.append(m.text))
     pg.goto(U,wait_until='networkidle'); pg.wait_for_timeout(700)
     html=pg.content()
     ok(not re.search(r'我的影片|投递看板|作品库|信源|来源[:：]|数据来源|toujiang|aitop100|飞书多维', pg.inner_text('body')),'全站无作品库/信源/数据来源字样（首页）')
-    ok(pg.locator('.lead').count()==1 and pg.locator('.kpi').count()==4 and pg.locator('.fi').count()>3,'首页：热榜 + 4 个数字 + 时间线卡片')
+    ok(pg.locator('.lead').count()==1 and pg.locator('.kpi').count()==4 and pg.locator('.fi').count()>3 and pg.locator('.duo-c').count()==2,'首页：今日截止/上新双栏 + 热榜 + 4 个数字 + 时间线卡片')
     ok(pg.locator('.tl .dcol').count()==14,'首页：14 天时间轴')
     pg.goto(U+'#/contests?q=魁北克&when=all',wait_until='networkidle'); pg.wait_for_timeout(400); ok(pg.evaluate("[...document.querySelectorAll('#rows > *')].filter(r=>/魁北克城/.test(r.innerText)).every(r=>!r.querySelector('.tag.cash'))"),'「无现金奖」不会被标成现金奖')
     pg.goto(U+'#/contests?q=鲸锐&when=all',wait_until='networkidle'); pg.wait_for_timeout(400); ok('总池' in pg.inner_text('#rows'),'总奖池标注口径')
@@ -31,12 +31,12 @@ with sync_playwright() as p:
     ok(pg.locator('mark.hl').count()>=1,'搜索词高亮')
     pg.click('[data-act="clearq"]'); pg.wait_for_timeout(400); ok(pg.input_value('#fq')=='','清空搜索')
     pg.goto(U+'#/contests?grade=S&fee=free&form=MV&region=cn',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.empty').count()==1,'无结果空状态')
-    pg.goto(U+'#/contests?when=all',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('#rows > *').count()==115,'含已截止共 115 条')
-    pg.click('[data-view="grid"]'); pg.wait_for_timeout(300); ok(pg.locator('#rows .card').count()==115,'切换卡片视图')
+    pg.goto(U+'#/contests?when=all',wait_until='networkidle'); pg.wait_for_timeout(300); NALL=pg.evaluate('AIC.contests.length'); ok(pg.locator('#rows > *').count()==NALL,f'含已截止共 {NALL} 条')
+    pg.click('[data-view="grid"]'); pg.wait_for_timeout(300); ok(pg.locator('#rows .card').count()==NALL,'切换卡片视图')
     pg.click('[data-view="list"]'); pg.wait_for_timeout(300)
     # 全部 115 条详情能打开且关键字段非空
     bad=pg.evaluate("""(()=>{const out=[];for(const c of window.AIC.contests){if(!c.name||!c.grade||!c.prize||!c.fee)out.push(c.name);}return out})()""")
-    ok(not bad,f'115 条关键字段齐全 {bad[:3]}')
+    ok(not bad,f'{NALL} 条关键字段齐全 {bad[:3]}')
     pg.goto(U+'#/contests',wait_until='networkidle'); pg.wait_for_selector('#rows > *')
     pg.locator('#rows > *').first.click(); pg.wait_for_timeout(600); ok(pg.is_visible('#drawer.on'),'点击打开详情')
     ok(pg.evaluate("document.querySelector('#view').inert")==True,'详情打开时背景不可点')
@@ -59,17 +59,40 @@ with sync_playwright() as p:
     pg.goto(U+'#/home',wait_until='networkidle'); pg.wait_for_timeout(300)
     pg.keyboard.press('Control+k'); pg.wait_for_timeout(200); pg.keyboard.type('金鸡'); pg.wait_for_timeout(250); pg.keyboard.press('Enter'); pg.wait_for_timeout(600)
     ok('金鸡' in pg.inner_text('#drawer h2'),'⌘K 搜索并打开'); pg.keyboard.press('Escape'); pg.wait_for_timeout(400)
+    # v7：分享卡片
+    import base64
+    from PIL import Image
+    import io
+    for sz,wh in [('long',None),('tall',(1080,1440)),('wide',(1920,1080))]:
+        pg.goto(U+'#/brief'+('' if sz=='long' else '?size='+sz),wait_until='networkidle'); pg.wait_for_timeout(500)
+        src=pg.get_attribute('#cardImg','src') or ''
+        im=Image.open(io.BytesIO(base64.b64decode(src.split(',',1)[1]))) if src.startswith('data:image/png') else None
+        ok(im is not None and (im.size==wh if wh else im.size[0]==1080 and im.size[1]>1440),f'分享卡片 {sz} {im.size if im else "未生成"}')
+    pg.goto(U+'#/brief',wait_until='networkidle'); pg.wait_for_timeout(400)
+    with pg.expect_download() as dl: pg.click('[data-act="cardsave"]')
+    ok(dl.value.suggested_filename.endswith('.png'),'保存卡片图片：'+dl.value.suggested_filename)
+    pg.click('[data-act="caption"]'); pg.wait_for_timeout(300); cap=pg.evaluate("navigator.clipboard.readText()"); ok('AI 赛事日报' in cap and ('截止' in cap) and ('上新' in cap),'复制配文（含截止与上新）')
+    pg.click('[data-card="theme:dark"]'); pg.wait_for_timeout(400); ok('theme=dark' in pg.url,'卡片切换深色')
+    # v7：时间线
+    pg.goto(U+'#/timeline',wait_until='networkidle'); pg.wait_for_timeout(400); nt=pg.locator('.tl-r').count(); ok(nt>20,f'时间线全景 {nt} 行')
+    ok(pg.locator('.tk.today').count()==1 and pg.locator('.tl-now').count()==1,'时间线今天标线')
+    pg.click('[data-tl="grade:SA"]'); pg.wait_for_timeout(300); ns=pg.locator('.tl-r').count(); ok(0<ns<nt,f'时间线 S+A 筛选 {nt}→{ns}')
+    pg.click('[data-tl="zoom:all"]'); pg.wait_for_timeout(300); ok('zoom=all' in pg.url,'时间线范围切换')
+    pg.fill('#tlq','AI'); pg.wait_for_timeout(600); ok(pg.evaluate("document.activeElement.id")=='tlq','时间线搜索不丢焦点')
+    pg.locator('.tl-r').first.click(); pg.wait_for_timeout(300); ok(pg.locator('#drawer.on').count()==1,'时间线点开详情'); pg.keyboard.press('Escape'); pg.wait_for_timeout(200)
+    pg.goto(U+'#/timeline?mode=feed',wait_until='networkidle'); pg.wait_for_timeout(400); ok(pg.locator('#fd-today').count()==1 and pg.locator('.fd-i').count()>5,f'每日动态 {pg.locator(".fd-i").count()} 条事件')
+    pg.goto(U+'#/contests?new=7&sort=new',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('[data-f="new"].on').count()==1,'全部赛事：近 7 天上新筛选')
     # 日历 / 洞察 / 简报 / 电影节 / 关于
     pg.goto(U+'#/calendar',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.cell').count()>=28,'日历月视图')
     m0=pg.inner_text('.cal-head h1'); pg.click('[data-cal="1"]'); pg.wait_for_timeout(300); ok(pg.inner_text('.cal-head h1')!=m0,'日历翻月')
     with pg.expect_download() as d: pg.click('[data-act="ics"]')
     ok(d.value.suggested_filename.endswith('.ics'),'导出日历文件')
     pg.goto(U+'#/insights',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.vb').count()==8 and pg.locator('.donut').count()==1,'数据洞察图表')
-    pg.goto(U+'#/brief',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.p-sec').count()==5,'简报 5 个分栏')
+    pg.goto(U+'#/brief',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.p-col').count()==2 and pg.locator('.p-sec').count()>=3,'简报：截止 / 上新两栏 + 分栏')
     pg.context.grant_permissions(['clipboard-read','clipboard-write']); pg.click('[data-act="copybrief"]'); pg.wait_for_timeout(300); ok('AI 赛事日报' in pg.evaluate("navigator.clipboard.readText()"),'复制简报')
     pg.goto(U+'#/festivals',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.fest').count()==24,'24 个电影节')
     pg.goto(U+'#/about',wait_until='networkidle'); pg.wait_for_timeout(300); ok(pg.locator('.gcard').count()==4,'分级说明')
-    for h in ['contests','calendar','insights','brief','festivals','about']:
+    for h in ['contests','timeline','calendar','insights','brief','festivals','about']:
         pg.goto(U+'#/'+h,wait_until='networkidle'); pg.wait_for_timeout(200)
         if re.search(r'我的影片|投递看板|作品库|信源|数据来源|toujiang|aitop100', pg.inner_text('body')): ok(False,f'{h} 出现不该有的字样')
     ok(True,'各页无作品库/信源/数据来源字样')
@@ -83,7 +106,7 @@ with sync_playwright() as p:
     pg.tap('.f-done'); pg.wait_for_timeout(500); ok(not pg.is_visible('.f-body'),'点「查看结果」收起筛选')
     pg.locator('#rows > *').first.tap(timeout=5000); pg.wait_for_timeout(700); ok(pg.is_visible('#drawer.on'),'手机打开详情')
     pg.tap('#drawer [data-act="closeDrawer"]'); pg.wait_for_timeout(600); ok(not pg.is_visible('#drawer.on'),'手机关闭详情')
-    for h in ['home','contests','calendar','insights','brief','festivals','about']:
+    for h in ['home','contests','timeline','timeline?mode=feed','calendar','insights','brief','festivals','about']:
         pg.goto(U+'#/'+h,wait_until='networkidle'); pg.wait_for_timeout(250)
         ok(pg.evaluate("document.documentElement.scrollWidth<=innerWidth+1"),f'手机 {h} 无横向溢出')
     ctx.close(); b.close()
