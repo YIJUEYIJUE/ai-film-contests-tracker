@@ -745,13 +745,17 @@ a.lchip:hover{border-color:var(--accent);background:var(--accent-softer)}
 .pi .dt i{display:block;font-style:normal;font-size:10.5px;color:var(--ink-4);margin-top:1px}
 .pi .dt.u-red b,.pi .dt.u-red i{color:var(--hot)}.pi .dt.nw b,.pi .dt.nw i{color:var(--accent-ink)}
 .pi .ss .fee.u-red{color:var(--hot);font-weight:600}.pi .ss .fee.u-amber{color:var(--amber-ink);font-weight:600}
-.p-chg{display:flex;flex-direction:column;gap:4px}
-.p-chg a{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px;border-radius:var(--r-sm);background:var(--bg-sunk);cursor:pointer;font-size:13px}
+.p-chg{display:flex;flex-direction:column;gap:6px}
+.p-chg-hint{margin:0 0 8px;font-size:12.5px;line-height:1.6;color:var(--muted)}
+.p-chg-i{background:var(--bg-sunk);border-radius:var(--r-sm);padding:8px 10px}
+.p-chg a.row{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;cursor:pointer;font-size:13px}
+.p-chg .why{display:block;margin-top:5px;padding-left:34px;font-size:12px;line-height:1.6;color:var(--muted);font-style:normal}
 .p-chg span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.p-chg b{font-weight:600;color:var(--accent-ink);font-variant-numeric:tabular-nums}
 /* 详情：收录与调整记录 */
 .dr-rec{display:flex;flex-direction:column;gap:6px;margin:-4px 0 18px;font-size:12.5px;color:var(--ink-3)}
 .dr-rec span{display:flex;align-items:center;gap:6px}.dr-rec svg{width:14px;height:14px;color:var(--ink-4)}
 .dr-rec .tag{margin-left:2px}
+.dr-why{margin:-12px 0 18px;padding:10px 12px;border-radius:var(--r-sm);background:var(--bg-sunk);font-size:12.5px;line-height:1.65;color:var(--ink-3)}
 @media (max-width:1180px){.share{grid-template-columns:minmax(0,1fr) 300px}}
 @media (max-width:860px){
   .duo{grid-template-columns:minmax(0,1fr);gap:10px}
