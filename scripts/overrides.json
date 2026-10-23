@@ -445,6 +445,10 @@
   "reczz28PlOjQHaP3": {
    "text": "官方口径只到「10—11 月为创作征集期」，无具体截稿日",
    "label": "征集期待定"
+  },
+  "recvtIfhUxptdr": {
+   "text": "wix 官网早 404；官网/投递所填 Festhome f/10007 实测 302 跳首页（页面已不存在）；站内只剩 2026 届旧公告（Deadline 2026-06-12），2027 届无任何档期",
+   "label": "下届未开放"
   }
  },
  "cycle_status": {
