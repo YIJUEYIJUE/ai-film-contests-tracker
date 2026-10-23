@@ -67,7 +67,7 @@ const urg = l => l == null || l < 0 ? "" : l <= 3 ? "u-red" : l <= 7 ? "u-amber"
 const G = { S: 0, A: 1, B: 2, C: 3 };
 const GN = { S: "顶级", A: "优先投", B: "值得投", C: "按需投" };
 const GCOL = () => { const cs = getComputedStyle(document.documentElement); return { S: cs.getPropertyValue("--gS").trim(), A: cs.getPropertyValue("--gA").trim(), B: cs.getPropertyValue("--gB").trim(), C: cs.getPropertyValue("--gC").trim() }; };
-const isOpen = c => c.status !== "closed" && (daysLeft(c) == null || daysLeft(c) >= 0);
+const isOpen = c => c.status !== "closed" && c.cycle !== "ended" && (daysLeft(c) == null || daysLeft(c) >= 0);
 const isFree = c => /^(免费|0元|￥0|¥0)/.test(c.fee);
 const NOCASH = /^(无现金|非现金|无固定现金|非奖金制|官方未公布|未公布|待核实|积分非现金|荣誉|数字桂冠|无（|无$)/;
 const hasCash = c => !NOCASH.test(c.prize) && !/无现金|非现金|不设现金/.test(c.prize) && /[¥￥$€£₹]|\d\s*万|\d\s*元|美元|澳元|港元|现金/.test(c.prize);
@@ -98,6 +98,8 @@ const hay = c => `${c.name} ${c.organizer} ${c.region} ${c.category} ${c.desc} $
 const byDl = (a, b) => (daysLeft(a) ?? 1e4) - (daysLeft(b) ?? 1e4) || G[a.grade] - G[b.grade];
 const live = () => C.filter(isOpen);
 const STATE = { open: "征集中", pending: "截止待公布", soon: "即将开放", closed: "已截止" };
+// cycle：ended＝本届已结束、下届未公布（不可投，默认不显示）；rolling＝常年滚动随时可投
+const stateText = c => c.cycle === "ended" ? "本届已结束" : c.cycle === "rolling" ? "常年开放" : (c.status === "pending" && c.changeLabel ? c.changeLabel : (STATE[c.status] || ""));
 
 /* ═════════ 本地偏好（只存主题、视图、收藏） ═════════ */
 const KEY = "aicontest.v6";
@@ -130,7 +132,7 @@ function toggleFav(id) {
 const gB = c => `<span class="g g-${c.grade}" title="${c.grade} 级 · ${GN[c.grade]}">${c.grade}</span>`;
 function tags(c, max = 4) {
   const t = [];
-  if (c.status === "pending" || c.status === "soon") t.push(`<span class="tag state">${STATE[c.status]}</span>`);
+  if (c.status === "pending" || c.status === "soon") t.push(`<span class="tag state">${stateText(c)}</span>`);
   if (isNew(c)) t.push(`<span class="tag new">${addedAgo(c) === 0 ? "今日上新" : "上新"}</span>`);
   if (isFree(c)) t.push('<span class="tag free">免费</span>');
   if (hasCash(c)) t.push('<span class="tag cash">现金奖</span>');
@@ -537,13 +539,13 @@ function briefData() {
   return { L, due, dueT, dueK, fresh, freshT, freshK, w7, wk: w7.filter(c => !inDue.has(c.id)),
     mo: rng(8, 30).filter(c => G[c.grade] <= 1),
     fc: L.filter(c => { const l = daysLeft(c); return isFree(c) && hasCash(c) && l != null && l > 7 && l <= 60; }).sort((a, b) => cashCNY(b) - cashCNY(a)).slice(0, 6),
-    moved: C.filter(c => (c.changes || []).some(x => { const d = parseD(x.date); return d && (T0 - d) / 864e5 <= 3 && (T0 - d) >= 0; })).slice(0, 8) };
+    moved: C.filter(c => c.cycle !== "ended" && (c.changes || []).some(x => { const d = parseD(x.date); return x.to && d && (T0 - d) / 864e5 <= 3 && (T0 - d) >= 0; })).slice(0, 8) };
 }
 const dayNo = () => String(Math.floor((T0 - new Date(T0.getFullYear(), 0, 0)) / 864e5)).padStart(3, "0");
 const dueLabel = c => { const l = daysLeft(c); return l == null ? "截止待公布" : l < 0 ? `已截止 · ${md(c.deadline)}` : l === 0 ? "今天截止" : l === 1 ? `明天截止 · ${md(c.deadline)}` : `还剩 ${l} 天 · ${md(c.deadline)}`; };
 const newLabel = (c, short) => { const l = daysLeft(c); const tail = l == null ? "截止待公布" : l === 0 ? "今天截止" : short ? `剩 ${l} 天截止` : `${md(c.deadline)}截止（剩 ${l} 天）`; return `${md(c.added)}上新 · ${tail}`; };
 const prizeShort = c => { const p = String(c.prize || "").replace(/\s+/g, " ").split(/[；;。\n]/)[0]; return cashCNY(c) > 1 ? `${cnyLabel(c).replace("≈ ", "")} · ${p}` : p; };
-const chgLabel = x => `${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}`;
+const chgLabel = (x, alt) => `${x.from ? md(x.from) : "新公布"} → ${x.to ? md(x.to) : (alt || "待公布")}`;
 
 V.brief = () => {
   const b = briefData(), d = T0;
@@ -581,7 +583,7 @@ V.brief = () => {
       <div class="p-duo">${col("due", b.dueT, b.due, "due", "近 7 天没有截止的赛事", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`)}${col("new", b.freshT, b.fresh, "new", "近 7 天没有新开征", `#/contests?new=${b.freshK}&sort=new`)}</div>
       <div class="p-body">
         ${sec("本周还要截止", b.wk, "本周没有其他截止的赛事")}${sec("30 天内的 S / A 级", b.mo, "30 天内没有 S / A 级截止")}${sec("免费且有现金奖 · 时间充裕", b.fc, "暂时没有符合条件的赛事")}
-        ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><p class="p-chg-hint">「→ 待公布」不等于取消：多半是上一届已结束、下一届还没公布，或官方征片页未上线，具体原因写在每条下面。</p><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<div class="p-chg-i"><a class="row" data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x)}</b></a>${c.changeReason ? `<em class="why">${esc(c.changeReason)}</em>` : ""}</div>`; }).join("")}</div></section>` : ""}
+        ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><p class="p-chg-hint">「→ 待公布」不等于取消：多半是上一届已结束、下一届还没公布，或官方征片页未上线，具体原因写在每条下面。</p><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<div class="p-chg-i"><a class="row" data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x, c.changeLabel)}</b></a>${c.changeReason ? `<em class="why">${esc(c.changeReason)}</em>` : ""}</div>`; }).join("")}</div></section>` : ""}
       </div>
       <footer class="p-foot"><span>AI赛事助手 · 数据更新于 ${esc(RAW.snapshot)}</span><span>剩余天数按北京时间计算，截止时间以主办方官网公布的时区为准</span></footer>
     </article></div>`;
@@ -766,7 +768,7 @@ function drawCard({ size = "long", theme = "light" } = {}) {
       const right = `${md(c.deadline)} · 剩 ${daysLeft(c)} 天`; const rw = (ctx.font = f(F.item + 2, 650), ctx.measureText(right).width); ctx.font = f(F.item + 2, 500); const nm = wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0]; ctx.fillText(nm, P + ipad + 36, ry + 34);
       ctx.font = f(F.item + 2, 650); ctx.fillStyle = daysLeft(c) <= 3 ? T.hot : T.ink3; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left"; });
     block(`截止日有调整 · ${b.moved.length} 个`, EX.mv, (c, ry) => { const x = c.changes[c.changes.length - 1]; ctx.font = f(22, 800); ctx.fillStyle = T.g[c.grade]; ctx.fillText(c.grade, P + ipad, ry + 34);
-      const right = chgLabel(x); ctx.font = f(F.item + 2, 650); const rw = ctx.measureText(right).width; ctx.font = f(F.item + 2, 500); ctx.fillStyle = T.ink2; ctx.fillText(wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0], P + ipad + 36, ry + 34);
+      const right = chgLabel(x, c.changeLabel); ctx.font = f(F.item + 2, 650); const rw = ctx.measureText(right).width; ctx.font = f(F.item + 2, 500); ctx.fillStyle = T.ink2; ctx.fillText(wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0], P + ipad + 36, ry + 34);
       ctx.font = f(F.item + 2, 650); ctx.fillStyle = T.acc; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left";
       if (c.changeReason) { ctx.font = f(20, 400); ctx.fillStyle = T.ink3; ctx.fillText(wrapText(ctx, c.changeReason, W - 2 * P - ipad * 2 - 40, 1)[0], P + ipad + 36, ry + 68); } }, c => c.changeReason ? 92 : 52);
     y += 12;
@@ -790,7 +792,7 @@ function briefText(mdMode) {
   const b = briefData(), d = T0;
   const line = (c, mode) => { const st = mode === "new" ? newLabel(c) : dueLabel(c); return mdMode ? `- **${c.name}**（${c.grade} 级）— ${st}；${c.prize}；报名 ${c.fee}${/^https?:/.test(c.submit) ? `；[投递](${c.submit})` : ""}` : `· ${c.name}【${c.grade}】${st}｜${cut(c.prize, 40)}｜报名${cut(c.fee, 16)}`; };
   const sec = (t, a, mode) => a.length ? `\n${mdMode ? "## " : "【"}${t}${mdMode ? "" : "】"}（${a.length}）\n${a.map(c => line(c, mode)).join("\n")}\n` : "";
-  const mv = b.moved.length ? `\n${mdMode ? "## " : "【"}截止日有调整${mdMode ? "" : "】"}\n${b.moved.map(c => `${mdMode ? "- " : "· "}${c.name}：${chgLabel(c.changes[c.changes.length - 1])}`).join("\n")}\n` : "";
+  const mv = b.moved.length ? `\n${mdMode ? "## " : "【"}截止日有调整${mdMode ? "" : "】"}\n${b.moved.map(c => `${mdMode ? "- " : "· "}${c.name}：${chgLabel(c.changes[c.changes.length - 1], c.changeLabel)}`).join("\n")}\n` : "";
   return `${mdMode ? "# " : ""}AI 赛事日报 ${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()}\n在征 ${b.L.length} 个 · ${b.dueT} ${b.due.length} 个 · ${b.freshT} ${b.fresh.length} 个 · 一周内截止 ${b.w7.length} 个\n` + sec(b.dueT, b.due, "due") + sec(b.freshT, b.fresh, "new") + sec("本周还要截止", b.wk, "due") + sec("30 天内 S/A 级", b.mo, "due") + sec("免费且有现金奖", b.fc, "due") + mv + `\n截止日以主办方官网为准 · ${RAW.siteUrl || location.href.split("#")[0]}`;
 }
 
@@ -892,7 +894,7 @@ function fillDrawer(id) {
   const sub = safeUrl(c.submit), mail = /^mailto:/.test(sub || "");
   $("#drawer").innerHTML = `
   <div class="dr-head">
-    <div class="dr-bar">${gB(c)}<span style="font-size:12.5px;color:var(--ink-3);font-weight:550">${GN[c.grade]} · ${STATE[c.status]}</span>${isFav(id) ? '<span class="tag new">已收藏</span>' : ""}<span class="sp"></span>
+    <div class="dr-bar">${gB(c)}<span style="font-size:12.5px;color:var(--ink-3);font-weight:550">${GN[c.grade]} · ${stateText(c)}</span>${isFav(id) ? '<span class="tag new">已收藏</span>' : ""}<span class="sp"></span>
       ${idx >= 0 ? `<div class="dr-nav"><button data-nav="-1" ${idx <= 0 ? "disabled" : ""} aria-label="上一个">${I.up}</button><span class="num">${idx + 1} / ${listCtx.length}</span><button data-nav="1" ${idx >= listCtx.length - 1 ? "disabled" : ""} aria-label="下一个">${I.down}</button></div>` : ""}
       <button class="icon-btn" data-act="closeDrawer" aria-label="关闭">${I.x}</button></div>
     <h2>${esc(c.name)}</h2>
@@ -910,7 +912,7 @@ function fillDrawer(id) {
       <div class="fact"><dt>${I.pin}地区</dt><dd>${esc(c.region || "未注明")}</dd></div>
     </dl>
     ${safeUrl(c.site) || sub ? `<div class="links">${linkChip("官网", c.site, "globe")}${sub && sub !== safeUrl(c.site) ? linkChip(mail ? "邮箱投稿" : "投递入口", sub, "ext") : ""}</div>` : `<div class="vbox warn"><span class="vi">${I.alert}</span><div><b>暂无官方链接</b><span>主办方暂未公布官网或投递入口，请关注后续公告。</span></div></div>`}
-    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}</span>`).join("")}</div>${c.changeReason ? `<p class="dr-why">调整原因：${esc(c.changeReason)}</p>` : ""}` : ""}
+    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${chgLabel(x, c.changeLabel)}</span>`).join("")}</div>${c.changeReason ? `<p class="dr-why">调整原因：${esc(c.changeReason)}</p>` : ""}` : ""}
     ${ms.length > 1 ? `<div class="dr-h">时间节点</div><ul class="tl-list">${(() => { const nx = ms.findIndex(x => x.d >= T0); return ms.map((x, i) => `<li class="${x.d < T0 ? "done" : i === nx ? "next" : ""}"><i></i><b>${ymd(x.d)}</b><span>${esc(x.label)}</span></li>`).join(""); })()}</ul>` : ""}
     ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${esc(c.desc)}</div>` : ""}
     ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${esc(c.notes)}</div>` : ""}
