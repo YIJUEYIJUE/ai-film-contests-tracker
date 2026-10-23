@@ -77,7 +77,10 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   go("#/home"); await wait(80);
   ok($$("#view .duo-c").length === 2, "首页今日截止 / 上新双栏：" + $$("#view .duo-h b").map(e => e.textContent).join(" / "));
   go("#/brief"); await wait(120);
-  ok($("#cardImg") && /^data:image\/png/.test($("#cardImg").src || ""), "分享卡片已生成");
+  ok($("#cardImg") && !/^data:image/.test($("#cardImg").src || ""), "进入简报页不自动生成图片");
+  $('[data-act="cardgen"]').click(); await wait(160);
+  ok($("#cardImg") && /^data:image\/png/.test($("#cardImg").src || ""), "点「生成图片」后卡片已生成");
+  { const mv = $$("#view .p-chg .row").length; ok(mv === 0 || $$("#view .p-chg .why").length === mv, `截止日调整条目均带原因 ${mv} 条`); }
   ok($$("#view .p-col").length === 2, "简报文字版左右两栏");
   for (const sz of ["tall", "wide"]) { go("#/brief?size=" + sz); await wait(100); ok($(`#view [data-card="size:${sz}"].on`), "卡片尺寸切换 " + sz); }
   go("#/brief?theme=dark"); await wait(100); ok($('#view [data-card="theme:dark"].on'), "卡片深色");
@@ -115,7 +118,7 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   ok(!/我的影片|投递看板|作品库/.test(d.documentElement.innerHTML), "无旧版残留模块");
   // v7 回归：原型键、脏参数、坏存储、待公布标题
   go("#/contests?sort=__proto__&new=-3"); await wait(80); ok(!/undefined/.test($("#view").textContent), "排序参数为 __proto__ 时不显示 undefined");
-  go("#/brief?size=__proto__&theme=constructor"); await wait(120); ok($("#cardImg") && /^data:image/.test($("#cardImg").src || ""), "卡片参数为原型键时仍能生成");
+  go("#/brief?size=__proto__&theme=constructor"); await wait(120); $('[data-act="cardgen"]').click(); await wait(160); ok($("#cardImg") && /^data:image/.test($("#cardImg").src || ""), "卡片参数为原型键时仍能生成");
   go("#/brief"); await wait(60);
   ok(!/还剩 null 天|NaN/.test($("#view").textContent), "简报无「还剩 null 天」");
   const allPend = A.contests.filter(c => !c.deadline).length; ok(allPend > 0 && !/剩余天数 0 天/.test($("#view").textContent), `待公布 ${allPend} 个不显示剩余天数`);
