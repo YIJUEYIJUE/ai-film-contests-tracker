@@ -559,7 +559,7 @@ V.brief = () => {
   <div class="brief">
     <div class="page-h"><div class="kicker">今日简报</div><h1>每日赛事日报 · 一键生成分享卡片</h1><p class="lede">左边是${b.dueT}，右边是${b.freshT}。生成图片直接发朋友圈、群聊或公众号；也能复制成文字。</p></div>
     <section class="share">
-      <div class="share-pv"><img id="cardImg" alt="分享卡片预览" class="${size}"><div class="share-ld" id="cardLd">正在生成…</div></div>
+      <div class="share-pv"><img id="cardImg" alt="分享卡片预览" class="${size}" style="display:none"><div class="share-ld" id="cardLd">选好尺寸与配色后，点右侧「生成图片」。<br><small>不点就不生成，避免每次进页面都跑一遍 Canvas。</small></div></div>
       <div class="share-op">
         <div class="op-g"><label>尺寸</label><div class="seg">${Object.entries(CARD_SIZES).map(([k, v]) => seg("size", k, size, v.n)).join("")}</div><small>${CARD_SIZES[size].tip}</small></div>
         <div class="op-g"><label>配色</label><div class="seg">${seg("theme", "light", theme, "浅色")}${seg("theme", "dark", theme, "深色")}</div></div>
@@ -568,7 +568,7 @@ V.brief = () => {
           <li><i class="d-acc"></i>${b.freshT} <b class="num">${b.fresh.length}</b> 个${b.freshK !== "1" ? "<small>（今天没有新开征，自动放宽）</small>" : ""}</li>
           <li><i></i>顶部：在征 ${b.L.length} · 7 天内截止 ${b.w7.length}</li>
           ${size === "long" ? `<li><i></i>底部：本周还要截止 ${b.wk.length} · 截止日调整 ${b.moved.length}</li>` : ""}</ul></div>
-        <div class="op-btns"><button class="btn pri" data-act="cardsave">${I.down}保存图片</button><button class="btn" data-act="cardcopy">${I.copy}复制图片</button><button class="btn" data-act="caption">${I.copy}复制配文</button></div>
+        <div class="op-btns"><button class="btn pri" data-act="cardgen">${I.edit || ""}生成图片</button><button class="btn" data-act="cardsave">${I.down}保存图片</button><button class="btn" data-act="cardcopy">${I.copy}复制图片</button><button class="btn" data-act="caption">${I.copy}复制配文</button></div>
         <p class="op-tip">手机上也可以长按左侧图片保存。图片里每栏放不下的条目会提示「还有 N 个」，引导到网站查看。</p>
       </div>
     </section>
@@ -581,28 +581,64 @@ V.brief = () => {
       <div class="p-duo">${col("due", b.dueT, b.due, "due", "近 7 天没有截止的赛事", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`)}${col("new", b.freshT, b.fresh, "new", "近 7 天没有新开征", `#/contests?new=${b.freshK}&sort=new`)}</div>
       <div class="p-body">
         ${sec("本周还要截止", b.wk, "本周没有其他截止的赛事")}${sec("30 天内的 S / A 级", b.mo, "30 天内没有 S / A 级截止")}${sec("免费且有现金奖 · 时间充裕", b.fc, "暂时没有符合条件的赛事")}
-        ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<a data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x)}</b></a>`; }).join("")}</div></section>` : ""}
+        ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><p class="p-chg-hint">「→ 待公布」不等于取消：多半是上一届已结束、下一届还没公布，或官方征片页未上线，具体原因写在每条下面。</p><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<div class="p-chg-i"><a class="row" data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x)}</b></a>${c.changeReason ? `<em class="why">${esc(c.changeReason)}</em>` : ""}</div>`; }).join("")}</div></section>` : ""}
       </div>
       <footer class="p-foot"><span>AI赛事助手 · 数据更新于 ${esc(RAW.snapshot)}</span><span>剩余天数按北京时间计算，截止时间以主办方官网公布的时区为准</span></footer>
     </article></div>`;
 };
-V.brief.after = () => { cardRender(); };
+V.brief.after = () => { cardCanvas = null; };
 let cardCanvas = null;
 function cardOpts() { return { size: own(CARD_SIZES, R.params.size) ? R.params.size : "long", theme: R.params.theme === "dark" ? "dark" : "light" }; }
 function cardRender() {
-  const img = $("#cardImg"); if (!img) return;
-  try { cardCanvas = drawCard(cardOpts()); img.src = cardCanvas.toDataURL("image/png"); $("#cardLd")?.remove(); }
-  catch (e) { const ld = $("#cardLd"); if (ld) ld.textContent = "这个浏览器暂不支持生成图片，可以用「复制配文」"; }
+  const img = $("#cardImg"); if (!img) return null;
+  const ld = $("#cardLd");
+  try {
+    cardCanvas = drawCard(cardOpts());
+    img.src = cardCanvas.toDataURL("image/png");
+    img.style.display = "block";
+    if (ld) ld.style.display = "none";
+    return cardCanvas;
+  } catch (e) {
+    cardCanvas = null;
+    if (ld) { ld.style.display = "block"; ld.textContent = "这个浏览器没能生成图片，可以改用「复制文字」把内容带走"; }
+    return null;
+  }
 }
 const cardName = () => { const o = cardOpts(); return `AI赛事日报-${ymd(T0)}-${CARD_SIZES[o.size].n.replace(/\s|:/g, "")}.png`; };
+// toBlob 在部分浏览器/隐私模式下会静默失败，这里留一条 toDataURL 的兜底路径，导出必须能成。
+function cardBlob(cb) {
+  if (!cardCanvas) { cb(null); return; }
+  let settled = false;
+  const fallback = () => {
+    if (settled) return; settled = true;
+    try {
+      const du = cardCanvas.toDataURL("image/png"), bin = atob(du.split(",")[1]);
+      const u8 = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+      cb(new Blob([u8], { type: "image/png" }));
+    } catch (e) { cb(null); }
+  };
+  try { cardCanvas.toBlob(b => b ? (settled = true, cb(b)) : fallback(), "image/png"); }
+  catch (e) { fallback(); }
+}
 function cardSave() {
-  if (!cardCanvas) return toast("图片还没生成好");
-  cardCanvas.toBlob(bl => { const u = URL.createObjectURL(bl); const a = Object.assign(document.createElement("a"), { href: u, download: cardName() }); document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 2e3); toast("图片已保存"); }, "image/png");
+  if (!cardCanvas && !cardRender()) return toast("图片还没生成，请先点「生成图片」");
+  cardBlob(bl => {
+    if (!bl) return toast("导出失败，请长按左侧图片保存");
+    const u = URL.createObjectURL(bl);
+    const a = Object.assign(document.createElement("a"), { href: u, download: cardName(), rel: "noopener" });
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(u), 2e3);
+    toast("图片已保存");
+  });
 }
 function cardCopy() {
-  if (!cardCanvas) return toast("图片还没生成好");
+  if (!cardCanvas && !cardRender()) return toast("图片还没生成，请先点「生成图片」");
   if (!window.ClipboardItem || !navigator.clipboard?.write) return toast("这个浏览器不支持复制图片，请用「保存图片」");
-  cardCanvas.toBlob(bl => navigator.clipboard.write([new ClipboardItem({ "image/png": bl })]).then(() => toast("图片已复制，可以直接粘贴")).catch(() => toast("复制失败，请用「保存图片」")), "image/png");
+  cardBlob(bl => {
+    if (!bl) return toast("复制失败，请用「保存图片」");
+    navigator.clipboard.write([new ClipboardItem({ "image/png": bl })]).then(() => toast("图片已复制，可以直接粘贴")).catch(() => toast("复制失败，请用「保存图片」"));
+  });
 }
 
 /* —— 分享卡片绘制（纯 Canvas，无第三方依赖） —— */
@@ -649,7 +685,7 @@ function drawCard({ size = "long", theme = "light" } = {}) {
   if (sumH(A) + 60 < tgt && nextUp.length) { let h = sumH(A) + 54; for (const it of nextUp) { if (h + it.h > tgt) break; filler.push(it); h += it.h; } }
   if (filler.length) { A = [...A, { sep: true, h: 54 }, ...filler]; }
   const shownNextIds = new Set(filler.map(x => x.c.id));
-  const extraFor = () => { if (size !== "long") return { h: 0 }; const wk = b.wk.filter(c => !shownNextIds.has(c.id)).slice(0, 8), mv = b.moved.slice(0, 4); let h = 0; if (wk.length) h += 70 + wk.length * 52 + 16; if (mv.length) h += 70 + mv.length * 52 + 16; return { h: h ? h + 28 : 0, wk, mv }; };
+  const extraFor = () => { if (size !== "long") return { h: 0 }; const wk = b.wk.filter(c => !shownNextIds.has(c.id)).slice(0, 8), mv = b.moved.slice(0, 4); let h = 0; if (wk.length) h += 70 + wk.length * 52 + 16; if (mv.length) h += 70 + mv.reduce((t, c) => t + (c.changeReason ? 92 : 52), 0) + 16; return { h: h ? h + 28 : 0, wk, mv }; };
   const EX = extraFor();
   let H, avail;
   if (size === "long") { const cap = 10; const fa = fit(A.some(x => x.sep) ? A : A.slice(0, cap), 1e9), fb = fit(B.slice(0, cap), 1e9); avail = Math.max(fa.h, fb.h, 150) + 64; H = top + colHead + avail + 12 + EX.h + footH + P - 24; }
@@ -724,14 +760,15 @@ function drawCard({ size = "long", theme = "light" } = {}) {
   y += colH + 28;
   // 长图专属：本周还要截止 / 截止日调整
   if (size === "long" && EX.h) {
-    const block = (title, rows, render) => { if (!rows.length) return; const bh = 70 + rows.length * 52 + 16; rrect(ctx, P, y, W - 2 * P, bh, 24); ctx.fillStyle = T.card; ctx.fill(); ctx.strokeStyle = T.line; ctx.lineWidth = 2; ctx.stroke();
-      ctx.font = f(28, 800); ctx.fillStyle = T.ink; ctx.fillText(title, P + ipad, y + 48); let ry = y + 70; rows.forEach(r => { render(r, ry); ry += 52; }); y += bh + 16; };
+    const block = (title, rows, render, rowH = () => 52) => { if (!rows.length) return; const bh = 70 + rows.reduce((t, r) => t + rowH(r), 0) + 16; rrect(ctx, P, y, W - 2 * P, bh, 24); ctx.fillStyle = T.card; ctx.fill(); ctx.strokeStyle = T.line; ctx.lineWidth = 2; ctx.stroke();
+      ctx.font = f(28, 800); ctx.fillStyle = T.ink; ctx.fillText(title, P + ipad, y + 48); let ry = y + 70; rows.forEach(r => { render(r, ry); ry += rowH(r); }); y += bh + 16; };
     block(`本周还要截止 · ${b.wk.length} 个`, EX.wk, (c, ry) => { ctx.font = f(22, 800); ctx.fillStyle = T.g[c.grade]; ctx.fillText(c.grade, P + ipad, ry + 34); ctx.font = f(F.item + 2, 500); ctx.fillStyle = T.ink2;
       const right = `${md(c.deadline)} · 剩 ${daysLeft(c)} 天`; const rw = (ctx.font = f(F.item + 2, 650), ctx.measureText(right).width); ctx.font = f(F.item + 2, 500); const nm = wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0]; ctx.fillText(nm, P + ipad + 36, ry + 34);
       ctx.font = f(F.item + 2, 650); ctx.fillStyle = daysLeft(c) <= 3 ? T.hot : T.ink3; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left"; });
     block(`截止日有调整 · ${b.moved.length} 个`, EX.mv, (c, ry) => { const x = c.changes[c.changes.length - 1]; ctx.font = f(22, 800); ctx.fillStyle = T.g[c.grade]; ctx.fillText(c.grade, P + ipad, ry + 34);
       const right = chgLabel(x); ctx.font = f(F.item + 2, 650); const rw = ctx.measureText(right).width; ctx.font = f(F.item + 2, 500); ctx.fillStyle = T.ink2; ctx.fillText(wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0], P + ipad + 36, ry + 34);
-      ctx.font = f(F.item + 2, 650); ctx.fillStyle = T.acc; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left"; });
+      ctx.font = f(F.item + 2, 650); ctx.fillStyle = T.acc; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left";
+      if (c.changeReason) { ctx.font = f(20, 400); ctx.fillStyle = T.ink3; ctx.fillText(wrapText(ctx, c.changeReason, W - 2 * P - ipad * 2 - 40, 1)[0], P + ipad + 36, ry + 68); } }, c => c.changeReason ? 92 : 52);
     y += 12;
   }
   // 页脚
@@ -873,7 +910,7 @@ function fillDrawer(id) {
       <div class="fact"><dt>${I.pin}地区</dt><dd>${esc(c.region || "未注明")}</dd></div>
     </dl>
     ${safeUrl(c.site) || sub ? `<div class="links">${linkChip("官网", c.site, "globe")}${sub && sub !== safeUrl(c.site) ? linkChip(mail ? "邮箱投稿" : "投递入口", sub, "ext") : ""}</div>` : `<div class="vbox warn"><span class="vi">${I.alert}</span><div><b>暂无官方链接</b><span>主办方暂未公布官网或投递入口，请关注后续公告。</span></div></div>`}
-    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}</span>`).join("")}</div>` : ""}
+    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${x.from ? md(x.from) : "待公布"} → ${x.to ? md(x.to) : "待公布"}</span>`).join("")}</div>${c.changeReason ? `<p class="dr-why">调整原因：${esc(c.changeReason)}</p>` : ""}` : ""}
     ${ms.length > 1 ? `<div class="dr-h">时间节点</div><ul class="tl-list">${(() => { const nx = ms.findIndex(x => x.d >= T0); return ms.map((x, i) => `<li class="${x.d < T0 ? "done" : i === nx ? "next" : ""}"><i></i><b>${ymd(x.d)}</b><span>${esc(x.label)}</span></li>`).join(""); })()}</ul>` : ""}
     ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${esc(c.desc)}</div>` : ""}
     ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${esc(c.notes)}</div>` : ""}
@@ -949,6 +986,7 @@ document.addEventListener("click", e => {
     if (a === "copybrief") return copy(briefText(false), "已复制，可以直接发群");
     if (a === "copymd") return copy(briefText(true), "已复制 Markdown");
     if (a === "print") return print();
+    if (a === "cardgen") return cardRender() ? toast("图片已生成，可保存或复制") : toast("生成失败，换一个尺寸试试");
     if (a === "cardsave") return cardSave();
     if (a === "cardcopy") return cardCopy();
     if (a === "caption") return copy(shareCaption(), "配文已复制，发图时一起贴上");
