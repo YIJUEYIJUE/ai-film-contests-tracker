@@ -1,5 +1,5 @@
 {
- "$comment": "数据修正层：build.py 会把 fix 覆盖到原始记录，verify 显示为核实状态。按 record_id 维护。",
+ "$comment": "数据修正层：build.py 把 records[rid].fix 覆盖到原始记录，verify 显示核实状态；change_reasons[rid] 用于解释「截止日为什么从有日期变成待公布」，前端在调整条目上直接展示。",
  "updated": "2026-09-29",
  "records": {
   "recvs8rH4WHCdI": {
@@ -377,5 +377,20 @@
     "note": "长期活动，未公布截止日"
    }
   }
+ },
+ "change_reasons": {
+  "recvs8rH4WLBKp": "10-16 曾在 FilmFreeway 官方页读到 12-31；10-21 与 10-24 两次复核都读不到档期区块（该区块在本环境不渲染，无法判断是官方撤下还是抓取失败）→ 为避免给出未经确认的日期，先列待公布，投前务必以 FF 页当前显示为准",
+  "recvsoUlbA6QlX": "官网 aifilmfest.ae 是 JS 空壳、抓不到任何正文，FilmFreeway 页显示首届已关闭，aifilmcontests 也写明「2027 征片页可读前不推荐」→ 2027-01-21 找不到官方出处，先撤下",
+  "recvtfH7oajt4R": "官网 dreamfield.top 已易主为无关站点（Dawnload），种梦计划活动页不存在，报名入口没有了 → 11-26 是原赛程末段，现无可用入口，先撤下",
+  "recvtfIGJM4hhb": "本影展按季办，Season 02 已于 10-18 在 East Harlem 放映完毕；原 2027-04-04 在官网查无出处，Season 03 档期未公布",
+  "recvtDiykK3uZg": "官方赛事页还没有 2026 假日赛（只列历年已结束的），12-06 来自第三方预告、其正文自承未经官方确认；开放日过去后官方仍未上线",
+  "recvtDiykKANpj": "官网 filmawards.ai 的 MUMBAI 站仍标 Soon（未开放），FilmFreeway 投递页实测 404；12-31 只有两家同源转载，官网从未公布",
+  "recvtDiykKWbDG": "官网只剩 2026 首届档案（截止 2026-05-17，已结束），全页无 2027 征片页；两次独立核实结论一致",
+  "recvtIfhUxT7ot": "第 52 届 9-15 截止、10-25 已闭幕；12-11 无官方依据。第 53 届档期尚未公布",
+  "recvwdOjSlhvYz": "可灵官方页明确没有投稿截止日（常年滚动招募，申报后 21 个工作日内回复）；12-31 是第三方按年度窗口填的，不是官方截点",
+  "recvtIfhUxY6cl": "Festhome 官方页 Extended 档是 13 Nov，11-20 是原常规档 → 按官方延后档改为 11-13",
+  "reczz28MYyLkDrAH": "官网首页 / 规则页 / Timeline 三处一致为 11-15；10-25 来自聚合站，差 21 天",
+  "reczz28NIVALahqF": "官方简章截稿 12-20 17:00，原填 12-21 晚了一天",
+  "reczz28Pl6HrPHkF": "FilmFreeway 的 Deadlines 块 Final 档为 11-10，此前只读正文、漏了整段档期"
  }
 }
