@@ -280,6 +280,8 @@ def main():
     # 截止日调整的原因说明：changes 只记了 from→to，读者看不出「为什么从有日期变成待公布」。
     # 由 overrides.change_reasons 按 record_id 提供，build 时贴到每条 change 上。
     change_reasons = _ovj.get("change_reasons", {})
+    # 赛事周期状态：ended＝本届已结束/下届未公布（默认不展示），rolling＝常年滚动随时可投
+    cycle_status = _ovj.get("cycle_status", {})
     today = dt.datetime.now(TZ).date()
     snap = s(craw.get("snapshot_date")) or today.isoformat()
     raw = craw.get("records") or []
@@ -292,8 +294,17 @@ def main():
         r["tracked"] = first.get(r["id"])          # 内部保留：入表日期，供审计用，不参与前端展示
         r["added"] = r.get("opened") or None       # 对外：开征日；没有征片开始的赛事留空，不进上新
         r["changes"] = changes.get(r["id"], [])[-3:]
-        if change_reasons.get(r["id"]):
-            r["changeReason"] = change_reasons[r["id"]]
+        _cr = change_reasons.get(r["id"])
+        if _cr:
+            # 兼容两种写法：纯字符串（只有原因），或 {text, label}（label 用来替代「待公布」三个字）
+            if isinstance(_cr, str):
+                r["changeReason"] = _cr
+            else:
+                r["changeReason"] = _cr.get("text") or ""
+                if _cr.get("label"):
+                    r["changeLabel"] = _cr["label"]
+        if cycle_status.get(r["id"]):
+            r["cycle"] = cycle_status[r["id"]]
     data = {"snapshot": snap, "built": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "trackedSince": since,
             "siteUrl": SITE_URL or "https://yijueyijue.github.io/ai-film-contests-tracker",
             "contests": recs, "festivals": festivals(fraw.get("records") or [])}
