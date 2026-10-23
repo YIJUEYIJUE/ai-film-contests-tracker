@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-24",
- "built": "2026-10-24 00:53",
+ "built": "2026-10-24 01:08",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -272,7 +272,8 @@
      "from": "2026-12-31",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "10-16 曾在 FilmFreeway 官方页读到 12-31；10-21 与 10-24 两次复核都读不到档期区块（该区块在本环境不渲染，无法判断是官方撤下还是抓取失败）→ 为避免给出未经确认的日期，先列待公布，投前务必以 FF 页当前显示为准"
   },
   {
    "id": "recvs8rH4WUeSB",
@@ -518,7 +519,8 @@
      "from": "2027-01-21",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "官网 aifilmfest.ae 是 JS 空壳、抓不到任何正文，FilmFreeway 页显示首届已关闭，aifilmcontests 也写明「2027 征片页可读前不推荐」→ 2027-01-21 找不到官方出处，先撤下"
   },
   {
    "id": "recvsoUlbAWwLK",
@@ -812,7 +814,8 @@
      "from": "2026-11-26",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "官网 dreamfield.top 已易主为无关站点（Dawnload），种梦计划活动页不存在，报名入口没有了 → 11-26 是原赛程末段，现无可用入口，先撤下"
   },
   {
    "id": "recvtfH7oaEavi",
@@ -962,7 +965,8 @@
      "from": "2027-04-04",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "本影展按季办，Season 02 已于 10-18 在 East Harlem 放映完毕；原 2027-04-04 在官网查无出处，Season 03 档期未公布"
   },
   {
    "id": "recvtDiykKO885",
@@ -1040,7 +1044,8 @@
      "from": "2026-12-06",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "官方赛事页还没有 2026 假日赛（只列历年已结束的），12-06 来自第三方预告、其正文自承未经官方确认；开放日过去后官方仍未上线"
   },
   {
    "id": "recvtDiykKANpj",
@@ -1070,7 +1075,8 @@
      "from": "2026-12-31",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "官网 filmawards.ai 的 MUMBAI 站仍标 Soon（未开放），FilmFreeway 投递页实测 404；12-31 只有两家同源转载，官网从未公布"
   },
   {
    "id": "recvtDiykKK8hH",
@@ -1124,7 +1130,8 @@
      "from": "2027-10-17",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "官网只剩 2026 首届档案（截止 2026-05-17，已结束），全页无 2027 征片页；两次独立核实结论一致"
   },
   {
    "id": "recvtIdz2uOMw3",
@@ -1370,7 +1377,8 @@
      "from": "2026-11-20",
      "to": "2026-11-13"
     }
-   ]
+   ],
+   "changeReason": "Festhome 官方页 Extended 档是 13 Nov，11-20 是原常规档 → 按官方延后档改为 11-13"
   },
   {
    "id": "recvtIfhUxT7ot",
@@ -1384,10 +1392,10 @@
    "topic": "自由投稿",
    "fee": "报名费¥32-120（代投平台价）",
    "prize": "无现金奖（Instagram推介/放映）",
-   "site": "https://badalonaindiefest.es/",
+   "site": "https://www.festivalfilmets.cat",
    "submit": "https://filmfreeway.com/BadalonaIndieFest",
-   "desc": "巴达洛纳电影节不仅是一场电影节，更像是一个围绕影像与创作构建的交流生态\n它的诞生，旨在连接新锐电影创作者与独立写作者，打造一个让剧本与影像并行呈现、彼此对话的空间\n截止日取详情页最晚档期（Final/Extended）",
-   "notes": "⚠️Festhome 官方页（festival/6002）第52届 FILMETS Badalona Film Festival 档期：Call for entries 01 Mar 2026 / Standard 15 May 2026 / **Extended 15 Sep 2026** / Notification 15 Oct 2026 / Festival 15–25 Oct 2026；待官方公布后再补档期与状态；非 AI 专项节，是西班牙加泰罗尼亚老牌短片节（52 年历史、Goya 奖推荐节、巴塞罗那省议会支持）；征片要求中列有 AI Tools 标记但无独立 AI 赛道——按非 AI 专项节处理，不给 A；回 Festhome 官方页确认当届是否已开启征片",
+   "desc": "巴达洛纳电影节不仅是一场电影节，更像是一个围绕影像与创作构建的交流生态\n它的诞生，旨在连接新锐电影创作者与独立写作者，打造一个让剧本与影像并行呈现、彼此对话的空间\n截止日取详情页最晚档期（Final/Extended）\n原填 badalonaindiefest.es 是另一个节（Badalona Indie Fest），与本条所指 FILMETS Badalona Film Festival 不是同一活动\nFILMETS 官网已更正为 festivalfilmets.cat\n第 52 届于 2026-10-15~10-25 举办（官网多篇新闻原文确认，10-25 闭幕颁奖），第 53 届征片档期官网尚未公布",
+   "notes": "⚠️原官网字段 badalonaindiefest.es 实测是「Badalona Indie Fest」——另一个独立短片节，与本条 FILMETS 无关；FILMETS 官方站为 festivalfilmets.cat，已改；⚠️Festhome 官方页（festival/6002）第52届 FILMETS Badalona Film Festival 档期：Call for entries 01 Mar 2026 / Standard 15 May 2026 / **Extended 15 Sep 2026** / Notification 15 Oct 2026 / Festival 15–25 Oct 2026；待官方公布后再补档期与状态；非 AI 专项节，是西班牙加泰罗尼亚老牌短片节（52 年历史、Goya 奖推荐节、巴塞罗那省议会支持）；征片要求中列有 AI Tools 标记但无独立 AI 赛道——按非 AI 专项节处理，不给 A；回 Festhome 官方页确认当届是否已开启征片",
    "mark": "caution",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
@@ -1400,7 +1408,8 @@
      "from": "2026-12-11",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "第 52 届 9-15 截止、10-25 已闭幕；12-11 无官方依据。第 53 届档期尚未公布"
   },
   {
    "id": "recvtIfhUxptdr",
@@ -1718,7 +1727,8 @@
      "from": "2026-12-31",
      "to": null
     }
-   ]
+   ],
+   "changeReason": "可灵官方页明确没有投稿截止日（常年滚动招募，申报后 21 个工作日内回复）；12-31 是第三方按年度窗口填的，不是官方截点"
   },
   {
    "id": "recvwdXwguDMFO",
@@ -2125,7 +2135,8 @@
      "from": "2026-10-25",
      "to": "2026-11-15"
     }
-   ]
+   ],
+   "changeReason": "官网首页 / 规则页 / Timeline 三处一致为 11-15；10-25 来自聚合站，差 21 天"
   },
   {
    "id": "reczz28MYySouynD",
@@ -2743,7 +2754,8 @@
      "from": "2026-12-21",
      "to": "2026-12-20"
     }
-   ]
+   ],
+   "changeReason": "官方简章截稿 12-20 17:00，原填 12-21 晚了一天"
   },
   {
    "id": "reczz28NIVH8rJ2E",
@@ -4195,7 +4207,8 @@
      "from": null,
      "to": "2026-11-10"
     }
-   ]
+   ],
+   "changeReason": "FilmFreeway 的 Deadlines 块 Final 档为 11-10，此前只读正文、漏了整段档期"
   },
   {
    "id": "reczz28PlEKsbSkB",
