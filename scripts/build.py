@@ -275,7 +275,11 @@ def rss(recs, snap):
 def main():
     craw, fraw, hist, missing = load()
     ovf = ROOT / "scripts" / "overrides.json"
-    overrides = json.loads(ovf.read_text("utf-8")).get("records", {}) if ovf.exists() else {}
+    _ovj = json.loads(ovf.read_text("utf-8")) if ovf.exists() else {}
+    overrides = _ovj.get("records", {})
+    # 截止日调整的原因说明：changes 只记了 from→to，读者看不出「为什么从有日期变成待公布」。
+    # 由 overrides.change_reasons 按 record_id 提供，build 时贴到每条 change 上。
+    change_reasons = _ovj.get("change_reasons", {})
     today = dt.datetime.now(TZ).date()
     snap = s(craw.get("snapshot_date")) or today.isoformat()
     raw = craw.get("records") or []
@@ -288,6 +292,8 @@ def main():
         r["tracked"] = first.get(r["id"])          # 内部保留：入表日期，供审计用，不参与前端展示
         r["added"] = r.get("opened") or None       # 对外：开征日；没有征片开始的赛事留空，不进上新
         r["changes"] = changes.get(r["id"], [])[-3:]
+        if change_reasons.get(r["id"]):
+            r["changeReason"] = change_reasons[r["id"]]
     data = {"snapshot": snap, "built": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "trackedSince": since,
             "siteUrl": SITE_URL or "https://yijueyijue.github.io/ai-film-contests-tracker",
             "contests": recs, "festivals": festivals(fraw.get("records") or [])}
