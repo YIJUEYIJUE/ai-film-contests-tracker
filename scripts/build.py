@@ -134,10 +134,11 @@ INTERNAL = re.compile(
     r"来源|源[:：]|入库|收录|聚合|第三方|aifilmcontests|aigcsubmission|toujiang|aitop100\.cn/infomation|"
     r"红线|用户澄清|按模型定|表内|底表|补录|重收|清理|官网填|填入|改为官方|置空|清空|维持|详情页\s*ID|"
     r"非第三方|不违规|投奖", re.I)
-TAG = re.compile(r"【[^】]{0,40}】")
+TAG = re.compile(r"【([^】]{0,40})】")
 
 
 def public_notes(t):
+    """计划备注是内部工作记录：按句过滤，含内部词/纯链接的句子整句不对外。"""
     t = TAG.sub("", s(t))
     keep = []
     for seg in re.split(r"[；;｜|\n。]+", t):
@@ -145,6 +146,23 @@ def public_notes(t):
         if seg and not INTERNAL.search(seg) and not re.fullmatch(r"https?://\S+", seg):
             keep.append(seg)
     return "；".join(dict.fromkeys(keep))
+
+
+def public_desc(t):
+    """赛事说明是面向读者的公开文案：只做两件事——把【小节】转成「小节：」、丢掉纯链接行。
+
+    不再按 INTERNAL 整段丢弃：旧逻辑会把「说明是否使用第三方素材」「素材来源合法」
+    这类**正当要求**误判成内部词而整句删除，导致官网上要求凭空消失（2026-10-25 修）。
+    """
+    t = re.sub(r"(^|\n)\s*来源[:：][^\n]*", r"\1", s(t))          # 旧版"来源：xxx"工作记录行
+    t = TAG.sub(lambda m: m.group(1).strip() + "：", t)           # 【单元与截止】→ 单元与截止：
+    lines = []
+    for ln in t.split("\n"):
+        segs = [x.strip() for x in re.split(r"[；;｜|]+", ln)]
+        segs = [x for x in segs if x and not re.fullmatch(r"https?://\S+", x)]
+        if segs:
+            lines.append("；".join(segs))
+    return "\n".join(lines)
 
 
 def iso_date(v):
@@ -192,12 +210,11 @@ def normalize(raw, overrides, today):
         submit = clean_url(r.get("投递链接"), name, "投递链接") or site
         if not site and not submit:
             warn(f"官网与投递链接都为空：{name}")
-        desc = re.sub(r"(^|\n)\s*来源[:：][^\n]*", "", s(r.get("赛事说明")))
+        desc = public_desc(r.get("赛事说明"))
         v = o.get("verify") or {}
         raw_notes = s(r.get("计划备注"))
         mark = "star" if "⭐" in raw_notes else "caution" if "⚠" in raw_notes else "note" if "🔍" in raw_notes else ""
         notes = public_notes(raw_notes)
-        desc = public_notes(desc).replace("；", "\n") if INTERNAL.search(desc) else desc
         m_op = re.search(r"\d{4}-\d{2}-\d{2}", s(r.get("征片开始")))
         out.append({"id": rid, "name": name, "grade": grade, "deadline": dl or None, "status": st,
                     "organizer": s(r.get("主办方")), "region": s(r.get("地区")), "category": s(r.get("类别")), "topic": topic,
