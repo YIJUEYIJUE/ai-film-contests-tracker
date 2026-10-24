@@ -703,10 +703,8 @@ function drawCard({ size = "long", theme = "light" } = {}) {
   const gr = ctx.createRadialGradient(W, 0, 0, W, 0, W * .9); gr.addColorStop(0, T.accSoft); gr.addColorStop(1, "rgba(0,0,0,0)"); ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H * .5);
   ctx.textBaseline = "alphabetic";
   let y = P;
-  // 品牌行
-  rrect(ctx, P, y, 44, 44, 11); ctx.fillStyle = T.acc; ctx.fill();
-  ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.moveTo(P + 17, y + 13); ctx.lineTo(P + 17, y + 31); ctx.lineTo(P + 32, y + 22); ctx.closePath(); ctx.fill();
-  ctx.fillStyle = T.ink; ctx.font = f(28, 700); ctx.fillText("AI赛事助手", P + 58, y + 32);
+  // 品牌行（纯文字，不绘制图标）
+  ctx.fillStyle = T.ink; ctx.font = f(28, 700); ctx.fillText("AI赛事助手", P, y + 32);
   ctx.font = f(24, 500); ctx.fillStyle = T.ink3; ctx.textAlign = "right"; ctx.fillText(`AI 赛事日报 · No.${dayNo()}`, W - P, y + 31); ctx.textAlign = "left";
   y += 44 + (wide ? 30 : 40);
   // 日期
