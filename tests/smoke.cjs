@@ -29,6 +29,8 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   ok(Array.isArray(A.contests) && A.contests.length > 100, `数据载入：赛事 ${A.contests && A.contests.length}`);
   ok(Array.isArray(A.festivals) && A.festivals.length > 10, `电影节 ${A.festivals && A.festivals.length}`);
   ok(/AI赛事助手/.test(d.title), "标题：" + d.title);
+  ok(!$(".brand-mark") && $(".brand-t b").textContent === "AI赛事助手", "品牌区仅保留文字，无图标");
+  ok($(".m-brand").textContent.trim() === "AI赛事助手", "移动端品牌文字：" + $(".m-brand").textContent.trim());
   ok($$("#tabs a, #tabs button").length >= 7, `侧栏导航 ${$$("#tabs a, #tabs button").length} 项`);
   ok($$("#tabbar a, #tabbar button").length >= 5, `底部快捷导航 ${$$("#tabbar a, #tabbar button").length} 项`);
   ok(/数据更新于/.test($("#snap").textContent), "快照信息：" + $("#snap").textContent.trim());
