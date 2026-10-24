@@ -49,10 +49,7 @@ kbd{font:500 11px/1 var(--mono);padding:3px 5px;border-radius:5px;border:1px sol
 /* ── 骨架 ── */
 .shell{display:grid;grid-template-columns:var(--side) minmax(0,1fr);min-height:100vh}
 .side{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;padding:22px 12px 14px;background:var(--sidebar);border-right:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:10px;height:44px;padding:0 6px;margin-bottom:16px}
-.brand-mark{width:28px;height:28px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none}
-[data-theme=dark] .brand-mark{color:#0d2a2d}
-.brand-mark svg{width:15px;height:15px}
+.brand{display:flex;align-items:center;height:44px;padding:0 6px;margin-bottom:16px}
 .brand-t{display:flex;flex-direction:column;line-height:1.25;min-width:0}
 .brand-t b{font-size:15px;font-weight:650;letter-spacing:.01em}
 .brand-t i{font-style:normal;font-size:11px;color:var(--ink-4)}
@@ -76,7 +73,7 @@ kbd{font:500 11px/1 var(--mono);padding:3px 5px;border-radius:5px;border:1px sol
 .topbar{position:sticky;top:0;z-index:30;height:56px;display:flex;align-items:center;gap:14px;padding:0 28px;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.2) blur(12px);-webkit-backdrop-filter:saturate(1.2) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
 .topbar.scrolled{border-bottom-color:var(--line)}
 .m-brand,.m-only{display:none}
-.m-brand{min-width:40px;min-height:40px;place-items:center}
+.m-brand{min-width:40px;min-height:40px;place-items:center;font-size:15px;font-weight:650;white-space:nowrap}
 .search-btn{flex:0 1 380px;display:flex;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;border-radius:999px;background:var(--field);color:var(--ink-4);font-size:13px;border:1px solid transparent;transition:border-color .15s,background .15s}
 .search-btn:hover{border-color:var(--line-strong)}
 .search-btn span{flex:1;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
