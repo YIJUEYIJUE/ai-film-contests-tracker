@@ -82,6 +82,8 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   ok($("#cardImg") && !/^data:image/.test($("#cardImg").src || ""), "进入简报页不自动生成图片");
   $('[data-act="cardgen"]').click(); await wait(160);
   ok($("#cardImg") && /^data:image\/png/.test($("#cardImg").src || ""), "点「生成图片」后卡片已生成");
+  { const src = fs.readFileSync(path.join(pub, "assets/app.js"), "utf8");
+    ok(/ctx\.fillText\("AI赛事助手", P, y \+ 32\)/.test(src) && !/ctx\.moveTo\(P \+ 17, y \+ 13\)/.test(src), "分享卡片标题不再绘制图标"); }
   { const mv = $$("#view .p-chg .row").length; ok(mv === 0 || $$("#view .p-chg .why").length === mv, `截止日调整条目均带原因 ${mv} 条`);
     ok($$("#view .p-chg .row").every(e => !/→\s*待公布/.test(e.textContent)), "调整区块不再出现「→ 待公布」"); }
   ok(!/本届已结束/.test($("#view").textContent) || A.contests.some(c => c.cycle === "ended"), "已结束标记与数据一致");
