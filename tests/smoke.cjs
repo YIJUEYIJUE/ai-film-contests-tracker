@@ -4,7 +4,7 @@ const fs = require("fs"), path = require("path");
 const pub = path.join(__dirname, "..", "public");
 const html = fs.readFileSync(path.join(pub, "index.html"), "utf8")
   .replace('<script src="data/data.js"></script>', () => `<script>${fs.readFileSync(path.join(pub, "data/data.js"), "utf8")}</script>`)
-  .replace('<script src="assets/app.js"></script>', () => `<script>${fs.readFileSync(path.join(pub, "assets/app.js"), "utf8")}</script>`);
+  .replace(/<script src="assets\/app\.js(?:\?v=\d+)?"[^>]*><\/script>/, () => `<script>${fs.readFileSync(path.join(pub, "assets/app.js"), "utf8")}</script>`);
 const errors = [];
 const dom = new JSDOM(html, { runScripts: "dangerously", url: "http://localhost/#/home", pretendToBeVisual: true,
   beforeParse(w) {
