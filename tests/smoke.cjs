@@ -112,6 +112,14 @@ const byText = (sel, t) => $$(sel).find(e => (e.textContent || "").includes(t));
   ok(dr.classList.contains("on") && dr.textContent.includes(first.name.slice(0, 6)), "深链接打开详情：" + first.name.slice(0, 20));
   d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(60);
 
+  const siteOnly = A.contests.find(c => c.site && c.submit === c.site);
+  if (siteOnly) {
+    go("#/c/" + siteOnly.id); await wait(200);
+    const cta = $("#drawer .dr-foot .btn.pri");
+    ok(cta && /查看官网/.test(cta.textContent), "仅有官网入口时按钮标注：" + (cta ? cta.textContent.trim() : "无"));
+    d.dispatchEvent(new w.KeyboardEvent("keydown", { key: "Escape" })); await wait(60);
+  }
+
   $("#sq").value = "AI";
   $("#sq").dispatchEvent(new w.Event("input")); await wait(320);
   ok($$("#sres > *").length > 0, `命令面板搜索 ${$$("#sres > *").length} 条`);
