@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-26",
- "built": "2026-10-26 02:33",
+ "built": "2026-10-26 02:36",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1875,7 +1875,9 @@
      "from": "2026-11-20",
      "to": "2026-12-20"
     }
-   ]
+   ],
+   "changeReason": "官网挑战页 Timeline 原文「Challenge Opens September 15, 2026 / Submissions Close December 20th, 2026 / Winners January 15th, 2027」；原 11-20 来自 AKOOL 自家未更新的发布博客，故按官网改为 12-20（相差 30 天，按旧值会白压一个月准备时间）",
+   "changeLabel": "核对更正"
   },
   {
    "id": "reczz28HJWV1Ephi",
@@ -2030,7 +2032,9 @@
      "from": "2026-10-20",
      "to": "2026-11-05"
     }
-   ]
+   ],
+   "changeReason": "10-19 曾按三家聚合站把截止改为 10-20，那是延期前旧档期；官网现行原文「Final Extended Deadline on 5 November 2026」→ 改回 11-05",
+   "changeLabel": "核对更正"
   },
   {
    "id": "reczz28HkJ5dS9um",
@@ -2355,7 +2359,9 @@
      "from": null,
      "to": "2027-04-01"
     }
-   ]
+   ],
+   "changeReason": "原字段为空、状态挂待公布；FilmFreeway 官方页 Dates & Deadlines 明确末档 2027-04-01（早鸟 01-01 / 常规 02-01 / 迟到 03-01），据此补全并按最早档起算为开放征集中",
+   "changeLabel": "补全档期"
   },
   {
    "id": "reczz28NIUoUZDbs",
@@ -3388,7 +3394,9 @@
      "from": "2026-11-15",
      "to": "2026-11-01"
     }
-   ]
+   ],
+   "changeReason": "FilmFreeway 写 Regular 11-01 / Late 11-15，aifilmcontests 写「November 1 is its late and final deadline」，取两方交集的 11-01 作安全线；若 FF 当日仍开放 11-15 延期档，可再延后投",
+   "changeLabel": "口径取交集"
   },
   {
    "id": "reczz28Ow4R5iJ5f",
