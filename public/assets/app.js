@@ -889,7 +889,7 @@ const VMAP = { ok: ["check", "官网已核实"], fixed: ["edit", "已按官网�
 function fillDrawer(id) {
   const c = byId.get(id); const l = daysLeft(c), idx = listCtx.indexOf(id), ms = milestones(c), cny = cashCNY(c);
   const [vic, vt] = VMAP[c.verified];
-  const sub = safeUrl(c.submit), mail = /^mailto:/.test(sub || "");
+  const sub = safeUrl(c.submit), website = safeUrl(c.site), siteOnly = !!sub && !!website && sub === website, mail = /^mailto:/.test(sub || "");
   $("#drawer").innerHTML = `
   <div class="dr-head">
     <div class="dr-bar">${gB(c)}<span style="font-size:12.5px;color:var(--ink-3);font-weight:550">${GN[c.grade]} · ${stateText(c)}</span>${isFav(id) ? '<span class="tag new">已收藏</span>' : ""}<span class="sp"></span>
@@ -915,7 +915,7 @@ function fillDrawer(id) {
     ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${esc(c.desc)}</div>` : ""}
     ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${esc(c.notes)}</div>` : ""}
   </div>
-  <div class="dr-foot">${sub ? `<a class="btn pri" href="${esc(sub)}" ${mail ? "" : 'target="_blank" rel="noopener"'}>${mail ? "发邮件投稿" : "去投递"}${I.ext}</a>` : `<button class="btn pri" disabled style="opacity:.5">暂无投递入口</button>`}
+  <div class="dr-foot">${sub ? `<a class="btn pri" href="${esc(sub)}" ${mail ? "" : 'target="_blank" rel="noopener"'}>${mail ? "发邮件投稿" : siteOnly ? "查看官网" : "去投递"}${I.ext}</a>` : `<button class="btn pri" disabled style="opacity:.5">暂无投递入口</button>`}
     <button class="btn" data-act="ics1" title="加入日历，提前 3 天提醒">${I.bell}<span>提醒</span></button>
     <button class="btn" data-fav="${id}" title="收藏">${I.star}<span>${isFav(id) ? "已收藏" : "收藏"}</span></button>
     <button class="btn" data-act="share" title="复制链接">${I.link}<span>分享</span></button></div>`;
