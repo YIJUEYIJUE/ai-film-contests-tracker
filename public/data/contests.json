@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-26",
- "built": "2026-10-26 03:20",
+ "built": "2026-10-26 03:42",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -588,7 +588,7 @@
    "id": "recvsoUlbAefct",
    "name": "戛纳世界电影节·铭记未来(最佳AI电影)2027",
    "grade": "B",
-   "deadline": "2027-07-30",
+   "deadline": "2026-11-08",
    "status": "open",
    "organizer": "World Film Festival in Cannes — Remember the Future",
    "region": "法国 Cannes",
@@ -598,15 +598,23 @@
    "prize": "无现金奖（laurels+证书+Luciole d'Or奖杯+戛纳放映）",
    "site": "https://www.world-film-festival.com/",
    "submit": "https://filmfreeway.com/CannesWorldFilmFestival",
-   "desc": "World Film Festival in Cannes – Remember The Future，戛纳线上线下混合的月度/年度国际竞赛（含 AI 等类别），下届年度活动 2027/6/26（Pullman Cannes Mandelieu），月度展映在戛纳，经 FilmFreeway 提交。\n2026-10-24 核对·分清两个赛事：本条对应 **World AI Cinema Festival（Remember the Future 的 AI 分站）**：FilmFreeway 页写明「You have until July 30, 2027 to submit」，年度评选 2027-10 公布，每届按 7 月至次年 7 月计。主节 **World Film Festival in Cannes** 是另一个赛事：官网写「Submissions for 2027 open, until March 30」，年度活动 2027-06-26。原「举办 2027-06-26」误取了主节的年度活动日，与本条截止 2027-07-30 矛盾，已改为 AI 分站的年度公布时间。",
-   "notes": "⚠️原表把两个赛事混成一条：截止 2027-07-30 来自 **AI 分站 World AI Cinema Festival**（FF 页原文「until July 30, 2027」），举办 2027-06-26 却来自 **主节 World Film Festival in Cannes**（官网「next annual event June 26, 2027」）；两者不是同一赛事，导致时间线倒挂；本条按「最佳AI电影」定位归 AI 分站：截止保留 7-30、举办改为年度公布 2027-10；主节若需单列请另建条目（截止 2027-03-30）；官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）；官网 world-film-festival.com 首页与规则页原文：「Les soumissions pour 2027 sont ouvertes ! Vous avez jusqu'au 30 mars」（主节 2027-03-30 截止）、「Notre prochain événement annuel aura lieu le 26 Juin 2027」（年度典礼 2027-06-26，历届为 2026-06-27、2025-06-28）；投前须向主办方确认 AI 分支的真实截止与展映安排",
+   "desc": "World Film Festival in Cannes – Remember The Future，戛纳线上线下混合的月度/年度国际竞赛（含 AI 等类别），下届年度活动 2027/6/26（Pullman Cannes Mandelieu），月度展映在戛纳，经 FilmFreeway 提交。\n分清两个赛事：本条对应 **World AI Cinema Festival（Remember the Future 的 AI 分站）**，官方 FilmFreeway 页为**按月滚动**：每月开一轮、各自有截止与展映，月度获奖进入年度评选（年度结果 2027-10 公布）。\n▸ 档期（FF「Dates & Deadlines」原文，2026-10-26 读取）：Opening **2026-10-01** → Earlybird **2026-10-19** → **Late Deadline 2026-11-08（本站采用，当前批次最后一档）** → Notification **2026-11-15** → Event **2026-11-29**。⚠️ 此前记录的「2027-07-30」在当前页面上查不到任何出处（该页已无 July 30, 2027 字样），已作废；要投就按当前批次 **11-08** 交，错过可等下一轮。主节 **World Film Festival in Cannes** 是另一个赛事：官网写「Submissions for 2027 open, until March 30」，年度活动 2027-06-26。原「举办 2027-06-26」误取了主节的年度活动日，与本条截止 2027-07-30 矛盾，已改为 AI 分站的年度公布时间。",
+   "notes": "⚠️原表把两个赛事混成一条：截止 2027-07-30 来自 **AI 分站 World AI Cinema Festival**（FF 页原文「until July 30, 2027」），举办 2027-06-26 却来自 **主节 World Film Festival in Cannes**（官网「next annual event June 26, 2027」）；两者不是同一赛事，导致时间线倒挂；本条按「最佳AI电影」定位归 AI 分站：截止保留 7-30、举办改为年度公布 2027-10；主节若需单列请另建条目（截止 2027-03-30）；官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）；官网 world-film-festival.com 首页与规则页原文：「Les soumissions pour 2027 sont ouvertes ! Vous avez jusqu'au 30 mars」（主节 2027-03-30 截止）、「Notre prochain événement annuel aura lieu le 26 Juin 2027」（年度典礼 2027-06-26，历届为 2026-06-27、2025-06-28）；投前须向主办方确认 AI 分支的真实截止与展映安排；原 2027-07-30 的依据是旧备注所称「FF 页写明 You have until July 30, 2027 to submit」，但本轮两次读取该页（直连 + 渲染）**均无此句**，Dates & Deadlines 只列月度批次：10-01 / 10-19 / **11-08** / 11-15 / 11-29；按「月度循环填最近一批」的口径，截止改为 **2026-11-08**，并补征片开始 10-01、通知 11-15、展映 11-29；年度评选 2027-10 仍在说明中保留；⚠️ 主节 World Film Festival in Cannes 是另一个赛事（2027 届截止 2027-03-30），勿混",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
    "opened": "2026-10-01",
    "tracked": null,
    "added": "2026-10-01",
-   "changes": []
+   "changes": [
+    {
+     "date": "2026-10-26",
+     "from": "2027-07-30",
+     "to": "2026-11-08"
+    }
+   ],
+   "changeReason": "原 2027-07-30 依据的是旧记录所称「FF 页写 You have until July 30, 2027 to submit」，但 2026-10-26 两次读取该页均无此句；该页 Dates & Deadlines 只列月度批次：Opening 10-01 / Earlybird 10-19 / Late 2026-11-08 / 通知 11-15 / 展映 11-29。按月度循环填最近一批 → 改为 2026-11-08",
+   "changeLabel": "核对更正"
   },
   {
    "id": "recvsoUlbAAR23",
@@ -4706,10 +4714,10 @@
    "topic": "命题",
    "fee": "免费",
    "prize": "一等奖 5000 元（1 名）｜二等奖 3000 元（3 名）｜三等奖 2000 元（5 名）｜优秀奖 1000 元（15 名）；总奖金 3.9 万元，均税前",
-   "site": "http://mp.weixin.qq.com/s?__biz=MzU5MzgzNDIyNA==&mid=2247955205&idx=2&sn=e2b892aa5e3dfad7fad62292e035fc28",
+   "site": "https://mp.weixin.qq.com/s?__biz=MzU5MzgzNDIyNA==&mid=2247955205&idx=2&sn=e2b892aa5e3dfad7fad62292e035fc28",
    "submit": "mailto:lyrbkjzk@163.com",
    "desc": "临沂市文化和旅游局主办，征集以临沂文化元素为题材的 AI 创作短视频。\n单元与截止：作品征集即日起至 **2026-10-31**；初审 2026-11-01~11-15；终评 2026-11-16~11-20；结果公示与颁奖 2026-11-20 之后择机进行。\n内容：聚焦临沂的历史文化、红色文化、民俗文化、书法文化、孝文化、商文化、自然生态等元素，运用 AI 视频生成、AI 动画、数字人等技术创作，须具备完整故事性、情节性或鲜明叙事逻辑。\n规格：时长建议 **30 秒–5 分钟**；MP4 / MOV 等通用格式；分辨率不低于 720P；**视频由 AI 生成的比例不低于 80%**。\n投稿方式：两步：① 先在抖音 / 小红书 / 今日头条等平台公开发布，带话题 #文旅临沂 与 #AI赋能·沂蒙有戏；② 将作品原文件、发布链接、播放与点赞数据截图、填写完整的《参赛报名表》发至 lyrbkjzk@163.com。\n说明：须实名投稿；作品不得含商业标识、水印或作者个人信息；主办方有权对入选作品作非商业公益宣传使用；投稿作品未曾在其他平台参与评奖。",
-   "notes": "鲁网 8-12 已有报道】①**AI 占比门槛 80%**，高于多数同类（普遍 50%–70%），素材必须大量由 AI 生成；②⚠️**两步投递缺一不可**：先平台公开发布带双话题，再把原文件+发布链接+数据截图+报名表发邮箱，只做一步无效；③**作品发布日期须在征集首日之后**，旧片不能拿来投；④奖金为税前，一等 5000、总池 3.9 万，属小额——价值在政府背书而非现金，不要按高奖金排期；⑤主题锁定临沂文化元素（历史/红色/民俗/书法/孝/商/生态），命题创作，非自由投稿；⑥入选名额为上限、可空缺，宁缺毋滥",
+   "notes": "鲁网 8-12 已有报道】①**AI 占比门槛 80%**，高于多数同类（普遍 50%–70%），素材必须大量由 AI 生成；②⚠️**两步投递缺一不可**：先平台公开发布带双话题，再把原文件+发布链接+数据截图+报名表发邮箱，只做一步无效；③**作品发布日期须在征集首日之后**，旧片不能拿来投；④奖金为税前，一等 5000、总池 3.9 万，属小额——价值在政府背书而非现金，不要按高奖金排期；⑤主题锁定临沂文化元素（历史/红色/民俗/书法/孝/商/生态），命题创作，非自由投稿；⑥入选名额为上限、可空缺，宁缺毋滥；官网由 http 改为 https（实测 https 可正常打开到微信文章，http 属多余降级）",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
