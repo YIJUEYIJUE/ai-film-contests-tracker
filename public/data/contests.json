@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-26",
- "built": "2026-10-26 02:30",
+ "built": "2026-10-26 02:33",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -306,7 +306,9 @@
      "from": "2026-12-01",
      "to": "2026-12-20"
     }
-   ]
+   ],
+   "changeReason": "官网（Base44 建站，curl 只能抓到空壳）用浏览器渲染后读到 KEY DATES 完整四档：Early Bird 2026-09-30 → Regular 2026-11-15 → Late 2026-12-20（原文标注 Final opportunity to submit）→ Notification 2027-01-15。原 2026-12-01 来自第三方名录、官网查无此日，故按官网末档改为 12-20",
+   "changeLabel": "核对更正"
   },
   {
    "id": "recvs8rH4WXSxg",
