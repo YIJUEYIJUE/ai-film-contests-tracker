@@ -439,8 +439,8 @@
       "label": "未开征"
     },
     "recvwdOf2TR2tU": {
-      "text": "新版赛事官方页仅挂 FilmFreeway，尚未公布当届截止日",
-      "label": "未开征"
+      "text": "原为空（旧结论认为官方只写「COP31 – November/December 2026」未给具体日）。本轮浏览器渲染 FilmFreeway 页，Dates & Deadlines 已可见：按月滚动十档，最后一档 November Deadline 2026-11-30，通知与活动同为 2026-12-15 → 补全档期",
+      "label": "补全档期"
     },
     "reczz28PlOjQHaP3": {
       "text": "官方口径只到「10—11 月为创作征集期」，无具体截稿日",
@@ -479,6 +479,18 @@
     "reczz28Ow4R5hadY": {
       "text": "FilmFreeway 写 Regular 11-01 / Late 11-15，aifilmcontests 写「November 1 is its late and final deadline」，取两方交集的 11-01 作安全线；若 FF 当日仍开放 11-15 延期档，可再延后投",
       "label": "口径取交集"
+    },
+    "reczz28OwJEkdS13": {
+      "text": "上一季（Season 5）已于 2026-09-16 截止，此前档期留空。FilmFreeway 新一季档期已上线：Opening 10-24 / Earlybird 11-15 / Regular 12-31 / Late 2027-01-25 / Extended 2027-02-14 / 通知 02-15 / 活动 02-24 → 按末档 2027-02-14 恢复在征",
+      "label": "新季开档"
+    },
+    "recvtIfhUxEEFV": {
+      "text": "官网时间线原文为「Regular 2026-12-10 / Late 2027-01-01 / Late 2027-01-21 / Extended 2027-01-31」；原 01-21 实为 Late 档、不是最后一档，按「取最晚可投档」改为 Extended 2027-01-31",
+      "label": "核对更正"
+    },
+    "reczz28Ow4R5gnEX": {
+      "text": "旧值 10-27 属上一轮次（Earlybird 10-21 / Regular 10-27），该轮已结束。FilmFreeway 现为新一轮：Opening 2026-10-24 / Earlybird 10-31 / Regular 2026-11-21 / 通知 11-27 / 活动 2027-01-09，本轮无 Late 与 Extended → 改为 11-21",
+      "label": "核对更正"
     }
   },
   "cycle_status": {
