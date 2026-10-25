@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-26",
- "built": "2026-10-26 03:42",
+ "built": "2026-10-26 03:50",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -596,10 +596,10 @@
    "topic": "自由投稿",
    "fee": "FF收费（金额未显示）",
    "prize": "无现金奖（laurels+证书+Luciole d'Or奖杯+戛纳放映）",
-   "site": "https://www.world-film-festival.com/",
-   "submit": "https://filmfreeway.com/CannesWorldFilmFestival",
+   "site": "https://filmfreeway.com/WorldAICinemaFestival",
+   "submit": "https://filmfreeway.com/WorldAICinemaFestival",
    "desc": "World Film Festival in Cannes – Remember The Future，戛纳线上线下混合的月度/年度国际竞赛（含 AI 等类别），下届年度活动 2027/6/26（Pullman Cannes Mandelieu），月度展映在戛纳，经 FilmFreeway 提交。\n分清两个赛事：本条对应 **World AI Cinema Festival（Remember the Future 的 AI 分站）**，官方 FilmFreeway 页为**按月滚动**：每月开一轮、各自有截止与展映，月度获奖进入年度评选（年度结果 2027-10 公布）。\n▸ 档期（FF「Dates & Deadlines」原文，2026-10-26 读取）：Opening **2026-10-01** → Earlybird **2026-10-19** → **Late Deadline 2026-11-08（本站采用，当前批次最后一档）** → Notification **2026-11-15** → Event **2026-11-29**。⚠️ 此前记录的「2027-07-30」在当前页面上查不到任何出处（该页已无 July 30, 2027 字样），已作废；要投就按当前批次 **11-08** 交，错过可等下一轮。主节 **World Film Festival in Cannes** 是另一个赛事：官网写「Submissions for 2027 open, until March 30」，年度活动 2027-06-26。原「举办 2027-06-26」误取了主节的年度活动日，与本条截止 2027-07-30 矛盾，已改为 AI 分站的年度公布时间。",
-   "notes": "⚠️原表把两个赛事混成一条：截止 2027-07-30 来自 **AI 分站 World AI Cinema Festival**（FF 页原文「until July 30, 2027」），举办 2027-06-26 却来自 **主节 World Film Festival in Cannes**（官网「next annual event June 26, 2027」）；两者不是同一赛事，导致时间线倒挂；本条按「最佳AI电影」定位归 AI 分站：截止保留 7-30、举办改为年度公布 2027-10；主节若需单列请另建条目（截止 2027-03-30）；官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）；官网 world-film-festival.com 首页与规则页原文：「Les soumissions pour 2027 sont ouvertes ! Vous avez jusqu'au 30 mars」（主节 2027-03-30 截止）、「Notre prochain événement annuel aura lieu le 26 Juin 2027」（年度典礼 2027-06-26，历届为 2026-06-27、2025-06-28）；投前须向主办方确认 AI 分支的真实截止与展映安排；原 2027-07-30 的依据是旧备注所称「FF 页写明 You have until July 30, 2027 to submit」，但本轮两次读取该页（直连 + 渲染）**均无此句**，Dates & Deadlines 只列月度批次：10-01 / 10-19 / **11-08** / 11-15 / 11-29；按「月度循环填最近一批」的口径，截止改为 **2026-11-08**，并补征片开始 10-01、通知 11-15、展映 11-29；年度评选 2027-10 仍在说明中保留；⚠️ 主节 World Film Festival in Cannes 是另一个赛事（2027 届截止 2027-03-30），勿混",
+   "notes": "⚠️原表把两个赛事混成一条：截止 2027-07-30 来自 **AI 分站 World AI Cinema Festival**（FF 页原文「until July 30, 2027」），举办 2027-06-26 却来自 **主节 World Film Festival in Cannes**（官网「next annual event June 26, 2027」）；两者不是同一赛事，导致时间线倒挂；本条按「最佳AI电影」定位归 AI 分站：截止保留 7-30、举办改为年度公布 2027-10；主节若需单列请另建条目（截止 2027-03-30）；官网/投递链接为各赛事官方站点；⚠️水分警示：蹭\"Cannes\"之名的独立影展（在戛纳城放映≠戛纳电影节官方体系），FF收费+laurels+自制奖杯；「最佳AI电影」属 World AI Cinema Festival 分支，年度征集截止 2027-07-30（主节 Remember the Future 3-30 为另一分支，勿混淆）；官网 world-film-festival.com 首页与规则页原文：「Les soumissions pour 2027 sont ouvertes ! Vous avez jusqu'au 30 mars」（主节 2027-03-30 截止）、「Notre prochain événement annuel aura lieu le 26 Juin 2027」（年度典礼 2027-06-26，历届为 2026-06-27、2025-06-28）；投前须向主办方确认 AI 分支的真实截止与展映安排；原 2027-07-30 的依据是旧备注所称「FF 页写明 You have until July 30, 2027 to submit」，但本轮两次读取该页（直连 + 渲染）**均无此句**，Dates & Deadlines 只列月度批次：10-01 / 10-19 / **11-08** / 11-15 / 11-29；按「月度循环填最近一批」的口径，截止改为 **2026-11-08**，并补征片开始 10-01、通知 11-15、展映 11-29；年度评选 2027-10 仍在说明中保留；⚠️ 主节 World Film Festival in Cannes 是另一个赛事（2027 届截止 2027-03-30），勿混；本条已定案为 **World AI Cinema Festival（AI 分站）**，但官网/投递原来都指向主节（world-film-festival.com / filmfreeway.com/CannesWorldFilmFestival），与说明自相矛盾；现统一改为 AI 分站官方页 filmfreeway.com/WorldAICinemaFestival（该分站无独立官网，FF 页即唯一官方入口与投递通道）；⚠️ 主节另有「Best Artificial Intelligence Film」类别可投，走 filmfreeway.com/CannesWorldFilmFestival，2027 届截止 2027-03-30——那是**另一个赛事**，不要与本条混",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
