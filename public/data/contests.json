@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-26",
- "built": "2026-10-26 02:36",
+ "built": "2026-10-26 03:20",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1233,7 +1233,7 @@
    "id": "recvtIfhUxEEFV",
    "name": "阿文图拉斯港国际电影节",
    "grade": "C",
-   "deadline": "2027-01-21",
+   "deadline": "2027-01-31",
    "status": "open",
    "organizer": "Dewey Paul Moffitt",
    "region": "墨西哥·Puerto Aventuras",
@@ -1243,15 +1243,23 @@
    "prize": "官方未公布奖金",
    "site": "https://pafilmfestival.com",
    "submit": "https://www.filmfreeway.com/pafilmfestival",
-   "desc": "Puerto Aventuras International Film Festival（PAIFF）· 墨西哥 Riviera Maya（Puerto Aventuras，坎昆与图卢姆之间）单元与截止：官方分 7 类：长片（≥60 分钟）、短片（<60 分钟）、纪录片（任意长度）、**动画与/或 AI 生成片（含混合形式，在全部适用类别中评审）**、音乐视频、剧本（须英文）、进行中项目（<45 分钟）。代投平台为多档期制，本站取最晚档（Final/Extended），各档费用不同、越晚越贵。片长：长片 ≥60 分钟 / 短片 <60 分钟 / 进行中项目 <45 分钟。硬性要求：须附 ≤90 秒可下载预告片（英文字幕）、专业海报、简介、导演简介、演职员表；非英语片须英文字幕；剧本须英文；须拥有全部版权。活动：第 3 季 2026-03-25~29；IMDb 资格赛；设 Early Bird 季选（每年 15 部自动进官方入围）。费用：FilmFreeway 美元计价（音乐视频低至 $5 起）；本站「￥100–250」为代投平台人民币报价，两条通道价不同。\n▸ 届次与日期校准（2026-10-25）：文中「第 3 季 2026-03-25~29」是**已办完的上一届**；本站截止 2027-01-21 对应的是**下一届，影展 2027-03-17~21**（通知 2027-02-10），两者不要混。",
-   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址；官网 pafilmfestival.com 标题仍写 PAIFF 2026（页面未更新届次）；本轮核对（2026-10-21）：Festhome 官方征片页给出完整档期——Call for entries 2026-05-01 / Early 2026-11-01 / Standard 2026-12-10 / Late 2027-01-01 / Extended 2027-01-21 / **Notification 2027-02-10** / 影展 2027-03-17~21；原「类别」填的是国家名「墨西哥」，已改为影片单元「短片/长片/纪录/动画与AI/音乐视频/剧本」；同时确认官网与投递均已正确（pafilmfestival.com / filmfreeway.com/pafilmfestival），此前备注「主办方无独立官网」为旧记录，现已不适用；**AI 生成片按官方规则归入「Animation and/or AI-Generated Films」，可投；官方站 pafilmfestival.com **两个页面自相矛盾**：一处写「Regular 2026-12-10 / Late 2027-01-01 / **Extended 2027-01-21** / Final Selections 01-25」，另一处同段写「Extended **2027-01-31**」；Festhome 官方页则为「Early 2026-12-10 / Standard 2027-01-01 / Late **2027-01-21** / **Extended 2027-02-10** / 通知 2027-03-17 / 活动 03-17~21」；**若走 Festhome 通道，最晚可到 2027-02-10**；投前在报名页确认当前档位，不要按 02-10 卡点",
+   "desc": "Puerto Aventuras International Film Festival（PAIFF）· 墨西哥 Riviera Maya（Puerto Aventuras，坎昆与图卢姆之间）单元与截止：官方分 7 类：长片（≥60 分钟）、短片（<60 分钟）、纪录片（任意长度）、**动画与/或 AI 生成片（含混合形式，在全部适用类别中评审）**、音乐视频、剧本（须英文）、进行中项目（<45 分钟）。代投平台为多档期制，本站取最晚档（Final/Extended），各档费用不同、越晚越贵。片长：长片 ≥60 分钟 / 短片 <60 分钟 / 进行中项目 <45 分钟。硬性要求：须附 ≤90 秒可下载预告片（英文字幕）、专业海报、简介、导演简介、演职员表；非英语片须英文字幕；剧本须英文；须拥有全部版权。活动：第 3 季 2026-03-25~29；IMDb 资格赛；设 Early Bird 季选（每年 15 部自动进官方入围）。费用：FilmFreeway 美元计价（音乐视频低至 $5 起）；本站「￥100–250」为代投平台人民币报价，两条通道价不同。\n▸ 届次与日期校准：文中「第 3 季 2026-03-25~29」是**已办完的上一届**；本条对应**下一届，影展 2027-03-17~21**（通知 2027-02-10）。\n▸ 档期（官网原文，2026-10-26 浏览器渲染读取）：Regular **2026-12-10** → Late **2027-01-01** → **Extended 2027-01-31（本站采用，最后一档）**；Final Official Selections 2027-03。此前本站误把 Late（01-21）当作 Extended，已改为 01-31。",
+   "notes": "截止日取详情页最晚档期（Final/Extended）；奖金官方未列明，标未核实；赛事说明为详情页简介摘要，投递前建议再核官网；2026-08-30补官网：已核到官方站 https://pafilmfestival.com，「官网」字段已改为该地址；官网 pafilmfestival.com 标题仍写 PAIFF 2026（页面未更新届次）；本轮核对（2026-10-21）：Festhome 官方征片页给出完整档期——Call for entries 2026-05-01 / Early 2026-11-01 / Standard 2026-12-10 / Late 2027-01-01 / Extended 2027-01-21 / **Notification 2027-02-10** / 影展 2027-03-17~21；原「类别」填的是国家名「墨西哥」，已改为影片单元「短片/长片/纪录/动画与AI/音乐视频/剧本」；同时确认官网与投递均已正确（pafilmfestival.com / filmfreeway.com/pafilmfestival），此前备注「主办方无独立官网」为旧记录，现已不适用；**AI 生成片按官方规则归入「Animation and/or AI-Generated Films」，可投；官方站 pafilmfestival.com **两个页面自相矛盾**：一处写「Regular 2026-12-10 / Late 2027-01-01 / **Extended 2027-01-21** / Final Selections 01-25」，另一处同段写「Extended **2027-01-31**」；Festhome 官方页则为「Early 2026-12-10 / Standard 2027-01-01 / Late **2027-01-21** / **Extended 2027-02-10** / 通知 2027-03-17 / 活动 03-17~21」；**若走 Festhome 通道，最晚可到 2027-02-10**；投前在报名页确认当前档位，不要按 02-10 卡点；原 2027-01-21 实为官网 **Late Deadline**，不是最后一档；官网同一段落原文为「December 10, 2026 Regular Deadline / January 1, 2027 Late Deadline / January 21, 2027 Late… Extended 2027-01-31」，按「取最晚可投档」应为 **2027-01-31**；→ 截止 01-21 改为 01-31；（此前备注把 01-31 标成「另一处矛盾」，实为同一时间线的 Extended 档，不是矛盾；）",
    "mark": "",
    "verified": "ok",
    "verifyNote": "官网原文与截止日一致（2026-09-29 核对）",
    "opened": "2026-05-01",
    "tracked": null,
    "added": "2026-05-01",
-   "changes": []
+   "changes": [
+    {
+     "date": "2026-10-26",
+     "from": "2027-01-21",
+     "to": "2027-01-31"
+    }
+   ],
+   "changeReason": "官网时间线原文为「Regular 2026-12-10 / Late 2027-01-01 / Late 2027-01-21 / Extended 2027-01-31」；原 01-21 实为 Late 档、不是最后一档，按「取最晚可投档」改为 Extended 2027-01-31",
+   "changeLabel": "核对更正"
   },
   {
    "id": "recvtIfhUxNrgd",
@@ -1600,8 +1608,8 @@
    "id": "recvwdOf2TR2tU",
    "name": "AI for the Future Festival·COP31版",
    "grade": "B",
-   "deadline": null,
-   "status": "pending",
+   "deadline": "2026-11-30",
+   "status": "open",
    "organizer": "AI for the Future（策展人Lisa Russell）",
    "region": "国际（UN场合）",
    "category": "电影节AIGC单元",
@@ -1610,17 +1618,23 @@
    "prize": "无现金：UN场合展映与认证",
    "site": "https://filmfreeway.com/AIfortheFutureFest",
    "submit": "https://filmfreeway.com/AIfortheFutureFest",
-   "desc": "气候主题 AI 影像征集（AI for the Future Festival），入选作品在 **UN COP31** 相关场合展映；策展人为艾美奖得主、UN 背景创作者。\n▸ 本届主题（COP31 版）：**气候故事**——韧性 / 生态未来 / 生物多样性 / 公正转型。\n▸ 收件类型：影片、摄影、艺术、音乐、剧本；**仅影像类符合本站收录定位**。\n▸ 档期：**官方 FilmFreeway 页只写「COP31 – November/December 2026」，未公布具体截止日**；外部目录称 2026 年最后一档为 11-30、颁奖活动 12-15，但官方未刊出，故本站留空待公布。若要在 2026 年内投，请在 11 月中旬前上 FilmFreeway 页确认当期 Deadline。\n▸ 奖项：**无现金奖**；权益为 UN 场合展映与认证。\n▸ 投稿：FilmFreeway（AIfortheFutureFest）。**该赛事无独立官网，FilmFreeway 页即唯一官方入口。**",
-   "notes": "旧 FF 链接已 404，更正为 AIfortheFutureFest；官方 FilmFreeway 页仅标注「COP31 – November/December 2026」，未公布具体截止日；本期主题为气候故事（韧性 / 生态未来 / 生物多样性 / 公正转型），接受影片、摄影、艺术、音乐与剧本，无现金奖；若要在 2026 年内投，须在 11 月中旬前上 FilmFreeway 页确认当期 Deadline 后再决定；该赛**无独立官网**，FilmFreeway 官方页 AIfortheFutureFest 即唯一官方入口，故官网与投递同填该页",
+   "desc": "气候主题 AI 影像征集（AI for the Future Festival），入选作品在 **UN COP31** 相关场合展映；策展人为艾美奖得主、UN 背景创作者。\n▸ 本届主题（COP31 版）：**气候故事**——韧性 / 生态未来 / 生物多样性 / 公正转型。\n▸ 收件类型：影片、摄影、艺术、音乐、剧本；**仅影像类符合本站收录定位**。\n▸ 档期（官方 FilmFreeway「Dates & Deadlines」原文，2026-10-26 浏览器渲染读取）：Opening **2025-12-07**，此后**按月滚动**——Feb 28 / Mar 31 / Apr 30 / May 31 / Jun 30 / Aug 31 / Sep 30 / Oct 31，**November Deadline 2026-11-30（本站采用，当前最后一档）**；Notification 与 Event 同为 **2026-12-15**。想赶 COP31 场合展映的，11-30 是最后节点。\n▸ 奖项：**无现金奖**；权益为 UN 场合展映与认证。\n▸ 投稿：FilmFreeway（AIfortheFutureFest）。**该赛事无独立官网，FilmFreeway 页即唯一官方入口。**",
+   "notes": "旧 FF 链接已 404，更正为 AIfortheFutureFest；官方 FilmFreeway 页仅标注「COP31 – November/December 2026」，未公布具体截止日；本期主题为气候故事（韧性 / 生态未来 / 生物多样性 / 公正转型），接受影片、摄影、艺术、音乐与剧本，无现金奖；若要在 2026 年内投，须在 11 月中旬前上 FilmFreeway 页确认当期 Deadline 后再决定；该赛**无独立官网**，FilmFreeway 官方页 AIfortheFutureFest 即唯一官方入口，故官网与投递同填该页；此前留空是因为旧结论「官方只写 COP31 – November/December 2026、未公布具体截止日」；本轮用浏览器渲染 FilmFreeway 页，Dates & Deadlines 区块已完整可见：按月滚动十档，最后一档 **November Deadline 2026-11-30**，通知与活动同为 2026-12-15；→ 截止 2026-11-30、状态改「开放征集中」、补征片开始 2025-12-07 与通知/举办 2026-12-15",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "opened": null,
+   "opened": "2025-12-07",
    "tracked": null,
-   "added": null,
-   "changes": [],
-   "changeReason": "新版赛事官方页仅挂 FilmFreeway，尚未公布当届截止日",
-   "changeLabel": "未开征"
+   "added": "2025-12-07",
+   "changes": [
+    {
+     "date": "2026-10-26",
+     "from": null,
+     "to": "2026-11-30"
+    }
+   ],
+   "changeReason": "原为空（旧结论认为官方只写「COP31 – November/December 2026」未给具体日）。本轮浏览器渲染 FilmFreeway 页，Dates & Deadlines 已可见：按月滚动十档，最后一档 November Deadline 2026-11-30，通知与活动同为 2026-12-15 → 补全档期",
+   "changeLabel": "补全档期"
   },
   {
    "id": "recvwdOiiA2jTV",
@@ -3346,7 +3360,7 @@
    "id": "reczz28Ow4R5gnEX",
    "name": "AI International Film Festival（好莱坞·月度）",
    "grade": "B",
-   "deadline": "2026-10-27",
+   "deadline": "2026-11-21",
    "status": "open",
    "organizer": "AI International Film Festival（创始人 Bert Holland，2021 年创办）",
    "region": "美国好莱坞",
@@ -3356,15 +3370,23 @@
    "prize": "奖项 laurels + AI Winners Guild 会员（工具权益与创作者网络，无公开现金金额）",
    "site": "https://aifilmfest.org",
    "submit": "https://filmfreeway.com/aiinternationalfilmfestival",
-   "desc": "自 2021 年起在好莱坞月度举办的 AI 电影节，自称全球首个 AI 电影节，采用「盲审」（不看作者姓名/国籍）。下一场 2026-12-12 在洛杉矶 Performing Arts Conservatory 举办，一场一部片、映后作者与观众实时对谈，设评审团奖与观众奖，53 个分类涵盖 AI 短片、长片、hybrid、实拍、纪录、动画、竖屏短视频与竖屏剧集。\n单元与截止：含 Best Picture / Best AI Film / Best AI Feature / Best AI Short / Best Music Video / Best AI Vertical Short / Series / Documentary 等；其中 Best Live-Action Short、Best Animated Short、Best Documentary Short 为奥斯卡认证类别（需满足洛杉矶县影院连续七日商业放映的资格路线）。Earlybird 2026-10-21、Regular 2026-10-27，通知与活动同为 2026-12-12。\n投稿方式：FilmFreeway 提交，费用按分类 $39~$69。",
-   "notes": "创办早、盲审机制与奥斯卡认证类别是加分项，但费用偏高且月度举办含金量参差",
+   "desc": "自 2021 年起在好莱坞月度举办的 AI 电影节，自称全球首个 AI 电影节，采用「盲审」（不看作者姓名/国籍）。下一场 2026-12-12 在洛杉矶 Performing Arts Conservatory 举办，一场一部片、映后作者与观众实时对谈，设评审团奖与观众奖，53 个分类涵盖 AI 短片、长片、hybrid、实拍、纪录、动画、竖屏短视频与竖屏剧集。\n单元与截止：含 Best Picture / Best AI Film / Best AI Feature / Best AI Short / Best Music Video / Best AI Vertical Short / Series / Documentary 等；其中 Best Live-Action Short、Best Animated Short、Best Documentary Short 为奥斯卡认证类别（需满足洛杉矶县影院连续七日商业放映的资格路线）。**当前轮次（FF 官方 Dates & Deadlines，2026-10-26 读取）**：Opening **2026-10-24** → Earlybird **2026-10-31** → **Regular 2026-11-21（本站采用，本轮最后一档，无 Late/Extended）** → Notification **2026-11-27** → Event **2027-01-09**。旧记的「Earlybird 10-21 / Regular 10-27」是上一轮次的档期，已作废。⚠️ 官网首页倒计时仍写「REGULAR DEADLINE OCTOBER 21」，属未更新的旧文案，以 FF 报名页为准。。\n投稿方式：FilmFreeway 提交，费用按分类 $39~$69。",
+   "notes": "创办早、盲审机制与奥斯卡认证类别是加分项，但费用偏高且月度举办含金量参差；旧值 2026-10-27 来自上一轮次（Earlybird 10-21 / Regular 10-27），该轮已结束；本轮渲染 FF 页读到新轮次：Opening 2026-10-24 / Earlybird 10-31 / **Regular 11-21** / 通知 11-27 / 活动 2027-01-09，本轮**没有 Late 与 Extended 档**；→ 截止 10-27 改为 2026-11-21，补征片开始 2026-10-24；官网首页仍挂 10-21 的旧倒计时，投前以 FF 页当日显示为准",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "opened": null,
+   "opened": "2026-10-24",
    "tracked": "2026-10-19",
-   "added": null,
-   "changes": []
+   "added": "2026-10-24",
+   "changes": [
+    {
+     "date": "2026-10-26",
+     "from": "2026-10-27",
+     "to": "2026-11-21"
+    }
+   ],
+   "changeReason": "旧值 10-27 属上一轮次（Earlybird 10-21 / Regular 10-27），该轮已结束。FilmFreeway 现为新一轮：Opening 2026-10-24 / Earlybird 10-31 / Regular 2026-11-21 / 通知 11-27 / 活动 2027-01-09，本轮无 Late 与 Extended → 改为 11-21",
+   "changeLabel": "核对更正"
   },
   {
    "id": "reczz28Ow4R5hadY",
@@ -3817,8 +3839,8 @@
    "id": "reczz28OwJEkdS13",
    "name": "BIAIFF 巴厘岛国际AI电影节（乌布·季节滚动）",
    "grade": "C",
-   "deadline": null,
-   "status": "pending",
+   "deadline": "2027-02-14",
+   "status": "open",
    "organizer": "BIAIFF（创始人 Ben Makinen，总监 Dian Marhaeni）",
    "region": "印度尼西亚巴厘岛乌布",
    "category": "AI电影节·短片/长片",
@@ -3827,15 +3849,23 @@
    "prize": "Cinema Paradiso 4K 影院放映 + laurels + 赞助软件权益（Dehancer Pro 终身授权、Blotato 一年 + 2 万积分），无现金奖",
    "site": "https://filmfreeway.com/BaliAiFilmFestival",
    "submit": "https://filmfreeway.com/BaliAiFilmFestival",
-   "desc": "印尼首个 AI 电影节，2025-05-07 在乌布首办，双年/季节滚动征片，入选作品在乌布 Cinema Paradiso 影院以 4K 放映。不限类型与时长，只要作品在制作或叙事层面显著使用 AI；第 5 季设 13 个奖项类别（含 Best AI Feature、Best AI Short、Best AI Human Rights 等）。\n单元与截止：季节滚动征片，第 5 季已于 2026-09-16 截止；下一季档期尚未公布。\n投稿方式：FilmFreeway 提交（该页面为非公开列表页，需登录后直接访问链接提交）。",
-   "notes": "⚠️三个渠道交叉：；① **官网 biaiff.com 已失效**——现在打开跳转/显示的是主办人 Ben Makinen 的个人音乐站（JazzTown 曲目播放页），赛事信息已不在首页；仅页面上保留一个「Click to submit on FilmFreeway」按钮指向 FilmFreeway；② FilmFreeway 页 filmfreeway.com/BaliAiFilmFestival（旧链接 festivals/85904 跳转至此）**只有基本信息、无 Dates & Deadlines 段**：场地 Cinema Paradiso（Jl. Goutama Sel., Ubud, Gianyar, Bali 80571）、First Year、Festival Director Ben Makinen / Advisor Dian Marhaeni / AI Expert Ilgiza Riazanova；melies.co 记「Ongoing May 1 – Dec 31, 2026」（年度窗口，非具体截止）；→ 该赛事为**季节滚动制**，每季单独开档，Season 5 于 2026-09-16 截止，Season 6 档期官方未公布；若想投，直接去 FilmFreeway 页看当前是否有开放档位；该赛为 4K 影院放映（Cinema Paradiso）+ 观众选择奖，创办人 Ben Makinen 是 PBS 发行过的纪录片导演，被 shaike.ai 列为「全球 Top 10 AI 影展」；无现金奖；该赛**无独立官网**，FilmFreeway 官方页 BaliAiFilmFestival 为唯一官方入口，故官网与投递同填该页",
+   "desc": "印尼首个 AI 电影节，2025-05-07 在乌布首办，双年/季节滚动征片，入选作品在乌布 Cinema Paradiso 影院以 4K 放映。不限类型与时长，只要作品在制作或叙事层面显著使用 AI；第 5 季设 13 个奖项类别（含 Best AI Feature、Best AI Short、Best AI Human Rights 等）。\n单元与截止·第 6 季：季节滚动征片，**新一季已于 2026-10-24 开放**。官方 FilmFreeway「Dates & Deadlines」原文（2026-10-26 读取）：Earlybird **2026-11-15** → Regular **2026-12-31** → Late **2027-01-25** → **Extended 2027-02-14（本站采用，最后一档）**；Notification 2027-02-15；Event 2027-02-24（乌布）。\n投稿方式：FilmFreeway 提交（该页面为非公开列表页，需登录后直接访问链接提交）。",
+   "notes": "⚠️三个渠道交叉：；① **官网 biaiff.com 已失效**——现在打开跳转/显示的是主办人 Ben Makinen 的个人音乐站（JazzTown 曲目播放页），赛事信息已不在首页；仅页面上保留一个「Click to submit on FilmFreeway」按钮指向 FilmFreeway；② FilmFreeway 页 filmfreeway.com/BaliAiFilmFestival（旧链接 festivals/85904 跳转至此）**只有基本信息、无 Dates & Deadlines 段**：场地 Cinema Paradiso（Jl. Goutama Sel., Ubud, Gianyar, Bali 80571）、First Year、Festival Director Ben Makinen / Advisor Dian Marhaeni / AI Expert Ilgiza Riazanova；melies.co 记「Ongoing May 1 – Dec 31, 2026」（年度窗口，非具体截止）；→ 该赛事为**季节滚动制**，每季单独开档，Season 5 于 2026-09-16 截止，Season 6 档期官方未公布；若想投，直接去 FilmFreeway 页看当前是否有开放档位；该赛为 4K 影院放映（Cinema Paradiso）+ 观众选择奖，创办人 Ben Makinen 是 PBS 发行过的纪录片导演，被 shaike.ai 列为「全球 Top 10 AI 影展」；无现金奖；该赛**无独立官网**，FilmFreeway 官方页 BaliAiFilmFestival 为唯一官方入口，故官网与投递同填该页；此前「待公布」是因为 10-20 复核时 FF 页只有基本信息、无 Dates & Deadlines 段；本轮渲染后该区块已出现：Opening 2026-10-24 / Earlybird 11-15 / Regular 12-31 / Late 2027-01-25 / **Extended 2027-02-14** / 通知 02-15 / 活动 02-24；→ 截止 2027-02-14、状态改「开放征集中」；注意官网 biaiff.com 仍是主办人个人音乐站，投稿只走 FilmFreeway",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
-   "opened": null,
+   "opened": "2026-10-24",
    "tracked": "2026-10-19",
-   "added": null,
-   "changes": [],
+   "added": "2026-10-24",
+   "changes": [
+    {
+     "date": "2026-10-26",
+     "from": null,
+     "to": "2027-02-14"
+    }
+   ],
+   "changeReason": "上一季（Season 5）已于 2026-09-16 截止，此前档期留空。FilmFreeway 新一季档期已上线：Opening 10-24 / Earlybird 11-15 / Regular 12-31 / Late 2027-01-25 / Extended 2027-02-14 / 通知 02-15 / 活动 02-24 → 按末档 2027-02-14 恢复在征",
+   "changeLabel": "新季开档",
    "cycle": "rolling"
   },
   {
