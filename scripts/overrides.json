@@ -491,6 +491,10 @@
     "reczz28Ow4R5gnEX": {
       "text": "旧值 10-27 属上一轮次（Earlybird 10-21 / Regular 10-27），该轮已结束。FilmFreeway 现为新一轮：Opening 2026-10-24 / Earlybird 10-31 / Regular 2026-11-21 / 通知 11-27 / 活动 2027-01-09，本轮无 Late 与 Extended → 改为 11-21",
       "label": "核对更正"
+    },
+    "recvsoUlbAefct": {
+      "text": "原 2027-07-30 依据的是旧记录所称「FF 页写 You have until July 30, 2027 to submit」，但 2026-10-26 两次读取该页均无此句；该页 Dates & Deadlines 只列月度批次：Opening 10-01 / Earlybird 10-19 / Late 2026-11-08 / 通知 11-15 / 展映 11-29。按月度循环填最近一批 → 改为 2026-11-08",
+      "label": "核对更正"
     }
   },
   "cycle_status": {
