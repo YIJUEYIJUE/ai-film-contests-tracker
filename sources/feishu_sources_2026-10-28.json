@@ -1,7 +1,7 @@
 {
  "snapshot_date": "2026-10-28",
  "source": "飞书多维表格 J0KPbWdLVaim7csALvjccfP7nwZ/tblSBncl1nJt3IE1",
- "total": 67,
+ "total": 72,
  "records": [
   {
    "IP属地": "北京",
@@ -806,6 +806,66 @@
    "平台": "小红书",
    "简介": "Ai知识共享，打破人工智能知识壁垒！",
    "身份ID": "68aaa368000000001803e7fa"
+  },
+  {
+   "IP属地": "",
+   "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzYyMjEwMjQ4Ng==",
+   "代表内容": "《50个AIGC影像奖项入口表》2026-09-21 版：国内 11 项 + 国际 39 项，逐条给官方入口与截止日",
+   "发布时间": "2026-09-21（该版更新日）",
+   "名称": "AIGC AWARDS WATCHLIST",
+   "备注": "代表文章 https://mp.weixin.qq.com/s?__biz=MzYyMjEwMjQ4Ng==&mid=2247488897&idx=1&sn=747046bf2d807ce8b856f22668caa748 ；同系列另有 08-23 版（2247487376）、07-27 版（2247486700）。★ 与小红书「AI学院派」同源（同一份清单的两个发布端），两边都已收录。价值：它是本项目外部比对的主要清单源，条目带官方直投网址，适合做覆盖度交叉核对；注意其截止日为自己维护、需回官网复核。",
+   "小红书号": "",
+   "平台": "公众号",
+   "简介": "国内外 AI 电影节 / AIGC 视频 / AI 短片 / AI 影像奖项的投稿地图，只保留原始网址、征片状态、截止日与必要备注，定期整表更新（50 项）",
+   "身份ID": "MzYyMjEwMjQ4Ng=="
+  },
+  {
+   "IP属地": "",
+   "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NzgyNzEwMg==",
+   "代表内容": "《「看见微光」可灵AI公益影像大赛征集中｜32万奖金池》等赛事解读",
+   "发布时间": "2026-10（看见微光解读稿）",
+   "名称": "AI电影共创社",
+   "备注": "代表文章 https://mp.weixin.qq.com/s?__biz=MjM5NzgyNzEwMg==&mid=2650914744&idx=1&sn=8f8b3f243a8da6418a90afceebb9499d 。价值：会拆解奖金结构、评审权重、作品规格等硬指标，适合交叉核对赛事细节；口径仍以官方页为准。",
+   "小红书号": "",
+   "平台": "公众号",
+   "简介": "公益型 AI 影视社群（2 万+ 创作者），做赛事解读、创作方法与作品展映",
+   "身份ID": "MjM5NzgyNzEwMg=="
+  },
+  {
+   "IP属地": "",
+   "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzQ3ODc0Mg==",
+   "代表内容": "《总奖金40.3万、算力补贴升至40万，截稿延至10月28日：这场全国AIGC大赛，一个人也能参赛》（白鹤梁）",
+   "发布时间": "2026-10-21 前后",
+   "名称": "AIGC老马",
+   "备注": "代表文章 https://mp.weixin.qq.com/s?__biz=MzAwMzQ3ODc0Mg==&mid=2451974340&idx=1&sn=15ca12ac922e93f3ae090b76e3173297 。价值：会把官方海报、延期公告、奖项拆分一次讲清，是**截止日延期**的较早信源之一（本轮白鹤梁 10-15→10-28 即由该文与涪陵融媒互证）。",
+   "小红书号": "",
+   "平台": "公众号",
+   "简介": "AIGC 行业观察，写赛事长文：奖金怎么分、工具有什么坑、材料怎么交",
+   "身份ID": "MzAwMzQ3ODc0Mg=="
+  },
+  {
+   "IP属地": "",
+   "主页链接": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0MDQxNTI2OQ==",
+   "代表内容": "2026 杭州国际未来影像创作大赛（承办，截止 08-15）、PlusX「未来生命」全球共创计划官方发布、张江城市灯塔 AI 艺术展 OPEN CALL",
+   "发布时间": "2026-08 ~ 2026-10",
+   "名称": "MANA 全球新媒体艺术平台",
+   "备注": "官网 https://www.manamana.net/ ；代表文章：杭州未来影像赛 https://mp.weixin.qq.com/s?__biz=MzI0MDQxNTI2OQ==&mid=2247994270&idx=1&sn=1f57c73afa610d3f6ed32da16a8d2ecb ；PlusX 官方发布同一 biz。价值：**空间影像 / 艺术展类 open call 的一手源**（这类赛事常不在投奖/FilmFreeway 上），但偏艺术展与空间装置，收不收要按「是否影像成片」逐条判。",
+   "小红书号": "",
+   "平台": "公众号",
+   "简介": "艺术 / 设计 / 科技跨界媒体与资源对接平台，承接 AI 艺术展、未来影像赛的官方征集发布（open call）；官网 manamana.net",
+   "身份ID": "MzI0MDQxNTI2OQ=="
+  },
+  {
+   "IP属地": "",
+   "主页链接": "https://filmdais.com/",
+   "代表内容": "JIFF 2027 官方投稿入口（含 World AI Cinema Competition 九类 AI 赛道）",
+   "发布时间": "2027 届征集期（2026-10 起）",
+   "名称": "FilmDais",
+   "备注": "https://filmdais.com/submit.php 。价值：部分印度/南亚电影节只在这里挂低价档，FilmFreeway 上看不到；可作为 FF / Festhome 之外的第三条投递通道监测。注意它是平台不是主办方，档期仍以电影节官网为准。",
+   "小红书号": "",
+   "平台": "官网",
+   "简介": "印度系国际电影节投递与 OTT 发行平台，JIFF（斋浦尔国际电影节）官方指定投稿通道，宣称费率比 FilmFreeway 低约 40%",
+   "身份ID": "filmdais.com"
   }
  ]
 }
