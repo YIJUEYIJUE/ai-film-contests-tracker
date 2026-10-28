@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-10-28",
- "built": "2026-10-28 10:33",
+ "built": "2026-10-28 11:36",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -5359,7 +5359,7 @@
    "id": "reczz28S26OMvFdU",
    "name": "Epica Awards · AI Craft（类别 59，巴黎）",
    "grade": "C",
-   "deadline": "2026-11-15",
+   "deadline": "2026-10-30",
    "status": "open",
    "organizer": "Epica Awards（巴黎，评审团由营销传播行业记者与资深编辑组成）",
    "region": "法国·巴黎（全球征稿）",
@@ -5369,15 +5369,23 @@
    "prize": "无现金奖（Grand Prix 与金／银／铜奖座 + 证书）",
    "site": "https://www.epica-awards.com/enter",
    "submit": "https://www.epica-awards.com/enter",
-   "desc": "⚠️ **资格与成本双重门槛，本表标「不投」，仅作类别定义与档期参考留档。**\n类别 59 · AI Craft：官方定义：**「Visuals or videos crafted primarily with the help of Artificial Intelligence with an emphasis on advanced prompting and workflow to achieve the intended result.」**——即「主要借助 AI 制作、强调提示工程与工作流的视觉或影片作品」。它是 Epica 60 余个类别中的工艺类之一，不是独立赛事。\n资格·硬门槛：参赛对象为**广告公司、公关公司、影视制作公司、媒体顾问、设计工作室、摄影师与广告主**；作品必须是**经客户认可（client-approved）并已投放／发布／播出**的真实商业传播作品，首次投放时间须在 **2024-07-01 ~ 2026-11-15** 之间，且此前未参加过本奖。个人创作者的自由作品不符合资格。\n单元与截止：单项类别投稿；**报名期至 2026-11-15**（官方规则：11-15 前可书面撤稿并退费）；**2026-10-19 起进入 Late Entry Phase，未完成稿件加收 10% 附加费**。\n费用：**公司注册费 ¥35,105**（早鸟期免）+ **影片／广播类每条 ¥68,450**；另类与数字类 ¥77,050、整合campaign ¥113,910；信用卡支付另加 3%。\n评审：预审与终审评委均为营销传播行业记者与资深编辑；设 7 个 Grand Prix（影片、平面、创新、数字、公关、媒体、设计）+ 1 个责任大奖。",
-   "notes": "②**成本**——公司注册费 ¥35,105 + 影片类每条 ¥68,450，单条参赛成本近 7 万元人民币，远超个人创作者预算；⚠️ 截止口径：清单写「10-30 晚期征集截止」，官网 Rules 写报名期至 **11-15**、10-19 起为 Late Phase（+10%）→ 本表取官网 11-15；仅作「AI Craft 类别定义」参考：如果你的片子是**商业广告**且有客户授权，这条才是可用的",
+   "desc": "⚠️ **资格与成本双重门槛，本表标「不投」，仅作类别定义与档期参考留档。**\n类别 59 · AI Craft：官方定义：**「Visuals or videos crafted primarily with the help of Artificial Intelligence with an emphasis on advanced prompting and workflow to achieve the intended result.」**——即「主要借助 AI 制作、强调提示工程与工作流的视觉或影片作品」。它是 Epica 60 余个类别中的工艺类之一，不是独立赛事。\n资格·硬门槛：参赛对象为**广告公司、公关公司、影视制作公司、媒体顾问、设计工作室、摄影师与广告主**；作品必须是**经客户认可（client-approved）并已投放／发布／播出**的真实商业传播作品，首次投放时间须在 **2024-07-01 ~ 2026-11-15** 之间，且此前未参加过本奖。个人创作者的自由作品不符合资格。\n单元与截止：单项类别投稿；**报名截止 2026-10-30**（官网 Key dates 原文：Early bird 4-01~9-01 → Normal 9-01~10-04 → **Late entry period (+10%) 10-19~10-30**）；10-19 起未完成稿件加收 10% 附加费。⚠️ 别把两个 11-15 当截止：**2026-11-15 是「作品首次投放时间」资格窗口的终点**，也是官方规则里「书面撤稿可退费」的时限。\n费用：**公司注册费 ¥35,105**（早鸟期免）+ **影片／广播类每条 ¥68,450**；另类与数字类 ¥77,050、整合campaign ¥113,910；信用卡支付另加 3%。\n评审：预审与终审评委均为营销传播行业记者与资深编辑；设 7 个 Grand Prix（影片、平面、创新、数字、公关、媒体、设计）+ 1 个责任大奖。",
+   "notes": "②**成本**——公司注册费 ¥35,105 + 影片类每条 ¥68,450，单条参赛成本近 7 万元人民币，远超个人创作者预算；⚠️ 截止口径：清单写「10-30 晚期征集截止」，官网 Rules 写报名期至 **11-15**、10-19 起为 Late Phase（+10%）→ 本表取官网 11-15；仅作「AI Craft 类别定义」参考：如果你的片子是**商业广告**且有客户授权，这条才是可用的；原字段 2026-11-15 取自官方 Rules 的「11-15 前可书面撤稿并退费」与「作品首次投放窗口 2024-07-01~2026-11-15」，两者都不是投稿截止；官网 epica-awards.com/enter 的 Key dates 2026 明确：Late entry period(+10%) **10 月 19 日–10 月 30 日**，Shortlist 11-25、Ceremony 12-15、Results 12-16；AwardWatch 同记「Entries close on October 30, 2026」；故截止改为 2026-10-30",
    "mark": "caution",
    "verified": "none",
    "verifyNote": "",
    "opened": null,
    "tracked": "2026-10-26",
    "added": null,
-   "changes": []
+   "changes": [
+    {
+     "date": "2026-10-28",
+     "from": "2026-11-15",
+     "to": "2026-10-30"
+    }
+   ],
+   "changeReason": "官网 Key dates 2026 明确 Late entry period(+10%) 为 10 月 19 日–10 月 30 日（AwardWatch 同记 Entries close Oct 30）；原 11-15 是「作品首次投放窗口终点」与「书面撤稿退费时限」，非投稿截止，故改为 10-30",
+   "changeLabel": "日期订正"
   },
   {
    "id": "reczz28S26OMsxx6",
