@@ -748,11 +748,13 @@ a.lchip:hover{border-color:var(--accent);background:var(--accent-softer)}
 .p-chg a.row{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:10px;align-items:center;cursor:pointer;font-size:13px}
 .p-chg .why{display:block;margin-top:5px;padding-left:34px;font-size:12px;line-height:1.6;color:var(--muted);font-style:normal}
 .p-chg span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.p-chg b{font-weight:600;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.p-chg .why b.scope{display:inline-block;margin-right:6px;padding:1px 7px;border-radius:999px;background:var(--accent-soft,rgba(0,0,0,.06));color:var(--accent-ink);font-weight:700;font-size:11.5px;vertical-align:1px}
 /* 详情：收录与调整记录 */
 .dr-rec{display:flex;flex-direction:column;gap:6px;margin:-4px 0 18px;font-size:12.5px;color:var(--ink-3)}
 .dr-rec span{display:flex;align-items:center;gap:6px}.dr-rec svg{width:14px;height:14px;color:var(--ink-4)}
 .dr-rec .tag{margin-left:2px}
 .dr-why{margin:-12px 0 18px;padding:10px 12px;border-radius:var(--r-sm);background:var(--bg-sunk);font-size:12.5px;line-height:1.65;color:var(--ink-3)}
+.dr-why b{color:var(--accent-ink);font-weight:700}
 @media (max-width:1180px){.share{grid-template-columns:minmax(0,1fr) 300px}}
 @media (max-width:860px){
   .duo{grid-template-columns:minmax(0,1fr);gap:10px}
