@@ -539,13 +539,33 @@ function briefData() {
   return { L, due, dueT, dueK, fresh, freshT, freshK, w7, wk: w7.filter(c => !inDue.has(c.id)),
     mo: rng(8, 30).filter(c => G[c.grade] <= 1),
     fc: L.filter(c => { const l = daysLeft(c); return isFree(c) && hasCash(c) && l != null && l > 7 && l <= 60; }).sort((a, b) => cashCNY(b) - cashCNY(a)).slice(0, 6),
-    moved: C.filter(c => c.cycle !== "ended" && (c.changes || []).some(x => { const d = parseD(x.date); return x.to && d && (T0 - d) / 864e5 <= 3 && (T0 - d) >= 0; })).slice(0, 8) };
+    moved: C.filter(c => c.cycle !== "ended" && (c.changes || []).some(x => { const d = parseD(x.date); return x.to && d && (T0 - d) / 864e5 <= 7 && (T0 - d) >= 0; })).slice(0, 8) };
 }
 const dayNo = () => String(Math.floor((T0 - new Date(T0.getFullYear(), 0, 0)) / 864e5)).padStart(3, "0");
 const dueLabel = c => { const l = daysLeft(c); return l == null ? "截止待公布" : l < 0 ? `已截止 · ${md(c.deadline)}` : l === 0 ? "今天截止" : l === 1 ? `明天截止 · ${md(c.deadline)}` : `还剩 ${l} 天 · ${md(c.deadline)}`; };
 const newLabel = (c, short) => { const l = daysLeft(c); const tail = l == null ? "截止待公布" : l === 0 ? "今天截止" : short ? `剩 ${l} 天截止` : `${md(c.deadline)}截止（剩 ${l} 天）`; return `${md(c.added)}上新 · ${tail}`; };
 const prizeShort = c => { const p = String(c.prize || "").replace(/\s+/g, " ").split(/[；;。\n]/)[0]; return cashCNY(c) > 1 ? `${cnyLabel(c).replace("≈ ", "")} · ${p}` : p; };
 const chgLabel = (x, alt) => `${x.from ? md(x.from) : "新公布"} → ${x.to ? md(x.to) : (alt || "待公布")}`;
+// 调整粒度：把「档位 / 赛道 / 阶段」从变更原因里抽出来单独显示。
+// 只写「几号 → 几号」看不出改的是整场、某一档还是某条赛道，卡片和列表都要带上这个标签。
+const chgScope = c => {
+  const s = String(c && c.changeReason || "");
+  const grab = k => { const m = s.match(new RegExp(k + "\\s*[：:]\\s*([^；;。\\n]+)")); return m ? m[1] : ""; };
+  const cut = t => String(t).split(/[（(，,、；;]/)[0].replace(/[*`]/g, "").trim().slice(0, 18);
+  const parts = [grab("档位"), grab("赛道"), grab("阶段")].map(cut).filter(Boolean);
+  if (!parts.length) return "";
+  const uniq = parts.filter((p, i) => parts.indexOf(p) === i);
+  const out = uniq.join(" · ");
+  return out.length > 34 ? out.slice(0, 33) + "…" : out;
+};
+// 原因正文去掉已被 chgScope 抽走的部分，避免同一行重复
+const chgRest = c => String(c && c.changeReason || "")
+  .replace(/档位\s*[：:][^；;。\n]*[；;。]?/g, "")
+  .replace(/赛道\s*[：:][^；;。\n]*[；;。]?/g, "")
+  .replace(/阶段\s*[：:][^；;。\n]*[；;。]?/g, "")
+  .replace(/^[；;、\s]+/, "").trim();
+// 行高：基础一行 + 粒度标签一行 + 原因最多两行（卡片与 extraFor 必须用同一算法，否则长图会溢出）
+const mvRowH = c => { const r = chgRest(c); return 52 + (chgScope(c) ? 26 : 0) + (r ? 26 * (r.length > 46 ? 2 : 1) : 0); };
 
 V.brief = () => {
   const b = briefData(), d = T0;
@@ -583,7 +603,7 @@ V.brief = () => {
       <div class="p-duo">${col("due", b.dueT, b.due, "due", "近 7 天没有截止的赛事", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`)}${col("new", b.freshT, b.fresh, "new", "近 7 天没有新开征", `#/contests?new=${b.freshK}&sort=new`)}</div>
       <div class="p-body">
         ${sec("本周还要截止", b.wk, "本周没有其他截止的赛事")}${sec("30 天内的 S / A 级", b.mo, "30 天内没有 S / A 级截止")}${sec("免费且有现金奖 · 时间充裕", b.fc, "暂时没有符合条件的赛事")}
-        ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><p class="p-chg-hint">「→ 待公布」不等于取消：多半是上一届已结束、下一届还没公布，或官方征片页未上线，具体原因写在每条下面。</p><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<div class="p-chg-i"><a class="row" data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x, c.changeLabel)}</b></a>${c.changeReason ? `<em class="why">${esc(c.changeReason)}</em>` : ""}</div>`; }).join("")}</div></section>` : ""}
+        ${b.moved.length ? `<section class="p-sec"><h3><i></i>截止日有调整<em>${b.moved.length} 个</em></h3><p class="p-chg-hint">「→ 待公布」不等于取消：多半是上一届已结束、下一届还没公布，或官方征片页未上线，具体原因写在每条下面。</p><div class="p-chg">${b.moved.map(c => { const x = c.changes[c.changes.length - 1]; return `<div class="p-chg-i"><a class="row" data-open="${c.id}" tabindex="0">${gB(c)}<span>${esc(c.name)}</span><b>${chgLabel(x, c.changeLabel)}</b></a>${c.changeReason ? `<em class="why">${chgScope(c) ? `<b class="scope">${esc(chgScope(c))}</b>` : ""}${esc(chgRest(c) || c.changeReason)}</em>` : ""}</div>`; }).join("")}</div></section>` : ""}
       </div>
       <footer class="p-foot"><span>AI赛事助手 · 数据更新于 ${esc(RAW.snapshot)}</span><span>剩余天数按北京时间计算，截止时间以主办方官网公布的时区为准</span></footer>
     </article></div>`;
@@ -687,7 +707,7 @@ function drawCard({ size = "long", theme = "light" } = {}) {
   if (sumH(A) + 60 < tgt && nextUp.length) { let h = sumH(A) + 54; for (const it of nextUp) { if (h + it.h > tgt) break; filler.push(it); h += it.h; } }
   if (filler.length) { A = [...A, { sep: true, h: 54 }, ...filler]; }
   const shownNextIds = new Set(filler.map(x => x.c.id));
-  const extraFor = () => { if (size !== "long") return { h: 0 }; const wk = b.wk.filter(c => !shownNextIds.has(c.id)).slice(0, 8), mv = b.moved.slice(0, 4); let h = 0; if (wk.length) h += 70 + wk.length * 52 + 16; if (mv.length) h += 70 + mv.reduce((t, c) => t + (c.changeReason ? 92 : 52), 0) + 16; return { h: h ? h + 28 : 0, wk, mv }; };
+  const extraFor = () => { if (size !== "long") return { h: 0 }; const wk = b.wk.filter(c => !shownNextIds.has(c.id)).slice(0, 8), mv = b.moved.slice(0, 4); let h = 0; if (wk.length) h += 70 + wk.length * 52 + 16; if (mv.length) h += 70 + mv.reduce((t, c) => t + mvRowH(c), 0) + 16; return { h: h ? h + 28 : 0, wk, mv }; };
   const EX = extraFor();
   let H, avail;
   if (size === "long") { const cap = 10; const fa = fit(A.some(x => x.sep) ? A : A.slice(0, cap), 1e9), fb = fit(B.slice(0, cap), 1e9); avail = Math.max(fa.h, fb.h, 150) + 64; H = top + colHead + avail + 12 + EX.h + footH + P - 24; }
@@ -712,7 +732,7 @@ function drawCard({ size = "long", theme = "light" } = {}) {
   const dw = ctx.measureText(dTxt).width; ctx.font = f(40, 500); ctx.fillStyle = T.ink3; ctx.fillText(`周${WD[T0.getDay()]} · ${T0.getFullYear()}`, P + dw + 18, y + F.date * .86);
   y += F.date + (wide ? 14 : 18);
   ctx.font = f(F.head, 500); ctx.fillStyle = T.ink2;
-  ctx.fillText(`${b.dueT} ${b.due.length} 个，${b.freshT} ${b.fresh.length} 个${b.moved.length ? `，${b.moved.length} 个调整了截止日` : ""}`, P, y + F.head);
+  ctx.fillText(`${b.dueT} ${b.due.length} 个，${b.freshT} ${b.fresh.length} 个${b.moved.length ? `，${b.moved.length} 个调整了截止日` : "，近 7 天无截止日调整"}`, P, y + F.head);
   y += headH - (wide ? 44 + 30 + F.date + 14 : 44 + 40 + F.date + 18);
   // 数据条
   const stats = [["在征赛事", b.L.length, T.ink], ["7 天内截止", b.w7.length, T.ink], [b.dueT, b.due.length, T.hot], [b.freshT, b.fresh.length, T.acc]];
@@ -765,10 +785,12 @@ function drawCard({ size = "long", theme = "light" } = {}) {
     block(`本周还要截止 · ${b.wk.length} 个`, EX.wk, (c, ry) => { ctx.font = f(22, 800); ctx.fillStyle = T.g[c.grade]; ctx.fillText(c.grade, P + ipad, ry + 34); ctx.font = f(F.item + 2, 500); ctx.fillStyle = T.ink2;
       const right = `${md(c.deadline)} · 剩 ${daysLeft(c)} 天`; const rw = (ctx.font = f(F.item + 2, 650), ctx.measureText(right).width); ctx.font = f(F.item + 2, 500); const nm = wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0]; ctx.fillText(nm, P + ipad + 36, ry + 34);
       ctx.font = f(F.item + 2, 650); ctx.fillStyle = daysLeft(c) <= 3 ? T.hot : T.ink3; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left"; });
-    block(`截止日有调整 · ${b.moved.length} 个`, EX.mv, (c, ry) => { const x = c.changes[c.changes.length - 1]; ctx.font = f(22, 800); ctx.fillStyle = T.g[c.grade]; ctx.fillText(c.grade, P + ipad, ry + 34);
+    block(`截止日有调整 · ${b.moved.length} 个`, EX.mv, (c, ry) => { const x = c.changes[c.changes.length - 1]; const sc = chgScope(c), rest = chgRest(c); ctx.font = f(22, 800); ctx.fillStyle = T.g[c.grade]; ctx.fillText(c.grade, P + ipad, ry + 34);
       const right = chgLabel(x, c.changeLabel); ctx.font = f(F.item + 2, 650); const rw = ctx.measureText(right).width; ctx.font = f(F.item + 2, 500); ctx.fillStyle = T.ink2; ctx.fillText(wrapText(ctx, c.name, W - 2 * P - ipad * 2 - 40 - rw - 24, 1)[0], P + ipad + 36, ry + 34);
       ctx.font = f(F.item + 2, 650); ctx.fillStyle = T.acc; ctx.textAlign = "right"; ctx.fillText(right, W - P - ipad, ry + 34); ctx.textAlign = "left";
-      if (c.changeReason) { ctx.font = f(20, 400); ctx.fillStyle = T.ink3; ctx.fillText(wrapText(ctx, c.changeReason, W - 2 * P - ipad * 2 - 40, 1)[0], P + ipad + 36, ry + 68); } }, c => c.changeReason ? 92 : 52);
+      let ly = ry + 68;
+      if (sc) { ctx.font = f(20, 700); ctx.fillStyle = T.acc; ctx.fillText(wrapText(ctx, `调整范围：${sc}`, W - 2 * P - ipad * 2 - 40, 1)[0], P + ipad + 36, ly); ly += 26; }
+      if (rest) { ctx.font = f(20, 400); ctx.fillStyle = T.ink3; wrapText(ctx, rest, W - 2 * P - ipad * 2 - 40, 2).forEach((ln2, k) => ctx.fillText(ln2, P + ipad + 36, ly + k * 26)); } }, mvRowH);
     y += 12;
   }
   // 页脚
@@ -910,7 +932,7 @@ function fillDrawer(id) {
       <div class="fact"><dt>${I.pin}地区</dt><dd>${esc(c.region || "未注明")}</dd></div>
     </dl>
     ${safeUrl(c.site) || sub ? `<div class="links">${linkChip("官网", c.site, "globe")}${sub && sub !== safeUrl(c.site) ? linkChip(mail ? "邮箱投稿" : "投递入口", sub, "ext") : ""}</div>` : `<div class="vbox warn"><span class="vi">${I.alert}</span><div><b>暂无官方链接</b><span>主办方暂未公布官网或投递入口，请关注后续公告。</span></div></div>`}
-    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${chgLabel(x, c.changeLabel)}</span>`).join("")}</div>${c.changeReason ? `<p class="dr-why">调整原因：${esc(c.changeReason)}</p>` : ""}` : ""}
+    ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${chgLabel(x, c.changeLabel)}</span>`).join("")}</div>${c.changeReason ? `<p class="dr-why">${chgScope(c) ? `调整范围：<b>${esc(chgScope(c))}</b>｜` : ""}${esc(chgRest(c) || c.changeReason)}</p>` : ""}` : ""}
     ${ms.length > 1 ? `<div class="dr-h">时间节点</div><ul class="tl-list">${(() => { const nx = ms.findIndex(x => x.d >= T0); return ms.map((x, i) => `<li class="${x.d < T0 ? "done" : i === nx ? "next" : ""}"><i></i><b>${ymd(x.d)}</b><span>${esc(x.label)}</span></li>`).join(""); })()}</ul>` : ""}
     ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${esc(c.desc)}</div>` : ""}
     ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${esc(c.notes)}</div>` : ""}
