@@ -1,5 +1,5 @@
 // 离线缓存：始终先取最新版本，断网时用缓存，保证更新后立即生效。
-const V = "aicontest-v14", SHELL = ["./", "index.html", "assets/styles.css?v=13", "assets/app.js?v=14", "assets/icon.svg", "manifest.webmanifest", "data/data.js"];
+const V = "aicontest-v15", SHELL = ["./", "index.html", "assets/styles.css?v=14", "assets/app.js?v=15", "assets/icon.svg", "manifest.webmanifest", "data/data.js"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", e => {
