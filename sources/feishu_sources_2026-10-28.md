@@ -1,6 +1,6 @@
 # 飞书信源表 · 快照 2026-10-28
 
-> 共 **67** 条
+> 共 **72** 条
 
 | 平台 | 名称 | 身份ID | 主页 |
 |---|---|---|---|
@@ -71,3 +71,8 @@
 | 公众号 | HiShorts!青年短片周 | gh_2319d3bd4be9 | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5OTk0NjEzOQ==) |
 | 公众号 | wuhu动画人空间 | gh_37b76d43efc2 | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwNjAyMzczNQ==) |
 | 小红书 | AI学院派 | 68aaa368000000001803 | [主页](https://www.xiaohongshu.com/user/profile/68aaa368000000001803e7fa) |
+| 公众号 | AIGC AWARDS WATCHLIST | MzYyMjEwMjQ4Ng== | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzYyMjEwMjQ4Ng==) |
+| 公众号 | AI电影共创社 | MjM5NzgyNzEwMg== | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NzgyNzEwMg==) |
+| 公众号 | AIGC老马 | MzAwMzQ3ODc0Mg== | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzQ3ODc0Mg==) |
+| 公众号 | MANA 全球新媒体艺术平台 | MzI0MDQxNTI2OQ== | [主页](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0MDQxNTI2OQ==) |
+| 官网 | FilmDais | filmdais.com | [主页](https://filmdais.com/) |
