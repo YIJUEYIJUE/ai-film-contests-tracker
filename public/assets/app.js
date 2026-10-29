@@ -581,7 +581,7 @@ V.brief = () => {
   <div class="brief">
     <div class="page-h"><div class="kicker">今日简报</div><h1>每日赛事日报 · 一键生成分享卡片</h1><p class="lede">这里汇总${b.dueT}与${b.freshT}：生成图片直接发朋友圈、群聊或公众号；也能复制成文字。</p></div>
     <section class="share">
-      <div class="share-pv"><img id="cardImg" alt="分享卡片预览" class="${size}" style="display:none"><div class="share-ld" id="cardLd">选好尺寸与配色后，点右侧「生成图片」。<br><small>不点就不生成，避免每次进页面都跑一遍 Canvas。</small></div></div>
+      <div class="share-pv"><img id="cardImg" alt="分享卡片预览" class="${size}" style="display:none"><div class="share-ld" id="cardLd">选好尺寸与配色后，点下方「生成图片」。<br><small>不点就不生成，避免每次进页面都跑一遍 Canvas。</small></div></div>
       <div class="share-op">
         <div class="op-g"><label>尺寸</label><div class="seg">${Object.entries(CARD_SIZES).map(([k, v]) => seg("size", k, size, v.n)).join("")}</div><small>${CARD_SIZES[size].tip}</small></div>
         <div class="op-g"><label>配色</label><div class="seg">${seg("theme", "light", theme, "浅色")}${seg("theme", "dark", theme, "深色")}</div></div>
@@ -591,7 +591,7 @@ V.brief = () => {
           <li><i></i>顶部：在征 ${b.L.length} · 7 天内截止 ${b.w7.length}</li>
           ${size === "long" ? `<li><i></i>底部：本周还要截止 ${b.wk.length} · 截止日调整 ${b.moved.length}</li>` : ""}</ul></div>
         <div class="op-btns"><button class="btn pri" data-act="cardgen">${I.edit || ""}生成图片</button><button class="btn" data-act="cardsave">${I.down}保存图片</button><button class="btn" data-act="cardcopy">${I.copy}复制图片</button><button class="btn" data-act="caption">${I.copy}复制配文</button></div>
-        <p class="op-tip">手机上也可以长按左侧图片保存。图片里每栏放不下的条目会提示「还有 N 个」，引导到网站查看。</p>
+        <p class="op-tip">手机上也可以长按上方预览图保存。图片里每栏放不下的条目会提示「还有 N 个」，引导到网站查看。</p>
       </div>
     </section>
     <div class="brief-tools"><span>文字版</span><div class="btns"><button class="btn" data-act="copybrief">${I.copy}复制文字</button><button class="btn" data-act="copymd">${I.copy}复制 Markdown</button><button class="btn" data-act="print">${I.print}打印 / PDF</button></div></div>
@@ -646,7 +646,7 @@ function cardBlob(cb) {
 function cardSave() {
   if (!cardCanvas && !cardRender()) return toast("图片还没生成，请先点「生成图片」");
   cardBlob(bl => {
-    if (!bl) return toast("导出失败，请长按左侧图片保存");
+    if (!bl) return toast("导出失败，请长按预览图保存");
     const u = URL.createObjectURL(bl);
     const a = Object.assign(document.createElement("a"), { href: u, download: cardName(), rel: "noopener" });
     document.body.append(a); a.click(); a.remove();
