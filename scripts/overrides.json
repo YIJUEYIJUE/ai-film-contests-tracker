@@ -530,6 +530,18 @@
   "reczz28MYyZBMa7c": {
    "text": "档位：Extended（FilmFreeway 末档）；赛道：四个类别同档；**旧 2026-10-20 → 新 2026-10-21**。FF 页渲染另有 Extended 10-21（官网只写 Close Oct 20），按多档取最晚采用 10-21；状态仍为已截止。",
    "label": "截止 +1 天"
+  },
+  "reczz28Ow4R5hpmu": {
+   "text": "档位：单一 Final（无分档）；赛道：Best AI Film / Africa 2063 / Audience Choice 三类同档；**旧 2026-10-31 → 新 2026-11-30**。官网 Key Dates 原文：Submissions Open September 2026 → Final Submission Deadline November 30, 2026 → Official Selections December 2026 → Screening & Awards January 16, 2027；通知（11-19→12 月）与举办（11-28→2027-01-16）同步更正。",
+   "label": "延期 30 天"
+  },
+  "reczz28MYyZBLMWu": {
+   "text": "档位：Extended（五级阶梯末档）；赛道：短片与 AI 长片同档；**旧 2026-10-25（已截止）→ 新 2026-10-29（今日）**。Festhome Deadlines 原文：22 Jul Call → 22 Aug Early → 18 Sep Standard → 15 Oct Late → **29 Oct Extended** → 11-01 通知；10-26 复核时页面尚未显示该档。",
+   "label": "延期 4 天"
+  },
+  "recvstzYwt6Cq7": {
+   "text": "档位：Final（延期后末档）；赛道：AI Creative 单类别；**旧 2026-10-27（已截止）→ 新 2026-12-08**。官网 info 页顶部原文「EXTENDED DEADLINE: December 8, 2026」，首页 Current Award Competitions 标 12-08（剩 41 天）；页内 Deadlines 段仍留旧文属未同步。",
+   "label": "延期 42 天"
   }
  },
  "cycle_status": {
