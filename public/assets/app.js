@@ -857,7 +857,8 @@ function chrome() {
   const cnt = { home: w3 ? `<em>${w3}</em>` : "", contests: `<em>${L.length}</em>` };
   const grp = { home: "赛事", timeline: "", calendar: "", insights: "", brief: "", festivals: "资料", about: "" };
   $("#tabs").innerHTML = ROUTES.map(r => `${grp[r.k] && r.k !== "home" ? `<div class="nav-g">${grp[r.k]}</div>` : ""}<a href="#/${r.k}" class="${R.page === r.k ? "on" : ""} ${r.k === "home" && w3 ? "hot" : ""}" ${R.page === r.k ? 'aria-current="page"' : ""}>${I[r.i]}<span>${r.n}</span>${cnt[r.k] || ""}</a>`).join("");
-  $("#snap").textContent = `数据更新于 ${RAW.snapshot} · 共 ${C.length} 个赛事`;
+  { const hid = C.length - L.length;
+    $("#snap").innerHTML = `数据更新于 ${esc(RAW.snapshot)} · 共 ${C.length} 个赛事` + (hid > 0 ? `<br><span class="snap-hint">默认收起 ${hid} 个已截止／本届结束（<a href="#/contests?when=all">查看全部</a>）</span>` : ""); }
   $("#today").textContent = `${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]}`;
   $("#tabbar").innerHTML = ["home", "contests", "timeline", "calendar", "brief"].map(k => { const r = ROUTES.find(x => x.k === k); return `<a href="#/${k}" class="${R.page === k ? "on" : ""}">${I[r.i]}<span>${r.n.replace("全部", "").replace("今日", "").replace("截止", "").replace("数据", "")}</span></a>`; }).join("");
   const cur = ROUTES.find(r => r.k === R.page);
