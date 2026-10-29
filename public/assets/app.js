@@ -232,7 +232,7 @@ V.home = () => {
   return `
   <div class="page-h"><div class="kicker"><i></i>截止雷达</div>
     <h1>${w3.length ? `${w3.length} 个赛事将在 3 天内截止` : w7.length ? `本周有 ${w7.length} 个赛事截止` : "近期没有赛事截止"}</h1>
-    <p class="lede">${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]} · 在征 ${L.length} 个 AI 影像赛事，截止日以主办方官网为准。</p></div>
+    <p class="lede">${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]} · 未截止 ${L.length} 个 AI 影像赛事（在征 ${L.filter(c => c.status === "open" || c.status === "soon").length} · 待公布 ${L.filter(c => c.status === "pending").length}），截止日以主办方官网为准。</p></div>
   ${(() => { const b = briefData(); const li = (c, mode) => `<li><a data-open="${c.id}" tabindex="0" role="button">${gB(c)}<span class="duo-t">${esc(c.name)}</span><span class="duo-m ${mode === "due" ? urg(daysLeft(c)) : "acc"}">${mode === "due" ? (daysLeft(c) === 0 ? "今天" : daysLeft(c) + " 天") : md(c.added)}</span></a></li>`;
     const box = (cls, t, a, mode, href, e) => `<div class="duo-c ${cls}"><div class="duo-h"><b>${t}</b><em class="num">${a.length}</em><a href="${href}">全部${I.r}</a></div>${a.length ? `<ol>${a.slice(0, 5).map(c => li(c, mode)).join("")}</ol>` : `<p class="duo-e">${e}</p>`}</div>`;
     return `<section class="duo" aria-label="今日速览">${box("due", b.dueT, b.due, "due", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`, "近 7 天没有截止")}${box("new", b.freshT, b.fresh, "new", `#/contests?new=${b.freshK}&sort=new`, "近 7 天没有新开征")}<a class="duo-share" href="#/brief">${I.doc}<span><b>生成今日分享卡片</b><small>竖版长图 / 3:4 / 横版，一键保存</small></span>${I.r}</a></section>`; })()}
@@ -250,7 +250,7 @@ V.home = () => {
     <div class="pulse">
       <div class="kpis">
         <a class="kpi" href="#/contests?when=7"><span>7 天内截止</span><b class="num ${w7.length ? "hot" : ""}">${w7.length}</b><i>3 天内 ${w3.length} 个</i></a>
-        <a class="kpi" href="#/contests?grade=SA"><span>S / A 级</span><b class="num">${sa.length}</b><i>占在征 ${Math.round(sa.length / Math.max(1, L.length) * 100)}%</i></a>
+        <a class="kpi" href="#/contests?grade=SA"><span>S / A 级</span><b class="num">${sa.length}</b><i>占未截止 ${Math.round(sa.length / Math.max(1, L.length) * 100)}%</i></a>
         <a class="kpi" href="#/contests?fee=free"><span>免费报名</span><b class="num">${free.length}</b><i>含现金奖 ${fc.length} 个</i></a>
         <a class="kpi" href="#/contests?when=tba"><span>截止待公布</span><b class="num">${L.length - dated.length}</b><i>长期征集</i></a>
       </div>
@@ -503,7 +503,7 @@ V.insights = () => {
   const bars = months.map((m, i) => { const tot = mc[i].reduce((a, b) => a + b, 0); return `<div class="vb" title="${m.n}：${tot} 个"><div class="stk">${["S", "A", "B", "C"].map((g, j) => mc[i][j] ? `<i style="height:${mc[i][j] / mx * 100}%;background:var(--g${g})"></i>` : "").join("")}</div><b class="num">${tot}</b><span>${m.n}</span></div>`; }).join("");
   const gc = ["S", "A", "B", "C"].map(g => [g, L.filter(c => c.grade === g).length]); const tot = L.length || 1;
   let acc = 0; const R0 = 52, CC = 2 * Math.PI * R0;
-  const donut = `<svg viewBox="0 0 132 132" class="donut">${gc.map(([g, n]) => { const s = `<circle cx="66" cy="66" r="${R0}" fill="none" stroke="${col[g]}" stroke-width="16" stroke-dasharray="${n / tot * CC} ${CC}" stroke-dashoffset="${-acc / tot * CC}" transform="rotate(-90 66 66)"/>`; acc += n; return s; }).join("")}<text x="66" y="63" text-anchor="middle" font-size="26" font-weight="700" fill="currentColor">${L.length}</text><text x="66" y="84" text-anchor="middle" font-size="11" fill="currentColor" opacity=".55">在征赛事</text></svg>`;
+  const donut = `<svg viewBox="0 0 132 132" class="donut">${gc.map(([g, n]) => { const s = `<circle cx="66" cy="66" r="${R0}" fill="none" stroke="${col[g]}" stroke-width="16" stroke-dasharray="${n / tot * CC} ${CC}" stroke-dashoffset="${-acc / tot * CC}" transform="rotate(-90 66 66)"/>`; acc += n; return s; }).join("")}<text x="66" y="63" text-anchor="middle" font-size="26" font-weight="700" fill="currentColor">${L.length}</text><text x="66" y="84" text-anchor="middle" font-size="11" fill="currentColor" opacity=".55">未截止</text></svg>`;
   const split = (a, b, na, nb, ca, cb) => { const t = a + b || 1; return `<div class="split"><div class="sp-bar"><i style="flex:${a || .0001};background:${ca}"></i><i style="flex:${b || .0001};background:${cb}"></i></div><div class="sp-l"><span><i style="background:${ca}"></i>${na} <b class="num">${a}</b> · ${Math.round(a / t * 100)}%</span><span><i style="background:${cb}"></i>${nb} <b class="num">${b}</b></span></div></div>`; };
   const free = L.filter(isFree).length, cash = L.filter(hasCash).length, topic = L.filter(c => c.topic === "命题").length, cn = L.filter(isCN).length;
   const forms = FORMS.map(([nm]) => [nm, L.filter(c => formsOf(c).includes(nm)).length]).sort((a, b) => b[1] - a[1]); const fmx = Math.max(1, ...forms.map(x => x[1]));
@@ -579,7 +579,7 @@ V.brief = () => {
   const seg = (k, v, cur, label) => `<button class="${cur === v ? "on" : ""}" data-card="${k}:${v}">${label}</button>`;
   return `
   <div class="brief">
-    <div class="page-h"><div class="kicker">今日简报</div><h1>每日赛事日报 · 一键生成分享卡片</h1><p class="lede">左边是${b.dueT}，右边是${b.freshT}。生成图片直接发朋友圈、群聊或公众号；也能复制成文字。</p></div>
+    <div class="page-h"><div class="kicker">今日简报</div><h1>每日赛事日报 · 一键生成分享卡片</h1><p class="lede">这里汇总${b.dueT}与${b.freshT}：生成图片直接发朋友圈、群聊或公众号；也能复制成文字。</p></div>
     <section class="share">
       <div class="share-pv"><img id="cardImg" alt="分享卡片预览" class="${size}" style="display:none"><div class="share-ld" id="cardLd">选好尺寸与配色后，点右侧「生成图片」。<br><small>不点就不生成，避免每次进页面都跑一遍 Canvas。</small></div></div>
       <div class="share-op">
@@ -599,7 +599,7 @@ V.brief = () => {
       <header class="p-head"><div class="ph-top"><span>AI 赛事日报</span><span>No.${dayNo()} · ${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")} 周${WD[d.getDay()]}</span></div>
         <h1>${b.dueT} ${b.due.length} 个，${b.freshT} ${b.fresh.length} 个</h1>
         <p>一周内共有 ${b.w7.length} 个赛事截止，30 天内还有 ${b.mo.length} 个 S / A 级。${b.moved.length ? `近 3 天有 ${b.moved.length} 个赛事调整了截止日，投递前请再看一眼。` : ""}</p>
-        <div class="p-stats"><div><b class="num">${b.L.length}</b><span>在征赛事</span></div><div><b class="num">${b.w7.length}</b><span>7 天内截止</span></div><div><b class="num u-red">${b.due.length}</b><span>${b.dueT}</span></div><div><b class="num acc">${b.fresh.length}</b><span>${b.freshT}</span></div></div></header>
+        <div class="p-stats"><div><b class="num">${b.L.length}</b><span>未截止</span></div><div><b class="num">${b.w7.length}</b><span>7 天内截止</span></div><div><b class="num u-red">${b.due.length}</b><span>${b.dueT}</span></div><div><b class="num acc">${b.fresh.length}</b><span>${b.freshT}</span></div></div></header>
       <div class="p-duo">${col("due", b.dueT, b.due, "due", "近 7 天没有截止的赛事", `#/contests?when=${b.dueK === "today" ? "3" : b.dueK}`)}${col("new", b.freshT, b.fresh, "new", "近 7 天没有新开征", `#/contests?new=${b.freshK}&sort=new`)}</div>
       <div class="p-body">
         ${sec("本周还要截止", b.wk, "本周没有其他截止的赛事")}${sec("30 天内的 S / A 级", b.mo, "30 天内没有 S / A 级截止")}${sec("免费且有现金奖 · 时间充裕", b.fc, "暂时没有符合条件的赛事")}
@@ -735,7 +735,7 @@ function drawCard({ size = "long", theme = "light" } = {}) {
   ctx.fillText(`${b.dueT} ${b.due.length} 个，${b.freshT} ${b.fresh.length} 个${b.moved.length ? `，${b.moved.length} 个调整了截止日` : "，近 7 天无截止日调整"}`, P, y + F.head);
   y += headH - (wide ? 44 + 30 + F.date + 14 : 44 + 40 + F.date + 18);
   // 数据条
-  const stats = [["在征赛事", b.L.length, T.ink], ["7 天内截止", b.w7.length, T.ink], [b.dueT, b.due.length, T.hot], [b.freshT, b.fresh.length, T.acc]];
+  const stats = [["未截止", b.L.length, T.ink], ["7 天内截止", b.w7.length, T.ink], [b.dueT, b.due.length, T.hot], [b.freshT, b.fresh.length, T.acc]];
   rrect(ctx, P, y, W - 2 * P, statH, 22); ctx.fillStyle = T.card; ctx.fill(); ctx.strokeStyle = T.line; ctx.lineWidth = 2; ctx.stroke();
   const sw = (W - 2 * P) / 4;
   stats.forEach(([k, v, col], i) => { const x = P + sw * i; if (i) { ctx.strokeStyle = T.line; ctx.beginPath(); ctx.moveTo(x, y + 24); ctx.lineTo(x, y + statH - 24); ctx.stroke(); }
