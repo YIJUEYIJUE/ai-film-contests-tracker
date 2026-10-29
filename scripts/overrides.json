@@ -1,6 +1,6 @@
 {
  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-09-29",
+ "updated": "2026-10-29",
  "records": {
   "recvs8rH4WHCdI": {
    "verify": {
@@ -514,6 +514,10 @@
   "reczz28S26OMvFdU": {
    "text": "档位：Late(+10%) 末档（10-19 ~ 10-30）；类别：AI Craft（类别 59）。原 11-15 是「作品首次投放窗口终点」与「书面撤稿退费时限」，两者都不是投稿截止。",
    "label": "日期订正"
+  },
+  "recvtIfhUxwJGQ": {
+   "text": "档位：最终档（投奖平台 12 档末档）；赛道：全类别；**旧 2027-05-27 → 新 2027-05-26**。原 05-27 取自 Festhome Extended 档，2026-10-29 实测该页 200 但跳回 festhome.com 首页、渠道失效；投奖页（id 619）实测末档 05-26，FilmFreeway 页末档 05-06，取可用渠道中最晚档 05-26。",
+   "label": "截止提前 1 天"
   }
  },
  "cycle_status": {
