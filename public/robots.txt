@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yijueyijue.github.io/ai-film-contests-tracker/sitemap.xml
