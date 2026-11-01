@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-11-02",
- "built": "2026-11-02 01:04",
+ "built": "2026-11-02 01:57",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1054,7 +1054,7 @@
    "site": "https://www.aitff.com",
    "submit": "https://filmfreeway.com/T-AIFF",
    "desc": "土耳其标杆性 AI 电影节，第 3 届，在伊斯坦布尔阿塔图尔克文化中心举办，历届累计收到 100 多个国家 2000+ 投稿。设最佳 AI 影片大奖及最佳 AI 导演、摄影、剪辑、音效、音乐、视效、动画、纪录等 10 项工艺奖。展映 2026-12-07 至 12-09（Yeşilçam 影院）。\n▸ 费用：**土耳其国内组免费；国际组收象征性报名费**——官方规则原文：该费用用于平衡非 AI 作品的报名密度，收入将作为奖金再分配给国际组创作者；具体金额以 FilmFreeway 提交页显示为准。\n▸ 奖金口径：**无固定现金奖**（颁授奖杯）；国际组报名费收入作为奖金再分配给创作者。\n档期：**2026-11-01 截止**；展映 2026-12-07～09（伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院）。单一轮次，无分档。\n截止口径：①整体关闭：投稿/报名已于 **2026-11-01 23:59（北京时间）** 截止，逾期不再接收；②后续节点：2026-12-07 举办/颁奖。",
-   "notes": "2026-08-29 信源巡检新增并核实：Festhome 官方节展页确认截止 2026-11-01、免费投稿；第 3 届、规模大（100+国家/2000+投稿），落 B；具体奖金金额官方未公布，标未核实；旧 Festhome 链接系 2024 届页面已弃用，投递改 FilmFreeway 本届页；多源一致：征集截止 2026-11-01，放映 2026-12-07~09 于伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院；第三届、已收 100+ 国家 2000+ 部；FilmFreeway 免费投递，奖金由报名费转为创作者奖项；已补举办时间；FilmFreeway 页官方规则写明 \"The symbolic submission fee collected for the international category...\"，即**国际组并非免费**；此前字段写「免费」是错的，已改为「国内组免费 / 国际组象征性报名费」，说明同步更正；截止 2026-11-01 已过；FilmFreeway/官网 2026-11-02 复核未见延期，状态改「已截止」，补并写明后续节点",
+   "notes": "2026-08-29 信源巡检新增并核实：Festhome 官方节展页确认截止 2026-11-01、免费投稿；第 3 届、规模大（100+国家/2000+投稿），落 B；具体奖金金额官方未公布，标未核实；旧 Festhome 链接系 2024 届页面已弃用，投递改 FilmFreeway 本届页；多源一致：征集截止 2026-11-01，放映 2026-12-07~09 于伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院；第三届、已收 100+ 国家 2000+ 部；FilmFreeway 免费投递，奖金由报名费转为创作者奖项；已补举办时间；FilmFreeway 页官方规则写明 \"The symbolic submission fee collected for the international category...\"，即**国际组并非免费**；此前字段写「免费」是错的，已改为「国内组免费 / 国际组象征性报名费」，说明同步更正；截止 2026-11-01 已过；FilmFreeway/官网 2026-11-02 复核未见延期，状态改「已截止」，补并写明后续节点；FF 页 Dates & Deadlines 原文：Opening 2026-06-25 / **Deadline 2026-11-01** / **Notification November 29, 2026** / Event December 7–9, 2026；原「通知时间」为空，补 2026-11-29；截止与举办与页面一致，未变",
    "mark": "",
    "verified": "warn",
    "verifyNote": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实",
@@ -3858,8 +3858,8 @@
    "id": "reczz28Ow4R5eRy5",
    "name": "New York AI Indie Awards 2026（纽约·Freed Spaces）",
    "grade": "C",
-   "deadline": "2026-10-29",
-   "status": "closed",
+   "deadline": "2026-11-03",
+   "status": "open",
    "organizer": "New York AI Indie Awards",
    "region": "美国纽约曼哈顿",
    "category": "AI影像奖·短片",
@@ -3868,15 +3868,23 @@
    "prize": "八项 laurels（Best AI Film / Director / Screenplay / Cinematography / Sound and Music / Animation / Documentary / Experimental Work），无现金奖",
    "site": "https://filmfreeway.com/festivals/99737",
    "submit": "https://filmfreeway.com/festivals/99737",
-   "desc": "纽约首届独立 AI 影像奖，2026-11-15 16:00~18:00 在曼哈顿 Freed Spaces（1030 6th Ave 五层）放映并 Q&A。影片 20 分钟以内（含字幕），须为 2025-01-01 之后完成，不限类型；AI 须用于画面、声音、音乐、剧本或剪辑并在报名表中说明；不要求首映，已参加过其他节展的影片可投。\n单元与截止：八个奖项各 $10，一片一投；2026-10-29 截止，11-05 通知，11-15 活动。\n投稿方式：FilmFreeway 提交，需提供 1080p 以上可观看链接。\n截止口径：①整体关闭：投稿/报名已于 **2026-10-29 23:59（北京时间）** 截止，逾期不再接收；②后续节点：2026-11-05 公布结果；2026-11-15 举办/颁奖。",
-   "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；仅剩 11 天；截止 2026-10-29 已过；FilmFreeway/官网 2026-11-02 复核未见延期，状态改「已截止」，补并写明后续节点",
+   "desc": "纽约首届独立 AI 影像奖，2026-11-15 16:00~18:00 在曼哈顿 Freed Spaces（1030 6th Ave 五层）放映并 Q&A。影片 20 分钟以内（含字幕），须为 2025-01-01 之后完成，不限类型；AI 须用于画面、声音、音乐、剧本或剪辑并在报名表中说明；不要求首映，已参加过其他节展的影片可投。\n单元与截止·逐档：八个奖项各 $10，一片一投。FilmFreeway Dates & Deadlines（2026-11-02 复核）：Opening **2026-10-08** → **Deadline 2026-11-03（本站采用，唯一投稿档，页面显示 Submit Now）** → 通知 **2026-11-05** → 活动 **2026-11-15**（Freed Spaces，16:00–18:00 放映 + Q&A）。\n投稿方式：FilmFreeway 提交，需提供 1080p 以上可观看链接。\n截止口径：**仍在开放**：唯一投稿档为 **2026-11-03**（FF 页 2026-11-02 显示 Submit Now、Standard $10）；10-29 是原定档，官方已顺延 5 天。11-05 通知，11-15 放映并公布八项 laurels。",
+   "notes": "主办方未见独立官网，FilmFreeway 页为其官方入口与投递通道，官网字段与投递链接同为该平台页；一切以平台页当日显示为准；仅剩 11 天；截止 2026-10-29 已过；FilmFreeway/官网 2026-11-02 复核未见延期，状态改「已截止」，补并写明后续节点；FilmFreeway Dates & Deadlines 原文为「October 8, 2026 Opening Date / **November 3, 2026 Deadline** / November 5, 2026 Notification Date / November 15, 2026 Event Date」，Categories & Fees 显示 Submit Now、Standard $10；WebFetch 独立复核一致；档位：唯一 Deadline 档；赛道：八个奖项同档；**旧 2026-10-29（已截止）→ 新 2026-11-03（开放征集中）**；10-29 复核时页面仍记 10-29，本轮已顺延",
    "mark": "",
    "verified": "none",
    "verifyNote": "",
    "opened": "2026-10-08",
    "tracked": "2026-10-19",
    "added": "2026-10-08",
-   "changes": []
+   "changes": [
+    {
+     "date": "2026-11-02",
+     "from": "2026-10-29",
+     "to": "2026-11-03"
+    }
+   ],
+   "changeReason": "档位：唯一 Deadline 档（FilmFreeway 无分档）；赛道：八个奖项同档，各 $10；**旧 2026-10-29 → 新 2026-11-03**。FF 页 Dates & Deadlines 原文「October 8, 2026 Opening Date / November 3, 2026 Deadline / November 5, 2026 Notification Date / November 15, 2026 Event Date」，Categories & Fees 显示 Submit Now、Standard $10；WebFetch 独立复核一致。原 10-29 为上一版页面日期，官方顺延 5 天。",
+   "changeLabel": "延期 5 天"
   },
   {
    "id": "reczz28OwJEkdubp",
