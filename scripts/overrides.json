@@ -1,6 +1,6 @@
 {
  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-10-29",
+ "updated": "2026-11-02",
  "records": {
   "recvs8rH4WHCdI": {
    "verify": {
@@ -546,6 +546,10 @@
   "reczz28S6ZaguiVL": {
    "text": "档位：报名关（本场唯一公开入口）；赛道：12H 现场赛单一赛道；**旧「开放征集中 / 截止 2026-10-30 22:00」→ 新「已截止 / 报名截止 2026-10-25 24:00」**。TapNow 活动页 `/event/70` 原文：报名 10-25 24:00 截止、10-26 站内信公布入围、全场仅 20 队、比赛 10-29 10:00–22:00（厦门）、交片 10-30 22:00、10-31 颁奖；10-30 22:00 是参赛队交片时限，非公开报名截止。",
    "label": "报名已截止"
+  },
+  "reczz28Ow4R5eRy5": {
+   "text": "档位：唯一 Deadline 档（FilmFreeway 无分档）；赛道：八个奖项同档，各 $10；**旧 2026-10-29 → 新 2026-11-03**。FF 页 Dates & Deadlines 原文「October 8, 2026 Opening Date / November 3, 2026 Deadline / November 5, 2026 Notification Date / November 15, 2026 Event Date」，Categories & Fees 显示 Submit Now、Standard $10；WebFetch 独立复核一致。原 10-29 为上一版页面日期，官方顺延 5 天。",
+   "label": "延期 5 天"
   }
  },
  "cycle_status": {
