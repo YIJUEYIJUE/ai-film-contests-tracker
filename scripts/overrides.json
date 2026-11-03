@@ -1,6 +1,6 @@
 {
  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "records": {
   "recvs8rH4WHCdI": {
    "verify": {
@@ -550,6 +550,14 @@
   "reczz28Ow4R5eRy5": {
    "text": "档位：唯一 Deadline 档（FilmFreeway 无分档）；赛道：八个奖项同档，各 $10；**旧 2026-10-29 → 新 2026-11-03**。FF 页 Dates & Deadlines 原文「October 8, 2026 Opening Date / November 3, 2026 Deadline / November 5, 2026 Notification Date / November 15, 2026 Event Date」，Categories & Fees 显示 Submit Now、Standard $10；WebFetch 独立复核一致。原 10-29 为上一版页面日期，官方顺延 5 天。",
    "label": "延期 5 天"
+  },
+  "recvtDiykKNkWh": {
+   "text": "档位：Late Deadline（**仅 3 个类别**，FF 页面标注 \"3 Categories\"、未列具体名单）；赛道：未标注具体 3 类，其余类别 11-01 已关；**旧 2026-11-01 → 新 2026-11-06**。FF 页 Dates & Deadlines 现为「June 25 Opening / November 1 Deadline / **November 6 Late Deadline 3 Categories** / November 29 Notification / December 7–9 Event」，页面有 Submit Now；Rules 正文仍写 6/25–11/1，属未同步，按平台档期表判定并将状态改回「开放征集中」。",
+   "label": "部分类别延期 5 天"
+  },
+  "reczz28Ow4R5hYCn": {
+   "text": "档位：Extended（末档）；赛道：八个类别同档；**旧 2026-11-17 → 新 2027-02-26**。FF 页 Dates & Deadlines 现为「July 15 Opening / Sept 1 Earlybird / Sept 27 Regular / **Feb 6, 2027 Late** / **Feb 26, 2027 Extended** / Feb 27 Notification / Mar 1 Event」；官网 worldaifilmfestival.com 首页英国站列在「FEBRUARY 2027」分组、日期 Coming soon。英国站整体改期到 2027 年 2—3 月，通知与举办同步后移。",
+   "label": "改期至 2027-02-26"
   }
  },
  "cycle_status": {
