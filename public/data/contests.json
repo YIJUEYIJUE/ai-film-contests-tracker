@@ -1,6 +1,6 @@
 {
- "snapshot": "2026-11-02",
- "built": "2026-11-02 03:04",
+ "snapshot": "2026-11-03",
+ "built": "2026-11-03 19:53",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1043,8 +1043,8 @@
    "id": "recvtDiykKNkWh",
    "name": "TAIFF 土耳其国际AI电影节（第3届）",
    "grade": "B",
-   "deadline": "2026-11-01",
-   "status": "closed",
+   "deadline": "2026-11-06",
+   "status": "open",
    "organizer": "Türkiye International AI Film Festival",
    "region": "土耳其·伊斯坦布尔",
    "category": "AI短片/长片/纪录/动画/MV",
@@ -1053,15 +1053,23 @@
    "prize": "无固定现金奖（奖杯；国际组报名费收入作奖金再分配）",
    "site": "https://www.aitff.com",
    "submit": "https://filmfreeway.com/T-AIFF",
-   "desc": "土耳其标杆性 AI 电影节，第 3 届，在伊斯坦布尔阿塔图尔克文化中心举办，历届累计收到 100 多个国家 2000+ 投稿。设最佳 AI 影片大奖及最佳 AI 导演、摄影、剪辑、音效、音乐、视效、动画、纪录等 10 项工艺奖。展映 2026-12-07 至 12-09（Yeşilçam 影院）。\n▸ 费用：**土耳其国内组免费；国际组收象征性报名费**——官方规则原文：该费用用于平衡非 AI 作品的报名密度，收入将作为奖金再分配给国际组创作者；具体金额以 FilmFreeway 提交页显示为准。\n▸ 奖金口径：**无固定现金奖**（颁授奖杯）；国际组报名费收入作为奖金再分配给创作者。\n档期：**2026-11-01 截止**；展映 2026-12-07～09（伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院）。单一轮次，无分档。\n截止口径：①整体关闭：投稿/报名已于 **2026-11-01 23:59（北京时间）** 截止，逾期不再接收；②后续节点：2026-12-07 举办/颁奖。",
-   "notes": "2026-08-29 信源巡检新增并核实：Festhome 官方节展页确认截止 2026-11-01、免费投稿；第 3 届、规模大（100+国家/2000+投稿），落 B；具体奖金金额官方未公布，标未核实；旧 Festhome 链接系 2024 届页面已弃用，投递改 FilmFreeway 本届页；多源一致：征集截止 2026-11-01，放映 2026-12-07~09 于伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院；第三届、已收 100+ 国家 2000+ 部；FilmFreeway 免费投递，奖金由报名费转为创作者奖项；已补举办时间；FilmFreeway 页官方规则写明 \"The symbolic submission fee collected for the international category...\"，即**国际组并非免费**；此前字段写「免费」是错的，已改为「国内组免费 / 国际组象征性报名费」，说明同步更正；截止 2026-11-01 已过；FilmFreeway/官网 2026-11-02 复核未见延期，状态改「已截止」，补并写明后续节点；FF 页 Dates & Deadlines 原文：Opening 2026-06-25 / **Deadline 2026-11-01** / **Notification November 29, 2026** / Event December 7–9, 2026；原「通知时间」为空，补 2026-11-29；截止与举办与页面一致，未变",
+   "desc": "土耳其标杆性 AI 电影节，第 3 届，在伊斯坦布尔阿塔图尔克文化中心举办，历届累计收到 100 多个国家 2000+ 投稿。设最佳 AI 影片大奖及最佳 AI 导演、摄影、剪辑、音效、音乐、视效、动画、纪录等 10 项工艺奖。展映 2026-12-07 至 12-09（Yeşilçam 影院）。\n▸ 费用：**土耳其国内组免费；国际组收象征性报名费**——官方规则原文：该费用用于平衡非 AI 作品的报名密度，收入将作为奖金再分配给国际组创作者；具体金额以 FilmFreeway 提交页显示为准。\n▸ 奖金口径：**无固定现金奖**（颁授奖杯）；国际组报名费收入作为奖金再分配给创作者。\n档期·逐档：FilmFreeway Dates & Deadlines（2026-11-03 复核）：Opening **2026-06-25** → **Deadline 2026-11-01** → **Late Deadline 3 Categories 2026-11-06**（页面原文如此，未标注是哪 3 个类别）→ 通知 **2026-11-29** → 展映 **2026-12-07~09**（伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院）。\n⚠️ 官方 Rules 文本仍写「Applications will be accepted between June 25, 2026 – 1 Nov, 2026」，与档期表新增的 11-06 延长档并存；**以平台档期表为准**，因为提交按钮按它放行。\n截止口径：**部分类别延长至 2026-11-06**：11-01 为常规截止（Rules 原文），FF 档期表另列 **Late Deadline（3 个类别）2026-11-06**，页面仍有 Submit Now；**这 3 个类别之外的其他类别已于 11-01 关闭**，具体名单 FF 未在页面标注，投稿时以 Categories 显示为准。后续：11-29 公布结果，12-07~09 展映。",
+   "notes": "2026-08-29 信源巡检新增并核实：Festhome 官方节展页确认截止 2026-11-01、免费投稿；第 3 届、规模大（100+国家/2000+投稿），落 B；具体奖金金额官方未公布，标未核实；旧 Festhome 链接系 2024 届页面已弃用，投递改 FilmFreeway 本届页；多源一致：征集截止 2026-11-01，放映 2026-12-07~09 于伊斯坦布尔阿塔图尔克文化中心 Yeşilçam 影院；第三届、已收 100+ 国家 2000+ 部；FilmFreeway 免费投递，奖金由报名费转为创作者奖项；已补举办时间；FilmFreeway 页官方规则写明 \"The symbolic submission fee collected for the international category...\"，即**国际组并非免费**；此前字段写「免费」是错的，已改为「国内组免费 / 国际组象征性报名费」，说明同步更正；截止 2026-11-01 已过；FilmFreeway/官网 2026-11-02 复核未见延期，状态改「已截止」，补并写明后续节点；FF 页 Dates & Deadlines 原文：Opening 2026-06-25 / **Deadline 2026-11-01** / **Notification November 29, 2026** / Event December 7–9, 2026；原「通知时间」为空，补 2026-11-29；截止与举办与页面一致，未变；FF 页 Dates & Deadlines 现为「June 25 Opening / **November 1 Deadline** / **November 6 Late Deadline 3 Categories** / November 29 Notification / December 7–9 Event」，页面有 Submit Now；档位：Late（仅 3 个类别，页面未列名单）；**旧 2026-11-01（已截止）→ 新 2026-11-06（开放征集中，仅部分类别）**；Rules 正文仍写 6/25–11/1，属未同步，按平台档期表判定",
    "mark": "",
    "verified": "warn",
    "verifyNote": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实",
    "opened": "2026-06-25",
    "tracked": null,
    "added": "2026-06-25",
-   "changes": []
+   "changes": [
+    {
+     "date": "2026-11-03",
+     "from": "2026-11-01",
+     "to": "2026-11-06"
+    }
+   ],
+   "changeReason": "档位：Late Deadline（**仅 3 个类别**，FF 页面标注 \"3 Categories\"、未列具体名单）；赛道：未标注具体 3 类，其余类别 11-01 已关；**旧 2026-11-01 → 新 2026-11-06**。FF 页 Dates & Deadlines 现为「June 25 Opening / November 1 Deadline / **November 6 Late Deadline 3 Categories** / November 29 Notification / December 7–9 Event」，页面有 Submit Now；Rules 正文仍写 6/25–11/1，属未同步，按平台档期表判定并将状态改回「开放征集中」。",
+   "changeLabel": "部分类别延期 5 天"
   },
   {
    "id": "recvtDiykK3uZg",
@@ -3562,7 +3570,7 @@
    "id": "reczz28Ow4R5hYCn",
    "name": "WAIFF London 2026 世界AI电影节·英国站",
    "grade": "C",
-   "deadline": "2026-11-17",
+   "deadline": "2027-02-26",
    "status": "open",
    "organizer": "World AI Film Festival（WAIFF）",
    "region": "英国伦敦",
@@ -3572,15 +3580,23 @@
    "prize": "WAIFF Trophy + 11 位获奖者 laurels + 5 部作品直通 WAIFF Cannes 2027（无公布现金金额）",
    "site": "https://www.worldaifilmfestival.com/",
    "submit": "https://filmfreeway.com/WAIFFLondon",
-   "desc": "世界 AI 电影节（WAIFF）英国站，2026-11-24 在伦敦 Bloomsbury Big Top（93 Guilford Street）举办。八个类别覆盖真人短片、长片、广告、MV、纪录、Masterpieces、竖屏微剧集与 3D Worlds。不要求首映，此前流媒体或节展放映不影响资格；必须提交列明 AI 工具的 Production Journal。\n单元与截止：super-late 档 **2026-11-17** 截止，通知 11-20，典礼 11-24（FilmFreeway 页原文）。\n⚠️ **活动日期两处口径需并读**：FilmFreeway 官方页 Event Date 为**区间 2026-11-24 ~ 2027-03-01**，正文另写「takes place on 24 November 2026 in Bloomsbury」（即区间起点）；官网 worldaifilmfestival.com 首页把英国站列在「FEBRUARY 2027」分组下、London 专页已 404——三处并不矛盾，指向「11 月开幕、延续至 2027 年 2—3 月」的长周期安排。截止仍按 FF 现行末档 11-17。\n投稿方式：FilmFreeway 提交，按类别分别缴费。\n完整档期·逐档（共 4 档）：Opening 2026-07-15 → Earlybird 09-01 → Regular 09-27 → Late 10-23 → **Super late 2026-11-17（本站采用，末档）**；通知 11-20；**活动期 2026-11-24 ~ 2027-03-01（FilmFreeway Event Date 原文即区间，上文「典礼 11-24」与本日期是该区间两端，非两个不同活动日）**。",
-   "notes": "但官网首页活动列表 London 标 Coming soon、submissions 区块归入「FEBRUARY 2027」，London 专页 404 —— 判定为官方两处口径冲突（疑似改期至 2027-02），已在说明中如实标注；截止 11-17 未动（FF 现行末档，早投安全）；本条仍为「不投」（仅限英国本土创作者）；FF 页 Dates & Deadlines 原文：Opening 07-15 / Earlybird 09-01 / Regular 09-27 / Late 10-23 / **Super late 11-17（末档）** / Notification 11-20 / **Event Date 2026-11-24 – 2027-03-01**；举办时间字段由「2026-11-24」补为区间；说明中「活动 2027-03-01」与「典礼 11-24」确认是同一区间两端，此前误记为「官方两处说法不一致」，现更正；截止 11-17 未变，页面有 Submit Now",
+   "desc": "世界 AI 电影节（WAIFF）英国站，**2027-03-01** 在伦敦 Bloomsbury Big Top（93 Guilford Street）举办（官网首页把英国站归入「FEBRUARY 2027」分组、具体日期标 Coming soon）。八个类别覆盖真人短片、长片、广告、MV、纪录、Masterpieces、竖屏微剧集与 3D Worlds。不要求首映，此前流媒体或节展放映不影响资格；必须提交列明 AI 工具的 Production Journal。\n单元与截止：Extended 档 **2027-02-26** 截止，通知 **2027-02-27**，活动 **2027-03-01**（FilmFreeway 页 2026-11-03 原文；官网分组同为 2027 年 2 月）。\n⚠️ **本站在 2026-11-03 前后被整体改期**：原记录按 FF 旧档记 2026-11-17 截止、11-24 举办；现 FF 页已后移为 Late **2027-02-06** → Extended **2027-02-26** → 通知 **2027-02-27** → 活动 **2027-03-01**，官网首页亦把英国站放进「FEBRUARY 2027」。即**英国站实际在 2027 年 2—3 月举办，不是 2026 年 11 月**。\n投稿方式：FilmFreeway 提交，按类别分别缴费。\n完整档期·逐档（共 5 档，2026-11-03 复核）：Opening 2026-07-15 → Earlybird 09-01 → Regular 09-27 → Late **2027-02-06** → **Extended 2027-02-26（本站采用，末档）**；通知 2027-02-27；活动 2027-03-01（伦敦 Bloomsbury Big Top）。",
+   "notes": "但官网首页活动列表 London 标 Coming soon、submissions 区块归入「FEBRUARY 2027」，London 专页 404 —— 判定为官方两处口径冲突（疑似改期至 2027-02），已在说明中如实标注；截止 11-17 未动（FF 现行末档，早投安全）；本条仍为「不投」（仅限英国本土创作者）；FF 页 Dates & Deadlines 原文：Opening 07-15 / Earlybird 09-01 / Regular 09-27 / Late 10-23 / **Super late 11-17（末档）** / Notification 11-20 / **Event Date 2026-11-24 – 2027-03-01**；举办时间字段由「2026-11-24」补为区间；说明中「活动 2027-03-01」与「典礼 11-24」确认是同一区间两端，此前误记为「官方两处说法不一致」，现更正；截止 11-17 未变，页面有 Submit Now；FF 页 Dates & Deadlines 现为「July 15 Opening / Sept 1 Earlybird / Sept 27 Regular / **February 6, 2027 Late** / **February 26, 2027 Extended** / February 27 Notification / March 1 Event」；官网 worldaifilmfestival.com 首页英国站位于「FEBRUARY 2027」分组、日期 Coming soon；档位：Extended（末档）；赛道：八个类别同档；**旧截止 2026-11-17 → 新 2027-02-26**，通知 2026-11-20 → 2027-02-27，举办 2026-11-24（区间）→ 2027-03-01；此前「11 月开幕、延续到 2027-03」的判断作废——英国站整体改到 2027 年 2—3 月",
    "mark": "",
    "verified": "none",
    "verifyNote": "",
    "opened": "2026-07-15",
    "tracked": "2026-10-19",
    "added": "2026-07-15",
-   "changes": []
+   "changes": [
+    {
+     "date": "2026-11-03",
+     "from": "2026-11-17",
+     "to": "2027-02-26"
+    }
+   ],
+   "changeReason": "档位：Extended（末档）；赛道：八个类别同档；**旧 2026-11-17 → 新 2027-02-26**。FF 页 Dates & Deadlines 现为「July 15 Opening / Sept 1 Earlybird / Sept 27 Regular / **Feb 6, 2027 Late** / **Feb 26, 2027 Extended** / Feb 27 Notification / Mar 1 Event」；官网 worldaifilmfestival.com 首页英国站列在「FEBRUARY 2027」分组、日期 Coming soon。英国站整体改期到 2027 年 2—3 月，通知与举办同步后移。",
+   "changeLabel": "改期至 2027-02-26"
   },
   {
    "id": "reczz28Ow4R5iDlD",
