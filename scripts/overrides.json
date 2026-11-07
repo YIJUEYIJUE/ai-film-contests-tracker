@@ -1,575 +1,579 @@
 {
- "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-11-03",
- "records": {
-  "recvs8rH4WHCdI": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
+  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
+  "updated": "2026-11-08",
+  "records": {
+    "recvs8rH4WHCdI": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvs8rH4Wv3HE": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvs8rH4W5HMd": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvs8rH4W5y8x": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvs8rH4WzdJb": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvs8rH4WGwJt": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsoUlbAsYvb": {
+      "verify": {
+        "level": "ok",
+        "note": "官网：9/30 截止；Grand Prix €5,000 / 最佳剧本 €3,000 / 伦理奖 €2,000；免费"
+      }
+    },
+    "recvsoUlbAe39Z": {
+      "verify": {
+        "level": "ok",
+        "note": "官网：Extended 截止 10/6；DIG 单元 $90"
+      }
+    },
+    "recvsoUlbAAymC": {
+      "verify": {
+        "level": "fixed",
+        "note": "原表写 $15–25，官网提交页为 €30，已更正"
+      },
+      "fix": {
+        "报名费": "€20–30（官网提交页：多数类别 €30，Art Image €20 / Art Motion €25）"
+      }
+    },
+    "recvsoUlbAgiAy": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsoUlbA5dMy": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsoUlbA2pih": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsoUlbAKSmG": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsttZ6S4HVM": {
+      "verify": {
+        "level": "ok",
+        "note": "官网：9/30 23:59 截止；特等奖 1 万；仅限全国高校学生"
+      }
+    },
+    "recvstzYwt5n69": {
+      "verify": {
+        "level": "ok",
+        "note": "官网：征稿 8/7–10/8；须配中英文字幕"
+      }
+    },
+    "recvstzYwt6Cq7": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtfEhTa9DSo": {
+      "verify": {
+        "level": "warn",
+        "note": "官网为公众号文章，非独立官网"
+      }
+    },
+    "recvtfF8uWWHom": {
+      "verify": {
+        "level": "warn",
+        "note": "官网为公众号文章，非独立官网"
+      }
+    },
+    "recvtfF8uXyEg6": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtfH7oajt4R": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtfH7oaEavi": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtfIGJMj3yu": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtDiykKO885": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtI1g1akRv7": {
+      "verify": {
+        "level": "ok",
+        "note": "官网：Late 9/30；短片 Late $80；约 $40,000 现金+实物"
+      }
+    },
+    "recvtIdz2uOMw3": {
+      "verify": {
+        "level": "warn",
+        "note": "原官网已无法访问，暂未找到官方发布渠道；截止日未经官方确认，投递前请先联系主办方核实"
+      },
+      "fix": {
+        "报名费": "免费"
+      }
+    },
+    "recvtIdz2ub9FF": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUwx9ep": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxEEFV": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxNrgd": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxzGFs": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxeJyf": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxWnsd": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxT7ot": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUx1uBc": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxetUP": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxbnBx": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxDfLQ": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtIfhUxOeoL": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvwdOf2TZcQy": {
+      "verify": {
+        "level": "ok",
+        "note": "官网：9/30 23:59 BST；BFI IMAX 首映 10/22"
+      }
+    },
+    "recvwdOgLtBo6Z": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvwdOgLt4pwH": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvwdOiiAc7yS": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvwdOiiA14HU": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvwdOiiAUf1e": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvwdOjSliprn": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsoUlbAGggQ": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtfIGJMaAE5": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvsoUlbAwipc": {
+      "verify": {
+        "level": "ok",
+        "note": "官网原文与截止日一致（2026-09-29 核对）"
+      }
+    },
+    "recvtDiykKNkWh": {
+      "verify": {
+        "level": "warn",
+        "note": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实"
+      }
+    },
+    "recvtDiykKKUZ1": {
+      "verify": {
+        "level": "warn",
+        "note": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
+      }
+    },
+    "recvtDiykK3uZg": {
+      "verify": {
+        "level": "warn",
+        "note": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
+      }
+    },
+    "recvsoUlbAPORa": {
+      "verify": {
+        "level": "warn",
+        "note": "基金页已跳转到 Runway Studios 首页，请确认是否仍在接收申请"
+      }
+    },
+    "recvsttZ6Scqgu": {
+      "verify": {
+        "level": "warn",
+        "note": "活动页跳转到 PixVerse 首页，活动页可能已下线，请在 App 内确认"
+      }
+    },
+    "recvs8rH4W0X0x": {
+      "fix": {
+        "投递链接": "https://hokkaido-movie.com/"
+      },
+      "verify": {
+        "level": "fixed",
+        "note": "官网写明报名平台为 Festhome（英文表单）/ 日文表单；投递链接已改为官网入口"
+      }
+    },
+    "recvs8rH4WkbdM": {
+      "verify": {
+        "level": "warn",
+        "note": "官网仍是第二届内容；10/20 以抖音专区「瓦卡奖VACAT第三届」公告为准"
+      }
+    },
+    "recvwdOf2TMJyj": {
+      "verify": {
+        "level": "warn",
+        "note": "官网查不到 9/30；页面出现 10/31 与 11/3（活动日），截止日待核实"
+      }
+    },
+    "recvtfIGJM4hhb": {
+      "verify": {
+        "level": "warn",
+        "note": "官网仍是上一季内容，查不到本季截止日"
+      }
+    },
+    "recvwdOgLtHBmR": {
+      "fix": {
+        "投递链接": "mailto:aixaq2026@163.com"
+      },
+      "verify": {
+        "level": "fixed",
+        "note": "邮箱投稿：aixaq2026@163.com"
+      }
+    },
+    "recvwdOiiA2jTV": {
+      "fix": {
+        "投递链接": "mailto:3113907798@qq.com"
+      },
+      "verify": {
+        "level": "fixed",
+        "note": "邮箱投稿：3113907798@qq.com"
+      }
+    },
+    "recvstzYwty6nP": {
+      "verify": {
+        "level": "warn",
+        "note": "长期活动，未公布截止日"
+      }
+    }
   },
-  "recvs8rH4Wv3HE": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
+  "change_reasons": {
+    "recvs8rH4WLBKp": {
+      "text": "档位：**单一档 12-31，非分档**。10-16 曾在 FilmFreeway 官方页读到 12-31；10-21 与 10-24 两次复核，该页 Dates & Deadlines 区块均未渲染，无法判断是官方撤下还是抓取失败 → 撤下日期改「待公布」，投前以 FF 当前页显示为准。",
+      "label": "待核实"
+    },
+    "recvsoUlbA6QlX": {
+      "text": "档位：单一档（原 2027-01-21 无官方出处，已撤）；官网**未公布任何档期（含分档）**：aifilmfest.ae 是 JS 空壳、FilmFreeway 页显示首届已关闭。",
+      "label": "官网未开放"
+    },
+    "recvtfH7oajt4R": {
+      "text": "档位：**单一批次**（原赛程 2026-05-26 ~ 11-26，无分档）。官网 dreamfield.top 已易主为无关站点（Dawnload），活动页与报名入口均不存在 → 撤下截止与入口，改「待公布」。",
+      "label": "入口失效"
+    },
+    "recvtfIGJM4hhb": {
+      "text": "档位：Final(Firm) Deadline（末档）；赛道：全部类别同档。2027-04-04 → 通知 04-11、活动 04-20；此前字段空缺、状态挂待公布，现补齐。",
+      "label": "补录档期"
+    },
+    "recvtDiykK3uZg": {
+      "text": "档位：单一档；官方**尚未发布 2026 届（含分档）**：官方赛事页只列历年已结束项，12-06 仅第三方预告且自承未经确认。",
+      "label": "官方未发布"
+    },
+    "recvtDiykKANpj": {
+      "text": "档位：官网**未公布任何档期（含分档）**；12-31 只有两家同源转载。官网 filmawards.ai 的 MUMBAI 站仍标 Soon（未开放），FilmFreeway 投递页实测 404 → 截止撤下、状态待公布。",
+      "label": "站点未开放"
+    },
+    "recvtDiykKWbDG": {
+      "text": "档位：单一档；官网只剩 2026 首届档案（05-17 已结束），**2027 届未公布任何档期（含分档）**。",
+      "label": "下届未上线"
+    },
+    "recvtIfhUxT7ot": {
+      "text": "档位：整届（第 52 届 9-15 截止、10-25 闭幕）；**第 53 届未公布任何档期（含分档）**，12-11 无官方依据。",
+      "label": "上届已闭幕"
+    },
+    "recvwdOjSlhvYz": {
+      "text": "档位：**无固定截止、滚动受理（无分档）**：可灵官方页明确没有投稿截止日，申报后 21 个工作日内回复；12-31 是第三方按年度窗口填的，不是官方截点。",
+      "label": "常年开放"
+    },
+    "recvtIfhUxY6cl": {
+      "text": "档位：最终档；**渠道差异**：FilmFreeway 11-20、Festhome Extended 11-13。10-21 只取 Festhome 把最晚可投日提前了 7 天，属误改，现按更晚的 FF 2026-11-20。",
+      "label": "日期订正"
+    },
+    "reczz28MYyLkDrAH": {
+      "text": "档位：单一注册截止（无早鸟 / 晚期分档）；赛道：四个官方品牌赛道、青年组 / 大学组 / 公开组三组**同一截止**。官网首页、Official Rules、Launch Timeline 三处一致为 2026-11-15；10-25 来自聚合站，差 21 天。",
+      "label": "核对更正"
+    },
+    "reczz28NIVALahqF": {
+      "text": "档位：单一档（该专项赛不设早鸟 / 延期档）；赛道：数智影像类（AIGC 专项，独立于主节其他赛道）。官网 articleDetail/2523 正文「截止时间：2026年12月21日17:00」；10-22 曾据海报 / 转载改成 12-20，与正文不符，10-24 改回 12-21 17:00。",
+      "label": "日期订正"
+    },
+    "reczz28Pl6HrPHkF": {
+      "text": "档位：Final（FF Deadlines 块唯一档，无早鸟 / 晚期）；赛道：六个类别同一档；2026-11-10 截止。此前只读正文、漏了整段档期表。",
+      "label": "核对更正"
+    },
+    "reczz28NIUoUZDbs": {
+      "text": "档位：**整体单一档延期**（不是某一分组或某条赛道单独调整），全赛事通用。原截止 2026-10-15 → 官方 10-15 当日宣布延至 **2026-10-28 23:59**；评审 10-29~31、获奖公示 11-13 随之顺延。",
+      "label": "日期订正"
+    },
+    "recvs8rH4WlDov": {
+      "text": "档位：Regular Deadline（FF 页仅列此一档，无早鸟 / 晚期）；赛道：亚洲 AIGC 国际电影单元（与主节其他单元分开评审）。FilmFreeway 官方页 2027 档期 Regular 2027-01-20、通知 2027-03-30、影展 05-19~25；此前官网未刊载而留空待公布，现按 FF 写入。",
+      "label": "补录档期"
+    },
+    "recvtIfhUx1uBc": {
+      "text": "档位：**2027 届未公布任何档期（含分档）**；官网无 2027 征片页，投奖平台仍停留在 2026 届。",
+      "label": "未开征"
+    },
+    "recvwdOf2TR2tU": {
+      "text": "档位：November Deadline（按月滚动第 9 档，也是末档）；赛道：全部单元同档。FF 页已可见十档，末档 2026-11-30，通知与活动同为 12-15；此前因官网只写「November/December 2026」而留空。",
+      "label": "补全档期"
+    },
+    "reczz28PlOjQHaP3": {
+      "text": "档位：**双赛道同一档，官方未给具体日**；赛道：个人赛道（免费）与团体赛道（付费 / 3 人以上团队）并行。官方口径只到「10—11 月为创作征集期」，未说明是否分赛道设档，故截止留空、状态待公布。",
+      "label": "征集期待定"
+    },
+    "recvtIfhUxptdr": {
+      "text": "档位：本届**档期与入口均无法核实（含分档）**：wix 官网 404、Festhome `f/10007` 302 跳首页，站内只剩 2026 届旧公告。",
+      "label": "下届未开放"
+    },
+    "reczz28RK8DCNMko": {
+      "text": "档位：单一档；赛道：两个征集类别（短片成片 / 短片剧本）**同一截止**，未分类设档。央广网 2026-10-26 原文「征集时间截至 2026 年 12 月 15 日……涵盖短片成片与短片剧本两大方向」；此前只发启动消息、截止留空。",
+      "label": "补录档期"
+    },
+    "reczz28Ow4R5fy41": {
+      "text": "档位：单一档（2027 届无分档）；**整届改期**：2026-11-30 → **2027-02-15**，开放日同步改为 2027-01-15、影展 04-22~25。",
+      "label": "补录档期"
+    },
+    "recvsoUlbAGggQ": {
+      "text": "档位：Late = Final 同日（2027-01-01 末档，无更高档）；赛道：16 个分类奖同档。**2027-03-01 是通知日，不是截止**——此前一度把 03-01 当末档，读取 Festhome 原始页后推翻，截止取 2027-01-01。",
+      "label": "核对更正"
+    },
+    "recvs8rH4WUeSB": {
+      "text": "档位：Late Deadline（末档，原文标注 Final opportunity）；同级递进 Early Bird 09-30 → Regular 11-15 → **Late 2026-12-20**。渠道差异：官网 12-20、FilmFreeway 仍写 12-01，**走 FF 须 12-01 前交**。",
+      "label": "核对更正"
+    },
+    "reczz28HJWV1H4Au": {
+      "text": "档位：Submissions Close（单一末档，无分档）；赛道：全部类别同档。官网 Timeline 原文 2026-12-20；原 11-20 来自 AKOOL 自家未更新的发布博客。",
+      "label": "核对更正"
+    },
+    "reczz28HkJ5dS91c": {
+      "text": "档位：Final Extended（末档，由 10-20 再延）；官网现行原文「Final Extended Deadline on 5 November 2026」；10-20 是延期前旧档期，10-19 曾据此误改。",
+      "label": "核对更正"
+    },
+    "reczz28MYyZBM7s4": {
+      "text": "档位：末档；早鸟 2027-01-01 → 常规 02-01 → 迟到 03-01 → **末档 2027-04-01**。此前字段空、状态挂待公布，现按 FF 逐档补全并按最早档起算为开放征集中。",
+      "label": "补全档期"
+    },
+    "reczz28Ow4R5hadY": {
+      "text": "档位：Regular（与 FF 的 Late 11-15 **取交集**、取早 11-01 作安全线）；这是渠道保守取值，不是官方分档差异。",
+      "label": "口径取交集"
+    },
+    "reczz28OwJEkdS13": {
+      "text": "档位：Extended（末档）；Opening 10-24 → Earlybird 11-15 → Regular 12-31 → Late 2027-01-25 → **Extended 2027-02-14**。上一季（Season 5）已于 2026-09-16 截止，此前档期留空。",
+      "label": "新季开档"
+    },
+    "recvtIfhUxEEFV": {
+      "text": "档位：Extended（末档）；Regular 12-10 → Late 2027-01-01 → **Extended 2027-01-21**。2027-01-31 是「Final Official Selections Announced」入围公布日，此前误当 Extended 写入。赛道：单一竞赛单元。",
+      "label": "日期订正"
+    },
+    "reczz28Ow4R5gnEX": {
+      "text": "档位：Regular（本轮末档，无 Late / Extended）；旧值 10-27 属上一轮次（Earlybird 10-21 / Regular 10-27）。赛道：全部类别同档，本轮 Regular 2026-11-21、通知 11-27、活动 2027-01-09。",
+      "label": "核对更正"
+    },
+    "recvsoUlbAefct": {
+      "text": "档位：**月度批次**（Opening 10-01 起按月滚动，当前批次末档 2026-11-08）；原 2027-07-30 在该页查无此句，已撤。赛道：最佳 AI 电影单元。",
+      "label": "核对更正"
+    },
+    "reczz28NIV3TEijI": {
+      "text": "档位：**单一投稿窗**（不分早鸟 / 晚期）；差异在渠道而非档位——官方通稿 / 海报写 11-15，实际收稿的 TapNow 活动页 event/67 倒计时为 **2026-11-14 23:00**。稿件经 TapNow 上传 + 飞书报名表提交，以平台计时为准，取早值 11-14 23:00。",
+      "label": "日期订正"
+    },
+    "reczz28OAXZEXCIb": {
+      "text": "档位：首轮征稿（整轮单一档，无分期）；赛道：漫剧 / 剧集全部单元同档。9-17 ~ **2026-11-08 23:59**；10-31 引自 AITOP100 早期报道，官方已延期。",
+      "label": "日期订正"
+    },
+    "reczz28S26OMvFdU": {
+      "text": "档位：Late(+10%) 末档（10-19 ~ 10-30）；类别：AI Craft（类别 59）。原 11-15 是「作品首次投放窗口终点」与「书面撤稿退费时限」，两者都不是投稿截止。",
+      "label": "日期订正"
+    },
+    "recvtIfhUxwJGQ": {
+      "text": "档位：最终档（投奖平台 12 档末档）；赛道：全类别；**旧 2027-05-27 → 新 2027-05-26**。原 05-27 取自 Festhome Extended 档，2026-10-29 实测该页 200 但跳回 festhome.com 首页、渠道失效；投奖页（id 619）实测末档 05-26，FilmFreeway 页末档 05-06，取可用渠道中最晚档 05-26。",
+      "label": "截止提前 1 天"
+    },
+    "reczz28OZeQEbLB4": {
+      "text": "档位：Late（FilmFreeway 唯一末档）；赛道：全部 8 个类别同档；**旧 2026-10-20 → 新 2026-11-04**。FF 页 2026-10-29 渲染实测：Opening 08-20 / Earlybird 09-09 / Regular 09-30 / **Late 11-04** / 通知 11-06 / 活动 11-13，页面有 Submit Now；此前 10-20 为第三方旧档（当日 FF 403 反爬，未取到原表）。",
+      "label": "延期 15 天"
+    },
+    "recvtIfhUxTdGk": {
+      "text": "档位：投奖代投末档「Early Bird 10」；赛道：全类别；**旧 2027-06-10 → 新 2027-06-09**。原 06-10 取自 Festhome Extended，2026-10-29 实测 Festhome 三个 URL 均跳回首页、渠道失效；现存 FilmFreeway（末档 05-20）与投奖代投（末档 06-09），按「多档取最晚」取 06-09，说明已改为双渠道分列并标「走 FF 须 05-20 前交」。",
+      "label": "截止提前 1 天"
+    },
+    "reczz28MYyZBMa7c": {
+      "text": "档位：Extended（FilmFreeway 末档）；赛道：四个类别同档；**旧 2026-10-20 → 新 2026-10-21**。FF 页渲染另有 Extended 10-21（官网只写 Close Oct 20），按多档取最晚采用 10-21；状态仍为已截止。",
+      "label": "截止 +1 天"
+    },
+    "reczz28Ow4R5hpmu": {
+      "text": "档位：单一 Final（无分档）；赛道：Best AI Film / Africa 2063 / Audience Choice 三类同档；**旧 2026-10-31 → 新 2026-11-30**。官网 Key Dates 原文：Submissions Open September 2026 → Final Submission Deadline November 30, 2026 → Official Selections December 2026 → Screening & Awards January 16, 2027；通知（11-19→12 月）与举办（11-28→2027-01-16）同步更正。",
+      "label": "延期 30 天"
+    },
+    "reczz28MYyZBLMWu": {
+      "text": "档位：Extended（五级阶梯末档）；赛道：短片与 AI 长片同档；**旧 2026-10-25（已截止）→ 新 2026-10-29（今日）**。Festhome Deadlines 原文：22 Jul Call → 22 Aug Early → 18 Sep Standard → 15 Oct Late → **29 Oct Extended** → 11-01 通知；10-26 复核时页面尚未显示该档。",
+      "label": "延期 4 天"
+    },
+    "recvstzYwt6Cq7": {
+      "text": "档位：Final（延期后末档）；赛道：AI Creative 单类别；**旧 2026-10-27（已截止）→ 新 2026-12-08**。官网 info 页顶部原文「EXTENDED DEADLINE: December 8, 2026」，首页 Current Award Competitions 标 12-08（剩 41 天）；页内 Deadlines 段仍留旧文属未同步。",
+      "label": "延期 42 天"
+    },
+    "reczz28S6ZaguiVL": {
+      "text": "档位：报名关（本场唯一公开入口）；赛道：12H 现场赛单一赛道；**旧「开放征集中 / 截止 2026-10-30 22:00」→ 新「已截止 / 报名截止 2026-10-25 24:00」**。TapNow 活动页 `/event/70` 原文：报名 10-25 24:00 截止、10-26 站内信公布入围、全场仅 20 队、比赛 10-29 10:00–22:00（厦门）、交片 10-30 22:00、10-31 颁奖；10-30 22:00 是参赛队交片时限，非公开报名截止。",
+      "label": "报名已截止"
+    },
+    "reczz28Ow4R5eRy5": {
+      "text": "档位：唯一 Deadline 档（FilmFreeway 无分档）；赛道：八个奖项同档，各 $10；**旧 2026-10-29 → 新 2026-11-03**。FF 页 Dates & Deadlines 原文「October 8, 2026 Opening Date / November 3, 2026 Deadline / November 5, 2026 Notification Date / November 15, 2026 Event Date」，Categories & Fees 显示 Submit Now、Standard $10；WebFetch 独立复核一致。原 10-29 为上一版页面日期，官方顺延 5 天。",
+      "label": "延期 5 天"
+    },
+    "recvtDiykKNkWh": {
+      "text": "档位：Late Deadline（**仅 3 个类别**，FF 页面标注 \"3 Categories\"、未列具体名单）；赛道：未标注具体 3 类，其余类别 11-01 已关；**旧 2026-11-01 → 新 2026-11-06**。FF 页 Dates & Deadlines 现为「June 25 Opening / November 1 Deadline / **November 6 Late Deadline 3 Categories** / November 29 Notification / December 7–9 Event」，页面有 Submit Now；Rules 正文仍写 6/25–11/1，属未同步，按平台档期表判定并将状态改回「开放征集中」。",
+      "label": "部分类别延期 5 天"
+    },
+    "reczz28Ow4R5hYCn": {
+      "text": "档位：Extended（末档）；赛道：八个类别同档；**旧 2026-11-17 → 新 2027-02-26**。FF 页 Dates & Deadlines 现为「July 15 Opening / Sept 1 Earlybird / Sept 27 Regular / **Feb 6, 2027 Late** / **Feb 26, 2027 Extended** / Feb 27 Notification / Mar 1 Event」；官网 worldaifilmfestival.com 首页英国站列在「FEBRUARY 2027」分组、日期 Coming soon。英国站整体改期到 2027 年 2—3 月，通知与举办同步后移。",
+      "label": "改期至 2027-02-26"
+    },
+    "reczz28Pm31QEMlv": {
+      "text": "档位：Late Deadline 与 Final Submission Deadline 合并为同一末档；赛道：全部类别；阶段：整体单一届次，非分组调整。2026-11-08 官网 paiffestival.com 与 Festhome 逐档双证：Final deadline 11-08、通知 11-20、影展 11-28。旧值 2026-11-20 实为通知日、旧通知 11-28 实为影展日，已一并更正；说明中「迟到 10-31 / 延长 11-20」旧档期全部删除。",
+      "label": "档期更正"
+    }
   },
-  "recvs8rH4W5HMd": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvs8rH4W5y8x": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvs8rH4WzdJb": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvs8rH4WGwJt": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsoUlbAsYvb": {
-   "verify": {
-    "level": "ok",
-    "note": "官网：9/30 截止；Grand Prix €5,000 / 最佳剧本 €3,000 / 伦理奖 €2,000；免费"
-   }
-  },
-  "recvsoUlbAe39Z": {
-   "verify": {
-    "level": "ok",
-    "note": "官网：Extended 截止 10/6；DIG 单元 $90"
-   }
-  },
-  "recvsoUlbAAymC": {
-   "verify": {
-    "level": "fixed",
-    "note": "原表写 $15–25，官网提交页为 €30，已更正"
-   },
-   "fix": {
-    "报名费": "€20–30（官网提交页：多数类别 €30，Art Image €20 / Art Motion €25）"
-   }
-  },
-  "recvsoUlbAgiAy": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsoUlbA5dMy": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsoUlbA2pih": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsoUlbAKSmG": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsttZ6S4HVM": {
-   "verify": {
-    "level": "ok",
-    "note": "官网：9/30 23:59 截止；特等奖 1 万；仅限全国高校学生"
-   }
-  },
-  "recvstzYwt5n69": {
-   "verify": {
-    "level": "ok",
-    "note": "官网：征稿 8/7–10/8；须配中英文字幕"
-   }
-  },
-  "recvstzYwt6Cq7": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtfEhTa9DSo": {
-   "verify": {
-    "level": "warn",
-    "note": "官网为公众号文章，非独立官网"
-   }
-  },
-  "recvtfF8uWWHom": {
-   "verify": {
-    "level": "warn",
-    "note": "官网为公众号文章，非独立官网"
-   }
-  },
-  "recvtfF8uXyEg6": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtfH7oajt4R": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtfH7oaEavi": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtfIGJMj3yu": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtDiykKO885": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtI1g1akRv7": {
-   "verify": {
-    "level": "ok",
-    "note": "官网：Late 9/30；短片 Late $80；约 $40,000 现金+实物"
-   }
-  },
-  "recvtIdz2uOMw3": {
-   "verify": {
-    "level": "warn",
-    "note": "原官网已无法访问，暂未找到官方发布渠道；截止日未经官方确认，投递前请先联系主办方核实"
-   },
-   "fix": {
-    "报名费": "免费"
-   }
-  },
-  "recvtIdz2ub9FF": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUwx9ep": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxEEFV": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxNrgd": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxzGFs": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxeJyf": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxWnsd": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxT7ot": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUx1uBc": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxetUP": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxbnBx": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxDfLQ": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtIfhUxOeoL": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvwdOf2TZcQy": {
-   "verify": {
-    "level": "ok",
-    "note": "官网：9/30 23:59 BST；BFI IMAX 首映 10/22"
-   }
-  },
-  "recvwdOgLtBo6Z": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvwdOgLt4pwH": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvwdOiiAc7yS": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvwdOiiA14HU": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvwdOiiAUf1e": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvwdOjSliprn": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsoUlbAGggQ": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtfIGJMaAE5": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvsoUlbAwipc": {
-   "verify": {
-    "level": "ok",
-    "note": "官网原文与截止日一致（2026-09-29 核对）"
-   }
-  },
-  "recvtDiykKNkWh": {
-   "verify": {
-    "level": "warn",
-    "note": "投递链接指向 2024 年那一届（2024-11-10 截止），第 3 届截止日待核实"
-   }
-  },
-  "recvtDiykKKUZ1": {
-   "verify": {
-    "level": "warn",
-    "note": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
-   }
-  },
-  "recvtDiykK3uZg": {
-   "verify": {
-    "level": "warn",
-    "note": "链接是 Curious Refuge 赛事总列表页，只显示往届赛事；本届规则页需人工确认"
-   }
-  },
-  "recvsoUlbAPORa": {
-   "verify": {
-    "level": "warn",
-    "note": "基金页已跳转到 Runway Studios 首页，请确认是否仍在接收申请"
-   }
-  },
-  "recvsttZ6Scqgu": {
-   "verify": {
-    "level": "warn",
-    "note": "活动页跳转到 PixVerse 首页，活动页可能已下线，请在 App 内确认"
-   }
-  },
-  "recvs8rH4W0X0x": {
-   "fix": {
-    "投递链接": "https://hokkaido-movie.com/"
-   },
-   "verify": {
-    "level": "fixed",
-    "note": "官网写明报名平台为 Festhome（英文表单）/ 日文表单；投递链接已改为官网入口"
-   }
-  },
-  "recvs8rH4WkbdM": {
-   "verify": {
-    "level": "warn",
-    "note": "官网仍是第二届内容；10/20 以抖音专区「瓦卡奖VACAT第三届」公告为准"
-   }
-  },
-  "recvwdOf2TMJyj": {
-   "verify": {
-    "level": "warn",
-    "note": "官网查不到 9/30；页面出现 10/31 与 11/3（活动日），截止日待核实"
-   }
-  },
-  "recvtfIGJM4hhb": {
-   "verify": {
-    "level": "warn",
-    "note": "官网仍是上一季内容，查不到本季截止日"
-   }
-  },
-  "recvwdOgLtHBmR": {
-   "fix": {
-    "投递链接": "mailto:aixaq2026@163.com"
-   },
-   "verify": {
-    "level": "fixed",
-    "note": "邮箱投稿：aixaq2026@163.com"
-   }
-  },
-  "recvwdOiiA2jTV": {
-   "fix": {
-    "投递链接": "mailto:3113907798@qq.com"
-   },
-   "verify": {
-    "level": "fixed",
-    "note": "邮箱投稿：3113907798@qq.com"
-   }
-  },
-  "recvstzYwty6nP": {
-   "verify": {
-    "level": "warn",
-    "note": "长期活动，未公布截止日"
-   }
+  "cycle_status": {
+    "recvtIfhUxT7ot": "ended",
+    "recvtDiykKWbDG": "ended",
+    "recvtfIGJM4hhb": "ended",
+    "recvtDiykKK8hH": "ended",
+    "recvtfH7oajt4R": "ended",
+    "recvsoUlbAPORa": "rolling",
+    "recvwdOjSlhvYz": "rolling",
+    "reczz28OwJEkdS13": "rolling",
+    "reczz28Pl6HrOghh": "ended",
+    "recvstzYwty6nP": "rolling"
   }
- },
- "change_reasons": {
-  "recvs8rH4WLBKp": {
-   "text": "档位：**单一档 12-31，非分档**。10-16 曾在 FilmFreeway 官方页读到 12-31；10-21 与 10-24 两次复核，该页 Dates & Deadlines 区块均未渲染，无法判断是官方撤下还是抓取失败 → 撤下日期改「待公布」，投前以 FF 当前页显示为准。",
-   "label": "待核实"
-  },
-  "recvsoUlbA6QlX": {
-   "text": "档位：单一档（原 2027-01-21 无官方出处，已撤）；官网**未公布任何档期（含分档）**：aifilmfest.ae 是 JS 空壳、FilmFreeway 页显示首届已关闭。",
-   "label": "官网未开放"
-  },
-  "recvtfH7oajt4R": {
-   "text": "档位：**单一批次**（原赛程 2026-05-26 ~ 11-26，无分档）。官网 dreamfield.top 已易主为无关站点（Dawnload），活动页与报名入口均不存在 → 撤下截止与入口，改「待公布」。",
-   "label": "入口失效"
-  },
-  "recvtfIGJM4hhb": {
-   "text": "档位：Final(Firm) Deadline（末档）；赛道：全部类别同档。2027-04-04 → 通知 04-11、活动 04-20；此前字段空缺、状态挂待公布，现补齐。",
-   "label": "补录档期"
-  },
-  "recvtDiykK3uZg": {
-   "text": "档位：单一档；官方**尚未发布 2026 届（含分档）**：官方赛事页只列历年已结束项，12-06 仅第三方预告且自承未经确认。",
-   "label": "官方未发布"
-  },
-  "recvtDiykKANpj": {
-   "text": "档位：官网**未公布任何档期（含分档）**；12-31 只有两家同源转载。官网 filmawards.ai 的 MUMBAI 站仍标 Soon（未开放），FilmFreeway 投递页实测 404 → 截止撤下、状态待公布。",
-   "label": "站点未开放"
-  },
-  "recvtDiykKWbDG": {
-   "text": "档位：单一档；官网只剩 2026 首届档案（05-17 已结束），**2027 届未公布任何档期（含分档）**。",
-   "label": "下届未上线"
-  },
-  "recvtIfhUxT7ot": {
-   "text": "档位：整届（第 52 届 9-15 截止、10-25 闭幕）；**第 53 届未公布任何档期（含分档）**，12-11 无官方依据。",
-   "label": "上届已闭幕"
-  },
-  "recvwdOjSlhvYz": {
-   "text": "档位：**无固定截止、滚动受理（无分档）**：可灵官方页明确没有投稿截止日，申报后 21 个工作日内回复；12-31 是第三方按年度窗口填的，不是官方截点。",
-   "label": "常年开放"
-  },
-  "recvtIfhUxY6cl": {
-   "text": "档位：最终档；**渠道差异**：FilmFreeway 11-20、Festhome Extended 11-13。10-21 只取 Festhome 把最晚可投日提前了 7 天，属误改，现按更晚的 FF 2026-11-20。",
-   "label": "日期订正"
-  },
-  "reczz28MYyLkDrAH": {
-   "text": "档位：单一注册截止（无早鸟 / 晚期分档）；赛道：四个官方品牌赛道、青年组 / 大学组 / 公开组三组**同一截止**。官网首页、Official Rules、Launch Timeline 三处一致为 2026-11-15；10-25 来自聚合站，差 21 天。",
-   "label": "核对更正"
-  },
-  "reczz28NIVALahqF": {
-   "text": "档位：单一档（该专项赛不设早鸟 / 延期档）；赛道：数智影像类（AIGC 专项，独立于主节其他赛道）。官网 articleDetail/2523 正文「截止时间：2026年12月21日17:00」；10-22 曾据海报 / 转载改成 12-20，与正文不符，10-24 改回 12-21 17:00。",
-   "label": "日期订正"
-  },
-  "reczz28Pl6HrPHkF": {
-   "text": "档位：Final（FF Deadlines 块唯一档，无早鸟 / 晚期）；赛道：六个类别同一档；2026-11-10 截止。此前只读正文、漏了整段档期表。",
-   "label": "核对更正"
-  },
-  "reczz28NIUoUZDbs": {
-   "text": "档位：**整体单一档延期**（不是某一分组或某条赛道单独调整），全赛事通用。原截止 2026-10-15 → 官方 10-15 当日宣布延至 **2026-10-28 23:59**；评审 10-29~31、获奖公示 11-13 随之顺延。",
-   "label": "日期订正"
-  },
-  "recvs8rH4WlDov": {
-   "text": "档位：Regular Deadline（FF 页仅列此一档，无早鸟 / 晚期）；赛道：亚洲 AIGC 国际电影单元（与主节其他单元分开评审）。FilmFreeway 官方页 2027 档期 Regular 2027-01-20、通知 2027-03-30、影展 05-19~25；此前官网未刊载而留空待公布，现按 FF 写入。",
-   "label": "补录档期"
-  },
-  "recvtIfhUx1uBc": {
-   "text": "档位：**2027 届未公布任何档期（含分档）**；官网无 2027 征片页，投奖平台仍停留在 2026 届。",
-   "label": "未开征"
-  },
-  "recvwdOf2TR2tU": {
-   "text": "档位：November Deadline（按月滚动第 9 档，也是末档）；赛道：全部单元同档。FF 页已可见十档，末档 2026-11-30，通知与活动同为 12-15；此前因官网只写「November/December 2026」而留空。",
-   "label": "补全档期"
-  },
-  "reczz28PlOjQHaP3": {
-   "text": "档位：**双赛道同一档，官方未给具体日**；赛道：个人赛道（免费）与团体赛道（付费 / 3 人以上团队）并行。官方口径只到「10—11 月为创作征集期」，未说明是否分赛道设档，故截止留空、状态待公布。",
-   "label": "征集期待定"
-  },
-  "recvtIfhUxptdr": {
-   "text": "档位：本届**档期与入口均无法核实（含分档）**：wix 官网 404、Festhome `f/10007` 302 跳首页，站内只剩 2026 届旧公告。",
-   "label": "下届未开放"
-  },
-  "reczz28RK8DCNMko": {
-   "text": "档位：单一档；赛道：两个征集类别（短片成片 / 短片剧本）**同一截止**，未分类设档。央广网 2026-10-26 原文「征集时间截至 2026 年 12 月 15 日……涵盖短片成片与短片剧本两大方向」；此前只发启动消息、截止留空。",
-   "label": "补录档期"
-  },
-  "reczz28Ow4R5fy41": {
-   "text": "档位：单一档（2027 届无分档）；**整届改期**：2026-11-30 → **2027-02-15**，开放日同步改为 2027-01-15、影展 04-22~25。",
-   "label": "补录档期"
-  },
-  "recvsoUlbAGggQ": {
-   "text": "档位：Late = Final 同日（2027-01-01 末档，无更高档）；赛道：16 个分类奖同档。**2027-03-01 是通知日，不是截止**——此前一度把 03-01 当末档，读取 Festhome 原始页后推翻，截止取 2027-01-01。",
-   "label": "核对更正"
-  },
-  "recvs8rH4WUeSB": {
-   "text": "档位：Late Deadline（末档，原文标注 Final opportunity）；同级递进 Early Bird 09-30 → Regular 11-15 → **Late 2026-12-20**。渠道差异：官网 12-20、FilmFreeway 仍写 12-01，**走 FF 须 12-01 前交**。",
-   "label": "核对更正"
-  },
-  "reczz28HJWV1H4Au": {
-   "text": "档位：Submissions Close（单一末档，无分档）；赛道：全部类别同档。官网 Timeline 原文 2026-12-20；原 11-20 来自 AKOOL 自家未更新的发布博客。",
-   "label": "核对更正"
-  },
-  "reczz28HkJ5dS91c": {
-   "text": "档位：Final Extended（末档，由 10-20 再延）；官网现行原文「Final Extended Deadline on 5 November 2026」；10-20 是延期前旧档期，10-19 曾据此误改。",
-   "label": "核对更正"
-  },
-  "reczz28MYyZBM7s4": {
-   "text": "档位：末档；早鸟 2027-01-01 → 常规 02-01 → 迟到 03-01 → **末档 2027-04-01**。此前字段空、状态挂待公布，现按 FF 逐档补全并按最早档起算为开放征集中。",
-   "label": "补全档期"
-  },
-  "reczz28Ow4R5hadY": {
-   "text": "档位：Regular（与 FF 的 Late 11-15 **取交集**、取早 11-01 作安全线）；这是渠道保守取值，不是官方分档差异。",
-   "label": "口径取交集"
-  },
-  "reczz28OwJEkdS13": {
-   "text": "档位：Extended（末档）；Opening 10-24 → Earlybird 11-15 → Regular 12-31 → Late 2027-01-25 → **Extended 2027-02-14**。上一季（Season 5）已于 2026-09-16 截止，此前档期留空。",
-   "label": "新季开档"
-  },
-  "recvtIfhUxEEFV": {
-   "text": "档位：Extended（末档）；Regular 12-10 → Late 2027-01-01 → **Extended 2027-01-21**。2027-01-31 是「Final Official Selections Announced」入围公布日，此前误当 Extended 写入。赛道：单一竞赛单元。",
-   "label": "日期订正"
-  },
-  "reczz28Ow4R5gnEX": {
-   "text": "档位：Regular（本轮末档，无 Late / Extended）；旧值 10-27 属上一轮次（Earlybird 10-21 / Regular 10-27）。赛道：全部类别同档，本轮 Regular 2026-11-21、通知 11-27、活动 2027-01-09。",
-   "label": "核对更正"
-  },
-  "recvsoUlbAefct": {
-   "text": "档位：**月度批次**（Opening 10-01 起按月滚动，当前批次末档 2026-11-08）；原 2027-07-30 在该页查无此句，已撤。赛道：最佳 AI 电影单元。",
-   "label": "核对更正"
-  },
-  "reczz28NIV3TEijI": {
-   "text": "档位：**单一投稿窗**（不分早鸟 / 晚期）；差异在渠道而非档位——官方通稿 / 海报写 11-15，实际收稿的 TapNow 活动页 event/67 倒计时为 **2026-11-14 23:00**。稿件经 TapNow 上传 + 飞书报名表提交，以平台计时为准，取早值 11-14 23:00。",
-   "label": "日期订正"
-  },
-  "reczz28OAXZEXCIb": {
-   "text": "档位：首轮征稿（整轮单一档，无分期）；赛道：漫剧 / 剧集全部单元同档。9-17 ~ **2026-11-08 23:59**；10-31 引自 AITOP100 早期报道，官方已延期。",
-   "label": "日期订正"
-  },
-  "reczz28S26OMvFdU": {
-   "text": "档位：Late(+10%) 末档（10-19 ~ 10-30）；类别：AI Craft（类别 59）。原 11-15 是「作品首次投放窗口终点」与「书面撤稿退费时限」，两者都不是投稿截止。",
-   "label": "日期订正"
-  },
-  "recvtIfhUxwJGQ": {
-   "text": "档位：最终档（投奖平台 12 档末档）；赛道：全类别；**旧 2027-05-27 → 新 2027-05-26**。原 05-27 取自 Festhome Extended 档，2026-10-29 实测该页 200 但跳回 festhome.com 首页、渠道失效；投奖页（id 619）实测末档 05-26，FilmFreeway 页末档 05-06，取可用渠道中最晚档 05-26。",
-   "label": "截止提前 1 天"
-  },
-  "reczz28OZeQEbLB4": {
-   "text": "档位：Late（FilmFreeway 唯一末档）；赛道：全部 8 个类别同档；**旧 2026-10-20 → 新 2026-11-04**。FF 页 2026-10-29 渲染实测：Opening 08-20 / Earlybird 09-09 / Regular 09-30 / **Late 11-04** / 通知 11-06 / 活动 11-13，页面有 Submit Now；此前 10-20 为第三方旧档（当日 FF 403 反爬，未取到原表）。",
-   "label": "延期 15 天"
-  },
-  "recvtIfhUxTdGk": {
-   "text": "档位：投奖代投末档「Early Bird 10」；赛道：全类别；**旧 2027-06-10 → 新 2027-06-09**。原 06-10 取自 Festhome Extended，2026-10-29 实测 Festhome 三个 URL 均跳回首页、渠道失效；现存 FilmFreeway（末档 05-20）与投奖代投（末档 06-09），按「多档取最晚」取 06-09，说明已改为双渠道分列并标「走 FF 须 05-20 前交」。",
-   "label": "截止提前 1 天"
-  },
-  "reczz28MYyZBMa7c": {
-   "text": "档位：Extended（FilmFreeway 末档）；赛道：四个类别同档；**旧 2026-10-20 → 新 2026-10-21**。FF 页渲染另有 Extended 10-21（官网只写 Close Oct 20），按多档取最晚采用 10-21；状态仍为已截止。",
-   "label": "截止 +1 天"
-  },
-  "reczz28Ow4R5hpmu": {
-   "text": "档位：单一 Final（无分档）；赛道：Best AI Film / Africa 2063 / Audience Choice 三类同档；**旧 2026-10-31 → 新 2026-11-30**。官网 Key Dates 原文：Submissions Open September 2026 → Final Submission Deadline November 30, 2026 → Official Selections December 2026 → Screening & Awards January 16, 2027；通知（11-19→12 月）与举办（11-28→2027-01-16）同步更正。",
-   "label": "延期 30 天"
-  },
-  "reczz28MYyZBLMWu": {
-   "text": "档位：Extended（五级阶梯末档）；赛道：短片与 AI 长片同档；**旧 2026-10-25（已截止）→ 新 2026-10-29（今日）**。Festhome Deadlines 原文：22 Jul Call → 22 Aug Early → 18 Sep Standard → 15 Oct Late → **29 Oct Extended** → 11-01 通知；10-26 复核时页面尚未显示该档。",
-   "label": "延期 4 天"
-  },
-  "recvstzYwt6Cq7": {
-   "text": "档位：Final（延期后末档）；赛道：AI Creative 单类别；**旧 2026-10-27（已截止）→ 新 2026-12-08**。官网 info 页顶部原文「EXTENDED DEADLINE: December 8, 2026」，首页 Current Award Competitions 标 12-08（剩 41 天）；页内 Deadlines 段仍留旧文属未同步。",
-   "label": "延期 42 天"
-  },
-  "reczz28S6ZaguiVL": {
-   "text": "档位：报名关（本场唯一公开入口）；赛道：12H 现场赛单一赛道；**旧「开放征集中 / 截止 2026-10-30 22:00」→ 新「已截止 / 报名截止 2026-10-25 24:00」**。TapNow 活动页 `/event/70` 原文：报名 10-25 24:00 截止、10-26 站内信公布入围、全场仅 20 队、比赛 10-29 10:00–22:00（厦门）、交片 10-30 22:00、10-31 颁奖；10-30 22:00 是参赛队交片时限，非公开报名截止。",
-   "label": "报名已截止"
-  },
-  "reczz28Ow4R5eRy5": {
-   "text": "档位：唯一 Deadline 档（FilmFreeway 无分档）；赛道：八个奖项同档，各 $10；**旧 2026-10-29 → 新 2026-11-03**。FF 页 Dates & Deadlines 原文「October 8, 2026 Opening Date / November 3, 2026 Deadline / November 5, 2026 Notification Date / November 15, 2026 Event Date」，Categories & Fees 显示 Submit Now、Standard $10；WebFetch 独立复核一致。原 10-29 为上一版页面日期，官方顺延 5 天。",
-   "label": "延期 5 天"
-  },
-  "recvtDiykKNkWh": {
-   "text": "档位：Late Deadline（**仅 3 个类别**，FF 页面标注 \"3 Categories\"、未列具体名单）；赛道：未标注具体 3 类，其余类别 11-01 已关；**旧 2026-11-01 → 新 2026-11-06**。FF 页 Dates & Deadlines 现为「June 25 Opening / November 1 Deadline / **November 6 Late Deadline 3 Categories** / November 29 Notification / December 7–9 Event」，页面有 Submit Now；Rules 正文仍写 6/25–11/1，属未同步，按平台档期表判定并将状态改回「开放征集中」。",
-   "label": "部分类别延期 5 天"
-  },
-  "reczz28Ow4R5hYCn": {
-   "text": "档位：Extended（末档）；赛道：八个类别同档；**旧 2026-11-17 → 新 2027-02-26**。FF 页 Dates & Deadlines 现为「July 15 Opening / Sept 1 Earlybird / Sept 27 Regular / **Feb 6, 2027 Late** / **Feb 26, 2027 Extended** / Feb 27 Notification / Mar 1 Event」；官网 worldaifilmfestival.com 首页英国站列在「FEBRUARY 2027」分组、日期 Coming soon。英国站整体改期到 2027 年 2—3 月，通知与举办同步后移。",
-   "label": "改期至 2027-02-26"
-  }
- },
- "cycle_status": {
-  "recvtIfhUxT7ot": "ended",
-  "recvtDiykKWbDG": "ended",
-  "recvtfIGJM4hhb": "ended",
-  "recvtDiykKK8hH": "ended",
-  "recvtfH7oajt4R": "ended",
-  "recvsoUlbAPORa": "rolling",
-  "recvwdOjSlhvYz": "rolling",
-  "reczz28OwJEkdS13": "rolling",
-  "reczz28Pl6HrOghh": "ended",
-  "recvstzYwty6nP": "rolling"
- }
 }
