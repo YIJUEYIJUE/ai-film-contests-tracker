@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-11-16",
- "built": "2026-11-16 02:36",
+ "built": "2026-11-16 02:41",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -3989,8 +3989,7 @@
     }
    ],
    "changeReason": "档位：Extended（末档）；Opening 10-24 → Earlybird 11-15 → Regular 12-31 → Late 2027-01-25 → **Extended 2027-02-14**。上一季（Season 5）已于 2026-09-16 截止，此前档期留空。",
-   "changeLabel": "新季开档",
-   "cycle": "rolling"
+   "changeLabel": "新季开档"
   },
   {
    "id": "reczz28OzDEcuuV4",
