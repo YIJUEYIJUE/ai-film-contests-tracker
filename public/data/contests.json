@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-11-16",
- "built": "2026-11-16 02:29",
+ "built": "2026-11-16 02:36",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1022,8 +1022,7 @@
     }
    ],
    "changeReason": "档位：Final(Firm) Deadline（末档）；赛道：全部类别同档。2027-04-04 → 通知 04-11、活动 04-20；此前字段空缺、状态挂待公布，现补齐。",
-   "changeLabel": "补录档期",
-   "cycle": "ended"
+   "changeLabel": "补录档期"
   },
   {
    "id": "recvtDiykKO885",
