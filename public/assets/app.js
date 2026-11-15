@@ -316,7 +316,7 @@ V.contests = () => {
     </div>
     <button class="f-toggle" data-act="ftoggle">${I.filter}筛选条件${act.length ? `<em>${act.length}</em>` : ""}<span class="ar">${I.down}</span></button>
     <div class="f-body">
-      <div class="f-group"><label>时间</label><div class="chips">${chip("when", "open", "全部在征")}${chip("when", "3", "3 天内")}${chip("when", "7", "7 天内")}${chip("when", "30", "30 天内")}${chip("when", "tba", "截止待公布")}${chip("when", "all", "含已截止")}</div></div>
+      <div class="f-group"><label>时间</label><div class="chips">${chip("when", "open", "未截止")}${chip("when", "3", "3 天内")}${chip("when", "7", "7 天内")}${chip("when", "30", "30 天内")}${chip("when", "tba", "截止待公布")}${chip("when", "all", "含已截止")}</div></div>
       <div class="f-group"><label>分级</label><div class="chips">${chip("grade", "", "不限")}${chip("grade", "SA", "S + A")}${chip("grade", "S", "S")}${chip("grade", "A", "A")}${chip("grade", "B", "B")}${chip("grade", "C", "C")}</div></div>
       <div class="f-group"><label>条件</label><div class="chips">${chip("fee", "free", "免费报名", true)}${chip("cash", "1", "有现金奖", true)}${chip("topic", "自由投稿", "自由投稿", true)}${chip("topic", "命题", "命题", true)}${chip("region", "cn", "国内", true)}${chip("region", "intl", "海外 / 线上", true)}${chip("fav", "1", "已收藏", true)}</div></div>
       <div class="f-group"><label>上新</label><div class="chips">${chip("new", "1", "今日上新", true)}${chip("new", "3", "近 3 天", true)}${chip("new", "7", "近 7 天", true)}</div></div>
@@ -510,7 +510,7 @@ V.insights = () => {
   const top = L.filter(c => cashCNY(c) > 1).sort((a, b) => cashCNY(b) - cashCNY(a)).slice(0, 8); const tmx = cashCNY(top[0] || { prize: "" }) || 1;
   const fees = L.filter(c => !isFree(c) && /[$€£¥￥]|\d/.test(c.fee)).length;
   return `
-  <div class="page-h"><div class="kicker">数据洞察</div><h1>AI 影像赛事整体结构</h1><p class="lede">基于当前在征的 ${L.length} 个赛事：什么时候截止最集中、含金量怎么分布、门槛高不高、奖金有多少。</p></div>
+  <div class="page-h"><div class="kicker">数据洞察</div><h1>AI 影像赛事整体结构</h1><p class="lede">基于当前未截止的 ${L.length} 个赛事：什么时候截止最集中、含金量怎么分布、门槛高不高、奖金有多少。</p></div>
   <div class="ins-grid">
     <div class="ins w2"><h3>未来 8 个月截止分布 <div class="legend">${["S", "A", "B", "C"].map(g => `<span><i style="background:var(--g${g})"></i>${g}</span>`).join("")}</div></h3><div class="vbars">${bars}</div></div>
     <div class="ins"><h3>分级构成</h3><div class="donut-w">${donut}<ul class="dl-leg">${gc.map(([g, n]) => `<li><i style="background:var(--g${g})"></i>${g} 级 · ${GN[g]}<b class="num">${n}</b></li>`).join("")}</ul></div></div>
@@ -588,7 +588,7 @@ V.brief = () => {
         <div class="op-g"><label>卡片内容</label><ul class="op-sum">
           <li><i class="d-hot"></i>${b.dueT} <b class="num">${b.due.length}</b> 个${b.dueK !== "today" ? "<small>（今天没有截止，自动放宽）</small>" : ""}</li>
           <li><i class="d-acc"></i>${b.freshT} <b class="num">${b.fresh.length}</b> 个${b.freshK !== "1" ? "<small>（今天没有新开征，自动放宽）</small>" : ""}</li>
-          <li><i></i>顶部：在征 ${b.L.length} · 7 天内截止 ${b.w7.length}</li>
+          <li><i></i>顶部：未截止 ${b.L.length} · 7 天内截止 ${b.w7.length}</li>
           ${size === "long" ? `<li><i></i>底部：本周还要截止 ${b.wk.length} · 截止日调整 ${b.moved.length}</li>` : ""}</ul></div>
         <div class="op-btns"><button class="btn pri" data-act="cardgen">${I.edit || ""}生成图片</button><button class="btn" data-act="cardsave">${I.down}保存图片</button><button class="btn" data-act="cardcopy">${I.copy}复制图片</button><button class="btn" data-act="caption">${I.copy}复制配文</button></div>
         <p class="op-tip">手机上也可以长按上方预览图保存。图片里每栏放不下的条目会提示「还有 N 个」，引导到网站查看。</p>
@@ -806,14 +806,14 @@ function drawCard({ size = "long", theme = "light" } = {}) {
 function shareCaption() {
   const b = briefData(), url = RAW.siteUrl || location.href.split("#")[0];
   const ln = (c, mode) => `· 【${c.grade}】${c.name}｜${mode === "new" ? (daysLeft(c) == null ? "截止待公布" : md(c.deadline) + "截止") : dueLabel(c)}${isFree(c) ? "｜免费" : ""}`;
-  return `AI 赛事日报｜${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]}\n在征 ${b.L.length} 个 · 7 天内截止 ${b.w7.length} 个\n\n⏰ ${b.dueT}（${b.due.length}）\n${b.due.slice(0, 8).map(c => ln(c, "due")).join("\n") || "· 无"}${b.due.length > 8 ? `\n…另有 ${b.due.length - 8} 个` : ""}\n\n🆕 ${b.freshT}（${b.fresh.length}）\n${b.fresh.slice(0, 8).map(c => ln(c, "new")).join("\n") || "· 无"}${b.fresh.length > 8 ? `\n…另有 ${b.fresh.length - 8} 个` : ""}\n\n全部赛事与投递入口：${url}`;
+  return `AI 赛事日报｜${T0.getMonth() + 1}月${T0.getDate()}日 周${WD[T0.getDay()]}\n未截止 ${b.L.length} 个 · 7 天内截止 ${b.w7.length} 个\n\n⏰ ${b.dueT}（${b.due.length}）\n${b.due.slice(0, 8).map(c => ln(c, "due")).join("\n") || "· 无"}${b.due.length > 8 ? `\n…另有 ${b.due.length - 8} 个` : ""}\n\n🆕 ${b.freshT}（${b.fresh.length}）\n${b.fresh.slice(0, 8).map(c => ln(c, "new")).join("\n") || "· 无"}${b.fresh.length > 8 ? `\n…另有 ${b.fresh.length - 8} 个` : ""}\n\n全部赛事与投递入口：${url}`;
 }
 function briefText(mdMode) {
   const b = briefData(), d = T0;
   const line = (c, mode) => { const st = mode === "new" ? newLabel(c) : dueLabel(c); return mdMode ? `- **${c.name}**（${c.grade} 级）— ${st}；${c.prize}；报名 ${c.fee}${/^https?:/.test(c.submit) ? `；[投递](${c.submit})` : ""}` : `· ${c.name}【${c.grade}】${st}｜${cut(c.prize, 40)}｜报名${cut(c.fee, 16)}`; };
   const sec = (t, a, mode) => a.length ? `\n${mdMode ? "## " : "【"}${t}${mdMode ? "" : "】"}（${a.length}）\n${a.map(c => line(c, mode)).join("\n")}\n` : "";
   const mv = b.moved.length ? `\n${mdMode ? "## " : "【"}截止日有调整${mdMode ? "" : "】"}\n${b.moved.map(c => `${mdMode ? "- " : "· "}${c.name}：${chgLabel(c.changes[c.changes.length - 1], c.changeLabel)}`).join("\n")}\n` : "";
-  return `${mdMode ? "# " : ""}AI 赛事日报 ${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()}\n在征 ${b.L.length} 个 · ${b.dueT} ${b.due.length} 个 · ${b.freshT} ${b.fresh.length} 个 · 一周内截止 ${b.w7.length} 个\n` + sec(b.dueT, b.due, "due") + sec(b.freshT, b.fresh, "new") + sec("本周还要截止", b.wk, "due") + sec("30 天内 S/A 级", b.mo, "due") + sec("免费且有现金奖", b.fc, "due") + mv + `\n截止日以主办方官网为准 · ${RAW.siteUrl || location.href.split("#")[0]}`;
+  return `${mdMode ? "# " : ""}AI 赛事日报 ${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()}\n未截止 ${b.L.length} 个 · ${b.dueT} ${b.due.length} 个 · ${b.freshT} ${b.fresh.length} 个 · 一周内截止 ${b.w7.length} 个\n` + sec(b.dueT, b.due, "due") + sec(b.freshT, b.fresh, "new") + sec("本周还要截止", b.wk, "due") + sec("30 天内 S/A 级", b.mo, "due") + sec("免费且有现金奖", b.fc, "due") + mv + `\n截止日以主办方官网为准 · ${RAW.siteUrl || location.href.split("#")[0]}`;
 }
 
 /* ═════════ 页面：知名电影节 ═════════ */
