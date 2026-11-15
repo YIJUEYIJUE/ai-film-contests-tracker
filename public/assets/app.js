@@ -837,7 +837,7 @@ V.about = () => {
   const GD = { S: "老牌电影节 AI 单元、头部平台的大额基金或赛事。", A: "认可度高、规则清楚、回报明确。首届赛事最高只给 A。", B: "有真实展映或奖金，但影响力或回报一般。", C: "收费投奖型节展、只有电子证书，或信息不全。" };
   return `<div class="about">
   <div class="page-h"><div class="kicker">收录与分级</div><h1>怎么收录、怎么分级</h1><p class="lede">只收 AI 视频与影像类赛事，每条都回到主办方官网核对截止日、报名费和投递方式；不确定的信息会明确标为「待确认」「未公布」或「未核实」。</p></div>
-  <div class="steps">${[["01", "发现", "每天巡检赛事公告，记录新开征、延期和规则变化。"], ["02", "核实", "回到主办方官网逐字段核对；多档截止取最后一档。"], ["03", "分级", "按四个维度加权打分，分成 S / A / B / C 四档。"], ["04", "维护", "截止超过 7 天的条目移除；高分级赛事移除前先确认是否延期。"]].map(([n, t, d]) => `<div class="step"><span class="n">${n}</span><b>${t}</b><p>${d}</p></div>`).join("")}</div>
+  <div class="steps">${[["01", "发现", "每天巡检赛事公告，记录新开征、延期和规则变化。"], ["02", "核实", "回到主办方官网逐字段核对；多档截止取最后一档。"], ["03", "分级", "按四个维度加权打分，分成 S / A / B / C 四档。"], ["04", "维护", "截止超过 7 天的记录默认收起、不删除，随时可在「含已截止」里查看；高分级赛事先确认是否延期再改状态。"]].map(([n, t, d]) => `<div class="step"><span class="n">${n}</span><b>${t}</b><p>${d}</p></div>`).join("")}</div>
   <h2>分级模型</h2>
   <div class="weights"><div style="flex:35;background:var(--ink)">认可度<br>35%</div><div style="flex:30;background:var(--ink-2)">可信度<br>30%</div><div style="flex:20;background:var(--accent)">资源回报<br>20%</div><div style="flex:15;background:var(--gB)">成本<br>15%</div></div>
   <div class="grade-list">${["S", "A", "B", "C"].map(g => `<div class="gcard"><div class="gh"><span class="g g-${g}">${g}</span><b>${GN[g]}</b><span class="cnt num">${gc[g]}</span></div><p>${GD[g]}</p></div>`).join("")}</div>
