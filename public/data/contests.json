@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-11-16",
- "built": "2026-11-16 02:41",
+ "built": "2026-11-16 02:52",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1005,7 +1005,7 @@
    "notes": "⚠️官网 aitalentsfest.com（10-20 实测）显示：本影展按「季（Season）」运行，**Season 02 已于 2026-10-18 在 East Harlem（152 E. Harlem, NYC）放映完毕**，页面标题即「AI Film Festival // October 18」「N°01 // 10.18.26」，规则段亦写「We screen your film on October 18」；Season 02 已公布两批获奖：Autumn 2026 共 11 个获奖（含 Best AI Director / Hybrid / Solo Filmmaker / Animation / Editor / Workflow / Short-Short / Sound & Music 等）与 Season 02 Part One 12 个获奖，Part Two 于 10-18 放映后公布；状态由「开放征集中」改为「待公布」，待 Season 03 档期公布后再补；片长 30 秒–25 分钟；须提交 process log（使用的工具、各阶段、自制与生成的比例）；每个创作者/团队每季限投 1 部；禁止未获书面同意的真人 deepfakes；团队片须列全部贡献者与工具；作品进行中（work-in-progress）可投但不能角逐 Best AI Film；13 个奖项（Best AI Film / Director / Screenplay / Cinematography / Editor / Sound & Music / Animation / Hybrid Film / Solo Filmmaker / Workflow / Newcomer / Short-Short / Audience AI Award），无现金奖，获奖作品在放映夜展映并在回顾片中露出，版权归创作者；东哈林区小型放映（loft party 式），偏实验与新锐，非传统红毯节展；FF 页档期与说明一致（Firm Deadline 2027-04-04 / Notification 2027-04-11 / Event 2027-04-20），此前状态仍挂「待公布」且截止/通知/举办三字段空白，属字段与说明打架，已补齐",
    "mark": "caution",
    "verified": "warn",
-   "verifyNote": "官网仍是上一季内容，查不到本季截止日",
+   "verifyNote": "官网 aitalentsfest.com 仍停在上一季（Season 02）页面，未更新至新周期；2027 档期以 FilmFreeway 官方页为唯一依据（2026-11-16 复核：Opening 10-15 / Earlybird 11-10 / Regular 12-02 / Late 12-27 / Extended 01-20 / Hurry Up 02-14 / Important 03-10 / Firm 04-04 / 通知 04-11 / 活动 04-20），投递前请以 FF 页当前状态为准",
    "opened": "2026-10-15",
    "tracked": null,
    "added": "2026-10-15",
