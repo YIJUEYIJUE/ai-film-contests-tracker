@@ -14,6 +14,8 @@ const own = (o, k) => k != null && Object.prototype.hasOwnProperty.call(o, k);
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+// 说明/备注在飞书里用 **加粗** 标日期与档位，渲染时转成 <b>，避免页面上出现裸星号
+const rich = s => esc(s).replace(/\*\*([^*\n]{1,80})\*\*/g, "<b>$1</b>").replace(/\*\*/g, "");
 const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 const cut = (s, n) => { s = String(s || ""); return s.length > n ? s.slice(0, n) + "…" : s; };
 const svg = d => `<svg viewBox="0 0 20 20">${d}</svg>`;
@@ -225,7 +227,7 @@ V.home = () => {
     <article class="fi" data-open="${c.id}" tabindex="0" role="button" aria-label="${esc(c.name)}">
       <header class="fi-src"><span class="fi-org">${esc(c.organizer || c.region || "主办方未注明")}</span>${c.region && c.organizer ? `<span class="fi-reg">· ${esc(c.region)}</span>` : ""}<span class="fi-r">${favBtn(c)}</span></header>
       <h3>${esc(c.name)}</h3>
-      ${c.desc ? `<p class="fi-sum">${esc(first(c.desc))}</p>` : ""}
+      ${c.desc ? `<p class="fi-sum">${rich(first(c.desc))}</p>` : ""}
       <div class="fi-tags">${isFree(c) ? "" : `<span>报名 ${esc(cut(c.fee, 22))}</span>`}${tags(c, 4)}</div>
       <div class="fi-why"><span>最高奖励：</span>${esc(c.prize)}${cashCNY(c) > 1 ? `<em>${cnyLabel(c)}</em>` : ""}</div>
     </article></li>`;
@@ -894,12 +896,28 @@ function closeDrawer(fromRoute = false) {
   if (!fromRoute && location.hash.startsWith("#/c/")) { if (history.state?.d) history.back(); else history.replaceState(null, "", `#/${curPage || "home"}`); }
   try { const id = curIdBeforeClose || lastFocus?.dataset?.open; const el = lastFocus && document.contains(lastFocus) ? lastFocus : id ? $(`#view [data-open="${CSS.escape(id)}"]`) : null; el?.focus?.({ preventScroll: true }); } catch {}
 }
+// 节点名归一：说明里常写成「…本条举办时间为当前批次 2026-12-30」，直接截 10 字会得到半句话
+const MILE = [[/早鸟|early/i, "早鸟"], [/常规|regular/i, "常规"], [/超期|延迟|late/i, "延迟档"], [/最终|末档|final/i, "末档"],
+  [/报名|registration/i, "报名"], [/开征|征片|投稿|提交|opening/i, "开征"], [/截止|deadline/i, "截止"],
+  [/初审|初评/i, "初审"], [/入围|提名|shortlist/i, "入围"], [/通知|公布|notification/i, "通知"],
+  [/评审|judg/i, "评审"], [/颁奖|award/i, "颁奖"], [/开幕/i, "开幕"], [/闭幕/i, "闭幕"],
+  [/展映|放映|screening/i, "展映"], [/举办|活动|event/i, "举办"], [/阶段|节点/i, "节点"]];
+const mileLabel = s => {
+  const t = String(s || "").replace(/[*＊]/g, "").trim();
+  if (!t) return "节点";
+  for (const [re, n] of MILE) if (re.test(t)) return n;
+  return t.length <= 6 && !/[为是的了]/.test(t) ? t : "节点";
+};
 function milestones(c) {
   const t = `${c.notes}\n${c.desc}`; const out = []; const re = /([^\s；;，,。()（）|｜:：]{0,10})[:：]?\s*(20\d{2})[-./年](\d{1,2})[-./月](\d{1,2})日?/g; let m;
-  while ((m = re.exec(t))) { const d = new Date(+m[2], +m[3] - 1, +m[4]); if (isNaN(d) || d.getMonth() !== +m[3] - 1) continue; out.push({ d, label: (m[1] || "").replace(/[【】\[\]]/g, "").trim() || "节点" }); }
+  while ((m = re.exec(t))) {
+    const d = new Date(+m[2], +m[3] - 1, +m[4]); if (isNaN(d) || d.getMonth() !== +m[3] - 1) continue;
+    const label = mileLabel((m[1] || "").replace(/[【】\[\]]/g, "").trim());
+    out.push({ d, label });
+  }
   const dl = parseD(c.deadline); if (dl) out.push({ d: dl, label: "最终截止", main: 1 });
   const mp = new Map(); out.forEach(x => { const k = ymd(x.d); if (!mp.has(k) || x.main) mp.set(k, x); });
-  return [...mp.values()].sort((a, b) => a.d - b.d).filter(x => /截止|征|报名|提交|初审|入围|公布|颁奖|举办|展映|开幕|闭幕|节点|阶段|early|regular|late|final/i.test(x.label) || x.main).slice(-7);
+  return [...mp.values()].sort((a, b) => a.d - b.d).slice(-7);
 }
 function linkChip(name, u, ic) {
   u = safeUrl(u);
@@ -935,8 +953,8 @@ function fillDrawer(id) {
     ${safeUrl(c.site) || sub ? `<div class="links">${linkChip("官网", c.site, "globe")}${sub && sub !== safeUrl(c.site) ? linkChip(mail ? "邮箱投稿" : "投递入口", sub, "ext") : ""}</div>` : `<div class="vbox warn"><span class="vi">${I.alert}</span><div><b>暂无官方链接</b><span>主办方暂未公布官网或投递入口，请关注后续公告。</span></div></div>`}
     ${c.added || (c.changes || []).length ? `<div class="dr-rec">${c.added ? `<span>${I.plus}${md(c.added)}开征${addedAgo(c) <= 2 ? '<em class="tag new">上新</em>' : ""}</span>` : ""}${(c.changes || []).map(x => `<span>${I.edit}${md(x.date)}截止日调整：${chgLabel(x, c.changeLabel)}</span>`).join("")}</div>${c.changeReason ? `<p class="dr-why">${chgScope(c) ? `调整范围：<b>${esc(chgScope(c))}</b>｜` : ""}${esc(chgRest(c) || c.changeReason)}</p>` : ""}` : ""}
     ${ms.length > 1 ? `<div class="dr-h">时间节点</div><ul class="tl-list">${(() => { const nx = ms.findIndex(x => x.d >= T0); return ms.map((x, i) => `<li class="${x.d < T0 ? "done" : i === nx ? "next" : ""}"><i></i><b>${ymd(x.d)}</b><span>${esc(x.label)}</span></li>`).join(""); })()}</ul>` : ""}
-    ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${esc(c.desc)}</div>` : ""}
-    ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${esc(c.notes)}</div>` : ""}
+    ${c.desc ? `<div class="dr-h">赛事说明</div><div class="prose">${rich(c.desc)}</div>` : ""}
+    ${c.notes ? `<div class="dr-h">档期与备注</div><div class="prose">${rich(c.notes)}</div>` : ""}
   </div>
   <div class="dr-foot">${sub ? `<a class="btn pri" href="${esc(sub)}" ${mail ? "" : 'target="_blank" rel="noopener"'}>${mail ? "发邮件投稿" : siteOnly ? "查看官网" : "去投递"}${I.ext}</a>` : `<button class="btn pri" disabled style="opacity:.5">暂无投递入口</button>`}
     <button class="btn" data-act="ics1" title="加入日历，提前 3 天提醒">${I.bell}<span>提醒</span></button>
