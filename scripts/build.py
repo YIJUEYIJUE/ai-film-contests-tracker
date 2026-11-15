@@ -280,7 +280,7 @@ def rss(recs, snap):
     pub = format_datetime(dt.datetime.combine(dt.date.fromisoformat(snap), dt.time(8), TZ))
     x = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0"><channel>', "<title>AI赛事助手 · 在征赛事</title>",
          f"<link>{escape(base)}/</link>", "<description>AI 视频与影像赛事，按截止日排序</description>", "<language>zh-cn</language>", f"<lastBuildDate>{pub}</lastBuildDate>"]
-    for r in sorted((r for r in recs if r["status"] != "closed"), key=lambda r: (r.get("added") or "0000", r["deadline"] or "9999"), reverse=True):
+    for r in sorted((r for r in recs if r["status"] != "closed" and r.get("cycle") != "ended"), key=lambda r: (r.get("added") or "0000", r["deadline"] or "9999"), reverse=True):
         rp = format_datetime(dt.datetime.combine(dt.date.fromisoformat(r["added"]), dt.time(8), TZ)) if r.get("added") else pub
         d = f"最高奖励：{r['prize']}<br>报名费：{r['fee']}<br>主办方：{r['organizer'] or '—'}<br><br>{r['desc'].replace(chr(10), '<br>')}"
         x += ["<item>", f"<title>{escape('【' + r['grade'] + '】' + r['name'] + ' · ' + (r['deadline'] or '截止待公布'))}</title>",
