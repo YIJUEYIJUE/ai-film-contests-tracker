@@ -1,6 +1,6 @@
 {
  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-11-12",
+ "updated": "2026-11-16",
  "records": {
   "recvs8rH4WHCdI": {
    "verify": {
@@ -500,8 +500,8 @@
    "label": "核对更正"
   },
   "recvsoUlbAefct": {
-   "text": "档位：当前月度批次 Late Deadline（末档）；赛道：AI 分站全部类别；阶段：同一批次末档延期 6 天，非新批次、非分组调整。**旧 2026-11-08 → 新 2026-11-14**。FF「Dates & Deadlines」2026-11-12 复核为 10-01 Opening / 10-19 Earlybird / **11-14 Late** / 11-15 通知 / 11-29 Event；除 Late 外四档与 11-08 版完全一致，故判为同批次延期而非新开一轮，不翻已截止。征片开始 10-01、通知 11-15、举办 11-29、年度总截止 2027-07-30 均不变。",
-   "label": "档期更正"
+   "text": "档位：**月度批次滚动，末档 Late Deadline**（上一批 2026-11-14 → 本批 **2026-12-10**）；赛道：**全部 AI 单元同档**（Best AI Feature/Short/Documentary/Animation/Experimental/Super Short 等，无分组差异）；阶段：**月度批次换批**，非延期。FF 页 2026-11-16 原文：Opening 11-15 → Earlybird 11-17 → Late 12-10 → Notification 12-15 → Event 12-30；上一批末档 11-14 已关，各节点整体后移一个周期。年度竞赛总截止 2027-07-30 不变，与月度批次并存分列。",
+   "label": "批次滚动"
   },
   "reczz28NIV3TEijI": {
    "text": "档位：**单一投稿窗**（不分早鸟 / 晚期）；差异在渠道而非档位——官方通稿 / 海报写 11-15，实际收稿的 TapNow 活动页 event/67 倒计时为 **2026-11-14 23:00**。稿件经 TapNow 上传 + 飞书报名表提交，以平台计时为准，取早值 11-14 23:00。",
