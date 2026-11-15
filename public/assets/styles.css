@@ -555,6 +555,7 @@ a.lchip:hover{border-color:var(--accent);background:var(--accent-softer)}
 .dr-h{font-size:13px;font-weight:600;color:var(--ink-2);margin:22px 0 10px;display:flex;align-items:center;gap:10px}
 .dr-h::after{content:"";flex:1;height:1px;background:var(--line-soft)}
 .prose{font-size:13.5px;color:var(--ink-2);line-height:1.85;white-space:pre-wrap}
+.prose b{font-weight:600;color:var(--ink)}
 .tl-list{list-style:none;margin:0;padding:0}
 .tl-list li{display:grid;grid-template-columns:14px 88px 1fr;gap:10px;align-items:start;font-size:13px;padding:5px 0;position:relative;color:var(--ink-2)}
 .tl-list li::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:1px;background:var(--line)}
