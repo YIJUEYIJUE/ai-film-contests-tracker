@@ -1,6 +1,6 @@
 {
  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-11-16",
+ "updated": "2026-11-20",
  "records": {
   "recvs8rH4WHCdI": {
    "verify": {
@@ -376,6 +376,102 @@
     "level": "warn",
     "note": "长期活动，未公布截止日"
    }
+  },
+  "reczz28bfb7sNnk5": {
+   "verify": {
+    "level": "ok",
+    "note": "官网赛程表写「截止 2026年11月27日」，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28PlOjQHqV6": {
+   "verify": {
+    "level": "ok",
+    "note": "活动页标「2026-09-15 ~ 2026-11-30」并显示截稿倒计时，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28P1dudU1Mw": {
+   "verify": {
+    "level": "ok",
+    "note": "官网写「Closing December 15 2026, 7:00 AM CST」，与字段日期一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28bfbFimBek": {
+   "verify": {
+    "level": "ok",
+    "note": "官网 Key dates 写「Dec 14 Deadline」，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28HJWV1H4Au": {
+   "verify": {
+    "level": "ok",
+    "note": "官网活动页含截止日 2026-12-20，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28bfbHZHAqk": {
+   "verify": {
+    "level": "ok",
+    "note": "官网列 Regular 2027-01-22 / Extended 2027-02-12 / Final 2027-03-05（GMT-5），字段取末档一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28MYyLkFsi7": {
+   "verify": {
+    "level": "ok",
+    "note": "官网赛程写「投稿至 12 月 15 日 24:00 截止」，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28OBDFjq75m": {
+   "verify": {
+    "level": "ok",
+    "note": "官网赛程 11-20 报名截止、11-21~23 作品预选，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28NIV3TCyxU": {
+   "verify": {
+    "level": "ok",
+    "note": "官网活动页含截止日 2026-11-22，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28P1dudVLfU": {
+   "verify": {
+    "level": "ok",
+    "note": "总局公告含 2026-11-30 截止，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28PlOjQEC5d": {
+   "verify": {
+    "level": "ok",
+    "note": "总局公告含 2026-11-30 截止，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28Ow4R5gnEX": {
+   "verify": {
+    "level": "ok",
+    "note": "官网写 regular deadline November 21，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28bfaeo85TD": {
+   "verify": {
+    "level": "ok",
+    "note": "官方规则文写 November 26 7:00 PM UTC（北京 11-27 03:00），与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28MYyLkGs8i": {
+   "verify": {
+    "level": "warn",
+    "note": "官网字段指向 2026-05 旧公告（报名 6-30、10 月盛典），11-30 截止依据 09-28 官方发布；建议官网改挂新公告（2026-11-20 核对）"
+   }
+  },
+  "reczz28Pl6HrOghh": {
+   "verify": {
+    "level": "warn",
+    "note": "官网仍显示 2026 届已关闭（EXTENDED June 1 2026），2027 档期未开放，与「待公布」一致，投前再核（2026-11-20 核对）"
+   }
+  },
+  "reczz28NIV3TDZbM": {
+   "verify": {
+    "level": "fixed",
+    "note": "官网 How it works 标 SUBMISSION DEADLINE 5 DEC 2026，原 11-20 已改为 12-05（2026-11-20 核对）"
+   }
   }
  },
  "change_reasons": {
@@ -574,6 +670,10 @@
   "recvtfIGJMj3yu": {
    "text": "档位：唯一档 Submission deadline；赛道：全部类别同档。2027-05-01 → 2027-05-02：官方写 23:59 CEST，换算为北京 2027-05-02 05:59；原值按北京 05-01 23:59 记，现按官方时区订正。",
    "label": "日期订正"
+  },
+  "reczz28NIV3TDZbM": {
+   "text": "档位：**单一档（唯一截止，无分档）**；赛道：**AI Film Award 单元**（Summit 旗下 AI Music 等其它单元不适用）；旧值 2026-11-20 → 新值 **2026-12-05**。依据：官网 How it works 现标 SUBMISSION DEADLINE 5 DEC 2026；Top 10 12-15、Top 5 12-25、首映 2027-01-08~10 未变。官网只写日期（GST），字段按北京 12-05 23:59 取保守值。",
+   "label": "延期"
   }
  },
  "cycle_status": {
