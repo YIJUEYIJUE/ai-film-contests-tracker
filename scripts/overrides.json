@@ -502,6 +502,30 @@
     "level": "warn",
     "note": "投奖页 toujiang.today/filmfest/1159 已 404，已清空投递链接；征集已于 2026-11-15 关闭（2026-11-20 核对）"
    }
+  },
+  "reczz28Yg1idFmtA": {
+   "verify": {
+    "level": "ok",
+    "note": "FF 官方页写 Submit your film by 20 November 2026，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "recvtIfhUxY6cl": {
+   "verify": {
+    "level": "ok",
+    "note": "投奖页 timeline: Final deadline 2026-11-20 / 通知 11-24 / 影展 11-25~26，与字段一致（2026-11-20 核对）"
+   }
+  },
+  "reczz28NoQbuBjvJ": {
+   "verify": {
+    "level": "fixed",
+    "note": "官方规则 2026-11-20 24:00 JST（北京 23:00），原按北京 23:59:59 记晚 1 小时，已按官网改正（2026-11-20 核对）"
+   }
+  },
+  "reczz28Ow4R5iDlD": {
+   "verify": {
+    "level": "fixed",
+    "note": "官网 November 20 11:59 PM ET（北京 11-21 12:59），原按北京 11-20 23:59 记早 13 小时，已改正（2026-11-20 核对）"
+   }
   }
  },
  "change_reasons": {
@@ -704,6 +728,14 @@
   "reczz28NIV3TDZbM": {
    "text": "档位：**单一档（唯一截止，无分档）**；赛道：**AI Film Award 单元**（Summit 旗下 AI Music 等其它单元不适用）；旧值 2026-11-20 → 新值 **2026-12-05**。依据：官网 How it works 现标 SUBMISSION DEADLINE 5 DEC 2026；Top 10 12-15、Top 5 12-25、首映 2027-01-08~10 未变。官网只写日期（GST），字段按北京 12-05 23:59 取保守值。",
    "label": "延期"
+  },
+  "reczz28Ow4R5iDlD": {
+   "text": "档位：**单一档**（Cue Xmas ’26 圣诞场，四个奖项共用同一截档）；赛道：AI 短片／AI 音乐视频／动画三类同档；旧值 2026-11-20 23:59（北京）→ 新值 **2026-11-21 12:59**（北京）。依据：官网写「November 20 · 11:59 PM ET」，11 月为 EST（UTC-5），换算后比原值晚 13 小时。",
+   "label": "时区修正"
+  },
+  "reczz28NoQbuBjvJ": {
+   "text": "档位：**单一档**（Regular 末档，无分档）；赛道：长片单元与 Indie Box 同档；旧值 2026-11-20 23:59:59（北京）→ 新值 **2026-11-20 23:00**（北京）。依据：官方规则写「2026-11-20 24:00 JST」，FF 页另提示「以 JST 为准、与 FF 显示不同」，JST 换算后比原值早 1 小时。",
+   "label": "时区修正"
   }
  },
  "cycle_status": {
