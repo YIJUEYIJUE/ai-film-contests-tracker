@@ -1,6 +1,6 @@
 {
  "snapshot": "2026-11-27",
- "built": "2026-11-27 12:49",
+ "built": "2026-11-27 12:58",
  "trackedSince": "2026-10-14",
  "siteUrl": "https://yijueyijue.github.io/ai-film-contests-tracker",
  "contests": [
@@ -1544,7 +1544,8 @@
     }
    ],
    "changeReason": "档位：本届**档期与入口均无法核实（含分档）**：wix 官网 404、Festhome `f/10007` 302 跳首页，站内只剩 2026 届旧公告。",
-   "changeLabel": "下届未开放"
+   "changeLabel": "下届未开放",
+   "cycle": "ended"
   },
   {
    "id": "recvtIfhUxTdGk",
@@ -5426,7 +5427,8 @@
    "opened": null,
    "tracked": "2026-10-26",
    "added": null,
-   "changes": []
+   "changes": [],
+   "cycle": "ended"
   },
   {
    "id": "reczz28S26OMwSKB",
