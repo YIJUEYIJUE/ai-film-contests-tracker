@@ -1,6 +1,6 @@
 {
  "$comment": "数据修正层：records[rid].fix 覆盖原始记录；change_reasons[rid]={text,label} 解释截止日变动（label 替代「待公布」四个字）；cycle_status[rid]=ended 表示本届已结束、下届未公布，默认列表不显示，标「本届已结束」；rolling 表示常年滚动，标「常年开放」。",
- "updated": "2026-11-20",
+ "updated": "2026-11-27",
  "records": {
   "recvs8rH4WHCdI": {
    "verify": {
@@ -1022,6 +1022,8 @@
   "recvsoUlbAPORa": "rolling",
   "recvwdOjSlhvYz": "rolling",
   "reczz28Pl6HrOghh": "ended",
-  "recvstzYwty6nP": "rolling"
+  "recvstzYwty6nP": "rolling",
+  "recvtIfhUxptdr": "ended",
+  "reczz28S26OMuntq": "ended"
  }
 }
